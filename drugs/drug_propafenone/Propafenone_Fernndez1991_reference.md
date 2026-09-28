@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc0-oo]` (31.6 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The propafenone rat record, built from the abstract alone, was rejected because its clearance of 62.8 ml/min·kg against a volume of 2.4 ml/kg is physiologically implausible, indicating a unit or scale extraction error.**
+
+The record for propafenone in rats was built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model. The extracted parameters were t1/2β of 55.4 min, a central volume of 2.4 ml/kg, clearance of 62.8 ml/min·kg, and AUC∞ of 31.6 micrograms·min/ml. The clearance-to-volume magnitude falls outside the physiological window, consistent with a unit or scale extraction error, and a dimension mismatch was flagged on a structural parameter. A second reader recorded no values for any of the four parameters, so none of the extracted numbers could be corroborated. Extracted — propafenone: t1/2β 55.4 min, V 2.4 ml/kg, CL 62.8 ml/min.kg, AUC∞ 31.6 micrograms.min/ml.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0-oo: this record has 31.6, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Fernández J; Lligoña L; Puigdemont A; Guitart R; Riu JL; Arboix M et al. (1991). European journal of drug metabolism and pharmacokinetics 16
@@ -26,6 +29,9 @@ Fernández J; Lligoña L; Puigdemont A; Guitart R; Riu JL; Arboix M et al. (1991
 
 ## Model component
 <dbs-pgx drug="propafenone" model-id="Propafenone_Fernndez1991_reference" status="rejected" stale="false" population="rats" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

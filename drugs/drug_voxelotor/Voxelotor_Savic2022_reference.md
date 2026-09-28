@@ -17,9 +17,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The voxelotor record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, and the CYP3A4-inducer covariate effect on CL/F was never simulated.**
+
+The record lists ka as 2.38 1/h, but this value was not reported in the source paper; the model builder substituted a default for ka and Tlag, so the absorption input does not reflect the published model. The record also assumes F=1 and Fm=1 with no molar correction, treating all parameters as apparent. Finally, although the record defines a covariate effect of CYP3A4 inducers on CL/F (0.39), only the reference individual was simulated, so the covariate scenarios were not exercised. Extracted — voxelotor: CL/F 6.14 L/h, V1/F 333 L, Q/F 0.39 L/h, V2/F 72.3 L, Kp 0.43, kabs 2.38.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Savic RM; Green ML; Jorga K; Zager M; Washington CB et al. (2022). CPT: pharmacometrics & systems pharmacology 11
@@ -27,6 +29,9 @@ Savic RM; Green ML; Jorga K; Zager M; Washington CB et al. (2022). CPT: pharmaco
 
 ## Model component
 <dbs-pgx drug="voxelotor" model-id="Voxelotor_Savic2022_reference" status="needs_review" stale="false" population="adults and adolescents with sickle cell disease" measured-compound="voxelotor" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -130,6 +135,8 @@ Savic RM; Green ML; Jorga K; Zager M; Washington CB et al. (2022). CPT: pharmaco
 </div><figure class="pk-models-diagram"><img src="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference.svg" alt="Voxelotor_Savic2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_sim_controls.json"></dbs-fmusim>
 

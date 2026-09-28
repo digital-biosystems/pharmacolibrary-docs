@@ -4,7 +4,8 @@
 
 - **generic name:** buformin
 - **ATC codes:** `A10BA03`
-- **DrugBank:** [DB04830](https://go.drugbank.com/drugs/DB04830)
+- **DrugBank:** [DB04830](https://go.drugbank.com/drugs/DB04830) · **PubChem:** [CID 2468](https://pubchem.ncbi.nlm.nih.gov/compound/2468)
+- **molar mass:** 157.2168 g/mol (C6H15N5) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

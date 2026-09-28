@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (paracetamol vs propacetamol) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — paracetamol: V 6.35 liters, tlag 4.2 min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading propacetamol; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Wu Y; Völler S; Goulooze SC; Allegaert K; Sherwin CMT; van Rongen A; et al. et al. (2025). Journal of clinical pharmacology 65

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Thoueille P; Alves Saldanha S; Desfontaine V; Kusejko K; Courlet P; Andre P; Cavassini M; Decosterd LA; Buclin T; Guidi M; Swiss HIV Cohort Study et al. (2023). The Journal of antimicrobial chemotherapy 78
@@ -129,7 +129,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_sim_controls.json"></dbs-fmusim>
 

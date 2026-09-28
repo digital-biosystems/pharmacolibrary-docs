@@ -5,7 +5,7 @@
 
 # amino acids — `AminoAcids_Sudarsono2026v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,15 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The amino acids model was rejected because its clearance (0.03 L/h) and volume of distribution (0.2 L) fall far outside physiologically plausible ranges, pointing to a unit or scale extraction error.**
+
+The record reports a one-compartment model for amino acids with clearance of 0.03 L/h and volume of distribution of 0.2 L. Both magnitudes are outside the physiological window expected for such compounds, and the review judged the values implausible, attributing the error to unit or scale extraction. The source was a secondary review text rather than the primary data, so the numbers may not reflect a fitted model. Extracted — amino acids: CL 0.03 L/h, V 0.2 L.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Sudarsono_2026_2)
 
 ## Model component
 <dbs-pgx drug="amino acids" model-id="AminoAcids_Sudarsono2026v2_reference" status="rejected" stale="false" population="" measured-compound="amino_acids" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -48,12 +55,12 @@ not matched (stem Sudarsono_2026_2)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
 _Every reader agrees on every compared field of this record._
 

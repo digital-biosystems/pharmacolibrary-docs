@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — digoxin: V/F 4.89 L/kg, kabs 2.29 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yukawa E; Akiyama K; Suematsu F; Yukawa M; Minemoto M et al. (2007). Journal of clinical pharmacy and therapeutics 32
@@ -26,6 +29,9 @@ Yukawa E; Akiyama K; Suematsu F; Yukawa M; Minemoto M et al. (2007). Journal of 
 
 ## Model component
 <dbs-pgx drug="digoxin" model-id="Digoxin_Yukawa2007_reference" status="needs_review" stale="false" population="Japanese neonates" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

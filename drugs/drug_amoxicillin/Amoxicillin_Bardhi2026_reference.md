@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q46]` (15 vs not captured) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q46: this record has 15, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Bardhi A; Scala-Bertola J; Gehring R; Mariella J; Freccero F; Scarpellini R; Castagnetti C; Djerada Z; Barbarossa A et al. (2026). Journal of veterinary internal medicine 40

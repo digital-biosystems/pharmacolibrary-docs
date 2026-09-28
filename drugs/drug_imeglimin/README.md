@@ -4,7 +4,8 @@
 
 - **generic name:** imeglimin
 - **ATC codes:** `A10BX15`
-- **DrugBank:** [DB12509](https://go.drugbank.com/drugs/DB12509)
+- **DrugBank:** [DB12509](https://go.drugbank.com/drugs/DB12509) · **PubChem:** [CID 24812808](https://pubchem.ncbi.nlm.nih.gov/compound/24812808)
+- **molar mass:** 155.205 g/mol (C6H13N5) — DrugBank
 - **groups:** investigational
 
 ## About

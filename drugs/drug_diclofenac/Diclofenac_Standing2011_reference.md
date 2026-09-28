@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (0.36 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The diclofenac record is rejected because the extracted clearance (16.5 L·h⁻¹ per 70 kg) and volume of distribution (0.23 L) in children aged 1–12 years are physiologically implausible, indicating a unit or scale extraction error.**
+
+The one-compartment model for diclofenac lists clearance as 16.5 l·h(-1)·70 kg(-1) and Vd as 0.23 L; a volume of distribution of 0.23 L is far below any plausible value for this molecule, consistent with a unit or scale misreading. The record was built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model, which limits what could be validated. A second reader (gpt-oss:120b) recorded no value for the bioavailability (0.36 in this record) and for the clearance (16.5 in this record), so those two entries could not be corroborated. Extracted — diclofenac: CL 16.5 l·h(-1) ·70 kg(-1), V 0.23 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.36, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:13:39.657576+00:00) predates the upstream re-run (2026-09-24 03:38:00.885776+00:00). Current validate status: `rejected`.
 

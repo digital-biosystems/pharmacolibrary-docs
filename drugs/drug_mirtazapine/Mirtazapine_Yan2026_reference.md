@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[ka]` (not captured vs 1.2) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The mirtazapine apparent volume of distribution was recorded as 0.131 L, an implausible value that a second reader read as 302.315 L, and the absorption rate constant was not extracted at all.**
+
+The record lists V/F for mirtazapine as 0.131 L, which is physiologically impossible for an orally dosed drug; the second reader extracted 302.315 L for the same parameter, so the recorded value is likely a transcription error. The absorption rate constant (ka) was left unextracted in this record while the second reader found 1.2. The covariate effect of paroxetine on clearance (Θ CL-Paroxetine, -0.306) was also inconsistently captured between the two readers, one recording it and the other leaving it null. Extracted — mirtazapine: CL/F 28.5 L/h, V/F 0.131 L, CL -0.306.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ka: this record has none, the second reading 1.2; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Yan H; Huang W; Xia H; Luo Y; Li Y; Shang D et al. (2026). Drug design, development and therapy 20
@@ -26,6 +29,9 @@ Yan H; Huang W; Xia H; Luo Y; Li Y; Shang D et al. (2026). Drug design, developm
 
 ## Model component
 <dbs-pgx drug="mirtazapine" model-id="Mirtazapine_Yan2026_reference" status="rejected" stale="false" population="Chinese patients with depression" measured-compound="mirtazapine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

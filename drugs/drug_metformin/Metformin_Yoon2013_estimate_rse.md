@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q83 — no SI value to build from.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Tlag has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (tlag), so that value has no SI equivalent. Extracted — metformin: CL/F 136 L/h, V/F 112 L, kabs 0.248 h⁻¹, tlag 0.182 Tlag.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yoon H; Cho HY; Yoo HD; Kim SM; Lee YB et al. (2013). The AAPS journal 15

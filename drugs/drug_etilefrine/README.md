@@ -5,7 +5,8 @@
 
 - **generic name:** etilefrine
 - **ATC codes:** `C01CA01`
-- **DrugBank:** [DB08985](https://go.drugbank.com/drugs/DB08985)
+- **DrugBank:** [DB08985](https://go.drugbank.com/drugs/DB08985) · **PubChem:** [CID 3306](https://pubchem.ncbi.nlm.nih.gov/compound/3306)
+- **molar mass:** 181.2316 g/mol (C10H15NO2) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About
@@ -20,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Hengstmann_1975_reference](drugs/drug_etilefrine/Etilefrine_Hengstmann1975_reference.md) | Hengstmann JH et al., The physiological disposition of etilef…, European journal of clinica… (1975) | [10.1007/BF00614015](https://doi.org/10.1007/BF00614015) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Hengstmann_1975_reference](drugs/drug_etilefrine/Etilefrine_Hengstmann1975_reference.md) | 1-compartment (no model) | 3 | Hengstmann JH et al., The physiological disposition of etilef…, European journal of clinica… (1975) | [10.1007/BF00614015](https://doi.org/10.1007/BF00614015) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

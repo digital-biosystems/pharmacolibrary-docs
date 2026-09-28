@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;thrombin&quot;,&quot;href&quot;:&quot;drugs/drug_thrombin/&quot;},{&quot;label&quot;:&quot;Lv_2017 \u00b7 PGx CYP2C9&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # CYP2C9 — PGx  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>

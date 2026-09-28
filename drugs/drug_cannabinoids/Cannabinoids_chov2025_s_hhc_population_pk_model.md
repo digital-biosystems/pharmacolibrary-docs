@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+None of the extracted parameters is cannabinoids's own; they describe hexahydrocannabinol.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Šíchová K; Mallarino B; Janečková L; Palivec P; Vágnerová M; Vejmola Č; Nikolič M; Ladislavová L; Mazochová K; Ryšánek P; Šíma M; Šafanda A; Hiep BQ; Koutrouli IRA; Kuchař M; Páleníček T et al. (2025). The international journal of neuropsychopharmacology 28
@@ -25,6 +27,9 @@
 
 ## Model component
 <dbs-pgx drug="cannabinoids" model-id="Cannabinoids_chov2025_s_hhc_population_pk_model" status="curated_candidate" stale="false" population="male Wistar rats" measured-compound="hexahydrocannabinol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -111,6 +116,8 @@
 </div><figure class="pk-models-diagram"><img src="drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model/Cannabinoids_chov2025_s_hhc_population_pk_model.svg" alt="Cannabinoids_chov2025_s_hhc_population_pk_model diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.41 /h, lag 29.4 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model/Cannabinoids_chov2025_s_hhc_population_pk_model_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model/Cannabinoids_chov2025_s_hhc_population_pk_model_sim_controls.json"></dbs-fmusim>
 

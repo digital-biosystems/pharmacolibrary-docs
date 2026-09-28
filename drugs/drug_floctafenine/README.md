@@ -4,7 +4,8 @@
 
 - **generic name:** floctafenine
 - **ATC codes:** `N02BG04`
-- **DrugBank:** [DB08976](https://go.drugbank.com/drugs/DB08976)
+- **DrugBank:** [DB08976](https://go.drugbank.com/drugs/DB08976) · **PubChem:** [CID 76958517](https://pubchem.ncbi.nlm.nih.gov/compound/76958517)
+- **molar mass:** 406.3552 g/mol (C20H17F3N2O4) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

@@ -5,7 +5,7 @@
 
 # rifabutin — `Rifabutin_Wang2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The rifabutin two-compartment model was rejected because it contains a compartment with no path from the administered dose, and the second reader disputed several extracted parameter values.**
+
+The record describes a two-compartment rifabutin model with CL/F 37.1 L/h, V/F 1605.7196 L, V2/F 655.0 L, tlag 0.825 h and kabs 0.397 h⁻¹, but the structure check found an unreachable or orphan compartment or an unlinked metabolite, so the model was refused. The second reader disagreed with the first on multiple extracted values: one value recorded as 7925, CL/F recorded as 37.1, one value recorded as 18.5, one as 30, one as 39, and V2/F recorded as 655, each with no second-reader value given; one value absent in this record was read as 2.8 by the second reader. These disagreements leave the extracted parameter set inconclusive. Extracted — rifabutin: CL/F 37.1 liters/h, V/F 1.61e+03 L, V2/F 655 liters, tlag 0.825 h, kabs 0.397 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q18: this record has 7925, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang X; Mallikaarjun S; Gibiansky E et al. (2020). Antimicrobial agents and chemotherapy 65
@@ -25,6 +29,9 @@ Wang X; Mallikaarjun S; Gibiansky E et al. (2020). Antimicrobial agents and chem
 
 ## Model component
 <dbs-pgx drug="rifabutin" model-id="Rifabutin_Wang2020_reference" status="rejected" stale="false" population="" measured-compound="rifabutin" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -57,9 +64,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.222 (2/9 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q18]` | 7925 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q27]` | 37.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q324]` | not captured | 2.8 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 18.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 30 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q78]` | 39 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q82]` | 655 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

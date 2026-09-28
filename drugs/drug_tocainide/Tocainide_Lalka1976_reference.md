@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (100 vs not captured) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — tocainide: Cmax 0.0067 mcg/ml, AUC 6 min mcg/ml, CLR 59 ml/min, t1/2β 11 hr, CL 166 ml/min, Fab 100 %, V 3.3 l/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 100, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lalka D; Meyer MB; Duce BR; Elvin AT et al. (1976). Clinical pharmacology and therapeutics 19
@@ -26,6 +29,9 @@ Lalka D; Meyer MB; Duce BR; Elvin AT et al. (1976). Clinical pharmacology and th
 
 ## Model component
 <dbs-pgx drug="tocainide" model-id="Tocainide_Lalka1976_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="tocainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 

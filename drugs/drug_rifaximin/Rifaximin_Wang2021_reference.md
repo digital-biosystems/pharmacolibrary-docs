@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The rifaximin two-compartment mouse model was rejected because a structural parameter failed the dimension check: a reported unit could not be expressed in SI units, leaving that parameter without a valid value.**
+
+The record reports rifaximin disposition in mice with S. aureus-induced mastitis as a two-compartment model with V1 = 2.15, V2 = 0.46, CL = 0.29 and Q = 0.89, plus hybrid terms (λ1 = 2.38, t1/2β = 0.11, t1/2z = 5.98 h, MRT = 6.66 h, AUC24 = 176.83 h·μg/g, Cmax = 25.82 μg/g). The failing check was a dimension mismatch on a structural parameter: one of the reported units could not be expressed in SI units, so that parameter was carried without a valid SI value. No other findings, substitutions or second-reader disagreements are recorded; the rejection rests on this unconvertible unit and the resulting dimension inconsistency. Extracted — rifaximin: V1 2.15, V2 0.46, CL 0.29, Q 0.89, λ1 2.38, t1/2β 0.11, t1/2z 5.98 h, MRT 6.66 h, … (+2).
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang H; Chen C; Chen X; Zhang J; Liu Y; Li X et al. (2021). Frontiers in veterinary science 8
@@ -25,6 +27,9 @@ Wang H; Chen C; Chen X; Zhang J; Liu Y; Li X et al. (2021). Frontiers in veterin
 
 ## Model component
 <dbs-pgx drug="rifaximin" model-id="Rifaximin_Wang2021_reference" status="rejected" stale="false" population="mice with S. aureus-induced mastitis" measured-compound="rifaximin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 

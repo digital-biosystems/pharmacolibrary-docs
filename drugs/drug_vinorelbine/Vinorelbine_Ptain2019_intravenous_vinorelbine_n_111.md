@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The vinorelbine model was quarantined because its clearance, volume of distribution, absorption rate constant and lag time had no reported values and were left at library placeholder defaults, with an invented absorption rate constant.**
+
+The record reports only two vinorelbine parameters, oral apparent clearance (89.4 l/h/m2) and intravenous clearance (23.75 l/h/m2, both in Asian patients), while clearance, volume of distribution, absorption rate constant and absorption lag time were missing from the source, so library placeholder values stood in for them. The absorption rate constant was defaulted although not reported in the source, an invented absorption deemed not acceptable. The reported l/h/m2 unit could not be converted to SI, so the parameters entered the model without SI values. The model was therefore held back rather than published with invented numbers. Extracted — vinorelbine: CL/F 89.4 l/h/m2, CL 23.8 l/h/m2.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Pétain A; Zhong D; Chen X; Li Z; Zhimin S; Zefei J; et al. et al. (2019). Cancer chemotherapy and pharmacology 84
@@ -25,6 +27,9 @@ Pétain A; Zhong D; Chen X; Li Z; Zhimin S; Zefei J; et al. et al. (2019). Cance
 
 ## Model component
 <dbs-pgx drug="vinorelbine" model-id="Vinorelbine_Ptain2019_intravenous_vinorelbine_n_111" status="model_quarantined" stale="false" population="patients with non-small-cell lung cancer or advanced breast cancer" measured-compound="vinorelbine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

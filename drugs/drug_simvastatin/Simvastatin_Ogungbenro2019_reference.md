@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['simvastatin', 'simvastatin acid', 'metabolism'], ['simvastatin', '6-hydroxymethyl simvastatin', 'metabolism'], ['simvastatin acid', '6-hydroxymethyl simvastatin acid', 'metabolism'], ['6-hydroxymethyl simvastatin', '6-hydroxymethyl simvastatin acid', 'metabolism'], ['simvastatin', '3,5-dihydrodiol simvastatin', 'metabolism']] vs [['simvastatin', 'simvastatin acid', 'metabolism'], ['simvastatin', '6-hydroxymethyl simvastatin', 'metabolism'], ['simvastatin', '3,5-dihydrodiol simvastatin', 'metabolism'], ['simvastatin acid', '6-hydroxymethyl simvastatin acid', 'metabolism'], ['6-hydroxymethyl simvastatin', '6-hydroxymethyl simvastatin acid', 'metabolism']]) and 15 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The paediatric simvastatin model record was rejected because a structural parameter failed a dimensional check: one of its reported units could not be converted to SI, so that parameter was carried without an SI value.**
+
+The refusal rests on a dimension mismatch on a structural parameter, caused by a reported unit that could not be converted to SI, so that parameter entered the model build without an SI value. The parameter list itself shows a labelling inconsistency: the parameter named D1 carries the verbatim label 'D2 (h−1)' with value 1.75 h−1. A second reader disagreed on several entries, including the hepatic clearance parameter CLHSVAe/VHSVA, read as 0.12 h−1 in this record but as 660 (CLeMAX/VHSV) by the second reader, and on the covariate effects age1_age_fra_on_clhsvae (1) and age3_age_fra_on_cldhse (0.90), which the second reader left null. Extracted — simvastatin: D1 1.75 h−1, kabs 0.03 h−1, tlag 1.4 h, CL/F 0.53 L/h, V/F 1.59 L, V 0.76 BSVb, kel 0.6 h−1, CL 0.12 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has simvastatin → simvastatin acid (metabolism); simvastatin → 6-hydroxymethyl simvastatin (metabolism); simvastatin acid → 6-hydroxymethyl simvastatin acid (metabolism) …, the second reading simvastatin → simvastatin acid (metabolism); simvastatin → 6-hydroxymethyl simvastatin (metabolism); simvastatin → 3,5-dihydrodiol simvastatin (metabolism) …; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ogungbenro K; Wagner JB; Abdel-Rahman S; Leeder JS; Galetin A et al. (2019). European journal of clinical pharmacology 75

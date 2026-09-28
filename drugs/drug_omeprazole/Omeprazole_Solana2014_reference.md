@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[central compartment distribution volumes]` (4.23 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**CL has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — omeprazole: CL 24.9 L·h·70 kg, V1 4.23 L/70 kg, V2 674 L/70 kg, Q 22 L·h-1, kabs 3 h-1, tlag 2.5 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central compartment distribution volumes: this record has 4.23, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Solana MJ; Colom H; López-Herce J; Urbano J; González R; López J; et al. et al. (2014). Therapeutic drug monitoring 36

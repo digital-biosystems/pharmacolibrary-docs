@@ -4,7 +4,8 @@
 
 - **generic name:** lubiprostone
 - **ATC codes:** `A06AX03`
-- **DrugBank:** [DB01046](https://go.drugbank.com/drugs/DB01046)
+- **DrugBank:** [DB01046](https://go.drugbank.com/drugs/DB01046) · **PubChem:** [CID 157920](https://pubchem.ncbi.nlm.nih.gov/compound/157920)
+- **molar mass:** 390.468 g/mol (C20H32F2O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

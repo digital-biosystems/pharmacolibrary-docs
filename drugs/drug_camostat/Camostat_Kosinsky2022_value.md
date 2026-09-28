@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[fbio].rse_percent` (not captured vs 4.66) and 3 more field(s) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The camostat parent model was quarantined because its bioavailability, clearance, volume of distribution, absorption rate constant and lag time had no source values and were left at library placeholder defaults, while the four extracted parameters (ka 0.67 1/h, F 0.051, Vd 22.36 L, kel 1.22 1/h) describe only the metabolite FOY-251.**
+
+The record lists only FOY-251 parameters — absorption rate constant 0.67 1/h, bioavailability 0.051, volume of distribution 22.36 L and elimination rate constant 1.22 1/h — leaving camostat itself with no bioavailability, clearance, volume, absorption rate or lag time. Because those parent values were missing, placeholder defaults were substituted for the missing source values and the model was held back rather than published with invented numbers. The absorption rate constant was additionally flagged as an invented absorption deviation, since ka was defaulted and not reported in the source. A second reader reported relative standard errors for the four parameters (F 4.66%, ka 5.78%, kel 4.70%, Vd 7.07%) that this record left null, but the deviation finding stands. Extracted — FOY-251: kabs 0.67, Fab 0.051, V 22.4, kel 1.22.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[fbio].rse_percent`: this record has none, the second reading 4.66; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `camostat mesylate`, measured `FOY-251`.
 
@@ -28,6 +31,9 @@ Kosinsky Y; Peskov K; Stanski DR; Wetmore D; Vinetz J et al. (2022). Microbiolog
 
 ## Model component
 <dbs-pgx drug="camostat" model-id="Camostat_Kosinsky2022_value" status="model_quarantined" stale="false" population="healthy adults" measured-compound="FOY-251" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

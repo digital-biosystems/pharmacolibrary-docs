@@ -4,7 +4,8 @@
 
 - **generic name:** phenazocine
 - **ATC codes:** `N02AD02`
-- **DrugBank:** [DB13606](https://go.drugbank.com/drugs/DB13606)
+- **DrugBank:** [DB13606](https://go.drugbank.com/drugs/DB13606) · **PubChem:** not captured
+- **molar mass:** 321.464 g/mol (C22H27NO) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

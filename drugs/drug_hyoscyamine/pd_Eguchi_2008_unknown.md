@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03B&quot;,&quot;href&quot;:&quot;atc/A03B.md&quot;},{&quot;label&quot;:&quot;hyoscyamine&quot;,&quot;href&quot;:&quot;drugs/drug_hyoscyamine/&quot;},{&quot;label&quot;:&quot;Eguchi_2008 \u00b7 PD intracellular Ca 2+ level&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # intracellular Ca 2+ level — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>

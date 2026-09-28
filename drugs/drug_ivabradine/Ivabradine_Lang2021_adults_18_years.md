@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['ivabradine', 'ivabradine metabolite', 'metabolism']] vs [['ivabradine', 'metabolite', 'metabolism']]) — a structural parameter, so the record is disputed.
+**The paper reports none of the model's key parameters.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has ivabradine → ivabradine metabolite (metabolism), the second reading ivabradine → metabolite (metabolism). That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lang J; Vincent L; Chenel M; Ogungbenro K; Galetin A et al. (2021). Clinical pharmacology and therapeutics 109

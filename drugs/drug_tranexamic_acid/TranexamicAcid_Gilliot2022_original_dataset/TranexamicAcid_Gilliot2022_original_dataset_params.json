@@ -15,8 +15,11 @@
   "k21": 0.0005619950825430278,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 660.000000066207
+ },
  "reference_peaks": {
-  "central.C": 0.0002898783008704772
+  "central.C": 0.0015628149735340063
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

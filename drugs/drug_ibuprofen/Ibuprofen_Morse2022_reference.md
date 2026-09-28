@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-5.6-luna` read this paper differently on `screen.dose_compound` (acetaminophen, ibuprofen vs acetaminophen and ibuprofen) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**This ibuprofen/acetaminophen record was rejected because the extracted clearance and volume values fall outside physiological plausibility, consistent with a unit or scale extraction error, and the lag-time unit (fold) could not be converted to SI.**
+
+The record lists a volume of 22.37 ml and a clearance factor of 0.816 for fat on clearance, magnitudes judged physiologically implausible for ibuprofen or acetaminophen in healthy adults, pointing to a unit or scale extraction error. The lag-time parameter of 4.6 carries the unit 'fold', which could not be converted to SI, so the parameter reached the model without a usable value. A second reader found no disagreement on the drug or analyte fields but could not confirm any of the four parameter values, leaving the extracted numbers uncorroborated. Extracted — acetaminophen, ibuprofen: CL 0.816, tlag 4.6 fold, V 22.4 ml, kabs 1.1 h -1.
+
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which compound was dosed: this record has acetaminophen, ibuprofen, the second reading acetaminophen and ibuprofen; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Morse_2022)

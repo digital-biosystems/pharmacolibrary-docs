@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 1 scholar param(s) emitted or defaulted — got 0 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (fish oil (Maxepa) and lovastatin vs VLDL apo B) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The lovastatin model was quarantined because its elimination clearance and intercompartmental clearance had no extracted values, so library defaults stood in, and parameter V2 was left uncovered.**
+
+The record for lovastatin in miniature pigs (measuring apo B in VLDL and LDL) lists only V2 = 0.08, V3 = 0.010, C0 = 8.56, and λ1 = 0.654; the elimination clearance and intercompartmental clearance were missing and base defaults were substituted for them. The parameter-coverage check found 0 of 1 expected parameters covered, with V2 neither emitted nor defaulted. A second reader also disagreed on the dose compound (fish oil (Maxepa) and lovastatin versus VLDL apo B), the primary analyte (apo B in VLDL and LDL versus apo B), the ordering of the VLDL–IDL and VLDL–LDL interconversion links, and the value of L(0,5) (0.654 versus null). Extracted — lovastatin: V2 0.08, V3 0.01, C0 8.56, λ1 0.654.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fish oil (Maxepa) and lovastatin, the second reading VLDL apo B; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `fish oil (Maxepa) and lovastatin`, measured `apo B in VLDL and LDL`.
 
@@ -28,6 +31,9 @@ Huff MW; Telford DE; Barrett PH et al. (1992). Arteriosclerosis and thrombosis :
 
 ## Model component
 <dbs-pgx drug="lovastatin" model-id="Lovastatin_Huff1992_reference" status="model_quarantined" stale="false" population="miniature pigs" measured-compound="apo B in VLDL and LDL" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

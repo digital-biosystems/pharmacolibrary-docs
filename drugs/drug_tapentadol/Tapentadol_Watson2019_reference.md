@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Watson E; Khandelwal A; Freijer J; van den Anker J; Lefeber C; Eerdekens M et al. (2019). Journal of pain research 12
@@ -28,6 +31,9 @@ Watson E; Khandelwal A; Freijer J; van den Anker J; Lefeber C; Eerdekens M et al
 
 ## Model component
 <dbs-pgx drug="tapentadol" model-id="Tapentadol_Watson2019_reference" status="accepted_with_caveats" stale="false" population="pediatric patients with acute pain" measured-compound="tapentadol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -140,6 +146,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_tapentadol/Tapentadol_Watson2019_reference/Tapentadol_Watson2019_reference.svg" alt="Tapentadol_Watson2019_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2.03 /h, lag 14.8 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_tapentadol/Tapentadol_Watson2019_reference/Tapentadol_Watson2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tapentadol/Tapentadol_Watson2019_reference/Tapentadol_Watson2019_reference_sim_controls.json"></dbs-fmusim>
 

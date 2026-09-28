@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (17 vs not captured) and 8 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 17, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Langeskov EK; Kristensen K et al. (2022). Pharmacology research & perspectives 10

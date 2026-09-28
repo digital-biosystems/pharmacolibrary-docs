@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q314]` (42 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — ciprofloxacin: CL 210 ml/kg/h, V1 786 ml/kg, V2 3.23e+03 ml/kg, Q 1.65e+03 ml/kg/h, kabs 0.42 /h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q314: this record has 42, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:02:13.958728+00:00) predates the upstream re-run (2026-09-24 02:03:03.413445+00:00). Current validate status: `needs_review`.
 

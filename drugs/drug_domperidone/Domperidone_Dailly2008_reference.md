@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[absorption constant rate]` (0.0843 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The domperidone record was rejected because its clearance (0.92 L/h) and volume of distribution (0.405 L) fall outside physiologically plausible ranges for preterm neonates, suggesting a unit or scale extraction error, and the values came only from the paper's abstract.**
+
+The record for domperidone in preterm neonates lists clearance (Cl/F) of 0.92 L/h, volume of distribution (Vd/F) of 0.405 L, and an absorption rate constant of 0.0843 h⁻¹, with a one-compartment structure. The plausibility check judged the clearance-to-volume magnitudes outside the physiological window for this population, consistent with a unit or scale extraction error. Because only the paper's abstract was read, these summary statistics stood in for a fitted model, so the values could not be confirmed against the full publication. A second reader returned no values for all three parameters (clearance, volume, absorption constant), leaving the extracted numbers unconfirmed. Extracted — domperidone: CL 0.92 L/h, V 0.405 L, kabs 0.0843 h(-1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption constant rate: this record has 0.0843, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Dailly E; Drouineau MH; Gournay V; Rozé JC; Jolliet P et al. (2008). European journal of clinical pharmacology 64
@@ -26,6 +29,9 @@ Dailly E; Drouineau MH; Gournay V; Rozé JC; Jolliet P et al. (2008). European j
 
 ## Model component
 <dbs-pgx drug="domperidone" model-id="Domperidone_Dailly2008_reference" status="rejected" stale="false" population="preterm neonates" measured-compound="domperidone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

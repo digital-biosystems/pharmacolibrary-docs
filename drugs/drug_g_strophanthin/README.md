@@ -4,7 +4,7 @@
 
 - **generic name:** g-strophanthin
 - **ATC codes:** `C01AC01`
-- **DrugBank:** [DB01092](https://go.drugbank.com/drugs/DB01092)
+- **DrugBank:** [DB01092](https://go.drugbank.com/drugs/DB01092) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

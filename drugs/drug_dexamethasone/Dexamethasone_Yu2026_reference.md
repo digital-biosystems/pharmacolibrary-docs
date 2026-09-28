@@ -5,7 +5,7 @@
 
 # dexamethasone — `Dexamethasone_Yu2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.368). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The dexamethasone record was rejected because the extracted clearance and volume are physiologically implausible — CLu of 494.0 mL/h and V of 16.9 mL point to a unit or scale extraction error.**
+
+The record lists dexamethasone with unbound clearance CLu = 494.0 mL/h and volume of distribution V = 16.9 mL, magnitudes outside the physiological window for this drug, consistent with a unit or scale misreading from the source text (labelled 'V u' and 'V SF' verbatim). The absorption rate constant kabs = 2.95 h⁻¹ was also extracted. The second reader recorded no values for the disputed fields, so no independent confirmation of the extracted numbers exists and the comparison could not be computed for them. Extracted — dexamethasone: CLu 494 mL/h, V 16.9 mL, kabs 2.95 h -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 473.6, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Yu R; Toutain PL; Ekstrand C; Jusko WJ et al. (2026). Pharmaceutical research
@@ -25,6 +29,9 @@ Yu R; Toutain PL; Ekstrand C; Jusko WJ et al. (2026). Pharmaceutical research
 
 ## Model component
 <dbs-pgx drug="dexamethasone" model-id="Dexamethasone_Yu2026_reference" status="rejected" stale="false" population="horses" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** apparent.
 
@@ -50,14 +57,31 @@ Yu R; Toutain PL; Ekstrand C; Jusko WJ et al. (2026). Pharmaceutical research
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.368 (7/19 fields) | 12 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 473.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q25]` | 338 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q26]` | 5.69 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q331]` | 0.269 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q332]` | 140.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q410]` | 1.09 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q46]` | 0.175 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | 30 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q56]` | 0.23 | 2.2 | mismatch |
+| `gpt-oss:120b` | `values[Q57]` | 2.6 | 14 | mismatch |
+| `gpt-oss:120b` | `values[Q59]` | not captured | 2.6 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | not captured | 11 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

@@ -4,7 +4,8 @@
 
 - **generic name:** teneligliptin
 - **ATC codes:** `A10BD28`, `A10BH08`
-- **DrugBank:** [DB11950](https://go.drugbank.com/drugs/DB11950)
+- **DrugBank:** [DB11950](https://go.drugbank.com/drugs/DB11950) · **PubChem:** [CID 11949652](https://pubchem.ncbi.nlm.nih.gov/compound/11949652)
+- **molar mass:** 426.578 g/mol (C22H30N6OS) — DrugBank
 - **groups:** investigational
 
 ## About

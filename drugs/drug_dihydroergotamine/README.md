@@ -5,7 +5,8 @@
 
 - **generic name:** dihydroergotamine
 - **ATC codes:** `N02CA01`
-- **DrugBank:** [DB00320](https://go.drugbank.com/drugs/DB00320)
+- **DrugBank:** [DB00320](https://go.drugbank.com/drugs/DB00320) · **PubChem:** [CID 10531](https://pubchem.ncbi.nlm.nih.gov/compound/10531)
+- **molar mass:** 583.6774 g/mol (C33H37N5O5) — DrugBank
 - **groups:** approved
 
 ## About
@@ -26,10 +27,10 @@ DHE is not indicated for migraine prevention or the management of hemiplegic or 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Hilke_1978_reference](drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_reference.md) | Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologica Scan… (1978) | [10.1111/aas.1978.22.3.215](https://doi.org/10.1111/aas.1978.22.3.215) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Schran_1985_reference](drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_reference.md) | Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Hilke_1978_reference](drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_reference.md) | 1-compartment, IV | 4 | Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologica Scan… (1978) | [10.1111/aas.1978.22.3.215](https://doi.org/10.1111/aas.1978.22.3.215) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Schran_1985_reference](drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_reference.md) | 1-compartment, IV | 4 | Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985) | — |
 
 ## Pharmacodynamics (PD)
 

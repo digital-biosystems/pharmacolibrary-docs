@@ -5,7 +5,7 @@
 
 # acenocoumarol — `Acenocoumarol_MartinSuarez2003_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — acenocoumarol: CL 124 ml/min/kg, V 66.7 l/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q38: this record has 0.13, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Martin-Suarez A; Atencio DR; Lopez FG; Santos M; Zarzuelo A; Mendez ME; Alberca I; Lanao JM et al. (2003). Biological & pharmaceutical bulletin 26
@@ -25,6 +29,9 @@ Martin-Suarez A; Atencio DR; Lopez FG; Santos M; Zarzuelo A; Mendez ME; Alberca 
 
 ## Model component
 <dbs-pgx drug="acenocoumarol" model-id="Acenocoumarol_MartinSuarez2003_reference" status="needs_review" stale="false" population="" measured-compound="acenocoumarol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -54,9 +61,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q38]` | 0.13 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

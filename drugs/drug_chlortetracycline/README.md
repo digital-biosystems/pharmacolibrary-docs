@@ -5,7 +5,8 @@
 
 - **generic name:** chlortetracycline
 - **ATC codes:** `A01AB21`, `D06AA02`, `J01AA03`, `S01AA02`
-- **DrugBank:** [DB09093](https://go.drugbank.com/drugs/DB09093)
+- **DrugBank:** [DB09093](https://go.drugbank.com/drugs/DB09093) · **PubChem:** [CID 54708735](https://pubchem.ncbi.nlm.nih.gov/compound/54708735)
+- **molar mass:** 478.88 g/mol (C22H23ClN2O8) — DrugBank
 - **groups:** approved, vet_approved, withdrawn
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Reinbold_2010_reference](drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference.md) | Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veterinary pharm… (2010) | [10.1111/j.1365-2885.2009.1116.x](https://doi.org/10.1111/j.1365-2885.2009.1116.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Reinbold_2010_reference](drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference.md) | 1-compartment, oral | 7 | Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veterinary pharm… (2010) | [10.1111/j.1365-2885.2009.1116.x](https://doi.org/10.1111/j.1365-2885.2009.1116.x) |
 
 ## ADME sites
 

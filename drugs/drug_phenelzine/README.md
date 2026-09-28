@@ -4,7 +4,8 @@
 
 - **generic name:** phenelzine
 - **ATC codes:** `N06AF03`
-- **DrugBank:** [DB00780](https://go.drugbank.com/drugs/DB00780)
+- **DrugBank:** [DB00780](https://go.drugbank.com/drugs/DB00780) · **PubChem:** [CID 3675](https://pubchem.ncbi.nlm.nih.gov/compound/3675)
+- **molar mass:** 136.1943 g/mol (C8H12N2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

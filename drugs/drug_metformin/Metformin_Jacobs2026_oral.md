@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_cmax; T1_tmax.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000941, model 0.022); the model does not reproduce the paper's time of the peak (tmax) (paper 0.86, model 13.9).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — metformin: Cmax 941 ng/mL, tmax 0.86 h, AUC∞ 4.32e+03 h * ng/mL, AUC%ext 1.09, Fab 7.86, t1/2z 85.8 h, CL 0.059 L/h, V 35 L, … (+2).
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jacobs ME; Blea J; Hardy M; McKemie DS; Traynham M; Knych HK et al. (2026). Drug testing and analysis 18

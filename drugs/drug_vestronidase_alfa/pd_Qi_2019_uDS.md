@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;vestronidase alfa&quot;,&quot;href&quot;:&quot;drugs/drug_vestronidase_alfa/&quot;},{&quot;label&quot;:&quot;Qi_2019 \u00b7 PD urinary dermatan sulfate&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;VestronidaseAlfa_Qi2019_reference&quot;,&quot;label&quot;:&quot;Qi_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 4 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[b]` (not captured vs 0.13) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**Nebivolol's clearance, volume of distribution, and both intercompartmental rate constants had no extracted values, so library placeholders were substituted and the model was quarantined.**
+
+The record lists tlag (0.30), absorption half-life (2.06), CL (0.22), V1 (4.21), Q (0.59), and V2 (7.12) for the two-compartment nebivolol model, but the builder's substitutions show Cl, Vd, k12, and k21 were defaulted because no source values existed — placeholders would have stood in for the drug's clearance, distribution volume, and both distribution rate constants. The parameter coverage check found only 4 of 5 expected parameters covered, with tlag neither emitted nor defaulted. A second reader also disagreed on one parameter value (0.13 versus null) and on an identifier for the absorption half-life entry. Extracted — nebivolol: tlag 0.3, t1/2ka 2.06, CL 0.22, V1 4.21, Q 0.59, V2 7.12.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of b: this record has none, the second reading 0.13; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Marques L; Costa B; Vale N et al. (2022). Pharmaceutics 14
@@ -26,6 +29,9 @@ Marques L; Costa B; Vale N et al. (2022). Pharmaceutics 14
 
 ## Model component
 <dbs-pgx drug="nebivolol" model-id="Nebivolol_Marques2022_reference" status="model_quarantined" stale="false" population="young healthy individuals" measured-compound="nebivolol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

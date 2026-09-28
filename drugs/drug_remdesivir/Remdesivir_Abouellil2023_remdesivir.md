@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal; T3_param_coverage
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **engineer**</sub>
+**The remdesivir model's terminal half-life (4.3 h) misses the paper's 29.4 h by far, and central/peripheral volumes V1 (4.89 L) and V2 (46.5 L) were neither emitted nor defaulted.**
+
+Simulated as the paper dosed it, the model's terminal half-life is 4.3 h against the reported 29.4 h, a ratio of 0.1466, far outside tolerance. The parameter coverage check found only 2 of the 4 expected parameters covered: V1 (4.89 L) and V2 (46.5 L) were neither emitted nor present among the defaults, so the record was held back for review. The clearance parameters CL (18.1 L/h) and Q (13.2 L/h) were covered, and the structure links remdesivir to GS-704277 and GS-441524 via formation clearances. Extracted — remdesivir: V1 4.89 L, V2 46.5 L, Q 13.2 L/h, CL 18.1 L/h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Abouellil A; Bilal M; Taubert M; Fuhr U et al. (2023). Naunyn-Schmiedeberg's archives of pharmacology 396

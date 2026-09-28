@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ruan Y; Thabit H; Kumareswaran K; Hovorka R et al. (2014). Computer methods and programs in biomedicine 117
@@ -25,6 +27,9 @@ Ruan Y; Thabit H; Kumareswaran K; Hovorka R et al. (2014). Computer methods and 
 
 ## Model component
 <dbs-pgx drug="insulin lispro" model-id="InsulinLispro_Ruan2014_adults_with_type_2_diabetes" status="rejected" stale="false" population="adults with type 2 diabetes" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

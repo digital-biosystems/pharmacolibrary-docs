@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;nicotinamide&quot;,&quot;href&quot;:&quot;drugs/drug_nicotinamide/&quot;},{&quot;label&quot;:&quot;Maloney_2026 \u00b7 PD Mitochondrial oxygen consumption&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Mitochondrial oxygen consumption — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>

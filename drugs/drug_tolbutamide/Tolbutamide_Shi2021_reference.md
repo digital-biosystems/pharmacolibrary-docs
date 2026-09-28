@@ -5,7 +5,7 @@
 
 # tolbutamide — `Tolbutamide_Shi2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The tolbutamide record was held back because the absorption rate constant ka and lag time were not reported in the source, so library defaults were substituted, and a first-order absorption input with F=1 assumed was judged not acceptable.**
+
+The source did not report ka or Tlag for tolbutamide, so placeholder values would have been used in their place, and the model was therefore held back. The builder additionally assumed F=1 and Fm=1 with an apparent (/F) parameterization, implying extravascular dosing with a first-order depot input; this invented absorption was adjudicated as not acceptable. The reported parameters themselves — CL/F of 1.23 L/h/kg and V/F of 1.48 L/kg — drew no disagreement from the second reader, who matched the extracted values on all disputed fields. Extracted — tolbutamide: CL/F 1.23 L/h/kg/, V/F 1.48 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 3320.91, the second reading 3320.91; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Shi Y; Meng D; Wang S; Geng P; Xu T; Zhou Q; et al. et al. (2021). Drug design, development and therapy 15
@@ -25,6 +29,9 @@ Shi Y; Meng D; Wang S; Geng P; Xu T; Zhou Q; et al. et al. (2021). Drug design, 
 
 ## Model component
 <dbs-pgx drug="tolbutamide" model-id="Tolbutamide_Shi2021_reference" status="needs_review" stale="false" population="" measured-compound="tolbutamide" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +62,23 @@ Shi Y; Meng D; Wang S; Geng P; Xu T; Zhou Q; et al. et al. (2021). Drug design, 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q32]` | 3320.91 | 3320.91 | mismatch |
+| `gpt-oss:120b` | `values[Q53]` | 1.96 | 1.96 | mismatch |
+| `gpt-oss:120b` | `values[Q56]` | 1.17 | 1.17 | mismatch |
+| `gpt-oss:120b` | `values[Q88]` | 9010.48 | 9010.48 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -125,6 +141,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference.svg" alt="Tolbutamide_Shi2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_sim_controls.json"></dbs-fmusim>
 

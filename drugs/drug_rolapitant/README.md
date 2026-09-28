@@ -5,7 +5,8 @@
 
 - **generic name:** rolapitant
 - **ATC codes:** `A04AD14`
-- **DrugBank:** [DB09291](https://go.drugbank.com/drugs/DB09291)
+- **DrugBank:** [DB09291](https://go.drugbank.com/drugs/DB09291) · **PubChem:** [CID 10311306](https://pubchem.ncbi.nlm.nih.gov/compound/10311306)
+- **molar mass:** 500.485 g/mol (C25H26F6N2O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -23,13 +24,13 @@ By blocking Substance P from interacting with NK-1 receptors in the gut and the 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl[M19], Vd[M19], formation_rate left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Wang_2019_reference](drugs/drug_rolapitant/Rolapitant_Wang2019_reference.md) | Wang (2019) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_fosrolapitant](drugs/drug_rolapitant/Rolapitant_Li2026_fosrolapitant.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_healthy_control](drugs/drug_rolapitant/Rolapitant_Li2026_healthy_control.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_moderate_hepatic_impairment](drugs/drug_rolapitant/Rolapitant_Li2026_moderate_hepatic_impairment.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_rolapitant](drugs/drug_rolapitant/Rolapitant_Li2026_rolapitant.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl[M19], Vd[M19], formation_rate left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Wang_2019_reference](drugs/drug_rolapitant/Rolapitant_Wang2019_reference.md) | parent + 1 metabolite (1-cmt each) | 5 | Wang (2019) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_fosrolapitant](drugs/drug_rolapitant/Rolapitant_Li2026_fosrolapitant.md) | general linear (no model) | 6 | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_healthy_control](drugs/drug_rolapitant/Rolapitant_Li2026_healthy_control.md) | general linear (no model) | 5 | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_moderate_hepatic_impairment](drugs/drug_rolapitant/Rolapitant_Li2026_moderate_hepatic_impairment.md) | general linear (no model) | 5 | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_rolapitant](drugs/drug_rolapitant/Rolapitant_Li2026_rolapitant.md) | general linear (no model) | 5 | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
 
 ## ADME sites
 

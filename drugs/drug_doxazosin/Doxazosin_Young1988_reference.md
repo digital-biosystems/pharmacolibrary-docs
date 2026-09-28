@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q32]` (9.4 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 9.4, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-23 12:15:40.808183+00:00) predates the upstream re-run (2026-09-27 13:39:23.196373+00:00). Current validate status: `extracted`.
 
@@ -122,7 +123,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxazosin/Doxazosin_Young1988_reference/Doxazosin_Young1988_reference_modelica.zip" download>Doxazosin_Young1988_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_doxazosin/Doxazosin_Young1988_reference/Doxazosin_Young1988_reference_fmi.zip" download>Doxazosin_Young1988_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_doxazosin/Doxazosin_Young1988_reference/Doxazosin_Young1988_reference_fmi.zip" download>Doxazosin_Young1988_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Young1988_reference/Doxazosin_Young1988_reference_matlab.zip" download>Doxazosin_Young1988_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Young1988_reference/Doxazosin_Young1988_reference_matlab_simbio.zip" download>Doxazosin_Young1988_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Young1988_reference/Doxazosin_Young1988_reference_sbml.zip" download>Doxazosin_Young1988_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -134,7 +135,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_doxazosin/Doxazosin_Young1988_reference/Doxazosin_Young1988_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_doxazosin/Doxazosin_Young1988_reference/Doxazosin_Young1988_reference_sim_controls.json"></dbs-fmusim>
 

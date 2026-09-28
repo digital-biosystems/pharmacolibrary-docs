@@ -5,7 +5,7 @@
 
 # pethidine — `Pethidine_Groll2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The pethidine record was rejected because its two-compartment structure contains a compartment with no dosing path, and the extracted V/F label actually describes LAmB (amphotericin B), not pethidine, casting doubt on the parameter values.**
+
+The structure is a two-compartment model for pethidine, but the review found an unreachable or orphan compartment — a compartment with no path from the administered dose. The V/F parameter (0.42 L/kg) carries the verbatim label 'apparent volume of distribution of LAmB', a mismatch with the recorded compound pethidine. Additional extraction disagreements remain unresolved: the second reader read 127 where this record has 152, read 1.65 and 152 where this record has none, and read 32 where this record has 54.7, so the numeric content of the record is not consistently established. Extracted — pethidine: CL 0.637 L/h, V/F 0.42 L/kg, V2 49.2 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 32, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Groll AH; Rijnders BJA; Walsh TJ; Adler-Moore J; Lewis RE; Brüggemann RJM et al. (2019). Clinical infectious diseases : an official publication of the Infectious Diseases Society of America 68
@@ -25,6 +29,9 @@ Groll AH; Rijnders BJA; Walsh TJ; Adler-Moore J; Lewis RE; Brüggemann RJM et al
 
 ## Model component
 <dbs-pgx drug="pethidine" model-id="Pethidine_Groll2019_reference" status="rejected" stale="false" population="" measured-compound="pethidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** V/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 
@@ -50,14 +57,24 @@ Groll AH; Rijnders BJA; Walsh TJ; Adler-Moore J; Lewis RE; Brüggemann RJM et al
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q19]` | 32 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 152 | 127 | mismatch |
+| `gpt-oss:120b` | `values[Q59]` | not captured | 1.65 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | not captured | 152 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | 54.7 | 32 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

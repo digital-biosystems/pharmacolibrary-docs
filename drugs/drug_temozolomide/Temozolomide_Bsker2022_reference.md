@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[qf].parameter_id` (Q30 vs Q54) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**Temozolomide clearance of 3.29 L/h with central volume 10.5 L in pediatric CNS tumor patients yields an implausible disposition rate, and the peripheral distribution parameters (V 0.09 L, Q 0.0327 L/h) are physiologically impossible, indicating unit or scale extraction errors.**
+
+The record reports temozolomide parameters for a two-compartment model in pediatric patients with malignant CNS tumors: absorption rate constant 9.64 h−1, clearance 3.29 L/h, central volume 10.5 L, peripheral volume 0.09 L, intercompartmental clearance 0.0327 L/h, and transit rate 0.983 h−1. The clearance-to-volume relationship falls outside the physiological window, consistent with a unit or scale extraction error in the reported values. The peripheral volume of 0.09 L and intercompartmental clearance of 0.0327 L/h are implausibly small magnitudes for this population, reinforcing the extraction-error finding. A second reader disagreed on the identifier assigned to the intercompartmental clearance parameter, but this does not affect the physiological-plausibility rejection. Extracted — temozolomide: kabs 9.64 h−1, CL 3.29 liter/h, V1 10.5 liter, V 0.09 liter, Q 0.0327 liter/h, ktr 0.983 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[qf].parameter_id`: this record has Q30, the second reading Q54. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Büsker S; Jäger W; Poschner S; Mayr L; Al Jalali V; Gojo J; et al. et al. (2022). Cancer chemotherapy and pharmacology 89
@@ -26,6 +29,9 @@ Büsker S; Jäger W; Poschner S; Mayr L; Al Jalali V; Gojo J; et al. et al. (202
 
 ## Model component
 <dbs-pgx drug="temozolomide" model-id="Temozolomide_Bsker2022_reference" status="rejected" stale="false" population="pediatric patients with malignant central nervous system tumors" measured-compound="temozolomide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

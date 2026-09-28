@@ -4,7 +4,7 @@
 
 - **generic name:** dihydrocodeine and paracetamol
 - **ATC codes:** `N02AJ01`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

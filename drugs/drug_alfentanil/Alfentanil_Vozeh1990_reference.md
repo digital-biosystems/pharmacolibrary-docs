@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 2 scholar param(s) emitted or defaulted — got 0 covered
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The alfentanil three-compartment model was quarantined because clearance and volume of distribution had no extracted values and were left at library defaults, with only k12, k21 and k13 (0.104, 0.0673, 0.0170 min⁻¹) recorded.**
+
+The record lists alfentanil intercompartmental rate constants k12 = 0.104 min⁻¹, k21 = 0.0673 min⁻¹ and k13 = 0.0170 min⁻¹, but neither clearance nor volume of distribution was extracted from Vozeh_1990. The coverage check expected two parameters emitted or defaulted and obtained zero covered, with k12 and k21 named as neither emitted nor defaulted. The model builder substituted library default placeholders for the missing clearance and volume of distribution, so the model was held back rather than published with invented numbers. Extracted — alfentanil: k12 0.104 min⁻¹, k21 0.0673 min⁻¹, k13 0.017 min⁻¹.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Vozeh S; Maitre PO; Stanski DR et al. (1990). Journal of pharmacokinetics and biopharmaceutics 18
@@ -26,6 +29,9 @@ Vozeh S; Maitre PO; Stanski DR et al. (1990). Journal of pharmacokinetics and bi
 
 ## Model component
 <dbs-pgx drug="alfentanil" model-id="Alfentanil_Vozeh1990_reference" status="model_quarantined" stale="false" population="unknown" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

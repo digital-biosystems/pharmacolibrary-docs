@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The midazolam two-compartment pediatric model was rejected because the inter-compartmental clearance Q of 5091.62 mL/min is physiologically implausible next to a systemic clearance of 0.48 mL/min, indicating a unit or scale extraction error.**
+
+The record lists midazolam clearance CL of 0.48 mL/min and central volume V1 of 23.59 mL, but the inter-compartmental clearance Q is 5091.62 mL/min and the peripheral volume V2 is 6792.42 mL — magnitudes inconsistent with the other parameters and with pediatric physiology, consistent with a unit or scale error in the extracted values. The absorption parameters (kabs 0.14 /h, lag time 1.23 h) are plausible. The implausible Q/V2 magnitudes are the sole recorded cause of rejection; no other failed checks or builder deviations are reported. Extracted — midazolam: CL 0.48 mL/min, V1 23.6 mL, Q 5.09e+03 mL/min, V2 6.79e+03 mL, kabs 0.14 /h, tlag 1.23 h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Flores-Pérez C; Moreno-Rocha LA; Chávez-Pacheco JL; Noguez-Méndez NA; Flores-Pérez J; Ortiz-Marmolejo D; et al. et al. (2023). Pharmaceutics 15

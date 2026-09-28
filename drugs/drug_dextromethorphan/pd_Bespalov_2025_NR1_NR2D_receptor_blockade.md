@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;dextromethorphan&quot;,&quot;href&quot;:&quot;drugs/drug_dextromethorphan/&quot;},{&quot;label&quot;:&quot;Bespalov_2025 \u00b7 PD name&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dextromethorphan_Abduljalil2010_reference&quot;,&quot;label&quot;:&quot;Abduljalil_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dextromethorphan/Dextromethorphan_Abduljalil2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Vølund A; Polonsky KS; Bergman RN et al. (1987). Diabetes 36
@@ -25,6 +27,9 @@ Vølund A; Polonsky KS; Bergman RN et al. (1987). Diabetes 36
 
 ## Model component
 <dbs-pgx drug="insulin (human)" model-id="InsulinHuman_Vlund1987_conscious_dogs" status="rejected" stale="false" population="conscious dogs" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

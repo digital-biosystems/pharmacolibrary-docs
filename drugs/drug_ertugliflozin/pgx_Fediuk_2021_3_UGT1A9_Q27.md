@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;ertugliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_ertugliflozin/&quot;},{&quot;label&quot;:&quot;Fediuk_2021_3 \u00b7 PGx UGT1A9&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # UGT1A9 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>

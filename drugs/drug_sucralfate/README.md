@@ -4,7 +4,8 @@
 
 - **generic name:** sucralfate
 - **ATC codes:** `A02BX02`
-- **DrugBank:** [DB00364](https://go.drugbank.com/drugs/DB00364)
+- **DrugBank:** [DB00364](https://go.drugbank.com/drugs/DB00364) · **PubChem:** [CID 70789197](https://pubchem.ncbi.nlm.nih.gov/compound/70789197)
+- **molar mass:** 1558.67 g/mol (C12H35Al9O55S8) — DrugBank
 - **groups:** approved, investigational
 
 ## About

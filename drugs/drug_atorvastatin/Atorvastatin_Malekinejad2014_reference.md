@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q76]` (22267.2 vs not captured) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The atorvastatin record was held back because the absorption rate constant ka and lag time Tlag were absent from the source, so placeholder default values were substituted, alongside assumed F=1 and Fm=1 without molar correction.**
+
+The record describes a one-compartment atorvastatin model with apparent (over /F) parameterization — CL/F 767.7 ml/h/kg and V/F 22267.2 ml/kg — implying extravascular dosing with a first-order depot input. The source did not report ka or Tlag, so no values were extracted and library placeholder defaults were used in their place; this invented absorption was adjudicated as not acceptable. The builder further assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent rather than absolute. A second reader recorded no value for the V/F of 22267.2, disagreeing on that field. Extracted — atorvastatin: CL/F 768 ml/h/kg, V/F 2.23e+04 ml/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of V/F: this record has 22267.2, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 22:52:00.658534+00:00) predates the upstream re-run (2026-09-23 23:34:01.605489+00:00). Current validate status: `extracted`.
 
@@ -137,7 +140,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_atorvastatin/Atorvastatin_Malekinejad2014_reference/Atorvastatin_Malekinejad2014_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_atorvastatin/Atorvastatin_Malekinejad2014_reference/Atorvastatin_Malekinejad2014_reference_sim_controls.json"></dbs-fmusim>
 

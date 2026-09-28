@@ -4,7 +4,8 @@
 
 - **generic name:** arbutamine
 - **ATC codes:** `C01CA22`
-- **DrugBank:** [DB01102](https://go.drugbank.com/drugs/DB01102)
+- **DrugBank:** [DB01102](https://go.drugbank.com/drugs/DB01102) · **PubChem:** [CID 60789](https://pubchem.ncbi.nlm.nih.gov/compound/60789)
+- **molar mass:** 317.3795 g/mol (C18H23NO4) — DrugBank
 - **groups:** approved
 
 ## About

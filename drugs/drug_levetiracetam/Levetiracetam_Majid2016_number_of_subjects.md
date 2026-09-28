@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for levetiracetam's volume of distribution — the 1 extracted parameter describes concomitant antiepileptic drugs, not levetiracetam.**
+
+The model was built, but levetiracetam's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — concomitant antiepileptic drugs: CL 3.5 l h−1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `perampanel`, measured `concomitant antiepileptic drugs`.
 
@@ -27,6 +29,9 @@ Majid O; Laurenza A; Ferry J; Hussein Z et al. (2016). British journal of clinic
 
 ## Model component
 <dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Majid2016_number_of_subjects" status="model_quarantined" stale="false" population="patients with refractory partial-onset seizures" measured-compound="concomitant antiepileptic drugs" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

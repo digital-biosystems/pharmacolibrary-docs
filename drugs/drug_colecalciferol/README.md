@@ -5,7 +5,8 @@
 
 - **generic name:** colecalciferol
 - **ATC codes:** `A11CC05`, `M05BB03`, `M05BB07`, `M05BB09`, `M05BX53`
-- **DrugBank:** [DB00169](https://go.drugbank.com/drugs/DB00169)
+- **DrugBank:** [DB00169](https://go.drugbank.com/drugs/DB00169) · **PubChem:** [CID 5280795](https://pubchem.ncbi.nlm.nih.gov/compound/5280795)
+- **molar mass:** 384.6377 g/mol (C27H44O) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About
@@ -26,12 +27,12 @@ Concurrently, as one of the most commonly utilized forms of vitamin D, cholecalc
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Deb_2020_reference](drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md) | Deb S et al., Simulation of Physicochemical and Pharm…, Pharmaceuticals (Basel, Swi… (2020) | [10.3390/ph13080160](https://doi.org/10.3390/ph13080160) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hoeben_2026_reference](drugs/drug_colecalciferol/Colecalciferol_Hoeben2026_reference.md) | Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026) | [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Jia_2026_reference](drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference.md) | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kim_2026_reference](drugs/drug_colecalciferol/Colecalciferol_Kim2026_reference.md) | Kim T et al., Population Pharmacokinetic Comparabilit…, BioDrugs : clinical immunot… (2026) | [10.1007/s40259-026-00800-1](https://doi.org/10.1007/s40259-026-00800-1) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Deb_2020_reference](drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md) | 1-compartment, IV | 2 | Deb S et al., Simulation of Physicochemical and Pharm…, Pharmaceuticals (Basel, Swi… (2020) | [10.3390/ph13080160](https://doi.org/10.3390/ph13080160) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: partial</span> | [Hoeben_2026_reference](drugs/drug_colecalciferol/Colecalciferol_Hoeben2026_reference.md) | 1-compartment, IV | 2 | Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026) | [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: disputed</span> | [Jia_2026_reference](drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference.md) | 1-compartment, oral | 4 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kim_2026_reference](drugs/drug_colecalciferol/Colecalciferol_Kim2026_reference.md) | 1-compartment, IV | 2 | Kim T et al., Population Pharmacokinetic Comparabilit…, BioDrugs : clinical immunot… (2026) | [10.1007/s40259-026-00800-1](https://doi.org/10.1007/s40259-026-00800-1) |
 
 ## Pharmacodynamics (PD)
 

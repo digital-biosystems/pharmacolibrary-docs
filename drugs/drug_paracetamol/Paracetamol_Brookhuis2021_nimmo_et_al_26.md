@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**CL/F has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL/F), so that value has no SI equivalent. Extracted — paracetamol: CL/F 36.8 %, V/F 0.82 L/kg, tlag 4.2 min.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Brookhuis SAM; Allegaert K; Hanff LM; Lub-de Hooge MN; Dallmann A; Mian P et al. (2021). Pharmaceutics 13

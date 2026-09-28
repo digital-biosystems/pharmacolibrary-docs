@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The gliclazide record was held back because the absorption rate constant ka and lag time Tlag were not reported and defaults were substituted, and the AUC unit mg·h·ml⁻¹ could not be converted to SI.**
+
+The model assumes F=1, Fm=1 and no molar correction, so CL/F (15 ml·min⁻¹) and V/F (19 l) are apparent parameters with a first-order depot input for extravascular dosing. The absorption rate constant ka was not reported in the source, so a default was substituted — this invented absorption was judged not acceptable. The AUC (47 mg·h·ml⁻¹) carries a unit that could not be converted to SI, so that parameter entered the record without an SI value. Extracted — gliclazide: AUCt 47 mg.h ml -1, CL/F 15 ml min -1, V/F 19 l.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Frey N; Laveille C; Paraire M; Francillard M; Holford NH; Jochemsen R et al. (2003). British journal of clinical pharmacology 55
@@ -25,6 +27,9 @@ Frey N; Laveille C; Paraire M; Francillard M; Holford NH; Jochemsen R et al. (20
 
 ## Model component
 <dbs-pgx drug="gliclazide" model-id="Gliclazide_Frey2003_residual_variability" status="needs_review" stale="false" population="Type 2 diabetic patients" measured-compound="gliclazide" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -130,6 +135,8 @@ Frey N; Laveille C; Paraire M; Francillard M; Holford NH; Jochemsen R et al. (20
 </div><figure class="pk-models-diagram"><img src="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability.svg" alt="Gliclazide_Frey2003_residual_variability diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability_sim_controls.json"></dbs-fmusim>
 

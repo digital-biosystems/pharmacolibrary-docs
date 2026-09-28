@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (C1-inhibitor (SC) vs C1-INH (SC)) and 8 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is c1 inhibitor plasma derived's own; they describe C1-inhibitor functional activity.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has C1-inhibitor (SC), the second reading C1-INH (SC); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `C1-inhibitor (SC)`, measured `C1-inhibitor functional activity`.
 
@@ -30,6 +33,9 @@ Pawaskar D; Tortorici MA; Zuraw B; Craig T; Cicardi M; Longhurst H; et al. et al
 
 ## Model component
 <dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Pawaskar2018_reference" status="accepted_with_caveats" stale="false" population="healthy volunteers and patients with hereditary angioedema" measured-compound="C1-inhibitor functional activity" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -156,6 +162,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference/C1InhibitorPlasmaDerived_Pawaskar2018_reference.svg" alt="C1InhibitorPlasmaDerived_Pawaskar2018_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0146 /h, F 43). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference/C1InhibitorPlasmaDerived_Pawaskar2018_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference/C1InhibitorPlasmaDerived_Pawaskar2018_reference_sim_controls.json"></dbs-fmusim>
 

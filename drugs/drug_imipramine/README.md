@@ -5,7 +5,8 @@
 
 - **generic name:** imipramine
 - **ATC codes:** `N06AA02`
-- **DrugBank:** [DB00458](https://go.drugbank.com/drugs/DB00458)
+- **DrugBank:** [DB00458](https://go.drugbank.com/drugs/DB00458) · **PubChem:** [CID 3696](https://pubchem.ncbi.nlm.nih.gov/compound/3696)
+- **molar mass:** 280.4073 g/mol (C19H24N2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ May also be used off-label to manage panic disorders with or without agoraphobia
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Tamayo_1992_reference](drugs/drug_imipramine/Imipramine_Tamayo1992_reference.md) | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Tamayo_1992_reference](drugs/drug_imipramine/Imipramine_Tamayo1992_reference.md) | parent + metabolite (no model) | 1 | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) |
 
 ## Pharmacodynamics (PD)
 

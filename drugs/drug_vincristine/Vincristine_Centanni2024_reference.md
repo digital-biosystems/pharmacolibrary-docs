@@ -15,15 +15,20 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 4 covered
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The vincristine 2-compartment model was quarantined because clearance, volume of distribution and the intercompartmental rate constants k12 and k21 had no source values, so library placeholders stood in for them.**
+
+The record lists only the lag time (0.058 h) as a usable parameter; vincristine's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The coverage check found 4 of 5 expected parameters covered, with tlag neither emitted nor defaulted. The model builder substituted generic default values for the missing clearance, volume of distribution, k12 and k21, which is what triggered the quarantine. Extracted — vincristine: CL 45.2, V1 23.3, Q 114, V2 576, tlag 0.058 h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Centanni_2024)
 
 ## Model component
 <dbs-pgx drug="vincristine" model-id="Vincristine_Centanni2024_reference" status="model_quarantined" stale="false" population="pediatric oncology patients" measured-compound="vincristine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

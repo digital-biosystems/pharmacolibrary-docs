@@ -5,7 +5,7 @@
 
 # blood plasma — `BloodPlasma_CherkaouiRbati2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T3_param_coverage
-**How to address:** Open the emitted .mo and compare its base class and parameters with the record.
-<sub>owner: **engineer**</sub>
+**The record was held for review because the absorption lag time parameter tlag (0.147 h) is listed but not covered by the model's parameter set — only 4 of the 5 expected parameters were emitted or defaulted.**
+
+The two-compartment blood plasma model carries five parameters: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, and tlag 0.147 h. The coverage check expected 5 parameters to be emitted or defaulted but obtained only 4, with tlag neither emitted nor present in the defaults, so the model was held back. A second reader also left the seven auxiliary value fields without entries, so no independent confirmation of those numbers exists. Extracted — blood plasma: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, tlag 0.147 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q315: this record has 0.1, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Cherkaoui-Rbati MH; Andenmatten N; Burgert L; Egbelowo OF; Fendel R; Fornari C; Gabel M; Ward J; Möhrle JJ; Gobeau N et al. (2023). CPT: pharmacometrics & systems pharmacology 12
@@ -25,6 +29,9 @@ Cherkaoui-Rbati MH; Andenmatten N; Burgert L; Egbelowo OF; Fendel R; Fornari C; 
 
 ## Model component
 <dbs-pgx drug="blood plasma" model-id="BloodPlasma_CherkaouiRbati2023_reference" status="needs_review" stale="false" population="" measured-compound="blood_plasma" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -52,14 +59,29 @@ Cherkaoui-Rbati MH; Andenmatten N; Burgert L; Egbelowo OF; Fendel R; Fornari C; 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.375 (6/16 fields) | 10 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q315]` | 0.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q316]` | 0.179 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q320]` | 0.205 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q321]` | 1.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q327]` | 0.0771 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | 6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q56]` | 2.85 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 144 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q83]` | 0.147 | 2.85 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +149,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_blood_plasma/BloodPlasma_CherkaouiRbati2023_reference/BloodPlasma_CherkaouiRbati2023_reference.svg" alt="BloodPlasma_CherkaouiRbati2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_blood_plasma/BloodPlasma_CherkaouiRbati2023_reference/BloodPlasma_CherkaouiRbati2023_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_blood_plasma/BloodPlasma_CherkaouiRbati2023_reference/BloodPlasma_CherkaouiRbati2023_reference_sim_controls.json"></dbs-fmusim>
 

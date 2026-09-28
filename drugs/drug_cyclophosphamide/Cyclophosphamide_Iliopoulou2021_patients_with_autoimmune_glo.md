@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Iliopoulou VN; Charkoftaki G; Cooper JC; Dokoumetzidis A; Joy MS et al. (2021). The Journal of pharmacy and pharmacology 73
@@ -25,6 +27,9 @@ Iliopoulou VN; Charkoftaki G; Cooper JC; Dokoumetzidis A; Joy MS et al. (2021). 
 
 ## Model component
 <dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Iliopoulou2021_patients_with_autoimmune_glo" status="rejected" stale="false" population="patients with autoimmune glomerulonephritis" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

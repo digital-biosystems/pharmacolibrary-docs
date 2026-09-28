@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal; T1_t_half_beta
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl].value` (16 vs 73) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 20, model 1.66e+03).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — desipramine: CL 16 l h -1, V1 22 l, Q 13 l h -1, V2 13 l, IOV 7.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].value`: this record has 16, the second reading 73; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gueorguieva I; Jackson K; Wrighton SA; Sinha VP; Chien JY et al. (2010). British journal of clinical pharmacology 70
@@ -26,6 +29,9 @@ Gueorguieva I; Jackson K; Wrighton SA; Sinha VP; Chien JY et al. (2010). British
 
 ## Model component
 <dbs-pgx drug="desipramine" model-id="Desipramine_Gueorguieva2010_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -154,6 +160,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference.svg" alt="Desipramine_Gueorguieva2010_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference_sim_controls.json"></dbs-fmusim>
 

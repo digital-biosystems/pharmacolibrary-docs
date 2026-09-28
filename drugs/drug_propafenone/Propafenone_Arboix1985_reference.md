@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl]` (1.03 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The propafenone one-compartment record was rejected because it was built from the abstract alone and shows a dimension mismatch on a structural parameter plus a compartment with no path from the dose.**
+
+The record for propafenone in patients with paroxysmal supraventricular tachycardia was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. It was rejected for a dimension mismatch on a structural parameter and for an unreachable/orphan compartment — a compartment with no path from the dose. The parameter set lists t1/2α = 2.8 min, t1/2β = 80 min, kel = 0.12 min⁻¹, V2 (Vd beta) = 1.6 l/kg and CL = 1.03 l/h, and a second reader returned null for all five values, so none could be confirmed. Extracted — propafenone: t1/2α 2.8 min, t1/2β 80 min, kel 0.12 min, -1, V2 1.6 1/kg, CL 1.03 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 1.03, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Arboix M; Puigdemont A; Moya A; Cinca J et al. (1985). Methods and findings in experimental and clinical pharmacology 7
 
 ## Model component
 <dbs-pgx drug="propafenone" model-id="Propafenone_Arboix1985_reference" status="rejected" stale="false" population="patients with paroxysmal supraventricular tachycardia" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

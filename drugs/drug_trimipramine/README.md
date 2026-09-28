@@ -4,7 +4,8 @@
 
 - **generic name:** trimipramine
 - **ATC codes:** `N06AA06`
-- **DrugBank:** [DB00726](https://go.drugbank.com/drugs/DB00726)
+- **DrugBank:** [DB00726](https://go.drugbank.com/drugs/DB00726) · **PubChem:** [CID 5584](https://pubchem.ncbi.nlm.nih.gov/compound/5584)
+- **molar mass:** 294.4338 g/mol (C20H26N2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -4,7 +4,8 @@
 
 - **generic name:** ammonium chloride
 - **ATC codes:** `B05XA04`, `G04BA01`
-- **DrugBank:** [DB06767](https://go.drugbank.com/drugs/DB06767)
+- **DrugBank:** [DB06767](https://go.drugbank.com/drugs/DB06767) · **PubChem:** [CID 25517](https://pubchem.ncbi.nlm.nih.gov/compound/25517)
+- **molar mass:** 53.491 g/mol (ClH4N) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About

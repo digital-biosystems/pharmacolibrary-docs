@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 6 scholar param(s) emitted or defaulted — got 4 covered
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**Capecitabine's elimination clearance and intercompartmental clearance had no extracted values, so library defaults were substituted, and the absorption parameters kabs and tlag were also uncovered, so the model was quarantined.**
+
+The record lists CL (CL1, 75.8) and Q (CL2, 1190) among its parameters, yet the model's elimination clearance from the central compartment and intercompartmental clearance had no source values, so placeholder numbers from a library stood in for them. The parameter coverage check expected 6 parameters emitted or defaulted but only 4 were covered, with kabs (KA, 1.09) and tlag (TLAG, 5.52E-4) neither emitted nor defaulted. Because these capecitabine parameters were missing, the model was held back rather than published. Extracted — capecitabine: kabs 1.09, tlag 0.000552, V1 90.6, CL 75.8, V2 17.8, Q 1.19e+03, V3 73.6, CLR 0.615.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `capecitabine`, measured `5-FU`.
 
@@ -27,6 +29,9 @@ Blesch KS; Gieschke R; Tsukamoto Y; Reigner BG; Burger HU; Steimer JL et al. (20
 
 ## Model component
 <dbs-pgx drug="capecitabine" model-id="Capecitabine_Blesch2003_reference" status="model_quarantined" stale="false" population="cancer patients" measured-compound="5-FU" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

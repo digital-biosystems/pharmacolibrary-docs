@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22, Q76, Q61 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[correlation between body weight and volume of distribution after correction for body weight]` (0.428 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**CL, V/F and V have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL and V/F), so that value has no SI equivalent. Extracted — midazolam: CL 483 ml min~l, V/F 1.94 litre kg~l, V 0.428, kabs 0.14 /h, tlag 1.23 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of correlation between body weight and volume of distribution after correction for body weight: this record has 0.428, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Persson P; Nilsson A; Hartvig P; Tamsen A et al. (1987). British journal of anaesthesia 59

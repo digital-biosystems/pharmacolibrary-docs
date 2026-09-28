@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (R(-)-flurbiprofen and S(+)-flurbiprofen vs flurbiprofen) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for flurbiprofen's clearance and volume of distribution — all 8 extracted parameters describe R(-)-flurbiprofen, not flurbiprofen.**
+
+The model was built, but flurbiprofen's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — R(-)-flurbiprofen: V 15, CL 2.92, Q 0.32, FG -0.15, Vss 0.03, omega_cov 0.14, add_error 0.003, sigma 0.001.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R(-)-flurbiprofen and S(+)-flurbiprofen, the second reading flurbiprofen; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `flurbiprofen`, measured `R(-)-flurbiprofen and S(+)-flurbiprofen`.
 
@@ -28,6 +31,9 @@ Yao H; Luo X; Yuan J; Zhang H; An H; Feng Y et al. (2025). Drug design, developm
 
 ## Model component
 <dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Yao2025_reference" status="model_quarantined" stale="false" population="selective joint replacement patients with postoperative pain" measured-compound="R(-)-flurbiprofen and S(+)-flurbiprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

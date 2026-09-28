@@ -5,7 +5,8 @@
 
 - **generic name:** tapentadol
 - **ATC codes:** `N02AX06`
-- **DrugBank:** [DB06204](https://go.drugbank.com/drugs/DB06204)
+- **DrugBank:** [DB06204](https://go.drugbank.com/drugs/DB06204) · **PubChem:** [CID 9838022](https://pubchem.ncbi.nlm.nih.gov/compound/9838022)
+- **molar mass:** 221.3385 g/mol (C14H23NO) — DrugBank
 - **groups:** approved
 
 ## About
@@ -20,6 +21,16 @@ The immediate-release tapentadol oral tablets are approved for use in patients s
 
 The extended-release tablets of tapentadol are indicated for the management of pain severe enough to require daily, around-the-clock, long-term opioid treatment and for which alternative treatment options are inadequate. They are also indicated for the management of neuropathic pain associated with diabetic peripheral neuropathy (DPN) in adults severe enough to require daily, around-the-clock, long-term opioid treatment and for which alternative treatment options are inadequate. This formulation is not indicated as an as-needed (prn) analgesic.[L47516]
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| tapentadol | parent | 221.339 | C14H23NO | DrugBank | [9838022](https://pubchem.ncbi.nlm.nih.gov/compound/9838022) | Jończyk_2022 |
+| tapentadol-O-glucuronide | metabolite | 397.5 | — | PubChem | [71752323](https://pubchem.ncbi.nlm.nih.gov/compound/71752323) | Jończyk_2022 |
+| tapentadol-O-sulfate | metabolite | 301.4 | — | PubChem | [71752327](https://pubchem.ncbi.nlm.nih.gov/compound/71752327) | Jończyk_2022 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
@@ -28,12 +39,12 @@ The extended-release tablets of tapentadol are indicated for the management of p
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Watson_2019_reference](drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md) | Watson E et al., Population pharmacokinetic modeling to…, Journal of pain research (2019) | [10.2147/JPR.S208454](https://doi.org/10.2147/JPR.S208454) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19, Q18 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Jończyk_2022_reference](drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference.md) | Jończyk R et al., Multiple Dose Pharmacokinetics of Tapen…, Journal of pain research (2022) | [10.2147/JPR.S364902](https://doi.org/10.2147/JPR.S364902) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Khalil_2020_final](drugs/drug_tapentadol/Tapentadol_Khalil2020_final.md) | Khalil F et al., Population Pharmacokinetics of Tapentad…, Journal of pain research (2020) | [10.2147/JPR.S269549](https://doi.org/10.2147/JPR.S269549) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2017_reference](drugs/drug_tapentadol/Tapentadol_Zhang2017_reference.md) | Zhang L et al., Quantifying the Exposure of Tapentadol…, Clinical drug investigation (2017) | [10.1007/s40261-016-0482-z](https://doi.org/10.1007/s40261-016-0482-z) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Watson_2019_reference](drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md) | 1-compartment, oral | 4 (+2 cov.) | Watson E et al., Population pharmacokinetic modeling to…, Journal of pain research (2019) | [10.2147/JPR.S208454](https://doi.org/10.2147/JPR.S208454) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19, Q18 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Jończyk_2022_reference](drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference.md) | general linear (no model) | 7 | Jończyk R et al., Multiple Dose Pharmacokinetics of Tapen…, Journal of pain research (2022) | [10.2147/JPR.S364902](https://doi.org/10.2147/JPR.S364902) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Khalil_2020_final](drugs/drug_tapentadol/Tapentadol_Khalil2020_final.md) | 1-compartment (no model) | 6 (+3 cov.) | Khalil F et al., Population Pharmacokinetics of Tapentad…, Journal of pain research (2020) | [10.2147/JPR.S269549](https://doi.org/10.2147/JPR.S269549) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2017_reference](drugs/drug_tapentadol/Tapentadol_Zhang2017_reference.md) | 1-compartment (no model) | 0 | Zhang L et al., Quantifying the Exposure of Tapentadol…, Clinical drug investigation (2017) | [10.1007/s40261-016-0482-z](https://doi.org/10.1007/s40261-016-0482-z) |
 
 ## Pharmacodynamics (PD)
 

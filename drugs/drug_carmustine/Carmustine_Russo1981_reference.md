@@ -15,15 +15,20 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Russo R; Bartosek I; Piazza E; Santi AM; Libretti A; Garattini S et al. (1981). Cancer treatment reports 65
 
 ## Model component
 <dbs-pgx drug="carmustine" model-id="Carmustine_Russo1981_reference" status="curated_candidate" stale="false" population="patients with lung cancer" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -106,6 +111,8 @@ Russo R; Bartosek I; Piazza E; Santi AM; Libretti A; Garattini S et al. (1981). 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_carmustine/Carmustine_Russo1981_reference/Carmustine_Russo1981_reference.svg" alt="Carmustine_Russo1981_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_carmustine/Carmustine_Russo1981_reference/Carmustine_Russo1981_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_carmustine/Carmustine_Russo1981_reference/Carmustine_Russo1981_reference_sim_controls.json"></dbs-fmusim>
 

@@ -4,7 +4,7 @@
 
 - **generic name:** nitrofural
 - **ATC codes:** `B05CA03`, `D08AF01`, `D09AA03`, `P01CC02`, `S01AX04`, `S02AA02`
-- **DrugBank:** [DB00336](https://go.drugbank.com/drugs/DB00336)
+- **DrugBank:** [DB00336](https://go.drugbank.com/drugs/DB00336) · **PubChem:** not captured
 - **groups:** approved, vet_approved, withdrawn
 
 ## About

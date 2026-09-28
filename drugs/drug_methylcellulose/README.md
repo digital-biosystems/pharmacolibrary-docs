@@ -4,7 +4,7 @@
 
 - **generic name:** methylcellulose
 - **ATC codes:** `A06AC06`
-- **DrugBank:** [DB11228](https://go.drugbank.com/drugs/DB11228)
+- **DrugBank:** [DB11228](https://go.drugbank.com/drugs/DB11228) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

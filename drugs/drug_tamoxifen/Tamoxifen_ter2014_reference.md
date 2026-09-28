@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (tamoxifen vs unknown) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is tamoxifen's own; they describe dextromethorphan, dextrorphan, 3-hydroxymorphinan and 3-methoxymorphinan. Extracted — dextromethorphan: V1 188 l, V2 1.66e+03 l, kabs 0.213 h -1, tlag 0.369 h, Q 415 l h -1; dextrorphan: CLfm 1.56e+03 l h -1, kel 1.11 h -1; 3-hydroxymorphinan: CLfm 362 l h -1, CL 5.73e+03 l h -1; 3-methoxymorphinan: CLfm 44.7 l h -1, kel 13.4 h -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tamoxifen, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 ter Heine R; Binkhorst L; de Graan AJ; de Bruijn P; Beijnen JH; Mathijssen RH; et al. et al. (2014). British journal of clinical pharmacology 78

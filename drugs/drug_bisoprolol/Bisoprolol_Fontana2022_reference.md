@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 3 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[b]` (not captured vs 0.05) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The bisoprolol model was quarantined because clearance and volume of distribution had no source values and library placeholders were substituted, and tlag was left uncovered.**
+
+The record reports tlag 0.149, ka 2.31, V 218.00 and CL 0.382 for bisoprolol, but the model builder defaulted Cl and Vd, meaning no fitted clearance or volume of distribution existed in the source and placeholder values stood in for them. The parameter-coverage check expected 4 parameters emitted or defaulted but obtained 3, with tlag neither emitted nor defaulted. A second reader also disagreed on the extracted values: it read the beta_Cl_diuretic coefficient as null where this record has 0.000882, and read a beta parameter as 0.05 where this record has null, so the parameter set itself is uncertain. Extracted — bisoprolol: tlag 0.149, t1/2ka 2.31, V 218, CL 0.382, CLb 0.000882.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of b: this record has none, the second reading 0.05; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Fontana V; Turner RM; Francis B; Yin P; Pütz B; Hiltunen TP; et al. et al. (2022). Pharmacogenomics and personalized medicine 15
@@ -26,6 +29,9 @@ Fontana V; Turner RM; Francis B; Yin P; Pütz B; Hiltunen TP; et al. et al. (202
 
 ## Model component
 <dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Fontana2022_reference" status="model_quarantined" stale="false" population="patients with non-ST elevation acute coronary syndrome on bisoprolol" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

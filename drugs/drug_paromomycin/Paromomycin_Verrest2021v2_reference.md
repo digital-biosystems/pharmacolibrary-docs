@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default; nonlinear topology.
-**How to address:** not a curation fix — the pipeline is the limit here (engineer: the topology is outside the template set the engineer can build).
-<sub>owner: **engineer**</sub>
+**The paromomycin model lacks an extracted clearance — only the volume of distribution (0.998 L/kg) was recorded — and its nonlinear structure cannot be reproduced, so it was held back for review.**
+
+The record contains a single parameter for paromomycin, the volume of distribution of 0.998 liters/kg; no clearance value was extracted. A population model needs both clearance and volume to define disposition; without the clearance, the missing half would have been silently filled from a library default rather than the paper's fitted value, so the model was not published. In addition, the model structure is nonlinear, a topology outside what can be reconstructed from the paper, which further prevents a faithful build. Extracted — paromomycin: V 0.998 liters/kg.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Verrest L; Wasunna M; Kokwaro G; Aman R; Musa AM; Khalil EAG; et al. et al. (2021). Clinical pharmacokinetics 60
@@ -25,6 +27,9 @@ Verrest L; Wasunna M; Kokwaro G; Aman R; Musa AM; Khalil EAG; et al. et al. (202
 
 ## Model component
 <dbs-pgx drug="paromomycin" model-id="Paromomycin_Verrest2021v2_reference" status="needs_review" stale="false" population="visceral leishmaniasis patients" measured-compound="paromomycin" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+
+**Model structure:** nonlinear / manual; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** split column 'variability' is a table statistic/structure column, not a study population (mis-split estimate table)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**'variability' is a column of the estimates table, not a study population.**
+
+The table was split into one record per column, and 'variability' holds a statistic rather than a second set of estimates. None of the extracted parameters is levetiracetam's own; they describe concomitant antiepileptic drugs.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `perampanel`, measured `concomitant antiepileptic drugs`.
 
@@ -27,6 +29,9 @@ Majid O; Laurenza A; Ferry J; Hussein Z et al. (2016). British journal of clinic
 
 ## Model component
 <dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Majid2016_variability" status="rejected" stale="false" population="patients with refractory partial-onset seizures" measured-compound="concomitant antiepileptic drugs" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

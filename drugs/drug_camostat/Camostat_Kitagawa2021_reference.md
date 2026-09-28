@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The camostat/GBPA record lacks a distribution volume and any clearance or elimination parameter, so it is not a compartmental population PK model but an exposure/outcome paper, and its two-compartment structure leaves a compartment unreachable from the dose.**
+
+The GBPA parameters contain no distribution volume and no clearance or elimination rate, meaning the record describes an exposure/outcome analysis rather than a fitted compartmental population PK model. In addition, the two-compartment structure includes an unreachable compartment with no dosing path, so the structure is not a valid pharmacokinetic model. The record was therefore rejected. No parameter values were extracted.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `camostat mesylate`, measured `GBPA`.
 
@@ -28,6 +31,9 @@ Kitagawa J; Arai H; Iida H; Mukai J; Furukawa K; Ohtsu S; et al. et al. (2021). 
 
 ## Model component
 <dbs-pgx drug="camostat" model-id="Camostat_Kitagawa2021_reference" status="rejected" stale="false" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** apparent.
 

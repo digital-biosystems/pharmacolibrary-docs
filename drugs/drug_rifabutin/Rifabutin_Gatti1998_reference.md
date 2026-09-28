@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (60.9 vs not captured) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for rifabutin's clearance, volume of distribution, absorption lag time, central→peripheral rate constant and peripheral→central rate constant.**
+
+The model was built, but rifabutin's clearance, volume of distribution, absorption lag time, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rifabutin: kabs 0.201 /h, CL/F 60.9 liters/h, V 231 liters, Q 60.3 liters/h, V2/F 1 050 liters.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 60.9, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gatti G; Papa P; Torre D; Andreoni M; Poggio A; Bassetti M; et al. et al. (1998). Antimicrobial agents and chemotherapy 42
@@ -26,6 +29,9 @@ Gatti G; Papa P; Torre D; Andreoni M; Poggio A; Bassetti M; et al. et al. (1998)
 
 ## Model component
 <dbs-pgx drug="rifabutin" model-id="Rifabutin_Gatti1998_reference" status="model_quarantined" stale="false" population="HIV-infected patients" measured-compound="rifabutin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V2/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 

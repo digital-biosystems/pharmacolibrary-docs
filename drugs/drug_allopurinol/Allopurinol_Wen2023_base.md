@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/fm].parameter_id` (Q27 vs Q351) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The record was held back because the oxypurinol absorption rate constant ka was not reported and a default was invented, and the ABCB2 covariate effects were never simulated.**
+
+The model builder substituted library defaults for the missing absorption parameters ka and Tlag, and assumed F=1, Fm=1 with no molar correction, giving an apparent (/F) parameterization for the extravascular first-order input. The invented absorption (defaulted ka, not reported in the source) was judged not acceptable. Additionally, although the record defines an ABCB2 covariate effect on oxypurinol clearance (AA 0.0, CA 0.0539, CC 0.0183), only the reference individual was simulated, so these covariate scenarios were not exercised. A second reader also disagreed on the parameter identifiers assigned to CL/Fm and V/Fm. Extracted — oxypurinol: CL/F 1 L/h, V/F 47.7 L, kfm 1.1 /h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/fm].parameter_id`: this record has Q27, the second reading Q351; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
 

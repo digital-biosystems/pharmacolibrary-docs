@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (pegylated human erythropoietin vs PEG-EPO) and 9 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The record was rejected because the pegylated human erythropoietin clearance of 0.728 mL/h in Sprague-Dawley rats falls outside a physiologically plausible window, suggesting a unit or scale extraction error, and the model was built from the abstract alone.**
+
+The two-compartment model for pegylated human erythropoietin reports CL of 0.728 mL/h with V1 15.8 mL, Q 0.373 mL/h, V2 6.99 mL, Ka 0.0618 h⁻¹, Tlag 3.13 h and F 48.8%; the clearance magnitude was judged physiologically implausible, consistent with a unit or scale extraction error. The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. A second reader (gpt-oss:120b) disputed the analyte and dose compound naming (preferring PEG-EPO) and left the bioavailability (48.8), CL (0.728), Ka (0.0618), Q (0.373) and Tlag (3.13) values unconfirmed (null). Extracted — pegylated human erythropoietin: CL 0.728 mL/h, V1 15.8 mL, Q 0.373 mL/h, V2 6.99 mL, kabs 0.0618 h(-1), tlag 3.13 h, Fab 48.8 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has pegylated human erythropoietin, the second reading PEG-EPO; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Jolling K; Ruixo JJ; Hemeryck A; Piotrovskij V; Greway T et al. (2004). Journal of pharmaceutical sciences 93
@@ -26,6 +29,9 @@ Jolling K; Ruixo JJ; Hemeryck A; Piotrovskij V; Greway T et al. (2004). Journal 
 
 ## Model component
 <dbs-pgx drug="erythropoietin" model-id="Erythropoietin_Jolling2004_reference" status="rejected" stale="false" population="Sprague-Dawley rats" measured-compound="pegylated human erythropoietin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 

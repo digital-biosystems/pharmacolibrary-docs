@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\varpi^2_{\text{v2}}$$\end{document}πv22 d]` (0.95 vs not captured) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The vortioxetine central volume V2 was extracted as 0.95 with the nonsensical unit 'N = 3183b', a dimension mismatch on a structural parameter, and the one-compartment structure left a compartment unreachable from the dose, so the record was rejected.**
+
+For vortioxetine, the absorption rate constant (0.14 L/h) and oral clearance (39 L/h) were extracted with valid units, but the central volume of distribution V2 carries value 0.95 with unit 'N = 3183b', which is not a convertible volume unit, so the parameter could not be given an SI value. This dimension mismatch on a structural parameter, together with a compartment having no path from the dose in the one-compartment structure, led to rejection. A second reader could not confirm the V2 value, recording no alternative reading for it. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 39 L/h, V2 0.95 N = 3183b.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\varpi^2_{\text{v2}}$$\end{document}πv22 d: this record has 0.95, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Miao J; Wang G; Hou J; Areberg J; Zhao Y; Højer AM; et al. et al. (2019). Advances in therapy 36
@@ -26,6 +29,9 @@ Miao J; Wang G; Hou J; Areberg J; Zhao Y; Højer AM; et al. et al. (2019). Advan
 
 ## Model component
 <dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b" status="rejected" stale="false" population="Chinese healthy subjects and patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (vericiguat vs unknown) and 9 more field(s) — a structural parameter, so the record is disputed.
+**The vericiguat record was held for review because a reference check failed without computing a comparison, and the bioavailability F was left unextracted (null) while a second reader read 1.08.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record lists F for vericiguat with no value, and the second reader assigned 1.08 to bioavailability theta and parameters[f], disagreeing with the null. The failed check reported 'ratio None,' meaning it could not compute a comparison, so the fault is inconclusive rather than demonstrated. Additional disagreements concern the dose compartment, primary analyte, and model links, plus a sex covariate effect (0.850) attributed to different parameters by the two readers. Extracted — vericiguat: CL/F 1.3 L/h, V/F 38.9 L, kabs 1.5 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has vericiguat, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ruehs H; Klein D; Frei M; Grevel J; Austin R; Becker C; et al. et al. (2021). Clinical pharmacokinetics 60

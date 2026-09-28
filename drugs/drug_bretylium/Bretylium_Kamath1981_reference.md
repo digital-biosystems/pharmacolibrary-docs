@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `bretylium tosylate`, measured `bretylium`.
 
@@ -27,6 +29,9 @@ Kamath BL; Stampfli HF; Lai CM; Yacobi A et al. (1981). Journal of pharmaceutica
 
 ## Model component
 <dbs-pgx drug="Bretylium" model-id="Bretylium_Kamath1981_reference" status="curated_candidate" stale="false" population="rats" measured-compound="bretylium" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -125,6 +130,8 @@ Kamath BL; Stampfli HF; Lai CM; Yacobi A et al. (1981). Journal of pharmaceutica
 </div><figure class="pk-models-diagram"><img src="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference.svg" alt="Bretylium_Kamath1981_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.537 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_sim_controls.json"></dbs-fmusim>
 

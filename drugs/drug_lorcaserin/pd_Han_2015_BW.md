@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;lorcaserin&quot;,&quot;href&quot;:&quot;drugs/drug_lorcaserin/&quot;},{&quot;label&quot;:&quot;Han_2015 \u00b7 PD body weight&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # body weight — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>

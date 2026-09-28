@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/f].value` (14.7 vs 16.3) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The escitalopram record was held back because the absorption rate constant ka and Tlag were not reported in the source and library defaults were substituted, effectively inventing the absorption, and a second reader disputes the CL/F and V/F values.**
+
+The model builder defaulted ka and Tlag because these absorption parameters were missing from the source, so the first-order depot input (an apparent /F parameterization with F=1, Fm=1 assumed and no molar correction) rests on an invented ka rather than a reported value. A second reader also extracted different numbers: CL/F of 16.3 L/h versus 14.7 L/h, V/F of 815 L versus 581.9 L, and covariate effects on age (0.0077) and two other covariates (0.847, 0.479) that this record omits entirely. These conflicting extractions of the same published escitalopram model for Chinese psychiatric patients leave the parameter values unconfirmed. Extracted — escitalopram: CL/F 14.7 L/h, V/F 582 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].value`: this record has 14.7, the second reading 16.3; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Liu S; Xiao T; Huang S; Li X; Kong W; Yang Y; et al. et al. (2022). Frontiers in pharmacology 13
@@ -26,6 +29,9 @@ Liu S; Xiao T; Huang S; Li X; Kong W; Yang Y; et al. et al. (2022). Frontiers in
 
 ## Model component
 <dbs-pgx drug="escitalopram" model-id="Escitalopram_Liu2022_reference" status="needs_review" stale="false" population="Chinese psychiatric patients" measured-compound="escitalopram" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -157,6 +163,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference.svg" alt="Escitalopram_Liu2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_sim_controls.json"></dbs-fmusim>
 

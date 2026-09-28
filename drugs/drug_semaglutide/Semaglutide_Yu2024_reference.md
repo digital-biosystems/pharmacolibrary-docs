@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q36]` (6148 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q36: this record has 6148, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yu H; Ueckert S; Zhou L; Cheng J; Robertson D; Hansen L; Flor A; Parker V; Hamrén B; Khan AA et al. (2024). CPT: pharmacometrics & systems pharmacology 13

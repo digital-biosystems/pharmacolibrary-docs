@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;indobufen&quot;,&quot;href&quot;:&quot;drugs/drug_indobufen/&quot;},{&quot;label&quot;:&quot;Noh_2018 \u00b7 PD platelet aggregation inhibition&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # platelet aggregation inhibition — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.781). The first reading is what the record holds.">cross-check: disputed</span>

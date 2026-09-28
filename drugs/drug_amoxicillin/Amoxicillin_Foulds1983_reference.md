@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (266 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — amoxicillin: CL 266 ml/min, V 12.3 liters.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 266, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Foulds G; Stankewich JP; Marshall DC; O'Brien MM; Hayes SL; Weidler DJ; et al. et al. (1983). Antimicrobial agents and chemotherapy 23

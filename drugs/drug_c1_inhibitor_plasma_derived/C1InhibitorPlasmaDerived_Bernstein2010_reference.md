@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (C1 esterase inhibitor vs pC1-INH concentrate) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is c1 inhibitor plasma derived's own; they describe C1 esterase inhibitor. Extracted — C1 esterase inhibitor: t1/2z 32.7 hours, CL 0.92 mL/kg/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has C1 esterase inhibitor, the second reading pC1-INH concentrate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Bernstein JA; Ritchie B; Levy RJ; Wasserman RL; Bewtra AK; Hurewitz DS; et al. et al. (2010). Annals of allergy, asthma & immunology : official publication of the American College of Allergy, Asthma, & Immunology 105
@@ -26,6 +29,9 @@ Bernstein JA; Ritchie B; Levy RJ; Wasserman RL; Bewtra AK; Hurewitz DS; et al. e
 
 ## Model component
 <dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Bernstein2010_reference" status="needs_review" stale="false" population="patients with hereditary angioedema" measured-compound="C1 esterase inhibitor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

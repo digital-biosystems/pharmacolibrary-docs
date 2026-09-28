@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (celecoxib vs unknown) and 8 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 0.84, model 4.89).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Ct), so that value has no SI equivalent. Extracted — celecoxib: t1/2z 49.2 h, Ct 12.5 µg˙L−1, CL 49 L/h/70 kg, V 346 L/70 kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has celecoxib, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hannam JA; Murto KT; Anderson BJ; Dembo G; Kharasch ED et al. (2023). Paediatric anaesthesia 33
@@ -26,6 +29,9 @@ Hannam JA; Murto KT; Anderson BJ; Dembo G; Kharasch ED et al. (2023). Paediatric
 
 ## Model component
 <dbs-pgx drug="celecoxib" model-id="Celecoxib_Hannam2023_reference" status="needs_review" stale="false" population="adults" measured-compound="celecoxib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -170,6 +176,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_celecoxib/Celecoxib_Hannam2023_reference/Celecoxib_Hannam2023_reference.svg" alt="Celecoxib_Hannam2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_celecoxib/Celecoxib_Hannam2023_reference/Celecoxib_Hannam2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_celecoxib/Celecoxib_Hannam2023_reference/Celecoxib_Hannam2023_reference_sim_controls.json"></dbs-fmusim>
 

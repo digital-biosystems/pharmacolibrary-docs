@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[lag time]` (11 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tiropramide: Vss 221 l, kel 0.279 h-1, t1/2z 2.5 h, tlag 11 min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of lag time: this record has 11, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Arigoni R; Chisté R; Drovanti A; Makovec F; Senin P; Setnikar I et al. (1986). Arzneimittel-Forschung 36
 
 ## Model component
 <dbs-pgx drug="tiropramide" model-id="Tiropramide_Arigoni1986_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="tiropramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

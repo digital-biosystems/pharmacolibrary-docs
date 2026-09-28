@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[distribution volume]` (0.6 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for O-desmethyl tramadol's clearance and volume of distribution and the rate at which O-desmethyl tramadol is formed.**
+
+The model was built, but O-desmethyl tramadol's clearance and volume of distribution and the rate at which O-desmethyl tramadol is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — tramadol: CL 0.029 l.min−1, V 0.6 l.kg-1, kabs 0.65 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of distribution volume: this record has 0.6, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Allegaert K; Holford N; Anderson BJ; Holford S; Stuber F; Rochette A; et al. et al. (2015). Clinical pharmacokinetics 54
@@ -26,6 +29,9 @@ Allegaert K; Holford N; Anderson BJ; Holford S; Stuber F; Rochette A; et al. et 
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Allegaert2015_reference" status="model_quarantined" stale="false" population="mixed (neonates, infants, children, adults)" measured-compound="tramadol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

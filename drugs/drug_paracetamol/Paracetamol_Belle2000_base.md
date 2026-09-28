@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[1 a]` (not captured vs 19.8) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The record lacks any distribution volume or clearance, so it is not a compartmental population PK model, and the acetaminophen Km of 6.9 M carries a molar unit that could not be converted to SI.**
+
+The paper (Belle_2000, paracetamol metabolism in human liver microsomes) reports only a Michaelis–Menten constant, Km = 6.9 M, with no distribution volume and no clearance or elimination rate, making it an exposure/outcome paper rather than a compartmental population PK model. The Km unit 'M' (molar) is a unit for which no SI equivalent could be computed, so the parameter was held without an SI value. A dimension mismatch was also flagged on this structural parameter. A second reader recorded Km as 19.8 where the record holds null, a disagreement that could not be resolved from the facts given. Extracted — paracetamol: Km 6.9 M.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 1 a: this record has none, the second reading 19.8. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `phenacetin`, measured `acetaminophen`.
 

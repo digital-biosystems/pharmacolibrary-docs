@@ -4,7 +4,8 @@
 
 - **generic name:** vilazodone
 - **ATC codes:** `N06AX24`
-- **DrugBank:** [DB06684](https://go.drugbank.com/drugs/DB06684)
+- **DrugBank:** [DB06684](https://go.drugbank.com/drugs/DB06684) · **PubChem:** [CID 6918314](https://pubchem.ncbi.nlm.nih.gov/compound/6918314)
+- **molar mass:** 441.5249 g/mol (C26H27N5O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The simvastatin parent–metabolite model was rejected because the in-vitro CYP3A intrinsic clearance CLint of simvastatin (14.208 µL/min/pmol CYP3A) is reported in a unit that could not be expressed in SI units, leaving this structural parameter dimensionally unusable.**
+
+The record gives simvastatin's intrinsic clearance for CYP3A as 14.208 µL/min/pmol CYP3A; this unit could not be converted to SI, so the parameter entered model building without a usable value, a dimension mismatch on a structural parameter. The remaining extracted values — simvastatin acid's CLint of 0.0504 mL/min/mg of microsomal protein, its renal-free clearance CL of 8001.1 L/h, its Kp of 61.00, simvastatin's Kp of 35.19, and the covariate effects theta_kp_pm of 4362.8 and 1.4562 — were recorded, along with the presystemic metabolism link from simvastatin to simvastatin acid via the rate constant Kfm. The unconverted simvastatin CLint alone is what blocked the model. Extracted — simvastatin: CLint 14.2 µL/min/pmol CYP3A, Kp 35.2 a; simvastatin acid: CLint 0.0504 mL/min/mg of MP, Kp 61 a, CL 8e+03 L/h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tsamandouras N; Dickinson G; Guo Y; Hall S; Rostami-Hodjegan A; Galetin A; et al. et al. (2015). Pharmaceutical research 32

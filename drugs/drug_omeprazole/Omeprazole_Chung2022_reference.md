@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q19]` (not captured vs 46.3) and 6 more field(s) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The omeprazole record was held back because the absorption rate constant ka and Tlag were never reported in the source and library defaults were substituted, and an invented first-order absorption was assumed with F=1 and no bioavailability or molar correction.**
+
+The apparent (F-normalized) parameterization CL/F = 221.0 L/h and V/F = 121.0 L implies extravascular dosing, yet the absorption rate constant ka and lag time Tlag were not reported in the source, so placeholder values were used and the absorption input was assumed rather than established. The CYP2C19 covariate effects (e.g. PM −0.9054, RM 0.4064) were defined but never exercised in simulation, which was run only for the reference individual. A second reader also disagreed on several extracted values, reading 46.3, 121.0, 56.3, 0.95 and 0.26 where this record had none, and 121.0 and 118.3 where the second reader had none. Extracted — omeprazole: CL/F 221 L/h, V/F 121 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has none, the second reading 46.3; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Chung TK; Lee HA; Lee KR; Jang SB; Yu KS; Lee H et al. (2022). CPT: pharmacometrics & systems pharmacology 11
@@ -149,7 +152,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Chung2022_reference/Omeprazole_Chung2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Chung2022_reference/Omeprazole_Chung2022_reference_sim_controls.json"></dbs-fmusim>
 

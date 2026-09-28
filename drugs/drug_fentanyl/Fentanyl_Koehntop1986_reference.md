@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clearance]` (17.94 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**CL has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fentanyl: V 1.45 L/kg, Vss 5.1 L/kg, CL 17.9 ml X kg-1 X min-1, t1/2β 317 min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance: this record has 17.94, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Koehntop DE; Rodman JH; Brundage DM; Hegland MG; Buckley JJ et al. (1986). Anesthesia and analgesia 65

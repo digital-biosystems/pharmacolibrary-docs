@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_beta
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 0.783, model 0.443).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — midazolam: CL 10 ml/min/kg, V 0.6 L/kg, t1/2β 47 min.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Tolia V; Brennan S; Aravind MK; Kauffman RE et al. (1991). The Journal of pediatrics 119
@@ -133,7 +136,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_midazolam/Midazolam_Tolia1991_present_study/Midazolam_Tolia1991_present_study_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_midazolam/Midazolam_Tolia1991_present_study/Midazolam_Tolia1991_present_study_sim_controls.json"></dbs-fmusim>
 

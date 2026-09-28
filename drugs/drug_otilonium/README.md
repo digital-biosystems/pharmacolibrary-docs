@@ -4,7 +4,7 @@
 
 - **generic name:** Otilonium
 - **ATC codes:** `A03AB06`, `A03CA04`
-- **DrugBank:** [DB13500](https://go.drugbank.com/drugs/DB13500)
+- **DrugBank:** [DB13500](https://go.drugbank.com/drugs/DB13500) · **PubChem:** not captured
 - **groups:** investigational
 
 ## Extraction summary

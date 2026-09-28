@@ -4,7 +4,8 @@
 
 - **generic name:** pentaerithrityl
 - **ATC codes:** `A06AD14`
-- **DrugBank:** [DB13526](https://go.drugbank.com/drugs/DB13526)
+- **DrugBank:** [DB13526](https://go.drugbank.com/drugs/DB13526) · **PubChem:** not captured
+- **molar mass:** 136.147 g/mol (C5H12O4) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

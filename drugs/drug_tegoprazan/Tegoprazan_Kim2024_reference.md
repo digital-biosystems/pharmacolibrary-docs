@@ -5,7 +5,7 @@
 
 # tegoprazan — `Tegoprazan_Kim2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The tegoprazan record was held back because ka, Tlag and k21 were not reported in the source, so placeholder values were substituted, and a first-order absorption depot was invented that the source does not support.**
+
+The tegoprazan model reports CL/F of 21.02 L/h, V/F of 122.72 L and an intercompartmental flow Q of 0.3 mL/min, but the absorption rate constant ka, the lag time Tlag and the rate constant k21 were missing from the source, so library placeholder values would have been used for them. The apparent (/F) parameterization with F=1 and Fm=1 and no molar correction implies extravascular first-order absorption input, yet ka was not reported in the source, so the absorption structure was judged invented and not acceptable. A second reader also disagreed on the structure, reading it as one compartment rather than two, and on several derived values (e.g. 2746.31, 2508.4, 4.5 read as null). Extracted — tegoprazan: CL/F 21 L/h, V/F 123 L, Q 0.3 mL/min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 2746.31, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kim HS; Choi YK; Oh M; Cho YS; Ghim JL et al. (2024). Translational and clinical pharmacology 32
@@ -25,6 +29,9 @@ Kim HS; Choi YK; Oh M; Cho YS; Ghim JL et al. (2024). Translational and clinical
 
 ## Model component
 <dbs-pgx drug="tegoprazan" model-id="Tegoprazan_Kim2024_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="tegoprazan" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -56,14 +63,26 @@ Kim HS; Choi YK; Oh M; Cho YS; Ghim JL et al. (2024). Translational and clinical
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.5 (7/14 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.topology_template` | 2C | 1C | mismatch |
+| `gpt-oss:120b` | `values[Q17]` | 2746.31 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q19]` | 2508.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q21]` | not captured | 1.0023 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q30]` | 0.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q33]` | not captured | 1.1087 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 4.5 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -129,6 +148,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference/Tegoprazan_Kim2024_reference.svg" alt="Tegoprazan_Kim2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference/Tegoprazan_Kim2024_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference/Tegoprazan_Kim2024_reference_sim_controls.json"></dbs-fmusim>
 

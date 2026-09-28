@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — esomeprazole: CL/F 17.3 L/h, kabs 0.95 h−1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Nagase M; Shimada H; Nii M; Ueda S; Higashimori M; Ichikawa K; et al. et al. (2020). Journal of clinical pharmacy and therapeutics 45
@@ -25,6 +27,9 @@ Nagase M; Shimada H; Nii M; Ueda S; Higashimori M; Ichikawa K; et al. et al. (20
 
 ## Model component
 <dbs-pgx drug="esomeprazole" model-id="Esomeprazole_Nagase2020_reference" status="needs_review" stale="false" population="healthy Japanese male subjects" measured-compound="esomeprazole" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

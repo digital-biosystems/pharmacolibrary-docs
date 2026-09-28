@@ -4,7 +4,8 @@
 
 - **generic name:** fluindione
 - **ATC codes:** `B01AA12`
-- **DrugBank:** [DB13136](https://go.drugbank.com/drugs/DB13136)
+- **DrugBank:** [DB13136](https://go.drugbank.com/drugs/DB13136) · **PubChem:** [CID 68942](https://pubchem.ncbi.nlm.nih.gov/compound/68942)
+- **molar mass:** 240.233 g/mol (C15H9FO2) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

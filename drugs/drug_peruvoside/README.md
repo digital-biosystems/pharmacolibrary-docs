@@ -4,7 +4,8 @@
 
 - **generic name:** peruvoside
 - **ATC codes:** `C01AX02`
-- **DrugBank:** [DB13756](https://go.drugbank.com/drugs/DB13756)
+- **DrugBank:** [DB13756](https://go.drugbank.com/drugs/DB13756) · **PubChem:** not captured
+- **molar mass:** 548.673 g/mol (C30H44O9) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

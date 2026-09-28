@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (l-carnitine vs unknown) and 10 more field(s) — a structural parameter, so the record is disputed.
+**The paper reports none of the model's key parameters.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has l-carnitine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Uematsu T; Itaya T; Nishimoto M; Takiguchi Y; Mizuno A; Nakashima M; et al. et al. (1988). European journal of clinical pharmacology 34

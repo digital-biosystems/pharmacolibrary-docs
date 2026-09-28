@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (glycopyrronium vs glycopyrronium bromide) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — glycopyrronium bromide: CL 44.9, Vss 82.7, t1/2z 0.45, t1/2ka 2.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has glycopyrronium, the second reading glycopyrronium bromide; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Bartels C; Looby M; Sechaud R; Kaiser G et al. (2013). British journal of clinical pharmacology 76
@@ -26,6 +29,9 @@ Bartels C; Looby M; Sechaud R; Kaiser G et al. (2013). British journal of clinic
 
 ## Model component
 <dbs-pgx drug="glycopyrronium bromide" model-id="GlycopyrroniumBromide_Bartels2013_model_based" status="needs_review" stale="false" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

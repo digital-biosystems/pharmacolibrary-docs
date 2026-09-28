@@ -1,11 +1,12 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;sodium phenylbutyrate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Eriksen2023_reference&quot;,&quot;label&quot;:&quot;Eriksen_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Piscitelli1995_reference&quot;,&quot;label&quot;:&quot;Piscitelli_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Piscitelli1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Eriksen2023_reference&quot;,&quot;label&quot;:&quot;Eriksen_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Piscitelli1995_reference&quot;,&quot;label&quot;:&quot;Piscitelli_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Piscitelli1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # sodium phenylbutyrate
 
 - **generic name:** sodium phenylbutyrate
 - **ATC codes:** `A16AX03`, `N07XX19`
-- **DrugBank:** [DB06819](https://go.drugbank.com/drugs/DB06819)
+- **DrugBank:** [DB06819](https://go.drugbank.com/drugs/DB06819) · **PubChem:** [CID 4775](https://pubchem.ncbi.nlm.nih.gov/compound/4775)
+- **molar mass:** 164.2011 g/mol (C10H12O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -17,6 +18,15 @@ disorders, neonatal-onset deficiency, late-onset deficiency disease in patients 
 
 Phenylbutyric acid, as sodium phenylbutyrate, is used in combination with [tauroursodeoxycholic acid] to treat amyotrophic lateral sclerosis (ALS) in adults.[L42105,L43473]
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| phenylacetate | metabolite | — (mass units only) | — | — | — | — |
+| phenylacetylglutamine | metabolite | — (mass units only) | — | — | — | — |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
@@ -27,8 +37,8 @@ Phenylbutyric acid, as sodium phenylbutyrate, is used in combination with [tauro
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Eriksen_2023_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference.md) | 1-compartment, IV | 2 | Eriksen PL et al., Clearance and production of ammonia qua…, Journal of hepatology (2023) | [10.1016/j.jhep.2023.03.042](https://doi.org/10.1016/j.jhep.2023.03.042) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2022_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference.md) | 1-compartment, oral | 2 | Wang X et al., Population Pharmacokinetic Analysis to…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01075-1](https://doi.org/10.1007/s40262-021-01075-1) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Eriksen_2023_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference.md) | 1-compartment, IV | 2 | Eriksen PL et al., Clearance and production of ammonia qua…, Journal of hepatology (2023) | [10.1016/j.jhep.2023.03.042](https://doi.org/10.1016/j.jhep.2023.03.042) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Wang_2022_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference.md) | 1-compartment, oral | 2 | Wang X et al., Population Pharmacokinetic Analysis to…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01075-1](https://doi.org/10.1007/s40262-021-01075-1) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Piscitelli_1995_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Piscitelli1995_reference.md) | general linear (no model) | 0 | Piscitelli SC et al., Disposition of phenylbutyrate and its m…, Journal of clinical pharmac… (1995) | [10.1002/j.1552-4604.1995.tb04075.x](https://doi.org/10.1002/j.1552-4604.1995.tb04075.x) |
 
 ## ADME sites
@@ -53,7 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 168 matched, 61 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

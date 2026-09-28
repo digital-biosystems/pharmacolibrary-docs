@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kwack H; Kong H; Lim J; Zhang BT; Hahn J; Chang MJ et al. (2026). Pharmaceutics 18
@@ -25,6 +25,9 @@ Kwack H; Kong H; Lim J; Zhang BT; Hahn J; Chang MJ et al. (2026). Pharmaceutics 
 
 ## Model component
 <dbs-pgx drug="nickel" model-id="Nickel_Kwack2026_reference" status="not_modelled" stale="false" population="" measured-compound="nickel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -105,6 +108,8 @@ Kwack H; Kong H; Lim J; Zhang BT; Hahn J; Chang MJ et al. (2026). Pharmaceutics 
 </div><figure class="pk-models-diagram"><img src="drugs/toxin_nickel/Nickel_Kwack2026_reference/Nickel_Kwack2026_reference.svg" alt="Nickel_Kwack2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.15 /h, lag 49.5 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/toxin_nickel/Nickel_Kwack2026_reference/Nickel_Kwack2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/toxin_nickel/Nickel_Kwack2026_reference/Nickel_Kwack2026_reference_sim_controls.json"></dbs-fmusim>
 

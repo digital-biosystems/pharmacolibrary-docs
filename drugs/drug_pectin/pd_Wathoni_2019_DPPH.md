@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07B&quot;,&quot;href&quot;:&quot;atc/A07B.md&quot;},{&quot;label&quot;:&quot;pectin&quot;,&quot;href&quot;:&quot;drugs/drug_pectin/&quot;},{&quot;label&quot;:&quot;Wathoni_2019 \u00b7 PD DPPH inhibition&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # DPPH inhibition — PD  <span class="pk-badge pk-badge--red">rejected</span>

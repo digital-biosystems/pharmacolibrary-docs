@@ -4,7 +4,8 @@
 
 - **generic name:** bismuth subnitrate
 - **ATC codes:** `A02BX12`
-- **DrugBank:** [DB13209](https://go.drugbank.com/drugs/DB13209)
+- **DrugBank:** [DB13209](https://go.drugbank.com/drugs/DB13209) · **PubChem:** not captured
+- **molar mass:** 1461.98 g/mol (Bi5H9N4O22) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

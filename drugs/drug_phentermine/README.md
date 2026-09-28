@@ -4,7 +4,8 @@
 
 - **generic name:** phentermine
 - **ATC codes:** `A08AA01`, `A08AA51`
-- **DrugBank:** [DB00191](https://go.drugbank.com/drugs/DB00191)
+- **DrugBank:** [DB00191](https://go.drugbank.com/drugs/DB00191) · **PubChem:** [CID 4771](https://pubchem.ncbi.nlm.nih.gov/compound/4771)
+- **molar mass:** 149.2328 g/mol (C10H15N) — DrugBank
 - **groups:** approved, illicit, investigational
 
 ## About

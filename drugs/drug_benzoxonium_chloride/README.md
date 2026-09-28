@@ -4,7 +4,8 @@
 
 - **generic name:** benzoxonium chloride
 - **ATC codes:** `A01AB14`, `D08AJ05`
-- **DrugBank:** [DB13565](https://go.drugbank.com/drugs/DB13565)
+- **DrugBank:** [DB13565](https://go.drugbank.com/drugs/DB13565) · **PubChem:** not captured
+- **molar mass:** 364.593 g/mol (C23H42NO2) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

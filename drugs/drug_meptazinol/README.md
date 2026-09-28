@@ -4,7 +4,8 @@
 
 - **generic name:** meptazinol
 - **ATC codes:** `N02AX05`
-- **DrugBank:** [DB13478](https://go.drugbank.com/drugs/DB13478)
+- **DrugBank:** [DB13478](https://go.drugbank.com/drugs/DB13478) · **PubChem:** not captured
+- **molar mass:** 233.355 g/mol (C15H23NO) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

@@ -4,7 +4,7 @@
 
 - **generic name:** chymotrypsin
 - **ATC codes:** `B06AA04`, `S01KX01`
-- **DrugBank:** [DB09375](https://go.drugbank.com/drugs/DB09375)
+- **DrugBank:** [DB09375](https://go.drugbank.com/drugs/DB09375) · **PubChem:** not captured
 - **groups:** approved, investigational, vet_approved, withdrawn
 
 ## About

@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q27]` (69.8 vs not captured) and 8 more field(s) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 69.8, the second reading none; it also differs on 8 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, development and therapy 19

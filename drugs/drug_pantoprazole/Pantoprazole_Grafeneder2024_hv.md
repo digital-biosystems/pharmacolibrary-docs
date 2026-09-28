@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The pantoprazole model was quarantined because its clearance and volume of distribution had no extracted values, so library placeholder numbers stood in for these parameters.**
+
+No clearance or volume of distribution value for pantoprazole was extracted from the source, so the model builder substituted library defaults for both parameters; the model was held back rather than published with invented numbers. The structural check also failed: the record's structure was a one-compartment parent model, not the parent-with-metabolite structure required for a clopidogrel parent–metabolite model linking to the clopidogrel active metabolite via formation clearance. Extracted — pantoprazole: Cmax 1.5, Cmax_ratio 24.2, AUClast 127, t1/2z 131, CL 79, V 4.13e+03.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `clopidogrel`, measured `clopidogrel active metabolite`.
 
@@ -27,6 +29,9 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 
 ## Model component
 <dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Grafeneder2024_hv" status="model_quarantined" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

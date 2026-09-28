@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Zhang_2025_3)
@@ -134,7 +137,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.3 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.3 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Zhang2025v3_reference/Omeprazole_Zhang2025v3_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Zhang2025v3_reference/Omeprazole_Zhang2025v3_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (biphasic insulin aspart vs insulin_aspart) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for insulin aspart's clearance.**
+
+The model was built, but insulin aspart's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — insulin aspart: AUC 475 hpmoll−1, AUC/dose 6.1 10−3hl−1, kel 0.0126 min−1, V 1.04 l/kg, CL 0.0114 lmin−1kg−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has biphasic insulin aspart, the second reading insulin_aspart; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `biphasic insulin aspart`, measured `insulin aspart`.
 
@@ -28,6 +31,9 @@ Clausen WH; De Gaetano A; Vølund A et al. (2006). Diabetologia 49
 
 ## Model component
 <dbs-pgx drug="insulin aspart" model-id="InsulinAspart_Clausen2006_reference" status="model_quarantined" stale="false" population="type 1 diabetes subjects" measured-compound="insulin aspart" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

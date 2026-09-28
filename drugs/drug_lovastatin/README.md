@@ -5,7 +5,8 @@
 
 - **generic name:** lovastatin
 - **ATC codes:** `C10AA02`, `C10BA01`
-- **DrugBank:** [DB00227](https://go.drugbank.com/drugs/DB00227)
+- **DrugBank:** [DB00227](https://go.drugbank.com/drugs/DB00227) · **PubChem:** [CID 53232](https://pubchem.ncbi.nlm.nih.gov/compound/53232)
+- **molar mass:** 404.5396 g/mol (C24H36O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -32,9 +33,9 @@ Before administering lovastatin, it is important to rule out the presence of sec
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Huff_1992_reference](drugs/drug_lovastatin/Lovastatin_Huff1992_reference.md) | Huff MW et al., Dietary fish oil plus lovastatin decrea…, Arteriosclerosis and thromb… (1992) | [10.1161/01.atv.12.8.902](https://doi.org/10.1161/01.atv.12.8.902) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Huff_1992_reference](drugs/drug_lovastatin/Lovastatin_Huff1992_reference.md) | 2-compartment general linear | 4 | Huff MW et al., Dietary fish oil plus lovastatin decrea…, Arteriosclerosis and thromb… (1992) | [10.1161/01.atv.12.8.902](https://doi.org/10.1161/01.atv.12.8.902) |
 
 ## ADME sites
 

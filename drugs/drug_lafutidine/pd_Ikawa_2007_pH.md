@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;lafutidine&quot;,&quot;href&quot;:&quot;drugs/drug_lafutidine/&quot;},{&quot;label&quot;:&quot;Ikawa_2007 \u00b7 PD intragastric pH&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # intragastric pH — PD  <span class="pk-badge pk-badge--red">rejected</span>

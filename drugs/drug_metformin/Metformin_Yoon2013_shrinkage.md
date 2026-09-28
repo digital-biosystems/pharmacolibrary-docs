@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** split column 'shrinkage (%)' is a table statistic/structure column, not a study population (mis-split estimate table)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**'shrinkage (%)' is a column of the estimates table, not a study population.**
+
+The table was split into one record per column, and 'shrinkage (%)' holds a statistic rather than a second set of estimates.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yoon H; Cho HY; Yoo HD; Kim SM; Lee YB et al. (2013). The AAPS journal 15

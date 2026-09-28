@@ -4,7 +4,8 @@
 
 - **generic name:** prajmaline
 - **ATC codes:** `C01BA08`
-- **DrugBank:** [DB13555](https://go.drugbank.com/drugs/DB13555)
+- **DrugBank:** [DB13555](https://go.drugbank.com/drugs/DB13555) · **PubChem:** not captured
+- **molar mass:** 369.528 g/mol (C23H33N2O2) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**Doxorubicin clearance (350.0 mL/day) and volume (100.0 µL) fall outside physiological plausibility for adults with breast cancer, indicating a unit or scale extraction error, so the record was rejected.**
+
+The extracted doxorubicin clearance of 350.0 mL/day and volume of 100.0 µL are both implausible magnitudes for adult patients, consistent with a unit or scale error when the values were taken from the paper. The lag-time parameter is labelled 'tlI2, min' with a value of 2.3 min, a label that does not clearly correspond to a lag parameter. The structure links parent doxorubicin to its metabolite doxorubicinol via the metabolism rate constant Kfm, but the implausible parent clearance and volume made the model unpublishable. Extracted — doxorubicin: CL 350 mL/day, V 100 µL, tlag 2.3 min.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Liang S; Brundage RC; Jacobson PA; Blaes A; Kirstein MN et al. (2016). British journal of clinical pharmacology 82

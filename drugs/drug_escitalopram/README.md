@@ -5,7 +5,8 @@
 
 - **generic name:** escitalopram
 - **ATC codes:** `N06AB10`
-- **DrugBank:** [DB01175](https://go.drugbank.com/drugs/DB01175)
+- **DrugBank:** [DB01175](https://go.drugbank.com/drugs/DB01175) · **PubChem:** [CID 146570](https://pubchem.ncbi.nlm.nih.gov/compound/146570)
+- **molar mass:** 324.3919 g/mol (C20H21FN2O) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Friberg_2006_reference](drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md) | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Liu_2022_reference](drugs/drug_escitalopram/Escitalopram_Liu2022_reference.md) | Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2023_reference](drugs/drug_escitalopram/Escitalopram_Liu2023_reference.md) | Liu X et al., Escitalopram Personalized Dosing: A Pop…, Drug design, development an… (2023) | [10.2147/DDDT.S425654](https://doi.org/10.2147/DDDT.S425654) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Friberg_2006_reference](drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md) | 1-compartment, oral | 3 | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Liu_2022_reference](drugs/drug_escitalopram/Escitalopram_Liu2022_reference.md) | 1-compartment, oral | 2 | Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2023_reference](drugs/drug_escitalopram/Escitalopram_Liu2023_reference.md) | 1-compartment (no model) | 0 | Liu X et al., Escitalopram Personalized Dosing: A Pop…, Drug design, development an… (2023) | [10.2147/DDDT.S425654](https://doi.org/10.2147/DDDT.S425654) |
 
 ## ADME sites
 

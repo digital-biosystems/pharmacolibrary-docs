@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/f posthoc].value` (34 vs 5.6) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — midazolam: CL 5.6 L/h, CL/F 34 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f posthoc].value`: this record has 34, the second reading 5.6; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lammers LA; Achterbergh R; de Vries EM; van Nierop FS; Klümpen HJ; Soeters MR; et al. et al. (2015). Drug metabolism and disposition: the biological fate of chemicals 43

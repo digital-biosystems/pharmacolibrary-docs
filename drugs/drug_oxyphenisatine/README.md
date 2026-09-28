@@ -4,7 +4,8 @@
 
 - **generic name:** oxyphenisatine
 - **ATC codes:** `A06AB01`
-- **DrugBank:** [DB04823](https://go.drugbank.com/drugs/DB04823)
+- **DrugBank:** [DB04823](https://go.drugbank.com/drugs/DB04823) · **PubChem:** [CID 31315](https://pubchem.ncbi.nlm.nih.gov/compound/31315)
+- **molar mass:** 317.338 g/mol (C20H15NO3) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

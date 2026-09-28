@@ -4,7 +4,8 @@
 
 - **generic name:** dopexamine
 - **ATC codes:** `C01CA14`
-- **DrugBank:** [DB12313](https://go.drugbank.com/drugs/DB12313)
+- **DrugBank:** [DB12313](https://go.drugbank.com/drugs/DB12313) · **PubChem:** [CID 55483](https://pubchem.ncbi.nlm.nih.gov/compound/55483)
+- **molar mass:** 356.5017 g/mol (C22H32N2O2) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

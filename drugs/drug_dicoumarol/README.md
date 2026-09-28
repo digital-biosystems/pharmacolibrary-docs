@@ -4,7 +4,8 @@
 
 - **generic name:** dicoumarol
 - **ATC codes:** `B01AA01`
-- **DrugBank:** [DB00266](https://go.drugbank.com/drugs/DB00266)
+- **DrugBank:** [DB00266](https://go.drugbank.com/drugs/DB00266) · **PubChem:** [CID 54676038](https://pubchem.ncbi.nlm.nih.gov/compound/54676038)
+- **molar mass:** 336.295 g/mol (C19H12O6) — DrugBank
 - **groups:** approved
 
 ## About

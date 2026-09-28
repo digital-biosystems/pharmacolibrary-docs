@@ -5,7 +5,7 @@
 
 - **generic name:** tirzepatide
 - **ATC codes:** `A10BX16`
-- **DrugBank:** [DB15171](https://go.drugbank.com/drugs/DB15171)
+- **DrugBank:** [DB15171](https://go.drugbank.com/drugs/DB15171) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -28,9 +28,9 @@ This drug has not been studied in patients with a history of pancreatitis. Tirze
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Schneck_2024_reference](drugs/drug_tirzepatide/Tirzepatide_Schneck2024_reference.md) | Schneck K et al., Population pharmacokinetics of the GIP/…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13099](https://doi.org/10.1002/psp4.13099) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Schneck_2024_reference](drugs/drug_tirzepatide/Tirzepatide_Schneck2024_reference.md) | 2-compartment (no model) | 0 | Schneck K et al., Population pharmacokinetics of the GIP/…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13099](https://doi.org/10.1002/psp4.13099) |
 
 ## Pharmacodynamics (PD)
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (von Willebrand factor vs VWF:Ag) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The record was rejected because the intercompartmental clearance Q of the von Willebrand factor model is reported as 3290 mL, a volume unit on a clearance-type structural parameter, and that unit could not be converted to SI.**
+
+In the one-compartment model for von Willebrand factor in patients with von Willebrand disease, the parameter labelled Q (an intercompartmental clearance) carries the unit mL instead of a flow unit such as mL/h, unlike the clearance CL (74.2 mL/h) in the same record. This dimension mismatch on a structural parameter meant the value 3290 could not be given an SI interpretation. A second reader also disputed several entries, reading the primary analyte as VWF:Ag rather than von Willebrand factor, supplying a baseline VWF of 0.28 and precision values of 17.3% and 7.9% that the record lacks, and omitting both the 3290 distribution parameter and the 0.5 h−1 absorption rate constant. Extracted — von willebrand factor: V 4.54e+03 mL, CL 74.2 mL/h, Q 3.29e+03 mL, kabs 0.5 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has von Willebrand factor, the second reading VWF:Ag; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Daniel MY; Rauch A; Paris C; Jeanpierre E; Goudemand J; Marichez C; Pradines B; Zawadzki C; Dupont A; Denis CV; Lenting PJ; Susen S; Delavenne X et al. (2026). Blood advances 10
@@ -26,6 +29,9 @@ Daniel MY; Rauch A; Paris C; Jeanpierre E; Goudemand J; Marichez C; Pradines B; 
 
 ## Model component
 <dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Daniel2026_value" status="rejected" stale="false" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

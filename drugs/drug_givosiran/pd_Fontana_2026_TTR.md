@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;givosiran&quot;,&quot;href&quot;:&quot;drugs/drug_givosiran/&quot;},{&quot;label&quot;:&quot;Fontana_2026 \u00b7 PD serum transthyretin&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # serum transthyretin — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>

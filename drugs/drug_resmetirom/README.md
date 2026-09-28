@@ -4,7 +4,8 @@
 
 - **generic name:** resmetirom
 - **ATC codes:** `A05BA11`
-- **DrugBank:** [DB12914](https://go.drugbank.com/drugs/DB12914)
+- **DrugBank:** [DB12914](https://go.drugbank.com/drugs/DB12914) · **PubChem:** [CID 15981237](https://pubchem.ncbi.nlm.nih.gov/compound/15981237)
+- **molar mass:** 435.22 g/mol (C17H12Cl2N6O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

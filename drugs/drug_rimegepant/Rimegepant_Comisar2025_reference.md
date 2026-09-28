@@ -17,16 +17,22 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[body_weight_effect_on_cl_f_and_q_f]` (0.575 vs not captured) and 11 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of body_weight_effect_on_cl_f_and_q_f: this record has 0.575, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Comisar_2025)
 
 ## Model component
 <dbs-pgx drug="rimegepant" model-id="Rimegepant_Comisar2025_reference" status="accepted_with_caveats" stale="false" population="pediatric and adult patients with migraine" measured-compound="rimegepant" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted, plus 7 covariate effects.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -177,6 +183,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference.svg" alt="Rimegepant_Comisar2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 3.05 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_sim_controls.json"></dbs-fmusim>
 

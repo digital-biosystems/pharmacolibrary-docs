@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['propacetamol', 'paracetamol', 'hydrolysis'], ['paracetamol', 'paracetamol-glucuronide', 'metabolism'], ['paracetamol', 'paracetamol-sulphate', 'metabolism']] vs [['paracetamol', 'paracetamol-glucuronide', 'metabolism'], ['paracetamol', 'paracetamol-sulphate', 'metabolism']]) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The propacetamol-to-paracetamol hydrolysis step has no extracted clearance parameter, leaving the prodrug-to-metabolite conversion unlinked, and the Q parameter's unit 'mL/min/kgn' could not be converted to SI, so the model was rejected.**
+
+The record lists a hydrolysis link from propacetamol to paracetamol with link_parameter 'none', meaning the prodrug conversion step carries no parameter value, which makes the propacetamol compartment unreachable from the dose. The intercompartmental clearance Q (CL2) is reported as 1.46 mL/min/kgn, a unit that could not be converted to SI, so no SI value was available for that parameter. A second reader also disagreed on the structure, omitting the propacetamol–paracetamol hydrolysis link, and on several parameters: this record has no bioavailability fraction (null vs 11.3), includes the plasma additive term 0.354 mg/L which the second reader omitted, and lacks the urine additive term the second reader read as 0.223. Extracted — propacetamol: V1 1.06 L/kg, CL 0.266 mL/min/kg, Q 1.46 mL/min/kgn, n_transit 1.4.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has propacetamol → paracetamol (hydrolysis); paracetamol → paracetamol-glucuronide (metabolism); paracetamol → paracetamol-sulphate (metabolism), the second reading paracetamol → paracetamol-glucuronide (metabolism); paracetamol → paracetamol-sulphate (metabolism); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `propacetamol`, measured `paracetamol`.
 
@@ -28,6 +31,9 @@ Krekels EH; van Ham S; Allegaert K; de Hoon J; Tibboel D; Danhof M; et al. et al
 
 ## Model component
 <dbs-pgx drug="propacetamol" model-id="Propacetamol_Krekels2015_reference" status="rejected" stale="false" population="preterm and term neonates and infants" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

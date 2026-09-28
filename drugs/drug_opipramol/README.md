@@ -4,7 +4,8 @@
 
 - **generic name:** opipramol
 - **ATC codes:** `N06AA05`
-- **DrugBank:** [DB12930](https://go.drugbank.com/drugs/DB12930)
+- **DrugBank:** [DB12930](https://go.drugbank.com/drugs/DB12930) · **PubChem:** [CID 9417](https://pubchem.ncbi.nlm.nih.gov/compound/9417)
+- **molar mass:** 363.505 g/mol (C23H29N3O) — DrugBank
 - **groups:** investigational
 
 ## About

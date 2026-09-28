@@ -4,7 +4,7 @@
 
 - **generic name:** hemin
 - **ATC codes:** `B06AB01`
-- **DrugBank:** [DB03404](https://go.drugbank.com/drugs/DB03404)
+- **DrugBank:** [DB03404](https://go.drugbank.com/drugs/DB03404) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

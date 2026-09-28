@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** split column '5' is a table statistic/structure column, not a study population (mis-split estimate table); C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (BT200 vs unknown) and 11 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record treats a table-statistics column ('5') as a study population and reports physiologically implausible factor VIII values (CL 0.000321 L/h, V2 1150 L), so it was rejected.**
+
+The estimates table was split into one record per column, and '5' holds a statistic rather than a second set of estimates, so the record does not represent a real study population. The reported factor VIII clearance of 0.000321 L/h and peripheral volume of 1150 L fall outside physiological windows, consistent with a unit or scale extraction error. A second reader disputed the dosing compound (BT200 vs unknown) and the primary analyte (factor VIII vs von Willebrand factor), and gave no values for the parameters, leaving the numeric discrepancies unresolved. Extracted — factor VIII: CL 0.000321 L/h, V1 5.8 L, Q 0.0342 L/h, V2 1.15e+03 L, kabs 0.0127.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has BT200, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `BT200`, measured `factor VIII`.
 
@@ -28,6 +31,9 @@ Kim MS; Hajducek DM; Gilbert JC; Iorio A; Jilma B; Edginton AN et al. (2024). Th
 
 ## Model component
 <dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Kim2024_5" status="rejected" stale="false" population="humans" measured-compound="factor VIII" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

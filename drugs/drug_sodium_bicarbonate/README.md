@@ -4,7 +4,8 @@
 
 - **generic name:** sodium bicarbonate
 - **ATC codes:** `B05CB04`, `B05XA02`
-- **DrugBank:** [DB01390](https://go.drugbank.com/drugs/DB01390)
+- **DrugBank:** [DB01390](https://go.drugbank.com/drugs/DB01390) · **PubChem:** [CID 516892](https://pubchem.ncbi.nlm.nih.gov/compound/516892)
+- **molar mass:** 84.0066 g/mol (CHNaO3) — DrugBank
 - **groups:** approved, investigational
 
 ## About

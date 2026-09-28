@@ -4,7 +4,7 @@
 
 - **generic name:** insulin (beef)
 - **ATC codes:** `A10AB02`, `A10AC02`, `A10AD02`, `A10AE02`
-- **DrugBank:** [DB09456](https://go.drugbank.com/drugs/DB09456)
+- **DrugBank:** [DB09456](https://go.drugbank.com/drugs/DB09456) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

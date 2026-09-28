@@ -4,7 +4,7 @@
 
 - **generic name:** betaine hydrochloride
 - **ATC codes:** `A09AB02`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

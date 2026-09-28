@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (sodium monofluorophosphate vs multiple (sodium monofluorophosphate, sodium fluoride)) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sodium fluoride's own; they describe fluoride.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sodium monofluorophosphate, the second reading multiple (sodium monofluorophosphate, sodium fluoride); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sodium monofluorophosphate`, measured `fluoride`.
 
@@ -27,6 +30,9 @@ Setnikar I; Maurer H et al. (1990). Arzneimittel-Forschung 40
 
 ## Model component
 <dbs-pgx drug="sodium fluoride" model-id="SodiumFluoride_Setnikar1990_reference" status="rejected" stale="false" population="healthy adults" measured-compound="fluoride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

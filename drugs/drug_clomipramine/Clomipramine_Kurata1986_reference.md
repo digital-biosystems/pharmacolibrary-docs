@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kurata K; Kishitani K; Kido H; Kurachi M; Yamaguchi N et al. (1986). The Japanese journal of psychiatry and neurology 40
@@ -26,6 +29,9 @@ Kurata K; Kishitani K; Kido H; Kurachi M; Yamaguchi N et al. (1986). The Japanes
 
 ## Model component
 <dbs-pgx drug="clomipramine" model-id="Clomipramine_Kurata1986_reference" status="rejected" stale="false" population="rats" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

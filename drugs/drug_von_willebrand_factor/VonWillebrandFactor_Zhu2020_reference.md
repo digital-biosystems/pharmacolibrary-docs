@@ -5,7 +5,7 @@
 
 # von Willebrand factor — `VonWillebrandFactor_Zhu2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.611). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**This von Willebrand factor record was held back because the absorption rate constant ka and lag time were not reported in the source, so library defaults were substituted and the assumed first-order extravascular input was judged not acceptable.**
+
+The source reports only apparent clearance and volume (CL/F 0.466 mL/h/kg, Vz/F 55.3 mL/kg); ka and Tlag had no values in the paper, so base defaults would have been used and the absorption input was invented rather than reported. The apparent (/F) parameterization further assumes F=1 and Fm=1 with no molar correction. A second reader also disagreed on several extracted values, reading CL/F as 0.437 instead of 0.466 and giving different or missing values for the other reported statistics (e.g. 100 vs 77.5, 88.2 vs 3.75). Extracted — von willebrand factor: CL/F 0.466 mL/h/kg, V/F 55.3 mL/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has none, the second reading 0.437; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zhu S; Gilbert JC; Hatala P; Harvey W; Liang Z; Gao S; et al. et al. (2020). Journal of thrombosis and haemostasis : JTH 18
@@ -25,6 +29,9 @@ Zhu S; Gilbert JC; Hatala P; Harvey W; Liang Z; Gao S; et al. et al. (2020). Jou
 
 ## Model component
 <dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Zhu2020_reference" status="needs_review" stale="false" population="" measured-compound="von_willebrand_factor" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +62,26 @@ Zhu S; Gilbert JC; Hatala P; Harvey W; Liang Z; Gao S; et al. et al. (2020). Jou
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.611 (11/18 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | not captured | 0.437 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q321]` | 5.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q352]` | 54.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q354]` | 0.437 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 77.5 | 100 | mismatch |
+| `gpt-oss:120b` | `values[Q57]` | 3.75 | 88.2 | mismatch |
+| `gpt-oss:120b` | `values[Q61]` | not captured | 54.1 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +146,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference/VonWillebrandFactor_Zhu2020_reference.svg" alt="VonWillebrandFactor_Zhu2020_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference/VonWillebrandFactor_Zhu2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference/VonWillebrandFactor_Zhu2020_reference_sim_controls.json"></dbs-fmusim>
 

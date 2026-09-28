@@ -4,7 +4,8 @@
 
 - **generic name:** metaraminol
 - **ATC codes:** `C01CA09`
-- **DrugBank:** [DB00610](https://go.drugbank.com/drugs/DB00610)
+- **DrugBank:** [DB00610](https://go.drugbank.com/drugs/DB00610) · **PubChem:** [CID 5906](https://pubchem.ncbi.nlm.nih.gov/compound/5906)
+- **molar mass:** 167.205 g/mol (C9H13NO2) — DrugBank
 - **groups:** approved
 
 ## About

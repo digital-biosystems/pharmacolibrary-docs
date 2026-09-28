@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clearance]` (49.1 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for methotrexate's bioavailability and clearance.**
+
+The model was built, but methotrexate's bioavailability and clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — methotrexate: CL 49.1 ml min-1 m-2, t1/2α 2.66 h, t1/2β 15.7 h, V 0.32 l/kg, kabs 0.268 day−1, tlag 0.36 hour.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance: this record has 49.1, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 23:29:53.886723+00:00) predates the upstream re-run (2026-09-24 02:58:21.745240+00:00). Current validate status: `needs_review`.
 

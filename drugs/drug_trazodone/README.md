@@ -5,7 +5,8 @@
 
 - **generic name:** trazodone
 - **ATC codes:** `N06AX05`
-- **DrugBank:** [DB00656](https://go.drugbank.com/drugs/DB00656)
+- **DrugBank:** [DB00656](https://go.drugbank.com/drugs/DB00656) · **PubChem:** [CID 5533](https://pubchem.ncbi.nlm.nih.gov/compound/5533)
+- **molar mass:** 371.864 g/mol (C19H22ClN5O) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Cuomo_2026_2_reference](drugs/drug_trazodone/Trazodone_Cuomo2026v2_reference.md) | Cuomo (2026) | — |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> | [Knych_2017_reference](drugs/drug_trazodone/Trazodone_Knych2017_reference.md) | Knych HK et al., Pharmacokinetics and selected pharmacod…, American journal of veterin… (2017) | [10.2460/ajvr.78.10.1182](https://doi.org/10.2460/ajvr.78.10.1182) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Cuomo_2026_2_reference](drugs/drug_trazodone/Trazodone_Cuomo2026v2_reference.md) | 1-compartment, IV | 2 | Cuomo (2026) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> | [Knych_2017_reference](drugs/drug_trazodone/Trazodone_Knych2017_reference.md) | 1-compartment, IV | 4 | Knych HK et al., Pharmacokinetics and selected pharmacod…, American journal of veterin… (2017) | [10.2460/ajvr.78.10.1182](https://doi.org/10.2460/ajvr.78.10.1182) |
 
 ## ADME sites
 

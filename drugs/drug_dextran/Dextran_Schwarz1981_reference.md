@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[mean cumulative asymptotic elimination of dextran in the urine]` (75 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The dextran record was rejected because a structural parameter failed a dimensional consistency check, and it was built from the abstract alone rather than a fitted model.**
+
+The record was built from the abstract only, so reported summary statistics stood in for a fitted model. A dimension mismatch on a structural parameter was the stated reason for rejection. A second reader returned no value for any of the four extracted parameters — asymptotic urinary elimination 75%, renal clearance 137 ml/min, total clearance 187 ml/min, and terminal half-life 24 h — leaving the extracted values unconfirmed. Extracted — dextran 1: Ae 75 %, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of mean cumulative asymptotic elimination of dextran in the urine: this record has 75, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Schwarz JA; Koch W; Bühler V; Kaumeier S et al. (1981). International journal of clinical pharmacology, therapy, and toxicology 19
 
 ## Model component
 <dbs-pgx drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

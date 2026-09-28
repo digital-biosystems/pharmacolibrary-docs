@@ -4,7 +4,8 @@
 
 - **generic name:** ferric hydroxide
 - **ATC codes:** `B03AB04`
-- **DrugBank:** [DB13423](https://go.drugbank.com/drugs/DB13423)
+- **DrugBank:** [DB13423](https://go.drugbank.com/drugs/DB13423) · **PubChem:** not captured
+- **molar mass:** 106.866 g/mol (FeH3O3) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

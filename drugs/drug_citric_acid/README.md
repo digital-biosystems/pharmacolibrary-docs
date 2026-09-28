@@ -4,7 +4,8 @@
 
 - **generic name:** citric acid
 - **ATC codes:** `A09AB04`
-- **DrugBank:** [DB04272](https://go.drugbank.com/drugs/DB04272)
+- **DrugBank:** [DB04272](https://go.drugbank.com/drugs/DB04272) · **PubChem:** [CID 311](https://pubchem.ncbi.nlm.nih.gov/compound/311)
+- **molar mass:** 192.1235 g/mol (C6H8O7) — DrugBank
 - **groups:** approved, investigational, nutraceutical, vet_approved
 
 ## About

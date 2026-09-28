@@ -4,7 +4,8 @@
 
 - **generic name:** troglitazone
 - **ATC codes:** `A10BG01`
-- **DrugBank:** [DB00197](https://go.drugbank.com/drugs/DB00197)
+- **DrugBank:** [DB00197](https://go.drugbank.com/drugs/DB00197) · **PubChem:** [CID 5591](https://pubchem.ncbi.nlm.nih.gov/compound/5591)
+- **molar mass:** 441.54 g/mol (C24H27NO5S) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

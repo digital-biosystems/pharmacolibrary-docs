@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The midazolam neonatal two-compartment model was rejected because its parameters are physiologically implausible — clearance 0.0704 L/hr/kg, central volume 0.591 L/kg and peripheral volume 0.419 L — consistent with a unit or scale extraction error.**
+
+The record lists clearance of 0.0704 L/hr/kg and central volume of 0.591 L/kg for midazolam in critically ill neonates, magnitudes flagged as outside the physiological window and suggestive of a unit or scale extraction error. The peripheral volume is reported as 0.419 L while the central volume is per kilogram, so the two volumes are on inconsistent scalings, reinforcing the unit-mismatch concern. The remaining parameters (inter-compartmental clearance 0.290 L/hr, absorption rate constant 0.14 /h, lag time 1.23 h) are recorded but the implausible clearance and volumes alone justified rejection. Extracted — midazolam: CL 0.0704 L/hr/kg, V1 0.591 L/kg, V2 0.419 L, Q 0.29 L/hr, kabs 0.14 /h, tlag 1.23 h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Burtin P; Jacqz-Aigrain E; Girard P; Lenclen R; Magny JF; Betremieux P; et al. et al. (1994). Clinical pharmacology and therapeutics 56

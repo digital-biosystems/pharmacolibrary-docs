@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the model was built but never simulated; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_shared_parameters — expected 9 shared param(s) bound once — got possibly duplicated: ['CL', 'V', 'CL', 'V']
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (midazolam vs unknown) and 29 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**The midazolam parent–metabolite model was never simulated: only the reference individual was run, so the CYP3A5, body-weight and creatinine covariate effects (e.g. theta_cl_cyp3a5 = 0.783) were not exercised, and shared CL and V values were possibly duplicated rather than bound once across compartments.**
+
+The record defines covariate effects on clearance — theta_cl_cyp3a5 = 0.783 on midazolam CL, theta_cl_bodyweight = 1.55 and theta_q319_bodyweight = 1.96 on 1'-hydroxymidazolam, and theta_cl_creatinine = 0.627 on the glucuronide — but the simulation covered only the base model for the reference individual, so these covariate scenarios were not exercised. The shared-parameter check also failed: 9 shared parameters were expected to bind once, but CL and V were possibly duplicated across the compartments instead of binding one value to both. A second reader additionally disputed the spelling of the metabolite names (midazolam vs midazolam, 1'-hydroxymidazolam vs 1-hydroxymidazolam) and read several parameter values as null, leaving CL = 14.5 L/h, Q = 18.3 L/h, V = 27.3 L, CL 1OHM = 138 L/h and theta_cl_cyp3a5 = 0.783 unconfirmed. Extracted — midazolam: CL 14.5 L h À1, V 27.3 L, Q 18.3 L h À1; 1'-hydroxymidazolam: fm 0.6, CL 138 L h À1, V 90 L; 1'-hydroxymidazolam glucuronide: fm 0.265, CL 2.01 L h À1, V 1 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 29 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Seng KY; Hee KH; Soon GH; Sapari NS; Soong R; Goh BC; et al. et al. (2014). Journal of clinical pharmacology 54

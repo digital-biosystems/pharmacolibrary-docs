@@ -4,7 +4,7 @@
 
 - **generic name:** senna glycosides
 - **ATC codes:** `A06AB06`
-- **DrugBank:** [DB11365](https://go.drugbank.com/drugs/DB11365)
+- **DrugBank:** [DB11365](https://go.drugbank.com/drugs/DB11365) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

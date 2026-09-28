@@ -4,7 +4,8 @@
 
 - **generic name:** rizatriptan
 - **ATC codes:** `N02CC04`
-- **DrugBank:** [DB00953](https://go.drugbank.com/drugs/DB00953)
+- **DrugBank:** [DB00953](https://go.drugbank.com/drugs/DB00953) · **PubChem:** [CID 5078](https://pubchem.ncbi.nlm.nih.gov/compound/5078)
+- **molar mass:** 269.3449 g/mol (C15H19N5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

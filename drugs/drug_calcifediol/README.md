@@ -4,7 +4,8 @@
 
 - **generic name:** calcifediol
 - **ATC codes:** `A11CC06`, `H05BX05`
-- **DrugBank:** [DB00146](https://go.drugbank.com/drugs/DB00146)
+- **DrugBank:** [DB00146](https://go.drugbank.com/drugs/DB00146) · **PubChem:** [CID 5283731](https://pubchem.ncbi.nlm.nih.gov/compound/5283731)
+- **molar mass:** 400.6371 g/mol (C27H44O2) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About

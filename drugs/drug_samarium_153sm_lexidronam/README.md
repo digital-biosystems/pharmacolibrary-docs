@@ -4,7 +4,7 @@
 
 - **generic name:** samarium (153Sm) lexidronam
 - **ATC codes:** `V10BX02`
-- **DrugBank:** [DB05273](https://go.drugbank.com/drugs/DB05273)
+- **DrugBank:** [DB05273](https://go.drugbank.com/drugs/DB05273) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

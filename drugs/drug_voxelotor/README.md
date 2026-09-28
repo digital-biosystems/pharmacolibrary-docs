@@ -5,7 +5,8 @@
 
 - **generic name:** voxelotor
 - **ATC codes:** `B06AX03`
-- **DrugBank:** [DB14975](https://go.drugbank.com/drugs/DB14975)
+- **DrugBank:** [DB14975](https://go.drugbank.com/drugs/DB14975) · **PubChem:** not captured
+- **molar mass:** 337.379 g/mol (C19H19N3O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ Voxelotor was granted accelerated FDA approval on November 25 2019, as it is lik
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Savic_2022_reference](drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Savic_2022_reference](drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md) | 2-compartment, oral | 6 (+1 cov.) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
 
 ## Pharmacodynamics (PD)
 

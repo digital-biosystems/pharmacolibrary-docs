@@ -4,7 +4,8 @@
 
 - **generic name:** ferric maltol
 - **ATC codes:** `B03AB10`
-- **DrugBank:** [DB15598](https://go.drugbank.com/drugs/DB15598)
+- **DrugBank:** [DB15598](https://go.drugbank.com/drugs/DB15598) · **PubChem:** not captured
+- **molar mass:** 431.154 g/mol (C18H15FeO9) — DrugBank
 - **groups:** approved, investigational
 
 ## About

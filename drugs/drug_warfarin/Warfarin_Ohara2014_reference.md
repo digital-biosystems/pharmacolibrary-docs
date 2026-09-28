@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([] vs [['none', '', '']]) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The warfarin model was rejected because the reported units for the structural parameters CL (240, labelled 'S') and kel (3.48, labelled 'S') could not be converted to SI units, leaving a dimension mismatch on a structural parameter.**
+
+The record lists the S-warfarin clearance CL as 240 and the elimination rate constant kel (λe) as 3.48, but both carry the verbatim unit 'S', a unit that could not be converted to SI. Because of this, these structural parameters entered the model build without SI values, producing a dimension mismatch on a structural parameter, and the model was rejected. A second reader disagreed on the model links field, reading it as 'none' where the record had no links listed. Extracted — warfarin: CL 240 S, kel 3.48 S, λ1 0.00578 S.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading none → not captured (not captured). That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `warfarin`, measured `S-warfarin`.
 

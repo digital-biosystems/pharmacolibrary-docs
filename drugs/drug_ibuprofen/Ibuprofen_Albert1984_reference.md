@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The ibuprofen model was rejected because its structure contains sulindac metabolites (sulindac sulfide and sulindac sulfone) with no link parameters, leaving compartments unreachable from the ibuprofen dose.**
+
+The record describes an ibuprofen model, yet its structure includes metabolism links from sulindac to sulindac sulfide and to sulindac sulfone, each with no link parameter value (link_parameter: none). These metabolites therefore have no quantified connection to the dosed compound, so they stand as unlinked metabolites unreachable from the ibuprofen dose. The extracted parameters themselves — a distribution volume of 6.35 liters and a first-order absorption rate constant of 1.1 h⁻¹ for ibuprofen — are consistent with the paper, but the foreign sulindac structure makes the model incoherent. Extracted — ibuprofen: V 6.35 liters, kabs 1.1 h -1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Albert KS; Gernaat CM et al. (1984). The American journal of medicine 77

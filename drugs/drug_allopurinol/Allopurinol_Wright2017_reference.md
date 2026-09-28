@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default; C5 dimensioned parameter(s) without a unit: Q352 — no SI value to build from.
-**Second reading:** `gpt-5.6-luna` read this paper differently on `parameters[bcrp]` ({'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only clearance was extracted — no volume; vnorm has no unit.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Vnorm), so that value has no SI equivalent. None of the extracted parameters is allopurinol's own; they describe oxypurinol. Extracted — oxypurinol: CL 1.2 L/h/70 kg, CL_HD 8.23 L/h, Vnorm 48.7 L/70 kg TBW, kabs 0.941 h -1.
+
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on the value of bcrp: this record has {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183}, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
 

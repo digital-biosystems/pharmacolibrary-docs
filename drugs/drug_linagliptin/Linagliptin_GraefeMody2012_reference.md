@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The linagliptin record was refused because it is an exposure/outcome paper with no distribution volume and no clearance, and a structural parameter (the absorption rate constant, 1.63 h⁻¹) failed the dimensional consistency check.**
+
+The record contains no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model; the paper is an exposure/outcome study reporting only summary statistics such as AUC of 150 nmol·h/L, 99% protein binding, 30% oral bioavailability, a 100 h terminal half-life, 5% urinary excretion, and an absorption rate constant of 1.63 h⁻¹. A dimensional mismatch was flagged on a structural parameter. The record was built from the abstract alone, so these reported summary statistics stood in for a fitted model. Extracted — linagliptin: AUC 150 nmol · h/L, fu 99 %, Fab 30 %, t1/2z 100 hours, fe 5 %, kabs 1.63 h -1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Graefe-Mody U; Retlich S; Friedrich C et al. (2012). Clinical pharmacokinetics 51
@@ -25,6 +27,9 @@ Graefe-Mody U; Retlich S; Friedrich C et al. (2012). Clinical pharmacokinetics 5
 
 ## Model component
 <dbs-pgx drug="linagliptin" model-id="Linagliptin_GraefeMody2012_reference" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

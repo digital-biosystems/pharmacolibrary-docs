@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[o-desmethyltramadol, a]` (not captured vs 5.37) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The tramadol parent–metabolite model was rejected because its apparent volumes and clearances are physiologically implausible — V1/F of 0.432 l and CL/F of 0.0107 l/h in older patients — indicating a unit or scale extraction error.**
+
+The record lists tramadol parameters with V1/F = 0.432 l, V2/F = 0.471 l, CL/F = 0.0107 l/h and Q = 0.0567 l/h, magnitudes far below any plausible distribution volume or clearance for tramadol in older patients, consistent with a unit or scale error when the values were taken from the paper. The metabolism link from tramadol to O-desmethyltramadol carries a link parameter Kt of unknown kind with no value, and the metabolite's absorption parameter was left unextracted (null) while a second reader read it as 5.37, so the two readings disagree on that value. Extracted — tramadol: kabs 4.56 /h, V1/F 0.432 l, Q 0.0567 l/h, V2/F 0.471 l, CL/F 0.0107 l/h, CLm/F 0.117 l/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of o-desmethyltramadol, a: this record has none, the second reading 5.37. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Al-Qurain AA; Upton RN; Tadros R; Roberts MS; Wiese MD et al. (2022). European journal of drug metabolism and pharmacokinetics 47
@@ -26,6 +29,9 @@ Al-Qurain AA; Upton RN; Tadros R; Roberts MS; Wiese MD et al. (2022). European j
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_AlQurain2022_base" status="rejected" stale="false" population="older patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** CL/F, CLm/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

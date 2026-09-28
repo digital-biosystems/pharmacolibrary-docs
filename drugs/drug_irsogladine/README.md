@@ -4,7 +4,8 @@
 
 - **generic name:** irsogladine
 - **ATC codes:** `A02BX16`
-- **DrugBank:** [DB13056](https://go.drugbank.com/drugs/DB13056)
+- **DrugBank:** [DB13056](https://go.drugbank.com/drugs/DB13056) · **PubChem:** [CID 3752](https://pubchem.ncbi.nlm.nih.gov/compound/3752)
+- **molar mass:** 256.09 g/mol (C9H7Cl2N5) — DrugBank
 - **groups:** investigational
 
 ## About

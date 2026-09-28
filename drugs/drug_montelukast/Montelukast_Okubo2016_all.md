@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — montelukast: CL 0.87 L/h, kabs 0.357 h-1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:33:24.414869+00:00) predates the upstream re-run (2026-09-24 17:00:42.042880+00:00). Current validate status: `rejected`.
 

@@ -5,7 +5,8 @@
 
 - **generic name:** fotemustine
 - **ATC codes:** `L01AD05`
-- **DrugBank:** [DB04106](https://go.drugbank.com/drugs/DB04106)
+- **DrugBank:** [DB04106](https://go.drugbank.com/drugs/DB04106) · **PubChem:** [CID 46936889](https://pubchem.ncbi.nlm.nih.gov/compound/46936889)
+- **molar mass:** 315.69 g/mol (C9H19ClN3O5P) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary
@@ -16,9 +17,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hartmann_1997_patients with liver metastases from colorectal carcinoma](drugs/drug_fotemustine/Fotemustine_Hartmann1997_patients_with_liver_metastases_from.md) | Hartmann J et al., Hepatic arterial infusion of the nitros…, Oncology reports (1997) | [10.3892/or.4.1.167](https://doi.org/10.3892/or.4.1.167) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hartmann_1997_patients with liver metastases from colorectal carcinoma](drugs/drug_fotemustine/Fotemustine_Hartmann1997_patients_with_liver_metastases_from.md) | — (no model) | 0 | Hartmann J et al., Hepatic arterial infusion of the nitros…, Oncology reports (1997) | [10.3892/or.4.1.167](https://doi.org/10.3892/or.4.1.167) |
 
 ## ADME sites
 

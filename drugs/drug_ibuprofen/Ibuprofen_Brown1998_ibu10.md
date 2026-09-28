@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q68 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (ibuprofen vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Λ2 has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUC∞), so that value has no SI equivalent. Extracted — ibuprofen: kabs 8.22 1/h, λ2 0.57, t1/2z 1.37 h, AUC∞ 105 ng/ml*h, V/F 0.22 L/kg, CL/F 0.11 L/kg/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ibuprofen, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Brown RD; Kearns GL; Wilson JT et al. (1998). Journal of pharmacokinetics and biopharmaceutics 26

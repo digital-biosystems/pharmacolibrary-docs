@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 McCann S; Helfer VE; Balevic SJ; Muller WJ; van den Anker JN; Al-Uzri A; et al. et al. (2025). Clinical and translational science 18
@@ -126,7 +126,7 @@ McCann S; Helfer VE; Balevic SJ; Muller WJ; van den Anker JN; Al-Uzri A; et al. 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.14 /h, lag 73.8 min, F 0.9).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.14 /h, lag 73.8 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_midazolam/Midazolam_McCann2025_reference/Midazolam_McCann2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_midazolam/Midazolam_McCann2025_reference/Midazolam_McCann2025_reference_sim_controls.json"></dbs-fmusim>
 

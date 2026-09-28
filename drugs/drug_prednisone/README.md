@@ -5,7 +5,8 @@
 
 - **generic name:** prednisone
 - **ATC codes:** `A07EA03`, `H02AB07`
-- **DrugBank:** [DB00635](https://go.drugbank.com/drugs/DB00635)
+- **DrugBank:** [DB00635](https://go.drugbank.com/drugs/DB00635) · **PubChem:** [CID 5865](https://pubchem.ncbi.nlm.nih.gov/compound/5865)
+- **molar mass:** 358.4281 g/mol (C21H26O5) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -24,12 +25,12 @@ Prednisone was granted FDA approval on 21 February 1955.[L10496]
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Bouazza_2025_reference](drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md) | Bouazza N et al., Population pharmacokinetic modelling of…, British journal of clinical… (2025) | [10.1002/bcp.70103](https://doi.org/10.1002/bcp.70103) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [de_2023_reference](drugs/drug_prednisone/Prednisone_de2023_reference.md) | de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal of clinical… (2023) | [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49, Q353, Q27, Q355, Q88 — no SI v…</sub><br><sub>route_to: `human_review`</sub> | [Magee_2002_reference](drugs/drug_prednisone/Prednisone_Magee2002_reference.md) | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sassen_2020_reference](drugs/drug_prednisone/Prednisone_Sassen2020_reference.md) | Sassen SDT et al., Population Pharmacokinetics and Pharmac…, Clinical infectious disease… (2020) | [10.1093/cid/ciz1163](https://doi.org/10.1093/cid/ciz1163) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Bouazza_2025_reference](drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md) | 1-compartment, oral | 4 | Bouazza N et al., Population pharmacokinetic modelling of…, British journal of clinical… (2025) | [10.1002/bcp.70103](https://doi.org/10.1002/bcp.70103) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [de_2023_reference](drugs/drug_prednisone/Prednisone_de2023_reference.md) | 1-compartment, IV | 2 | de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal of clinical… (2023) | [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49, Q353, Q27, Q355, Q88 — no SI v…</sub><br><sub>route_to: `human_review`</sub> | [Magee_2002_reference](drugs/drug_prednisone/Prednisone_Magee2002_reference.md) | 1-compartment, oral | 8 | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sassen_2020_reference](drugs/drug_prednisone/Prednisone_Sassen2020_reference.md) | 1-compartment, oral | 2 | Sassen SDT et al., Population Pharmacokinetics and Pharmac…, Clinical infectious disease… (2020) | [10.1093/cid/ciz1163](https://doi.org/10.1093/cid/ciz1163) |
 
 ## Pharmacodynamics (PD)
 

@@ -4,7 +4,8 @@
 
 - **generic name:** almotriptan
 - **ATC codes:** `N02CC05`
-- **DrugBank:** [DB00918](https://go.drugbank.com/drugs/DB00918)
+- **DrugBank:** [DB00918](https://go.drugbank.com/drugs/DB00918) · **PubChem:** [CID 123606](https://pubchem.ncbi.nlm.nih.gov/compound/123606)
+- **molar mass:** 335.464 g/mol (C17H25N3O2S) — DrugBank
 - **groups:** approved
 
 ## About

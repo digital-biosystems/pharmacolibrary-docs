@@ -4,7 +4,7 @@
 
 - **generic name:** lixisenatide
 - **ATC codes:** `A10AE54`, `A10BJ03`
-- **DrugBank:** [DB09265](https://go.drugbank.com/drugs/DB09265)
+- **DrugBank:** [DB09265](https://go.drugbank.com/drugs/DB09265) · **PubChem:** [CID 131704317](https://pubchem.ncbi.nlm.nih.gov/compound/131704317)
 - **groups:** approved, investigational
 
 ## About

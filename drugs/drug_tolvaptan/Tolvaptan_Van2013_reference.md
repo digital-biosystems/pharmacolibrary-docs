@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_beta.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (tolvaptan vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 10, model 5.64); the covariate scenarios were not simulated.**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_cl_f_chf_nyha_class_1_or_2, theta_cl_f_chf_nyha_class_3_or_4, theta_cl_f_cirrhosis_child_pugh_score_ge_6_l_h and theta_cl_f_hyponatremia_moderate_hyponatremia), so that value has no SI equivalent. Extracted — tolvaptan: tlag 0.154 h, kabs 0.832 h^-1, CL/F 16 l/h, V1/F 111 l, Q/F 2.93 l/h, V2/F 31.2 l.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tolvaptan, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Van_2013)

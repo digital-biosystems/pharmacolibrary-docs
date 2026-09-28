@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (triamcinolone vs triamcinolone acetonide) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Rejected: the abstract-only triamcinolone record carries a physiologically implausible clearance of 0.0001 mL/h/kg and volume of distribution 0.0497 mL/kg, indicating a unit or scale extraction error.**
+
+The record for triamcinolone in elderly patients with macular edema was built from the paper's abstract alone, so only summary statistics stood in for a fitted model. The extracted clearance of 0.0001 mL/h/kg and steady-state volume of 0.0497 mL/kg fall far outside any physiological window for this drug, pointing to a unit or magnitude error in reading the abstract. A second reader disputed the analyte itself, reading the measured compound as triamcinolone acetonide rather than triamcinolone, and read no values for the clearance and volume parameters at all; the half-life, AUC(0-t) and peak aqueous humor concentration parameters had no values in either reading. Extracted — triamcinolone: CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has triamcinolone, the second reading triamcinolone acetonide; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `triamcinolone acetonide`, measured `triamcinolone`.
 
@@ -28,6 +31,9 @@ Beer PM; Bakri SJ; Singh RJ; Liu W; Peters GB; Miller M et al. (2003). Ophthalmo
 
 ## Model component
 <dbs-pgx drug="triamcinolone" model-id="Triamcinolone_Beer2003_reference" status="rejected" stale="false" population="elderly patients with macular edema" measured-compound="triamcinolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

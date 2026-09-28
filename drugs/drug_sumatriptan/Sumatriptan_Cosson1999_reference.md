@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[distribution volume at steady state]` (94.5 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sumatriptan: CL 71.2 L/hr, Vss 94.5 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of distribution volume at steady state: this record has 94.5, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Cosson VF; Fuseau E et al. (1999). Journal of pharmacokinetics and biopharmaceutics 27
@@ -26,6 +29,9 @@ Cosson VF; Fuseau E et al. (1999). Journal of pharmacokinetics and biopharmaceut
 
 ## Model component
 <dbs-pgx drug="sumatriptan" model-id="Sumatriptan_Cosson1999_reference" status="needs_review" stale="false" population="healthy subjects and migraine patients" measured-compound="sumatriptan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

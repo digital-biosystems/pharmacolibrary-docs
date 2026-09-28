@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Naldemedine's peripheral volume V2/F (Vp/F) is recorded as 43.3 hr−1, a rate unit on a volume parameter, so the record was rejected for a dimensional mismatch on a structural parameter.**
+
+In the two-compartment model for naldemedine, the peripheral volume parameter Vp/F carries the value 43.3 with the unit hr−1, an inverse-time unit that cannot describe a volume (the central volume Vc/F is correctly given in L). This unit could not be converted to SI, so the parameter entered the model without an SI value. The remaining parameters (CL/F 43.2 hr−1, Q/F 63.3 hr−1, V1/F 87.5 L, tlag 0.202 hr, Ka 186.4) are dimensionally consistent. Extracted — naldemedine: V1/F 87.5 L, Q/F 63.3 hr−1, V2/F 43.3 hr−1, tlag 0.202 hr.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kubota R; Fukumura K; Wajima T et al. (2018). Pharmaceutical research 35
@@ -25,6 +27,9 @@ Kubota R; Fukumura K; Wajima T et al. (2018). Pharmaceutical research 35
 
 ## Model component
 <dbs-pgx drug="naldemedine" model-id="Naldemedine_Kubota2018_shrinkage" status="rejected" stale="false" population="healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC" measured-compound="naldemedine" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

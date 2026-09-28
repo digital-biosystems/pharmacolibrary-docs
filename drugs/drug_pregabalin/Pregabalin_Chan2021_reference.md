@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default; C5 dimensioned parameter(s) without a unit: Q76, Q49, Q83 — no SI value to build from
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[body_weight_on_cl_fd]` (0.48 vs not captured) and 10 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance; v/F, kabs and tlag have no unit.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — pregabalin: V/F 10.3, kabs 7.44, tlag 0.31.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of body_weight_on_cl_fd: this record has 0.48, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chan PLS; Marshall SF; McFadyen L; Liu J et al. (2021). Clinical pharmacology and therapeutics 110
@@ -26,6 +29,9 @@ Chan PLS; Marshall SF; McFadyen L; Liu J et al. (2021). Clinical pharmacology an
 
 ## Model component
 <dbs-pgx drug="pregabalin" model-id="Pregabalin_Chan2021_reference" status="needs_review" stale="false" population="children (4-16 years) and adults with focal onset seizures" measured-compound="pregabalin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted, plus 4 covariate effects.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/f in presence of strong cyp3a4 inhibitors relative change]` (not captured vs 24) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The aripiprazole model was held back because its clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values, so library placeholder values stood in, and the '% lower' unit for the CYP3A4 effect could not be converted to SI.**
+
+The record reports only relative changes for aripiprazole — a 24% lower CL/F with strong CYP3A4 inhibitors and a 42% clearance reduction in CYP2D6 poor metabolisers — while clearance, volume of distribution, absorption rate constant and absorption lag time were never extracted, so placeholder values were substituted for these missing source values and the model was held back rather than published with invented numbers. The absorption rate constant was not reported in the source, and the '% lower' unit on the CYP3A4 effect could not be converted to SI. The model also assumed F=1 and Fm=1 without molar correction, and used first-order extravascular input consistent with the apparent (/F) parameterization. A second reader agreed on the values (24 and 42) but placed them under differently worded parameter labels, so the two records disagree only on which label each value belongs to. Extracted — aripiprazole: CL/F 24 % lower, CL 42 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl/f in presence of strong cyp3a4 inhibitors relative change: this record has none, the second reading 24; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang X; Raoufinia A; Bihorel S; Passarell J; Mallikaarjun S; Phillips L et al. (2022). Clinical pharmacology in drug development 11
@@ -26,6 +29,9 @@ Wang X; Raoufinia A; Bihorel S; Passarell J; Mallikaarjun S; Phillips L et al. (
 
 ## Model component
 <dbs-pgx drug="aripiprazole" model-id="Aripiprazole_Wang2022_reference" status="model_quarantined" stale="false" population="subjects with schizophrenia or schizoaffective disorder and healthy subjects" measured-compound="aripiprazole" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

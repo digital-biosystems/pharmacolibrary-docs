@@ -4,7 +4,7 @@
 
 - **generic name:** medicinal charcoal
 - **ATC codes:** `A07BA01`
-- **DrugBank:** [DB09278](https://go.drugbank.com/drugs/DB09278)
+- **DrugBank:** [DB09278](https://go.drugbank.com/drugs/DB09278) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

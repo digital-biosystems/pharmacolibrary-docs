@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11D&quot;,&quot;href&quot;:&quot;atc/A11D.md&quot;},{&quot;label&quot;:&quot;Thiamine&quot;,&quot;href&quot;:&quot;drugs/drug_thiamine/&quot;},{&quot;label&quot;:&quot;Hoetzel_2026 \u00b7 PD GFP expression&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiamine_Rindi1980_rats&quot;,&quot;label&quot;:&quot;Rindi_1980_rats&quot;,&quot;href&quot;:&quot;drugs/drug_thiamine/Thiamine_Rindi1980_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

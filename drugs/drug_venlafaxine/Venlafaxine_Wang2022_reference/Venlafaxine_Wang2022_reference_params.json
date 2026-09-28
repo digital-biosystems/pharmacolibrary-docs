@@ -1,0 +1,27 @@
+{
+ "model_id": "Venlafaxine_Wang2022_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.138888888888889e-06,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0034000000000000002,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.000175,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13269.087144941419
+ },
+ "reference_peaks": {
+  "central.C": 0.00030174667612927364
+ },
+ "stop_time": 154800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral; T6_deviations — got invented_absorption: not acceptable.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The triflusal–HTB parent–metabolite model was quarantined because F, CL, Vd, ka and Tlag had no reported values and were replaced by placeholders, and the reported units (weight/71.65) could not be converted to SI.**
+
+The record reports only two parameters, Q2 (8.300, unit 'weight/71.65') and kfm (0.341, unit 'weight/71.65'), whose unit could not be converted to SI, so those parameters reached the model without SI values. Triflusal's bioavailability, clearance, volume of distribution, absorption rate constant and lag time were not reported; placeholders were substituted, with ka explicitly invented. The structure also did not match the declared parent–metabolite topology, and the invented absorption was judged unacceptable. Extracted — triflusal: Q2 8.3 weight/71.65, kfm 0.341 weight/71.65.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `triflusal`, measured `HTB`.
 
@@ -27,6 +29,9 @@ Park SM; Lee J; Seong SJ; Park JG; Gwon MR; Lim MS; et al. et al. (2014). BMC ph
 
 ## Model component
 <dbs-pgx drug="triflusal" model-id="Triflusal_Park2014_estimates_from_final_model" status="model_quarantined" stale="false" population="healthy Korean male volunteers" measured-compound="HTB" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 

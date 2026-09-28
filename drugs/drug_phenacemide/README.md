@@ -4,7 +4,8 @@
 
 - **generic name:** phenacemide
 - **ATC codes:** `N03AX07`
-- **DrugBank:** [DB01121](https://go.drugbank.com/drugs/DB01121)
+- **DrugBank:** [DB01121](https://go.drugbank.com/drugs/DB01121) · **PubChem:** [CID 4753](https://pubchem.ncbi.nlm.nih.gov/compound/4753)
+- **molar mass:** 178.1879 g/mol (C9H10N2O2) — DrugBank
 - **groups:** approved
 
 ## About

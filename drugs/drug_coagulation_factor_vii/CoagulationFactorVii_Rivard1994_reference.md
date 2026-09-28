@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (factor VII vs factor VII concentrate) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — coagulation factor vii: t1/2z 6.49 hours, CL 5 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has factor VII, the second reading factor VII concentrate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `factor VII concentrate`, measured `factor VII`.
 
@@ -28,6 +31,9 @@ Rivard GE; Kovac I; Kunschak M; Thöne P et al. (1994). Transfusion 34
 
 ## Model component
 <dbs-pgx drug="coagulation factor VII" model-id="CoagulationFactorVii_Rivard1994_reference" status="needs_review" stale="false" population="patients with congenital FVII deficiency" measured-compound="factor VII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

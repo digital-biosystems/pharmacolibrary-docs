@@ -1,11 +1,12 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;atomoxetine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Cheng2024_reference&quot;,&quot;label&quot;:&quot;Cheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Notsu2020_reference&quot;,&quot;label&quot;:&quot;Notsu_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Notsu2020_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Cheng2024_reference&quot;,&quot;label&quot;:&quot;Cheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Notsu2020_reference&quot;,&quot;label&quot;:&quot;Notsu_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Notsu2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # atomoxetine
 
 - **generic name:** atomoxetine
 - **ATC codes:** `N06BA09`
-- **DrugBank:** [DB00289](https://go.drugbank.com/drugs/DB00289)
+- **DrugBank:** [DB00289](https://go.drugbank.com/drugs/DB00289) · **PubChem:** [CID 54841](https://pubchem.ncbi.nlm.nih.gov/compound/54841)
+- **molar mass:** 255.3547 g/mol (C17H21NO) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -16,6 +17,14 @@ Long-acting formulations of psychostimulants (such as [DB00422], [DB01576], and 
 
 **Indication.** Atomoxetine is indicated for the treatment of attention deficit hyperactivity disorder (ADHD) in children and adults.
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| 4-hydroxyatomoxetine | metabolite | — (mass units only) | — | — | — | — |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
@@ -24,11 +33,11 @@ Long-acting formulations of psychostimulants (such as [DB00422], [DB01576], and 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Cheng_2024_reference](drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md) | Cheng S et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3155](https://doi.org/10.1002/cpt.3155) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Tobin_2026_reference](drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md) | Tobin KV et al., Understanding Atomoxetine Exposure Vari…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70168](https://doi.org/10.1002/jcph.70168) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.391). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Notsu_2020_reference](drugs/drug_atomoxetine/Atomoxetine_Notsu2020_reference.md) | Notsu Y et al., Simple pharmacokinetic models accountin…, Drug metabolism and pharmac… (2020) | [10.1016/j.dmpk.2019.08.005](https://doi.org/10.1016/j.dmpk.2019.08.005) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Cheng_2024_reference](drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md) | 2-compartment general linear | 1 | Cheng S et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3155](https://doi.org/10.1002/cpt.3155) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Tobin_2026_reference](drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md) | 1-compartment, oral | 3 | Tobin KV et al., Understanding Atomoxetine Exposure Vari…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70168](https://doi.org/10.1002/jcph.70168) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.391). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Notsu_2020_reference](drugs/drug_atomoxetine/Atomoxetine_Notsu2020_reference.md) | parent + metabolite (no model) | 1 | Notsu Y et al., Simple pharmacokinetic models accountin…, Drug metabolism and pharmac… (2020) | [10.1016/j.dmpk.2019.08.005](https://doi.org/10.1016/j.dmpk.2019.08.005) |
 
 ## Pharmacodynamics (PD)
 
@@ -105,7 +114,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 238 matched, 73 returned
 - **screened:** 3  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

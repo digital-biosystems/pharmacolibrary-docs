@@ -4,7 +4,8 @@
 
 - **generic name:** hydrogen peroxide
 - **ATC codes:** `A01AB02`, `D08AX01`, `D11AX25`, `S02AA06`
-- **DrugBank:** [DB11091](https://go.drugbank.com/drugs/DB11091)
+- **DrugBank:** [DB11091](https://go.drugbank.com/drugs/DB11091) · **PubChem:** [CID 784](https://pubchem.ncbi.nlm.nih.gov/compound/784)
+- **molar mass:** 34.0147 g/mol (H2O2) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About

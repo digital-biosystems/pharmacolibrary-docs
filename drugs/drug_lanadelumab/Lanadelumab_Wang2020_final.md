@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The lanadelumab record was held back because the absorption rate constant ka (0.0179 1/h) was not reported in the source and was invented by default, alongside Tlag, with F=1 and Fm=1 assumed and no molar correction.**
+
+The record for lanadelumab (Wang_2020, patients with hereditary angioedema and healthy subjects, one-compartment structure) lists ka as 0.0179 1/h, but this value was not reported in the source — it was substituted with a default, as was Tlag, so the absorption description is invented rather than fitted. The parameterization is apparent: bioavailability F and the fraction metabolized Fm were both assumed to be 1, with no molar correction applied. Additionally, the reported unit for CL/F (L/hour) could not be converted to SI units, so CL/F entered the model without an SI value. The failed check on these deviations returned 'invented_absorption: not acceptable', confirmed by adjudication. Extracted — lanadelumab: CL/F 0.0337 L/hour, V/F 16.6 L, AUCSS 408 µg × day/mL, Cavg 29.2 µg/mL, Cmax 35.5 µg/mL, Cmin 24.6 µg/mL, tmax 98.6 hour, t1/2z 361 hour, … (+2).
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang Y; Marier JF; Kassir N; Chang C; Martin P et al. (2020). Clinical and translational science 13
@@ -25,6 +27,9 @@ Wang Y; Marier JF; Kassir N; Chang C; Martin P et al. (2020). Clinical and trans
 
 ## Model component
 <dbs-pgx drug="lanadelumab" model-id="Lanadelumab_Wang2020_final" status="needs_review" stale="false" population="patients with hereditary angioedema and healthy subjects" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** CL/F, V/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -200,6 +205,8 @@ Wang Y; Marier JF; Kassir N; Chang C; Martin P et al. (2020). Clinical and trans
 </div><figure class="pk-models-diagram"><img src="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final.svg" alt="Lanadelumab_Wang2020_final diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_sim_controls.json"></dbs-fmusim>
 

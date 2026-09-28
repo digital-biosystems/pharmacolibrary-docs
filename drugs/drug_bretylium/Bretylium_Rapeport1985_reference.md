@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Rapeport WG et al. (1985). Clinical pharmacokinetics 10
@@ -25,6 +27,9 @@ Rapeport WG et al. (1985). Clinical pharmacokinetics 10
 
 ## Model component
 <dbs-pgx drug="Bretylium" model-id="Bretylium_Rapeport1985_reference" status="curated_candidate" stale="false" population="adults with ventricular tachyarrhythmias" measured-compound="bretylium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

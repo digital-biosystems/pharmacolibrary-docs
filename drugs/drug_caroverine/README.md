@@ -4,7 +4,8 @@
 
 - **generic name:** caroverine
 - **ATC codes:** `A03AX11`
-- **DrugBank:** [DB13835](https://go.drugbank.com/drugs/DB13835)
+- **DrugBank:** [DB13835](https://go.drugbank.com/drugs/DB13835) · **PubChem:** not captured
+- **molar mass:** 365.477 g/mol (C22H27N3O2) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

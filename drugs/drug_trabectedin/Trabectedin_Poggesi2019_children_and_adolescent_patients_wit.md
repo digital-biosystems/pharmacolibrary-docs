@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Poggesi I; Valenzuela B; Ouellet D; Gonzalez M; Hillewaert V; Baruchel S; et al. et al. (2019). Cancer chemotherapy and pharmacology 84
@@ -25,6 +25,9 @@ Poggesi I; Valenzuela B; Ouellet D; Gonzalez M; Hillewaert V; Baruchel S; et al.
 
 ## Model component
 <dbs-pgx drug="trabectedin" model-id="Trabectedin_Poggesi2019_children_and_adolescent_patients_wit" status="not_modelled" stale="false" population="children and adolescent patients with cancer" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

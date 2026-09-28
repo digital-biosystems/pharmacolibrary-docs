@@ -4,7 +4,8 @@
 
 - **generic name:** maralixibat chloride
 - **ATC codes:** `A05AX04`
-- **DrugBank:** [DB16226](https://go.drugbank.com/drugs/DB16226)
+- **DrugBank:** [DB16226](https://go.drugbank.com/drugs/DB16226) · **PubChem:** not captured
+- **molar mass:** 674.96 g/mol (C40H56N3O4S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

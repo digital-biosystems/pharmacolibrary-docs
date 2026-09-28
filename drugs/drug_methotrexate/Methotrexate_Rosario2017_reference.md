@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q37]` (not captured vs 10) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**This two-compartment methotrexate model was rejected because one compartment has no dosing or distribution path linking it to the rest of the structure, and a peripheral volume value is disputed (null versus 10 L).**
+
+The record describes a two-compartment methotrexate model with clearance 0.159 L/day (ulcerative colitis patients), central volume 3.19 L, and peripheral volume 1.65 L, sourced from a review paper rather than the original study. The rejection cause is a structural one: a compartment exists in the topology with no connection from the administered dose, so it is pharmacokinetically meaningless as written. A second reader additionally recorded a peripheral volume of 10 L where the record holds no value, leaving that parameter's true content inconclusive. Extracted — methotrexate: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q37: this record has none, the second reading 10. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:29:53.917918+00:00) predates the upstream re-run (2026-09-24 02:55:25.263440+00:00). Current validate status: `rejected`.
 

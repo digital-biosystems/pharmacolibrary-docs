@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[a]` (not captured vs 0.004) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for flucloxacillin's bioavailability, clearance, volume of distribution and absorption lag time.**
+
+The model was built, but flucloxacillin's bioavailability, clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — flucloxacillin: tlag 0.101 h, kabs 0.111 h−1, V 90.4 L, CL 85.4 L h−1, CLb 0.003, IIV 0.217, Vss 0.163, t1/2γ 0.184, … (+1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of a: this record has none, the second reading 0.004; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `flucloxacillin`, measured `free flucloxacillin`.
 
@@ -28,6 +31,9 @@ Drennan PG; Green JK; Gardiner SJ; Metcalf SCL; Kirkpatrick CMJ; Everts RJ; et a
 
 ## Model component
 <dbs-pgx drug="flucloxacillin" model-id="Flucloxacillin_Drennan2021v2_reference" status="model_quarantined" stale="false" population="adults treated with oral flucloxacillin plus probenecid" measured-compound="free flucloxacillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** mechanistic.
 

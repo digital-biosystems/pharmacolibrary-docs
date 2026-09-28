@@ -1,5 +1,5 @@
 {
- "guid": "{0c98f644-b362-4500-ae43-60f49b428f0c}",
+ "guid": "{bfc2f722-8503-4987-af7f-3f7e614331c8}",
  "model": "Pharmacolibrary.Pharmacokinetic.Models.PK_3C",
  "model_identifier": "Pharmacolibrary_Pharmacokinetic_Models_PK_3C",
  "generation_tool": "OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc",
@@ -160,6 +160,6 @@
   "peripheral.C",
   "peripheral2.C"
  ],
- "fmu_sha256": "334bb59df5e729c0b6ec96fe2a22a3a90ae44f04c3b2d7961ef2f8bb9b5a9203",
+ "fmu_sha256": "66b2713a00f379d0f883da7a99f1b43a522a3dfbc896263aaa3f6a5e6ce0aa42",
  "js_bytes": 1843524
 }

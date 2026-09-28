@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** missing key parameters — none reported by this paper.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (strontium vs strontium_89sr_chloride) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has strontium, the second reading strontium_89sr_chloride. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `strontium_89sr_chloride`, measured `strontium`.
 
@@ -28,6 +31,9 @@ Blake GM; Zivanovic MA; McEwan AJ; Ackery DM et al. (1986). European journal of 
 
 ## Model component
 <dbs-pgx drug="strontium (89Sr) chloride" model-id="Strontium89srChloride_Blake1986_reference" status="rejected" stale="false" population="adults with metastatic prostatic carcinoma" measured-compound="strontium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

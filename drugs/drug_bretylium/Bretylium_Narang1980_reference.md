@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The bretylium record was rejected because the total body clearance of 84% is dimensionally inconsistent for a clearance parameter, and the record rests on abstract-only summary statistics rather than a fitted model.**
+
+The structural parameter CL (total body clearance) for bretylium is reported as 84 with the unit '%', which is a dimension mismatch — clearance must be expressed in flow units such as volume per time, not as a percentage. The renal clearance (CLR) carries the unit 'glomerular filtration rate' instead of a proper flow unit, compounding the dimensional problem. The record was built from the paper's abstract alone, so the reported summary statistics (t1/2β 7.8 hr, V/F 8.18 liters/kg, kabs 0.537 h−1) stand in for a fitted model rather than values estimated from the full pharmacokinetic analysis. Extracted — bretylium: t1/2β 7.8 hr, V/F 8.18 liters/kg, CL 84 %, kabs 0.537 h−1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Narang PK; Adir J; Josselson J; Yacobi A; Sadler J et al. (1980). Journal of pharmacokinetics and biopharmaceutics 8
@@ -25,6 +27,9 @@ Narang PK; Adir J; Josselson J; Yacobi A; Sadler J et al. (1980). Journal of pha
 
 ## Model component
 <dbs-pgx drug="Bretylium" model-id="Bretylium_Narang1980_reference" status="rejected" stale="false" population="healthy adults" measured-compound="bretylium" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

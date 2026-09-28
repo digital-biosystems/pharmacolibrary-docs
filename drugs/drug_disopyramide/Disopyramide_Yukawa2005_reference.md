@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — disopyramide: V 4.13 L/kg, kabs 0.363 h-1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yukawa E; Orio K; Yukawa M; Terao K; Kinoshita H et al. (2005). Journal of clinical pharmacy and therapeutics 30
@@ -25,6 +27,9 @@ Yukawa E; Orio K; Yukawa M; Terao K; Kinoshita H et al. (2005). Journal of clini
 
 ## Model component
 <dbs-pgx drug="disopyramide" model-id="Disopyramide_Yukawa2005_reference" status="needs_review" stale="false" population="Japanese patients" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chae D; Son M; Kim Y; Son H; Park K et al. (2018). Basic & clinical pharmacology & toxicology 122
@@ -143,7 +146,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 4.53 /h, lag 15 min, F 0.9).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 4.53 /h, lag 15 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_telmisartan/Telmisartan_Chae2018_reference/Telmisartan_Chae2018_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_telmisartan/Telmisartan_Chae2018_reference/Telmisartan_Chae2018_reference_sim_controls.json"></dbs-fmusim>
 

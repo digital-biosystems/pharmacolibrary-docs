@@ -4,7 +4,8 @@
 
 - **generic name:** taurolidine
 - **ATC codes:** `B05CA05`
-- **DrugBank:** [DB12473](https://go.drugbank.com/drugs/DB12473)
+- **DrugBank:** [DB12473](https://go.drugbank.com/drugs/DB12473) · **PubChem:** [CID 29566](https://pubchem.ncbi.nlm.nih.gov/compound/29566)
+- **molar mass:** 284.35 g/mol (C7H16N4O4S2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

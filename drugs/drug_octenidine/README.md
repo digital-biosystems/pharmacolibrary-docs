@@ -4,7 +4,8 @@
 
 - **generic name:** octenidine
 - **ATC codes:** `A01AB24`, `R02AA21`
-- **DrugBank:** [DB12624](https://go.drugbank.com/drugs/DB12624)
+- **DrugBank:** [DB12624](https://go.drugbank.com/drugs/DB12624) · **PubChem:** [CID 51167](https://pubchem.ncbi.nlm.nih.gov/compound/51167)
+- **molar mass:** 550.92 g/mol (C36H62N4) — DrugBank
 - **groups:** investigational
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[elimination half-line]` (1.2 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The medifoxamine record was rejected because its systemic clearance of 1299 l/min against a distribution volume of 1321 l is physiologically implausible, pointing to a unit or scale extraction error.**
+
+The abstract-only source for medifoxamine in healthy volunteers reports a systemic clearance of 1299 l/min and a volume of distribution of 1321 l, a clearance/volume combination outside the physiological window and consistent with a unit or scale extraction error. The elimination half-life of 1.2 h is on record, while the urinary excretion of parent drug has no value. A second reader returned no values for any of the four parameters, so no independent confirmation of the numbers exists. Extracted — medifoxamine: t1/2z 1.2 h, CL 1.3e+03 l/min, V 1.32e+03 l.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of elimination half-line: this record has 1.2, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Saleh S; Johnston A; Edeki T; Turner P et al. (1990). International clinical psychopharmacology 5
@@ -26,6 +29,9 @@ Saleh S; Johnston A; Edeki T; Turner P et al. (1990). International clinical psy
 
 ## Model component
 <dbs-pgx drug="medifoxamine" model-id="Medifoxamine_Saleh1990_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="medifoxamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

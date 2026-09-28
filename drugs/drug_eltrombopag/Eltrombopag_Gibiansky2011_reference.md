@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The eltrombopag record was held back because the absorption rate constant ka and lag time Tlag were never reported in the source and placeholder values were substituted, giving an invented absorption input for a 2-compartment apparent-parameterization model.**
+
+The record was built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model; the abstract reports only CL/F 0.668 L/h, V1/F 8.76 L, V2/F 11.3 L and Q/F 0.399 L/h for eltrombopag. The absorption rate constant ka and lag time Tlag are not reported in the source, so placeholder values were substituted for these missing parameters, meaning the absorption input was invented rather than estimated. The model also assumes F=1 and Fm=1 with no molar correction, using an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader disagreed on the parameterization (mechanistic rather than apparent) and read all four parameter values as null, so the extracted values 0.668, 8.76, 11.3 and 0.399 are contested. Extracted — eltrombopag: CL/F 0.668 L/h, V1/F 8.76 L, V2/F 11.3 L, Q/F 0.399 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gibiansky E; Zhang J; Williams D; Wang Z; Ouellet D et al. (2011). Journal of clinical pharmacology 51
@@ -26,6 +29,9 @@ Gibiansky E; Zhang J; Williams D; Wang Z; Ouellet D et al. (2011). Journal of cl
 
 ## Model component
 <dbs-pgx drug="eltrombopag" model-id="Eltrombopag_Gibiansky2011_reference" status="needs_review" stale="false" population="healthy subjects and patients with chronic idiopathic thrombocytopenic purpura" measured-compound="eltrombopag" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -152,6 +158,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference/Eltrombopag_Gibiansky2011_reference.svg" alt="Eltrombopag_Gibiansky2011_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference/Eltrombopag_Gibiansky2011_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference/Eltrombopag_Gibiansky2011_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (S-warfarin vs unknown) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is warfarin's own; they describe S-warfarin. Extracted — S-warfarin: CL 285 mL/h, V 17.9 l.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has S-warfarin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kubo K; Ohara M; Tachikawa M; Cavallari LH; Lee MTM; Wen MS; et al. et al. (2017). The pharmacogenomics journal 17

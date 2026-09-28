@@ -5,7 +5,8 @@
 
 - **generic name:** mirtazapine
 - **ATC codes:** `N06AX11`
-- **DrugBank:** [DB00370](https://go.drugbank.com/drugs/DB00370)
+- **DrugBank:** [DB00370](https://go.drugbank.com/drugs/DB00370) · **PubChem:** [CID 4205](https://pubchem.ncbi.nlm.nih.gov/compound/4205)
+- **molar mass:** 265.3529 g/mol (C17H19N3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -26,9 +27,9 @@ Mirtazapine has been used off-label for a variety of conditions including panic 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Yan_2026_reference](drugs/drug_mirtazapine/Mirtazapine_Yan2026_reference.md) | Yan H et al., Optimizing Mirtazapine Initial Dosing:…, Drug design, development an… (2026) | [10.2147/DDDT.S601238](https://doi.org/10.2147/DDDT.S601238) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Yan_2026_reference](drugs/drug_mirtazapine/Mirtazapine_Yan2026_reference.md) | 1-compartment (no model) | 3 | Yan H et al., Optimizing Mirtazapine Initial Dosing:…, Drug design, development an… (2026) | [10.2147/DDDT.S601238](https://doi.org/10.2147/DDDT.S601238) |
 
 ## ADME sites
 

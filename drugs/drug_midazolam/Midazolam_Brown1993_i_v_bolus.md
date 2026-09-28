@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[a]` (2040 vs not captured) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The midazolam record was rejected because the absorption rate constant (Ka = 0.14 /h) carries a unit that could not be converted to SI, and the entry 'A (ng/ml) = 2040' is a concentration intercept rather than a structural parameter, giving a dimension mismatch.**
+
+The record lists 'equation variable A (ng/ml) = 2040' alongside true rate constants λ1 = 0.385 min⁻¹ and kel = 0.0249 min⁻¹ for the one-compartment midazolam model in healthy dogs; A is a coefficient of the biexponential equation, not a parameter, so its inclusion as a structural parameter is a dimension mismatch. The absorption rate constant Ka = 0.14 /h and lag time 1.23 h were reported in hours while the disposition constants are in minutes, and the /h unit could not be converted to SI, so Ka reached the record without a usable value. A second reader left all seven extracted parameter values (2040, 42500, 12.1, 36.8, 0.434, 0.385, 0.0249) uncontested, so the numbers themselves were not disputed. Extracted — midazolam: λ1 0.385 min-1, kel 0.0249 min-1, AUC 4.25e+04 ng/min/ml, MRT 36.8 min, V 0.434 l/kg, CL 12.1 ml/min/kg, kabs 0.14 /h, tlag 1.23 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of a: this record has 2040, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Brown SA; Jacobson JD; Hartsfield SM et al. (1993). Journal of veterinary pharmacology and therapeutics 16

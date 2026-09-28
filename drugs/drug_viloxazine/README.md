@@ -5,7 +5,8 @@
 
 - **generic name:** viloxazine
 - **ATC codes:** `N06AX09`
-- **DrugBank:** [DB09185](https://go.drugbank.com/drugs/DB09185)
+- **DrugBank:** [DB09185](https://go.drugbank.com/drugs/DB09185) · **PubChem:** [CID 5666](https://pubchem.ncbi.nlm.nih.gov/compound/5666)
+- **molar mass:** 237.299 g/mol (C13H19NO3) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Nasser_2021_reference](drugs/drug_viloxazine/Viloxazine_Nasser2021_reference.md) | Nasser A et al., Population Pharmacokinetics of Viloxazi…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1940](https://doi.org/10.1002/jcph.1940) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Nasser_2021_reference](drugs/drug_viloxazine/Viloxazine_Nasser2021_reference.md) | parent + metabolite (no model) | 2 | Nasser A et al., Population Pharmacokinetics of Viloxazi…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1940](https://doi.org/10.1002/jcph.1940) |
 
 ## Pharmacogenomics (PGx)
 

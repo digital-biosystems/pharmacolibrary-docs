@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Shah RV; Kipper K; Baker EH; Barker CIS; Oldfield I; Davidson HC; et al. et al. (2025). Antibiotics (Basel, Switzerland) 14
@@ -25,6 +25,9 @@ Shah RV; Kipper K; Baker EH; Barker CIS; Oldfield I; Davidson HC; et al. et al. 
 
 ## Model component
 <dbs-pgx drug="clarithromycin" model-id="Clarithromycin_Shah2025_reference" status="curated_candidate" stale="false" population="critically ill adults" measured-compound="clarithromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -119,6 +122,8 @@ Shah RV; Kipper K; Baker EH; Barker CIS; Oldfield I; Davidson HC; et al. et al. 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference.svg" alt="Clarithromycin_Shah2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference_sim_controls.json"></dbs-fmusim>
 

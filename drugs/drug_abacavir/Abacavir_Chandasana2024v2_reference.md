@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C2_center_consistency_wt failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (abacavir/dolutegravir/lamivudine vs abacavir) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The abacavir record lists three conflicting weight-exponent values for apparent clearance (0.794, 0.455, 0.758) and two central volumes (V2/F 10.1 L, V1/F 23.1 L), and its consistency check failed without computing a comparison, so it was held for review.**
+
+The parameter list contains three different values for the same covariate effect, the weight exponent on apparent clearance (theta_cl_f_wt_power: 0.794, 0.455, 0.758), and two distinct apparent central volumes of distribution (V2/F 10.1 l and V1/F 23.1 l), making the parameter attribution ambiguous. The failed check reported a failure without computing a comparison (ratio None), so it is an inconclusive check rather than a demonstrated fault. A second reader also disagreed on the dosed compound (abacavir/dolutegravir/lamivudine versus abacavir) and on the weight exponent for apparent volume (0.556 versus 0.698). Extracted — abacavir: CL/F 16.3 L/h, V2/F 10.1 l, kabs 2.08, Q/F 1.69 l/h, V3/F 23 l, Fab 1.62, V1/F 23.1 l, V/F 32.7, … (+1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has abacavir/dolutegravir/lamivudine, the second reading abacavir; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 22:42:01.409113+00:00) predates the upstream re-run (2026-09-23 18:21:59.514368+00:00). Current validate status: `needs_review`.
 

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;alanyl glutamine&quot;,&quot;href&quot;:&quot;drugs/drug_alanyl_glutamine/&quot;},{&quot;label&quot;:&quot;Momin_2022 \u00b7 PD Fractional Activity&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlanylGlutamine_Albers1988_reference&quot;,&quot;label&quot;:&quot;Albers_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

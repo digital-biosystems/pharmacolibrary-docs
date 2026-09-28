@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;lactitol&quot;,&quot;href&quot;:&quot;drugs/drug_lactitol/&quot;},{&quot;label&quot;:&quot;Oku_2007 \u00b7 PD diarrhea&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diarrhea — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span>

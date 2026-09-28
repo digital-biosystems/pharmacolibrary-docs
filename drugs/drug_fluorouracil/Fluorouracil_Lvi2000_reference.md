@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q19]` (44.4 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 44.4, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lévi F; Metzger G; Massari C; Milano G et al. (2000). Clinical pharmacokinetics 38
@@ -130,7 +131,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference/Fluorouracil_Lvi2000_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference/Fluorouracil_Lvi2000_reference_sim_controls.json"></dbs-fmusim>
 

@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[age_contrast_adolescent_adult_on_cl_f]` (1.06 vs not captured) and 7 more field(s) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The liraglutide model was quarantined because clearance, distribution volume, absorption rate constant and absorption lag time had no extracted values, so library defaults were substituted, and the covariate effects were never simulated.**
+
+No values for liraglutide's clearance (CL/F), volume of distribution (V/F), absorption rate constant (kabs) or absorption lag time were available in the source, so placeholders replaced them and the model was held back rather than published with invented numbers. The absorption rate constant was additionally assumed rather than reported, and bioavailability was taken as 1 with no molar correction. Although the record defines covariate effects on clearance (sex 1.12, children vs adults 1.11, adolescents vs adults 1.06, body-weight exponent 0.762 and 0.587), only the reference individual was simulated, so these effects were never exercised. A second reader also disagreed on the age and sex covariate values, reading 1.11 and 1.12 where this record lists them as null, and reported relative standard errors (38.3%, 38%, 13.2%) absent here. Extracted — liraglutide: kabs 0.0804, CL/F 1.07, V/F 13.1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of age_contrast_adolescent_adult_on_cl_f: this record has 1.06, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Carlsson Petri KC; Hale PM; Hesse D; Rathor N; Mastrandrea LD et al. (2021). Pediatric obesity 16
@@ -28,6 +31,9 @@ Carlsson Petri KC; Hale PM; Hesse D; Rathor N; Mastrandrea LD et al. (2021). Ped
 
 ## Model component
 <dbs-pgx drug="liraglutide" model-id="Liraglutide_Carlsson2021_estimate" status="model_quarantined" stale="false" population="children, adolescents and adults with obesity" measured-compound="liraglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted, plus 5 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

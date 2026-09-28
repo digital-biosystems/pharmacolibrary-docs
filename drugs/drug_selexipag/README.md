@@ -4,7 +4,8 @@
 
 - **generic name:** selexipag
 - **ATC codes:** `B01AC27`
-- **DrugBank:** [DB11362](https://go.drugbank.com/drugs/DB11362)
+- **DrugBank:** [DB11362](https://go.drugbank.com/drugs/DB11362) · **PubChem:** [CID 9913767](https://pubchem.ncbi.nlm.nih.gov/compound/9913767)
+- **molar mass:** 496.63 g/mol (C26H32N4O4S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

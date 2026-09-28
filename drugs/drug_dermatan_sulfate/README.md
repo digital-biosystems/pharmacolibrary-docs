@@ -4,7 +4,8 @@
 
 - **generic name:** dermatan sulfate
 - **ATC codes:** `B01AX04`
-- **DrugBank:** [DB15880](https://go.drugbank.com/drugs/DB15880)
+- **DrugBank:** [DB15880](https://go.drugbank.com/drugs/DB15880) · **PubChem:** not captured
+- **molar mass:** 475.38 g/mol (C14H21NO15S) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

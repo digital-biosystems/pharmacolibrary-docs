@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[rfviia dose]` (not captured vs 20) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 3.08, model 1.75).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — coagulation factor viia: CL 33 ml kg−1 h−1, Vss 174 ml kg−1, t1/2z 2.37 h, V 83 ml.kg-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of rfviia dose: this record has none, the second reading 20; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Klitgaard T; Nielsen TG et al. (2008). British journal of clinical pharmacology 65
@@ -26,6 +29,9 @@ Klitgaard T; Nielsen TG et al. (2008). British journal of clinical pharmacology 
 
 ## Model component
 <dbs-pgx drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Klitgaard2008_nonbleeding_patients_wit" status="needs_review" stale="false" population="mixed (healthy volunteers, haemophilia, liver surgery, trauma)" measured-compound="recombinant activated factor VII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -223,6 +229,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_nonbleeding_patients_wit/CoagulationFactorViia_Klitgaard2008_nonbleeding_patients_wit.svg" alt="CoagulationFactorViia_Klitgaard2008_nonbleeding_patients_wit diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_nonbleeding_patients_wit/CoagulationFactorViia_Klitgaard2008_nonbleeding_patients_wit_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_nonbleeding_patients_wit/CoagulationFactorViia_Klitgaard2008_nonbleeding_patients_wit_sim_controls.json"></dbs-fmusim>
 

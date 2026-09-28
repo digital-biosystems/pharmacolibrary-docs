@@ -4,7 +4,8 @@
 
 - **generic name:** oliceridine
 - **ATC codes:** `N02AX07`
-- **DrugBank:** [DB14881](https://go.drugbank.com/drugs/DB14881)
+- **DrugBank:** [DB14881](https://go.drugbank.com/drugs/DB14881) · **PubChem:** not captured
+- **molar mass:** 386.55 g/mol (C22H30N2O2S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

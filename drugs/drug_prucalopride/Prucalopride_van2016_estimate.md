@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clpru‐usa‐12 (l h-1)a]` (not captured vs 22.9) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**This prucalopride paediatric model record was refused because a structural parameter's reported unit could not be converted to SI, leaving a dimension mismatch in the two-compartment parameter set.**
+
+The record reports a two-compartment structure for prucalopride in children with V2 446 L, Q 16.9 L/h, V3 248 L, absorption rate constants Ka1 0.792 h−1 and Ka2 3.87 h−1, mean transit time 0.734 h and bioavailability 0.858. The refusal rests on a dimension mismatch on a structural parameter: one of the reported units could not be converted to SI, so that parameter entered the record without an SI value. A second reader also diverged on several entries, reading an additional clearance of 22.9 L/h absent from this record, a different identifier for Ka1, dropping Ka2, and adding relative standard errors of 15%, 3.3% and 7.9% for Q, V2 and V3 that this record lacks. Extracted — prucalopride: V2 446, Q 16.9, V3 248, t1/2ka 0.792 h−1, k21 3.87 h−1, MTT 0.734 h, Fab 0.858.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clpru‐usa‐12 (l h-1)a: this record has none, the second reading 22.9; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 van Schaick E; Benninga MA; Levine A; Magnusson M; Troy S et al. (2016). Pharmacology research & perspectives 4
@@ -26,6 +29,9 @@ van Schaick E; Benninga MA; Levine A; Magnusson M; Troy S et al. (2016). Pharmac
 
 ## Model component
 <dbs-pgx drug="prucalopride" model-id="Prucalopride_van2016_estimate" status="rejected" stale="false" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 

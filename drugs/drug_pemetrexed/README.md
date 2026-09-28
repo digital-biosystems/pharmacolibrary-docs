@@ -5,7 +5,8 @@
 
 - **generic name:** pemetrexed
 - **ATC codes:** `L01BA04`
-- **DrugBank:** [DB00642](https://go.drugbank.com/drugs/DB00642)
+- **DrugBank:** [DB00642](https://go.drugbank.com/drugs/DB00642) · **PubChem:** [CID 446556](https://pubchem.ncbi.nlm.nih.gov/compound/446556)
+- **molar mass:** 427.4106 g/mol (C20H21N5O6) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -34,11 +35,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Boosman_2023_reference](drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md) | Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal of clinical… (2023) | [10.1111/bcp.15520](https://doi.org/10.1111/bcp.15520) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Cao_2022_reference](drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md) | Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.954242](https://doi.org/10.3389/fphar.2022.954242) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [de_2022_reference](drugs/drug_pemetrexed/Pemetrexed_de2022_reference.md) | de Rouw N et al., Hyperhydration with cisplatin does not…, British journal of clinical… (2022) | [10.1111/bcp.15031](https://doi.org/10.1111/bcp.15031) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Boosman_2023_reference](drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md) | 1-compartment, IV | 3 | Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal of clinical… (2023) | [10.1111/bcp.15520](https://doi.org/10.1111/bcp.15520) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Cao_2022_reference](drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md) | 2-compartment, IV | 4 | Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.954242](https://doi.org/10.3389/fphar.2022.954242) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [de_2022_reference](drugs/drug_pemetrexed/Pemetrexed_de2022_reference.md) | 1-compartment, IV | 2 | de Rouw N et al., Hyperhydration with cisplatin does not…, British journal of clinical… (2022) | [10.1111/bcp.15031](https://doi.org/10.1111/bcp.15031) |
 
 ## Pharmacodynamics (PD)
 

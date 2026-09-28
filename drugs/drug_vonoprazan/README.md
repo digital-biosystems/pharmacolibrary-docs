@@ -5,7 +5,8 @@
 
 - **generic name:** vonoprazan
 - **ATC codes:** `A02BC08`, `A02BD17`
-- **DrugBank:** [DB11739](https://go.drugbank.com/drugs/DB11739)
+- **DrugBank:** [DB11739](https://go.drugbank.com/drugs/DB11739) · **PubChem:** [CID 15981397](https://pubchem.ncbi.nlm.nih.gov/compound/15981397)
+- **molar mass:** 345.39 g/mol (C17H16FN3O2S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -30,9 +31,9 @@ In February 2015, vonoprazan was first marketed in Japan for the treatment of ac
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Echizen_2016_reference](drugs/drug_vonoprazan/Vonoprazan_Echizen2016_reference.md) | Echizen H, The First-in-Class Potassium-Competitiv…, Clinical pharmacokinetics (2016) | [10.1007/s40262-015-0326-7](https://doi.org/10.1007/s40262-015-0326-7) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Echizen_2016_reference](drugs/drug_vonoprazan/Vonoprazan_Echizen2016_reference.md) | 1-compartment (no model) | 0 | Echizen H, The First-in-Class Potassium-Competitiv…, Clinical pharmacokinetics (2016) | [10.1007/s40262-015-0326-7](https://doi.org/10.1007/s40262-015-0326-7) |
 
 ## ADME sites
 

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A09A&quot;,&quot;href&quot;:&quot;atc/A09A.md&quot;},{&quot;label&quot;:&quot;betaine&quot;,&quot;href&quot;:&quot;drugs/drug_betaine/&quot;},{&quot;label&quot;:&quot;Rehman_2022 \u00b7 PD acetylcholinesterase inhibition&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acetylcholinesterase inhibition — PD  <span class="pk-badge pk-badge--green">extracted</span>

@@ -6,7 +6,6 @@
 - **ddd**
   - [allopurinol <sub>(10/15/41)</sub>](drugs/drug_allopurinol/)
   - [amoxicillin <sub>(18/3/0)</sub>](drugs/drug_amoxicillin/)
-  - [brexpiprazole <sub>(4/1/1)</sub>](drugs/drug_brexpiprazole/)
   - [clopidogrel <sub>(13/19/14)</sub>](drugs/drug_clopidogrel/)
   - [ibuprofen <sub>(5/15/8)</sub>](drugs/drug_ibuprofen/)
   - [metformin <sub>(21/15/7)</sub>](drugs/drug_metformin/)
@@ -15,6 +14,7 @@
 - **dbs**
   - [allopurinol <sub>(10/15/41)</sub>](drugs/drug_allopurinol/)
   - [bleomycin <sub>(3/32/1)</sub>](drugs/drug_bleomycin/)
+  - [brexpiprazole <sub>(4/1/1)</sub>](drugs/drug_brexpiprazole/)
   - [cilazapril <sub>(0/44/0)</sub>](drugs/drug_cilazapril/)
   - [dacarbazine <sub>(0/9/0)</sub>](drugs/drug_dacarbazine/)
   - [doxazosin <sub>(3/14/1)</sub>](drugs/drug_doxazosin/)
@@ -534,7 +534,7 @@
       - [A07X Other Antidiarrheals](atc/A07X.md)
         - albumin tannate <sub>(0/0/0)</sub>
         - albumin tannate combinations <sub>(0/0/0)</sub>
-        - calcium compounds <sub>(0/0/0)</sub>
+        - [calcium compounds <sub>(0/0/0)</sub>](drugs/drug_calcium_compounds/)
         - [ceratonia <sub>(0/6/0)</sub>](drugs/drug_ceratonia/)
         - [crofelemer <sub>(0/3/0)</sub>](drugs/drug_crofelemer/)
         - [racecadotril <sub>(0/1/0)</sub>](drugs/drug_racecadotril/)
@@ -746,79 +746,79 @@
       - [A12A Calcium](atc/A12A.md)
         - [calcium carbonate <sub>(2/4/0)</sub>](drugs/drug_calcium_carbonate/)
         - [calcium chloride <sub>(1/0/0)</sub>](drugs/drug_calcium_chloride/)
-        - calcium citrate <sub>(0/0/0)</sub>
+        - [calcium citrate <sub>(0/0/0)</sub>](drugs/drug_calcium_citrate/)
         - calcium citrate lysine complex <sub>(0/0/0)</sub>
         - calcium different salts in combination <sub>(0/0/0)</sub>
         - calcium glubionate <sub>(0/0/0)</sub>
-        - calcium glucoheptonate <sub>(0/0/0)</sub>
-        - calcium gluconate <sub>(0/0/0)</sub>
+        - [calcium glucoheptonate <sub>(0/0/0)</sub>](drugs/drug_calcium_glucoheptonate/)
+        - [calcium gluconate <sub>(0/0/0)</sub>](drugs/drug_calcium_gluconate/)
         - calcium glycerylphosphate <sub>(0/0/0)</sub>
         - calcium lactate <sub>(0/0/0)</sub>
-        - calcium lactate gluconate <sub>(0/0/0)</sub>
+        - [calcium lactate gluconate <sub>(0/0/0)</sub>](drugs/drug_calcium_lactate_gluconate/)
         - calcium laevulate <sub>(0/0/0)</sub>
         - calcium pangamate <sub>(0/0/0)</sub>
-        - calcium phosphate <sub>(0/0/0)</sub>
+        - [calcium phosphate <sub>(0/0/0)</sub>](drugs/drug_calcium_phosphate/)
       - [A12B Potassium](atc/A12B.md)
         - [potassium chloride <sub>(0/0/0)</sub>](drugs/drug_potassium_chloride/)
-        - potassium citrate <sub>(0/0/0)</sub>
+        - [potassium citrate <sub>(0/0/0)</sub>](drugs/drug_potassium_citrate/)
         - potassium combinations <sub>(0/0/0)</sub>
         - potassium different salts in combination <sub>(0/0/0)</sub>
-        - potassium gluconate <sub>(0/0/0)</sub>
-        - potassium hydrogencarbonate <sub>(0/0/0)</sub>
+        - [potassium gluconate <sub>(0/0/0)</sub>](drugs/drug_potassium_gluconate/)
+        - [potassium hydrogencarbonate <sub>(0/0/0)</sub>](drugs/drug_potassium_hydrogencarbonate/)
         - potassium hydrogentartrate <sub>(0/0/0)</sub>
       - [A12C Other Mineral Supplements](atc/A12C.md)
         - fluoride combinations <sub>(0/0/0)</sub>
-        - magnesium aspartate <sub>(0/0/0)</sub>
-        - magnesium chloride <sub>(0/0/0)</sub>
+        - [magnesium aspartate <sub>(0/0/0)</sub>](drugs/drug_magnesium_aspartate/)
+        - [magnesium chloride <sub>(0/0/0)</sub>](drugs/drug_magnesium_chloride/)
         - [magnesium citrate <sub>(0/0/0)</sub>](drugs/drug_magnesium_citrate/)
         - [magnesium (different salts in combination) <sub>(4/0/0)</sub>](drugs/drug_magnesium_different_salts_in_combination/)
         - magnesium gluconate <sub>(0/0/0)</sub>
-        - magnesium lactate <sub>(0/0/0)</sub>
-        - magnesium levulinate <sub>(0/0/0)</sub>
-        - magnesium orotate <sub>(0/0/0)</sub>
+        - [magnesium lactate <sub>(0/0/0)</sub>](drugs/drug_magnesium_lactate/)
+        - [magnesium levulinate <sub>(0/0/0)</sub>](drugs/drug_magnesium_levulinate/)
+        - [magnesium orotate <sub>(0/0/0)</sub>](drugs/drug_magnesium_orotate/)
         - [magnesium oxide <sub>(0/33/0)</sub>](drugs/drug_magnesium_oxide/)
         - magnesium pidolate <sub>(0/0/0)</sub>
         - [magnesium sulfate <sub>(2/0/0)</sub>](drugs/drug_magnesium_sulfate/)
         - [sodium chloride <sub>(0/0/0)</sub>](drugs/drug_sodium_chloride/)
         - [sodium fluoride <sub>(0/1/0)</sub>](drugs/drug_sodium_fluoride/)
         - [sodium monofluorophosphate <sub>(0/0/0)</sub>](drugs/drug_sodium_monofluorophosphate/)
-        - sodium selenate <sub>(0/0/0)</sub>
+        - [sodium selenate <sub>(0/0/0)</sub>](drugs/drug_sodium_selenate/)
         - [sodium selenite <sub>(1/0/0)</sub>](drugs/drug_sodium_selenite/)
         - [sodium sulfate <sub>(0/41/0)</sub>](drugs/drug_sodium_sulfate/)
         - [zinc <sub>(1/0/0)</sub>](drugs/drug_zinc/)
         - zinc gluconate <sub>(0/0/0)</sub>
-        - zinc orotate <sub>(0/0/0)</sub>
+        - [zinc orotate <sub>(0/0/0)</sub>](drugs/drug_zinc_orotate/)
         - zinc protein complex <sub>(0/0/0)</sub>
-        - zinc sulfate <sub>(0/0/0)</sub>
+        - [zinc sulfate <sub>(0/0/0)</sub>](drugs/drug_zinc_sulfate/)
     - A14 Anabolic Agents For Systemic Use
       - [A14A Anabolic Steroids](atc/A14A.md)
         - androstanolone <sub>(0/0/0)</sub>
         - ethylestrenol <sub>(0/0/0)</sub>
         - metandienone <sub>(0/0/0)</sub>
-        - metenolone <sub>(0/0/0)</sub>
+        - [metenolone <sub>(0/0/0)</sub>](drugs/drug_metenolone/)
         - [nandrolone <sub>(0/0/0)</sub>](drugs/drug_nandrolone/)
         - norethandrolone <sub>(0/0/0)</sub>
         - oxabolone cipionate <sub>(0/0/0)</sub>
-        - oxandrolone <sub>(0/0/0)</sub>
-        - oxymetholone <sub>(0/0/0)</sub>
+        - [oxandrolone <sub>(0/0/0)</sub>](drugs/drug_oxandrolone/)
+        - [oxymetholone <sub>(0/0/0)</sub>](drugs/drug_oxymetholone/)
         - prasterone <sub>(0/0/0)</sub>
         - quinbolone <sub>(0/0/0)</sub>
-        - stanozolol <sub>(0/0/0)</sub>
+        - [stanozolol <sub>(0/0/0)</sub>](drugs/drug_stanozolol/)
     - A16 Other Alimentary Tract And Metabolism Products
       - [A16A Other Alimentary Tract And Metabolism Products](atc/A16A.md)
         - [ademetionine <sub>(0/0/0)</sub>](drugs/drug_ademetionine/)
-        - agalsidase alfa <sub>(0/0/0)</sub>
-        - agalsidase beta <sub>(0/0/0)</sub>
-        - alglucerase <sub>(0/0/0)</sub>
+        - [agalsidase alfa <sub>(0/0/0)</sub>](drugs/drug_agalsidase_alfa/)
+        - [agalsidase beta <sub>(0/0/0)</sub>](drugs/drug_agalsidase_beta/)
+        - [alglucerase <sub>(0/0/0)</sub>](drugs/drug_alglucerase/)
         - [alglucosidase alfa <sub>(2/0/0)</sub>](drugs/drug_alglucosidase_alfa/)
-        - anethole trithione <sub>(0/0/0)</sub>
+        - [anethole trithione <sub>(0/0/0)</sub>](drugs/drug_anethole_trithione/)
         - [apraglutide <sub>(0/0/0)</sub>](drugs/drug_apraglutide/)
-        - asfotase alfa <sub>(0/0/0)</sub>
+        - [asfotase alfa <sub>(0/0/0)</sub>](drugs/drug_asfotase_alfa/)
         - atidarsagene autotemcel <sub>(0/0/0)</sub>
         - [avalglucosidase alfa <sub>(0/0/0)</sub>](drugs/drug_avalglucosidase_alfa/)
         - [betaine <sub>(0/1/0)</sub>](drugs/drug_betaine/)
         - carglumic acid <sub>(0/0/0)</sub>
-        - cerliponase alfa <sub>(0/0/0)</sub>
+        - [cerliponase alfa <sub>(0/0/0)</sub>](drugs/drug_cerliponase_alfa/)
         - cipaglucosidase alfa <sub>(0/0/0)</sub>
         - doxecitine and doxribtimine <sub>(0/0/0)</sub>
         - eladocagene exuparvovec <sub>(0/0/0)</sub>
@@ -836,26 +836,26 @@
         - idursulfase beta <sub>(0/0/0)</sub>
         - [imiglucerase <sub>(0/0/0)</sub>](drugs/drug_imiglucerase/)
         - [laronidase <sub>(0/2/0)</sub>](drugs/drug_laronidase/)
-        - leriglitazone <sub>(0/0/0)</sub>
+        - [leriglitazone <sub>(0/0/0)</sub>](drugs/drug_leriglitazone/)
         - [levocarnitine <sub>(0/0/0)</sub>](drugs/drug_levocarnitine/)
         - [lonafarnib <sub>(0/1/0)</sub>](drugs/drug_lonafarnib/)
         - [lumasiran <sub>(0/0/0)</sub>](drugs/drug_lumasiran/)
         - mercaptamine <sub>(0/0/0)</sub>
         - [metreleptin <sub>(0/0/0)</sub>](drugs/drug_metreleptin/)
-        - migalastat <sub>(0/0/0)</sub>
-        - miglustat <sub>(0/0/0)</sub>
+        - [migalastat <sub>(0/0/0)</sub>](drugs/drug_migalastat/)
+        - [miglustat <sub>(0/0/0)</sub>](drugs/drug_miglustat/)
         - [nedosiran <sub>(0/2/0)</sub>](drugs/drug_nedosiran/)
-        - nitisinone <sub>(0/0/0)</sub>
-        - olipudase alfa <sub>(0/0/0)</sub>
-        - pabinafusp alfa <sub>(0/0/0)</sub>
-        - pegunigalsidase alfa <sub>(0/0/0)</sub>
-        - pegvaliase <sub>(0/0/0)</sub>
-        - pegzilarginase <sub>(0/0/0)</sub>
+        - [nitisinone <sub>(0/0/0)</sub>](drugs/drug_nitisinone/)
+        - [olipudase alfa <sub>(0/0/0)</sub>](drugs/drug_olipudase_alfa/)
+        - [pabinafusp alfa <sub>(0/0/0)</sub>](drugs/drug_pabinafusp_alfa/)
+        - [pegunigalsidase alfa <sub>(0/0/0)</sub>](drugs/drug_pegunigalsidase_alfa/)
+        - [pegvaliase <sub>(0/0/0)</sub>](drugs/drug_pegvaliase/)
+        - [pegzilarginase <sub>(0/0/0)</sub>](drugs/drug_pegzilarginase/)
         - rebisufligene etisparvovec <sub>(0/0/0)</sub>
         - sacrosidase <sub>(0/0/0)</sub>
         - [sapropterin <sub>(1/0/0)</sub>](drugs/drug_sapropterin/)
         - sebelipase alfa <sub>(0/0/0)</sub>
-        - sepiapterin <sub>(0/0/0)</sub>
+        - [sepiapterin <sub>(0/0/0)</sub>](drugs/drug_sepiapterin/)
         - [sodium benzoate <sub>(0/0/0)</sub>](drugs/drug_sodium_benzoate/)
         - sodium benzoate and sodium phenylacetate <sub>(0/0/0)</sub>
         - [sodium phenylbutyrate <sub>(2/0/0)</sub>](drugs/drug_sodium_phenylbutyrate/)
@@ -863,16 +863,16 @@
         - [teduglutide <sub>(0/0/0)</sub>](drugs/drug_teduglutide/)
         - telotristat <sub>(0/0/0)</sub>
         - [thioctic acid <sub>(0/0/0)</sub>](drugs/drug_thioctic_acid/)
-        - tiomolibdic acid <sub>(0/0/0)</sub>
-        - trientine <sub>(0/0/0)</sub>
-        - triheptanoin <sub>(0/0/0)</sub>
-        - uridine triacetate <sub>(0/0/0)</sub>
-        - velaglucerase alfa <sub>(0/0/0)</sub>
+        - [tiomolibdic acid <sub>(0/0/0)</sub>](drugs/drug_tiomolibdic_acid/)
+        - [trientine <sub>(0/0/0)</sub>](drugs/drug_trientine/)
+        - [triheptanoin <sub>(0/0/0)</sub>](drugs/drug_triheptanoin/)
+        - [uridine triacetate <sub>(0/0/0)</sub>](drugs/drug_uridine_triacetate/)
+        - [velaglucerase alfa <sub>(0/0/0)</sub>](drugs/drug_velaglucerase_alfa/)
         - velmanase alfa <sub>(0/0/0)</sub>
         - verenafusp alfa <sub>(0/0/0)</sub>
         - [vestronidase alfa <sub>(0/2/0)</sub>](drugs/drug_vestronidase_alfa/)
         - [zinc <sub>(1/0/0)</sub>](drugs/drug_zinc/)
-        - zinc acetate <sub>(0/0/0)</sub>
+        - [zinc acetate <sub>(0/0/0)</sub>](drugs/drug_zinc_acetate/)
   - **B Blood And Blood Forming Organs**
     - B01 Antithrombotic Agents
       - [B01A Antithrombotic Agents](atc/B01A.md)
@@ -1117,10 +1117,12 @@
         - [Arginine <sub>(7/4/0)</sub>](drugs/drug_arginine/)
         - [arginine hydrochloride <sub>(2/0/0)</sub>](drugs/drug_arginine_hydrochloride/)
         - [calcium chloride <sub>(1/0/0)</sub>](drugs/drug_calcium_chloride/)
+        - [calcium gluconate <sub>(0/0/0)</sub>](drugs/drug_calcium_gluconate/)
         - cardioplegia solutions <sub>(0/0/0)</sub>
         - combinations of electrolytes <sub>(0/0/0)</sub>
         - [hydrochloric acid <sub>(0/3/0)</sub>](drugs/drug_hydrochloric_acid/)
         - [lysine <sub>(0/28/0)</sub>](drugs/drug_lysine/)
+        - [magnesium chloride <sub>(0/0/0)</sub>](drugs/drug_magnesium_chloride/)
         - [magnesium phosphate <sub>(0/0/0)</sub>](drugs/drug_magnesium_phosphate/)
         - [magnesium sulfate <sub>(2/0/0)</sub>](drugs/drug_magnesium_sulfate/)
         - [potassium acetate <sub>(0/0/0)</sub>](drugs/drug_potassium_acetate/)
@@ -1136,6 +1138,7 @@
         - [trometamol <sub>(0/9/0)</sub>](drugs/drug_trometamol/)
         - [zinc <sub>(1/0/0)</sub>](drugs/drug_zinc/)
         - [zinc chloride <sub>(0/5/0)</sub>](drugs/drug_zinc_chloride/)
+        - [zinc sulfate <sub>(0/0/0)</sub>](drugs/drug_zinc_sulfate/)
     - B06 Other Hematological Agents
       - [B06A Other Hematological Agents](atc/B06A.md)
         - [berotralstat <sub>(1/0/0)</sub>](drugs/drug_berotralstat/)
@@ -1283,7 +1286,7 @@
         - organic nitrates in combination with psycholeptics <sub>(0/0/0)</sub>
         - [oxyfedrine <sub>(0/0/0)</sub>](drugs/drug_oxyfedrine/)
         - oxyfedrine combinations <sub>(0/0/0)</sub>
-        - pentaerithrityl tetranitrate <sub>(0/0/0)</sub>
+        - [pentaerithrityl tetranitrate <sub>(0/0/0)</sub>](drugs/drug_pentaerithrityl_tetranitrate/)
         - pentaerithrityl tetranitrate combinations <sub>(0/0/0)</sub>
         - [prenylamine <sub>(0/0/0)</sub>](drugs/drug_prenylamine/)
         - prenylamine combinations <sub>(0/0/0)</sub>
@@ -1291,133 +1294,221 @@
         - propatylnitrate combinations <sub>(0/0/0)</sub>
         - [serelaxin <sub>(0/0/0)</sub>](drugs/drug_serelaxin/)
         - tenitramine <sub>(0/0/0)</sub>
-        - trapidil <sub>(0/0/0)</sub>
+        - [trapidil <sub>(0/0/0)</sub>](drugs/drug_trapidil/)
         - trolnitrate <sub>(0/0/0)</sub>
         - trolnitrate combinations <sub>(0/0/0)</sub>
         - [vericiguat <sub>(0/0/0)</sub>](drugs/drug_vericiguat/)
       - [C01E Other Cardiac Preparations](atc/C01E.md)
-        - acadesine <sub>(0/0/0)</sub>
-        - acoramidis <sub>(0/0/0)</sub>
-        - adenosine <sub>(0/0/0)</sub>
-        - alprostadil <sub>(0/0/0)</sub>
-        - camphora <sub>(0/0/0)</sub>
-        - crataegus glycosides <sub>(0/0/0)</sub>
-        - creatinolfosfate <sub>(0/0/0)</sub>
-        - fosfocreatine <sub>(0/0/0)</sub>
-        - fructose 16 diphosphate <sub>(0/0/0)</sub>
+        - [acadesine <sub>(0/0/0)</sub>](drugs/drug_acadesine/)
+        - [acoramidis <sub>(0/0/0)</sub>](drugs/drug_acoramidis/)
+        - [adenosine <sub>(0/0/0)</sub>](drugs/drug_adenosine/)
+        - [alprostadil <sub>(0/2/0)</sub>](drugs/drug_alprostadil/)
+        - [camphora <sub>(0/0/0)</sub>](drugs/drug_camphora/)
+        - [crataegus glycosides <sub>(0/0/0)</sub>](drugs/drug_crataegus_glycosides/)
+        - [creatinolfosfate <sub>(0/0/0)</sub>](drugs/drug_creatinolfosfate/)
+        - [fosfocreatine <sub>(0/0/0)</sub>](drugs/drug_fosfocreatine/)
+        - [fructose 1,6-diphosphate <sub>(0/0/0)</sub>](drugs/drug_fructose_16_diphosphate/)
         - [ibuprofen <sub>(5/15/8)</sub>](drugs/drug_ibuprofen/)
         - [indometacin <sub>(0/0/0)</sub>](drugs/drug_indometacin/)
         - [ivabradine <sub>(0/0/0)</sub>](drugs/drug_ivabradine/)
         - [mavacamten <sub>(1/0/0)</sub>](drugs/drug_mavacamten/)
         - [meldonium <sub>(0/0/0)</sub>](drugs/drug_meldonium/)
         - [ranolazine <sub>(0/0/0)</sub>](drugs/drug_ranolazine/)
-        - regadenoson <sub>(0/0/0)</sub>
+        - [regadenoson <sub>(0/0/0)</sub>](drugs/drug_regadenoson/)
         - tiazotic acid <sub>(0/0/0)</sub>
-        - tiracizine <sub>(0/0/0)</sub>
-        - trimetazidine <sub>(0/0/0)</sub>
+        - [tiracizine <sub>(0/0/0)</sub>](drugs/drug_tiracizine/)
+        - [trimetazidine <sub>(0/0/0)</sub>](drugs/drug_trimetazidine/)
         - [ubidecarenone <sub>(0/0/0)</sub>](drugs/drug_ubidecarenone/)
     - C02 Antihypertensives
       - [C02A Antiadrenergic Agents, Centrally Acting](atc/C02A.md)
         - bietaserpine <sub>(0/0/0)</sub>
         - bietaserpine combinations <sub>(0/0/0)</sub>
-        - [clonidine <sub>(0/0/0)</sub>](drugs/drug_clonidine/)
+        - [clonidine <sub>(1/1/0)</sub>](drugs/drug_clonidine/)
         - combinations of rauwolfia alkaloids <sub>(0/0/0)</sub>
         - combinations of rauwolfia alkoloids combinations <sub>(0/0/0)</sub>
-        - deserpidine <sub>(0/0/0)</sub>
-        - guanfacine <sub>(0/0/0)</sub>
+        - [deserpidine <sub>(0/0/0)</sub>](drugs/drug_deserpidine/)
+        - [guanfacine <sub>(1/0/0)</sub>](drugs/drug_guanfacine/)
         - methoserpidine <sub>(0/0/0)</sub>
-        - methyldopa <sub>(0/0/0)</sub>
-        - methyldopa levorotatory <sub>(0/0/0)</sub>
-        - methyldopa racemic <sub>(0/0/0)</sub>
-        - moxonidine <sub>(0/0/0)</sub>
-        - rauwolfia alkaloids whole root <sub>(0/0/0)</sub>
-        - rescinnamine <sub>(0/0/0)</sub>
-        - reserpine <sub>(0/0/0)</sub>
+        - [Methyldopa <sub>(0/0/0)</sub>](drugs/drug_methyldopa/)
+        - [methyldopa (levorotatory) <sub>(0/0/0)</sub>](drugs/drug_methyldopa_levorotatory/)
+        - [methyldopa (racemic) <sub>(0/0/0)</sub>](drugs/drug_methyldopa_racemic/)
+        - [moxonidine <sub>(1/0/0)</sub>](drugs/drug_moxonidine/)
+        - [rauwolfia alkaloids, whole root <sub>(0/0/0)</sub>](drugs/drug_rauwolfia_alkaloids_whole_root/)
+        - [rescinnamine <sub>(0/0/0)</sub>](drugs/drug_rescinnamine/)
+        - [reserpine <sub>(0/0/0)</sub>](drugs/drug_reserpine/)
         - reserpine combinations <sub>(0/0/0)</sub>
-        - rilmenidine <sub>(0/0/0)</sub>
+        - [rilmenidine <sub>(0/0/0)</sub>](drugs/drug_rilmenidine/)
         - tolonidine <sub>(0/0/0)</sub>
+      - [C02B Antiadrenergic Agents, Ganglion-Blocking](atc/C02B.md)
+        - [mecamylamine <sub>(0/1/0)</sub>](drugs/drug_mecamylamine/)
+        - [trimetaphan <sub>(0/0/0)</sub>](drugs/drug_trimetaphan/)
       - [C02C Antiadrenergic Agents, Peripherally Acting](atc/C02C.md)
-        - betanidine <sub>(0/0/0)</sub>
-        - debrisoquine <sub>(0/0/0)</sub>
+        - [betanidine <sub>(0/0/0)</sub>](drugs/drug_betanidine/)
+        - [debrisoquine <sub>(0/0/0)</sub>](drugs/drug_debrisoquine/)
         - [doxazosin <sub>(3/14/1)</sub>](drugs/drug_doxazosin/)
         - guanazodine <sub>(0/0/0)</sub>
-        - guanethidine <sub>(0/0/0)</sub>
+        - [guanethidine <sub>(0/0/0)</sub>](drugs/drug_guanethidine/)
         - guanoclor <sub>(0/0/0)</sub>
         - guanoxabenz <sub>(0/0/0)</sub>
         - guanoxan <sub>(0/0/0)</sub>
-        - indoramin <sub>(0/0/0)</sub>
-        - prazosin <sub>(0/0/0)</sub>
-        - trimazosin <sub>(0/0/0)</sub>
-        - urapidil <sub>(0/0/0)</sub>
+        - [indoramin <sub>(1/0/0)</sub>](drugs/drug_indoramin/)
+        - [prazosin <sub>(1/0/0)</sub>](drugs/drug_prazosin/)
+        - [trimazosin <sub>(0/0/0)</sub>](drugs/drug_trimazosin/)
+        - [urapidil <sub>(0/0/0)</sub>](drugs/drug_urapidil/)
+      - [C02D Arteriolar Smooth Muscle, Agents Acting On](atc/C02D.md)
+        - cadralazine <sub>(0/0/0)</sub>
+        - [diazoxide <sub>(0/0/0)</sub>](drugs/drug_diazoxide/)
+        - [dihydralazine <sub>(0/0/0)</sub>](drugs/drug_dihydralazine/)
+        - [endralazine <sub>(0/0/0)</sub>](drugs/drug_endralazine/)
+        - [hydralazine <sub>(0/0/0)</sub>](drugs/drug_hydralazine/)
+        - [minoxidil <sub>(0/0/0)</sub>](drugs/drug_minoxidil/)
+        - [nitroprusside <sub>(0/0/0)</sub>](drugs/drug_nitroprusside/)
+        - [pinacidil <sub>(0/0/0)</sub>](drugs/drug_pinacidil/)
+      - [C02K Other Antihypertensives](atc/C02K.md)
+        - [ambrisentan <sub>(2/0/0)</sub>](drugs/drug_ambrisentan/)
+        - ambrisentan and tadalafil <sub>(0/0/0)</sub>
+        - [aprocitentan <sub>(0/0/0)</sub>](drugs/drug_aprocitentan/)
+        - [baxdrostat <sub>(0/0/0)</sub>](drugs/drug_baxdrostat/)
+        - [bosentan <sub>(2/0/0)</sub>](drugs/drug_bosentan/)
+        - [ketanserin <sub>(3/0/0)</sub>](drugs/drug_ketanserin/)
+        - [macitentan <sub>(1/0/1)</sub>](drugs/drug_macitentan/)
+        - macitentan and tadalafil <sub>(0/0/0)</sub>
+        - metirosine <sub>(0/0/0)</sub>
+        - [pargyline <sub>(0/0/0)</sub>](drugs/drug_pargyline/)
+        - [riociguat <sub>(1/0/0)</sub>](drugs/drug_riociguat/)
+        - [sitaxentan <sub>(0/0/0)</sub>](drugs/drug_sitaxentan/)
+        - [sotatercept <sub>(0/0/0)</sub>](drugs/drug_sotatercept/)
+        - [tadalafil <sub>(0/0/0)</sub>](drugs/drug_tadalafil/)
+        - [veratrum <sub>(0/0/0)</sub>](drugs/drug_veratrum/)
       - [C02L Antihypertensives And Diuretics In Combination](atc/C02L.md)
         - bietaserpine and diuretics <sub>(0/0/0)</sub>
-        - [clonidine <sub>(0/0/0)</sub>](drugs/drug_clonidine/)
+        - [clonidine <sub>(1/1/0)</sub>](drugs/drug_clonidine/)
         - clonidine and diuretics <sub>(0/0/0)</sub>
         - clonidine and diuretics combinations with other drugs <sub>(0/0/0)</sub>
         - combination of rauwolfia alkaloids and diuretics incl other combinations <sub>(0/0/0)</sub>
+        - [deserpidine <sub>(0/0/0)</sub>](drugs/drug_deserpidine/)
         - deserpidine and diuretics <sub>(0/0/0)</sub>
+        - [dihydralazine <sub>(0/0/0)</sub>](drugs/drug_dihydralazine/)
         - dihydralazine and diuretics <sub>(0/0/0)</sub>
         - dihydralazine and diuretics combinations with other drugs <sub>(0/0/0)</sub>
+        - [guanethidine <sub>(0/0/0)</sub>](drugs/drug_guanethidine/)
         - guanethidine and diuretics <sub>(0/0/0)</sub>
+        - [hydralazine <sub>(0/0/0)</sub>](drugs/drug_hydralazine/)
         - hydralazine and diuretics <sub>(0/0/0)</sub>
         - methoserpidine and diuretics <sub>(0/0/0)</sub>
         - methyldopa levorotatory and diuretics <sub>(0/0/0)</sub>
+        - [moxonidine <sub>(1/0/0)</sub>](drugs/drug_moxonidine/)
         - moxonidine and diuretics <sub>(0/0/0)</sub>
+        - [pargyline <sub>(0/0/0)</sub>](drugs/drug_pargyline/)
         - pargyline and diuretics <sub>(0/0/0)</sub>
         - picodralazine <sub>(0/0/0)</sub>
         - picodralazine and diuretics <sub>(0/0/0)</sub>
         - picodralazine and diuretics combinations with psycholeptics <sub>(0/0/0)</sub>
+        - [pinacidil <sub>(0/0/0)</sub>](drugs/drug_pinacidil/)
         - pinacidil and diuretics <sub>(0/0/0)</sub>
+        - [prazosin <sub>(1/0/0)</sub>](drugs/drug_prazosin/)
         - prazosin and diuretics <sub>(0/0/0)</sub>
         - rauwolfia alkaloids whole root and diuretics <sub>(0/0/0)</sub>
+        - [rescinnamine <sub>(0/0/0)</sub>](drugs/drug_rescinnamine/)
         - rescinnamine and diuretics <sub>(0/0/0)</sub>
         - rescinnamine and diuretics combinations with other drugs <sub>(0/0/0)</sub>
+        - [reserpine <sub>(0/0/0)</sub>](drugs/drug_reserpine/)
         - reserpine and diuretics <sub>(0/0/0)</sub>
         - reserpine and diuretics combinations with other drugs <sub>(0/0/0)</sub>
         - reserpine and diuretics combinations with psycholeptics <sub>(0/0/0)</sub>
-        - syrosingopine <sub>(0/0/0)</sub>
+        - [Syrosingopine <sub>(0/0/0)</sub>](drugs/drug_syrosingopine/)
         - syrosingopine and diuretics <sub>(0/0/0)</sub>
         - veratrum and diuretics <sub>(0/0/0)</sub>
     - C03 Diuretics
       - [C03A Low-Ceiling Diuretics, Thiazides](atc/C03A.md)
-        - bendroflumethiazide <sub>(0/0/0)</sub>
+        - [bendroflumethiazide <sub>(0/0/0)</sub>](drugs/drug_bendroflumethiazide/)
         - bendroflumethiazide and potassium <sub>(0/0/0)</sub>
-        - chlorothiazide <sub>(0/0/0)</sub>
+        - [chlorothiazide <sub>(0/0/0)</sub>](drugs/drug_chlorothiazide/)
         - chlorothiazide and potassium <sub>(0/0/0)</sub>
         - chlorothiazide combinations <sub>(0/0/0)</sub>
-        - cyclopenthiazide <sub>(0/0/0)</sub>
+        - [cyclopenthiazide <sub>(0/0/0)</sub>](drugs/drug_cyclopenthiazide/)
         - cyclopenthiazide and potassium <sub>(0/0/0)</sub>
-        - cyclothiazide <sub>(0/0/0)</sub>
+        - [cyclothiazide <sub>(0/0/0)</sub>](drugs/drug_cyclothiazide/)
         - cyclothiazide and potassium <sub>(0/0/0)</sub>
         - [hydrochlorothiazide <sub>(6/3/2)</sub>](drugs/drug_hydrochlorothiazide/)
         - hydrochlorothiazide and potassium <sub>(0/0/0)</sub>
         - hydrochlorothiazide combinations <sub>(0/0/0)</sub>
-        - hydroflumethiazide <sub>(0/0/0)</sub>
+        - [hydroflumethiazide <sub>(0/0/0)</sub>](drugs/drug_hydroflumethiazide/)
         - hydroflumethiazide and potassium <sub>(0/0/0)</sub>
         - hydroflumethiazide combinations <sub>(0/0/0)</sub>
         - mebutizide <sub>(0/0/0)</sub>
         - methyclothiazide <sub>(0/0/0)</sub>
         - methyclothiazide and potassium <sub>(0/0/0)</sub>
-        - polythiazide <sub>(0/0/0)</sub>
+        - [polythiazide <sub>(0/0/0)</sub>](drugs/drug_polythiazide/)
         - polythiazide and potassium <sub>(0/0/0)</sub>
-        - potassium <sub>(0/0/0)</sub>
-        - trichlormethiazide <sub>(0/0/0)</sub>
+        - [Potassium <sub>(0/5/0)</sub>](drugs/drug_potassium/)
+        - [trichlormethiazide <sub>(0/0/0)</sub>](drugs/drug_trichlormethiazide/)
         - trichlormethiazide and potassium <sub>(0/0/0)</sub>
+      - [C03B Low-Ceiling Diuretics, Excl. Thiazides](atc/C03B.md)
+        - [chlortalidone <sub>(0/0/0)</sub>](drugs/drug_chlortalidone/)
+        - chlortalidone and potassium <sub>(0/0/0)</sub>
+        - [cicletanine <sub>(0/0/0)</sub>](drugs/drug_cicletanine/)
+        - clofenamide <sub>(0/0/0)</sub>
+        - clofenamide and potassium <sub>(0/0/0)</sub>
+        - [clopamide <sub>(0/0/0)</sub>](drugs/drug_clopamide/)
+        - clopamide and potassium <sub>(0/0/0)</sub>
+        - clorexolone <sub>(0/0/0)</sub>
+        - clorexolone combinations with psycholeptics <sub>(0/0/0)</sub>
+        - [fenquizone <sub>(0/0/0)</sub>](drugs/drug_fenquizone/)
+        - [indapamide <sub>(0/0/0)</sub>](drugs/drug_indapamide/)
+        - mefruside <sub>(0/0/0)</sub>
+        - mefruside and potassium <sub>(0/0/0)</sub>
+        - [mersalyl <sub>(0/0/0)</sub>](drugs/drug_mersalyl/)
+        - meticrane <sub>(0/0/0)</sub>
+        - [metolazone <sub>(0/0/0)</sub>](drugs/drug_metolazone/)
+        - [Potassium <sub>(0/5/0)</sub>](drugs/drug_potassium/)
+        - quinethazone <sub>(0/0/0)</sub>
+        - quinethazone and potassium <sub>(0/0/0)</sub>
+        - [theobromine <sub>(0/2/0)</sub>](drugs/drug_theobromine/)
+        - [xipamide <sub>(0/0/0)</sub>](drugs/drug_xipamide/)
+      - [C03C High-Ceiling Diuretics](atc/C03C.md)
+        - [bumetanide <sub>(0/0/0)</sub>](drugs/drug_bumetanide/)
+        - bumetanide and potassium <sub>(0/0/0)</sub>
+        - [etacrynic acid <sub>(0/0/0)</sub>](drugs/drug_etacrynic_acid/)
+        - [etozolin <sub>(0/0/0)</sub>](drugs/drug_etozolin/)
+        - [furosemide <sub>(0/0/0)</sub>](drugs/drug_furosemide/)
+        - furosemide and potassium <sub>(0/0/0)</sub>
+        - [muzolimine <sub>(0/0/0)</sub>](drugs/drug_muzolimine/)
+        - [piretanide <sub>(0/0/0)</sub>](drugs/drug_piretanide/)
+        - [Potassium <sub>(0/5/0)</sub>](drugs/drug_potassium/)
+        - [tienilic acid <sub>(0/0/0)</sub>](drugs/drug_tienilic_acid/)
+        - [torasemide <sub>(0/0/0)</sub>](drugs/drug_torasemide/)
+      - [C03D Aldosterone Antagonists And Other Potassium-Sparing Agents](atc/C03D.md)
+        - [amiloride <sub>(0/0/0)</sub>](drugs/drug_amiloride/)
+        - [canrenone <sub>(3/0/0)</sub>](drugs/drug_canrenone/)
+        - [eplerenone <sub>(0/0/0)</sub>](drugs/drug_eplerenone/)
+        - eplerenone and dapagliflozin <sub>(0/0/0)</sub>
+        - finerenone <sub>(0/0/0)</sub>
+        - potassium canrenoate <sub>(0/0/0)</sub>
+        - spironolactone <sub>(0/0/0)</sub>
+        - triamterene <sub>(0/0/0)</sub>
       - [C03E Diuretics And Potassium-Sparing Agents In Combination](atc/C03E.md)
         - altizide and potassium sparing agents <sub>(0/0/0)</sub>
+        - [bendroflumethiazide <sub>(0/0/0)</sub>](drugs/drug_bendroflumethiazide/)
         - bendroflumethiazide and potassium sparing agents <sub>(0/0/0)</sub>
+        - [bumetanide <sub>(0/0/0)</sub>](drugs/drug_bumetanide/)
         - bumetanide and potassium sparing agents <sub>(0/0/0)</sub>
         - butizide and potassium sparing agents <sub>(0/0/0)</sub>
+        - [chlortalidone <sub>(0/0/0)</sub>](drugs/drug_chlortalidone/)
         - chlortalidone and potassium sparing agents <sub>(0/0/0)</sub>
+        - [cyclopenthiazide <sub>(0/0/0)</sub>](drugs/drug_cyclopenthiazide/)
         - cyclopenthiazide and potassium sparing agents <sub>(0/0/0)</sub>
         - epitizide <sub>(0/0/0)</sub>
         - epitizide and potassium sparing agents <sub>(0/0/0)</sub>
+        - [furosemide <sub>(0/0/0)</sub>](drugs/drug_furosemide/)
         - furosemide and potassium sparing agents <sub>(0/0/0)</sub>
         - [hydrochlorothiazide <sub>(6/3/2)</sub>](drugs/drug_hydrochlorothiazide/)
         - hydrochlorothiazide and potassium sparing agents <sub>(0/0/0)</sub>
         - mebutizide and potassium sparing agents <sub>(0/0/0)</sub>
+        - [metolazone <sub>(0/0/0)</sub>](drugs/drug_metolazone/)
         - metolazone and potassium sparing agents <sub>(0/0/0)</sub>
         - torasemide and potassium sparing agents <sub>(0/0/0)</sub>
+        - [trichlormethiazide <sub>(0/0/0)</sub>](drugs/drug_trichlormethiazide/)
         - trichlormethiazide and potassium sparing agents <sub>(0/0/0)</sub>
       - [C03X Other Diuretics](atc/C03X.md)
         - conivaptan <sub>(0/0/0)</sub>
@@ -1609,6 +1700,7 @@
         - enalapril and nitrendipine <sub>(0/0/0)</sub>
         - fosinopril and diuretics <sub>(0/0/0)</sub>
         - [hydrochlorothiazide <sub>(6/3/2)</sub>](drugs/drug_hydrochlorothiazide/)
+        - [indapamide <sub>(0/0/0)</sub>](drugs/drug_indapamide/)
         - lisinopril and amlodipine <sub>(0/0/0)</sub>
         - lisinopril and diuretics <sub>(0/0/0)</sub>
         - moexipril and diuretics <sub>(0/0/0)</sub>
@@ -1747,6 +1839,7 @@
         - atorvastatin and omega 3 fatty acids <sub>(0/0/0)</sub>
         - atorvastatin and perindopril <sub>(0/0/0)</sub>
         - bempedoic acid and ezetimibe <sub>(0/0/0)</sub>
+        - [indapamide <sub>(0/0/0)</sub>](drugs/drug_indapamide/)
         - [lovastatin <sub>(1/0/0)</sub>](drugs/drug_lovastatin/)
         - lovastatin and nicotinic acid <sub>(0/0/0)</sub>
         - [nebivolol <sub>(1/0/0)</sub>](drugs/drug_nebivolol/)
@@ -2142,6 +2235,7 @@
         - brimonidine <sub>(0/0/0)</sub>
         - cadmium compounds <sub>(0/0/0)</sub>
         - caffeine <sub>(0/0/0)</sub>
+        - [calcium gluconate <sub>(0/0/0)</sub>](drugs/drug_calcium_gluconate/)
         - collagen combinations <sub>(0/0/0)</sub>
         - crisaborole <sub>(0/0/0)</sub>
         - [cromoglicic acid <sub>(0/0/0)</sub>](drugs/drug_cromoglicic_acid/)
@@ -2161,6 +2255,7 @@
         - lithium succinate <sub>(0/0/0)</sub>
         - [magnesium sulfate <sub>(2/0/0)</sub>](drugs/drug_magnesium_sulfate/)
         - mequinol <sub>(0/0/0)</sub>
+        - [minoxidil <sub>(0/0/0)</sub>](drugs/drug_minoxidil/)
         - monobenzone <sub>(0/0/0)</sub>
         - nemolizumab <sub>(0/0/0)</sub>
         - others <sub>(0/0/0)</sub>
@@ -2251,6 +2346,7 @@
     - G04 Urologicals
       - [G04B Urologicals](atc/G04B.md)
         - acetohydroxamic acid <sub>(0/0/0)</sub>
+        - [alprostadil <sub>(0/2/0)</sub>](drugs/drug_alprostadil/)
         - [ammonium chloride <sub>(0/13/0)</sub>](drugs/drug_ammonium_chloride/)
         - apomorphine <sub>(0/0/0)</sub>
         - avanafil <sub>(0/0/0)</sub>
@@ -2279,6 +2375,7 @@
         - sodium salicylate and methenamine <sub>(0/0/0)</sub>
         - solifenacin <sub>(0/0/0)</sub>
         - succinimide <sub>(0/0/0)</sub>
+        - [tadalafil <sub>(0/0/0)</sub>](drugs/drug_tadalafil/)
         - terodiline <sub>(0/0/0)</sub>
         - tiopronin <sub>(0/0/0)</sub>
         - tolterodine <sub>(0/0/0)</sub>
@@ -2298,6 +2395,7 @@
         - prunus africanae cortex <sub>(0/0/0)</sub>
         - sabalis serrulatae fructus <sub>(0/0/0)</sub>
         - silodosin <sub>(0/0/0)</sub>
+        - [tadalafil <sub>(0/0/0)</sub>](drugs/drug_tadalafil/)
         - tamsulosin <sub>(0/0/0)</sub>
         - tamsulosin and dutasteride <sub>(0/0/0)</sub>
         - tamsulosin and solifenacin <sub>(0/0/0)</sub>
@@ -3589,7 +3687,7 @@
       - [N02C Antimigraine Preparations](atc/N02C.md)
         - [almotriptan <sub>(0/0/0)</sub>](drugs/drug_almotriptan/)
         - [atogepant <sub>(3/0/0)</sub>](drugs/drug_atogepant/)
-        - [clonidine <sub>(0/0/0)</sub>](drugs/drug_clonidine/)
+        - [clonidine <sub>(1/1/0)</sub>](drugs/drug_clonidine/)
         - [dihydroergotamine <sub>(0/6/0)</sub>](drugs/drug_dihydroergotamine/)
         - dihydroergotamine combinations <sub>(0/0/0)</sub>
         - [dimetotiazine <sub>(0/0/0)</sub>](drugs/drug_dimetotiazine/)
@@ -4287,6 +4385,7 @@
         - reslizumab <sub>(0/0/0)</sub>
         - seratrodast <sub>(0/0/0)</sub>
         - tezepelumab <sub>(0/0/0)</sub>
+        - [theobromine <sub>(0/2/0)</sub>](drugs/drug_theobromine/)
         - theobromine combinations <sub>(0/0/0)</sub>
         - theophylline <sub>(0/0/0)</sub>
         - theophylline and adrenergics <sub>(0/0/0)</sub>
@@ -4489,7 +4588,7 @@
         - brinzolamide <sub>(0/0/0)</sub>
         - brinzolamide combinations <sub>(0/0/0)</sub>
         - carteolol combinations <sub>(0/0/0)</sub>
-        - [clonidine <sub>(0/0/0)</sub>](drugs/drug_clonidine/)
+        - [clonidine <sub>(1/1/0)</sub>](drugs/drug_clonidine/)
         - dapiprazole <sub>(0/0/0)</sub>
         - demecarium <sub>(0/0/0)</sub>
         - diclofenamide <sub>(0/0/0)</sub>
@@ -4499,6 +4598,7 @@
         - [epinephrine <sub>(2/0/0)</sub>](drugs/drug_epinephrine/)
         - epinephrine combinations <sub>(0/0/0)</sub>
         - fluostigmine <sub>(0/0/0)</sub>
+        - [guanethidine <sub>(0/0/0)</sub>](drugs/drug_guanethidine/)
         - latanoprost <sub>(0/0/0)</sub>
         - latanoprost and dorzolamide <sub>(0/0/0)</sub>
         - latanoprost and netarsudil <sub>(0/0/0)</sub>
@@ -4644,6 +4744,7 @@
         - deferiprone <sub>(0/0/0)</sub>
         - deferoxamine <sub>(0/0/0)</sub>
         - dexrazoxane <sub>(0/0/0)</sub>
+        - [diazoxide <sub>(0/0/0)</sub>](drugs/drug_diazoxide/)
         - difelikefalin <sub>(0/0/0)</sub>
         - digitalis antitoxin <sub>(0/0/0)</sub>
         - dimercaprol <sub>(0/0/0)</sub>

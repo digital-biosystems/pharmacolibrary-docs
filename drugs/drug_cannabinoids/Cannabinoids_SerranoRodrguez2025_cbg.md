@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record for cannabigerol in healthy adult horses was rejected because the apparent-parameter coherence check failed with a double correction: the bioavailability F of 0.29 is applied twice, once as Fab and once in the metabolite clearance CLm/F of 0.016 L/h/kg.**
+
+The model reports Fab (labelled F) as 0.29 and simultaneously lists the metabolite clearance as CLm/F (labelled Clm) with value 0.016 L/h/kg, so the bioavailability correction is counted twice for the same cannabigerol-to-cannabigerol-glucuronide metabolism link (Fm). This violates apparent-parameter coherence, which requires that a parameter either already carries the F correction or is corrected once, not both. The remaining parameters (kabs 0.95 1/h, kel 1.43, CL 1.75 l/h/kg, V1 43 L/kg, Q 82.35 L/h/kg, V2 41.29 L/kg, Vmax 0.0041 L/kg) are internally consistent with the two-compartment parent–metabolite structure, but the double F correction on the metabolite clearance made the record unpublishable. Extracted — cannabinoids: Fab 0.29, kabs 0.95, kel 1.43, CL 1.75 l/h/kg, V1 43 L/kg, Q 82.3 L/h/kg, V2 41.3 L/kg, Vmax 0.0041 L/kg, … (+1).
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Serrano-Rodríguez JM; Miraz R; Saitua A; Díez de Castro E; Ledesma-Escobar C; Ferreiro-Vera C; Priego-Capote F; Sánchez de Medina V; Sánchez de Medina A et al. (2025). Frontiers in veterinary science 12
@@ -25,6 +27,9 @@ Serrano-Rodríguez JM; Miraz R; Saitua A; Díez de Castro E; Ledesma-Escobar C; 
 
 ## Model component
 <dbs-pgx drug="cannabinoids" model-id="Cannabinoids_SerranoRodrguez2025_cbg" status="rejected" stale="false" population="healthy adult horses" measured-compound="cannabigerol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

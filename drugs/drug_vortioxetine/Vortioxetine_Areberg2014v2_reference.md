@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The vortioxetine record was held back because the absorption rate constant ka was not reported in the source and a library placeholder value was substituted, an invented absorption assumption the review deemed unacceptable.**
+
+The record for vortioxetine in healthy individuals rests on the paper's abstract alone, so the reported summary statistics (CL/F 32.7 L/hr, V 1.97 L, t1/2z 65.8 hr) stand in for a fitted model. The absorption rate constant ka and the lag time Tlag were never reported in the source, so placeholder values were substituted for these missing parameters; the defaulted ka constitutes an invented absorption term, which the adjudication ruled not acceptable. The model also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader disagreed on the parameterization, judging it mechanistic rather than apparent, and did not confirm the three parameter values. Extracted — vortioxetine: CL/F 32.7 L/hr, V 1.97 L, t1/2z 65.8 hr.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Areberg J; Petersen KB; Chen G; Naik H et al. (2014). Basic & clinical pharmacology & toxicology 115
@@ -26,6 +29,9 @@ Areberg J; Petersen KB; Chen G; Naik H et al. (2014). Basic & clinical pharmacol
 
 ## Model component
 <dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="needs_review" stale="false" population="healthy individuals" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -145,6 +151,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference.svg" alt="Vortioxetine_Areberg2014v2_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_sim_controls.json"></dbs-fmusim>
 

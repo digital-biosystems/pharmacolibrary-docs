@@ -4,7 +4,8 @@
 
 - **generic name:** vadadustat
 - **ATC codes:** `B03XA08`
-- **DrugBank:** [DB12255](https://go.drugbank.com/drugs/DB12255)
+- **DrugBank:** [DB12255](https://go.drugbank.com/drugs/DB12255) · **PubChem:** [CID 23634441](https://pubchem.ncbi.nlm.nih.gov/compound/23634441)
+- **molar mass:** 306.7 g/mol (C14H11ClN2O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

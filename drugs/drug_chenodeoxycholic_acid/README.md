@@ -4,7 +4,8 @@
 
 - **generic name:** chenodeoxycholic acid
 - **ATC codes:** `A05AA01`
-- **DrugBank:** [DB06777](https://go.drugbank.com/drugs/DB06777)
+- **DrugBank:** [DB06777](https://go.drugbank.com/drugs/DB06777) · **PubChem:** [CID 10133](https://pubchem.ncbi.nlm.nih.gov/compound/10133)
+- **molar mass:** 392.572 g/mol (C24H40O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

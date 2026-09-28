@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[nat2]` ({'*1/*1': 0.0, '*1/*6': -0.0783, 'C/C': -0.138, 'G/T': -0.2769, 'IM': -0.0496, 'PM': -0.0594, 'T/C': 0.007} vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The rat pregabalin two-compartment model was rejected because the extracted clearance (0.034 L/hr) and central volume (0.270 L) fall outside physiological plausibility, indicating a unit or scale extraction error.**
+
+The record lists pregabalin clearance as 0.034 L/hr and central volume V1 as 0.270 L in rats, magnitudes deemed physiologically implausible for this species and drug, consistent with a unit or scale misreading of the published values. The remaining parameters (Q 0.0225 L/hr, V2 6.75 L, kabs 2.0 h⁻¹, tlag 0.495 h, θSLD 0.302, and the NAT2 covariate effects) were extracted, and a second reader raised no disagreements on the NAT2 covariate values, the absorption rate constant, the lag time, or the categorical-fractional form of the clearance covariate. The rejection therefore rests on the implausible clearance and volume magnitudes alone. Extracted — pregabalin: CL 0.034 L/hr, V1 0.27 L, Q 0.0225 L/hr, V2 6.75 L, kabs 2 h À1, tlag 0.495 hour.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of nat2: this record has {'*1/*1': 0.0, '*1/*6': -0.0783, 'C/C': -0.138, 'G/T': -0.2769, 'IM': -0.0496, 'PM': -0.0594, 'T/C': 0.007}, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Bender G; Gosset J; Florian J; Tan K; Field M; Marshall S; et al. et al. (2009). Pharmaceutical research 26
@@ -26,6 +29,9 @@ Bender G; Gosset J; Florian J; Tan K; Field M; Marshall S; et al. et al. (2009).
 
 ## Model component
 <dbs-pgx drug="pregabalin" model-id="Pregabalin_Bender2009_reference" status="rejected" stale="false" population="rats" measured-compound="pregabalin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 

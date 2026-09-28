@@ -5,7 +5,8 @@
 
 - **generic name:** canagliflozin
 - **ATC codes:** `A10BD16`, `A10BK02`
-- **DrugBank:** [DB08907](https://go.drugbank.com/drugs/DB08907)
+- **DrugBank:** [DB08907](https://go.drugbank.com/drugs/DB08907) · **PubChem:** [CID 24812758](https://pubchem.ncbi.nlm.nih.gov/compound/24812758)
+- **molar mass:** 444.516 g/mol (C24H25FO5S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -32,11 +33,11 @@ It is important to note that this drug is **not** indicated for the treatment of
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.471). The first reading is what the record holds.">cross-check: disputed</span> | [Yao_2023_estimates](drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span> | [Yao_2023_iiv](drugs/drug_canagliflozin/Canagliflozin_Yao2023_iiv.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yao_2023_reference](drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.471). The first reading is what the record holds.">cross-check: disputed</span> | [Yao_2023_estimates](drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates.md) | 2-compartment, IV | 6 | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span> | [Yao_2023_iiv](drugs/drug_canagliflozin/Canagliflozin_Yao2023_iiv.md) | 2-compartment, IV | 5 | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed</span> | [Yao_2023_reference](drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference.md) | 2-compartment, IV | 5 | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
 
 ## Pharmacodynamics (PD)
 

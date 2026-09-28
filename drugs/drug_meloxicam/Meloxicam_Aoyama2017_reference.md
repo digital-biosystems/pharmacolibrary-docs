@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[x 2 f].parameter_id` (Q87 vs Q80) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The meloxicam clearance of 0.390 L/h is an apparent value (CL/F) that was corrected twice for bioavailability, since the relative bioavailability F of 2.00 was also applied, making the parameter incoherent.**
+
+The record lists meloxicam CL as 0.390 L/h, but the paper's label marks it as apparent clearance (CL/F), i.e. already divided by bioavailability. The same record also carries a relative bioavailability parameter F of 2.00 ('x 2 F'), so applying both corrections double-corrects the clearance. The parameter row labelled 'CI, confidence interval; CL, apparent clearance; CL ð' is a footnote fragment rather than a value, and a second reader assigned a different identifier to the 'x 2 F' entry, leaving that field's identity unsettled. Extracted — meloxicam: CL 0.39 L/h, V1 7.8 L, V 1.06, Q 1.24 L/h, V2 2.72 L, kabs 2.05 /h, Frel 2.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[x 2 f].parameter_id`: this record has Q87, the second reading Q80. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Aoyama T; Ishida Y; Kaneko M; Miyamoto A; Saito Y; Tohkin M; et al. et al. (2017). CPT: pharmacometrics & systems pharmacology 6
@@ -26,6 +29,9 @@ Aoyama T; Ishida Y; Kaneko M; Miyamoto A; Saito Y; Tohkin M; et al. et al. (2017
 
 ## Model component
 <dbs-pgx drug="meloxicam" model-id="Meloxicam_Aoyama2017_reference" status="rejected" stale="false" population="East Asian and white adult subjects" measured-compound="meloxicam" parameterization="apparent" topology="3C"></dbs-pgx>
+
+**Model structure:** 3-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

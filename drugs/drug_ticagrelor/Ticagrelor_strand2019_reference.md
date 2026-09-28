@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record double-corrects for bioavailability: ticagrelor's relative bioavailability is fixed at 1 while the metabolite link fraction Fm is 0.22, so the apparent parameters CL/F (16.6 l/h), Q/F (10.4 l/h), V1/F (156 l) and V2/F (55.8 l) are not coherent with the metabolite parameters (CLm/F 10.2 l/h, Qm/F 4.41 l/h, Vcm/F 7.04 l, Vpm/F 42.3 l).**
+
+The model links ticagrelor to its metabolite AR-C124910XX through a metabolism fraction Fm of 0.22, while simultaneously carrying a relative bioavailability Frel of 1 for the parent. Applying both corrections to the same apparent oral-clearance parameters violates their coherence, so the reported values for the parent (CL/F 16.6 l/h, Q/F 10.4 l/h, V1/F 156 l, V2/F 55.8 l) and the metabolite (CLm/F 10.2 l/h, Qm/F 4.41 l/h, Vcm/F 7.04 l, Vpm/F 42.3 l) cannot both be correct as stated. This double correction is the reason the record was rejected. Extracted — ticagrelor: CL/F 16.6 l h –1, Q/F 10.4 l h –1, V1/F 156 l, V2/F 55.8 l, kabs 10.1 h −1, tlag 0.48 h, Frel 1; AR-C124910XX: CL/F 10.2 l h –1, fm 0.22, Q/F 4.41 l h –1, V1/F 7.04 l, V2/F 42.3 l.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Åstrand M; Amilon C; Röshammar D; Himmelmann A; Angiolillo DJ; Storey RF; et al. et al. (2019). British journal of clinical pharmacology 85

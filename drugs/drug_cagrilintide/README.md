@@ -4,7 +4,7 @@
 
 - **generic name:** Cagrilintide
 - **ATC codes:** not captured
-- **DrugBank:** [DB18887](https://go.drugbank.com/drugs/DB18887)
+- **DrugBank:** [DB18887](https://go.drugbank.com/drugs/DB18887) · **PubChem:** not captured
 - **groups:** investigational
 
 ## About

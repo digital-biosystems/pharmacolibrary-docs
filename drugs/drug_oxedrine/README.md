@@ -4,7 +4,7 @@
 
 - **generic name:** oxedrine
 - **ATC codes:** `C01CA08`, `S01GA06`
-- **DrugBank:** [DB09203](https://go.drugbank.com/drugs/DB09203)
+- **DrugBank:** [DB09203](https://go.drugbank.com/drugs/DB09203) · **PubChem:** not captured
 - **groups:** investigational
 
 ## About

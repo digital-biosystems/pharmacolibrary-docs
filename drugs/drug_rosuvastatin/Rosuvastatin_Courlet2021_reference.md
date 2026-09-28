@@ -5,7 +5,7 @@
 
 # rosuvastatin — `Rosuvastatin_Courlet2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — rosuvastatin: CL 122 L·h−1, V1 144 L, V2 1.61e+03 L, Q 69 L·h−1, kabs 0.306 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has none, the second reading 41; it also differs on 5 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Courlet P; Guidi M; Alves Saldanha S; Stader F; Traytel A; Cavassini M; et al. et al. (2021). Clinical pharmacokinetics 60
@@ -25,6 +29,9 @@ Courlet P; Guidi M; Alves Saldanha S; Stader F; Traytel A; Cavassini M; et al. e
 
 ## Model component
 <dbs-pgx drug="rosuvastatin" model-id="Rosuvastatin_Courlet2021_reference" status="needs_review" stale="false" population="" measured-compound="rosuvastatin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -57,9 +64,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.25 (2/8 fields) | 6 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q19]` | not captured | 41 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 122 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q30]` | 69 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q317]` | 0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | 144 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 1610 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

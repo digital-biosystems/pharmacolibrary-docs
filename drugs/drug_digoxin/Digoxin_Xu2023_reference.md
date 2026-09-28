@@ -5,7 +5,7 @@
 
 # digoxin — `Digoxin_Xu2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.083). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q18: this record has 0.79, the second reading none; it also differs on 10 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Xu B; Yang T; Zhou J; Zheng Y; Wang J; Liu Q; Li D; Zhang Y; Liu M; Wu X et al. (2023). CPT: pharmacometrics & systems pharmacology 12
@@ -25,6 +27,9 @@ Xu B; Yang T; Zhou J; Zheng Y; Wang J; Liu Q; Li D; Zhang Y; Liu M; Wu X et al. 
 
 ## Model component
 <dbs-pgx drug="digoxin" model-id="Digoxin_Xu2023_reference" status="curated_candidate" stale="false" population="" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -52,9 +57,25 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.083 (1/12 fields) | 11 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q18]` | 0.79 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q21]` | not captured | 0.79 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 6.22 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q301]` | 0.074 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q302]` | 10 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q310]` | not captured | 2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | 16 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q313]` | 6.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q335]` | not captured | 0.89 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 29.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q900]` | not captured | 0.63 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -118,6 +139,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_digoxin/Digoxin_Xu2023_reference/Digoxin_Xu2023_reference.svg" alt="Digoxin_Xu2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_digoxin/Digoxin_Xu2023_reference/Digoxin_Xu2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_digoxin/Digoxin_Xu2023_reference/Digoxin_Xu2023_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Moser BA; LaBell ES; Chigutsa E; Jakubowski JA; Small DS et al. (2018). Clinical pharmacokinetics 57
@@ -25,6 +25,9 @@ Moser BA; LaBell ES; Chigutsa E; Jakubowski JA; Small DS et al. (2018). Clinical
 
 ## Model component
 <dbs-pgx drug="prasugrel" model-id="Prasugrel_Moser2018_pediatric_patients_with_sickle_cell_anem" status="not_modelled" stale="false" population="pediatric patients with sickle cell anemia" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

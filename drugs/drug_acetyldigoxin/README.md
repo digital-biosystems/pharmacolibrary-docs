@@ -4,7 +4,8 @@
 
 - **generic name:** acetyldigoxin
 - **ATC codes:** `C01AA02`
-- **DrugBank:** [DB13691](https://go.drugbank.com/drugs/DB13691)
+- **DrugBank:** [DB13691](https://go.drugbank.com/drugs/DB13691) · **PubChem:** not captured
+- **molar mass:** 822.986 g/mol (C43H66O15) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

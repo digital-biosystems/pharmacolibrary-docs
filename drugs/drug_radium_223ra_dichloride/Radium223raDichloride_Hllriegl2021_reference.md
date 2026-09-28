@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** missing key parameters — none reported by this paper
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (radium_223ra_dichloride vs radium-223 dichloride) and 4 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has radium_223ra_dichloride, the second reading radium-223 dichloride; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Höllriegl V; Petoussi-Henss N; Hürkamp K; Ocampo Ramos JC; Li WB et al. (2021). EJNMMI physics 8
@@ -26,6 +29,9 @@ Höllriegl V; Petoussi-Henss N; Hürkamp K; Ocampo Ramos JC; Li WB et al. (2021)
 
 ## Model component
 <dbs-pgx drug="radium (223Ra) dichloride" model-id="Radium223raDichloride_Hllriegl2021_reference" status="rejected" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="radium_223ra_dichloride" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

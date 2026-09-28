@@ -5,7 +5,7 @@
 
 - **generic name:** avalglucosidase alfa
 - **ATC codes:** `A16AB22`
-- **DrugBank:** [DB16099](https://go.drugbank.com/drugs/DB16099)
+- **DrugBank:** [DB16099](https://go.drugbank.com/drugs/DB16099) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -24,11 +24,11 @@ On August 6, 2021, avalglucosidase alfa-ngpt was approved by the FDA under the m
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_20_mg_kg](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_20_mg_kg.md) | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_40_mg_kg](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_40_mg_kg.md) | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.632). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_estimate_cv](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv.md) | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_20_mg_kg](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_20_mg_kg.md) | 1-compartment (no model) | 0 | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_40_mg_kg](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_40_mg_kg.md) | 1-compartment (no model) | 0 | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.632). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_estimate_cv](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv.md) | 2-compartment (no model) | 8 (+3 cov.) | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
 
 ## ADME sites
 

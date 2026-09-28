@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q321]` (7.4 vs not captured) and 6 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The fentanyl two-compartment record was rejected because the peripheral compartment (15.6 L) has no intercompartmental clearance linking it to the central compartment, leaving it unreachable from the dose.**
+
+The record lists a two-compartment structure for fentanyl with central clearance 41.2 ml/min/kg, a central volume of 7.1 L and a peripheral volume of 15.6 L, but no intercompartmental clearance parameter was extracted, so the peripheral compartment has no path from the administered dose. The rejection reason recorded is exactly this unreachable/orphan compartment. A second reader's disagreements on several extracted values (e.g. 7.4, 32.8, 6.17 read by one and null by the other; 0.9, 9.1, 7.1 read by the second and null by the first) leave some parameter values inconclusive, but the structural defect alone stands as the stated cause of rejection. Extracted — fentanyl: CL 41.2 ml/min/kg, V 7.1 L, V2 15.6 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q321: this record has 7.4, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Egan TD et al. (1995). Clinical pharmacokinetics 29

@@ -4,7 +4,8 @@
 
 - **generic name:** encainide
 - **ATC codes:** `C01BC08`
-- **DrugBank:** [DB01228](https://go.drugbank.com/drugs/DB01228)
+- **DrugBank:** [DB01228](https://go.drugbank.com/drugs/DB01228) · **PubChem:** [CID 48041](https://pubchem.ncbi.nlm.nih.gov/compound/48041)
+- **molar mass:** 352.4699 g/mol (C22H28N2O2) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

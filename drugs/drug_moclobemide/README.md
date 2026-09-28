@@ -5,7 +5,8 @@
 
 - **generic name:** moclobemide
 - **ATC codes:** `N06AG02`
-- **DrugBank:** [DB01171](https://go.drugbank.com/drugs/DB01171)
+- **DrugBank:** [DB01171](https://go.drugbank.com/drugs/DB01171) · **PubChem:** [CID 4235](https://pubchem.ncbi.nlm.nih.gov/compound/4235)
+- **molar mass:** 268.739 g/mol (C13H17ClN2O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Główka_2019_reference](drugs/drug_moclobemide/Moclobemide_Gwka2019_reference.md) | Główka FK et al., Bioavailability of moclobemide from two…, Die Pharmazie (2019) | [10.1691/ph.2019.8819](https://doi.org/10.1691/ph.2019.8819) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Raaflaub_1984_reference](drugs/drug_moclobemide/Moclobemide_Raaflaub1984_reference.md) | Raaflaub J et al., Single-dose pharmacokinetics of the MAO…, Arzneimittel-Forschung (1984) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Główka_2019_reference](drugs/drug_moclobemide/Moclobemide_Gwka2019_reference.md) | 1-compartment, oral | 3 | Główka FK et al., Bioavailability of moclobemide from two…, Die Pharmazie (2019) | [10.1691/ph.2019.8819](https://doi.org/10.1691/ph.2019.8819) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Raaflaub_1984_reference](drugs/drug_moclobemide/Moclobemide_Raaflaub1984_reference.md) | 1-compartment (no model) | 5 | Raaflaub J et al., Single-dose pharmacokinetics of the MAO…, Arzneimittel-Forschung (1984) | — |
 
 ## ADME sites
 

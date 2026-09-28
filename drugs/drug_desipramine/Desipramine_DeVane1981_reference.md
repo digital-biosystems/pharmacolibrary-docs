@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc [h -ng/ml] 243]` (391 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The desipramine record was rejected because clearance (1.86 L/kg/h) and volume of distribution (22.4 L/kg) were reported per kilogram of body weight, a unit that could not be converted to SI, leaving the structural parameter dimensionally inconsistent.**
+
+The paper reports desipramine clearance as 1.86 in units written as '1/kg/h' (litres per kilogram per hour) and volume of distribution as 22.4 '1/kg'; the per-kilogram clearance unit could not be converted to SI, so clearance entered the model without an SI value and the structural parameter failed the dimensional consistency check. A second reader also disputed the extrapolated AUC value of 391 h·ng/ml (reading it as null) and read a bioavailability fraction of 0.40 where this record has none, though these disagreements did not drive the rejection. Extracted — desipramine: Cmax 11.5 ng/ml, t1/2ka 0.74, CL 1.86 1/kg/h, Vnorm 22.4 1/kg, t1/2z 21.8 h, AUC 487, Ct 11.8 ng/ml, AUCt 391.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc [h -ng/ml] 243: this record has 391, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 DeVane CL; Savett M; Jusko WJ et al. (1981). European journal of clinical pharmacology 19
@@ -26,6 +29,9 @@ DeVane CL; Savett M; Jusko WJ et al. (1981). European journal of clinical pharma
 
 ## Model component
 <dbs-pgx drug="desipramine" model-id="Desipramine_DeVane1981_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="desipramine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

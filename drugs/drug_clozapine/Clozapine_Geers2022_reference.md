@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for clozapine's clearance and volume of distribution.**
+
+The model was built, but clozapine's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (V/F), so that value has no SI equivalent. Extracted — clozapine: kel 0.079 h -1, V/F 0.054 L/kgLBMc, kabs 1.37 h -1, tlag 0 h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Geers LM; Cohen D; Wehkamp LM; van Wattum HJ; Kosterink JGW; Loonen AJM; et al. et al. (2022). Therapeutic advances in psychopharmacology 12
@@ -26,6 +29,9 @@ Geers LM; Cohen D; Wehkamp LM; van Wattum HJ; Kosterink JGW; Loonen AJM; et al. 
 
 ## Model component
 <dbs-pgx drug="clozapine" model-id="Clozapine_Geers2022_reference" status="model_quarantined" stale="false" population="schizophrenia patients" measured-compound="clozapine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

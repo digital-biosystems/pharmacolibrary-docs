@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (6-mercaptopurine and methotrexate vs 6MP, MTX) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record was refused because the Jost_2020 mercaptopurine model contains no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model but an exposure/outcome paper, and its structure leaves an unreachable compartment or unlinked metabolite.**
+
+The only parameters extracted are ktr (7.19), slope (67.8), the half-life-like γ term (16.5) and a proportional additive error (0.226) — no volume of distribution and no clearance or elimination rate constant appear anywhere, which is what makes this an exposure/outcome (PD) model rather than a compartmental population PK model. The structure is a general linear model in which 6-mercaptopurine links by an unknown metabolism parameter Fm to 6-thioguanine nucleotides and methotrexate links to methotrexate polyglutamates 2 to 7, and one of these compartments or metabolites has no path from the dose, so the check could not trace it. The measured compound is the absolute neutrophil count rather than the drug itself, and a second reader disagreed on several entries, including the dose compound (6MP, MTX), the primary analyte (6MP) and the parameter identifiers for ktr and γ, though these disagreements concern labelling rather than the numerical values. Extracted — mercaptopurine: ktr 7.19, slope 67.8, t1/2γ 16.5, add_error 0.226.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has 6-mercaptopurine and methotrexate, the second reading 6MP, MTX; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `6-mercaptopurine and methotrexate`, measured `absolute neutrophil count`.
 
@@ -28,6 +31,9 @@ Jost F; Zierk J; Le TTT; Raupach T; Rauh M; Suttorp M; et al. et al. (2020). Fro
 
 ## Model component
 <dbs-pgx drug="mercaptopurine" model-id="Mercaptopurine_Jost2020_reference" status="rejected" stale="false" population="children with acute lymphoblastic leukemia" measured-compound="absolute neutrophil count" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,8 @@
 
 - **generic name:** ganaxolone
 - **ATC codes:** `N03AX27`
-- **DrugBank:** [DB05087](https://go.drugbank.com/drugs/DB05087)
+- **DrugBank:** [DB05087](https://go.drugbank.com/drugs/DB05087) · **PubChem:** [CID 6918305](https://pubchem.ncbi.nlm.nih.gov/compound/6918305)
+- **molar mass:** 332.528 g/mol (C22H36O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ Ganaxolone, similar to its endogenous counterparts, is a positive allosteric mod
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zolkowska_2018_mice](drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_mice.md) | Zolkowska D et al., Intramuscular allopregnanolone and gana…, Epilepsia (2018) | [10.1111/epi.13999](https://doi.org/10.1111/epi.13999) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zolkowska_2018_mice](drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_mice.md) | — (no model) | 0 | Zolkowska D et al., Intramuscular allopregnanolone and gana…, Epilepsia (2018) | [10.1111/epi.13999](https://doi.org/10.1111/epi.13999) |
 
 ## Pharmacodynamics (PD)
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The erythropoietin model was held back because absorption was invented: ka and Tlag were never reported in the abstract-only source, so library defaults stood in for them.**
+
+The record rests on the paper's abstract alone, so the reported summary statistics stood in for a fitted model, and the absorption rate constant ka and lag time Tlag were not reported — default values were substituted. The invented first-order absorption input was judged not acceptable, which triggered the hold. The parameterization is also disputed: the record assumes apparent parameters (CL/F = 1.86 L/h, V/F = 27.8 L, F = 1, Fm = 1, no molar correction), while a second reader classified it as mechanistic and could not confirm either parameter value. Extracted — erythropoietin: CL/F 1.86 L/h, V/F 27.8 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `epoetin alfa`, measured `erythropoietin`.
 
@@ -28,6 +31,9 @@ Chakraborty A; Natarajan J; Guilfoyle M; Morgan N; Vercammen E; Cheung W et al. 
 
 ## Model component
 <dbs-pgx drug="erythropoietin" model-id="Erythropoietin_Chakraborty2005_reference" status="needs_review" stale="false" population="critically ill subjects" measured-compound="erythropoietin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -148,6 +154,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference/Erythropoietin_Chakraborty2005_reference.svg" alt="Erythropoietin_Chakraborty2005_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference/Erythropoietin_Chakraborty2005_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference/Erythropoietin_Chakraborty2005_reference_sim_controls.json"></dbs-fmusim>
 

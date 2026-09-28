@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The doxycycline one-compartment model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no source values, so library placeholders were substituted for all four.**
+
+The record lists kabs 0.093, V/F 4.73, kel 0.154 and tlag 0.80 for doxycycline, but the review found no value for doxycycline's clearance, volume of distribution, absorption rate constant and absorption lag time in the source, so placeholders stood in for Cl, Vd, ka and Tlag. The absorption rate constant was additionally flagged as invented — it was not reported in the source — and the absorption model was judged not acceptable. The builder also assumed F=1 and Fm=1 with no molar correction, parameterizing the model in apparent terms. Extracted — doxycycline: kabs 0.093, V/F 4.73, kel 0.154, tlag 0.8.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Petkova T; Yordanova A; Milanova A et al. (2022). Pharmaceutics 14
@@ -25,6 +27,9 @@ Petkova T; Yordanova A; Milanova A et al. (2022). Pharmaceutics 14
 
 ## Model component
 <dbs-pgx drug="doxycycline" model-id="Doxycycline_Petkova2022_reference" status="model_quarantined" stale="false" population="healthy and M. gallisepticum-infected broiler chickens" measured-compound="doxycycline" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -17,9 +17,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yusuff H; Gadsby J; Isgro G; Zochios V; Jenkins D; Cooke S; Mulla H et al. (2026). Antimicrobial agents and chemotherapy 70
@@ -132,7 +134,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Yusuff2026_reference/Omeprazole_Yusuff2026_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Yusuff2026_reference/Omeprazole_Yusuff2026_reference_sim_controls.json"></dbs-fmusim>
 

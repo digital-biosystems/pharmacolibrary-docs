@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 3 scholar param(s) emitted or defaulted — got 2 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (thyroxine and triiodothyronine vs thyroxine) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The levothyroxine–triiodothyronine parent–metabolite model was quarantined because levothyroxine's clearance had no extracted value and the metabolic rate constant k12 (0.0211 per day) was likewise uncovered.**
+
+Levothyroxine's clearance was left at a library placeholder, so the model was held back rather than published with an invented number. Of the three reported parameters, only two (V 58.9 L, kel 0.407 per day, with V3 27.1 L) were covered; the metabolic rate constant K₁₂ (0.0211 per day) reached the record without an SI value because its unit could not be converted. The recorded structure — levothyroxine metabolising to triiodothyronine — did not match the structure expected for a parent–metabolite model, and a second reader disagreed on whether the primary analyte was thyroxine alone or thyroxine with triiodothyronine, and on whether the link is metabolism or interconversion. Extracted — levothyroxine: V 58.9 liter, kel 0.407 per day, V3 27.1 liter, k12 0.0211.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has thyroxine and triiodothyronine, the second reading thyroxine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 23:22:39.521272+00:00) predates the upstream re-run (2026-09-24 00:18:54.716791+00:00). Current validate status: `needs_review`.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clearance]` (2.85 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The paracetamol clearance for propacetamol in neonates is reported as 2.85 l/70 kg, a dimensionally inconsistent unit for a structural parameter, so the record was rejected.**
+
+The record describes a one-compartment model for paracetamol (measured after propacetamol administration) in term and preterm neonates, with volume of distribution 70.4 l and clearance 2.85 l/70 kg. The clearance unit l/70 kg does not match the dimension of a clearance parameter, which triggered the rejection. The record was also built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model. A second reader recorded no value for either parameter, leaving the disagreement on both 70.4 l and 2.85 l/70 kg unresolved. Extracted — paracetamol: V 70.4 l, CL 2.85 l/70 kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance: this record has 2.85, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `propacetamol`, measured `paracetamol`.
 
@@ -28,6 +31,9 @@ Allegaert K; Anderson BJ; Naulaers G; de Hoon J; Verbesselt R; Debeer A; et al. 
 
 ## Model component
 <dbs-pgx drug="propacetamol" model-id="Propacetamol_Allegaert2004_reference" status="rejected" stale="false" population="term and preterm neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

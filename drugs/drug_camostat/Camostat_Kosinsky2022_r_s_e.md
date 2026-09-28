@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[fbio]` (not captured vs 0.051) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for camostat's clearance — the 1 extracted parameter describes FOY-251, not camostat.**
+
+The model was built, but camostat's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — FOY-251: V 22.4 liters.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of fbio: this record has none, the second reading 0.051; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `camostat mesylate`, measured `FOY-251`.
 
@@ -28,6 +31,9 @@ Kosinsky Y; Peskov K; Stanski DR; Wetmore D; Vinetz J et al. (2022). Microbiolog
 
 ## Model component
 <dbs-pgx drug="camostat" model-id="Camostat_Kosinsky2022_r_s_e" status="model_quarantined" stale="false" population="healthy adults" measured-compound="FOY-251" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

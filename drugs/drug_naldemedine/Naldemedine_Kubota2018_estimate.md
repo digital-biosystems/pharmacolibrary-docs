@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[max]` (not captured vs 51.36) and 1 more field(s) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The naldemedine 2-compartment model was quarantined because CL/F, ka and k21 had no values in the source, so library defaults stood in for these parameters.**
+
+The record lists CL/F, ka and k21 as parameters but gives no values for them; library placeholder defaults were substituted, and the model was held back rather than published with invented numbers. The absorption rate constant ka was additionally flagged as an invented absorption parameter, since it was not reported in the source. The covariate effects defined in the record were not exercised — only the reference individual was simulated. A second reader also disagreed on the maximum parameter, reading 51.36 where this record has none. Extracted — naldemedine: V1/F 83.6 L, Q/F 4.77 L/h, V2/F 37.7, tlag 0.195 hr.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of max: this record has none, the second reading 51.36; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kubota R; Fukumura K; Wajima T et al. (2018). Pharmaceutical research 35
@@ -28,6 +31,9 @@ Kubota R; Fukumura K; Wajima T et al. (2018). Pharmaceutical research 35
 
 ## Model component
 <dbs-pgx drug="naldemedine" model-id="Naldemedine_Kubota2018_estimate" status="model_quarantined" stale="false" population="healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC" measured-compound="naldemedine" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

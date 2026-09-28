@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[fesc]` (not captured vs 0.01948) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The fitusiran record was rejected because the paper reports no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model, and a structural parameter has a dimension mismatch.**
+
+The record for fitusiran (a GalNAc-conjugated siRNA against antithrombin) contains only absorption, binding and turnover parameters (kabs 0.71 1/h, fu 0.21, Rtot 33.1 nM, Vmax 1.94 nmol/h, Km 37.73, koff 0.021 1/h, kint 1215, KD 0.073) with no volume of distribution and no clearance, so it cannot form a compartmental population PK model. A dimension mismatch was also flagged on a structural parameter, and one reported unit (the Km label given only as 'units') could not be converted to SI, so that parameter reached the model without an SI value. A second reader additionally extracted four parameters absent from this record — fesc 0.01948, kdegd 0.040, kpliver 3.19 and psliver 211 — showing the parameter set is incomplete relative to the paper. Extracted — fitusiran: kabs 0.71 units, fu 0.21 units, Rtot 33.1 nM, Vmax 1.94 nmol/h, Km 37.7 units, koff 0.021 units, kint 1.22e+03 nM−1·h−1, KD 0.073 nM.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of fesc: this record has none, the second reading 0.01948; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Fan X; Xiao Y; Cao K; Zhang R; Yan X et al. (2026). Molecular therapy. Nucleic acids 37
@@ -26,6 +29,9 @@ Fan X; Xiao Y; Cao K; Zhang R; Yan X et al. (2026). Molecular therapy. Nucleic a
 
 ## Model component
 <dbs-pgx drug="fitusiran" model-id="Fitusiran_Fan2026_ratsb" status="rejected" stale="false" population="mice, rats, monkeys, and humans" measured-compound="fitusiran" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

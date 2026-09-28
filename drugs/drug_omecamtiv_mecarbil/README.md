@@ -5,7 +5,8 @@
 
 - **generic name:** omecamtiv mecarbil
 - **ATC codes:** `C01CX10`
-- **DrugBank:** [DB11816](https://go.drugbank.com/drugs/DB11816)
+- **DrugBank:** [DB11816](https://go.drugbank.com/drugs/DB11816) · **PubChem:** [CID 11689883](https://pubchem.ncbi.nlm.nih.gov/compound/11689883)
+- **molar mass:** 401.442 g/mol (C20H24FN5O3) — DrugBank
 - **groups:** investigational
 
 ## About
@@ -20,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Chen_2022_healthy subjects and patients with heart failure with reduced ejection fraction](drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_healthy_subjects_and_patients_wit.md) | Chen PW et al., Population Pharmacokinetic Properties o…, Journal of cardiovascular p… (2022) | [10.1097/FJC.0000000000001207](https://doi.org/10.1097/FJC.0000000000001207) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Chen_2022_healthy subjects and patients with heart failure with reduced ejection fraction](drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_healthy_subjects_and_patients_wit.md) | — (no model) | 0 | Chen PW et al., Population Pharmacokinetic Properties o…, Journal of cardiovascular p… (2022) | [10.1097/FJC.0000000000001207](https://doi.org/10.1097/FJC.0000000000001207) |
 
 ## Pharmacodynamics (PD)
 

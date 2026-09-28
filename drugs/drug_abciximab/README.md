@@ -4,7 +4,7 @@
 
 - **generic name:** abciximab
 - **ATC codes:** `B01AC13`
-- **DrugBank:** [DB00054](https://go.drugbank.com/drugs/DB00054)
+- **DrugBank:** [DB00054](https://go.drugbank.com/drugs/DB00054) · **PubChem:** not captured
 - **groups:** approved, withdrawn
 
 ## About

@@ -4,7 +4,8 @@
 
 - **generic name:** nateglinide
 - **ATC codes:** `A10BX03`
-- **DrugBank:** [DB00731](https://go.drugbank.com/drugs/DB00731)
+- **DrugBank:** [DB00731](https://go.drugbank.com/drugs/DB00731) · **PubChem:** [CID 5311309](https://pubchem.ncbi.nlm.nih.gov/compound/5311309)
+- **molar mass:** 317.429 g/mol (C19H27NO3) — DrugBank
 - **groups:** approved
 
 ## About

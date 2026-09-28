@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** nonlinear topology.
-**How to address:** not a curation fix — the pipeline is the limit here (engineer: the topology is outside the template set the engineer can build).
-<sub>owner: **modeller**</sub>
+**nonlinear topology.**
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Dede E; Tindall MJ; Cherrie JW; Hankin S; Collins C et al. (2017).
@@ -25,6 +25,9 @@ Dede E; Tindall MJ; Cherrie JW; Hankin S; Collins C et al. (2017).
 
 ## Model component
 <dbs-pgx drug="lead" model-id="Lead_Dede2017_exposure_adult_humans" status="needs_review" stale="false" population="adult humans" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

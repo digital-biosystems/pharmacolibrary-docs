@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (digoxin vs digoxin, dihydrodigoxin) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The digoxin record was rejected because the metabolite dihydrodigoxin appears in the structure with no link parameter connecting it to the dose, and the model was built only from the paper's abstract rather than a fitted model.**
+
+The structure contains a hydrolysis link from dihydrodigoxin to dihydrodigoxin acid with no link parameter, leaving dihydrodigoxin without a path from the digoxin dose — an orphan metabolite. The record was built from the abstract alone, so reported summary statistics (t1/2β 4.6 h, CL 0.223 L/h/kg, V 0.418 L/kg, apparent Ka 2.29 h−1) stood in for a fitted model. A second reader also disagreed on the dose compound and primary analyte, reading digoxin plus dihydrodigoxin rather than digoxin alone, and on the link structure, proposing digoxin-to-dihydrodigoxin metabolism and dihydrodigoxin-to-dihydrodigoxin acid interconversion instead of the recorded hydrolysis. The second reader returned no values for the four parameters, so no comparison could be computed for them. Extracted — digoxin: t1/2β 4.6 h, CL 0.223 L/h/kg, V 0.418 L/kg, kabs 2.29 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has digoxin, the second reading digoxin, dihydrodigoxin; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Heinz N; Flasch H et al. (1978). Naunyn-Schmiedeberg's archives of pharmacology 303
@@ -26,6 +29,9 @@ Heinz N; Flasch H et al. (1978). Naunyn-Schmiedeberg's archives of pharmacology 
 
 ## Model component
 <dbs-pgx drug="digoxin" model-id="Digoxin_Heinz1978_reference" status="rejected" stale="false" population="cats" measured-compound="digoxin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

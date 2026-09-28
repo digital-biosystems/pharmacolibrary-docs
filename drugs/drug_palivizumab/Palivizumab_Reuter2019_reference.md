@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default; nonlinear topology.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **modeller**</sub>
+**The palivizumab model for premature infants lacks an extracted volume of distribution, so clearance (126.0 mL/min) would pair with a library default volume; the nonlinear structure and an incomputable clearance check add further doubt.**
+
+Only clearance was extracted for palivizumab — 126.0 mL/min (median estimated creatinine clearance) and an absorption rate constant of 0.373 day⁻¹ — with no volume of distribution, meaning the model would have relied on a library placeholder for volume and was therefore held back. The model structure is nonlinear, an additional complexity noted in the record. The clearance plausibility check could not compute a comparison (ratio None), so the 126.0 mL/min value is unverified rather than demonstrated to be wrong. Extracted — palivizumab: CL 126 mL/min, kabs 0.373 day Ϫ1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Reuter SE; Evans AM; Ward MB et al. (2019). CPT: pharmacometrics & systems pharmacology 8

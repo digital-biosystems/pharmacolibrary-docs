@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The mianserin record was rejected for a dimension mismatch on a structural parameter, and it was built from the abstract alone, so reported summary statistics stood in for a fitted model.**
+
+The record for mianserin in elderly depressed patients was refused because of a dimension mismatch on a structural parameter. It was built from the abstract alone, meaning the reported summary statistics (e.g. peak concentration 117 micrograms/l, elimination half-life 33 h, apparent volume of distribution 20.2 l/kg, oral clearance 0.49 l/kg/h) stood in for a fitted model. A second reader disagreed on the model parameterization, reading it as mechanistic rather than apparent, and read all seven parameter values as null, including the absorption half-life of 0.8 h and the distribution half-life of 3.4 h. Extracted — mianserin: t1/2ka 0.8 h, Cmax 117 micrograms/l, tmax 2.2 h, t1/2α 3.4 h, t1/2z 33 h, V/F 20.2 1/kg, CL/F 0.49 l/kg/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Maguire K; McIntyre I; Norman T; Burrows GD et al. (1983). Psychiatry research 8
@@ -26,6 +29,9 @@ Maguire K; McIntyre I; Norman T; Burrows GD et al. (1983). Psychiatry research 8
 
 ## Model component
 <dbs-pgx drug="mianserin" model-id="Mianserin_Maguire1983_reference" status="rejected" stale="false" population="elderly depressed patients" measured-compound="mianserin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

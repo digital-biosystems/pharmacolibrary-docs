@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (protein C vs protein C concentrate) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The protein C model was quarantined because its clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values, so library defaults stood in for these parameters.**
+
+No value for protein C's clearance, volume of distribution, absorption rate constant and absorption lag time was available from the source, so placeholder defaults were substituted and the model was held back rather than published with invented numbers; the absorption rate constant in particular was not reported in the source. In addition, the covariate scenarios were not simulated — only the reference individual was run, not the age effects on protein C production and volume that the record defines. A second reader also disagreed on the primary analyte, reading it as protein C concentrate rather than protein C, and reported relative standard errors of 5.37% for bioavailability and 4.26% for the absorption rate constant where this record had none. Extracted — protein c: CL 7.14 dL/h, V 60.7 dL, kabs 0.0379, Fab 0.79.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has protein C, the second reading protein C concentrate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `protein C concentrate`, measured `protein C`.
 
@@ -29,6 +32,9 @@ not matched (stem Li_2025_2)
 
 ## Model component
 <dbs-pgx drug="protein C" model-id="ProteinC_Li2025v2_population_estimate" status="model_quarantined" stale="false" population="patients with severe congenital protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted, plus 2 covariate effects.
 
 **Parameterization:** mechanistic.
 

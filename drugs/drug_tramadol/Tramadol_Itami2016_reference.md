@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q17]` (2257.7 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The tramadol two-compartment model was rejected because one compartment has no path from the dose, and the extracted values disagree between readers (e.g. 2257.7 vs null, 953.1 vs null, 761.6 vs null).**
+
+The record describes a two-compartment tramadol model with CL 29.9 ml·min−1·kg−1, V1 2.3 l/kg and V2 2.37 l/kg, but one of the compartments is unreachable from the dose administration, so the structure is incomplete. The two readers also disagreed on several extracted values: one read 2257.7 where the other read nothing, and one read 953.1 and 761.6 where the other read nothing, indicating the source values could not be consistently established. The source text is a secondary review rather than the primary publication, which further limits the reliability of the parameter set. Extracted — tramadol: CL 29.9 ml·min−1·kg−1, V1 2.3 l/kg, V2 2.37 l/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 2257.7, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Itami T; Saito Y; Ishizuka T; Tamura J; Umar MA; Inoue H; et al. et al. (2016). The Journal of veterinary medical science 78
@@ -26,6 +29,9 @@ Itami T; Saito Y; Ishizuka T; Tamura J; Umar MA; Inoue H; et al. et al. (2016). 
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Itami2016_reference" status="rejected" stale="false" population="young and middle-aged dogs" measured-compound="tramadol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

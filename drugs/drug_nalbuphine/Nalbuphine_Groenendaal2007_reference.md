@@ -5,7 +5,7 @@
 
 # nalbuphine — `Nalbuphine_Groenendaal2007_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The extracted nalbuphine parameters are physiologically implausible — clearance 20.0 ml/min, V1 68.1 ml, V2 739.0 ml and Q 15.5 ml/min — indicating a unit or scale extraction error, so the record was rejected.**
+
+The two-compartment nalbuphine model lists CL 20.0 ml/min, V1 68.1 ml, V2 739.0 ml and Q 15.5 ml/min; volumes of 68.1 ml and 739.0 ml are far below any plausible distribution volume for this molecule, consistent with a unit or scale misreading of the published values. The rejection reason records the clearance/volume magnitudes as outside the physiological window due to a unit or scale extraction error. A second reader disagreed on two extracted values (0.074 and 739), but recorded no alternative values, so the disagreement is inconclusive. Extracted — nalbuphine: CL 20 ml min À1, V1 68.1 ml, V2 739 ml, Q 15.5 ml min À1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q316: this record has 0.074, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Groenendaal D; Freijer J; de Mik D; Bouw MR; Danhof M; de Lange EC et al. (2007). British journal of pharmacology 151
@@ -25,6 +29,9 @@ Groenendaal D; Freijer J; de Mik D; Bouw MR; Danhof M; de Lange EC et al. (2007)
 
 ## Model component
 <dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Groenendaal2007_reference" status="rejected" stale="false" population="" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -56,9 +63,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q316]` | 0.074 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 739 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

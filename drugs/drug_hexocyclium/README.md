@@ -4,7 +4,8 @@
 
 - **generic name:** hexocyclium
 - **ATC codes:** `A03AB10`
-- **DrugBank:** [DB06787](https://go.drugbank.com/drugs/DB06787)
+- **DrugBank:** [DB06787](https://go.drugbank.com/drugs/DB06787) · **PubChem:** [CID 24199](https://pubchem.ncbi.nlm.nih.gov/compound/24199)
+- **molar mass:** 317.496 g/mol (C20H33N2O) — DrugBank
 - **groups:** approved
 
 ## About

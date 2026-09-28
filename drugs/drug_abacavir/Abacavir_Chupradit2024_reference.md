@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q315]` (not captured vs 15.80) and 1 more field(s) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q315: this record has none, the second reading 15.80; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-17 22:42:01.464815+00:00) predates the upstream re-run (2026-09-23 18:20:02.449760+00:00). Current validate status: `extracted`.
 
@@ -139,7 +140,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.46 /h, lag 27.6 min, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.46 /h, lag 27.6 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_abacavir/Abacavir_Chupradit2024_reference/Abacavir_Chupradit2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_abacavir/Abacavir_Chupradit2024_reference/Abacavir_Chupradit2024_reference_sim_controls.json"></dbs-fmusim>
 

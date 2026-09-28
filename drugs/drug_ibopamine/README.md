@@ -4,7 +4,8 @@
 
 - **generic name:** ibopamine
 - **ATC codes:** `C01CA16`, `S01FB03`
-- **DrugBank:** [DB13316](https://go.drugbank.com/drugs/DB13316)
+- **DrugBank:** [DB13316](https://go.drugbank.com/drugs/DB13316) · **PubChem:** not captured
+- **molar mass:** 307.3847 g/mol (C17H25NO4) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

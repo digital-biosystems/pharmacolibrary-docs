@@ -4,7 +4,8 @@
 
 - **generic name:** phloroglucinol
 - **ATC codes:** `A03AX12`
-- **DrugBank:** [DB12944](https://go.drugbank.com/drugs/DB12944)
+- **DrugBank:** [DB12944](https://go.drugbank.com/drugs/DB12944) · **PubChem:** [CID 359](https://pubchem.ncbi.nlm.nih.gov/compound/359)
+- **molar mass:** 126.11 g/mol (C6H6O3) — DrugBank
 - **groups:** investigational
 
 ## About

@@ -5,7 +5,7 @@
 
 # metamizole sodium — `MetamizoleSodium_Stoschus2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q27: this record has none, the second reading .314; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Stoschus M; Schmidbauer ML; Starp J; Kunst S; Gakis G; Paal M; Vogeser M; Scharf-Janssen C; Liebchen U; Dimitriadis K et al. (2025). Epilepsia 66
@@ -25,6 +27,9 @@ Stoschus M; Schmidbauer ML; Starp J; Kunst S; Gakis G; Paal M; Vogeser M; Scharf
 
 ## Model component
 <dbs-pgx drug="metamizole sodium" model-id="MetamizoleSodium_Stoschus2025_reference" status="curated_candidate" stale="false" population="" measured-compound="metamizole_sodium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,14 +56,26 @@ Stoschus M; Schmidbauer ML; Starp J; Kunst S; Gakis G; Paal M; Vogeser M; Scharf
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.417 (5/12 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss:120b` | `values[Q27]` | not captured | .314 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | not captured | 81.36 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q313]` | not captured | 36.85 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q316]` | 0.082 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q35]` | not captured | 44.3 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | not captured | 62.6 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -123,6 +140,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference/MetamizoleSodium_Stoschus2025_reference.svg" alt="MetamizoleSodium_Stoschus2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.9 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference/MetamizoleSodium_Stoschus2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference/MetamizoleSodium_Stoschus2025_reference_sim_controls.json"></dbs-fmusim>
 

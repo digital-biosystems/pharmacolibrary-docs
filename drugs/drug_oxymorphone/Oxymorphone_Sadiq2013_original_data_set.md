@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 0.233, model 1.03).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — oxymorphone: CL 54.5 mL/min, V 1.17e+03 mL, Q 5.74 mL/min, fu 0.49.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sadiq MW; Boström E; Keizer R; Björkman S; Hammarlund-Udenaes M et al. (2013). Journal of pharmaceutical sciences 102
@@ -25,6 +27,9 @@ Sadiq MW; Boström E; Keizer R; Björkman S; Hammarlund-Udenaes M et al. (2013).
 
 ## Model component
 <dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Sadiq2013_original_data_set" status="needs_review" stale="false" population="male Sprague-Dawley rats" measured-compound="oxymorphone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -142,6 +147,8 @@ Sadiq MW; Boström E; Keizer R; Björkman S; Hammarlund-Udenaes M et al. (2013).
 </div><figure class="pk-models-diagram"><img src="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set.svg" alt="Oxymorphone_Sadiq2013_original_data_set diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_sim_controls.json"></dbs-fmusim>
 

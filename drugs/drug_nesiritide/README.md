@@ -4,7 +4,7 @@
 
 - **generic name:** nesiritide
 - **ATC codes:** `C01DX19`
-- **DrugBank:** [DB04899](https://go.drugbank.com/drugs/DB04899)
+- **DrugBank:** [DB04899](https://go.drugbank.com/drugs/DB04899) · **PubChem:** not captured
 - **groups:** approved, investigational, withdrawn
 
 ## About

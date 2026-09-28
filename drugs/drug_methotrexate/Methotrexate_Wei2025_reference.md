@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[q 1]` (0.04 vs not captured) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Every check that could be run on this record passed.**
+
+A reported unit could not be converted (prop_error), so that value has no SI equivalent.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q 1: this record has 0.04, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Wei S; Zhang S; Wang D; Zhang D; Lu Q; Mo J; et al. et al. (2025). Frontiers in pharmacology 16
@@ -211,7 +214,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0112 /h, lag 21.6 min, F 0.9).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0112 /h, lag 21.6 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_methotrexate/Methotrexate_Wei2025_reference/Methotrexate_Wei2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_methotrexate/Methotrexate_Wei2025_reference/Methotrexate_Wei2025_reference_sim_controls.json"></dbs-fmusim>
 

@@ -4,7 +4,7 @@
 
 - **generic name:** calcium pantothenate
 - **ATC codes:** `A11HA31`, `D03AX04`
-- **DrugBank:** [DB01783](https://go.drugbank.com/drugs/DB01783)
+- **DrugBank:** [DB01783](https://go.drugbank.com/drugs/DB01783) · **PubChem:** not captured
 - **groups:** approved, investigational, nutraceutical, vet_approved
 
 ## About

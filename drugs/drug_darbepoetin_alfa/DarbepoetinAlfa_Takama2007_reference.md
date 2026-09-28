@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (darbepoetin_alfa vs darbepoetin alfa) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The darbepoetin alfa record was rejected because the structural parameter V(1) in PD patients was recorded as 17 %, a percentage that is dimensionally incompatible with a compartment volume in litres.**
+
+The record reports a two-compartment structure with clearance CL = 0.0807 l h(-1) and volume V(1) = 2.51 l for darbepoetin alfa, but the third parameter, labelled V(1) in PD patients, is given as 17 % — a relative change rather than a volume, so its dimensions do not match a structural volume parameter. The record was also built from the paper's abstract alone, meaning reported summary statistics stood in for a fitted model. A second reader found no values for CL, V, or the PD-patient parameter in the source, disagreeing with all three extracted numbers and with the compound naming (darbepoetin_alfa versus darbepoetin alfa). Extracted — darbepoetin alfa: CL 0.0807 l h(-1), V 2.51 l, V1 17 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading darbepoetin alfa; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Takama H; Tanaka H; Nakashima D; Ogata H; Uchida E; Akizawa T; et al. et al. (2007). British journal of clinical pharmacology 63
@@ -26,6 +29,9 @@ Takama H; Tanaka H; Nakashima D; Ogata H; Uchida E; Akizawa T; et al. et al. (20
 
 ## Model component
 <dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Takama2007_reference" status="rejected" stale="false" population="haemodialysis and peritoneal dialysis patients" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

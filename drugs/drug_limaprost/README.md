@@ -4,7 +4,8 @@
 
 - **generic name:** limaprost
 - **ATC codes:** `B01AC28`
-- **DrugBank:** [DB09211](https://go.drugbank.com/drugs/DB09211)
+- **DrugBank:** [DB09211](https://go.drugbank.com/drugs/DB09211) · **PubChem:** [CID 6438378](https://pubchem.ncbi.nlm.nih.gov/compound/6438378)
+- **molar mass:** 380.525 g/mol (C22H36O5) — DrugBank
 - **groups:** investigational
 
 ## About

@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['dp', 's(+)-dp', 'interconversion'], ['dp', 'r(-)-dp', 'interconversion']] vs []) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The disopyramide parent–metabolite model lacks clearance, absorption rate constant and lag time, so placeholders stood in for these parameters and it was quarantined rather than published.**
+
+The record reports only kel (0.0648 h⁻¹) and V/F (63.2 L) for disopyramide; clearance, absorption rate constant and absorption lag time had no extracted value, so library defaults were substituted and the model was held back. The declared structure is parent with a metabolism link to the metabolite MND, but the built structure came out as a one-compartment extravascular model instead of the required parent–metabolite topology. Absorption was assumed first-order with an invented ka not reported in the source, and apparent parameterization implied F=1, Fm=1 and no molar correction. A second reader also found no support for the recorded enantiomer interconversion links between disopyramide and its S(+)/R(−) forms. Extracted — disopyramide: kel 0.0648 h⁻¹, V/F 63.2 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has dp → s(+)-dp (interconversion); dp → r(-)-dp (interconversion), the second reading none. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Aso R; Ohashi K; Katoh T; Ogata H et al. (2001). International journal of clinical pharmacology research 21
 
 ## Model component
 <dbs-pgx drug="disopyramide" model-id="Disopyramide_Aso2001_reference" status="model_quarantined" stale="false" population="arrhythmia patients" measured-compound="disopyramide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

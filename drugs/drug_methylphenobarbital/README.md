@@ -4,7 +4,8 @@
 
 - **generic name:** methylphenobarbital
 - **ATC codes:** `N03AA01`
-- **DrugBank:** [DB00849](https://go.drugbank.com/drugs/DB00849)
+- **DrugBank:** [DB00849](https://go.drugbank.com/drugs/DB00849) · **PubChem:** [CID 8271](https://pubchem.ncbi.nlm.nih.gov/compound/8271)
+- **molar mass:** 246.2619 g/mol (C13H14N2O3) — DrugBank
 - **groups:** approved
 
 ## About

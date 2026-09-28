@@ -4,7 +4,7 @@
 
 - **generic name:** Gelatin
 - **ATC codes:** `B05AA06`
-- **DrugBank:** [DB11242](https://go.drugbank.com/drugs/DB11242)
+- **DrugBank:** [DB11242](https://go.drugbank.com/drugs/DB11242) · **PubChem:** not captured
 - **groups:** approved, investigational, vet_approved, withdrawn
 
 ## About

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;hydrocodone&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocodone/&quot;},{&quot;label&quot;:&quot;Zhao_2004 \u00b7 PD name&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrocodone_Melhem2013_reference&quot;,&quot;label&quot;:&quot;Melhem_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

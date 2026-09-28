@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;aceclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_aceclofenac/&quot;},{&quot;label&quot;:&quot;Ag\u00fandez_2009 \u00b7 PGx CYP2C8&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aceclofenac_Kim2016_reference&quot;,&quot;label&quot;:&quot;Kim_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_aceclofenac/Aceclofenac_Kim2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

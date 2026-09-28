@@ -5,7 +5,7 @@
 
 # hydromorphone — `Hydromorphone_Wimbish2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has none, the second reading 49.6; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Wimbish C; Lynch AM; Knych HK; Ueda Y; Messenger KM et al. (2024). Frontiers in veterinary science 11
@@ -25,6 +27,9 @@ Wimbish C; Lynch AM; Knych HK; Ueda Y; Messenger KM et al. (2024). Frontiers in 
 
 ## Model component
 <dbs-pgx drug="hydromorphone" model-id="Hydromorphone_Wimbish2024_reference" status="curated_candidate" stale="false" population="healthy Beagle dogs" measured-compound="hydromorphone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,14 +56,22 @@ Wimbish C; Lynch AM; Knych HK; Ueda Y; Messenger KM et al. (2024). Frontiers in 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.786 (11/14 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q32]` | not captured | 49.6 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 0.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | 11.2 | 0.8 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -121,6 +134,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference/Hydromorphone_Wimbish2024_reference.svg" alt="Hydromorphone_Wimbish2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference/Hydromorphone_Wimbish2024_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference/Hydromorphone_Wimbish2024_reference_sim_controls.json"></dbs-fmusim>
 

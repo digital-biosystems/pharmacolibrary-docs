@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (chloroquine phosphate vs chloroquine) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The chloroquine record was rejected because its apparent parameters (CL/F 54.6 L/h, V1/F 2930 L, Q 47.2 L/h) were double-corrected for bioavailability despite Frel already being 0.192, and peripheral volumes were left unextracted.**
+
+The reported chloroquine and desethylchloroquine parameters are apparent values already normalized by bioavailability (CL/F, V1/F, Q/F), yet the record also carries a relative bioavailability Frel of 0.192, so the coherence check for apparent parameters failed on double correction. The peripheral volume parameters (Vp1 for chloroquine and desethylchloroquine) have no extracted values, meaning placeholders would have been used. A second reader also disagreed on the dosed compound (chloroquine phosphate versus chloroquine) and on several parameter identifiers, though these disagreements concern labeling rather than the numeric values. Extracted — chloroquine: kabs 0.943 hour -1, CL/F 54.6 L/h, V1/F 2.93e+03 L, Q 47.2 L/h, Frel 0.192; desethylchloroquine: CL/F 37.6 L/h, V1/F 40 L, Q/F 36.3 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has chloroquine phosphate, the second reading chloroquine; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `chloroquine phosphate`, measured `chloroquine`.
 
@@ -28,6 +31,9 @@ Abd-Rahman AN; Marquart L; Gobeau N; Kümmel A; Simpson JA; Chalon S; et al. et 
 
 ## Model component
 <dbs-pgx drug="chloroquine" model-id="Chloroquine_AbdRahman2020_plasma_samples" status="rejected" stale="false" population="24 healthy subjects with induced blood-stage P. vivax malaria" measured-compound="chloroquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

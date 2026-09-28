@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;cathine&quot;,&quot;href&quot;:&quot;drugs/drug_cathine/&quot;},{&quot;label&quot;:&quot;Mohan_2016 \u00b7 PD Bax expression&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Bax expression — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>

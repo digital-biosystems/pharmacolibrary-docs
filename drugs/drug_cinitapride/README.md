@@ -4,7 +4,8 @@
 
 - **generic name:** cinitapride
 - **ATC codes:** `A03FA08`
-- **DrugBank:** [DB08810](https://go.drugbank.com/drugs/DB08810)
+- **DrugBank:** [DB08810](https://go.drugbank.com/drugs/DB08810) · **PubChem:** [CID 68867](https://pubchem.ncbi.nlm.nih.gov/compound/68867)
+- **molar mass:** 402.4873 g/mol (C21H30N4O4) — DrugBank
 - **groups:** investigational
 
 ## About

@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The nadroparin record was quarantined because its clearance, volume of distribution, absorption rate constant and absorption lag time had no values, so library placeholders stood in, and an absorption rate constant was invented.**
+
+The record lists only apparent clearance (7.4 mL/min) and intercompartmental clearance (7.1 mL/min) for nadroparin; clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted value, so placeholders would have been used, and the model was held back rather than published with invented numbers. The absorption rate constant was defaulted rather than reported in the source, judged not acceptable. In addition, the covariate effects (theta_q290_category 3864.2, theta_q82_category 34554.7) were defined but only the reference individual was simulated, so the covariate scenarios were not exercised; bioavailability was assumed to be 1 with no molar correction under an apparent (/F) parameterization with extravascular first-order depot input. Extracted — nadroparin: CL/F 7.4 mL/min, Q 7.1 mL/min.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `nadroparin`, measured `anti-Xa`.
 
@@ -30,6 +33,9 @@ Jaspers TCC; Meijer CE; Vleming LJ; Franssen CFM; Diepstraten J; Lukens MV; et a
 
 ## Model component
 <dbs-pgx drug="nadroparin" model-id="Nadroparin_Jaspers2022_reference" status="model_quarantined" stale="false" population="hemodialysis patients" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -4,7 +4,8 @@
 
 - **generic name:** oxyfedrine
 - **ATC codes:** `C01DX03`
-- **DrugBank:** [DB13398](https://go.drugbank.com/drugs/DB13398)
+- **DrugBank:** [DB13398](https://go.drugbank.com/drugs/DB13398) · **PubChem:** not captured
+- **molar mass:** 313.397 g/mol (C19H23NO3) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

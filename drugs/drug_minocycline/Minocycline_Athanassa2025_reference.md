@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 1.2567).
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 1.26).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — minocycline: CL/F 2.9 L/h, V/F 102 L, kabs 0.47 n = 1000.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Athanassa Z; Papakyriakopoulou P; Marquez Megias S; Saitani EM; Manioudaki S; Dimoula K; et al. et al. (2025). The Journal of antimicrobial chemotherapy 80
@@ -25,6 +27,9 @@ Athanassa Z; Papakyriakopoulou P; Marquez Megias S; Saitani EM; Manioudaki S; Di
 
 ## Model component
 <dbs-pgx drug="minocycline" model-id="Minocycline_Athanassa2025_reference" status="needs_review" stale="false" population="critically ill adults with ventilator-associated pneumonia" measured-compound="minocycline" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

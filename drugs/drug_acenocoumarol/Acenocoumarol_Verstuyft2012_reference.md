@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (fluindione and acenocoumarol vs fluindione, acenocoumarol) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for acenocoumarol's bioavailability, clearance and absorption lag time.**
+
+The model was built, but acenocoumarol's bioavailability, clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — acenocoumarol: kabs 1.83 h-1, Q 0.173 L/h, V2 2.77 L, CL 0.18; fluindione, S-acenocoumarol: V 4.7 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluindione and acenocoumarol, the second reading fluindione, acenocoumarol; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `fluindione, acenocoumarol`, measured `fluindione, S-acenocoumarol`.
 
@@ -28,6 +31,9 @@ Verstuyft C; Delavenne X; Rousseau A; Robert A; Tod M; Diquet B; et al. et al. (
 
 ## Model component
 <dbs-pgx drug="acenocoumarol" model-id="Acenocoumarol_Verstuyft2012_reference" status="model_quarantined" stale="false" population="healthy adults" measured-compound="fluindione, S-acenocoumarol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

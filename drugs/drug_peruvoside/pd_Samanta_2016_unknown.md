@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;peruvoside&quot;,&quot;href&quot;:&quot;drugs/drug_peruvoside/&quot;},{&quot;label&quot;:&quot;Samanta_2016 \u00b7 PD uterine contraction&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # uterine contraction — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>

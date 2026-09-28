@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02A&quot;,&quot;href&quot;:&quot;atc/A02A.md&quot;},{&quot;label&quot;:&quot;magnesium oxide&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_oxide/&quot;},{&quot;label&quot;:&quot;Venkatappa_2022 \u00b7 PD Platelet aggregation&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Platelet aggregation — PD  <span class="pk-badge pk-badge--green">extracted</span>

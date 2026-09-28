@@ -4,7 +4,8 @@
 
 - **generic name:** nomifensine
 - **ATC codes:** `N06AX04`
-- **DrugBank:** [DB04821](https://go.drugbank.com/drugs/DB04821)
+- **DrugBank:** [DB04821](https://go.drugbank.com/drugs/DB04821) · **PubChem:** [CID 4528](https://pubchem.ncbi.nlm.nih.gov/compound/4528)
+- **molar mass:** 238.3275 g/mol (C16H18N2) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

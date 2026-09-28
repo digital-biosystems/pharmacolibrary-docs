@@ -4,7 +4,8 @@
 
 - **generic name:** sodium chloride
 - **ATC codes:** `A12CA01`, `B05CB01`, `B05XA03`
-- **DrugBank:** [DB09153](https://go.drugbank.com/drugs/DB09153)
+- **DrugBank:** [DB09153](https://go.drugbank.com/drugs/DB09153) · **PubChem:** [CID 5234](https://pubchem.ncbi.nlm.nih.gov/compound/5234)
+- **molar mass:** 58.443 g/mol (ClNa) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About

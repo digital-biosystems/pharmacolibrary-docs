@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Marques L; Vale N et al. (2026). Pharmaceutics 18
@@ -25,6 +25,9 @@ Marques L; Vale N et al. (2026). Pharmaceutics 18
 
 ## Model component
 <dbs-pgx drug="cadmium" model-id="Cadmium_Marques2026_reference" status="not_modelled" stale="false" population="" measured-compound="cadmium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -98,6 +101,8 @@ Marques L; Vale N et al. (2026). Pharmaceutics 18
 </div><figure class="pk-models-diagram"><img src="drugs/toxin_cadmium/Cadmium_Marques2026_reference/Cadmium_Marques2026_reference.svg" alt="Cadmium_Marques2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/toxin_cadmium/Cadmium_Marques2026_reference/Cadmium_Marques2026_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/toxin_cadmium/Cadmium_Marques2026_reference/Cadmium_Marques2026_reference_sim_controls.json"></dbs-fmusim>
 

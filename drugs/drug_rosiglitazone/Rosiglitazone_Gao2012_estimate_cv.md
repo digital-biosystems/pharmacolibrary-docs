@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (glucose vs rosiglitazone) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for rosiglitazone's clearance, absorption rate constant and absorption lag time; t6_deviations.**
+
+The model was built, but rosiglitazone's clearance, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — rosiglitazone: kabs 2.01 h Ϫ1, V/F 342 ml/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has glucose, the second reading rosiglitazone; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Gao W; Jusko WJ et al. (2012). The Journal of pharmacology and experimental therapeutics 341
@@ -26,6 +29,9 @@ Gao W; Jusko WJ et al. (2012). The Journal of pharmacology and experimental ther
 
 ## Model component
 <dbs-pgx drug="rosiglitazone" model-id="Rosiglitazone_Gao2012_estimate_cv" status="model_quarantined" stale="false" population="type 2 diabetic Goto-Kakizaki rats" measured-compound="rosiglitazone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

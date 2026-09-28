@@ -4,7 +4,8 @@
 
 - **generic name:** cimetidine
 - **ATC codes:** `A02BA01`
-- **DrugBank:** [DB00501](https://go.drugbank.com/drugs/DB00501)
+- **DrugBank:** [DB00501](https://go.drugbank.com/drugs/DB00501) · **PubChem:** [CID 2756](https://pubchem.ncbi.nlm.nih.gov/compound/2756)
+- **molar mass:** 252.339 g/mol (C10H16N6S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

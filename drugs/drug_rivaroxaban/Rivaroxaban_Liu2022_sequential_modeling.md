@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[egfr_on_cl_f]` (0.54 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of egfr_on_cl_f: this record has 0.54, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Liu XQ; Zhang YF; Ding HY; Yan MM; Jiao Z; Zhong MK; et al. et al. (2022). Acta pharmacologica Sinica 43
@@ -28,6 +31,9 @@ Liu XQ; Zhang YF; Ding HY; Yan MM; Jiao Z; Zhong MK; et al. et al. (2022). Acta 
 
 ## Model component
 <dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Liu2022_sequential_modeling" status="accepted_with_caveats" stale="false" population="Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -154,6 +160,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling/Rivaroxaban_Liu2022_sequential_modeling.svg" alt="Rivaroxaban_Liu2022_sequential_modeling diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.617 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling/Rivaroxaban_Liu2022_sequential_modeling_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling/Rivaroxaban_Liu2022_sequential_modeling_sim_controls.json"></dbs-fmusim>
 

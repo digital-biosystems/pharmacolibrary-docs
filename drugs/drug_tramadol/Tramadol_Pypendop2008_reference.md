@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for O-desmethyl-tramadol's clearance and volume of distribution and the rate at which O-desmethyl-tramadol is formed.**
+
+The model was built, but O-desmethyl-tramadol's clearance and volume of distribution and the rate at which O-desmethyl-tramadol is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tramadol: V1/F 1.55e+03 mL/kg, Vss 3.1e+03 mL/kg, CL 20.8 mL/min/kg, t1/2z 134 min, Fab 93 %, kabs 0.65 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Pypendop BH; Ilkiw JE et al. (2008). Journal of veterinary pharmacology and therapeutics 31
@@ -26,6 +29,9 @@ Pypendop BH; Ilkiw JE et al. (2008). Journal of veterinary pharmacology and ther
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Pypendop2008_reference" status="model_quarantined" stale="false" population="cats" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

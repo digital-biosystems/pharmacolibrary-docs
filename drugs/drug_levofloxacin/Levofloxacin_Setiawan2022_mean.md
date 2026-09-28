@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Setiawan E; Abdul-Aziz MH; Cotta MO; Susaniwati S; Cahjono H; Sari IY; et al. et al. (2022). Scientific reports 12
@@ -25,6 +25,9 @@ Setiawan E; Abdul-Aziz MH; Cotta MO; Susaniwati S; Cahjono H; Sari IY; et al. et
 
 ## Model component
 <dbs-pgx drug="levofloxacin" model-id="Levofloxacin_Setiawan2022_mean" status="curated_candidate" stale="false" population="hospitalized adult patients" measured-compound="levofloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -111,6 +114,8 @@ Setiawan E; Abdul-Aziz MH; Cotta MO; Susaniwati S; Cahjono H; Sari IY; et al. et
 </div><figure class="pk-models-diagram"><img src="drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean/Levofloxacin_Setiawan2022_mean.svg" alt="Levofloxacin_Setiawan2022_mean diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean/Levofloxacin_Setiawan2022_mean_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean/Levofloxacin_Setiawan2022_mean_sim_controls.json"></dbs-fmusim>
 

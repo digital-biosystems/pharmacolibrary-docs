@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q1]` (0.801 vs not captured) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The tramadol record was held back because the absorption rate constant ka was not reported in the source, so a default was substituted, along with a defaulted lag time and assumed F=1 and Fm=1.**
+
+The source reports only CL/F (3.076 L/h/kg) and V/F (9.824 L/kg) for tramadol; ka and Tlag were missing and library defaults were used in their place, and the invented absorption was judged not acceptable. Because the parameters are apparent (/F) values, bioavailability was assumed F=1 and Fm=1 with no molar correction, and dosing was treated as first-order extravascular input. A second reader also disagreed on several extracted values, including one entry of 0.801 where the second reader gave null and entries where this record had no value but the second reader gave 724.840 and 710.148. Extracted — tramadol: CL/F 3.08 L/h/kg, V/F 9.82 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q1: this record has 0.801, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Bao SS; Tang PF; Gao NY; Xiao ZX; Qian JC; Zheng L; et al. et al. (2023). PeerJ 11
@@ -26,6 +29,9 @@ Bao SS; Tang PF; Gao NY; Xiao ZX; Qian JC; Zheng L; et al. et al. (2023). PeerJ 
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Bao2023_reference" status="needs_review" stale="false" population="" measured-compound="tramadol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -140,6 +146,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_tramadol/Tramadol_Bao2023_reference/Tramadol_Bao2023_reference.svg" alt="Tramadol_Bao2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_tramadol/Tramadol_Bao2023_reference/Tramadol_Bao2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tramadol/Tramadol_Bao2023_reference/Tramadol_Bao2023_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (avalglucosidase_alfa vs unknown) and 6 more field(s) — a structural parameter, so the record is disputed.
+**The avalglucosidase alfa record was rejected because a structural parameter's reported unit could not be converted to SI, leaving a dimension mismatch in the two-compartment model.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The model for avalglucosidase alfa in Pompe disease patients is a two-compartment structure with Michaelis–Menten elimination (CL 0.808 L/h, V1 3.37 L, Vmax 12 mg/h, Km 0.541 µg/mL, Q2 0.254 L/h, V2 296 L, Q3 1.87 L/h, V3 1.31 L) plus weight effects on clearance, central volume and Vmax. The rejection rests on a dimension mismatch on a structural parameter: one of the reported units could not be converted to SI, so that parameter entered the record without an SI value. A second reader also disagreed on several entries, including which weight-covariate parameters (0.463 and 0.896) belong to clearance versus distribution clearances, and on the covariate forms of the clearance parameter, though these disagreements are not the stated cause of rejection. Extracted — avalglucosidase alfa: CL 0.808 L/h, V1 3.37 L, Vmax 12 mg/h, Km 0.541 µg/mL, Q 0.254 L/h, V2 296 L, Q3 1.87 L/h, V3 1.31 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has avalglucosidase_alfa, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tiraboschi G; Marchionni D; Tuffal G; Fabre D; Martinez JM; Haack KA; et al. et al. (2023). Journal of pharmacokinetics and pharmacodynamics 50
@@ -25,6 +29,9 @@ Tiraboschi G; Marchionni D; Tuffal G; Fabre D; Martinez JM; Haack KA; et al. et 
 
 ## Model component
 <dbs-pgx drug="avalglucosidase alfa" model-id="AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv" status="rejected" stale="false" population="pediatric and adult patients with Pompe disease" measured-compound="avalglucosidase_alfa" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 8 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 

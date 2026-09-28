@@ -4,7 +4,7 @@
 
 - **generic name:** ranitidine bismuth citrate
 - **ATC codes:** `A02BA07`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

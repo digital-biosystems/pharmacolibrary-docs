@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Nielsen-Kudsk F; Askholt J et al. (1980). Acta pharmacologica et toxicologica 47
@@ -25,6 +27,9 @@ Nielsen-Kudsk F; Askholt J et al. (1980). Acta pharmacologica et toxicologica 47
 
 ## Model component
 <dbs-pgx drug="dipyridamole" model-id="Dipyridamole_NielsenKudsk1980_isolated_rabbit_hearts" status="rejected" stale="false" population="isolated rabbit hearts" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

@@ -4,7 +4,8 @@
 
 - **generic name:** octopamine
 - **ATC codes:** `C01CA18`
-- **DrugBank:** [DB13251](https://go.drugbank.com/drugs/DB13251)
+- **DrugBank:** [DB13251](https://go.drugbank.com/drugs/DB13251) · **PubChem:** not captured
+- **molar mass:** 153.1784 g/mol (C8H11NO2) — DrugBank
 - **groups:** experimental
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[theta_q367_im]` (19.4 vs not captured) and 6 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The paroxetine model record was rejected because the reported Vmax unit (µg·h⁻¹) could not be expressed in SI units, leaving this structural parameter dimensionally inconsistent with the rest of the model.**
+
+The record for paroxetine in elderly subjects with major depressive disorder reports Vmax as 208 µg·h⁻¹ and Km as 157 µg·l⁻¹ alongside a one-compartment structure with V2 = 254 l, V3 = 2350 l, Q = 1.33 l·h⁻¹ and kabs = 9.24 h⁻¹. The rejection arose from a dimension mismatch on a structural parameter: the unit µg·h⁻¹ given for Vmax could not be converted to SI units, so that parameter entered the model without an SI value. A second reader also disagreed on several covariate-effect values, reading 19.4 and 34.6 as effects on Q rather than on the parameters named theta_q367_im and theta_q367_um in this record, and reading 48.8 as a Q covariate effect rather than the Vmax effect recorded here; these disagreements are inconclusive as to the true values. Extracted — paroxetine: Vmax 208 µg h -1, Km 157 µg l -1, V2 254 l, V3 2.35e+03 l, Q 1.33 l h -1, kabs 9.24 h -1, V 1.01e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of theta_q367_im: this record has 19.4, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Feng Y; Pollock BG; Ferrell RE; Kimak MA; Reynolds CF; Bies RR et al. (2006). British journal of clinical pharmacology 61
@@ -26,6 +29,9 @@ Feng Y; Pollock BG; Ferrell RE; Kimak MA; Reynolds CF; Bies RR et al. (2006). Br
 
 ## Model component
 <dbs-pgx drug="paroxetine" model-id="Paroxetine_Feng2006_base" status="rejected" stale="false" population="elderly subjects with major depressive disorder" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 7 extracted, plus 6 covariate effects.
 
 **Parameterization:** mechanistic.
 

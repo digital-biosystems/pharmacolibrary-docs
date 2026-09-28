@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Melhem MR; Rubino CM; Farr SJ; Robinson CY et al. (2013). Clinical pharmacokinetics 52
@@ -25,6 +27,9 @@ Melhem MR; Rubino CM; Farr SJ; Robinson CY et al. (2013). Clinical pharmacokinet
 
 ## Model component
 <dbs-pgx drug="hydrocodone" model-id="Hydrocodone_Melhem2013_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="hydrocodone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -124,6 +129,8 @@ Melhem MR; Rubino CM; Farr SJ; Robinson CY et al. (2013). Clinical pharmacokinet
 </div><figure class="pk-models-diagram"><img src="drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference/Hydrocodone_Melhem2013_reference.svg" alt="Hydrocodone_Melhem2013_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2.28 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference/Hydrocodone_Melhem2013_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference/Hydrocodone_Melhem2013_reference_sim_controls.json"></dbs-fmusim>
 

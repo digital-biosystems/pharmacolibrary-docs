@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Taspoglutide&quot;,&quot;href&quot;:&quot;drugs/drug_taspoglutide/&quot;},{&quot;label&quot;:&quot;Li_2015 \u00b7 PD FPG&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # FPG — PD  <span class="pk-badge pk-badge--red">rejected</span>

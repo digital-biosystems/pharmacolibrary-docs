@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q368]` (not captured vs 26.5) and 1 more field(s) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q368: this record has none, the second reading 26.5; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Cattrall JWS; Asín-Prieto E; Freeman J; Trocóniz IF; Kirby A et al. (2019). European journal of clinical microbiology & infectious diseases : official publication of the European Society of Clinical Microbiology 38

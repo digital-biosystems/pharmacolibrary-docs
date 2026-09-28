@@ -4,7 +4,7 @@
 
 - **generic name:** Methylnaltrexone
 - **ATC codes:** `A06AH01`
-- **DrugBank:** [DB06800](https://go.drugbank.com/drugs/DB06800)
+- **DrugBank:** [DB06800](https://go.drugbank.com/drugs/DB06800) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

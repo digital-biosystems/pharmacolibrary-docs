@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (simvastatin vs verapamil and simvastatin) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record was rejected because the simvastatin-to-simvastatin-hydroxy-acid metabolism link carries no parameter value, leaving the metabolite with no path from the dose, and the second reader disputes the dosed compound, the primary analyte, and the extracted Ka and VD(S) values.**
+
+The model links simvastatin to simvastatin hydroxy acid by metabolism and verapamil to norverapamil, but both links have no link parameter (kind unknown), so the metabolite compartment is unreachable from the dose — the stated rejection cause. The second reader instead read the dosed compound as verapamil and simvastatin together, the primary analyte as simvastatin hydroxy acid, and the simvastatin link as hydrolysis rather than metabolism. The second reader also could not confirm the extracted Ka (0.6 h⁻¹) and VD(S) (150 L) values, reading them as absent, while CL of 12.2 L/h is uncontested. Extracted — simvastatin: kabs 0.6 h -1, V 150 L, CL 12.2 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading verapamil and simvastatin; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Methaneethorn_2014_2)

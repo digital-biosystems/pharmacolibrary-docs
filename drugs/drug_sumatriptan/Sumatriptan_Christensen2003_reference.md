@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The sumatriptan record was rejected because a structural parameter carries a dimension mismatch — CL/F is given as 316 L and V/F as 1070 L, clearances and volumes lacking the per-time unit — and the record is abstract-only, so summary statistics stand in for a fitted model.**
+
+The record for sumatriptan in healthy adolescent migraineurs is a one-compartment structure built from the paper's abstract alone, meaning no fitted model exists and the reported summary statistics (Cmax 13.9 ng/mL, AUC∞ 57.3 ng/mL·h, t1/2 2.0 h, CL/F 316 L, V/F 1070 L) were used directly. The rejection cause is a dimension mismatch on a structural parameter: CL/F is recorded with unit 'L' rather than a flow unit such as L/h, so the value's dimension does not match what an apparent clearance requires. A second reader (gpt-oss:120b) disagreed on the model's parameterization, reading it as mechanistic rather than apparent, and set all five parameter values (AUC∞ 57.3, CL/F 316, Cmax 13.9, t1/2 2.0, V/F 1070) to null, leaving the extracted numbers uncontested but unconfirmed. Extracted — sumatriptan: Cmax 13.9 ng/mL, AUC∞ 57.3 ng/mL.h, t1/2z 2 hours, CL/F 316 L, V/F 1.07e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Christensen ML; Mottern RK; Jabbour JT; Fuseau E et al. (2003). Journal of clinical pharmacology 43
 
 ## Model component
 <dbs-pgx drug="sumatriptan" model-id="Sumatriptan_Christensen2003_reference" status="rejected" stale="false" population="healthy adolescent migraineurs" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fluorouracil: CL 256 L/h, V 161 L, kabs 0.757 h−1, tlag 0.000552 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem van_2013)

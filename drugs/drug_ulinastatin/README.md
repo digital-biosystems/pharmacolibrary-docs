@@ -4,7 +4,7 @@
 
 - **generic name:** ulinastatin
 - **ATC codes:** `B02AB05`
-- **DrugBank:** [DB12038](https://go.drugbank.com/drugs/DB12038)
+- **DrugBank:** [DB12038](https://go.drugbank.com/drugs/DB12038) · **PubChem:** not captured
 - **groups:** investigational
 
 ## About

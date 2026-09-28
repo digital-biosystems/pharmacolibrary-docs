@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (clopidogrel vs unknown) and 14 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — clopidogrel: Cmax 11 ng/ml, Cmax_ratio 0.4, AUClast 1.69e+03 ng/ml·min; clopidogrel active metabolite: Cmax 4.6 ng/ml, AUClast 129 ng/ml·min; pantoprazole: Cmax 3.4 μg/ml, AUClast 306 μg/ml·min, t1/2z 124 min, CL 790 ml/min, V 4.06e+04 ml.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clopidogrel, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `clopidogrel`, measured `clopidogrel active metabolite`.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[mean protriptyline half-life]` (74.3 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — protriptyline: t1/2z 74.3 hr, V 22.5 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of mean protriptyline half-life: this record has 74.3, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ziegler VE; Biggs JT; Wylie LT; Coryell WH; Hanifl KM; Hawf DJ; et al. et al. (1978). Clinical pharmacology and therapeutics 23
@@ -26,6 +29,9 @@ Ziegler VE; Biggs JT; Wylie LT; Coryell WH; Hanifl KM; Hawf DJ; et al. et al. (1
 
 ## Model component
 <dbs-pgx drug="protriptyline" model-id="Protriptyline_Ziegler1978_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="protriptyline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

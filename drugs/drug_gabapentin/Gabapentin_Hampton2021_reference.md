@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (47 vs not captured) and 10 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**This gabapentin swine record was rejected because the clearance parameter carries a dimensionally wrong unit, kg*min, a mismatch on a structural parameter, and it was built from the abstract only.**
+
+The gabapentin clearance is recorded as 1.2 with unit kg*min, which is dimensionally inconsistent for a clearance parameter (a volume flow per unit body weight and time), so the record failed the dimensional-consistency check on a structural parameter. The record was also built from the paper's abstract alone, meaning the reported summary statistics stood in for a fitted model. A second reader found no values to dispute in the bioavailability (47%), absorption half-life (58 min), steady-state volume (594 ml/kg), clearance (1.2), maximal concentration (9155 ng/ml), absorption rate constant (5.24 1/hr) and terminal half-life (360 min), but could not itself supply alternative readings, so those comparisons could not be computed. Extracted — gabapentin: V 170 ml/kg, CL 1.2 kg*min, Vss 594 ml/kg, t1/2z 360 min, t1/2ka 58 min, Cmax 9.16e+03 ng/ml, tmax 194 min, Fab 47 %, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 47, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Hampton CE; Queiroz-Williams P; Oubre MJ; Martin A; Gisclair AT; Pypendop BH et al. (2021). Journal of veterinary pharmacology and therapeutics 44
@@ -26,6 +29,9 @@ Hampton CE; Queiroz-Williams P; Oubre MJ; Martin A; Gisclair AT; Pypendop BH et 
 
 ## Model component
 <dbs-pgx drug="gabapentin" model-id="Gabapentin_Hampton2021_reference" status="rejected" stale="false" population="healthy adult Duroc swine" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 

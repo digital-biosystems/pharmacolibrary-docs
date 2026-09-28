@@ -4,7 +4,7 @@
 
 - **generic name:** Morpholine
 - **ATC codes:** `N02BA08`
-- **DrugBank:** [DB13669](https://go.drugbank.com/drugs/DB13669)
+- **DrugBank:** [DB13669](https://go.drugbank.com/drugs/DB13669) · **PubChem:** not captured
 - **groups:** experimental
 
 ## Extraction summary

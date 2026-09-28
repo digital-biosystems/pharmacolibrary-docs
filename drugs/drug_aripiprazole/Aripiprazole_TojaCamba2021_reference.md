@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (risperidone vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has risperidone, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Toja-Camba FJ; Gesto-Antelo N; Maroñas O; Echarri Arrieta E; Zarra-Ferro I; González-Barcia M; et al. et al. (2021). Pharmaceutics 13
@@ -26,6 +29,9 @@ Toja-Camba FJ; Gesto-Antelo N; Maroñas O; Echarri Arrieta E; Zarra-Ferro I; Gon
 
 ## Model component
 <dbs-pgx drug="aripiprazole" model-id="Aripiprazole_TojaCamba2021_reference" status="rejected" stale="false" population="patients receiving long-acting injectable atypical antipsychotics" measured-compound="risperidone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

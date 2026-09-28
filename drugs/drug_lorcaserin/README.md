@@ -4,7 +4,8 @@
 
 - **generic name:** lorcaserin
 - **ATC codes:** `A08AA11`
-- **DrugBank:** [DB04871](https://go.drugbank.com/drugs/DB04871)
+- **DrugBank:** [DB04871](https://go.drugbank.com/drugs/DB04871) · **PubChem:** [CID 11658860](https://pubchem.ncbi.nlm.nih.gov/compound/11658860)
+- **molar mass:** 195.69 g/mol (C11H14ClN) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

@@ -5,7 +5,8 @@
 
 - **generic name:** bivalirudin
 - **ATC codes:** `B01AE06`
-- **DrugBank:** [DB00006](https://go.drugbank.com/drugs/DB00006)
+- **DrugBank:** [DB00006](https://go.drugbank.com/drugs/DB00006) · **PubChem:** [CID 16129704](https://pubchem.ncbi.nlm.nih.gov/compound/16129704)
+- **molar mass:** 2180.2853 g/mol (C98H138N24O33) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2012_reference](drugs/drug_bivalirudin/Bivalirudin_Zhang2012_reference.md) | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2012_reference](drugs/drug_bivalirudin/Bivalirudin_Zhang2012_reference.md) | 2-compartment (no model) | 4 | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
 
 ## Pharmacodynamics (PD)
 

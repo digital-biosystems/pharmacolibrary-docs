@@ -4,7 +4,8 @@
 
 - **generic name:** butylscopolamine
 - **ATC codes:** `A03BB01`, `A03DB04`
-- **DrugBank:** [DB09300](https://go.drugbank.com/drugs/DB09300)
+- **DrugBank:** [DB09300](https://go.drugbank.com/drugs/DB09300) · **PubChem:** [CID 6852391](https://pubchem.ncbi.nlm.nih.gov/compound/6852391)
+- **molar mass:** 360.473 g/mol (C21H30NO4) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About

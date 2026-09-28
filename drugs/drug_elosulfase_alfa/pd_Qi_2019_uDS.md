@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;elosulfase alfa&quot;,&quot;href&quot;:&quot;drugs/drug_elosulfase_alfa/&quot;},{&quot;label&quot;:&quot;Qi_2019 \u00b7 PD urinary dermatan sulfate&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # urinary dermatan sulfate — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>

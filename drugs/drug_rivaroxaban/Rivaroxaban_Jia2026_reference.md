@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_cmax; T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[alag1]` (not captured vs 1.22) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The rivaroxaban model's simulated peak concentration (0.00396) misses the paper's reported Cmax (0.00014) by a ratio of 28.3132, and its absorption rate constant ka was defaulted rather than taken from the source.**
+
+Simulating the paper's dosing yields a Cmax of 0.003963842988179458 against the reported 0.00014, a ratio of 28.3132, with the µg/L→SI conversion compared against simulated kg/m³. The absorption rate constant ka was not reported in the source, so a library default was substituted along with a default Tlag. The builder also assumed F=1 and Fm=1 with no molar correction, an apparent-parameterization assumption. A second reader additionally reported 1.22 for alag1 where the record has none. Extracted — rivaroxaban: kabs 0.143, CL/F 7.22 L/h, V/F 4.93 L, D1 0.82 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alag1: this record has none, the second reading 1.22. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Jia M; Chai Y; Gao Y; Jing C; Zhu K; Zhu T; et al. et al. (2026). European journal of clinical pharmacology 82
@@ -26,6 +29,9 @@ Jia M; Chai Y; Gao Y; Jing C; Zhu K; Zhu T; et al. et al. (2026). European journ
 
 ## Model component
 <dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Jia2026_reference" status="needs_review" stale="false" population="adults with TIPS" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -138,6 +144,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference.svg" alt="Rivaroxaban_Jia2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference_sim_controls.json"></dbs-fmusim>
 

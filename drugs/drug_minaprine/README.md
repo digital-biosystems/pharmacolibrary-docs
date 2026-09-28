@@ -4,7 +4,8 @@
 
 - **generic name:** minaprine
 - **ATC codes:** `N06AX07`
-- **DrugBank:** [DB00805](https://go.drugbank.com/drugs/DB00805)
+- **DrugBank:** [DB00805](https://go.drugbank.com/drugs/DB00805) · **PubChem:** [CID 4199](https://pubchem.ncbi.nlm.nih.gov/compound/4199)
+- **molar mass:** 298.3828 g/mol (C17H22N4O) — DrugBank
 - **groups:** approved
 
 ## About

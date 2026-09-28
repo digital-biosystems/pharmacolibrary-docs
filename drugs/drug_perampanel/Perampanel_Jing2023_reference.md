@@ -5,7 +5,7 @@
 
 # perampanel — `Perampanel_Jing2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The perampanel record was held back because the absorption rate constant ka and lag time Tlag were not reported in the source and library default values were substituted, and the invented first-order absorption input was judged not acceptable.**
+
+The record reports only CL/F = 7.85 mL/min and V/F = 71.4 L for perampanel in a one-compartment structure; ka and Tlag were missing from the source, so no extracted values existed and library placeholder defaults would have been used. The model builder further assumed F=1 and Fm=1 with no molar correction, yielding an apparent (/F) parameterization with first-order depot input implying extravascular dosing. The defaulted ka was flagged as an invented absorption term not reported in the source, and this deviation was deemed not acceptable, so the record was not published. No numeric comparison could be computed for the failed check (ratio None), and the second reader's disagreements concern other extracted values (5040, 4070) not affecting this verdict. Extracted — perampanel: CL/F 7.85 mL/min, V/F 71.4 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 5040, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Jing S; Shiba S; Morita M; Yasuda S; Lin Y et al. (2023). Clinical drug investigation 43
@@ -25,6 +29,9 @@ Jing S; Shiba S; Morita M; Yasuda S; Lin Y et al. (2023). Clinical drug investig
 
 ## Model component
 <dbs-pgx drug="perampanel" model-id="Perampanel_Jing2023_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="perampanel" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -60,9 +67,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.7 (7/10 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q17]` | 5040 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q19]` | 4070 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | not captured | 4070 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -125,6 +140,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference.svg" alt="Perampanel_Jing2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference_sim_controls.json"></dbs-fmusim>
 

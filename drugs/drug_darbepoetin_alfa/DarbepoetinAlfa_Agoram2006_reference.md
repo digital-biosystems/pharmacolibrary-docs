@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default; C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (44.3 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume; the clearance plausibility check could not be computed.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — darbepoetin alfa: CL 2.01e+03 mL/day, Vss 3.39e+03 mL, Fab 44.3 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 44.3, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Agoram B; Heatherington AC; Gastonguay MR et al. (2006). The AAPS journal 8
@@ -26,6 +29,9 @@ Agoram B; Heatherington AC; Gastonguay MR et al. (2006). The AAPS journal 8
 
 ## Model component
 <dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Agoram2006_reference" status="needs_review" stale="false" population="patients with nonmyeloid malignancies and chemotherapy-induced anemia" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

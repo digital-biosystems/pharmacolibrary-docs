@@ -5,7 +5,7 @@
 
 # dulaglutide — `Dulaglutide_Min2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The dulaglutide model was held back because the absorption rate constant ka and lag time Tlag were not reported in the source; defaults were substituted, and the apparent CL/F 9.1 L/h and V/F 28.3 L assume F=1.**
+
+The source reports only mean apparent clearance (CL/F 9.1 L/h) and mean apparent volume of distribution (V/F 28.3 L) for dulaglutide; the absorption rate constant ka and lag time Tlag are absent, so library placeholder values were used in their place, and the invented-ka deviation was judged not acceptable. Because the parameters are apparent (/F), bioavailability was assumed F=1 with Fm=1 and no molar correction, and the model was given a first-order depot input, i.e. extravascular dosing, none of which is stated in the source. The second reader did not dispute the parameter values (their entry is null); the disagreement concerns only the value field, where this record lists 2 and the second reader left it empty. Extracted — dulaglutide: CL/F 9.1 L/h, V/F 28.3 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 2, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Min JS; Jo SJ; Lee S; Kim DY; Kim DH; Lee CB; Bae SK et al. (2025). Drug design, development and therapy 19
@@ -25,6 +29,9 @@ Min JS; Jo SJ; Lee S; Kim DY; Kim DH; Lee CB; Bae SK et al. (2025). Drug design,
 
 ## Model component
 <dbs-pgx drug="dulaglutide" model-id="Dulaglutide_Min2025_reference" status="needs_review" stale="false" population="" measured-compound="dulaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -60,9 +67,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q32]` | 2 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -125,6 +138,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_dulaglutide/Dulaglutide_Min2025_reference/Dulaglutide_Min2025_reference.svg" alt="Dulaglutide_Min2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_dulaglutide/Dulaglutide_Min2025_reference/Dulaglutide_Min2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dulaglutide/Dulaglutide_Min2025_reference/Dulaglutide_Min2025_reference_sim_controls.json"></dbs-fmusim>
 

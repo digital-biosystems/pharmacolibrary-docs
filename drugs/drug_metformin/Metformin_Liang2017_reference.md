@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q26]` (500 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The metformin record was held back because the absorption rate constant ka and lag time Tlag were not reported in the source and library defaults were substituted, so the absorption input was judged invented and not acceptable.**
+
+The record reports only apparent oral parameters for metformin, CL/F = 1140 mL/min and V/F = 600 L, with a one-compartment structure. The absorption rate constant ka and lag time Tlag are absent from the source, so defaults were substituted and the first-order depot absorption was flagged as invented rather than reported. The parameterization assumes F = 1 and Fm = 1 with no molar correction, meaning all parameters are apparent (/F) values for extravascular dosing. The second reader returned no value for the clearance and volume entries, so the value comparison could not be computed. Extracted — metformin: CL/F 1.14e+03 mL/min, V/F 600 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q26: this record has 500, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Liang X; Giacomini KM et al. (2017). Journal of pharmaceutical sciences 106

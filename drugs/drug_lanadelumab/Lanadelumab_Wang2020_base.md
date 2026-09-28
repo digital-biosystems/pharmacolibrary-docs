@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (AUCSS, Cavg, Cmax and Cmin), so that value has no SI equivalent. Extracted — lanadelumab: CL/F 0.0337 L/hour, AUCSS 408 µg × day/mL, Cavg 29.2 µg/mL, Cmax 35.5 µg/mL, Cmin 24.6 µg/mL, tmax 98.6 hour, t1/2z 361 hour, kabs 0.0179, … (+1).
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Wang Y; Marier JF; Kassir N; Chang C; Martin P et al. (2020). Clinical and translational science 13
@@ -25,6 +27,9 @@ Wang Y; Marier JF; Kassir N; Chang C; Martin P et al. (2020). Clinical and trans
 
 ## Model component
 <dbs-pgx drug="lanadelumab" model-id="Lanadelumab_Wang2020_base" status="needs_review" stale="false" population="patients with hereditary angioedema and healthy subjects" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** CL/F, V/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

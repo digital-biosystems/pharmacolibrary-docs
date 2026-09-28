@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Dhawan S; Singh B; Garg SK; Hota D; Dash RJ; Singla AK; et al. et al. (2006). Clinical pharmacokinetics 45
@@ -25,6 +27,9 @@ Dhawan S; Singh B; Garg SK; Hota D; Dash RJ; Singla AK; et al. et al. (2006). Cl
 
 ## Model component
 <dbs-pgx drug="glipizide" model-id="Glipizide_Dhawan2006_healthy_male_volunteers" status="rejected" stale="false" population="healthy male volunteers" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

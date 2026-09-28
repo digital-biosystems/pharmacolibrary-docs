@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl].value` (0.0511 vs 7.14) and 8 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for protein c's clearance.**
+
+The model was built, but protein c's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (t1/2z, CL and Vss), so that value has no SI equivalent. Extracted — protein c: t1/2z 11.9 n = 3, CL 0.0511 n = 3, Vss 0.804 n = 3, V 20 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].value`: this record has 0.0511, the second reading 7.14; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `protein C concentrate`, measured `protein C`.
 
@@ -27,6 +30,9 @@ not matched (stem Li_2025)
 
 ## Model component
 <dbs-pgx drug="protein C" model-id="ProteinC_Li2025_adolescents_12_to_16_y_n_3" status="model_quarantined" stale="false" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

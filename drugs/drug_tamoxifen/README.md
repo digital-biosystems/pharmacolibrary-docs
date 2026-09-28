@@ -5,7 +5,8 @@
 
 - **generic name:** tamoxifen
 - **ATC codes:** `L02BA01`
-- **DrugBank:** [DB00675](https://go.drugbank.com/drugs/DB00675)
+- **DrugBank:** [DB00675](https://go.drugbank.com/drugs/DB00675) · **PubChem:** [CID 2733526](https://pubchem.ncbi.nlm.nih.gov/compound/2733526)
+- **molar mass:** 371.5146 g/mol (C26H29NO) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -15,6 +16,18 @@
 Tamoxifen was granted FDA approval on 30 December 1977.[L7799]
 
 **Indication.** Tamoxifen is indicated to treat estrogen receptor positive metastatic breast cancer in adults, as an adjuvant in the treatment of early stage estrogen receptor positive breast cancer in adults, to reduce the risk of invasive breast cancer after surgery and radiation in adult women with ductal carcinoma in situ.[L7802]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| tamoxifen | parent | 371.515 | C26H29NO | DrugBank | [2733526](https://pubchem.ncbi.nlm.nih.gov/compound/2733526) | Mueller-Schoell_2020, ter_2014 |
+| 3-hydroxymorphinan | metabolite | 243.34 | — | PubChem | [5463854](https://pubchem.ncbi.nlm.nih.gov/compound/5463854) | ter_2014 |
+| 3-methoxymorphinan | metabolite | 257.37 | — | PubChem | [5484286](https://pubchem.ncbi.nlm.nih.gov/compound/5484286) | ter_2014 |
+| dextrorphan | metabolite | 257.37 | — | PubChem | [5360697](https://pubchem.ncbi.nlm.nih.gov/compound/5360697) | ter_2014 |
+| endoxifen | metabolite | 373.5 | — | PubChem | [10090750](https://pubchem.ncbi.nlm.nih.gov/compound/10090750) | Mueller-Schoell_2020, ter_2014 |
 
 ## Extraction summary
 

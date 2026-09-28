@@ -4,7 +4,7 @@
 
 - **generic name:** Mazdutide
 - **ATC codes:** not captured
-- **DrugBank:** [DB19099](https://go.drugbank.com/drugs/DB19099)
+- **DrugBank:** [DB19099](https://go.drugbank.com/drugs/DB19099) · **PubChem:** not captured
 - **groups:** investigational
 
 ## About

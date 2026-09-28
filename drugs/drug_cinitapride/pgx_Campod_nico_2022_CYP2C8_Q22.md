@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;cinitapride&quot;,&quot;href&quot;:&quot;drugs/drug_cinitapride/&quot;},{&quot;label&quot;:&quot;Campod\u00f3nico_2022 \u00b7 PGx CYP2C8&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # CYP2C8 — PGx  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[min]` (36.5 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for dapsone's clearance.**
+
+The model was built, but dapsone's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — dapsone: V 72.2 L, Vss 37.4 L, Vmax 36.5 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of min: this record has 36.5, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kotila OA; Ajayi DT; Masimirembwa C; Thelingwani R; Odetunde A; Falusi AG; et al. et al. (2023). British journal of clinical pharmacology 89
@@ -26,6 +29,9 @@ Kotila OA; Ajayi DT; Masimirembwa C; Thelingwani R; Odetunde A; Falusi AG; et al
 
 ## Model component
 <dbs-pgx drug="dapsone" model-id="Dapsone_Kotila2023_reference" status="model_quarantined" stale="false" population="healthy Nigerian volunteers" measured-compound="dapsone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

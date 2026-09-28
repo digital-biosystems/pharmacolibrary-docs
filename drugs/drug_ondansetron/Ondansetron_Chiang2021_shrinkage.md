@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** split column 'shrinkage (%)' is a table statistic/structure column, not a study population (mis-split estimate table)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**'shrinkage (%)' is a column of the estimates table, not a study population.**
+
+The table was split into one record per column, and 'shrinkage (%)' holds a statistic rather than a second set of estimates.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (2021). British journal of clinical pharmacology 87
@@ -25,6 +27,9 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
 
 ## Model component
 <dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2021_shrinkage" status="rejected" stale="false" population="adults undergoing elective hip or knee arthroplasty" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[total body clearance].value` (241.4 vs 49.2) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The ofloxacin record was quarantined because clearance, absorption rate constant and lag time had no source values and library defaults were substituted, with the ml/min per 1.73 m² clearance unit unconvertible and a second reader disputing the 241.4 value.**
+
+Ofloxacin's total body clearance, absorption rate constant (ka) and absorption lag time were left without values, so library placeholder defaults stood in for them and the model was held back rather than published with invented numbers. The reported clearance unit ml/min per 1.73 m² could not be converted to SI units, so clearance entered the model without an SI value. The absorption rate constant was flagged as invented because ka was not reported in the source, alongside the apparent-parameterization assumption F=1 and Fm=1 with no molar correction. A second reader disagreed on the total body clearance value, reading 49.2 instead of 241.4 ml/min per 1.73 m². Extracted — ofloxacin: V/F 2.53 liters/kg, CL/F 241 ml/min per 1.73 m2, CL 241 ml/min per 1.73 m2, kabs 2.9 h-i.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[total body clearance].value`: this record has 241.4, the second reading 49.2. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Fillastre JP; Leroy A; Humbert G et al. (1987). Antimicrobial agents and chemotherapy 31
@@ -26,6 +29,9 @@ Fillastre JP; Leroy A; Humbert G et al. (1987). Antimicrobial agents and chemoth
 
 ## Model component
 <dbs-pgx drug="ofloxacin" model-id="Ofloxacin_Fillastre1987_reference" status="model_quarantined" stale="false" population="subjects with renal failure and healthy controls" measured-compound="ofloxacin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

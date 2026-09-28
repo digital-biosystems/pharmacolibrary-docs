@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[ke2]` (1 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The gabapentin two-compartment record was rejected because a structural parameter carries a dimension mismatch: the second distribution rate constant λ2 (labelled ke2, h-1) is recorded as 1, a value whose unit could not be converted to SI.**
+
+The record reports a two-compartment gabapentin model with tlag 0.34 h, ka 0.14 h-1, CL/F 10.16 L/h, V1/F 18.16 L, Q 6.58 L/h and V2/F 357.67 L, but the structural parameter λ2 (ke2) is entered as 1 with no consistent dimension, triggering the dimension-mismatch finding. The reported unit for this parameter could not be converted to SI, so the value entered the record without an SI equivalent and the dimension check could not be completed. A second reader also disagreed on the covariate effect: this record lists logt_egfr_84.85_on_cl_f as 1.34, while the second reader placed the same 1.34 under a power covariate on CL/F, leaving the eGFR covariate's form ambiguous. Extracted — gabapentin: tlag 0.34 h, kabs 0.14 h-1, CL/F 10.2 L/h, V1/F 18.2 L, Q 6.58 L/h, V2/F 358 L, kel 0.53 h-1, λ2 1 h-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ke2: this record has 1, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zhou L; Yamamoto PA; Walker M; Conchon Costa AC; Lauretti GR; Dach F; et al. et al. (2026). Frontiers in pharmacology 17
@@ -26,6 +29,9 @@ Zhou L; Yamamoto PA; Walker M; Conchon Costa AC; Lauretti GR; Dach F; et al. et 
 
 ## Model component
 <dbs-pgx drug="gabapentin" model-id="Gabapentin_Zhou2026_reference" status="rejected" stale="false" population="patients with chronic neuropathic pain" measured-compound="gabapentin" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 8 extracted, plus 1 covariate effect.
 
 **Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl = tvcl].value` (0.44 vs 18.68) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for ciprofloxacin's bioavailability, clearance, volume of distribution and absorption lag time.**
+
+The model was built, but ciprofloxacin's bioavailability, clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — ciprofloxacin: CL 0.44, kabs 1 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl = tvcl].value`: this record has 0.44, the second reading 18.68; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 23:02:14.021624+00:00) predates the upstream re-run (2026-09-24 02:07:23.333558+00:00). Current validate status: `needs_review`.
 

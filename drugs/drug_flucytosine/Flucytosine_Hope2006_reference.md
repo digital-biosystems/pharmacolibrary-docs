@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The flucytosine model was held back because the absorption rate constant's unit (h Ϫ1) could not be converted to SI, and F, ka and Tlag had no extracted values so placeholders would have been used.**
+
+The record reports flucytosine V = 0.022 liter, CL = 0.021 liter/h and Ka = 19.58 h Ϫ1 in neutropenic CD1 mice with disseminated candidiasis, but the h Ϫ1 unit could not be converted to SI, so the absorption rate constant entered the model without a usable value. The model builder then assumed library placeholder values for the missing bioavailability F, absorption rate ka and lag time Tlag, and defaulted ka although it was not reported in the source. This invented-absorption deviation was judged not acceptable, leaving the record in need of review. Extracted — flucytosine: V 0.022 liter, CL 0.021 liter/h, kabs 19.6 h Ϫ1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Hope WW; Warn PA; Sharp A; Howard S; Kasai M; Louie A; et al. et al. (2006). Antimicrobial agents and chemotherapy 50
@@ -26,6 +29,9 @@ Hope WW; Warn PA; Sharp A; Howard S; Kasai M; Louie A; et al. et al. (2006). Ant
 
 ## Model component
 <dbs-pgx drug="flucytosine" model-id="Flucytosine_Hope2006_reference" status="needs_review" stale="false" population="neutropenic CD1 mice with disseminated candidiasis" measured-compound="flucytosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -135,6 +141,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_flucytosine/Flucytosine_Hope2006_reference/Flucytosine_Hope2006_reference.svg" alt="Flucytosine_Hope2006_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_flucytosine/Flucytosine_Hope2006_reference/Flucytosine_Hope2006_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_flucytosine/Flucytosine_Hope2006_reference/Flucytosine_Hope2006_reference_sim_controls.json"></dbs-fmusim>
 

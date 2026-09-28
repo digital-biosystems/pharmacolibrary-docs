@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[θ ari]` (not captured vs -3.83) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The olanzapine clearance parameter is negative (CL/F −1.09 L/h) with an implausible volume (V/F 0.47 L), and the record is labelled aripiprazole while the measured compound is olanzapine.**
+
+The extracted olanzapine parameters are pharmacologically impossible: CL/F of −1.09 L/h is negative clearance and V/F of 0.47 L is far below any plausible distribution volume, indicating the base values or covariate shifts were recorded incorrectly. The molecule field lists aripiprazole and its formulations, yet the measured compound and both parameters belong to olanzapine, so the record conflates two different drugs. A second reader found a different value (−3.83) for the aripiprazole parameter where this record has none, showing the disagreement extends to which drug the parameters describe. Extracted — olanzapine: CL/F -1.09 L/h, V/F 0.47 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of θ ari: this record has none, the second reading -3.83. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zhang C; Jiang L; Hu K; Chen L; Zhang YJ; Shi HZ; et al. et al. (2024). Neuropsychiatric disease and treatment 20
@@ -26,6 +29,9 @@ Zhang C; Jiang L; Hu K; Chen L; Zhang YJ; Shi HZ; et al. et al. (2024). Neuropsy
 
 ## Model component
 <dbs-pgx drug="aripiprazole" model-id="Aripiprazole_Zhang2024_reference" status="rejected" stale="false" population="schizophrenia patients" measured-compound="olanzapine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

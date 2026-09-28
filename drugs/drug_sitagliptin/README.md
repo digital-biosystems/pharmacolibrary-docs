@@ -4,7 +4,8 @@
 
 - **generic name:** sitagliptin
 - **ATC codes:** `A10BD07`, `A10BD12`, `A10BD24`, `A10BD29`, `A10BH01`, `A10BH51`
-- **DrugBank:** [DB01261](https://go.drugbank.com/drugs/DB01261)
+- **DrugBank:** [DB01261](https://go.drugbank.com/drugs/DB01261) · **PubChem:** [CID 4369359](https://pubchem.ncbi.nlm.nih.gov/compound/4369359)
+- **molar mass:** 407.3136 g/mol (C16H15F6N5O) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -1,0 +1,27 @@
+{
+ "model_id": "Lutetium177luOxodotreotide_Barakat2023_base",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 7.444444444444444e-07,
+  "F": 1.0,
+  "VdPerKg": 0.001112857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 2.417629439452289e-05,
+  "k21": 9.912280701754386e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662087
+ },
+ "reference_peaks": {
+  "central.C": 0.0011713591290834656
+ },
+ "stop_time": 432000.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

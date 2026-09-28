@@ -5,7 +5,7 @@
 
 - **generic name:** coagulation factor XIII
 - **ATC codes:** `B02BD07`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary
@@ -16,9 +16,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Dodds_2005_reference](drugs/drug_coagulation_factor_xiii/CoagulationFactorXiii_Dodds2005_reference.md) | Dodds MG et al., Population pharmacokinetics of recombin…, The AAPS journal (2005) | [10.1208/aapsj070370](https://doi.org/10.1208/aapsj070370) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Dodds_2005_reference](drugs/drug_coagulation_factor_xiii/CoagulationFactorXiii_Dodds2005_reference.md) | 1-compartment general linear | 0 | Dodds MG et al., Population pharmacokinetics of recombin…, The AAPS journal (2005) | [10.1208/aapsj070370](https://doi.org/10.1208/aapsj070370) |
 
 ## Pharmacodynamics (PD)
 

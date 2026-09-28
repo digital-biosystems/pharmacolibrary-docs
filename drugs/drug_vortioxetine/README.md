@@ -5,7 +5,8 @@
 
 - **generic name:** vortioxetine
 - **ATC codes:** `N06AX26`
-- **DrugBank:** [DB09068](https://go.drugbank.com/drugs/DB09068)
+- **DrugBank:** [DB09068](https://go.drugbank.com/drugs/DB09068) · **PubChem:** [CID 71768094](https://pubchem.ncbi.nlm.nih.gov/compound/71768094)
+- **molar mass:** 298.45 g/mol (C18H22N2S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -13,6 +14,15 @@
 **Description.** Vortioxetine is an antidepressant medication indicated for the treatment of major depressive disorder (MDD). It is classified as a serotonin modulator and stimulator (SMS) as it has a multimodal mechanism of action towards the serotonin neurotransmitter system whereby it simultaneously modulates one or more serotonin receptors and inhibits the reuptake of serotonin. More specifically, vortioxetine acts via the following biological mechanisms: as a serotonin reuptake inhibitor (SRI) through inhibition of the serotonin transporter, as a partial agonist of the 5-HT1B receptor, an agonist of 5-HT1A, and an antagonist of the 5-HT3, 5-HT1D, and 5-HT7 receptors. SMSs were developed because there are many different subtypes of serotonin receptors, however, not all of these receptors appear to be involved in the antidepressant effects of SRIs. Some serotonin receptors seem to play a relatively neutral or insignificant role in the regulation of mood, but others, such as 5-HT1A autoreceptors and 5-HT7 receptors, appear to play an oppositional role in the efficacy of SRIs in treating depression.
 
 **Indication.** Vortioxetine is indicated for the treatment of major depressive disorder (MDD).
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| vortioxetine | parent | 298.45 | C18H22N2S | DrugBank | [71768094](https://pubchem.ncbi.nlm.nih.gov/compound/71768094) | Frederiksen_2021_2 |
+| Lu AA34443 | metabolite | 328.4 | — | PubChem | [118753351](https://pubchem.ncbi.nlm.nih.gov/compound/118753351) | Frederiksen_2021_2 |
 
 ## Extraction summary
 
@@ -22,13 +32,13 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Areberg_2014_2_reference](drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md) | Areberg J et al., Population pharmacokinetic meta-analysi…, Basic & clinical pharmacolo… (2014) | [10.1111/bcpt.12256](https://doi.org/10.1111/bcpt.12256) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: F, Cl, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Frederiksen_2021_2_reference](drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference.md) | Frederiksen (2021) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Miao_2019_2_pooled_healthy_subjects_22_a](drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a.md) | Miao J et al., Pharmacokinetics and Safety of Vortioxe…, Advances in therapy (2019) | [10.1007/s12325-019-01092-4](https://doi.org/10.1007/s12325-019-01092-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Miao_2019_2_pooled_mdd_gad_patients_23_b](drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b.md) | Miao J et al., Pharmacokinetics and Safety of Vortioxe…, Advances in therapy (2019) | [10.1007/s12325-019-01092-4](https://doi.org/10.1007/s12325-019-01092-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Naik_2016_2_reference](drugs/drug_vortioxetine/Vortioxetine_Naik2016v2_reference.md) | Naik H et al., A Population Pharmacokinetic-Pharmacody…, Basic & clinical pharmacolo… (2016) | [10.1111/bcpt.12513](https://doi.org/10.1111/bcpt.12513) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Areberg_2014_2_reference](drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md) | 1-compartment, oral | 3 | Areberg J et al., Population pharmacokinetic meta-analysi…, Basic & clinical pharmacolo… (2014) | [10.1111/bcpt.12256](https://doi.org/10.1111/bcpt.12256) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: F, Cl, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Frederiksen_2021_2_reference](drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference.md) | 1-compartment, oral | 11 (+2 cov.) | Frederiksen (2021) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Miao_2019_2_pooled_healthy_subjects_22_a](drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a.md) | 1-compartment (no model) | 4 | Miao J et al., Pharmacokinetics and Safety of Vortioxe…, Advances in therapy (2019) | [10.1007/s12325-019-01092-4](https://doi.org/10.1007/s12325-019-01092-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Miao_2019_2_pooled_mdd_gad_patients_23_b](drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b.md) | 1-compartment (no model) | 3 | Miao J et al., Pharmacokinetics and Safety of Vortioxe…, Advances in therapy (2019) | [10.1007/s12325-019-01092-4](https://doi.org/10.1007/s12325-019-01092-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Naik_2016_2_reference](drugs/drug_vortioxetine/Vortioxetine_Naik2016v2_reference.md) | 1-compartment (no model) | 0 | Naik H et al., A Population Pharmacokinetic-Pharmacody…, Basic & clinical pharmacolo… (2016) | [10.1111/bcpt.12513](https://doi.org/10.1111/bcpt.12513) |
 
 ## Pharmacodynamics (PD)
 

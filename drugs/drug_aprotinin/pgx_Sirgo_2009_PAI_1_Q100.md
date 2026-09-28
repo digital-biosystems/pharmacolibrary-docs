@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;aprotinin&quot;,&quot;href&quot;:&quot;drugs/drug_aprotinin/&quot;},{&quot;label&quot;:&quot;Sirgo_2009 \u00b7 PGx PAI-1&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card&quot;,&quot;label&quot;:&quot;Tae_2011_neonates and young infants undergoing cardiopulmonary bypass&quot;,&quot;href&quot;:&quot;drugs/drug_aprotinin/Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

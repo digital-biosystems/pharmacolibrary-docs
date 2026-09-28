@@ -4,7 +4,8 @@
 
 - **generic name:** methylscopolamine
 - **ATC codes:** `A03BB03`, `A03CB01`, `S01FA03`
-- **DrugBank:** [DB11315](https://go.drugbank.com/drugs/DB11315)
+- **DrugBank:** [DB11315](https://go.drugbank.com/drugs/DB11315) · **PubChem:** [CID 71183](https://pubchem.ncbi.nlm.nih.gov/compound/71183)
+- **molar mass:** 318.392 g/mol (C18H24NO4) — DrugBank
 - **groups:** approved
 
 ## About

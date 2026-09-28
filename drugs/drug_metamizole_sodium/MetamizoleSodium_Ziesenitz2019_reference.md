@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (metamizole vs metamizole_sodium) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The record is not a compartmental population PK model: for metamizole's metabolite 4-methylaminoantipyrine it reports only an AUC0-inf of 29.9 mg/L/h in children 2–6 years, with no distribution volume and no clearance or elimination parameter, and a dimension mismatch on a structural parameter.**
+
+The paper (Ziesenitz_2019) was read at abstract level only, so the reported summary statistic — AUC0-inf of 4-methylaminoantipyrine of 29.9 mg/L/h in children 2–6 years — stood in for a fitted model, and no compartmental structure with volume or clearance could be extracted. A dimension mismatch was also found on a structural parameter. A second reader disagreed on the dosed compound (metamizole versus metamizole sodium) and read the AUC value as absent, but the rejection rests on the missing volume and clearance parameters. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metamizole, the second reading metamizole_sodium; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `metamizole`, measured `4-methylaminoantipyrine`.
 
@@ -28,6 +31,9 @@ Ziesenitz VC; Rodieux F; Atkinson A; Borter C; Bielicki JA; Haschke M; et al. et
 
 ## Model component
 <dbs-pgx drug="metamizole sodium" model-id="MetamizoleSodium_Ziesenitz2019_reference" status="rejected" stale="false" population="infants and children" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,7 @@
 
 - **generic name:** peginesatide
 - **ATC codes:** `B03XA04`
-- **DrugBank:** [DB08894](https://go.drugbank.com/drugs/DB08894)
+- **DrugBank:** [DB08894](https://go.drugbank.com/drugs/DB08894) · **PubChem:** not captured
 - **groups:** approved, withdrawn
 
 ## About
@@ -22,9 +22,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Naik_2013_reference](drugs/drug_peginesatide/Peginesatide_Naik2013_reference.md) | Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013) | [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Naik_2013_reference](drugs/drug_peginesatide/Peginesatide_Naik2013_reference.md) | 1-compartment (no model) | 8 (+5 cov.) | Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013) | [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422) |
 
 ## Pharmacodynamics (PD)
 

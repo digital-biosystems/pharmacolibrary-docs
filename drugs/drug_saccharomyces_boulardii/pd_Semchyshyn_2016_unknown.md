@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07F&quot;,&quot;href&quot;:&quot;atc/A07F.md&quot;},{&quot;label&quot;:&quot;saccharomyces boulardii&quot;,&quot;href&quot;:&quot;drugs/drug_saccharomyces_boulardii/&quot;},{&quot;label&quot;:&quot;Semchyshyn_2016 \u00b7 PD reproductive ability&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # reproductive ability — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>

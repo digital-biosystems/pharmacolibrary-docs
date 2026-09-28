@@ -4,7 +4,7 @@
 
 - **generic name:** desirudin
 - **ATC codes:** `B01AE01`
-- **DrugBank:** [DB11095](https://go.drugbank.com/drugs/DB11095)
+- **DrugBank:** [DB11095](https://go.drugbank.com/drugs/DB11095) · **PubChem:** not captured
 - **groups:** approved, withdrawn
 
 ## About

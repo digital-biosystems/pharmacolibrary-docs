@@ -5,7 +5,7 @@
 
 - **generic name:** opium
 - **ATC codes:** `A07DA02`, `N02AA02`
-- **DrugBank:** [DB11130](https://go.drugbank.com/drugs/DB11130)
+- **DrugBank:** [DB11130](https://go.drugbank.com/drugs/DB11130) · **PubChem:** not captured
 - **groups:** approved, illicit
 
 ## About
@@ -30,9 +30,9 @@ Illegal use of opium has been registered to be for both recreational and medicin
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Liu_2016_reference](drugs/drug_opium/Opium_Liu2016_reference.md) | Liu T et al., Mechanistic Population Pharmacokinetics…, Journal of clinical pharmac… (2016) | [10.1002/jcph.696](https://doi.org/10.1002/jcph.696) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Liu_2016_reference](drugs/drug_opium/Opium_Liu2016_reference.md) | 1-compartment (no model) | 2 | Liu T et al., Mechanistic Population Pharmacokinetics…, Journal of clinical pharmac… (2016) | [10.1002/jcph.696](https://doi.org/10.1002/jcph.696) |
 
 ## ADME sites
 

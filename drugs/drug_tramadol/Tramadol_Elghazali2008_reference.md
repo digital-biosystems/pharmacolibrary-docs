@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (101.62 vs not captured) and 11 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for tramadol's clearance and absorption lag time.**
+
+The model was built, but tramadol's clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tramadol: t1/2α 0.22 h, t1/2β 1.33 h, CL 1.94 L h kg(-1), Vss 2.58 L kg(-1), AUC∞ 1.25 mg h L(-1), Cmax 0.44 microg mL(-1), tmax 0.57 h, t1/2ka 0.17 h, … (+3).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 101.62, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Elghazali M; Barezaik IM; Abdel Hadi AA; Eltayeb FM; Al Masri J; Wasfi IA et al. (2008). Veterinary journal (London, England : 1997) 178
@@ -26,6 +29,9 @@ Elghazali M; Barezaik IM; Abdel Hadi AA; Eltayeb FM; Al Masri J; Wasfi IA et al.
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Elghazali2008_reference" status="model_quarantined" stale="false" population="camels" measured-compound="tramadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 11 extracted.
 
 **Parameterization:** mechanistic.
 

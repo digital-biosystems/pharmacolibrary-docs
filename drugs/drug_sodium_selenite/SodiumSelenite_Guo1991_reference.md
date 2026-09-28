@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12C&quot;,&quot;href&quot;:&quot;atc/A12C.md&quot;},{&quot;label&quot;:&quot;sodium selenite&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/&quot;},{&quot;label&quot;:&quot;Guo_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumSelenite_Jayachandran2021_reference&quot;,&quot;label&quot;:&quot;Jayachandran_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumSelenite_Guo1991_reference&quot;,&quot;label&quot;:&quot;Guo_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Guo1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;SodiumSelenite_Zheng2019_reference&quot;,&quot;label&quot;:&quot;Zheng_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Zheng2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumSelenite_Guo1991_reference&quot;,&quot;label&quot;:&quot;Guo_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Guo1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;SodiumSelenite_Jayachandran2021_reference&quot;,&quot;label&quot;:&quot;Jayachandran_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumSelenite_Zheng2019_reference&quot;,&quot;label&quot;:&quot;Zheng_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Zheng2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc]` (3 vs not captured) and 4 more field(s) — not a structural parameter.
+**AUMC has no unit.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sodium selenite: t1/2γ 1.8 h, t1/2ka 3.2 h, AUC 3 ng.h.ml-1, CL 32 ml.kg-1.h-1, V 1.45 L.kg-1, AUMC 130 S1, MRT 55 h, t1/2z 3.4 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 3, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sodium selenite`, measured `selenium`.
 
@@ -26,6 +30,9 @@ Guo JA; Wang XY; Dai LM et al. (1991). Zhongguo yao li xue bao = Acta pharmacolo
 
 ## Model component
 <dbs-pgx drug="sodium selenite" model-id="SodiumSelenite_Guo1991_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="selenium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

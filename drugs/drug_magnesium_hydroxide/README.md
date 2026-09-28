@@ -4,7 +4,8 @@
 
 - **generic name:** magnesium hydroxide
 - **ATC codes:** `A02AA04`, `G04BX01`
-- **DrugBank:** [DB09104](https://go.drugbank.com/drugs/DB09104)
+- **DrugBank:** [DB09104](https://go.drugbank.com/drugs/DB09104) · **PubChem:** [CID 73981](https://pubchem.ncbi.nlm.nih.gov/compound/73981)
+- **molar mass:** 58.32 g/mol (H2MgO2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

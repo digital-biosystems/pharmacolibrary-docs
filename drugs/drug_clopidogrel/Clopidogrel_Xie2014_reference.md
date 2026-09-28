@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([] vs [['clopidogrel', 'clopidogrel active metabolite', 'metabolism']]) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The clopidogrel active-metabolite model was rejected because the absorption-rate parameter kel (4.29) was recorded as dimensionless although a first-order rate constant must carry units of h(-1), a structural dimension mismatch.**
+
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model, and the active metabolite was given zero compartments at the central site, leaving it with no path from the clopidogrel dose. The parameter kel, labelled K(in) with value 4.29, was assigned a dimensionless unit even though it functions as a rate constant like k12 (0.259 h(-1)); this unit mismatch on a structural parameter caused the rejection. A second reader also disagreed on whether the effect parameter E (0.664, E(max)) belonged to the record, and on whether the metabolism link between clopidogrel and its active metabolite should be listed. Extracted — clopidogrel: k12 0.259 h(-1), CL/F 179 L x h(-1), V/F 632 L; clopidogrel active metabolite: kel 4.29 dimensionless, E 0.664 dimensionless.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading clopidogrel → clopidogrel active metabolite (metabolism); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `clopidogrel`, measured `clopidogrel active metabolite`.
 

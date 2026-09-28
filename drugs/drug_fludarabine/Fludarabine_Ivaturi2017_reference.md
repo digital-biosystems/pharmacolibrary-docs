@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The fludarabine record was rejected because the metabolite f-ara-ATP is defined with zero compartments (n_cmt = 0), leaving it unlinked despite the metabolism link from fludarabine via Kfm.**
+
+The model is a parent–metabolite structure for fludarabine in pediatric hematopoietic cell transplant recipients, with a metabolism link from fludarabine to f-ara-ATP governed by the rate constant Kfm (0.005 1/h) and a metabolite outflow rate constant kel (0.09 1/h). However, the f-ara-ATP metabolite is specified with zero compartments (n_cmt = 0) while being formed at the central site, so the metabolite has no compartment to reside in and no path from the dose. This unlinked metabolite is the sole reason recorded for rejection; no other failed checks or substitutions are reported. Extracted — fludarabine: CL 3.1 L/h, V1 13.4 L/kg, V2 13.4 L; f-ara-ATP: kfm 0.005 1/h, kel 0.09 1/h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ivaturi V; Dvorak CC; Chan D; Liu T; Cowan MJ; Wahlstrom J; et al. et al. (2017). Biology of blood and marrow transplantation : journal of the American Society for Blood and Marrow Transplantation 23
@@ -25,6 +27,9 @@ Ivaturi V; Dvorak CC; Chan D; Liu T; Cowan MJ; Wahlstrom J; et al. et al. (2017)
 
 ## Model component
 <dbs-pgx drug="fludarabine" model-id="Fludarabine_Ivaturi2017_reference" status="rejected" stale="false" population="pediatric hematopoietic cell transplant recipients" measured-compound="fludarabine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 5 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 

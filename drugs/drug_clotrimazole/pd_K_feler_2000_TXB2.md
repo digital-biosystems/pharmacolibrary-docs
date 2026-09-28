@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;clotrimazole&quot;,&quot;href&quot;:&quot;drugs/drug_clotrimazole/&quot;},{&quot;label&quot;:&quot;K\u00f6feler_2000 \u00b7 PD TXB2&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # TXB2 — PD  <span class="pk-badge pk-badge--green">extracted</span>

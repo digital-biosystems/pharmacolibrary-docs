@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([] vs [['tramadol', 'o-desmethyltramadol', 'metabolism']]) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading tramadol → o-desmethyltramadol (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yoo O; Tang EKY; Salman S; Nguyen MN; Sommerfield D; Sommerfield A; et al. et al. (2022). Anaesthesia 77
@@ -28,6 +31,9 @@ Yoo O; Tang EKY; Salman S; Nguyen MN; Sommerfield D; Sommerfield A; et al. et al
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Yoo2022_reference" status="accepted_with_caveats" stale="false" population="children aged 3-16 years" measured-compound="tramadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -149,6 +155,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_tramadol/Tramadol_Yoo2022_reference/Tramadol_Yoo2022_reference.svg" alt="Tramadol_Yoo2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.65 /h, F 1.25). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_tramadol/Tramadol_Yoo2022_reference/Tramadol_Yoo2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tramadol/Tramadol_Yoo2022_reference/Tramadol_Yoo2022_reference_sim_controls.json"></dbs-fmusim>
 

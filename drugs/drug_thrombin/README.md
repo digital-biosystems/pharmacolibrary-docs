@@ -4,7 +4,7 @@
 
 - **generic name:** thrombin
 - **ATC codes:** `B02BC06`, `B02BD30`
-- **DrugBank:** [DB11300](https://go.drugbank.com/drugs/DB11300)
+- **DrugBank:** [DB11300](https://go.drugbank.com/drugs/DB11300) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

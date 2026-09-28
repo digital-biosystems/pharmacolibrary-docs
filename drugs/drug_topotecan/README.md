@@ -5,7 +5,8 @@
 
 - **generic name:** topotecan
 - **ATC codes:** `L01CE01`
-- **DrugBank:** [DB01030](https://go.drugbank.com/drugs/DB01030)
+- **DrugBank:** [DB01030](https://go.drugbank.com/drugs/DB01030) · **PubChem:** [CID 60700](https://pubchem.ncbi.nlm.nih.gov/compound/60700)
+- **molar mass:** 421.4458 g/mol (C23H23N3O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Léger_2004_reference](drugs/drug_topotecan/Topotecan_Lger2004_reference.md) | Léger F et al., Factors affecting pharmacokinetic varia…, British journal of cancer (2004) | [10.1038/sj.bjc.6601469](https://doi.org/10.1038/sj.bjc.6601469) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Léger_2004_reference](drugs/drug_topotecan/Topotecan_Lger2004_reference.md) | 1-compartment, IV | 2 (+1 cov.) | Léger F et al., Factors affecting pharmacokinetic varia…, British journal of cancer (2004) | [10.1038/sj.bjc.6601469](https://doi.org/10.1038/sj.bjc.6601469) |
 
 ## Pharmacodynamics (PD)
 

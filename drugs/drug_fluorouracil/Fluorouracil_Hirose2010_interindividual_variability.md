@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** split column 'interindividual variability (%)' is a table statistic/structure column, not a study population (mis-split estimate table); C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The fluorouracil record was rejected because the S-1 to tegafur metabolic link has no parameter value, leaving tegafur and its metabolites unreachable from the dose, and the extracted parameters are mislabeled and carry an unconvertible unit.**
+
+The structure links S-1 to tegafur and tegafur to 5-fluorouracil and 5-chloro-2,4-dihydroxypyridine by metabolism, but each link has no parameter value, so tegafur and the metabolites have no path from the administered dose. The parameter labeled 'Creatinine clearance a (ml/min)' with value 80.5 (range 39–174) is attributed to 5-fluorouracil, and the absorption rate constant kabs of 1.2 h⁻¹ carries the stray unit text '174.6', indicating misaligned table extraction. One reported unit could not be converted to SI, so that parameter lacked an SI value. The estimates table was also mis-split, with the 'interindividual variability (%)' column treated as a study population. Extracted — fluorouracil: CL 80.5 (39-174), kabs 1.2 174.6, V 161 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `S-1`, measured `5-fluorouracil`.
 

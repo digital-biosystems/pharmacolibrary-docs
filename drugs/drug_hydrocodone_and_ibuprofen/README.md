@@ -4,7 +4,7 @@
 
 - **generic name:** hydrocodone and ibuprofen
 - **ATC codes:** `N02AJ23`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

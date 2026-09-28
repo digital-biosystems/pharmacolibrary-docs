@@ -4,7 +4,8 @@
 
 - **generic name:** tryptophan
 - **ATC codes:** `N06AX02`
-- **DrugBank:** [DB00150](https://go.drugbank.com/drugs/DB00150)
+- **DrugBank:** [DB00150](https://go.drugbank.com/drugs/DB00150) · **PubChem:** [CID 6305](https://pubchem.ncbi.nlm.nih.gov/compound/6305)
+- **molar mass:** 204.2252 g/mol (C11H12N2O2) — DrugBank
 - **groups:** approved, investigational, nutraceutical, withdrawn
 
 ## About

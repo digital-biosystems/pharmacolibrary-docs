@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hallik M; Ilmoja ML; Tasa T; Standing JF; Takkis K; Veigure R; et al. et al. (2019). Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies 20
@@ -26,6 +29,9 @@ Hallik M; Ilmoja ML; Tasa T; Standing JF; Takkis K; Veigure R; et al. et al. (20
 
 ## Model component
 <dbs-pgx drug="milrinone" model-id="Milrinone_Hallik2019_reference" status="rejected" stale="false" population="preterm infants" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

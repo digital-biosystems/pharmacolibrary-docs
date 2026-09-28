@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22, Q99, Q308, Q22, Q30 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl (l h].value` (63.4 vs 1.7) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**CL, Q2, Q308, CL and Q have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (kfm), so that value has no SI equivalent. Extracted — doxorubicin: CL 63.4 L/h, V1 17.7 l, Q 52.4 L/h, V2 1.83e+03 l, Q2 29.9 L/h, V3 71 l; doxorubicinol: V1 79.8 l, CL 37 L/h, kfm 0.22 n = 44, V2 653 l, Q 424 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl (l h].value`: this record has 63.4, the second reading 1.7; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Pérez-Blanco JS; Santos-Buelga D; Fernández de Gatta MD; Hernández-Rivas JM; Martín A; García MJ et al. (2016). British journal of clinical pharmacology 82

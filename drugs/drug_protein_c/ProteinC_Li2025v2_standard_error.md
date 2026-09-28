@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** split column 'standard error' is a table statistic/structure column, not a study population (mis-split estimate table)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (protein C vs protein C concentrate) and 10 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**'standard error' is a column of the estimates table, not a study population.**
+
+The table was split into one record per column, and 'standard error' holds a statistic rather than a second set of estimates.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has protein C, the second reading protein C concentrate; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `protein C concentrate`, measured `protein C`.
 
@@ -27,6 +30,9 @@ not matched (stem Li_2025_2)
 
 ## Model component
 <dbs-pgx drug="protein C" model-id="ProteinC_Li2025v2_standard_error" status="rejected" stale="false" population="patients with severe congenital protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

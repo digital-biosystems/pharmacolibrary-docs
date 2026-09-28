@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_beta
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 16, model 5.48).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cladribine: CL 54 L/h, V1 34 L, Q 61 L/h, V2 70 L, Q3 61 L/h, V3 61 L, kabs 75 h-1, Fab 4.1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lindemalm S; Savic RM; Karlsson MO; Juliusson G; Liliemark J; Albertioni F et al. (2005). BMC pharmacology 5
@@ -25,6 +27,9 @@ Lindemalm S; Savic RM; Karlsson MO; Juliusson G; Liliemark J; Albertioni F et al
 
 ## Model component
 <dbs-pgx drug="cladribine" model-id="Cladribine_Lindemalm2005_interindividual_variability" status="needs_review" stale="false" population="patients with indolent B- and T-cell lymphoid malignancies" measured-compound="cladribine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -147,6 +152,8 @@ Lindemalm S; Savic RM; Karlsson MO; Juliusson G; Liliemark J; Albertioni F et al
 </div><figure class="pk-models-diagram"><img src="drugs/drug_cladribine/Cladribine_Lindemalm2005_interindividual_variability/Cladribine_Lindemalm2005_interindividual_variability.svg" alt="Cladribine_Lindemalm2005_interindividual_variability diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 75 /h, F 4.1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_cladribine/Cladribine_Lindemalm2005_interindividual_variability/Cladribine_Lindemalm2005_interindividual_variability_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_cladribine/Cladribine_Lindemalm2005_interindividual_variability/Cladribine_Lindemalm2005_interindividual_variability_sim_controls.json"></dbs-fmusim>
 

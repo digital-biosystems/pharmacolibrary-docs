@@ -4,7 +4,8 @@
 
 - **generic name:** dexfenfluramine
 - **ATC codes:** `A08AA04`
-- **DrugBank:** [DB01191](https://go.drugbank.com/drugs/DB01191)
+- **DrugBank:** [DB01191](https://go.drugbank.com/drugs/DB01191) · **PubChem:** [CID 66265](https://pubchem.ncbi.nlm.nih.gov/compound/66265)
+- **molar mass:** 231.2573 g/mol (C12H16F3N) — DrugBank
 - **groups:** approved, illicit, withdrawn
 
 ## About

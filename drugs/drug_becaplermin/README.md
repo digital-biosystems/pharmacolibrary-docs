@@ -4,7 +4,7 @@
 
 - **generic name:** becaplermin
 - **ATC codes:** `A01AD08`, `D03AX06`
-- **DrugBank:** [DB00102](https://go.drugbank.com/drugs/DB00102)
+- **DrugBank:** [DB00102](https://go.drugbank.com/drugs/DB00102) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

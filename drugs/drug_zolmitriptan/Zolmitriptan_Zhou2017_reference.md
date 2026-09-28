@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for 183C91's clearance and volume of distribution and the rate at which 183C91 is formed.**
+
+The model was built, but 183C91's clearance and volume of distribution and the rate at which 183C91 is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — zolmitriptan: V/F 136 L, CL 121 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Zhou W; Li J; Birmingham B; Xu H; Lillieborg S; Zhou D; et al. et al. (2017). Journal of clinical pharmacology 57
@@ -26,6 +29,9 @@ Zhou W; Li J; Birmingham B; Xu H; Lillieborg S; Zhou D; et al. et al. (2017). Jo
 
 ## Model component
 <dbs-pgx drug="zolmitriptan" model-id="Zolmitriptan_Zhou2017_reference" status="model_quarantined" stale="false" population="adults and adolescents with migraine" measured-compound="zolmitriptan" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

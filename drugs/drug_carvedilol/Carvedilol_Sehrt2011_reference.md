@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (R-carvedilol and S-carvedilol vs carvedilol) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The carvedilol record was rejected because its three metabolism links carry no parameter values and the reported clearance variation of 24.4 % could not be converted to SI units, leaving the model structurally incomplete.**
+
+The three metabolism links from carvedilol to desmethylcarvedilol, 4'-OH-carvedilol and 5'-OH-carvedilol all have link parameter 'none' of unknown kind, so the metabolites have no quantified formation clearance and are effectively unlinked. The extracted parameters mix incompatible meanings: CL/F of 29.4 l/h for R-carvedilol and a 'variation in total clearance of R-carvedilol accounted for by CYP2D6 genotype' of 24.4 %, the percent unit being one that could not be converted to SI so no SI value could be obtained. A second reader also disputed the primary analyte (carvedilol versus R- and S-carvedilol), the metabolite links (stereo-specific, six links), and whether the 29.4 l/h and 24.4 % values belong to this record at all, while reading a central volume of distribution of 142.8 l/73 kg that this record lacks. Extracted — R-carvedilol and S-carvedilol: CL 24.4 %, CL/F 29.4 l/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R-carvedilol and S-carvedilol, the second reading carvedilol; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `carvedilol`, measured `R-carvedilol and S-carvedilol`.
 
@@ -28,6 +31,9 @@ Sehrt D; Meineke I; Tzvetkov M; Gültepe S; Brockmöller J et al. (2011). Pharma
 
 ## Model component
 <dbs-pgx drug="carvedilol" model-id="Carvedilol_Sehrt2011_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="R-carvedilol and S-carvedilol" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

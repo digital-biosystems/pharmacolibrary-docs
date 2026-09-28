@@ -4,7 +4,8 @@
 
 - **generic name:** elobixibat
 - **ATC codes:** `A06AX09`
-- **DrugBank:** [DB12486](https://go.drugbank.com/drugs/DB12486)
+- **DrugBank:** [DB12486](https://go.drugbank.com/drugs/DB12486) · **PubChem:** [CID 9939892](https://pubchem.ncbi.nlm.nih.gov/compound/9939892)
+- **molar mass:** 695.89 g/mol (C36H45N3O7S2) — DrugBank
 - **groups:** investigational
 
 ## About

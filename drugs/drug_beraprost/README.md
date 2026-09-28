@@ -4,7 +4,8 @@
 
 - **generic name:** beraprost
 - **ATC codes:** `B01AC19`
-- **DrugBank:** [DB05229](https://go.drugbank.com/drugs/DB05229)
+- **DrugBank:** [DB05229](https://go.drugbank.com/drugs/DB05229) · **PubChem:** [CID 23663404](https://pubchem.ncbi.nlm.nih.gov/compound/23663404)
+- **molar mass:** 398.499 g/mol (C24H30O5) — DrugBank
 - **groups:** investigational
 
 ## About

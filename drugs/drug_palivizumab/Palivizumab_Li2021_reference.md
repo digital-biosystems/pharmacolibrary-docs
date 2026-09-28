@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q31]` (not captured vs 37) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q31: this record has none, the second reading 37; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Li J; Nikanjam M; Cunningham CK; McFarland EJ; Coates EE; Houser KV; Lin BC; McDermott AB; Flach B; Gama L; Koup RA; Graham BS; Mascola JR; Ledgerwood JE; Capparelli EV et al. (2021). Clinical pharmacology and therapeutics 109
@@ -132,7 +133,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_palivizumab/Palivizumab_Li2021_reference/Palivizumab_Li2021_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_palivizumab/Palivizumab_Li2021_reference/Palivizumab_Li2021_reference_sim_controls.json"></dbs-fmusim>
 

@@ -5,7 +5,8 @@
 
 - **generic name:** atenolol
 - **ATC codes:** `C07AB03`, `C07BB03`, `C07CB03`, `C07CB53`, `C07FB03`
-- **DrugBank:** [DB00335](https://go.drugbank.com/drugs/DB00335)
+- **DrugBank:** [DB00335](https://go.drugbank.com/drugs/DB00335) · **PubChem:** [CID 2249](https://pubchem.ncbi.nlm.nih.gov/compound/2249)
+- **molar mass:** 266.3361 g/mol (C14H22N2O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -50,12 +51,12 @@ Despite being one of the most widely prescribed beta blockers, evidence suggests
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Kir_2025_reference](drugs/drug_atenolol/Atenolol_Kir2025_reference.md) | Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of drug me… (2025) | [10.1007/s13318-025-00943-6](https://doi.org/10.1007/s13318-025-00943-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Buck_1989_reference](drugs/drug_atenolol/Atenolol_Buck1989_reference.md) | Buck ML et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (1989) | [10.1038/clpt.1989.198](https://doi.org/10.1038/clpt.1989.198) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Scherholz_2018_reference](drugs/drug_atenolol/Atenolol_Scherholz2018_reference.md) | Scherholz ML et al., A framework for 2-stage global sensitiv…, Journal of pharmacokinetics… (2018) | [10.1007/s10928-018-9573-1](https://doi.org/10.1007/s10928-018-9573-1) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wójcicki_2003_reference](drugs/drug_atenolol/Atenolol_Wjcicki2003_reference.md) | Wójcicki J et al., Comparative pharmacokinetics and pharma…, Biopharmaceutics & drug dis… (2003) | [10.1002/bdd.357](https://doi.org/10.1002/bdd.357) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Kir_2025_reference](drugs/drug_atenolol/Atenolol_Kir2025_reference.md) | 1-compartment, oral | 3 | Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of drug me… (2025) | [10.1007/s13318-025-00943-6](https://doi.org/10.1007/s13318-025-00943-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Buck_1989_reference](drugs/drug_atenolol/Atenolol_Buck1989_reference.md) | 1-compartment (no model) | 0 | Buck ML et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (1989) | [10.1038/clpt.1989.198](https://doi.org/10.1038/clpt.1989.198) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Scherholz_2018_reference](drugs/drug_atenolol/Atenolol_Scherholz2018_reference.md) | 1-compartment (no model) | 0 | Scherholz ML et al., A framework for 2-stage global sensitiv…, Journal of pharmacokinetics… (2018) | [10.1007/s10928-018-9573-1](https://doi.org/10.1007/s10928-018-9573-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wójcicki_2003_reference](drugs/drug_atenolol/Atenolol_Wjcicki2003_reference.md) | 1-compartment (no model) | 0 | Wójcicki J et al., Comparative pharmacokinetics and pharma…, Biopharmaceutics & drug dis… (2003) | [10.1002/bdd.357](https://doi.org/10.1002/bdd.357) |
 
 ## Pharmacodynamics (PD)
 

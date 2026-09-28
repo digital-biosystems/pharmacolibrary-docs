@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;112_trichloroethane&quot;,&quot;href&quot;:&quot;drugs/toxin_112_trichloroethane/&quot;},{&quot;label&quot;:&quot;Yoshii_1987 \u00b7 PD ACh-induced conductance&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ACh-induced conductance — PD  <span class="pk-badge pk-badge--red">rejected</span>

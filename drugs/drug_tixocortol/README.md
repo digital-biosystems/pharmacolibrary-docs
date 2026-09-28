@@ -4,7 +4,8 @@
 
 - **generic name:** tixocortol
 - **ATC codes:** `A07EA05`, `R01AD07`
-- **DrugBank:** [DB09091](https://go.drugbank.com/drugs/DB09091)
+- **DrugBank:** [DB09091](https://go.drugbank.com/drugs/DB09091) · **PubChem:** [CID 162955](https://pubchem.ncbi.nlm.nih.gov/compound/162955)
+- **molar mass:** 378.53 g/mol (C21H30O4S) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

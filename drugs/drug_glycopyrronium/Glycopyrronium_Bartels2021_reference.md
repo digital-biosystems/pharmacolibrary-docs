@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (indacaterol/glycopyrronium/mometasone furoate vs indacaterol, glycopyrronium, mometasone furoate) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The glycopyrronium record was rejected because the absorption rate constant Ka carries a dimensionally inconsistent unit (L/h instead of 1/h) and the one-compartment structure leaves a compartment unreachable from the dose.**
+
+The reported Ka of 50 with unit 'L/h' is dimensionally wrong for a first-order absorption rate constant, which should be in 1/h; this unit could not be converted to SI, so the parameter entered the record without a consistent value. The structure is a single compartment, yet the dose-reachability check failed, indicating an orphan compartment or unlinked metabolite in the topology. A second reader also disagreed on several extracted values, reading Ka and the zero-order absorption duration D1 as not reported and a body-weight covariate parameter (theta_v2_f_body_weight) as 1 where the record had none. Extracted — glycopyrronium: V2/F 1.3e+03 L, kabs 50 L/h, D1 0.01 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has indacaterol/glycopyrronium/mometasone furoate, the second reading indacaterol, glycopyrronium, mometasone furoate; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `indacaterol/glycopyrronium/mometasone furoate`, measured `glycopyrronium`.
 
@@ -28,6 +31,9 @@ Bartels C; Jain M; Yu J; Tillmann HC; Vaidya S et al. (2021). European journal o
 
 ## Model component
 <dbs-pgx drug="glycopyrronium" model-id="Glycopyrronium_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="glycopyrronium" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted, plus 1 covariate effect.
 
 **Parameterization:** V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

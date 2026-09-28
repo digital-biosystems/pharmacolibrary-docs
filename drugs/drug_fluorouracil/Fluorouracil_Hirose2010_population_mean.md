@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The fluorouracil model was rejected because the metabolite 5-chloro-2,4-dihydroxypyridine has no metabolic link parameter from tegafur, and the reported units for creatinine clearance (39–174) and Ka (174.6) could not be converted to SI.**
+
+The structure links S-1 to tegafur and tegafur to 5-fluorouracil by metabolism, but the link from tegafur to 5-chloro-2,4-dihydroxypyridine carries no parameter value, leaving that metabolite unconnected to the dose. Additionally, the creatinine clearance parameter CL (80.5) carries the range '(39–174)' in place of a unit, and the absorption rate constant kabs (1.2 h⁻¹) carries '174.6' as its unit; neither could be converted to SI, so those parameters reached the model without usable values. The distribution volume V of 160.9 L was extracted with a valid unit. Extracted — fluorouracil: CL 80.5 (39-174), kabs 1.2 174.6, V 161 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `S-1`, measured `5-fluorouracil`.
 

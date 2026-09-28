@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record was refused because the apparent cannabigerol parameters (e.g. CL 1.75 L/h/kg, V1 43 L/kg) were corrected for bioavailability (Fab 0.29) twice, breaking internal coherence.**
+
+The record describes a parent–metabolite model for cannabigerol in healthy adult horses, with cannabigerol glucuronide linked through the metabolism parameter Fm. Bioavailability is recorded as Fab 0.29, and the apparent parameters CL 1.75 L/h/kg, V1 43 L/kg, Q 82.35 L/h/kg, V2 41.29 L/kg and Vmax 0.0041 L/kg were found to have had the bioavailability correction applied twice, so the values no longer form one self-consistent F-normalised parameter set. The metabolite clearance CLm/F 0.016 L/h/kg belongs to the same inconsistent set. This double correction is the stated cause of rejection. Extracted — cannabinoids: Fab 0.29, kabs 0.95, kel 1.43, CL 1.75 l/h/kg, V1 43 L/kg, Q 82.3 L/h/kg, V2 41.3 L/kg, Vmax 0.0041 L/kg, … (+1).
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Serrano-Rodríguez JM; Miraz R; Saitua A; Díez de Castro E; Ledesma-Escobar C; Ferreiro-Vera C; Priego-Capote F; Sánchez de Medina V; Sánchez de Medina A et al. (2025). Frontiers in veterinary science 12
@@ -25,6 +27,9 @@ Serrano-Rodríguez JM; Miraz R; Saitua A; Díez de Castro E; Ledesma-Escobar C; 
 
 ## Model component
 <dbs-pgx drug="cannabinoids" model-id="Cannabinoids_SerranoRodrguez2025_cbg_g" status="rejected" stale="false" population="healthy adult horses" measured-compound="cannabigerol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

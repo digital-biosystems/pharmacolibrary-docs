@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[multiplicative, %]` (not captured vs 36.5) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The digoxin model was held back because its volume of distribution, absorption rate constant and absorption lag time had no reported values, so library defaults stood in; the Vd unit (L/kg) also could not be converted to SI.**
+
+The record reports only CL/F (6.215 L/h) for digoxin; Vd (6.000, unit L/kg, fixed), ka (1.000 h⁻¹, fixed) and Tlag had no value extracted, so a library placeholder would have stood in and the model was held back rather than published with an invented number. The absorption rate constant was not reported in the source, so the default value amounted to an invented absorption input, judged not acceptable. The Vd unit L/kg could not be converted to SI, so that parameter was carried without an SI value. A second reader additionally extracted a 36.5% value for the multiplicative residual error where the record has none; the deviation check could not compute a comparison (ratio None). Extracted — digoxin: CL/F 6.21 L/h, V/F 6 fixed, kabs 1 fixed.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of multiplicative, %: this record has none, the second reading 36.5. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Hirai T; Kasai H; Naganuma M; Hagiwara N; Shiga T et al. (2022). BMC pharmacology & toxicology 23
@@ -26,6 +29,9 @@ Hirai T; Kasai H; Naganuma M; Hagiwara N; Shiga T et al. (2022). BMC pharmacolog
 
 ## Model component
 <dbs-pgx drug="digoxin" model-id="Digoxin_Hirai2022_reference" status="model_quarantined" stale="false" population="Japanese patients with atrial fibrillation and heart failure" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

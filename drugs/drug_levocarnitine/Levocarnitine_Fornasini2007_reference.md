@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
+**The paper reports none of the model's key parameters.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Fornasini G; Upton RN; Evans AM et al. (2007). British journal of clinical pharmacology 64

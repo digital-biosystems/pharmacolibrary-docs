@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Mikamo H; Kawazoe K; Sato Y; Ito K; Tamaya T et al. (1997). International journal of antimicrobial agents 9
@@ -25,6 +27,9 @@ Mikamo H; Kawazoe K; Sato Y; Ito K; Tamaya T et al. (1997). International journa
 
 ## Model component
 <dbs-pgx drug="miconazole" model-id="Miconazole_Mikamo1997_reference" status="rejected" stale="false" population="patients after radical hysterectomy and pelvic lymphadenectomy" measured-compound="miconazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

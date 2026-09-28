@@ -4,7 +4,7 @@
 
 - **generic name:** streptokinase
 - **ATC codes:** `B01AD01`
-- **DrugBank:** [DB00086](https://go.drugbank.com/drugs/DB00086)
+- **DrugBank:** [DB00086](https://go.drugbank.com/drugs/DB00086) · **PubChem:** not captured
 - **groups:** approved, investigational, withdrawn
 
 ## About

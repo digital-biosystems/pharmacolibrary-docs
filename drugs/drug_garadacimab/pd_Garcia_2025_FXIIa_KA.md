@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;garadacimab&quot;,&quot;href&quot;:&quot;drugs/drug_garadacimab/&quot;},{&quot;label&quot;:&quot;Garcia_2025 \u00b7 PD FXIIa-mediated kallikrein activity&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Garadacimab_Pawaskar2022_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_garadacimab/Garadacimab_Pawaskar2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

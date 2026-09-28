@@ -15,15 +15,20 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 3 covered.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**The rolapitant metabolite M19's clearance, distribution volume, and formation rate had no extracted values, so library placeholders stood in and the model was quarantined.**
+
+The record describes rolapitant with a metabolite (M19), but the metabolite's clearance, volume of distribution, and formation rate had no values in the source, so placeholders were substituted and the model was held back rather than published with invented numbers. The parameter coverage check found only 3 of 4 expected parameters covered, with V2 (peripheral volume, 164 L) neither emitted nor defaulted. The record was also built from the abstract alone, so reported summary statistics stood in for a fitted model, and the builder assumed F=1, Fm=1, and no molar correction under an apparent (/F) parameterization with first-order extravascular input. Extracted — rolapitant: CL/F 0.962 L/h, V1 214 L, Q 2.79 L/h, V2 164 L, CLm/F 1.83 L/h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Wang_2019)
 
 ## Model component
 <dbs-pgx drug="rolapitant" model-id="Rolapitant_Wang2019_reference" status="model_quarantined" stale="false" population="patients with chemotherapy-induced nausea and vomiting" measured-compound="rolapitant" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -5,7 +5,8 @@
 
 - **generic name:** arginine glutamate
 - **ATC codes:** `A05BA01`
-- **DrugBank:** [DB13207](https://go.drugbank.com/drugs/DB13207)
+- **DrugBank:** [DB13207](https://go.drugbank.com/drugs/DB13207) · **PubChem:** not captured
+- **molar mass:** 321.334 g/mol (C11H23N5O6) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary
@@ -16,9 +17,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Wang_2018_reference](drugs/drug_arginine_glutamate/ArginineGlutamate_Wang2018_reference.md) | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Wang_2018_reference](drugs/drug_arginine_glutamate/ArginineGlutamate_Wang2018_reference.md) | 1-compartment (no model) | 1 | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

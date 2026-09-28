@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (factor VIII vs recombinant FVIII (Advate/Kogenate)) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is coagulation factor viii's own; they describe factor VIII.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has factor VIII, the second reading recombinant FVIII (Advate/Kogenate); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Preijers T; van Moort I; Fijnvandraat K; Leebeek FWG; Cnossen MH; Mathôt RAA et al. (2018). Thrombosis and haemostasis 118
@@ -26,6 +29,9 @@ Preijers T; van Moort I; Fijnvandraat K; Leebeek FWG; Cnossen MH; Mathôt RAA et
 
 ## Model component
 <dbs-pgx drug="coagulation factor VIII" model-id="CoagulationFactorViii_Preijers2018_reference" status="rejected" stale="false" population="patients with severe or moderate haemophilia A" measured-compound="factor VIII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

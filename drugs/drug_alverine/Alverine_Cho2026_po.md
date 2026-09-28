@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The alverine mouse record was rejected because the volume of distribution Vd was reported as 1.2590 L/kg, a per-body-weight unit that could not be converted to SI, giving a dimension mismatch on a structural parameter.**
+
+The record lists Vd (L/kg) = 1.2590 for alverine in mice; this per-kilogram unit could not be converted to a consistent SI volume unit, so the parameter entered the model without an SI value and failed the dimension check on a structural parameter. The other reported values (tmax 0.2416 h, Cmax 0.3473 μmol/L, AUClast 0.3517 μmol·h/L, t1/2z 0.1913 h) and the linear structure with metabolites M1, M2 and M3 linked by the rate constant Kfm were not themselves flagged. Extracted — alverine: tmax 0.242 h, Cmax 0.347 μmol/L, AUClast 0.352 μmol·h/L, V 1.26 L/kg, t1/2z 0.191 h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Cho A; Jeong HC; Kim M; Cho I; Na HJ; Ko KC; et al. et al. (2026). CPT: pharmacometrics & systems pharmacology 15
@@ -26,6 +29,9 @@ Cho A; Jeong HC; Kim M; Cho I; Na HJ; Ko KC; et al. et al. (2026). CPT: pharmaco
 
 ## Model component
 <dbs-pgx drug="alverine" model-id="Alverine_Cho2026_po" status="rejected" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

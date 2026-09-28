@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;cangrelor&quot;,&quot;href&quot;:&quot;drugs/drug_cangrelor/&quot;},{&quot;label&quot;:&quot;Bouman_2010 \u00b7 PGx P2Y12&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # P2Y12 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>

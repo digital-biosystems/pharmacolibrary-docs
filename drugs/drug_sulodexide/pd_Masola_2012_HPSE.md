@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;sulodexide&quot;,&quot;href&quot;:&quot;drugs/drug_sulodexide/&quot;},{&quot;label&quot;:&quot;Masola_2012 \u00b7 PD heparanase-1 gene expression&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # heparanase-1 gene expression — PD  <span class="pk-badge pk-badge--red">rejected</span>

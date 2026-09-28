@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([] vs [['nefopam', 'desmethyl-nefopam', 'metabolism']]) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading nefopam → desmethyl-nefopam (metabolism); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Djerada Z; Fournet-Fayard A; Gozalo C; Lelarge C; Lamiable D; Millart H; et al. et al. (2014). British journal of clinical pharmacology 77
@@ -26,6 +29,9 @@ Djerada Z; Fournet-Fayard A; Gozalo C; Lelarge C; Lamiable D; Millart H; et al. 
 
 ## Model component
 <dbs-pgx drug="nefopam" model-id="Nefopam_Djerada2014_reference" status="curated_candidate" stale="false" population="elderly patients with or without renal impairment" measured-compound="nefopam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -137,6 +143,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_nefopam/Nefopam_Djerada2014_reference/Nefopam_Djerada2014_reference.svg" alt="Nefopam_Djerada2014_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_nefopam/Nefopam_Djerada2014_reference/Nefopam_Djerada2014_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_nefopam/Nefopam_Djerada2014_reference/Nefopam_Djerada2014_reference_sim_controls.json"></dbs-fmusim>
 

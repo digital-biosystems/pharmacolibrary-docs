@@ -4,7 +4,8 @@
 
 - **generic name:** agomelatine
 - **ATC codes:** `N06AX22`
-- **DrugBank:** [DB06594](https://go.drugbank.com/drugs/DB06594)
+- **DrugBank:** [DB06594](https://go.drugbank.com/drugs/DB06594) · **PubChem:** [CID 82148](https://pubchem.ncbi.nlm.nih.gov/compound/82148)
+- **molar mass:** 243.301 g/mol (C15H17NO2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -4,7 +4,7 @@
 
 - **generic name:** galsulfase
 - **ATC codes:** `A16AB08`
-- **DrugBank:** [DB01279](https://go.drugbank.com/drugs/DB01279)
+- **DrugBank:** [DB01279](https://go.drugbank.com/drugs/DB01279) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

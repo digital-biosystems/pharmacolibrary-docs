@@ -4,7 +4,8 @@
 
 - **generic name:** casopitant
 - **ATC codes:** `A04AD13`
-- **DrugBank:** [DB06634](https://go.drugbank.com/drugs/DB06634)
+- **DrugBank:** [DB06634](https://go.drugbank.com/drugs/DB06634) · **PubChem:** not captured
+- **molar mass:** 616.625 g/mol (C30H35F7N4O2) — DrugBank
 - **groups:** investigational
 
 ## About

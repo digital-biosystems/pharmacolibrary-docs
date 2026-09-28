@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[apparent clearance]` (not captured vs 6.45) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The bisoprolol model was quarantined because its volume of distribution, absorption rate constant and absorption lag time had no extracted values, so library placeholder defaults stood in for these parameters.**
+
+The record lists no source values for bisoprolol's volume of distribution, absorption rate constant or absorption lag time; placeholder values were substituted for all three, and the invented absorption (ka defaulted, not reported in the source) was judged not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction), giving CL/F of 6.45 L/h alongside a separate CL of 2.48, with first-order depot input implying extravascular dosing. A second reader also disagreed on which apparent-clearance entry carried the 6.45 L/h value, swapping the populated and empty parameter fields. Extracted — bisoprolol: CL/F 6.45 L/h, CL 2.48.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of apparent clearance: this record has none, the second reading 6.45; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Momčilović S; Jovanović A; Radojković D; Nikolić VN; Janković SM; Pešić M; et al. et al. (2020). European journal of clinical pharmacology 76
@@ -26,6 +29,9 @@ Momčilović S; Jovanović A; Radojković D; Nikolić VN; Janković SM; Pešić 
 
 ## Model component
 <dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Momilovi2020_reference" status="model_quarantined" stale="false" population="adults with type 2 diabetes mellitus and hypertension" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

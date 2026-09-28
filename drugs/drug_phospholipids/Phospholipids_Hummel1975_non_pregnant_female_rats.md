@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 08:47:04.836135+00:00) predates the upstream re-run (2026-09-18 16:41:02.087708+00:00). Current validate status: `not captured`.
 
@@ -26,6 +28,9 @@ Hummel L et al. (1975). Acta biologica et medica Germanica 34
 
 ## Model component
 <dbs-pgx drug="phospholipids" model-id="Phospholipids_Hummel1975_non_pregnant_female_rats" status="" stale="true" population="non pregnant female rats" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

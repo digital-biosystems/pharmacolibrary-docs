@@ -5,7 +5,8 @@
 
 - **generic name:** streptomycin
 - **ATC codes:** `A07AA04`, `J01GA01`, `J04AM01`
-- **DrugBank:** [DB01082](https://go.drugbank.com/drugs/DB01082)
+- **DrugBank:** [DB01082](https://go.drugbank.com/drugs/DB01082) · **PubChem:** [CID 19649](https://pubchem.ncbi.nlm.nih.gov/compound/19649)
+- **molar mass:** 581.5741 g/mol (C21H39N7O12) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -23,9 +24,9 @@ _Enterococcus faecalis_ in urinary tract infections, _Streptococcus viridans_, _
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27, Q88, Q32 — no SI value to buil…</sub><br><sub>route_to: `human_review`</sub> | [Du_2013_reference](drugs/drug_streptomycin/Streptomycin_Du2013_reference.md) | Du B et al., Chemiluminescence determination of stre…, Spectrochimica acta. Part A… (2013) | [10.1016/j.saa.2013.07.007](https://doi.org/10.1016/j.saa.2013.07.007) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27, Q88, Q32 — no SI value to buil…</sub><br><sub>route_to: `human_review`</sub> | [Du_2013_reference](drugs/drug_streptomycin/Streptomycin_Du2013_reference.md) | 1-compartment (no model) | 7 | Du B et al., Chemiluminescence determination of stre…, Spectrochimica acta. Part A… (2013) | [10.1016/j.saa.2013.07.007](https://doi.org/10.1016/j.saa.2013.07.007) |
 
 ## Pharmacodynamics (PD)
 

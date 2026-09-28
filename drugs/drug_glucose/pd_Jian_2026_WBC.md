@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05C&quot;,&quot;href&quot;:&quot;atc/B05C.md&quot;},{&quot;label&quot;:&quot;glucose&quot;,&quot;href&quot;:&quot;drugs/drug_glucose/&quot;},{&quot;label&quot;:&quot;Jian_2026 \u00b7 PD White blood cell&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # White blood cell — PD  <span class="pk-badge pk-badge--red">rejected</span>

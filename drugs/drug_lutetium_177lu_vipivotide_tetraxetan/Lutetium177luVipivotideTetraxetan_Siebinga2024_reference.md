@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** missing key parameters — none reported by this paper
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Siebinga H; de Wit-van der Veen BJ; de Vries-Huizing DMV; Vogel WV; Hendrikx JJMA; Huitema ADR et al. (2024). EJNMMI physics 11
@@ -26,6 +29,9 @@ Siebinga H; de Wit-van der Veen BJ; de Vries-Huizing DMV; Vogel WV; Hendrikx JJM
 
 ## Model component
 <dbs-pgx drug="lutetium (177Lu) vipivotide tetraxetan" model-id="Lutetium177luVipivotideTetraxetan_Siebinga2024_reference" status="rejected" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="lutetium_177lu_vipivotide_tetraxetan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The cisplatin record was rejected because the apparent parameters fm (0.001 L⁻¹) and V/F (0.16) fail apparent-parameter coherence through a double bioavailability correction, and a structural parameter shows a dimension mismatch.**
+
+The record reports fm = 0.001 L⁻¹ and V/F = 0.16, both apparently corrected for bioavailability, which violates apparent-parameter coherence (a double correction), and one structural parameter has a dimension mismatch. A reported unit (L⁻¹) could not be converted to SI, so that parameter reached the model without an SI value. A second reader disagreed on the parameterization, reading it as mechanistic rather than apparent, and did not accept the 0.16 value for the V/F parameter. Extracted — cisplatin: fm 0.001 l -1, V/F 0.16, CL 0.002 h -1, t1/2z 50 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `cisplatin`, measured `unbound platinum`.
 
@@ -28,6 +31,9 @@ Urien S; Lokiec F et al. (2004). British journal of clinical pharmacology 57
 
 ## Model component
 <dbs-pgx drug="cisplatin" model-id="Cisplatin_Urien2004_reference" status="rejected" stale="false" population="adult patients with various malignancies" measured-compound="unbound platinum" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

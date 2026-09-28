@@ -1,5 +1,5 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;flecainide&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/&quot;},{&quot;label&quot;:&quot;Sangrador_1989 \u00b7 critically ill patients with acute myocardial infarction&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Bergenholm2016_reference&quot;,&quot;label&quot;:&quot;Bergenholm_2016_conscious beagle dogs&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Bergenholm2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Doki2006_reference&quot;,&quot;label&quot;:&quot;Doki_2006_Japanese patients with supraventricular tachyarrhythmia&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Doki2006_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Doki2012_reference&quot;,&quot;label&quot;:&quot;Doki_2012_patients with supraventricular tachyarrhythmias&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Doki2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Sangrador1989_reference&quot;,&quot;label&quot;:&quot;Sangrador_1989_critically ill patients with acute myocardial infarction&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sangrador1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;flecainide&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/&quot;},{&quot;label&quot;:&quot;Sangrador_1989 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Doki2006_reference&quot;,&quot;label&quot;:&quot;Doki_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Doki2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Bergenholm2016_reference&quot;,&quot;label&quot;:&quot;Bergenholm_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Bergenholm2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Doki2012_reference&quot;,&quot;label&quot;:&quot;Doki_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Doki2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Sangrador1989_reference&quot;,&quot;label&quot;:&quot;Sangrador_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sangrador1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (flecainide vs unknown) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The flecainide record was rejected because a structural parameter failed a dimensional check, and only the paper's abstract was read, so summary statistics stood in for a fitted model.**
+
+The record reports flecainide in critically ill patients with acute myocardial infarction as a one-compartment model with a terminal plasma half-life of 22.0 h and a volume of distribution of 7.99 in units written as '1/kg' (litres per kilogram); the dimensional mismatch on this structural parameter was the stated reason for rejection. Because the source was abstract-only, no fitted model underlies the values — the abstract's summary statistics stand in for one. A second reader (gpt-oss:120b) disagreed on the dose compartment and primary analyte, and on the two parameters: it read the half-life (22.0 h) and volume (7.99 L/kg) as null where the record has values, and as 22.0 and 7.99 where the record has null, so the parameter values themselves are contested between readers. Extracted — flecainide: t1/2β 22 h, V 7.99 1/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has flecainide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Sangrador G; Sánchez-Alcaraz A; Rodriguez M; Ibáñez P et al. (1989). Journal of clinical pharmacy and therapeutics 14
@@ -26,6 +29,9 @@ Sangrador G; Sánchez-Alcaraz A; Rodriguez M; Ibáñez P et al. (1989). Journal 
 
 ## Model component
 <dbs-pgx drug="flecainide" model-id="Flecainide_Sangrador1989_reference" status="rejected" stale="false" population="critically ill patients with acute myocardial infarction" measured-compound="flecainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -102,7 +108,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sangrador_1989` / `Sangrador_1989::critically ill patients with acute myocardial infarction`)
+- scholar stages: `../../../knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sangrador_1989` / `Sangrador_1989::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

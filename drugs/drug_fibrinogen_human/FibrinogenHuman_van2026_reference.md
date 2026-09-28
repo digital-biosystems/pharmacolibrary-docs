@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fibrinogen human: CL 716 ml/h, V 24.9 L.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 van Lier D; Mourisse L; Hollander H; Santos K; Bergmann A; van Herwaarden AE; Kox M; Pickkers P et al. (2026). mAbs 18
@@ -25,6 +27,9 @@ van Lier D; Mourisse L; Hollander H; Santos K; Bergmann A; van Herwaarden AE; Ko
 
 ## Model component
 <dbs-pgx drug="fibrinogen, human" model-id="FibrinogenHuman_van2026_reference" status="needs_review" stale="false" population="" measured-compound="fibrinogen_human" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

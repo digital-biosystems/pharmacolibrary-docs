@@ -4,7 +4,8 @@
 
 - **generic name:** dilazep
 - **ATC codes:** `C01DX10`
-- **DrugBank:** [DB13715](https://go.drugbank.com/drugs/DB13715)
+- **DrugBank:** [DB13715](https://go.drugbank.com/drugs/DB13715) · **PubChem:** not captured
+- **molar mass:** 604.697 g/mol (C31H44N2O10) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The tegafur model was rejected because its metabolite 5-chloro-2,4-dihydroxypyridine and the 5-fluorouracil compartment lack dosing-linked parameters, and the creatinine clearance unit '(39-174)' could not be converted to SI.**
+
+The structure links S-1 to tegafur and tegafur to 5-fluorouracil and 5-chloro-2,4-dihydroxypyridine only through metabolism relations with no parameter values, leaving the 5-chloro-2,4-dihydroxypyridine metabolite unlinked by any quantified clearance path. The extracted parameters are also mislabelled: the clearance 80.5 ml/min is labelled creatinine clearance but attributed to 5-fluorouracil, and its unit '(39-174)' is a reported range that could not be converted to SI, so the parameter reached the model without an SI value. The absorption rate constant 1.2 h⁻¹ carries the stray unit '174.6'. These deviations left the record unpublished. Extracted — 5-fluorouracil: CL 80.5 (39-174), kabs 1.2 174.6.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `S-1`, measured `5-fluorouracil`.
 
@@ -27,6 +29,9 @@ Hirose T; Fujita K; Nishimura K; Ishida H; Yamashita K; Sunakawa Y; et al. et al
 
 ## Model component
 <dbs-pgx drug="tegafur" model-id="Tegafur_Hirose2010_interindividual_variability" status="rejected" stale="false" population="Japanese patients with advanced cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

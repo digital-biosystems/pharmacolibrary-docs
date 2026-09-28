@@ -4,7 +4,7 @@
 
 - **generic name:** thrombocytes
 - **ATC codes:** `B05AX02`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

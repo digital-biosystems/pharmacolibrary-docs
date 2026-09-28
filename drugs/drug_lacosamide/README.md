@@ -5,7 +5,8 @@
 
 - **generic name:** lacosamide
 - **ATC codes:** `N03AX18`
-- **DrugBank:** [DB06218](https://go.drugbank.com/drugs/DB06218)
+- **DrugBank:** [DB06218](https://go.drugbank.com/drugs/DB06218) · **PubChem:** [CID 219078](https://pubchem.ncbi.nlm.nih.gov/compound/219078)
+- **molar mass:** 250.2936 g/mol (C13H18N2O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -26,15 +27,15 @@ The extended-release capsules of lacosamide are indicated for the treatment of p
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Yu_2026_reference](drugs/drug_lacosamide/Lacosamide_Yu2026_reference.md) | Yu L et al., Development and validation of a populat…, BMC pharmacology & toxicolo… (2026) | [10.1186/s40360-026-01114-2](https://doi.org/10.1186/s40360-026-01114-2) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Li_2025_boostrap](drugs/drug_lacosamide/Lacosamide_Li2025_boostrap.md) | Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (2025) | [10.1038/s41525-025-00519-y](https://doi.org/10.1038/s41525-025-00519-y) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Li_2025_final_models](drugs/drug_lacosamide/Lacosamide_Li2025_final_models.md) | Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (2025) | [10.1038/s41525-025-00519-y](https://doi.org/10.1038/s41525-025-00519-y) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Jang_2025_high_seizure_burden_group_n_28](drugs/drug_lacosamide/Lacosamide_Jang2025_high_seizure_burden_group_n_28.md) | Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025) | [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Jang_2025_low_seizure_burden_group_n_95](drugs/drug_lacosamide/Lacosamide_Jang2025_low_seizure_burden_group_n_95.md) | Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025) | [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jang_2025_p_value](drugs/drug_lacosamide/Lacosamide_Jang2025_p_value.md) | Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025) | [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Jang_2025_total_n_123](drugs/drug_lacosamide/Lacosamide_Jang2025_total_n_123.md) | Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025) | [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Yu_2026_reference](drugs/drug_lacosamide/Lacosamide_Yu2026_reference.md) | 1-compartment, oral | 3 (+2 cov.) | Yu L et al., Development and validation of a populat…, BMC pharmacology & toxicolo… (2026) | [10.1186/s40360-026-01114-2](https://doi.org/10.1186/s40360-026-01114-2) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Li_2025_boostrap](drugs/drug_lacosamide/Lacosamide_Li2025_boostrap.md) | 1-compartment, oral | 5 | Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (2025) | [10.1038/s41525-025-00519-y](https://doi.org/10.1038/s41525-025-00519-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Li_2025_final_models](drugs/drug_lacosamide/Lacosamide_Li2025_final_models.md) | 1-compartment, oral | 5 | Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (2025) | [10.1038/s41525-025-00519-y](https://doi.org/10.1038/s41525-025-00519-y) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Jang_2025_high_seizure_burden_group_n_28](drugs/drug_lacosamide/Lacosamide_Jang2025_high_seizure_burden_group_n_28.md) | 1-compartment (no model) | 3 | Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025) | [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Jang_2025_low_seizure_burden_group_n_95](drugs/drug_lacosamide/Lacosamide_Jang2025_low_seizure_burden_group_n_95.md) | 1-compartment (no model) | 3 | Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025) | [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jang_2025_p_value](drugs/drug_lacosamide/Lacosamide_Jang2025_p_value.md) | 1-compartment (no model) | 0 | Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025) | [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Jang_2025_total_n_123](drugs/drug_lacosamide/Lacosamide_Jang2025_total_n_123.md) | 1-compartment (no model) | 3 | Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025) | [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x) |
 
 ## Pharmacodynamics (PD)
 

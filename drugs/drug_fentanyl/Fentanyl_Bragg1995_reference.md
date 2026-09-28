@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (fentanyl vs unknown) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The fentanyl record was rejected because the one-compartment structure contains compartments with no connection to the dose, and the central volume V1 was left without a value.**
+
+The model is listed as a one-compartment structure, yet peripheral volumes V2 (1.43 l/kg) and V3 (5.19 l/kg) are reported, implying compartments that have no dosing path and are therefore unreachable. The central volume V1 carries no extracted value, so a placeholder would have been used. Clearance is given as 88.8 ml·kg⁻¹·min⁻¹ for fentanyl in neonatal dogs. A second reader also disputed the primary analyte, reading morphine instead of fentanyl. Extracted — fentanyl: CL 88.8 ml·kg⁻¹·min⁻¹, V2 1.43 l/kg, V3 5.19 l/kg, Vss 7.11 l/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Bragg P; Zwass MS; Lau M; Fisher DM et al. (1995). Journal of applied physiology (Bethesda, Md. : 1985) 79

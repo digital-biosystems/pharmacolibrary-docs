@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[the area under the plasma concentration curve]` (277 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — granisetron: AUC 277 ng.h/mL, CL 0.319 L/kg/hr.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of the area under the plasma concentration curve: this record has 277, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Addelman M; Erlichman C; Fine S; Warr D; Murray C et al. (1990). Journal of clinical oncology : official journal of the American Society of Clinical Oncology 8
@@ -26,6 +29,9 @@ Addelman M; Erlichman C; Fine S; Warr D; Murray C et al. (1990). Journal of clin
 
 ## Model component
 <dbs-pgx drug="granisetron" model-id="Granisetron_Addelman1990_reference" status="needs_review" stale="false" population="chemotherapy-naïve patients" measured-compound="granisetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

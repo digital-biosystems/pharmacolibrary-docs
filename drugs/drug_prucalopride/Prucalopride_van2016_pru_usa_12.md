@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc]` (62.3 vs not captured) and 9 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**This prucalopride child-population record was rejected because its one-compartment structure leaves a compartment with no path from the dose, and the AUC unit ng mL−1 h could not be converted to SI.**
+
+The structure check flagged an unreachable or orphan compartment in the one-compartment model, meaning a compartment or metabolite has no path from the administered dose. The reported AUC unit (ng mL−1 h) could not be converted to SI units, so the extracted values — CL 12.1 l h−1, V2 192 l, AUC 62.3 ng mL−1 h — were held without SI equivalents. A second reader additionally extracted parameters absent from this record, including a prucalopride clearance of 22.9 l h−1, bioavailability 0.858, absorption rate constant 0.792 h−1, mean transit time 0.734 h, and intercompartmental clearance 16.9 l h−1, while disagreeing that CL, V2 and AUC belong in the record. Extracted — prucalopride: CL 12.1 l h−1, V2 192 l, AUC 62.3 ng mL−1 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 62.3, the second reading none; it also differs on 9 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 van Schaick E; Benninga MA; Levine A; Magnusson M; Troy S et al. (2016). Pharmacology research & perspectives 4
@@ -26,6 +29,9 @@ van Schaick E; Benninga MA; Levine A; Magnusson M; Troy S et al. (2016). Pharmac
 
 ## Model component
 <dbs-pgx drug="prucalopride" model-id="Prucalopride_van2016_pru_usa_12" status="rejected" stale="false" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

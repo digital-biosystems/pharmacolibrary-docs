@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([] vs [['prednisone', 'prednisolone', 'metabolism']]) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record was rejected because the prednisolone distribution volume V is 0.3 L, a physiologically implausible magnitude for this molecule, indicating a unit or scale extraction error.**
+
+The one-compartment prednisolone model for healthy adults lists V (labelled V Glu1) as 0.3 L, far below any plausible distribution volume for prednisolone, which is why the plausibility check on clearance/volume magnitudes failed. The clearance CL RBCs is 7.74 L/hour (written 'L.hour À1' in the record) and the oral lag time is 0.36 hour; the second reader did not dispute these three parameter values. The second reader did disagree on the model structure, arguing the record should include a prednisone–prednisolone metabolism link, whereas the record lists none. Extracted — prednisolone: CL 7.74 L.hour À1, V 0.3 L, tlag 0.36 hour.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading prednisone → prednisolone (metabolism); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -28,6 +31,9 @@ Magee MH; Blum RA; Lates CD; Jusko WJ et al. (2002). British journal of clinical
 
 ## Model component
 <dbs-pgx drug="prednisolone" model-id="Prednisolone_Magee2002_reference" status="rejected" stale="false" population="healthy adults" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

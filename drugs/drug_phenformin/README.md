@@ -4,7 +4,8 @@
 
 - **generic name:** phenformin
 - **ATC codes:** `A10BA01`, `A10BD01`
-- **DrugBank:** [DB00914](https://go.drugbank.com/drugs/DB00914)
+- **DrugBank:** [DB00914](https://go.drugbank.com/drugs/DB00914) · **PubChem:** [CID 8249](https://pubchem.ncbi.nlm.nih.gov/compound/8249)
+- **molar mass:** 205.2596 g/mol (C10H15N5) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

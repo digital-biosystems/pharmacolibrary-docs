@@ -5,7 +5,8 @@
 
 - **generic name:** milrinone
 - **ATC codes:** `C01CE02`
-- **DrugBank:** [DB00235](https://go.drugbank.com/drugs/DB00235)
+- **DrugBank:** [DB00235](https://go.drugbank.com/drugs/DB00235) · **PubChem:** [CID 4197](https://pubchem.ncbi.nlm.nih.gov/compound/4197)
+- **molar mass:** 211.2194 g/mol (C12H9N3O) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,11 +25,11 @@ Milrinone was originally synthesized at the Sterling Winthrop Research Institute
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [OHanlon_2024_final_estimate](drugs/drug_milrinone/Milrinone_OHanlon2024_final_estimate.md) | OHanlon (2024) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hallik_2019_reference](drugs/drug_milrinone/Milrinone_Hallik2019_reference.md) | Hallik M et al., Population Pharmacokinetics and Dosing…, Pediatric critical care med… (2019) | [10.1097/PCC.0000000000001879](https://doi.org/10.1097/PCC.0000000000001879) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [OHanlon_2024_units](drugs/drug_milrinone/Milrinone_OHanlon2024_units.md) | OHanlon (2024) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [OHanlon_2024_final_estimate](drugs/drug_milrinone/Milrinone_OHanlon2024_final_estimate.md) | 1-compartment, IV | 2 | OHanlon (2024) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hallik_2019_reference](drugs/drug_milrinone/Milrinone_Hallik2019_reference.md) | 1-compartment (no model) | 0 | Hallik M et al., Population Pharmacokinetics and Dosing…, Pediatric critical care med… (2019) | [10.1097/PCC.0000000000001879](https://doi.org/10.1097/PCC.0000000000001879) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [OHanlon_2024_units](drugs/drug_milrinone/Milrinone_OHanlon2024_units.md) | 1-compartment (no model) | 0 | OHanlon (2024) | — |
 
 ## ADME sites
 

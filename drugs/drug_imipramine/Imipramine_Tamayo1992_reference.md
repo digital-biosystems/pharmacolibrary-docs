@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clearance (clint)]` (12.0 vs not captured) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The imipramine clearance of 12.0 μL/min/mg falls outside the physiological window, indicating a unit or scale extraction error, and the second reader recorded no value for this parameter.**
+
+The record lists imipramine clearance (labelled 'Clearance (CLint)') as 12.0 μL/min/mg in enuretic children, a magnitude judged physiologically implausible and attributed to a unit or scale extraction error. The second reader (gpt-oss:120b) recorded null for this same parameter, disagreeing with the extracted 12.0. The model is a parent–metabolite structure with imipramine linked to desipramine via the metabolism rate constant Kfm. Extracted — imipramine: CL 12 μL/min/mg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance (clint): this record has 12.0, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tamayo M; Fernández de Gatta MM; García MJ; Domínguez-Gil A et al. (1992). European journal of clinical pharmacology 43
@@ -26,6 +29,9 @@ Tamayo M; Fernández de Gatta MM; García MJ; Domínguez-Gil A et al. (1992). Eu
 
 ## Model component
 <dbs-pgx drug="imipramine" model-id="Imipramine_Tamayo1992_reference" status="rejected" stale="false" population="enuretic children" measured-compound="imipramine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

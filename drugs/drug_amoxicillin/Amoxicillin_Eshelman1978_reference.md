@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q32 — no SI value to build from
-**Second reading:** `gpt-5.6-luna` read this paper differently on `parameters[lode].parameter_id` (Q32 vs Q310) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**Cmax has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — amoxicillin: Cmax 58; amoxicillin and ampicillin: CL 0.18 L/h/kg, V 1.73 L/kg, kabs 0.17 h−1.
+
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on `parameters[lode].parameter_id`: this record has Q32, the second reading Q310; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Eshelman FN; Spyker DA et al. (1978). Antimicrobial agents and chemotherapy 14

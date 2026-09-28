@@ -5,7 +5,8 @@
 
 - **generic name:** ranitidine
 - **ATC codes:** `A02BA02`, `A02BA07`
-- **DrugBank:** [DB00863](https://go.drugbank.com/drugs/DB00863)
+- **DrugBank:** [DB00863](https://go.drugbank.com/drugs/DB00863) · **PubChem:** [CID 3001055](https://pubchem.ncbi.nlm.nih.gov/compound/3001055)
+- **molar mass:** 314.4 g/mol (C13H22N4O3S) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
 ## About
@@ -24,9 +25,9 @@ The prevalence of GERD is thought to be 10-20% in western countries.[A176843] Ra
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> | [Hawwa_2013_reference](drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md) | Hawwa AF et al., Prophylactic ranitidine treatment in cr…, British journal of clinical… (2013) | [10.1111/j.1365-2125.2012.04473.x](https://doi.org/10.1111/j.1365-2125.2012.04473.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> | [Hawwa_2013_reference](drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md) | 1-compartment, oral | 4 | Hawwa AF et al., Prophylactic ranitidine treatment in cr…, British journal of clinical… (2013) | [10.1111/j.1365-2125.2012.04473.x](https://doi.org/10.1111/j.1365-2125.2012.04473.x) |
 
 ## ADME sites
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;glutamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glutamine_Sadaf2024v2_reference&quot;,&quot;label&quot;:&quot;Sadaf_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_glutamine/Glutamine_Sadaf2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glutamine_Sadaf2024v2_reference&quot;,&quot;label&quot;:&quot;Sadaf_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_glutamine/Glutamine_Sadaf2024v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # glutamine
 
 - **generic name:** glutamine
 - **ATC codes:** `A16AA03`
-- **DrugBank:** [DB00130](https://go.drugbank.com/drugs/DB00130)
+- **DrugBank:** [DB00130](https://go.drugbank.com/drugs/DB00130) · **PubChem:** not captured
 - **groups:** approved, investigational, nutraceutical
 
 ## About
@@ -15,6 +15,14 @@
 **Indication.** Used for nutritional supplementation, also for treating dietary shortage or imbalance.
 
 Used to reduce the acute complications of sickle cell disease in adult and pediatric patients 5 years of age and older [FDA Label].
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| glutamine (l-glutamine) | parent | 146.14 | — | PubChem | [5961](https://pubchem.ncbi.nlm.nih.gov/compound/5961) | Sadaf_2024_2 |
 
 ## Extraction summary
 
@@ -26,7 +34,7 @@ Used to reduce the acute complications of sickle cell disease in adult and pedia
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> | [Sadaf_2024_2_reference](drugs/drug_glutamine/Glutamine_Sadaf2024v2_reference.md) | 1-compartment, oral | 3 | Sadaf (2024) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Sadaf_2024_2_reference](drugs/drug_glutamine/Glutamine_Sadaf2024v2_reference.md) | 1-compartment, oral | 3 | Sadaf (2024) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -54,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 1985 matched, 173 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

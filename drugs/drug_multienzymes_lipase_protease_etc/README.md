@@ -4,7 +4,7 @@
 
 - **generic name:** multienzymes (lipase, protease etc.)
 - **ATC codes:** `A09AA02`
-- **DrugBank:** [DB00085](https://go.drugbank.com/drugs/DB00085)
+- **DrugBank:** [DB00085](https://go.drugbank.com/drugs/DB00085) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

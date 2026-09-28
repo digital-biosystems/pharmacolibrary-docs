@@ -4,7 +4,8 @@
 
 - **generic name:** theodrenaline
 - **ATC codes:** `C01CA23`
-- **DrugBank:** [DB12927](https://go.drugbank.com/drugs/DB12927)
+- **DrugBank:** [DB12927](https://go.drugbank.com/drugs/DB12927) · **PubChem:** [CID 71857](https://pubchem.ncbi.nlm.nih.gov/compound/71857)
+- **molar mass:** 375.385 g/mol (C17H21N5O5) — DrugBank
 - **groups:** investigational
 
 ## About

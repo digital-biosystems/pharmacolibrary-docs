@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — scopolamine: CL 205 L/h, V 363 L, t1/2α 2.9 min, t1/2β 105 min, Cmax 4.66 ng/ml.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ebert U; Grossmann M; Oertel R; Gramatté T; Kirch W et al. (2001). Journal of clinical pharmacology 41
@@ -25,6 +27,9 @@ Ebert U; Grossmann M; Oertel R; Gramatté T; Kirch W et al. (2001). Journal of c
 
 ## Model component
 <dbs-pgx drug="scopolamine" model-id="Scopolamine_Ebert2001_reference" status="needs_review" stale="false" population="healthy young male volunteers" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -4,7 +4,8 @@
 
 - **generic name:** glisoxepide
 - **ATC codes:** `A10BB11`
-- **DrugBank:** [DB01289](https://go.drugbank.com/drugs/DB01289)
+- **DrugBank:** [DB01289](https://go.drugbank.com/drugs/DB01289) · **PubChem:** [CID 32778](https://pubchem.ncbi.nlm.nih.gov/compound/32778)
+- **molar mass:** 449.524 g/mol (C20H27N5O5S) — DrugBank
 - **groups:** investigational
 
 ## About

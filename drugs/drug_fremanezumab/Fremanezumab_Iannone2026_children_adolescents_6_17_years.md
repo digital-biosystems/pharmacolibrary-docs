@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Iannone LF; Romozzi M; Papetti L; Toldo I; Valeriani M; Geppetti P et al. (2026). European journal of drug metabolism and pharmacokinetics 51
@@ -26,6 +29,9 @@ Iannone LF; Romozzi M; Papetti L; Toldo I; Valeriani M; Geppetti P et al. (2026)
 
 ## Model component
 <dbs-pgx drug="fremanezumab" model-id="Fremanezumab_Iannone2026_children_adolescents_6_17_years" status="rejected" stale="false" population="children and adolescents with migraine" measured-compound="fremanezumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

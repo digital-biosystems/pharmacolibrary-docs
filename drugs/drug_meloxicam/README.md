@@ -5,7 +5,8 @@
 
 - **generic name:** meloxicam
 - **ATC codes:** `M01AC06`, `N01BB59`
-- **DrugBank:** [DB00814](https://go.drugbank.com/drugs/DB00814)
+- **DrugBank:** [DB00814](https://go.drugbank.com/drugs/DB00814) · **PubChem:** [CID 54677470](https://pubchem.ncbi.nlm.nih.gov/compound/54677470)
+- **molar mass:** 351.401 g/mol (C14H13N3O4S2) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -32,10 +33,10 @@ Off-label uses include the treatment of dental or post-surgical pain.
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Meineke_2003_reference](drugs/drug_meloxicam/Meloxicam_Meineke2003_reference.md) | Meineke I et al., Population pharmacokinetic analysis of…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01753.x](https://doi.org/10.1046/j.1365-2125.2003.01753.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Aoyama_2017_reference](drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md) | Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12259](https://doi.org/10.1002/psp4.12259) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Meineke_2003_reference](drugs/drug_meloxicam/Meloxicam_Meineke2003_reference.md) | 1-compartment, IV | 1 | Meineke I et al., Population pharmacokinetic analysis of…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01753.x](https://doi.org/10.1046/j.1365-2125.2003.01753.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Aoyama_2017_reference](drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md) | 3-compartment (no model) | 7 | Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12259](https://doi.org/10.1002/psp4.12259) |
 
 ## ADME sites
 

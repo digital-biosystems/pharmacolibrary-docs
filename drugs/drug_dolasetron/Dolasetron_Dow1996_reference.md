@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_rate_constant_conversion — expected Kfm (rate_constant) → CL = k·V — got unit_class_mismatch flagged, not converted.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (dolasetron vs dolasetron or red-dolasetron) and 12 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**The dolasetron→reduced dolasetron model was quarantined because reduced dolasetron's clearance, volume of distribution and formation rate had no values, and the formation rate constant (7 h⁻¹) was left as a rate rather than converted to a clearance.**
+
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. No value was extracted for reduced dolasetron's clearance, volume of distribution, or formation rate, so library placeholders would have been used for these parameters. The formation rate constant Kfm (7 h⁻¹) is a rate constant, but the conversion to clearance (CL = k·V) failed a unit-class check and the parameter was left unconverted rather than used raw as a clearance. The builder also assumed F=1 and Fm=1 with no molar correction, and a second reader disputed the dose compound, primary analyte, and the apparent versus mechanistic parameterization. Extracted — dolasetron: t1/2z 0.1 h, CL 109 mL/min/kg, V/F 0.83 L/kg, Fab 7 %, V1 8.5 L/kg, kfm 7 h-1, tmax 0.33 h, kabs 14 h-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dolasetron, the second reading dolasetron or red-dolasetron; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Dow J; Francesco GF; Berg C et al. (1996). Journal of pharmaceutical sciences 85
@@ -26,6 +29,9 @@ Dow J; Francesco GF; Berg C et al. (1996). Journal of pharmaceutical sciences 85
 
 ## Model component
 <dbs-pgx drug="dolasetron" model-id="Dolasetron_Dow1996_reference" status="model_quarantined" stale="false" population="dogs" measured-compound="dolasetron" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

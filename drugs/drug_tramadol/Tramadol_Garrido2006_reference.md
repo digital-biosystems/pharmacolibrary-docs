@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['tramadol', 'o-demethyltramadol', 'metabolism']] vs [['tramadol', 'o-demethyltramadol (m1)', 'metabolism']]) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for O-demethyltramadol's clearance and volume of distribution and the rate at which O-demethyltramadol is formed.**
+
+The model was built, but O-demethyltramadol's clearance and volume of distribution and the rate at which O-demethyltramadol is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tramadol: V1/F 8 l, Vss 46.2 l, CL 15.2 l/h, kabs 0.65 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has tramadol → o-demethyltramadol (metabolism), the second reading tramadol → o-demethyltramadol (m1) (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Garrido MJ; Habre W; Rombout F; Trocóniz IF et al. (2006). Pharmaceutical research 23
@@ -26,6 +29,9 @@ Garrido MJ; Habre W; Rombout F; Trocóniz IF et al. (2006). Pharmaceutical resea
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Garrido2006_reference" status="model_quarantined" stale="false" population="children" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

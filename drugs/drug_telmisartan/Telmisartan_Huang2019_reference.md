@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl].value` (25.1 vs 8.2) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for telmisartan's bioavailability, volume of distribution and absorption lag time; the covariate scenarios were not simulated.**
+
+The model was built, but telmisartan's bioavailability, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — telmisartan: CL 25.1 L/h, V2 30 L, V3 958 L, Q 14.6 L/h, kabs 0.571 h -1, Fab 51.1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].value`: this record has 25.1, the second reading 8.2; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Huang L; Yang L; Huang J; Tan HY; Liu SK; Guo CX; et al. et al. (2019). European journal of drug metabolism and pharmacokinetics 44

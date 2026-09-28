@@ -5,7 +5,8 @@
 
 - **generic name:** morphine
 - **ATC codes:** `N02AA01`, `N02AG01`
-- **DrugBank:** [DB00295](https://go.drugbank.com/drugs/DB00295)
+- **DrugBank:** [DB00295](https://go.drugbank.com/drugs/DB00295) · **PubChem:** [CID 5288826](https://pubchem.ncbi.nlm.nih.gov/compound/5288826)
+- **molar mass:** 285.3377 g/mol (C17H19NO3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -26,10 +27,10 @@ Opiods, including morphine, are effective for the short term management of pain.
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yalcin_2022_reference](drugs/drug_morphine/Morphine_Yalcin2022_reference.md) | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yang_2024_reference](drugs/drug_morphine/Morphine_Yang2024_reference.md) | Yang TE et al., Mechanistic pharmacokinetic-pharmacodyn…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13215](https://doi.org/10.1002/psp4.13215) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yalcin_2022_reference](drugs/drug_morphine/Morphine_Yalcin2022_reference.md) | 1-compartment, IV | 0 | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yang_2024_reference](drugs/drug_morphine/Morphine_Yang2024_reference.md) | 1-compartment, oral | 2 | Yang TE et al., Mechanistic pharmacokinetic-pharmacodyn…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13215](https://doi.org/10.1002/psp4.13215) |
 
 ## Pharmacodynamics (PD)
 

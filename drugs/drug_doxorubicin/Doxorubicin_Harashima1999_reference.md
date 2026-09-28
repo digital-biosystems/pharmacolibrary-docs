@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**Doxorubicin clearance (CLu = 0.0125 ml/h) and volume (V = 16.7 ml/250 g) fall far outside physiological plausibility, indicating a unit or scale extraction error, so the record was rejected.**
+
+The record lists doxorubicin unbound clearance CLu as 0.0125 ml/h and central volume V as 16.7 ml/250 g, magnitudes outside the physiological window for this drug; the inter-compartmental flow Q is 9.69 ml/h/g. These implausible values point to a unit or scale error in how the published parameters were extracted. The model structure is a two-compartment system, but because the clearance and volume are not credible, the record was refused. Extracted — doxorubicin: CLu 0.0125 (ml / h), V 16.7 (ml / 250 g), Q 9.69 (ml / h / g).
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `liposomal doxorubicin`, measured `doxorubicin`.
 

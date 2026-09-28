@@ -5,7 +5,8 @@
 
 - **generic name:** aminocaproic acid
 - **ATC codes:** `B02AA01`
-- **DrugBank:** [DB00513](https://go.drugbank.com/drugs/DB00513)
+- **DrugBank:** [DB00513](https://go.drugbank.com/drugs/DB00513) · **PubChem:** [CID 564](https://pubchem.ncbi.nlm.nih.gov/compound/564)
+- **molar mass:** 131.1729 g/mol (C6H13NO2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ross_2007_reference](drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md) | Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of veterin… (2007) | [10.2460/ajvr.68.9.1016](https://doi.org/10.2460/ajvr.68.9.1016) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: disputed</span> | [Ross_2007_reference](drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md) | 1-compartment, IV | 2 | Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of veterin… (2007) | [10.2460/ajvr.68.9.1016](https://doi.org/10.2460/ajvr.68.9.1016) |
 
 ## ADME sites
 

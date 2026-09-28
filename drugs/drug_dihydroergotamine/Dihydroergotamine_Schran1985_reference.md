@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[dose excreted unchanged in the urine]` (5 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — dihydroergotamine: V 14.6 l/kg, CL 1.81e+03 ml/min, CLR 91 ml/min, fe 5 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dose excreted unchanged in the urine: this record has 5, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Schran HF; Tse FL et al. (1985). International journal of clinical pharmacology, therapy, and toxicology 23
 
 ## Model component
 <dbs-pgx drug="dihydroergotamine" model-id="Dihydroergotamine_Schran1985_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="dihydroergotamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

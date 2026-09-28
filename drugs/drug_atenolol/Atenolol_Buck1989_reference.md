@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Buck ML; Wiest D; Gillette PC; Trippel D; Krull J; O'Neal W et al. (1989). Clinical pharmacology and therapeutics 46
@@ -26,6 +29,9 @@ Buck ML; Wiest D; Gillette PC; Trippel D; Krull J; O'Neal W et al. (1989). Clini
 
 ## Model component
 <dbs-pgx drug="atenolol" model-id="Atenolol_Buck1989_reference" status="rejected" stale="false" population="children with arrhythmias" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -1,0 +1,27 @@
+{
+ "model_id": "Paroxetine_Zhang2025_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.444444444444446e-06,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0028142857142857145,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00023916666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10605.696260517829
+ },
+ "reference_peaks": {
+  "central.C": 0.0003828594393776483
+ },
+ "stop_time": 140400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

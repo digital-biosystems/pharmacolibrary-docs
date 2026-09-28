@@ -5,7 +5,7 @@
 
 # ornithine oxoglurate — `OrnithineOxoglurate_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The ornithine oxoglurate record was held back because the absorption rate constant ka and lag time Tlag were never reported in the source, so placeholder values were substituted, and an invented first-order absorption with F=1, Fm=1 and no molar correction was assumed.**
+
+The apparent clearance CL/F of 14.9 L/h and volume of distribution V of 33.2 L for ornithine oxoglurate were extracted, but the absorption rate constant ka and the lag time Tlag were missing from the source, so no value was extracted and library placeholder values would have been used in their place. The model builder additionally assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization that implies extravascular dosing with a first-order depot input. The invented absorption deviation — ka defaulted although not reported in the source — was judged not acceptable, which is why the record was marked needs_review rather than published. The second reader also disagreed on several extracted values, reading 18, 15 and 490 where this record had null, and reading null where this record had 36. Extracted — ornithine oxoglurate: CL/F 14.9 L/h, V 33.2 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q310: this record has none, the second reading 18; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang X; Vilchez RA et al. (2022). Clinical pharmacokinetics 61
@@ -25,6 +29,9 @@ Wang X; Vilchez RA et al. (2022). Clinical pharmacokinetics 61
 
 ## Model component
 <dbs-pgx drug="ornithine oxoglurate" model-id="OrnithineOxoglurate_Wang2022_reference" status="needs_review" stale="false" population="" measured-compound="ornithine_oxoglurate" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -60,9 +67,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q310]` | not captured | 18 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q34]` | 36 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q364]` | not captured | 15 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q75]` | not captured | 490 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +143,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Wang2022_reference/OrnithineOxoglurate_Wang2022_reference.svg" alt="OrnithineOxoglurate_Wang2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Wang2022_reference/OrnithineOxoglurate_Wang2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Wang2022_reference/OrnithineOxoglurate_Wang2022_reference_sim_controls.json"></dbs-fmusim>
 

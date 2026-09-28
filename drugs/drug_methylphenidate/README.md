@@ -5,7 +5,8 @@
 
 - **generic name:** methylphenidate
 - **ATC codes:** `N06BA04`
-- **DrugBank:** [DB00422](https://go.drugbank.com/drugs/DB00422)
+- **DrugBank:** [DB00422](https://go.drugbank.com/drugs/DB00422) · **PubChem:** [CID 4158](https://pubchem.ncbi.nlm.nih.gov/compound/4158)
+- **molar mass:** 233.3062 g/mol (C14H19NO2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ While its exact mechanism is unclear, methylphenidate (MPH) has been shown to ac
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Teuscher_2015_reference](drugs/drug_methylphenidate/Methylphenidate_Teuscher2015_reference.md) | Teuscher NS et al., Population pharmacokinetics of methylph…, Drug design, development an… (2015) | [10.2147/DDDT.S83234](https://doi.org/10.2147/DDDT.S83234) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Teuscher_2015_reference](drugs/drug_methylphenidate/Methylphenidate_Teuscher2015_reference.md) | 1-compartment, IV | 5 | Teuscher NS et al., Population pharmacokinetics of methylph…, Drug design, development an… (2015) | [10.2147/DDDT.S83234](https://doi.org/10.2147/DDDT.S83234) |
 
 ## ADME sites
 

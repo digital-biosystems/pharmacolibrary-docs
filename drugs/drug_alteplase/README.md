@@ -4,7 +4,7 @@
 
 - **generic name:** alteplase
 - **ATC codes:** `B01AD02`, `S01XA13`
-- **DrugBank:** [DB00009](https://go.drugbank.com/drugs/DB00009)
+- **DrugBank:** [DB00009](https://go.drugbank.com/drugs/DB00009) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

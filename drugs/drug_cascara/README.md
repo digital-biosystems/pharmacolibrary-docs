@@ -4,7 +4,7 @@
 
 - **generic name:** cascara
 - **ATC codes:** `A06AB07`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

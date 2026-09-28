@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[q 1]` (not captured vs 0.00711) and 4 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for indometacin's clearance and volume of distribution.**
+
+The model was built, but indometacin's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (slope), so that value has no SI equivalent. Extracted — indometacin: Q 0.8, slope 4.2 mg l -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q 1: this record has none, the second reading 0.00711; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Smyth JM; Collier PS; Darwish M; Millership JS; Halliday HL; Petersen S; et al. et al. (2004). British journal of clinical pharmacology 58

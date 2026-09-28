@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal; T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[dd]` (not captured vs 0.82) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 13.5, model 133); t6_deviations.**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — bisoprolol: CL/F 2.7 L/h, V 513 L, CL 0.0612.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dd: this record has none, the second reading 0.82. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Momčilović S; Milovanović JR; Janković SM; Jovanović A; Tasić-Otašević S; Stanojević D; et al. et al. (2019). Journal of cardiovascular pharmacology 73
@@ -26,6 +29,9 @@ Momčilović S; Milovanović JR; Janković SM; Jovanović A; Tasić-Otašević S
 
 ## Model component
 <dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Momilovi2019_reference" status="needs_review" stale="false" population="patients with acute coronary syndrome" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -137,6 +143,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference.svg" alt="Bisoprolol_Momilovi2019_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_sim_controls.json"></dbs-fmusim>
 

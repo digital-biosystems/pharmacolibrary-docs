@@ -4,7 +4,7 @@
 
 - **generic name:** alfa1 antitrypsin
 - **ATC codes:** `B02AB02`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

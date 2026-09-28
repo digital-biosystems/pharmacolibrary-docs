@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (tranexamic acid vs tranexamic_acid) and 11 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for tranexamic acid's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant.**
+
+The model was built, but tranexamic acid's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — tranexamic acid: CL 0.11, V1 8.21, V2 0.38, Q 9.64.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gilliot S; Ducloy-Bouthors AS; Loingeville F; Hennart B; Allorge D; Lebuffe G; et al. et al. (2022). Pharmaceutics 14
@@ -26,6 +29,9 @@ Gilliot S; Ducloy-Bouthors AS; Loingeville F; Hennart B; Allorge D; Lebuffe G; e
 
 ## Model component
 <dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Gilliot2022_01_1_134" status="model_quarantined" stale="false" population="parturients undergoing hemorrhagic cesarean delivery" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

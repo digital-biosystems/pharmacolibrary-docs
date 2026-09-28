@@ -4,7 +4,8 @@
 
 - **generic name:** carisbamate
 - **ATC codes:** `N03AX19`
-- **DrugBank:** [DB12338](https://go.drugbank.com/drugs/DB12338)
+- **DrugBank:** [DB12338](https://go.drugbank.com/drugs/DB12338) · **PubChem:** [CID 6918474](https://pubchem.ncbi.nlm.nih.gov/compound/6918474)
+- **molar mass:** 215.63 g/mol (C9H10ClNO3) — DrugBank
 - **groups:** investigational
 
 ## About

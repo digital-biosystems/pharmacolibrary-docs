@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The emicizumab model was quarantined because clearance, volume of distribution, absorption rate constant and lag time had no source values, and an absorption rate constant of 72.5 was invented.**
+
+The record lists CL/F 28.7, V/F 25.9 and ka 72.5 for emicizumab, but the model builder defaulted Cl, Vd, ka and Tlag because no values were reported in the source, so library placeholders would have been used. The absorption rate constant was invented — not reported in the source — and the absorption check failed with 'invented_absorption: not acceptable'. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization). Extracted — emicizumab: CL/F 28.7, V/F 25.9, kabs 72.5.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Retout S; Schmitt C; Petry C; Mercier F; Frey N et al. (2020). Clinical pharmacokinetics 59
@@ -26,6 +29,9 @@ Retout S; Schmitt C; Petry C; Mercier F; Frey N et al. (2020). Clinical pharmaco
 
 ## Model component
 <dbs-pgx drug="emicizumab" model-id="Emicizumab_Retout2020_estimate" status="model_quarantined" stale="false" population="adult and pediatric persons with hemophilia A" measured-compound="emicizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The two-compartment model for tranexamic acid was rejected because its second compartment is orphaned — no path links the dose to it, leaving the intercompartmental clearance CL2 (17.0 L/h) and peripheral volume V2 (11.1 L) disconnected from the model.**
+
+The record describes a two-compartment structure for tranexamic acid in Chinese cardiac-surgery patients, with clearance CL1 of 4.7 L/h, central volume V1 of 4.9 L, peripheral volume V2 of 11.1 L, and intercompartmental clearance CL2 of 17.0 L/h. The review found the second compartment unreachable: it has no connection from the administered dose, so the reported CL2 and V2 values do not describe a functioning part of the pharmacokinetic model. This structural defect was the sole reason for rejection; no other failed checks are recorded. Extracted — tranexamic acid: CL 4.7 L/h, V1 4.9 L, V2 11.1 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Liu Y; Zhou C; Lv H; Tian L; Jiang J; Shi J et al. (2025). Drug design, development and therapy 19
@@ -25,6 +27,9 @@ Liu Y; Zhou C; Lv H; Tian L; Jiang J; Shi J et al. (2025). Drug design, developm
 
 ## Model component
 <dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Liu2025_final" status="rejected" stale="false" population="Chinese adults undergoing cardiac surgery with cardiopulmonary bypass" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

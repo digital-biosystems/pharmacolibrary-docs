@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[q 1]` (not captured vs 0.835) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**Metoprolol's clearance, distribution volume, absorption rate constant and absorption lag time had no extracted values, so placeholder defaults stood in and the model was quarantined.**
+
+The record lists only Q (3.86), CL/F (29.7), V/F (17.1) and slope (1.79) for metoprolol, while clearance, volume of distribution, absorption rate constant and absorption lag time were left without values because the source paper reported none, so library placeholder values would have been used and the model was held back. The absorption rate constant was additionally flagged as invented, since it was defaulted rather than reported. The builder also assumed F=1 and Fm=1 without molar correction, parameterizing the model as apparent with first-order extravascular input. A second reader disagreed on the Q parameters, reading q 1 as 0.835 where this record has null and leaving q 2 empty where this record has 3.86. Extracted — metoprolol: Q 3.86, CL/F 29.7, V/F 17.1, slope 1.79.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q 1: this record has none, the second reading 0.835; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Taguchi M; Nozawa T; Mizumaki K; Inoue H; Tahara K; Takesono C; et al. et al. (2004). Biological & pharmaceutical bulletin 27
@@ -26,6 +29,9 @@ Taguchi M; Nozawa T; Mizumaki K; Inoue H; Tahara K; Takesono C; et al. et al. (2
 
 ## Model component
 <dbs-pgx drug="metoprolol" model-id="Metoprolol_Taguchi2004_reference" status="model_quarantined" stale="false" population="middle-aged and elderly Japanese patients routinely treated with metoprolol" measured-compound="metoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

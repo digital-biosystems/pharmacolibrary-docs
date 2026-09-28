@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['aceclofenac', "4'-hydroxyaceclofenac", 'metabolism'], ['aceclofenac', 'diclofenac', 'hydrolysis'], ['diclofenac', "4'-hydroxydiclofenac", 'metabolism'], ["4'-hydroxyaceclofenac", "4'-hydroxydiclofenac", 'hydrolysis']] vs [['aceclofenac', '4-hydroxyaceclofenac', 'metabolism'], ['aceclofenac', 'diclofenac', 'hydrolysis'], ['diclofenac', '4-hydroxydiclofenac', 'metabolism'], ['4-hydroxyaceclofenac', '4-hydroxydiclofenac', 'hydrolysis']]) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has aceclofenac → 4'-hydroxyaceclofenac (metabolism); aceclofenac → diclofenac (hydrolysis); diclofenac → 4'-hydroxydiclofenac (metabolism) …, the second reading aceclofenac → 4-hydroxyaceclofenac (metabolism); aceclofenac → diclofenac (hydrolysis); diclofenac → 4-hydroxydiclofenac (metabolism) …; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kim E; Ihm C; Kang W et al. (2016). Drug metabolism and pharmacokinetics 31
@@ -26,6 +29,9 @@ Kim E; Ihm C; Kang W et al. (2016). Drug metabolism and pharmacokinetics 31
 
 ## Model component
 <dbs-pgx drug="aceclofenac" model-id="Aceclofenac_Kim2016_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="aceclofenac" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

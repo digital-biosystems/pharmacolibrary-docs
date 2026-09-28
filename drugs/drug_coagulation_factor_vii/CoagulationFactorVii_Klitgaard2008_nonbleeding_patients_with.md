@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (recombinant activated factor VII vs rFVIIa) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. None of the extracted parameters is coagulation factor vii's own; they describe recombinant activated factor VII. Extracted — recombinant activated factor VII: CL 33 ml kg−1 h−1, Vss 174 ml kg−1, t1/2z 2.37 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has recombinant activated factor VII, the second reading rFVIIa; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Klitgaard T; Nielsen TG et al. (2008). British journal of clinical pharmacology 65
@@ -26,6 +29,9 @@ Klitgaard T; Nielsen TG et al. (2008). British journal of clinical pharmacology 
 
 ## Model component
 <dbs-pgx drug="coagulation factor VII" model-id="CoagulationFactorVii_Klitgaard2008_nonbleeding_patients_with" status="needs_review" stale="false" population="mixed (healthy volunteers, haemophilia, liver surgery, trauma)" measured-compound="recombinant activated factor VII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

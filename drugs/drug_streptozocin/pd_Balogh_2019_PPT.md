@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;streptozocin&quot;,&quot;href&quot;:&quot;drugs/drug_streptozocin/&quot;},{&quot;label&quot;:&quot;Balogh_2019 \u00b7 PD hind paw withdrawal threshold&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hind paw withdrawal threshold — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.958). The first reading is what the record holds.">cross-check: disputed</span>

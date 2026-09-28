@@ -4,7 +4,7 @@
 
 - **generic name:** alginic acid
 - **ATC codes:** `A02BX13`
-- **DrugBank:** [DB13518](https://go.drugbank.com/drugs/DB13518)
+- **DrugBank:** [DB13518](https://go.drugbank.com/drugs/DB13518) · **PubChem:** [CID 131704328](https://pubchem.ncbi.nlm.nih.gov/compound/131704328)
 - **groups:** approved, investigational, withdrawn
 
 ## About

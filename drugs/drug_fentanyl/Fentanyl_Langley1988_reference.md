@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (132 vs 86) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fentanyl: CL 132 L/h, V 76 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 132, the second reading 86; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-23 12:15:50.011720+00:00) predates the upstream re-run (2026-09-27 15:38:33.713511+00:00). Current validate status: `needs_review`.
 

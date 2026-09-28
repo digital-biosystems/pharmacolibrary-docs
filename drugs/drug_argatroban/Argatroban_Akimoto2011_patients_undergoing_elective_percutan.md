@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Akimoto K; Klinkhardt U; Zeiher A; Niethammer M; Harder S et al. (2011). Journal of clinical pharmacology 51
@@ -25,6 +25,9 @@ Akimoto K; Klinkhardt U; Zeiher A; Niethammer M; Harder S et al. (2011). Journal
 
 ## Model component
 <dbs-pgx drug="argatroban" model-id="Argatroban_Akimoto2011_patients_undergoing_elective_percutan" status="not_modelled" stale="false" population="patients undergoing elective percutaneous coronary intervention" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

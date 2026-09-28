@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The rolapitant record was rejected because the fosrolapitant-to-rolapitant hydrolysis link carries no parameter value, leaving the metabolite formation unquantified, and the reported AUC unit h×ng/mL could not be converted to SI.**
+
+The structure links fosrolapitant to rolapitant by hydrolysis, but the link parameter is recorded as none, so the metabolite has no quantitative connection to the dose — an unlinked metabolite. In addition, the reported exposure unit h×ng/mL for AUC0-t (67715.36) and AUC0-∞ (85607.66) is a unit that could not be converted to SI, so these exposure parameters arrived without an SI value. The remaining reported parameters (Cmax 139.11 ng/mL, t1/2 308.36 h, CL 7.92 L/h for rolapitant) are not implicated in the rejection. Extracted — rolapitant: Cmax 139 ng/mL, AUCt 6.77e+04 h×ng/mL, AUC∞ 8.56e+04 h×ng/mL, t1/2z 308 hour, CL 7.92 L/h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `fosrolapitant`, measured `rolapitant`.
 
@@ -27,6 +29,9 @@ Li Q; Mai J; Wu M; Zhang H; Yang X; Huang Y; et al. et al. (2026). Frontiers in 
 
 ## Model component
 <dbs-pgx drug="rolapitant" model-id="Rolapitant_Li2026_healthy_control" status="rejected" stale="false" population="Chinese subjects with moderate hepatic impairment and healthy controls" measured-compound="rolapitant" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,8 @@
 
 - **generic name:** quinupramine
 - **ATC codes:** `N06AA23`
-- **DrugBank:** [DB13246](https://go.drugbank.com/drugs/DB13246)
+- **DrugBank:** [DB13246](https://go.drugbank.com/drugs/DB13246) · **PubChem:** not captured
+- **molar mass:** 304.437 g/mol (C21H24N2) — DrugBank
 - **groups:** approved
 
 ## About
@@ -20,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Bouquet_1982_reference](drugs/drug_quinupramine/Quinupramine_Bouquet1982_reference.md) | Bouquet S et al., [Crossover pharmacokinetic study of qui…, L'Encephale (1982) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Bouquet_1982_reference](drugs/drug_quinupramine/Quinupramine_Bouquet1982_reference.md) | 1-compartment (no model) | 5 | Bouquet S et al., [Crossover pharmacokinetic study of qui…, L'Encephale (1982) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

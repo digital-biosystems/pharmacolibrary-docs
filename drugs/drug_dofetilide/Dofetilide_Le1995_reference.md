@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[ka]` (0.05 vs not captured) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dofetilide: Fab 92 %, CL 0.35 L/hr/kg, kabs 0.05 h -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ka: this record has 0.05, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Le Coz F; Funck-Brentano C; Morell T; Ghadanfar MM; Jaillon P et al. (1995). Clinical pharmacology and therapeutics 57
@@ -26,6 +29,9 @@ Le Coz F; Funck-Brentano C; Morell T; Ghadanfar MM; Jaillon P et al. (1995). Cli
 
 ## Model component
 <dbs-pgx drug="dofetilide" model-id="Dofetilide_Le1995_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="dofetilide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

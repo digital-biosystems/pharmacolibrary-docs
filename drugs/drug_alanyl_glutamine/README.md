@@ -5,7 +5,8 @@
 
 - **generic name:** alanyl glutamine
 - **ATC codes:** `B05XB02`
-- **DrugBank:** [DB11876](https://go.drugbank.com/drugs/DB11876)
+- **DrugBank:** [DB11876](https://go.drugbank.com/drugs/DB11876) · **PubChem:** [CID 123935](https://pubchem.ncbi.nlm.nih.gov/compound/123935)
+- **molar mass:** 217.225 g/mol (C8H15N3O4) — DrugBank
 - **groups:** investigational
 
 ## About
@@ -20,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Albers_1988_reference](drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_reference.md) | Albers S et al., Availability of amino acids supplied in…, Clinical science (London, E… (1988) | [10.1042/cs0750463](https://doi.org/10.1042/cs0750463) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Albers_1988_reference](drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_reference.md) | 1-compartment (no model) | 0 | Albers S et al., Availability of amino acids supplied in…, Clinical science (London, E… (1988) | [10.1042/cs0750463](https://doi.org/10.1042/cs0750463) |
 
 ## Pharmacodynamics (PD)
 

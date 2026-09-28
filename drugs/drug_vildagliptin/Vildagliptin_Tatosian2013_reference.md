@@ -5,7 +5,7 @@
 
 # vildagliptin — `Vildagliptin_Tatosian2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The vildagliptin record was rejected because its clearance of 60 mL/min is actually an estimated creatinine clearance (a renal function value, not the drug's clearance), and the derived volume of 0.303 L is physiologically implausible.**
+
+The parameter labelled 'estimated creatinine clearance' was recorded as the vildagliptin clearance (60.0 mL/min), a unit/scale extraction error since creatinine clearance is a patient renal function measure rather than the drug's systemic clearance. From this clearance and a half-life, the volume was back-calculated as V = CL·t½/ln2 = 0.303 L, a magnitude far outside the physiological window for vildagliptin distribution. A second reader disagreed on the half-life value, reading 9.49 where the record holds 3.5, and left the clearance (60) and another value (200) unconfirmed (null), so the extracted numbers are not consistently supported. Extracted — vildagliptin: CL 60 mL/min, V 0.303 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 60, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tatosian DA; Guo Y; Schaeffer AK; Gaibu N; Popa S; Stoch A; et al. et al. (2013). Diabetes therapy : research, treatment and education of diabetes and related disorders 4
@@ -25,6 +29,9 @@ Tatosian DA; Guo Y; Schaeffer AK; Gaibu N; Popa S; Stoch A; et al. et al. (2013)
 
 ## Model component
 <dbs-pgx drug="vildagliptin" model-id="Vildagliptin_Tatosian2013_reference" status="rejected" stale="false" population="" measured-compound="vildagliptin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -49,14 +56,22 @@ Tatosian DA; Guo Y; Schaeffer AK; Gaibu N; Popa S; Stoch A; et al. et al. (2013)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 60 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q41]` | 200 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 3.5 | 9.49 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

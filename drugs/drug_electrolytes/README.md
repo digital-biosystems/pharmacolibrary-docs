@@ -4,7 +4,7 @@
 
 - **generic name:** electrolytes
 - **ATC codes:** `B05BB01`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

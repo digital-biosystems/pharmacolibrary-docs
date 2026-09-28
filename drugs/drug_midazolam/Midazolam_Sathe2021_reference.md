@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 3 scholar param(s) emitted or defaulted — got 1 covered; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (midazolam vs unknown) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The midazolam model was quarantined because Vd, ka and Tlag had no extracted values and library defaults were substituted, and Q/F (26.6 L/h) and V2/F (130 L) were not covered.**
+
+No value for midazolam's volume of distribution, absorption rate constant and absorption lag time was reported, so placeholders stood in and the model was held back rather than published with invented numbers. The coverage check expected 3 parameters emitted or defaulted but obtained only 1, leaving Q/F and V2/F unrepresented. The record defines covariate effects (weight power 0.384, age power -0.217), but only the reference individual was simulated, so these effects were not exercised. The absorption was also flagged as invented: ka was defaulted, not reported in the source. Extracted — midazolam: CL/F 73.9 L/h, Q/F 26.6 L/h, V2/F 130 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Sathe AG; Othman AA; Mohamed MF et al. (2021). Journal of clinical pharmacology 61

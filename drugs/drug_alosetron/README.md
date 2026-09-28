@@ -4,7 +4,8 @@
 
 - **generic name:** alosetron
 - **ATC codes:** `A03AE01`
-- **DrugBank:** [DB00969](https://go.drugbank.com/drugs/DB00969)
+- **DrugBank:** [DB00969](https://go.drugbank.com/drugs/DB00969) · **PubChem:** [CID 2099](https://pubchem.ncbi.nlm.nih.gov/compound/2099)
+- **molar mass:** 294.351 g/mol (C17H18N4O) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

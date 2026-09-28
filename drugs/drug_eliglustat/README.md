@@ -5,7 +5,8 @@
 
 - **generic name:** eliglustat
 - **ATC codes:** `A16AX10`
-- **DrugBank:** [DB09039](https://go.drugbank.com/drugs/DB09039)
+- **DrugBank:** [DB09039](https://go.drugbank.com/drugs/DB09039) · **PubChem:** [CID 23652731](https://pubchem.ncbi.nlm.nih.gov/compound/23652731)
+- **molar mass:** 404.551 g/mol (C23H36N2O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

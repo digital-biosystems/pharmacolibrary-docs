@@ -5,7 +5,7 @@
 
 # angiotensin II — `AngiotensinIi_Moran1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The angiotensin II record was rejected because the extracted parameters are implausible: a clearance labelled 'Patient 1 V' of 1.4 ml/min and a volume labelled 'Patient 2 V' of 0.5 ml/min, with ml/min units on a volume, indicating a unit/scale extraction error.**
+
+The record lists two parameters for angiotensin II: CLu with the verbatim label 'Patient 1 V' at 1.4 ml/min, and V with the verbatim label 'Patient 2 V' at 0.5 ml/min. The volume parameter carries a flow unit (ml/min) rather than a volume unit, and the labels suggest the values were read from the wrong table entries, so the magnitudes fall outside the physiological window for this peptide. The second reader recorded no values for these fields (null for the 1.4 and 0.5 entries and for the 9.6 and 50 entries, with -44 where this record had none), leaving the comparisons uncomputable and the findings inconclusive on those points. Extracted — angiotensin ii: CLu 1.4 ml/min, V 0.5 ml/min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 9.6, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Moran SM; Myers BD et al. (1985). The Journal of clinical investigation 76
@@ -25,6 +29,9 @@ Moran SM; Myers BD et al. (1985). The Journal of clinical investigation 76
 
 ## Model component
 <dbs-pgx drug="angiotensin II" model-id="AngiotensinIi_Moran1985_reference" status="rejected" stale="false" population="" measured-compound="angiotensin_ii" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** apparent.
 
@@ -54,9 +61,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.0 (0/5 fields) | 5 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 9.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q24]` | 1.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q44]` | not captured | -44 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q56]` | 50 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 0.5 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

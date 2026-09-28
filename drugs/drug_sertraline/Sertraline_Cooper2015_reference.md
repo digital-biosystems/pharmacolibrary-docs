@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[absorption rate constant]` (0.895 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — sertraline: kabs 0.895 h -1, V 5.34e+03 l, CL 130 l h -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption rate constant: this record has 0.895, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Cooper JM; Duffull SB; Saiao AS; Isbister GK et al. (2015). British journal of clinical pharmacology 79
@@ -26,6 +29,9 @@ Cooper JM; Duffull SB; Saiao AS; Isbister GK et al. (2015). British journal of c
 
 ## Model component
 <dbs-pgx drug="sertraline" model-id="Sertraline_Cooper2015_reference" status="needs_review" stale="false" population="adults with sertraline overdose" measured-compound="sertraline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

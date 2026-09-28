@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['atropine', 'tropine', 'metabolism']] vs []) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has atropine → tropine (metabolism), the second reading none. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hinderling PH; Gundert-Remy U; Schmidlin O et al. (1985). Journal of pharmaceutical sciences 74
@@ -26,6 +29,9 @@ Hinderling PH; Gundert-Remy U; Schmidlin O et al. (1985). Journal of pharmaceuti
 
 ## Model component
 <dbs-pgx drug="atropine" model-id="Atropine_Hinderling1985_reference" status="rejected" stale="false" population="healthy males" measured-compound="atropine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

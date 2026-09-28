@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — disopyramide: t1/2β 2 hours, CL 3 ml/min./kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Pedersen LE; Hermansen K; Olesen HP; Rasmussen SN et al. (1986). Acta pharmacologica et toxicologica 58
@@ -25,6 +27,9 @@ Pedersen LE; Hermansen K; Olesen HP; Rasmussen SN et al. (1986). Acta pharmacolo
 
 ## Model component
 <dbs-pgx drug="disopyramide" model-id="Disopyramide_Pedersen1986_reference" status="needs_review" stale="false" population="pigs" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

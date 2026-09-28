@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[biological half-life]` (not captured vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — papaverine: V 15 % of the body weight.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of biological half-life: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ritschel WA; Hammer GV et al. (1977). International journal of clinical pharmacology and biopharmacy 15
 
 ## Model component
 <dbs-pgx drug="papaverine" model-id="Papaverine_Ritschel1977_reference" status="needs_review" stale="false" population="man" measured-compound="papaverine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;tolbutamide&quot;,&quot;href&quot;:&quot;drugs/drug_tolbutamide/&quot;},{&quot;label&quot;:&quot;Jonkers_2001 \u00b7 PD cytoplasmic Ca2+&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolbutamide_Shi2021_reference&quot;,&quot;label&quot;:&quot;Shi_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

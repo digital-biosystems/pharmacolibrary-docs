@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — capecitabine: tlag 0.28 h, kabs 2.07 h -1, CL 294 L/h, Q 67 %, V2 55 %.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sáez-Belló M; Mangas-Sanjuán V; Martínez-Gómez MA; López-Montenegro Soria MÁ; Climente-Martí M; Merino-Sanjuán M et al. (2021). British journal of clinical pharmacology 87
@@ -25,6 +27,9 @@ Sáez-Belló M; Mangas-Sanjuán V; Martínez-Gómez MA; López-Montenegro Soria 
 
 ## Model component
 <dbs-pgx drug="capecitabine" model-id="Capecitabine_SezBell2021_population_pk_model_estimates_shrin" status="needs_review" stale="false" population="adults with colorectal cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

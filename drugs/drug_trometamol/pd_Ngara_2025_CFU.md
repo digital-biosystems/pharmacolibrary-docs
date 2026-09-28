@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05B&quot;,&quot;href&quot;:&quot;atc/B05B.md&quot;},{&quot;label&quot;:&quot;trometamol&quot;,&quot;href&quot;:&quot;drugs/drug_trometamol/&quot;},{&quot;label&quot;:&quot;Ngara_2025 \u00b7 PD colony-forming units&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # colony-forming units — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.808). The first reading is what the record holds.">cross-check: disputed</span>

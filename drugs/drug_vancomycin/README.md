@@ -5,7 +5,8 @@
 
 - **generic name:** vancomycin
 - **ATC codes:** `A07AA09`, `J01XA01`, `S01AA28`
-- **DrugBank:** [DB00512](https://go.drugbank.com/drugs/DB00512)
+- **DrugBank:** [DB00512](https://go.drugbank.com/drugs/DB00512) · **PubChem:** [CID 14969](https://pubchem.ncbi.nlm.nih.gov/compound/14969)
+- **molar mass:** 1449.254 g/mol (C66H75Cl2N9O24) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,11 +25,11 @@ As of January 29 2018, CutisPharma's Firvanq is the only FDA approved vancomycin
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Goyal_2022_final_pk_model](drugs/drug_vancomycin/Vancomycin_Goyal2022_final_pk_model.md) | Goyal RK et al., Population Pharmacokinetics of Vancomyc…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.873439](https://doi.org/10.3389/fphar.2022.873439) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Goyal_2022_population_typical_value](drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value.md) | Goyal RK et al., Population Pharmacokinetics of Vancomyc…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.873439](https://doi.org/10.3389/fphar.2022.873439) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q47 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Yoon_2023_reference](drugs/drug_vancomycin/Vancomycin_Yoon2023_reference.md) | Yoon S et al., Model-informed precision dosing in vanc…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1252757](https://doi.org/10.3389/fphar.2023.1252757) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Goyal_2022_final_pk_model](drugs/drug_vancomycin/Vancomycin_Goyal2022_final_pk_model.md) | 2-compartment, IV | 4 | Goyal RK et al., Population Pharmacokinetics of Vancomyc…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.873439](https://doi.org/10.3389/fphar.2022.873439) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Goyal_2022_population_typical_value](drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value.md) | 2-compartment, IV | 4 | Goyal RK et al., Population Pharmacokinetics of Vancomyc…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.873439](https://doi.org/10.3389/fphar.2022.873439) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q47 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Yoon_2023_reference](drugs/drug_vancomycin/Vancomycin_Yoon2023_reference.md) | 2-compartment (no model) | 5 | Yoon S et al., Model-informed precision dosing in vanc…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1252757](https://doi.org/10.3389/fphar.2023.1252757) |
 
 ## Pharmacodynamics (PD)
 

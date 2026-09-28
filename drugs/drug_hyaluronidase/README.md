@@ -4,7 +4,7 @@
 
 - **generic name:** hyaluronidase
 - **ATC codes:** `B06AA03`
-- **DrugBank:** [DB14740](https://go.drugbank.com/drugs/DB14740)
+- **DrugBank:** [DB14740](https://go.drugbank.com/drugs/DB14740) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chang MJ; Jin B; Chae JW; Yun HY; Kim ES; Lee YJ; et al. et al. (2017). International journal of antimicrobial agents 49
@@ -25,6 +27,9 @@ Chang MJ; Jin B; Chae JW; Yun HY; Kim ES; Lee YJ; et al. et al. (2017). Internat
 
 ## Model component
 <dbs-pgx drug="kanamycin" model-id="Kanamycin_Chang2017v2_reference" status="curated_candidate" stale="false" population="patients with multi-drug-resistant tuberculosis" measured-compound="kanamycin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -116,6 +121,8 @@ Chang MJ; Jin B; Chae JW; Yun HY; Kim ES; Lee YJ; et al. et al. (2017). Internat
 </div><figure class="pk-models-diagram"><img src="drugs/drug_kanamycin/Kanamycin_Chang2017v2_reference/Kanamycin_Chang2017v2_reference.svg" alt="Kanamycin_Chang2017v2_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.305 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_kanamycin/Kanamycin_Chang2017v2_reference/Kanamycin_Chang2017v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_kanamycin/Kanamycin_Chang2017v2_reference/Kanamycin_Chang2017v2_reference_sim_controls.json"></dbs-fmusim>
 

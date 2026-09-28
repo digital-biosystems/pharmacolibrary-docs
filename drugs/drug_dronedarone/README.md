@@ -4,7 +4,8 @@
 
 - **generic name:** dronedarone
 - **ATC codes:** `C01BD07`
-- **DrugBank:** [DB04855](https://go.drugbank.com/drugs/DB04855)
+- **DrugBank:** [DB04855](https://go.drugbank.com/drugs/DB04855) · **PubChem:** [CID 208898](https://pubchem.ncbi.nlm.nih.gov/compound/208898)
+- **molar mass:** 556.756 g/mol (C31H44N2O5S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

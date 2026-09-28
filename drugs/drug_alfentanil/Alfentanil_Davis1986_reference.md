@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_beta; T1_t_half_terminal.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[alfentanil's apparent volume of distribution in adults]` (not captured vs 1.0) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 2.48, model 970); t6_deviations.**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (V/F), so that value has no SI equivalent. None of the extracted parameters is alfentanil's own; they describe sufentanil. Extracted — sufentanil: CL 11.3 ml/min/kg, V 0.39 L/kg, V/F 4.5 times bodyweight.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alfentanil's apparent volume of distribution in adults: this record has none, the second reading 1.0; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Davis PJ; Cook DR et al. (1986). Clinical pharmacokinetics 11
@@ -26,6 +29,9 @@ Davis PJ; Cook DR et al. (1986). Clinical pharmacokinetics 11
 
 ## Model component
 <dbs-pgx drug="alfentanil" model-id="Alfentanil_Davis1986_reference" status="needs_review" stale="false" population="patients undergoing coronary revascularisation procedures" measured-compound="sufentanil" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -160,6 +166,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference.svg" alt="Alfentanil_Davis1986_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_sim_controls.json"></dbs-fmusim>
 

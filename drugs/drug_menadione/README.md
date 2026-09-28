@@ -4,7 +4,8 @@
 
 - **generic name:** menadione
 - **ATC codes:** `B02BA02`
-- **DrugBank:** [DB00170](https://go.drugbank.com/drugs/DB00170)
+- **DrugBank:** [DB00170](https://go.drugbank.com/drugs/DB00170) · **PubChem:** [CID 4055](https://pubchem.ncbi.nlm.nih.gov/compound/4055)
+- **molar mass:** 172.18 g/mol (C11H8O2) — DrugBank
 - **groups:** approved, nutraceutical
 
 ## About

@@ -5,7 +5,7 @@
 
 # digoxin — `Digoxin_Gaspar2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The digoxin two-compartment record was held back because the absorption rate constant ka and lag time were not reported in the source and library defaults were substituted, an invented absorption deemed not acceptable.**
+
+The extracted digoxin parameters (CL/F 114.64 L/h, V1/F 14.9 L, V2/F 145.7 L, Q/F 52.02 L/h) are present, but ka and Tlag are missing from the source, so placeholder defaults were used — the model builder invented an absorption step not reported in the paper. The model also assumes F=1 and Fm=1 with no molar correction, using an apparent (/F) parameterization that implies extravascular first-order dosing. A second reader additionally reported values for four fields (77.2, 8, 1.59, 0.282) that this record left empty, so the record is incomplete relative to the source. Extracted — digoxin: CL/F 115 L/h, V1/F 14.9 L, V2/F 146 L, Q/F 52 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has none, the second reading 77.2; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gaspar F; Jacost-Descombes C; Gosselin P; Reny JL; Guidi M; Csajka C; Samer C; Daali Y; Terrier J et al. (2025). Clinical pharmacokinetics 64
@@ -25,6 +29,9 @@ Gaspar F; Jacost-Descombes C; Gosselin P; Reny JL; Guidi M; Csajka C; Samer C; D
 
 ## Model component
 <dbs-pgx drug="digoxin" model-id="Digoxin_Gaspar2025_reference" status="needs_review" stale="false" population="" measured-compound="digoxin" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -62,9 +69,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.636 (7/11 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | not captured | 77.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q26]` | not captured | 8 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q310]` | not captured | 1.59 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | not captured | 0.282 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -132,6 +148,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_digoxin/Digoxin_Gaspar2025_reference/Digoxin_Gaspar2025_reference.svg" alt="Digoxin_Gaspar2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_digoxin/Digoxin_Gaspar2025_reference/Digoxin_Gaspar2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_digoxin/Digoxin_Gaspar2025_reference/Digoxin_Gaspar2025_reference_sim_controls.json"></dbs-fmusim>
 

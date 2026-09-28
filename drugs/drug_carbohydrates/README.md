@@ -4,7 +4,7 @@
 
 - **generic name:** carbohydrates
 - **ATC codes:** `B05BA03`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

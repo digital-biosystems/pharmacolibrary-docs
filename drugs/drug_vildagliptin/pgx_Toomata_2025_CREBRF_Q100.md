@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;vildagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_vildagliptin/&quot;},{&quot;label&quot;:&quot;Toomata_2025 \u00b7 PGx CREBRF&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vildagliptin_Tatosian2013_reference&quot;,&quot;label&quot;:&quot;Tatosian_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vildagliptin/Vildagliptin_Tatosian2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

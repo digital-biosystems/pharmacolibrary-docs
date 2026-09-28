@@ -4,7 +4,8 @@
 
 - **generic name:** centhaquine
 - **ATC codes:** `C01CA28`
-- **DrugBank:** [DB16122](https://go.drugbank.com/drugs/DB16122)
+- **DrugBank:** [DB16122](https://go.drugbank.com/drugs/DB16122) · **PubChem:** not captured
+- **molar mass:** 331.463 g/mol (C22H25N3) — DrugBank
 - **groups:** investigational
 
 ## About

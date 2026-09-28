@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[tl/-8]` (not captured vs 7.9) — not a structural parameter.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**CL and V have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — bleomycin: CL 46.5, V 17.2.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of tl/-8: this record has none, the second reading 7.9. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Hall_1982)

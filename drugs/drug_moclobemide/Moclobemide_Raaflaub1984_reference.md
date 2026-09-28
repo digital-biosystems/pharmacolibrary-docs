@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (44 vs not captured) and 5 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — moclobemide: t1/2β 1 h, Fab 44 %, tmax 1 h, CL 63.5 l/h, tlag 0.202 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 44, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Raaflaub J; Haefelfinger P; Trautmann KH et al. (1984). Arzneimittel-Forschung 34
 
 ## Model component
 <dbs-pgx drug="moclobemide" model-id="Moclobemide_Raaflaub1984_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="moclobemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

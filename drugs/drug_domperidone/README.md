@@ -5,7 +5,8 @@
 
 - **generic name:** domperidone
 - **ATC codes:** `A03FA03`
-- **DrugBank:** [DB01184](https://go.drugbank.com/drugs/DB01184)
+- **DrugBank:** [DB01184](https://go.drugbank.com/drugs/DB01184) · **PubChem:** [CID 3151](https://pubchem.ncbi.nlm.nih.gov/compound/3151)
+- **molar mass:** 425.911 g/mol (C22H24ClN5O2) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Dailly_2008_reference](drugs/drug_domperidone/Domperidone_Dailly2008_reference.md) | Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008) | [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Dailly_2008_reference](drugs/drug_domperidone/Domperidone_Dailly2008_reference.md) | 1-compartment (no model) | 3 | Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008) | [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1) |
 
 ## Pharmacogenomics (PGx)
 

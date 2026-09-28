@@ -4,7 +4,8 @@
 
 - **generic name:** gepirone
 - **ATC codes:** `N06AX19`
-- **DrugBank:** [DB12184](https://go.drugbank.com/drugs/DB12184)
+- **DrugBank:** [DB12184](https://go.drugbank.com/drugs/DB12184) · **PubChem:** [CID 55191](https://pubchem.ncbi.nlm.nih.gov/compound/55191)
+- **molar mass:** 359.474 g/mol (C19H29N5O2) — DrugBank
 - **groups:** approved
 
 ## About

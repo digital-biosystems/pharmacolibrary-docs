@@ -5,7 +5,7 @@
 
 # prednisone — `Prednisone_Sassen2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The prednisone model was held back because its absorption rate constant ka and Tlag are not in the source, so defaults were substituted, and an assumed first-order absorption with F=1 was invented.**
+
+The record reports only CL/F of 86.0 L/h/70 kg and V/F of 695 L/70 kg for prednisone; ka and Tlag are missing from the source, so library defaults would have been used and the model was held back. The absorption input — a first-order depot with F=1, Fm=1 and no molar correction under an apparent (/F) parameterization implying extravascular dosing — was assumed rather than reported, and the invented absorption was judged not acceptable. Additionally, the second reader returned no value for several extracted numbers (178.4, 86, 695), so those comparisons could not be computed. Extracted — prednisone: CL/F 86 L/h/70 kg, V/F 695 L/70 kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 178.4, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Sassen SDT; Mathôt RAA; Pieters R; de Haas V; Kaspers GJL; van den Bos C; et al. et al. (2020). Clinical infectious diseases : an official publication of the Infectious Diseases Society of America 71
@@ -25,6 +29,9 @@ Sassen SDT; Mathôt RAA; Pieters R; de Haas V; Kaspers GJL; van den Bos C; et al
 
 ## Model component
 <dbs-pgx drug="prednisone" model-id="Prednisone_Sassen2020_reference" status="needs_review" stale="false" population="" measured-compound="prednisone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +62,23 @@ Sassen SDT; Mathôt RAA; Pieters R; de Haas V; Kaspers GJL; van den Bos C; et al
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q19]` | 178.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 86 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q316]` | 0.46 | 0.46 | mismatch |
+| `gpt-oss:120b` | `values[Q352]` | 695 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +143,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_prednisone/Prednisone_Sassen2020_reference/Prednisone_Sassen2020_reference.svg" alt="Prednisone_Sassen2020_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_prednisone/Prednisone_Sassen2020_reference/Prednisone_Sassen2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_prednisone/Prednisone_Sassen2020_reference/Prednisone_Sassen2020_reference_sim_controls.json"></dbs-fmusim>
 

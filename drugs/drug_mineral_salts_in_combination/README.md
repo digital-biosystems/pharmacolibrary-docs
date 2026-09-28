@@ -4,7 +4,7 @@
 
 - **generic name:** mineral salts in combination
 - **ATC codes:** `A06AD10`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

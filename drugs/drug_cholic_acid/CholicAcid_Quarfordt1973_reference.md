@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (cholic acid vs cholic_acid) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has cholic acid, the second reading cholic_acid; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Quarfordt SH; Greenfield MF et al. (1973). The Journal of clinical investigation 52
@@ -26,6 +29,9 @@ Quarfordt SH; Greenfield MF et al. (1973). The Journal of clinical investigation
 
 ## Model component
 <dbs-pgx drug="cholic acid" model-id="CholicAcid_Quarfordt1973_reference" status="rejected" stale="false" population="normal humans and a patient with macronodular cirrhosis" measured-compound="cholesterol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

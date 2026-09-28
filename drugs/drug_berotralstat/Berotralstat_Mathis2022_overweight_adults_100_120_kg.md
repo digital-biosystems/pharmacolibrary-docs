@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[accumulation ratio]` (not captured vs 4.15) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUC, Cmax and AUCSS), so that value has no SI equivalent.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of accumulation ratio: this record has none, the second reading 4.15. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Mathis A; Sale M; Cornpropst M; Sheridan WP; Ma SC et al. (2022). Clinical and translational science 15
@@ -26,6 +29,9 @@ Mathis A; Sale M; Cornpropst M; Sheridan WP; Ma SC et al. (2022). Clinical and t
 
 ## Model component
 <dbs-pgx drug="berotralstat" model-id="Berotralstat_Mathis2022_overweight_adults_100_120_kg" status="rejected" stale="false" population="healthy subjects and patients with hereditary angioedema" measured-compound="berotralstat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

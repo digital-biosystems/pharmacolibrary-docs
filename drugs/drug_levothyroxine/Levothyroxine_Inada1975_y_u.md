@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 3 scholar param(s) emitted or defaulted — got 2 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (thyroxine and triiodothyronine vs thyroxine) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The levothyroxine parent–metabolite model was held back because levothyroxine's clearance had no extracted value and a library placeholder was used, with the k12 rate constant (0.0488) also uncovered and the structure not matched.**
+
+The record reports levothyroxine's volume of distribution (38.3 L), elimination rate constant (0.505 per day) and the metabolite (triiodothyronine) volume (16.9 L), but no clearance for levothyroxine, so a library placeholder stood in and the model was quarantined rather than published. The parameter-coverage check expected three parameters emitted or defaulted but only two were covered, with k12 (K₁₂ = 0.0488) neither emitted nor defaulted. The structure check also failed: the parent–metabolite topology (levothyroxine metabolized to triiodothyronine via K12) did not match the single-compartment disposition structure that was applied. Additionally, a reported unit could not be converted to SI, so that parameter reached the build without an SI value; a second reader also disagreed on whether the link is metabolism or interconversion and on the primary analyte. Extracted — levothyroxine: V 38.3 liter, kel 0.505 per day, V3 16.9 liter, k12 0.0488.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has thyroxine and triiodothyronine, the second reading thyroxine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 23:22:39.848638+00:00) predates the upstream re-run (2026-09-24 00:18:54.716791+00:00). Current validate status: `needs_review`.
 

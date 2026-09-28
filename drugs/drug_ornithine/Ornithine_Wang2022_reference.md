@@ -5,7 +5,7 @@
 
 # Ornithine — `Ornithine_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The ornithine model was held back because the absorption rate constant ka and lag time Tlag were not reported in the source and defaults were substituted, so an invented first-order absorption was judged not acceptable.**
+
+The record for ornithine reports only apparent parameters, CL/F = 14.9 L/h and V = 33.2 L, with F = 1 and Fm = 1 assumed and no molar correction, implying extravascular dosing with first-order depot input. The absorption rate constant ka was not reported in the source, so a default value was substituted, and Tlag was likewise left at a default; this invented absorption was ruled not acceptable. A second reader also disagreed on several extracted values, reading 18, 490 and 15 where this record had none, and 36 where this record had 36 versus none. Extracted — ornithine: CL/F 14.9 L/h, V 33.2 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q310: this record has none, the second reading 18; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang X; Vilchez RA et al. (2022). Clinical pharmacokinetics 61
@@ -25,6 +29,9 @@ Wang X; Vilchez RA et al. (2022). Clinical pharmacokinetics 61
 
 ## Model component
 <dbs-pgx drug="Ornithine" model-id="Ornithine_Wang2022_reference" status="needs_review" stale="false" population="" measured-compound="ornithine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -60,9 +67,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q310]` | not captured | 18 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | not captured | 490 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q34]` | 36 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q364]` | not captured | 15 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +143,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_ornithine/Ornithine_Wang2022_reference/Ornithine_Wang2022_reference.svg" alt="Ornithine_Wang2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_ornithine/Ornithine_Wang2022_reference/Ornithine_Wang2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ornithine/Ornithine_Wang2022_reference/Ornithine_Wang2022_reference_sim_controls.json"></dbs-fmusim>
 

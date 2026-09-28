@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (0.63 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — paracetamol: CL 352 ml/min, Fab 0.63 after 500 mg, V 6.35 liters, tlag 4.2 min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.63, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Rawlins MD; Henderson DB; Hijab AR et al. (1977). European journal of clinical pharmacology 11

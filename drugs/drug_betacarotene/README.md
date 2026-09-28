@@ -4,7 +4,8 @@
 
 - **generic name:** betacarotene
 - **ATC codes:** `A11CA02`, `D02BB01`
-- **DrugBank:** [DB06755](https://go.drugbank.com/drugs/DB06755)
+- **DrugBank:** [DB06755](https://go.drugbank.com/drugs/DB06755) · **PubChem:** [CID 5280489](https://pubchem.ncbi.nlm.nih.gov/compound/5280489)
+- **molar mass:** 536.888 g/mol (C40H56) — DrugBank
 - **groups:** approved, nutraceutical
 
 ## About

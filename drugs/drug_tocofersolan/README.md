@@ -4,7 +4,7 @@
 
 - **generic name:** tocofersolan
 - **ATC codes:** `A11HA08`
-- **DrugBank:** [DB11635](https://go.drugbank.com/drugs/DB11635)
+- **DrugBank:** [DB11635](https://go.drugbank.com/drugs/DB11635) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

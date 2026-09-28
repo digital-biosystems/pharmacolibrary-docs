@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q189 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (metformin vs unknown) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**AUC/dose has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax/dose), so that value has no SI equivalent. Extracted — metformin: CL/F 96.6 L/h/70 kg, V/F 545 L, kabs 0.942 1/h, AUC/dose 6.29e+03, Cmax/dose 828 μg/L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ailabouni AS; Halpin K; Boone EC; Gaedigk A; Nadai T; Irie K; et al. et al. (2026). Pediatric research

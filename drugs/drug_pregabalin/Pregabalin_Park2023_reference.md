@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Park M; Choi S; Han S; Shin W; Kim A; Han S; et al. et al. (2023). Translational and clinical pharmacology 31
@@ -25,6 +27,9 @@ Park M; Choi S; Han S; Shin W; Kim A; Han S; et al. et al. (2023). Translational
 
 ## Model component
 <dbs-pgx drug="pregabalin" model-id="Pregabalin_Park2023_reference" status="rejected" stale="false" population="subjects with reduced renal function" measured-compound="pregabalin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

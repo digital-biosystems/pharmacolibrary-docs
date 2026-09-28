@@ -4,7 +4,7 @@
 
 - **generic name:** glucose
 - **ATC codes:** `B05CX01`, `V04CA02`, `V06DC01`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

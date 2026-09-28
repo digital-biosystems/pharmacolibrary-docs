@@ -4,7 +4,7 @@
 
 - **generic name:** codeine and ibuprofen
 - **ATC codes:** `N02AJ08`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

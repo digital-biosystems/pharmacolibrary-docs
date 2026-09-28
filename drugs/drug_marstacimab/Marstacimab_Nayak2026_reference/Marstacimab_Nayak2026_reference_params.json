@@ -1,0 +1,27 @@
+{
+ "model_id": "Marstacimab_Nayak2026_reference",
+ "note": "Values for the shared PK_3C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.222222222222222e-09,
+  "F": 1.0,
+  "VdPerKg": 5.157142857142857e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 3.7626962142197606e-07,
+  "k21": 2.7221108884435537e-07,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662001
+ },
+ "reference_peaks": {
+  "central.C": 0.0014988498418437848
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3C",
+ "template_fmu": "PK_3C.fmu"
+}

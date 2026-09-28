@@ -5,7 +5,8 @@
 
 - **generic name:** floxuridine
 - **ATC codes:** `L01BC09`
-- **DrugBank:** [DB00322](https://go.drugbank.com/drugs/DB00322)
+- **DrugBank:** [DB00322](https://go.drugbank.com/drugs/DB00322) · **PubChem:** [CID 5790](https://pubchem.ncbi.nlm.nih.gov/compound/5790)
+- **molar mass:** 246.1924 g/mol (C9H11FN2O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Port_1999_rats with Morris hepatoma M3924A](drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md) | Port R et al., Local disposition kinetics of floxuridi…, Cancer chemotherapy and pha… (1999) | [10.1007/s002800050946](https://doi.org/10.1007/s002800050946) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Port_1999_rats with Morris hepatoma M3924A](drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md) | — (no model) | 0 | Port R et al., Local disposition kinetics of floxuridi…, Cancer chemotherapy and pha… (1999) | [10.1007/s002800050946](https://doi.org/10.1007/s002800050946) |
 
 ## Pharmacodynamics (PD)
 

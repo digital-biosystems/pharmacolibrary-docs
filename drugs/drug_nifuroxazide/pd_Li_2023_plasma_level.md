@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;nifuroxazide&quot;,&quot;href&quot;:&quot;drugs/drug_nifuroxazide/&quot;},{&quot;label&quot;:&quot;Li_2023 \u00b7 PD AST&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # AST — PD  <span class="pk-badge pk-badge--green">extracted</span>

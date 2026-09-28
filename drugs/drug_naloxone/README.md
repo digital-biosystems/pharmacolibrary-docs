@@ -5,7 +5,8 @@
 
 - **generic name:** naloxone
 - **ATC codes:** `A06AH04`, `N02AA53`, `N02AA55`, `N02AD51`, `N02AX51`, `V03AB15`
-- **DrugBank:** [DB01183](https://go.drugbank.com/drugs/DB01183)
+- **DrugBank:** [DB01183](https://go.drugbank.com/drugs/DB01183) · **PubChem:** [CID 5284596](https://pubchem.ncbi.nlm.nih.gov/compound/5284596)
+- **molar mass:** 327.3743 g/mol (C19H21NO4) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -30,9 +31,9 @@ Naloxone has been used off-label for the treatment of neuraxial opioid-induced p
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gu_2023_reference](drugs/drug_naloxone/Naloxone_Gu2023_reference.md) | Gu M et al., Population pharmacokinetics of buprenor…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089862](https://doi.org/10.3389/fphar.2023.1089862) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gu_2023_reference](drugs/drug_naloxone/Naloxone_Gu2023_reference.md) | parent + metabolite (no model) | 0 | Gu M et al., Population pharmacokinetics of buprenor…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089862](https://doi.org/10.3389/fphar.2023.1089862) |
 
 ## Pharmacodynamics (PD)
 

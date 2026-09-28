@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12C&quot;,&quot;href&quot;:&quot;atc/A12C.md&quot;},{&quot;label&quot;:&quot;zinc&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/&quot;},{&quot;label&quot;:&quot;Giesy_1980 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zinc_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zinc_Giesy1980_reference&quot;,&quot;label&quot;:&quot;Giesy_1980_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Giesy1980_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zinc_Cao2025_reference&quot;,&quot;label&quot;:&quot;Cao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Cao2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zinc_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zinc_Giesy1980_reference&quot;,&quot;label&quot;:&quot;Giesy_1980_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Giesy1980_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zinc_Cao2025_reference&quot;,&quot;label&quot;:&quot;Cao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Cao2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
+**Css has no unit.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — zinc: Css 12.5 micrograms Cd, CL 0.011 L/h/kg, V 0.065 L/kg, kabs 2.6 h−1, tlag 0.235 h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Giesy JP; Bowling JW; Kania HJ et al. (1980). Archives of environmental contamination and toxicology 9
@@ -25,6 +29,9 @@ Giesy JP; Bowling JW; Kania HJ et al. (1980). Archives of environmental contamin
 
 ## Model component
 <dbs-pgx drug="zinc" model-id="Zinc_Giesy1980_reference" status="needs_review" stale="false" population="freshwater crayfish" measured-compound="zinc" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

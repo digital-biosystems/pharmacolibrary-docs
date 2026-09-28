@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The lansoprazole record lacks a distribution volume and any clearance/elimination parameter, and a structural parameter's L/kg unit could not be converted to SI, so it is not a compartmental population PK model.**
+
+The paper (Sakurai_2007) reports no distribution volume and no clearance or elimination rate for lansoprazole, so the one-compartment structure is not a compartmental population PK model; it is an exposure/outcome paper. A structural parameter was reported in L/kg, a unit that could not be converted to SI units, so the parameter entered the record without an SI value and failed the dimensional check. A second reader also disagreed on the parameterization (apparent versus mechanistic) and on which parameters exist: this record has q1 = 0.181, q5 = 0.179 and s add = 2.50 with q2 and q3 absent, while the second reader read q2 = 0.154 and q3 = 0.547 with q1, q5 and s add absent. Extracted — lansoprazole: Q 0.11 l/kg, Q3 0.612.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Sakurai Y; Hirayama M; Hashimoto M; Tanaka T; Hasegawa S; Irie S; et al. et al. (2007). Biological & pharmaceutical bulletin 30
@@ -26,6 +29,9 @@ Sakurai Y; Hirayama M; Hashimoto M; Tanaka T; Hasegawa S; Irie S; et al. et al. 
 
 ## Model component
 <dbs-pgx drug="lansoprazole" model-id="Lansoprazole_Sakurai2007_2_compartment" status="rejected" stale="false" population="healthy Japanese males" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

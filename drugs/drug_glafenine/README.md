@@ -4,7 +4,8 @@
 
 - **generic name:** glafenine
 - **ATC codes:** `N02BG03`
-- **DrugBank:** [DB08963](https://go.drugbank.com/drugs/DB08963)
+- **DrugBank:** [DB08963](https://go.drugbank.com/drugs/DB08963) · **PubChem:** not captured
+- **molar mass:** 372.802 g/mol (C19H17ClN2O4) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

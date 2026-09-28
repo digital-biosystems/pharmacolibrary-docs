@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q21]` (74.3 vs 1.15) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The tolvaptan record was held back because the absorption rate constant ka and lag time Tlag were not reported in the source, so placeholder values were substituted and an absorption input was effectively invented for the apparent (/F) parameterization.**
+
+The record reports tolvaptan CL/F of 5.36 mL/min/kg and V/F of 370.2486 L from a secondary review source, but ka and Tlag were missing and placeholder values were substituted, so a first-order absorption input not present in the source was assumed. The parameterization is apparent (F=1, Fm=1, no molar correction), implying extravascular dosing. A second reader also disagreed on several extracted values (74.3 vs 1.15; 28 vs 315; 3.0 vs null; null vs 20), so those quantities remain inconclusive. Extracted — tolvaptan: CL/F 5.36 mL/min/kg, V/F 370 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has 74.3, the second reading 1.15; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Bhatt PR; McNeely EB; Lin TE; Adams KF; Patterson JH et al. (2014). Journal of clinical medicine 3

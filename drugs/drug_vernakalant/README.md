@@ -5,7 +5,8 @@
 
 - **generic name:** vernakalant
 - **ATC codes:** `C01BG11`
-- **DrugBank:** [DB06217](https://go.drugbank.com/drugs/DB06217)
+- **DrugBank:** [DB06217](https://go.drugbank.com/drugs/DB06217) · **PubChem:** [CID 9930049](https://pubchem.ncbi.nlm.nih.gov/compound/9930049)
+- **molar mass:** 349.471 g/mol (C20H31NO4) — DrugBank
 - **groups:** approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Mao_2012_reference](drugs/drug_vernakalant/Vernakalant_Mao2012_reference.md) | Mao ZL et al., Population pharmacokinetics of vernakal…, Journal of clinical pharmac… (2012) | [10.1177/0091270011408425](https://doi.org/10.1177/0091270011408425) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Mao_2012_reference](drugs/drug_vernakalant/Vernakalant_Mao2012_reference.md) | 1-compartment (no model) | 2 | Mao ZL et al., Population pharmacokinetics of vernakal…, Journal of clinical pharmac… (2012) | [10.1177/0091270011408425](https://doi.org/10.1177/0091270011408425) |
 
 ## ADME sites
 

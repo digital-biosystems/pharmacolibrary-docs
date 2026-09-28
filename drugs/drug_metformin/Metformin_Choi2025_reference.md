@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q18]` (not captured vs 21) and 3 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**This two-compartment metformin model was rejected because one compartment has no path from the dose, and the second reader extracted different values for several parameters (e.g. 21 vs none, 5.52 vs none, 24.8 vs none, 75.2 vs none).**
+
+The record describes a two-compartment metformin model with CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L and absorption rate constant ka 0.006 h-1, but the structure check found an unreachable or orphan compartment, i.e. a compartment with no connection from the administered dose. The second reader disagreed on several extracted values: this record left them empty where the second reader read 21, 24.8 and 75.2, and recorded 5.52 where the second reader read none. These unresolved disagreements on the parameter values, together with the structural defect, led to rejection. Extracted — metformin: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q18: this record has none, the second reading 21; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Choi S; Seo J; Park S; Kim NY; Kim H; Lim HS et al. (2025). Frontiers in pharmacology 16

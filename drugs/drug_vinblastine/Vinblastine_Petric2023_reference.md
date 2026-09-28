@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The vinblastine two-compartment model was rejected because one compartment (the peripheral volume V2/F, 76.15 L) has no connection from the dose, making it unreachable.**
+
+The record describes a two-compartment vinblastine model with CL/F 56.15 L/h, V/F 114.0 L, peripheral volume V2/F 76.15 L and a lag time of 0.17 h. The review found an unreachable or orphan compartment: a compartment with no path from the administered dose, so drug could never enter it. With the peripheral compartment effectively unlinked, the reported 76.15 L volume and the two-compartment structure are not supported, and the record was refused. Extracted — vinblastine: CL/F 56.1 L/h, V/F 114 L, V2/F 76.2 L, tlag 0.17 h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Petric Z; Paixão P; Filipe A; Guimarães Morais J et al. (2023). Pharmaceutics 15

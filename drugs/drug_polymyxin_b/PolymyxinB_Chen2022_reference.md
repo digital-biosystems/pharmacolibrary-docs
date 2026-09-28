@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 2 scholar param(s) emitted or defaulted — got 1 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[central compartment distribution volume]` (13.4 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The polymyxin B record lacks a clearance value: total clearance (CL) was never extracted, so a library placeholder was substituted and the model was quarantined.**
+
+The record lists a total clearance of 2.43 L/h as a typical value, but the CL parameter itself carries no value, and the model builder defaulted CL to a library placeholder because no source value was available. The parameter-coverage check expected two parameters emitted or defaulted but found only one covered, with the distribution clearance Q (8.78 L/h) neither emitted nor defaulted. A second reader also disagreed on the extracted values, reading null for the distribution volume (13.4 L), distribution clearance (8.78 L/h) and total clearance, and null for CL in both readings. Extracted — polymyxin b: V 13.4 L, Q 8.78 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central compartment distribution volume: this record has 13.4, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Chen N; Guo J; Xie J; Xu M; Hao X; Ma K; et al. et al. (2022). Annals of translational medicine 10
@@ -26,6 +29,9 @@ Chen N; Guo J; Xie J; Xu M; Hao X; Ma K; et al. et al. (2022). Annals of transla
 
 ## Model component
 <dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Chen2022_reference" status="model_quarantined" stale="false" population="adults with severe infections" measured-compound="polymyxin_b" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

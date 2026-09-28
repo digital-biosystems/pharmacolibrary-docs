@@ -5,7 +5,7 @@
 
 - **generic name:** teduglutide
 - **ATC codes:** `A16AX08`
-- **DrugBank:** [DB08900](https://go.drugbank.com/drugs/DB08900)
+- **DrugBank:** [DB08900](https://go.drugbank.com/drugs/DB08900) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -13,6 +13,14 @@
 **Description.** Teduglutide is a glucagon-like peptide-2 (GLP-2) analogue. It is made up of 33 amino acids and is manufactured using a strain of Escherichia coli modified by recombinant DNA technology. Teduglutide differs from GLP-2 by one amino acid (alanine is substituted by glycine). The significance of this substitution is that teduglutide is longer acting than endogenous GLP-2 as it is more resistant to proteolysis from dipeptidyl peptidase-4. FDA approved on December 21, 2012.
 
 **Indication.** Teduglutide is indicated for the treatment of adults and pediatric patients 1 year of age and older with Short Bowel Syndrome (SBS) who are dependent on parenteral support.[L39870]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| teduglutide | parent | 3752.1 | — | PubChem | [16139605](https://pubchem.ncbi.nlm.nih.gov/compound/16139605) | Marier_2010 |
 
 ## Extraction summary
 

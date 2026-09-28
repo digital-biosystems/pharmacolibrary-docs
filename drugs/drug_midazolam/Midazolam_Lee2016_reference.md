@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (raltegravir vs midazolam) and 14 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The record mixes two drugs: the dose compartment and primary analyte were set to raltegravir while the drug is midazolam, whose metabolites 1'-hydroxymidazolam and its glucuronide have no compartments, leaving the midazolam chain unreachable from the dose.**
+
+The parameter labels (CLRAL/F 41.7 L/h, VRAL/F 157 L) and the measured compound belong to raltegravir, yet the drug is midazolam, and the 1'-hydroxymidazolam and 1'-hydroxymidazolam glucuronide metabolites have zero compartments with no path from the dose, so the midazolam metabolic chain is orphaned. A second reader disagreed on the dosing compartment, the primary analyte, and which metabolism links belong to the model, and read no value for CLRAL/F, F, ka, MTT and NN. In addition, one reported unit could not be converted to SI, so that parameter was handled without an SI value. Extracted — midazolam: CL/F 41.7 L/h, MTT 1.04 h, Fab 1, kabs 4.23 1/h, n_transit 1.07, V 157 L; raltegravir glucuronide: fm 0.0324, CL 0.715 L/h, V 1 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has raltegravir, the second reading midazolam; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Lee LS; Seng KY; Wang LZ; Yong WP; Hee KH; Soh TI; et al. et al. (2016). PloS one 11

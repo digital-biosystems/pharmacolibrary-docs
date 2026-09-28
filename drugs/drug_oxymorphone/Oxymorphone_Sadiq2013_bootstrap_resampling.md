@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The oxymorphone rat model was rejected because its clearance of 47.8 mL/min and volume of 14.1 mL fall outside the physiological window, indicating a unit or scale extraction error.**
+
+The record reports a one-compartment model for oxymorphone in male Sprague-Dawley rats with clearance 47.8 mL/min, central volume 14.1 mL, inter-compartmental flow 53.8 mL/min and fraction unbound 11.9%. The plausibility check found the clearance and volume magnitudes physiologically implausible for this species and molecule, attributing the deviation to a unit or scale error during extraction. No other findings were recorded, so the rejection rests on this implausibility alone. Extracted — oxymorphone: CL 47.8 mL/min, V 14.1 mL, Q 53.8 mL/min, fu 11.9.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Sadiq MW; Boström E; Keizer R; Björkman S; Hammarlund-Udenaes M et al. (2013). Journal of pharmaceutical sciences 102
@@ -25,6 +27,9 @@ Sadiq MW; Boström E; Keizer R; Björkman S; Hammarlund-Udenaes M et al. (2013).
 
 ## Model component
 <dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Sadiq2013_bootstrap_resampling" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="oxymorphone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

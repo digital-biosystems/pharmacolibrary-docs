@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[distribution half-life]` (10.3 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — procainamide: t1/2α 10.3 min, t1/2z 1.7 hr, kel 1.2 hr-1, CL 19.4 ml/min/kg, Vss 2.2 l/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of distribution half-life: this record has 10.3, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Singh S; Gelband H; Mehta AV; Kessler K; Casta A; Pickoff AS et al. (1982). Clinical pharmacology and therapeutics 32
@@ -26,6 +29,9 @@ Singh S; Gelband H; Mehta AV; Kessler K; Casta A; Pickoff AS et al. (1982). Clin
 
 ## Model component
 <dbs-pgx drug="procainamide" model-id="Procainamide_Singh1982_reference" status="needs_review" stale="false" population="pediatric patients" measured-compound="procainamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

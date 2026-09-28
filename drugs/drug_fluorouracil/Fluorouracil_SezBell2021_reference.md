@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q30 — no SI value to build from; C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**Q has no unit; the clearance plausibility check could not be computed.**
+
+Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fluorouracil: tlag 0.28 h, kabs 2.07 h-1, CL 284 L/h, V2 433 L, V3 1 L, Q 64.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sáez-Belló M; Mangas-Sanjuán V; Martínez-Gómez MA; López-Montenegro Soria MÁ; Climente-Martí M; Merino-Sanjuán M et al. (2021). British journal of clinical pharmacology 87

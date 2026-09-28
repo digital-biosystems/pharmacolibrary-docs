@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (0.059 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The semaglutide two-compartment model was rejected because one compartment is unreachable from the dose, and a second reader disputed several extracted values, including the intercompartmental clearance read as 46.27 versus 2.68.**
+
+The record lists semaglutide parameters CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L and absorption rate constant 0.006 h-1 in a two-compartment structure, but the structure check found an unreachable or orphan compartment, meaning a compartment has no path from the dose, so the model was rejected. A second reader disagreed on several extracted values: one value was read as 0.059 here but not extracted by the second reader, two values were not extracted here but read as 75.2 and 24.8 by the second reader, and one value was read as 46.27 here against 2.68 by the second reader. These disagreements leave the extracted parameter set uncertain alongside the structural defect. Extracted — semaglutide: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 0.059, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Choi S; Seo J; Park S; Kim NY; Kim H; Lim HS et al. (2025). Frontiers in pharmacology 16

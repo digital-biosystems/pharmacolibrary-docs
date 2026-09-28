@@ -5,7 +5,8 @@
 
 - **generic name:** hydrocodone
 - **ATC codes:** `N02AJ22`, `N02AJ23`, `R05DA03`
-- **DrugBank:** [DB00956](https://go.drugbank.com/drugs/DB00956)
+- **DrugBank:** [DB00956](https://go.drugbank.com/drugs/DB00956) · **PubChem:** [CID 5284569](https://pubchem.ncbi.nlm.nih.gov/compound/5284569)
+- **molar mass:** 299.3642 g/mol (C18H21NO3) — DrugBank
 - **groups:** approved, illicit, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Melhem_2013_reference](drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference.md) | Melhem MR et al., Population pharmacokinetic analysis for…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0081-6](https://doi.org/10.1007/s40262-013-0081-6) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Melhem_2013_reference](drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference.md) | 2-compartment, oral | 6 | Melhem MR et al., Population pharmacokinetic analysis for…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0081-6](https://doi.org/10.1007/s40262-013-0081-6) |
 
 ## Pharmacodynamics (PD)
 

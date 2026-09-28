@@ -5,7 +5,7 @@
 
 # acenocoumarol — `Acenocoumarol_Haustein1999_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 121, the second reading -127; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `phenprocoumon`, measured `acenocoumarol`.
 
@@ -27,6 +29,9 @@ Haustein KO et al. (1999). Seminars in thrombosis and hemostasis 25
 
 ## Model component
 <dbs-pgx drug="acenocoumarol" model-id="Acenocoumarol_Haustein1999_reference" status="curated_candidate" stale="false" population="patients treated with phenprocoumon" measured-compound="acenocoumarol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -49,14 +54,29 @@ Haustein KO et al. (1999). Seminars in thrombosis and hemostasis 25
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q17]` | 121 | -127 | mismatch |
+| `gpt-oss:120b` | `values[Q22]` | 9.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q26]` | 0.64 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q34]` | not captured | 290 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | not captured | 99 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q44]` | not captured | 20.4 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q46]` | 99 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q75]` | not captured | 1.24 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q86]` | 0.65 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q91]` | not captured | 3.35 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -118,6 +138,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference/Acenocoumarol_Haustein1999_reference.svg" alt="Acenocoumarol_Haustein1999_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference/Acenocoumarol_Haustein1999_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference/Acenocoumarol_Haustein1999_reference_sim_controls.json"></dbs-fmusim>
 

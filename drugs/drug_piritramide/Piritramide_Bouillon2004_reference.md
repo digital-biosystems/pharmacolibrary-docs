@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl1]` (66.5 vs not captured) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for piritramide's clearance, central→peripheral rate constant and peripheral→central rate constant.**
+
+The model was built, but piritramide's clearance, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — piritramide: V1 47.9 L, V2 402 L, V3 332 L, CL 66.5 Lh(-1), Q 215 Lh(-1), Vss 782 L, t1/2z 17.4 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl1: this record has 66.5, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Bouillon T; Groeger P; Kietzmann D et al. (2004). European journal of anaesthesiology 21
@@ -26,6 +29,9 @@ Bouillon T; Groeger P; Kietzmann D et al. (2004). European journal of anaesthesi
 
 ## Model component
 <dbs-pgx drug="piritramide" model-id="Piritramide_Bouillon2004_reference" status="model_quarantined" stale="false" population="intensive care patients" measured-compound="piritramide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 

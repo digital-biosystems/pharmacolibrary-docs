@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (extended half-life factor IX concentrates vs N9-GP, rFIXFc, rIX-FP) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for coagulation factor ix's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant — all 17 extracted parameters describe N9-GP, rFIXFc and rIX-FP, not coagulation factor ix; the covariate scenarios were not simulated.**
+
+The model was built, but coagulation factor ix's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (CL, CL, CL and V1), so that value has no SI equivalent. Extracted — N9-GP: CL 4.6 CL; mLh−1, V1 4.8 V1; mL, Q2 35.2, V2 11.8 V2; mL, t1/2z 94.3 h; rFIXFc: CL 239 CL; mLh−1, V1 7.14e+03 V1; mL, Q2 167, V2 8.7e+03 V2; mL, Q3 3.93e+03 Q3; mLh−1, V3 3.99e+03 V3; mL, t1/2z 79 h; rIX-FP: CL 57 CL; mLh−1, V1 6.48e+03 V1; mL, Q2 29, V2 1.58e+03 V2; mL, t1/2z 108 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has extended half-life factor IX concentrates, the second reading N9-GP, rFIXFc, rIX-FP. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `extended half-life factor IX concentrates`, measured `factor IX`.
 
@@ -30,6 +33,9 @@ Preijers T; van Spengler MWF; Meijer K; Fijnvandraat K; Fischer K; Leebeek FWG; 
 
 ## Model component
 <dbs-pgx drug="coagulation factor IX" model-id="CoagulationFactorIx_Preijers2022_reference" status="model_quarantined" stale="false" population="hemophilia B patients" measured-compound="factor IX" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 17 extracted, plus 6 covariate effects.
 
 **Parameterization:** mechanistic.
 

@@ -4,7 +4,8 @@
 
 - **generic name:** dexrabeprazole
 - **ATC codes:** `A02BC07`
-- **DrugBank:** [DB13762](https://go.drugbank.com/drugs/DB13762)
+- **DrugBank:** [DB13762](https://go.drugbank.com/drugs/DB13762) · **PubChem:** not captured
+- **molar mass:** 359.443 g/mol (C18H21N3O3S) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

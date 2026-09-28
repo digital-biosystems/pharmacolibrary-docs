@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** split column '1309 ± 921' is a table statistic/structure column, not a study population (mis-split estimate table).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc 0-n].parameter_id` (Q88 vs Q19) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**'1309 ± 921' is a column of the estimates table, not a study population.**
+
+The table was split into one record per column, and '1309 ± 921' holds a statistic rather than a second set of estimates. A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[auc 0-n].parameter_id`: this record has Q88, the second reading Q19; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Główka FK; Karaźniewicz-Łada M; Grund G; Wróbel T; Wachowiak J et al. (2008). Bone marrow transplantation 42 Suppl 2
@@ -26,6 +29,9 @@ Główka FK; Karaźniewicz-Łada M; Grund G; Wróbel T; Wachowiak J et al. (2008
 
 ## Model component
 <dbs-pgx drug="treosulfan" model-id="Treosulfan_Gwka2008_1309_921" status="rejected" stale="false" population="paediatric patients undergoing allogeneic haematopoietic SCT" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

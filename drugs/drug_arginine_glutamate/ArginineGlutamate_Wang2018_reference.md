@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (arginine glutamate vs arginine, glutamate) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is arginine glutamate's own; they describe arginine. Extracted — arginine: CL 44.1 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has arginine glutamate, the second reading arginine, glutamate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `arginine glutamate`, measured `arginine`.
 
@@ -28,6 +31,9 @@ Wang J; Zheng H; Wang K; Wang Z; Ding Y et al. (2018). Xenobiotica; the fate of 
 
 ## Model component
 <dbs-pgx drug="arginine glutamate" model-id="ArginineGlutamate_Wang2018_reference" status="needs_review" stale="false" population="healthy Chinese volunteers" measured-compound="arginine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

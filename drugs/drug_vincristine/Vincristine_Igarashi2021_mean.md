@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. None of the extracted parameters is vincristine's own; they describe unknown.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Igarashi T; Kishi S; Hosono N; Higashi T; Iwao T; Yano R; et al. et al. (2021). Cancer chemotherapy and pharmacology 87
@@ -25,6 +27,9 @@ Igarashi T; Kishi S; Hosono N; Higashi T; Iwao T; Yano R; et al. et al. (2021). 
 
 ## Model component
 <dbs-pgx drug="vincristine" model-id="Vincristine_Igarashi2021_mean" status="rejected" stale="false" population="unknown" measured-compound="unknown" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

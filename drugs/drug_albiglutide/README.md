@@ -4,7 +4,7 @@
 
 - **generic name:** albiglutide
 - **ATC codes:** `A10BJ04`
-- **DrugBank:** [DB09043](https://go.drugbank.com/drugs/DB09043)
+- **DrugBank:** [DB09043](https://go.drugbank.com/drugs/DB09043) · **PubChem:** not captured
 - **groups:** approved, investigational, withdrawn
 
 ## About

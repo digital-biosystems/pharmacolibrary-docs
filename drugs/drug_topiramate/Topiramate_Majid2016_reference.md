@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (perampanel vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
+**Only clearance was extracted — no volume; cLb has no unit.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CLb), so that value has no SI equivalent. Extracted — topiramate: CL 3.65 l h −1, CLb 3.38 males.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has perampanel, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `perampanel`, measured `topiramate`.
 
@@ -27,6 +31,9 @@ Majid O; Laurenza A; Ferry J; Hussein Z et al. (2016). British journal of clinic
 
 ## Model component
 <dbs-pgx drug="topiramate" model-id="Topiramate_Majid2016_reference" status="needs_review" stale="false" population="patients with refractory partial-onset seizures" measured-compound="topiramate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (R-warfarin, S-warfarin vs warfarin) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The record was held for review because the absorption rate constant Ka = 1.66 for warfarin was invented rather than taken from the paper, and a second reader found a missing parameter (0.804) and recorded warfarin instead of the R- and S-warfarin enantiomers as the measured analytes.**
+
+The record lists R-warfarin and S-warfarin as the measured compounds, but the second reader recorded only warfarin as the primary analyte, a disagreement on which molecule the model describes. A parameter with value 0.804 that the second reader extracted is absent from this record's parameter list, which contains only CL (0.00647 and 0.125 l h⁻¹), V (1.57 and 10.9 l) and Ka (1.66). The failed check found the absorption rate constant to be an invented absorption value, meaning the model builder assumed Ka = 1.66 rather than sourcing it from the paper, which was judged not acceptable. These deviations are the reason the record was not published and instead marked needs_review. Extracted — warfarin: CL 0.00647 l h -1, CL 0.125 l h -1, V 1.57 l, V 10.9 l, kabs 1.66.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R-warfarin, S-warfarin, the second reading warfarin; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 22:23:49.210292+00:00) predates the upstream re-run (2026-09-23 12:18:24.174839+00:00). Current validate status: `needs_review`.
 

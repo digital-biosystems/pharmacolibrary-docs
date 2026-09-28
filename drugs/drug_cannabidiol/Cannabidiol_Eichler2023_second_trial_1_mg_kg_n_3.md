@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 1.2685).
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 1.27).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUCt and Cmax), so that value has no SI equivalent. Extracted — cannabidiol: AUCt 13.6 h·ng/mL, Cmax 3.1 ng/mL, tmax 1.02 hr, Q 1.35 L/h/kg, CL 10.8 L/h/kg, V 3.17e+03 L.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et al. (2023). Frontiers in veterinary science 10
@@ -25,6 +27,9 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 
 ## Model component
 <dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3" status="needs_review" stale="false" population="horses" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

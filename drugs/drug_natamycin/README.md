@@ -4,7 +4,8 @@
 
 - **generic name:** natamycin
 - **ATC codes:** `A01AB10`, `A07AA03`, `D01AA02`, `G01AA02`, `S01AA10`
-- **DrugBank:** [DB00826](https://go.drugbank.com/drugs/DB00826)
+- **DrugBank:** [DB00826](https://go.drugbank.com/drugs/DB00826) · **PubChem:** [CID 5284447](https://pubchem.ncbi.nlm.nih.gov/compound/5284447)
+- **molar mass:** 665.733 g/mol (C33H47NO13) — DrugBank
 - **groups:** approved, investigational
 
 ## About

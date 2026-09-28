@@ -5,7 +5,8 @@
 
 - **generic name:** cytarabine
 - **ATC codes:** `L01BC01`, `L01XY01`
-- **DrugBank:** [DB00987](https://go.drugbank.com/drugs/DB00987)
+- **DrugBank:** [DB00987](https://go.drugbank.com/drugs/DB00987) · **PubChem:** [CID 6253](https://pubchem.ncbi.nlm.nih.gov/compound/6253)
+- **molar mass:** 243.2166 g/mol (C9H13N3O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ Cytarabine is indicated in combination with [daunorubicin] for the treatment of 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Crook_2013_healthy dogs](drugs/drug_cytarabine/Cytarabine_Crook2013_healthy_dogs.md) | Crook KI et al., The pharmacokinetics of cytarabine in d…, Journal of veterinary pharm… (2013) | [10.1111/jvp.12008](https://doi.org/10.1111/jvp.12008) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Crook_2013_healthy dogs](drugs/drug_cytarabine/Cytarabine_Crook2013_healthy_dogs.md) | — (no model) | 0 | Crook KI et al., The pharmacokinetics of cytarabine in d…, Journal of veterinary pharm… (2013) | [10.1111/jvp.12008](https://doi.org/10.1111/jvp.12008) |
 
 ## ADME sites
 

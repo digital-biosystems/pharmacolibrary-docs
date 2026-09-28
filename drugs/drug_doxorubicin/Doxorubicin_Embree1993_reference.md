@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (liposome-encapsulated doxorubicin vs TLC D-99) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Doxorubicin clearance of 350.0 mL/day and volume of 100.0 µL are physiologically implausible magnitudes, indicating unit or scale extraction errors, and the record was built from the abstract alone rather than a fitted model.**
+
+The extracted doxorubicin parameters — clearance 350.0 mL/day and volume 100.0 µL — fall far outside physiological windows for this drug, consistent with a unit or scale misreading of the reported values. The record was built from the paper's abstract only, so summary statistics stood in for a fitted model. A second reader also disagreed on the dosing compound (liposome-encapsulated doxorubicin versus TLC D-99) and on the primary analyte (doxorubicin versus total doxorubicin). Extracted — doxorubicin: CL 350 mL/day, V 100 µL, tlag 2.3 min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has liposome-encapsulated doxorubicin, the second reading TLC D-99; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `liposome-encapsulated doxorubicin`, measured `doxorubicin`.
 

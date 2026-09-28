@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for amikacin's clearance and volume of distribution.**
+
+The model was built, but amikacin's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (sigma), so that value has no SI equivalent. Extracted — amikacin: CL 5.57, V 15.8, Q 3.96, sigma 1.18 mg/mL, V2 4.26 liters.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sherwin CM; Wead S; Stockmann C; Healy D; Spigarelli MG; Neely A; et al. et al. (2014). Burns : journal of the International Society for Burn Injuries 40
@@ -26,6 +29,9 @@ Sherwin CM; Wead S; Stockmann C; Healy D; Spigarelli MG; Neely A; et al. et al. 
 
 ## Model component
 <dbs-pgx drug="amikacin" model-id="Amikacin_Sherwin2014_reference" status="model_quarantined" stale="false" population="paediatric burn patients" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

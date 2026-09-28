@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 1.4461).
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 1.45).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Fab and kabs), so that value has no SI equivalent. Extracted — nalbuphine: Fab 18.5 n = 38 individuals, kabs 17.6 n = 38 individuals, CL 20 ml min À1, V 138 L.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Pfiffner M; Berger-Olah E; Vonbach P; Pfister M; Gotta V et al. (2022). Frontiers in pediatrics 10
@@ -25,6 +27,9 @@ Pfiffner M; Berger-Olah E; Vonbach P; Pfister M; Gotta V et al. (2022). Frontier
 
 ## Model component
 <dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Pfiffner2022_reference" status="needs_review" stale="false" population="infants 1-3 months old" measured-compound="nalbuphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 

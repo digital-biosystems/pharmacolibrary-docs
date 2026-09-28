@@ -4,7 +4,8 @@
 
 - **generic name:** fidaxomicin
 - **ATC codes:** `A07AA12`
-- **DrugBank:** [DB08874](https://go.drugbank.com/drugs/DB08874)
+- **DrugBank:** [DB08874](https://go.drugbank.com/drugs/DB08874) · **PubChem:** [CID 70678896](https://pubchem.ncbi.nlm.nih.gov/compound/70678896)
+- **molar mass:** 1058.05 g/mol (C52H74Cl2O18) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the model was built but never simulated; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 2 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[central compartment volume of distribution]` (26.2 vs not captured) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**The remdesivir model was not simulated because the central and peripheral volumes of distribution (V1 = 26.2 L, V2 = 66.2 L) were not extracted, leaving only 2 of the 4 required parameters covered.**
+
+The record lists four distribution and elimination parameters for remdesivir in healthy adults — central volume 26.2 L, peripheral volume 66.2 L, inter-compartmental clearance 55 L/h and total body clearance 4.74 L/h — but the coverage check found only 2 of the 4 parameters emitted or defaulted, with V1 and V2 neither emitted nor defaulted, meaning no value was extracted for the central and peripheral volumes so library placeholders would have been used. A second reader returned entirely different values for the same four parameters (4.89 L, 46.5 L, 13.2 L/h and 18.1 L/h), reading them as null in this record, so the two readings do not agree on any of the volumes or clearances. The model structure itself — remdesivir metabolised to GS-704277 and then GS-441524 via formation clearances — was captured, but the verdict stands at not simulated. Extracted — remdesivir: V1 26.2 L, V2 66.2 L, Q 55 L/h, CL 4.74 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central compartment volume of distribution: this record has 26.2, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Abouellil A; Bilal M; Taubert M; Fuhr U et al. (2023). Naunyn-Schmiedeberg's archives of pharmacology 396

@@ -4,7 +4,8 @@
 
 - **generic name:** dopamine
 - **ATC codes:** `C01CA04`
-- **DrugBank:** [DB00988](https://go.drugbank.com/drugs/DB00988)
+- **DrugBank:** [DB00988](https://go.drugbank.com/drugs/DB00988) · **PubChem:** [CID 681](https://pubchem.ncbi.nlm.nih.gov/compound/681)
+- **molar mass:** 153.1784 g/mol (C8H11NO2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

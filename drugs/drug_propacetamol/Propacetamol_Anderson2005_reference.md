@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([] vs [['propacetamol', 'paracetamol', 'hydrolysis']]) and 9 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The propacetamol record was rejected because its apparent paracetamol parameters (CL/F 16 l·h⁻¹·70 kg⁻¹, V2/F 24 l·70 kg⁻¹, Q/F 55 l·h⁻¹·70 kg⁻¹) carry a double weight correction, a structural volume has a dimension mismatch, and the paracetamol side is unreachable from the dose.**
+
+The apparent (F-divided) parameters were corrected for 70 kg twice, so CL/F 16, V2/F 24, V3/F 30 and Q2/F 55 are not coherent as reported. The two-compartment structure also mixes labels: V2 is given as central volume 24 l·70 kg⁻¹ while V2 is separately listed as peripheral volume 45.0 l·70 kg⁻¹, a dimension mismatch on a structural parameter. The paracetamol measured compartment or metabolite has no path from the propacetamol dose, leaving it orphaned. The record was additionally built from the abstract alone, so reported summary statistics stood in for a fitted model, and a second reader disputed the parameterization (mechanistic vs apparent), the bioavailability value 0.5, and the absence of a propacetamol–paracetamol hydrolysis link. Extracted — paracetamol: V2/F 24 l x 70 kg(-1), V3/F 30 l x 70 kg(-1), CL/F 16 l x h(-1) x 70 kg(-1), Q2/F 55 l x h(-1) x 70 kg(-1), CL 1.87 l x h(-1) 70 kg(-1), V2 45 l x 70 kg(-1), Frel 0.5 F.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `propacetamol`, measured `paracetamol`.
 
@@ -28,6 +31,9 @@ Anderson BJ; Pons G; Autret-Leca E; Allegaert K; Boccard E et al. (2005). Paedia
 
 ## Model component
 <dbs-pgx drug="propacetamol" model-id="Propacetamol_Anderson2005_reference" status="rejected" stale="false" population="children" measured-compound="paracetamol" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, Q2/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

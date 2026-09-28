@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[k a].parameter_id` (Q95 vs Q49) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The moxifloxacin absorption half-life (t1/2ka, 0.775 hr−1) carries a unit that could not be converted to SI, so the parameter lacked an SI value and the two-compartment model was rejected.**
+
+The record reports moxifloxacin absorption half-life t1/2ka as 0.775 hr−1, but this unit could not be converted to SI, so the parameter entered the model without an SI value. This triggered a dimension mismatch on a structural parameter, and the two-compartment model was rejected. A second reader also disagreed on how the absorption half-life parameter should be classified, reading it as an intercompartmental clearance-type quantity where the record holds it as a rate. Extracted — moxifloxacin: t1/2ka 0.775 hr−1, V1 116 L, CL 8.52 L/hr, Q 0.927 L/hr, V2 523 L, Frel 100.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[k a].parameter_id`: this record has Q95, the second reading Q49. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Yun HY; Chang V; Radtke KK; Wang Q; Strydom N; Chang MJ; et al. et al. (2022). Open forum infectious diseases 9
@@ -26,6 +29,9 @@ Yun HY; Chang V; Radtke KK; Wang Q; Strydom N; Chang MJ; et al. et al. (2022). O
 
 ## Model component
 <dbs-pgx drug="moxifloxacin" model-id="Moxifloxacin_Yun2022_reference" status="rejected" stale="false" population="adult MDR-TB patients" measured-compound="moxifloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

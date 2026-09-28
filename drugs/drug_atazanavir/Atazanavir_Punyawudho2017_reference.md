@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The atazanavir model was held back because clearance, volume of distribution, absorption rate constant and absorption lag time had no source values and were left at library defaults, and CL/F was reported with the unconvertible unit '%'.**
+
+The record lists CL/F = 28.7 with unit '%', a unit that could not be converted to SI, so the parameter reached the model without an SI value. No values were reported for atazanavir's clearance, volume of distribution, absorption rate constant or absorption lag time, so library placeholder defaults were substituted. The absorption rate constant was additionally flagged as invented, since it was defaulted rather than reported in the source. The model was therefore quarantined rather than published with invented numbers. Extracted — atazanavir: CL/F 28.7 %.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Punyawudho_2017)
 
 ## Model component
 <dbs-pgx drug="atazanavir" model-id="Atazanavir_Punyawudho2017_reference" status="model_quarantined" stale="false" population="Thai HIV-infected patients" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build).
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Zempleni_1996_2)
 
 ## Model component
 <dbs-pgx drug="riboflavin" model-id="Riboflavin_Zempleni1996v2_reference" status="rejected" stale="false" population="female patients with liver cirrhosis" measured-compound="riboflavin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

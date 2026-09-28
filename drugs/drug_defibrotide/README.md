@@ -4,7 +4,7 @@
 
 - **generic name:** defibrotide
 - **ATC codes:** `B01AX01`
-- **DrugBank:** [DB04932](https://go.drugbank.com/drugs/DB04932)
+- **DrugBank:** [DB04932](https://go.drugbank.com/drugs/DB04932) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

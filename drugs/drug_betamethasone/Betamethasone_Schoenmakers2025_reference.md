@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — betamethasone: CL 9.35 L/h, AUC 1.57e+03 ng*h/L.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Schoenmakers S; Li L; Kluivers ACM; Broekhuizen M; Harhangi MS; Danser AHJ; et al. et al. (2025). British journal of clinical pharmacology 91
@@ -25,6 +27,9 @@ Schoenmakers S; Li L; Kluivers ACM; Broekhuizen M; Harhangi MS; Danser AHJ; et a
 
 ## Model component
 <dbs-pgx drug="betamethasone" model-id="Betamethasone_Schoenmakers2025_reference" status="needs_review" stale="false" population="pregnant women with imminent preterm birth" measured-compound="betamethasone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

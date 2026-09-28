@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;choline salicylate&quot;,&quot;href&quot;:&quot;drugs/drug_choline_salicylate/&quot;},{&quot;label&quot;:&quot;Koh_2025 \u00b7 PD Thromboxane B2&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Thromboxane B2 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>

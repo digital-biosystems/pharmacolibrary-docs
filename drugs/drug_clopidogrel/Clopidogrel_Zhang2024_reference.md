@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Zhang C; Jiang L; Hu K; Chen L; Zhang YJ; Shi HZ; He SM; Chen X; Wang DD et al. (2024). Neuropsychiatric disease and treatment 20

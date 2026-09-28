@@ -4,7 +4,7 @@
 
 - **generic name:** insulin icodec
 - **ATC codes:** `A10AE07`
-- **DrugBank:** [DB16693](https://go.drugbank.com/drugs/DB16693)
+- **DrugBank:** [DB16693](https://go.drugbank.com/drugs/DB16693) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05C&quot;,&quot;href&quot;:&quot;atc/B05C.md&quot;},{&quot;label&quot;:&quot;glycine&quot;,&quot;href&quot;:&quot;drugs/drug_glycine/&quot;},{&quot;label&quot;:&quot;Ye_2023 \u00b7 PD 5-HT2C receptor binding&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # 5-HT2C receptor binding — PD  <span class="pk-badge pk-badge--green">extracted</span>

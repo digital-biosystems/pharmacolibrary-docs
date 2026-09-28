@@ -4,7 +4,8 @@
 
 - **generic name:** ditazole
 - **ATC codes:** `B01AC01`
-- **DrugBank:** [DB08994](https://go.drugbank.com/drugs/DB08994)
+- **DrugBank:** [DB08994](https://go.drugbank.com/drugs/DB08994) · **PubChem:** [CID 29088](https://pubchem.ncbi.nlm.nih.gov/compound/29088)
+- **molar mass:** 324.3737 g/mol (C19H20N2O3) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

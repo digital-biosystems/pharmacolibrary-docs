@@ -4,7 +4,8 @@
 
 - **generic name:** phenindione
 - **ATC codes:** `B01AA02`
-- **DrugBank:** [DB00498](https://go.drugbank.com/drugs/DB00498)
+- **DrugBank:** [DB00498](https://go.drugbank.com/drugs/DB00498) · **PubChem:** [CID 4760](https://pubchem.ncbi.nlm.nih.gov/compound/4760)
+- **molar mass:** 222.2387 g/mol (C15H10O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

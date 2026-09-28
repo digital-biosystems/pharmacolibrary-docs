@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 2 scholar param(s) emitted or defaulted — got 1 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The citalopram/escitalopram model was held back because citalopram's volume of distribution had no reported value and a library placeholder was substituted, alongside the unextracted k12 rate constant and a one-compartment structure that does not match the reported parent–metabolite topology.**
+
+No volume of distribution for citalopram (escitalopram) was reported, so a default placeholder stood in for Vd, and defaults were likewise substituted for the S-desmethylcitalopram clearance, its volume, and the formation rate. The parameter-coverage check found only 1 of 2 expected parameters covered, with k12 (0.73 h⁻¹) neither emitted nor defaulted. The structure check also failed: the record's one-compartment structure (PK_1C) does not match the reported parent–metabolite topology. Additionally, Vss (1310 L) was used as the distribution volume because no Vc/V was reported, reproducing AUC and terminal half-life but not the early distribution phase. Extracted — citalopram: CL 28.7 L/h, Vss 1.31e+03 L, k12 0.73 h⁻¹, k31 0.54 h⁻¹, sigma 35.3.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Weisskopf E; Guidi M; Fischer CJ; Bickle Graz M; Beaufils E; Nguyen KA; et al. et al. (2020). British journal of clinical pharmacology 86
@@ -25,6 +27,9 @@ Weisskopf E; Guidi M; Fischer CJ; Bickle Graz M; Beaufils E; Nguyen KA; et al. e
 
 ## Model component
 <dbs-pgx drug="citalopram" model-id="Citalopram_Weisskopf2020_reference" status="model_quarantined" stale="false" population="depressive patients during the perinatal period" measured-compound="escitalopram" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The cladribine record double-corrects for bioavailability: apparent parameters CLH (653 L/hf) and V1/F (365 Lf) already include division by F=0.456, yet F is applied again, and V1/F=365 L conflicts with central volume V1=44.0 L.**
+
+The record lists both absolute parameters for cladribine (central volume V1 = 44.0 L, non-renal clearance CLNR = 23.4 L/h) and apparent ones labelled with the fraction units 'L/hf' and 'Lf' (CLH = 653 L/hf, V1/F = 365 Lf), which by definition are already normalized by the bioavailability Fab = 0.456. Applying the bioavailability correction on top of these apparent values double-corrects the same parameters, and the resulting apparent central volume (365 L) is inconsistent with the reported absolute central volume (44.0 L). The coherence check that compares these two forms of the same parameter could not be reconciled, so the record was rejected. Extracted — cladribine: CLR 3.52, CLNR 23.4, V1 44, Q3 14.3, Q 53.7, V3 347, kabs 1.08, Fab 0.456, … (+6).
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Savic RM; Novakovic AM; Ekblom M; Munafo A; Karlsson MO et al. (2017). Clinical pharmacokinetics 56
@@ -25,6 +27,9 @@ Savic RM; Novakovic AM; Ekblom M; Munafo A; Karlsson MO et al. (2017). Clinical 
 
 ## Model component
 <dbs-pgx drug="cladribine" model-id="Cladribine_Savic2017_reference" status="rejected" stale="false" population="patients with multiple sclerosis" measured-compound="cladribine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 14 extracted, plus 1 covariate effect.
 
 **Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

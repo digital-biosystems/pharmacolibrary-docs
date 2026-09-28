@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-5.6-luna` read this paper differently on `parameters[ka]` (0.17 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for amoxicillin's bioavailability, clearance and absorption lag time.**
+
+The model was built, but amoxicillin's bioavailability, clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — amoxicillin: Cmax 5.2 mg/L, tmax 2.1 h, AUC∞ 17.2 mg·h/L, kel 0.52 1/h, t1/2z 1.3 h, V 1.73 L/kg, kabs 0.17 h−1.
+
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on the value of ka: this record has 0.17, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Dubbelboer IR; Olsén L; Pelander L; Lacroix MZ; Claustre L; Roques B; et al. et al. (2025). Journal of veterinary pharmacology and therapeutics 48

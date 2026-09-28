@@ -20,10 +20,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_molar_mass[DM-3411] — got {'MW': 0.43357, 'MW_m1': 0}
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**The record was accepted with caveats: the CYP2D6 covariate effect on brexpiprazole metabolism was never simulated, the DM-3411 molar mass is missing (0 instead of 0.43357), and bioavailability F was left at a default placeholder.**
+
+The record defines a CYP2D6 covariate effect (extensive metaboliser 0, intermediate metaboliser 0.6364) on brexpiprazole, but only the reference individual was simulated, so the covariate scenarios were not exercised. The molar-mass check for DM-3411 could not compute a valid ratio: the metabolite molar mass is 0, meaning 1 mg of metabolite per mg of parent converted rather than a molecule-per-molecule conversion, against a parent molar mass of 0.43357. In addition, bioavailability F had no source value and a default was substituted. The model structure itself — a linear parent model with two central metabolites DM-3411 and DM-3412 formed from brexpiprazole — was otherwise accepted. Extracted — brexpiprazole: kabs 1.02 1/h, tlag 0.411 h, V1 81.2 L, V2 40.1 L, Q 0.714 L/h; DM-3412: CLfm 0.0224 L/h, V1 0.447 L, V2 20.4 L, Q 2.16 L/h, CL 0.42 L/h; DM-3411: CLfm 1.12 L/h, V 2.44 L, CL 3.33 L/h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Frederiksen_2023_3)

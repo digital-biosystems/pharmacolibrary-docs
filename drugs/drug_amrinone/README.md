@@ -5,7 +5,8 @@
 
 - **generic name:** amrinone
 - **ATC codes:** `C01CE01`
-- **DrugBank:** [DB01427](https://go.drugbank.com/drugs/DB01427)
+- **DrugBank:** [DB01427](https://go.drugbank.com/drugs/DB01427) · **PubChem:** [CID 3698](https://pubchem.ncbi.nlm.nih.gov/compound/3698)
+- **molar mass:** 187.198 g/mol (C10H9N3O) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Park_1983_reference](drugs/drug_amrinone/Amrinone_Park1983_reference.md) | Park GB et al., Oral bioavailability and intravenous ph…, Journal of pharmaceutical s… (1983) | [10.1002/jps.2600720726](https://doi.org/10.1002/jps.2600720726) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Park_1983_reference](drugs/drug_amrinone/Amrinone_Park1983_reference.md) | 1-compartment (no model) | 3 | Park GB et al., Oral bioavailability and intravenous ph…, Journal of pharmaceutical s… (1983) | [10.1002/jps.2600720726](https://doi.org/10.1002/jps.2600720726) |
 
 ## Pharmacodynamics (PD)
 

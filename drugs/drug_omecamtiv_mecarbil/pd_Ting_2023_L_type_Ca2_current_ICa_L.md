@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;omecamtiv mecarbil&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/&quot;},{&quot;label&quot;:&quot;Ting_2023 \u00b7 PD name&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;OmecamtivMecarbil_Chen2022_healthy_subjects_and_patients_wit&quot;,&quot;label&quot;:&quot;Chen_2022_healthy subjects and patients with heart failure with reduced ejection fraction&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_healthy_subjects_and_patients_wit.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the model was built but never simulated; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 4 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[2.03(8.8) × 7.33 = 14.9]` (not captured vs 1.48) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**The paracetamol model record is missing the peripheral volume parameter V2, so only 4 of the 5 expected parameters were covered and the model was not simulated.**
+
+The record lists CL 2.02 L/h, V1 1.83 L, Q 1.34 L/h and a lag time of 4.2 min, but V2 (the peripheral compartment volume) was neither extracted nor defaulted, leaving the two-compartment structure incomplete. A second reader additionally reported values absent from this record, including a clearance-related parameter of 0.94, a formation parameter of 4.73, and a peripheral volume of 23.9 L, and read Q as 1.48 rather than 1.34. The model was built but has not been simulated yet. Extracted — paracetamol: CL 2.02 L/h, V1 1.83 L, V2 22.3 L, Q 1.34 L/h, tlag 4.2 min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 2.03(8.8) × 7.33 = 14.9: this record has none, the second reading 1.48; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Allegaert K; Peeters MY; Beleyn B; Smits A; Kulo A; van Calsteren K; et al. et al. (2015). BMC anesthesiology 15

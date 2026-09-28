@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 0.7234)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[0.94-1.60]` (not captured vs 2.28) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.723).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — salbutamol: MTT 0.21, V 226, CL 77.9, kabs 3.71 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 0.94-1.60: this record has none, the second reading 2.28. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:47:13.001789+00:00) predates the upstream re-run (2026-09-24 04:46:27.628980+00:00). Current validate status: `needs_review`.
 

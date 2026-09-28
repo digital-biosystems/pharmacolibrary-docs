@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q312]` (not captured vs 15.4) and 2 more field(s) — not a structural parameter.
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has none, the second reading 15.4; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Khan-Asa B; Punyawudho B; Singkham N; Chaivichacharn P; Karoopongse E; Montakantikul P; et al. et al. (2020). Antibiotics (Basel, Switzerland) 9
@@ -143,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.1 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.1 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_KhanAsa2020_reference/Omeprazole_KhanAsa2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_omeprazole/Omeprazole_KhanAsa2020_reference/Omeprazole_KhanAsa2020_reference_sim_controls.json"></dbs-fmusim>
 

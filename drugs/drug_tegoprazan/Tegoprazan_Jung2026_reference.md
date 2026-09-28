@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — tegoprazan: V 56.6 L, kabs 0.156 1/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jung W; Lee J; Jeon H; Sung T; Yun HY; Lee S; et al. et al. (2026). CPT: pharmacometrics & systems pharmacology 15
@@ -25,6 +27,9 @@ Jung W; Lee J; Jeon H; Sung T; Yun HY; Lee S; et al. et al. (2026). CPT: pharmac
 
 ## Model component
 <dbs-pgx drug="tegoprazan" model-id="Tegoprazan_Jung2026_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="tegoprazan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

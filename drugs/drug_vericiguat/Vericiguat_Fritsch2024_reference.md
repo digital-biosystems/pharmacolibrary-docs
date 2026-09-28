@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
+**Only clearance was extracted — no volume.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — vericiguat: CL 1.62 L/h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Fritsch A; Meyer M; Blaustein RO; Trujillo ME; Kauh E; Roessig L; et al. et al. (2024). Clinical pharmacokinetics 63

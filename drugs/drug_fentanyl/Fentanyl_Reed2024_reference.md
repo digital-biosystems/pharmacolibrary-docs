@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[a]` (not captured vs 0.104) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The fentanyl horse model was rejected because its two-compartment structure cannot host the reported third half-life (t1/2γ = 1.85 h), leaving a compartment without a path from the dose, and the AUClast unit h*pg/ml could not be converted to SI.**
+
+The record lists a two-compartment structure for fentanyl in healthy adult horses, yet reports three half-lives (t1/2α = 0.039 h, t1/2β = 0.327 h, t1/2γ = 1.85 h), so one compartment is unreachable from the dose. The AUClast value 5243.4 h*pg/ml is reported in a unit that could not be converted to SI units, so the parameter was held without an SI value. A second reader also disagreed on two parameter fields, reading 0.104 and 6613.1 where this record had no value. Extracted — fentanyl: λ1 17.8, kel 2.12, t1/2α 0.039 h, t1/2β 0.327 h, t1/2γ 1.85 h, AUClast 5.24e+03 h*pg/ml, CL 722 ml/h/kg, V1 0.191 L/kg, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of a: this record has none, the second reading 0.104; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Reed RA; Berghaus LJ; Reynolds RM; Holmes BT; Krikorian AM; Sakai DM; et al. et al. (2024). Frontiers in pain research (Lausanne, Switzerland) 5

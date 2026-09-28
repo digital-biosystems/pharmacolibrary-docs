@@ -4,7 +4,8 @@
 
 - **generic name:** amineptine
 - **ATC codes:** `N06AA19`
-- **DrugBank:** [DB04836](https://go.drugbank.com/drugs/DB04836)
+- **DrugBank:** [DB04836](https://go.drugbank.com/drugs/DB04836) · **PubChem:** [CID 34869](https://pubchem.ncbi.nlm.nih.gov/compound/34869)
+- **molar mass:** 337.463 g/mol (C22H27NO2) — DrugBank
 - **groups:** approved, illicit, withdrawn
 
 ## About

@@ -4,7 +4,7 @@
 
 - **generic name:** hemoglobin crosfumaril
 - **ATC codes:** `B05AA08`
-- **DrugBank:** [DB13864](https://go.drugbank.com/drugs/DB13864)
+- **DrugBank:** [DB13864](https://go.drugbank.com/drugs/DB13864) · **PubChem:** not captured
 - **groups:** experimental
 
 ## About

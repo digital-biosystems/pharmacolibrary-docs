@@ -5,7 +5,8 @@
 
 - **generic name:** treosulfan
 - **ATC codes:** `L01AB02`
-- **DrugBank:** [DB11678](https://go.drugbank.com/drugs/DB11678)
+- **DrugBank:** [DB11678](https://go.drugbank.com/drugs/DB11678) · **PubChem:** [CID 9882105](https://pubchem.ncbi.nlm.nih.gov/compound/9882105)
+- **molar mass:** 278.29 g/mol (C6H14O8S2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,11 +25,11 @@ It was approved by the EMA in June 2019[L16965] and by the FDA in January 2025 f
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: split column '1309 ± 921' is a table statistic/structure column, not a study po…</sub><br><sub>route_to: `human_review`</sub> | [Główka_2008_1309_921](drugs/drug_treosulfan/Treosulfan_Gwka2008_1309_921.md) | Główka FK et al., Pharmacokinetics of high-dose i.v. treo…, Bone marrow transplantation (2008) | [10.1038/bmt.2008.287](https://doi.org/10.1038/bmt.2008.287) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: split column '1960' is a table statistic/structure column, not a study populati…</sub><br><sub>route_to: `human_review`</sub> | [Główka_2008_1960](drugs/drug_treosulfan/Treosulfan_Gwka2008_1960.md) | Główka FK et al., Pharmacokinetics of high-dose i.v. treo…, Bone marrow transplantation (2008) | [10.1038/bmt.2008.287](https://doi.org/10.1038/bmt.2008.287) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: split column '735' is a table statistic/structure column, not a study populatio…</sub><br><sub>route_to: `human_review`</sub> | [Główka_2008_735](drugs/drug_treosulfan/Treosulfan_Gwka2008_735.md) | Główka FK et al., Pharmacokinetics of high-dose i.v. treo…, Bone marrow transplantation (2008) | [10.1038/bmt.2008.287](https://doi.org/10.1038/bmt.2008.287) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: split column '1309 ± 921' is a table statistic/structure column, not a study po…</sub><br><sub>route_to: `human_review`</sub> | [Główka_2008_1309_921](drugs/drug_treosulfan/Treosulfan_Gwka2008_1309_921.md) | 1-compartment (no model) | 6 | Główka FK et al., Pharmacokinetics of high-dose i.v. treo…, Bone marrow transplantation (2008) | [10.1038/bmt.2008.287](https://doi.org/10.1038/bmt.2008.287) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: split column '1960' is a table statistic/structure column, not a study populati…</sub><br><sub>route_to: `human_review`</sub> | [Główka_2008_1960](drugs/drug_treosulfan/Treosulfan_Gwka2008_1960.md) | 1-compartment (no model) | 6 | Główka FK et al., Pharmacokinetics of high-dose i.v. treo…, Bone marrow transplantation (2008) | [10.1038/bmt.2008.287](https://doi.org/10.1038/bmt.2008.287) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: split column '735' is a table statistic/structure column, not a study populatio…</sub><br><sub>route_to: `human_review`</sub> | [Główka_2008_735](drugs/drug_treosulfan/Treosulfan_Gwka2008_735.md) | 1-compartment (no model) | 6 | Główka FK et al., Pharmacokinetics of high-dose i.v. treo…, Bone marrow transplantation (2008) | [10.1038/bmt.2008.287](https://doi.org/10.1038/bmt.2008.287) |
 
 ## ADME sites
 

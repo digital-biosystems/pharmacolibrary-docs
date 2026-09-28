@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[beta-phase half-life]` (23.2 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — dihydroergotamine: t1/2α 1.35 min, t1/2β 23.2 min, V 0.25 I/kg, CL 1.56e+03 ml/min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of beta-phase half-life: this record has 23.2, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hilke H; Kanto J; Mäntylä R; Kleimola T; Syvälahti E et al. (1978). Acta anaesthesiologica Scandinavica 22
@@ -26,6 +29,9 @@ Hilke H; Kanto J; Mäntylä R; Kleimola T; Syvälahti E et al. (1978). Acta anae
 
 ## Model component
 <dbs-pgx drug="dihydroergotamine" model-id="Dihydroergotamine_Hilke1978_reference" status="needs_review" stale="false" population="adults undergoing spinal anaesthesia" measured-compound="dihydroergotamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

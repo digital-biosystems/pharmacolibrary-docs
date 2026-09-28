@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Doxazosin clearance of 0.027 ml/h is physiologically implausible, indicating a unit or scale extraction error, and the record was built from the abstract alone rather than a fitted model.**
+
+The extracted doxazosin clearance of 0.027 ml/h falls far outside the physiological window for this molecule, consistent with a unit or scale misreading of the reported value (volume 32.9 L/70 kg, absorption rate constant 0.077 h⁻¹). The record was built from the paper's abstract only, so the reported summary statistics stood in for a fitted model, limiting the reliability of all extracted parameters. On these grounds the record was rejected. Extracted — doxazosin: CL 0.027 ml/h, V 32.9 L 70kg-1, kabs 0.077 h-1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Vincent J; Elliott HL; Meredith PA; Reid JL et al. (1983). British journal of clinical pharmacology 15

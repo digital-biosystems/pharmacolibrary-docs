@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl].value` (17.6 vs 17.8) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for milrinone's clearance and volume of distribution.**
+
+The model was built, but milrinone's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — milrinone: CL 17.6, V 20.8.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].value`: this record has 17.6, the second reading 17.8; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem OHanlon_2024)
 
 ## Model component
 <dbs-pgx drug="milrinone" model-id="Milrinone_OHanlon2024_final_estimate" status="model_quarantined" stale="false" population="paediatric patients (premature neonates to adolescents)" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

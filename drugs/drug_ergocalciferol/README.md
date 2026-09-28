@@ -4,7 +4,8 @@
 
 - **generic name:** ergocalciferol
 - **ATC codes:** `A11CC01`
-- **DrugBank:** [DB00153](https://go.drugbank.com/drugs/DB00153)
+- **DrugBank:** [DB00153](https://go.drugbank.com/drugs/DB00153) · **PubChem:** [CID 5280793](https://pubchem.ncbi.nlm.nih.gov/compound/5280793)
+- **molar mass:** 396.6484 g/mol (C28H44O) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About

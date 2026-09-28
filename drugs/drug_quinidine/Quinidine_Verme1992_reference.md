@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** biomarker_kinetics_as_drug_pk.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**The record's clearance parameter for quinidine is actually calculated creatinine clearance (50 ml/min), a patient biomarker mistaken for drug clearance, and the model rests on abstract-only summary statistics with defaulted ka and Tlag.**
+
+The disposition parameter labelled 'calculated creatinine clearance' (50 ml/min) names a renal-function biomarker rather than quinidine clearance, so the analyte identity check failed. The record was built from the abstract alone, meaning reported summary statistics stood in for a fitted model. Absorption parameters ka and Tlag were not reported in the source and were left at library defaults, with an apparent (F=1, Fm=1) parameterization and first-order depot input assumed. A second reader disputed the apparent parameterization and read both parameter values as null. Extracted — quinidine: V/F 230 L, CL 50 ml/min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Verme CN; Ludden TM; Clementi WA; Harris SC et al. (1992). Clinical pharmacokinetics 22
@@ -26,6 +29,9 @@ Verme CN; Ludden TM; Clementi WA; Harris SC et al. (1992). Clinical pharmacokine
 
 ## Model component
 <dbs-pgx drug="quinidine" model-id="Quinidine_Verme1992_reference" status="rejected" stale="false" population="adult hospitalised men" measured-compound="quinidine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -131,6 +137,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_quinidine/Quinidine_Verme1992_reference/Quinidine_Verme1992_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_quinidine/Quinidine_Verme1992_reference/Quinidine_Verme1992_reference_sim_controls.json"></dbs-fmusim>
 

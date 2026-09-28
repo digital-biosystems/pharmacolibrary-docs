@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — levofloxacin: CL 5.26 L/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 He YY; Sun J; Wu YE; Wang YB; van den Anker J; Hao GX; et al. et al. (2024). British journal of clinical pharmacology 90
@@ -25,6 +27,9 @@ He YY; Sun J; Wu YE; Wang YB; van den Anker J; Hao GX; et al. et al. (2024). Bri
 
 ## Model component
 <dbs-pgx drug="levofloxacin" model-id="Levofloxacin_He2024_reference" status="needs_review" stale="false" population="elderly patients with pneumonia" measured-compound="levofloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

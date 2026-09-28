@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Schneck K; Urva S et al. (2024). CPT: pharmacometrics & systems pharmacology 13
@@ -25,6 +27,9 @@ Schneck K; Urva S et al. (2024). CPT: pharmacometrics & systems pharmacology 13
 
 ## Model component
 <dbs-pgx drug="tirzepatide" model-id="Tirzepatide_Schneck2024_reference" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="tirzepatide" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** apparent.
 

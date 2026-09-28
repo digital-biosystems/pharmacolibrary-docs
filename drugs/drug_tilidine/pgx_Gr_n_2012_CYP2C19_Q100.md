@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tilidine&quot;,&quot;href&quot;:&quot;drugs/drug_tilidine/&quot;},{&quot;label&quot;:&quot;Gr\u00fcn_2012 \u00b7 PGx CYP2C19&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tilidine_Ringwelski1975_reference&quot;,&quot;label&quot;:&quot;Ringwelski_1975_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tilidine/Tilidine_Ringwelski1975_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

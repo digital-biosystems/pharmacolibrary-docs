@@ -4,7 +4,7 @@
 
 - **generic name:** codeine, combinations with psycholeptics
 - **ATC codes:** `N02AA79`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

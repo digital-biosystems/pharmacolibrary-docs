@@ -4,7 +4,8 @@
 
 - **generic name:** calcitriol
 - **ATC codes:** `A11CC04`, `D05AX03`
-- **DrugBank:** [DB00136](https://go.drugbank.com/drugs/DB00136)
+- **DrugBank:** [DB00136](https://go.drugbank.com/drugs/DB00136) · **PubChem:** [CID 5280453](https://pubchem.ncbi.nlm.nih.gov/compound/5280453)
+- **molar mass:** 416.6365 g/mol (C27H44O3) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About

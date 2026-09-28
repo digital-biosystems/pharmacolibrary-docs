@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 de Alwis DP; Aarons L; Palmer JL et al. (1998). British journal of clinical pharmacology 46
@@ -26,6 +29,9 @@ de Alwis DP; Aarons L; Palmer JL et al. (1998). British journal of clinical phar
 
 ## Model component
 <dbs-pgx drug="ondansetron" model-id="Ondansetron_de1998_reference" status="rejected" stale="false" population="mixed (paediatric, young, elderly, aged)" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,8 @@
 
 - **generic name:** chlorhexidine
 - **ATC codes:** `A01AB03`, `A01AB53`, `B05CA02`, `D08AC02`, `D09AA12`, `R02AA05`, `S01AX09`, `S02AA09`, `S03AA04`
-- **DrugBank:** [DB00878](https://go.drugbank.com/drugs/DB00878)
+- **DrugBank:** [DB00878](https://go.drugbank.com/drugs/DB00878) · **PubChem:** [CID 9552079](https://pubchem.ncbi.nlm.nih.gov/compound/9552079)
+- **molar mass:** 505.447 g/mol (C22H30Cl2N10) — DrugBank
 - **groups:** approved, investigational, vet_approved, withdrawn
 
 ## About
@@ -24,10 +25,10 @@ Chlorhexidine was developed in the UK by Imperial Chemical Industries in the ear
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sherertz_1993_reference](drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_reference.md) | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Xue_2009_reference](drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_reference.md) | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sherertz_1993_reference](drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_reference.md) | 1-compartment (no model) | 2 | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Xue_2009_reference](drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_reference.md) | 1-compartment (no model) | 0 | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) |
 
 ## Pharmacodynamics (PD)
 

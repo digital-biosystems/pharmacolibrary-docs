@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[dvdweight].parameter_id` (Q319 vs Q61) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The ciprofloxacin canine model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no values, so library defaults were substituted and an absorption rate constant was invented.**
+
+The record lists fitted ciprofloxacin parameters (kabs 0.39, V/F 10.70, kel 0.16, CL/F 1.71, t1/2z 4.35 h, tmax 3.88 h, Cmax 1.19, AUC 13.82), but clearance, volume of distribution, absorption rate constant and lag time were missing from the source, so placeholder defaults stood in for them. The absorption rate constant was additionally flagged as invented — not reported in the source — and the model was assumed apparent with F=1, Fm=1 and no molar correction. A second reader also disagreed on the identifier assigned to the allometric exponent parameter (dVdWeight, 0.55). Extracted — ciprofloxacin: kabs 0.39, V/F 10.7, kel 0.16, allometric_exponent 0.55, tmax 3.88, AUC 13.8, Cmax 1.19, CL/F 1.71, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[dvdweight].parameter_id`: this record has Q319, the second reading Q61. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 23:02:14.452558+00:00) predates the upstream re-run (2026-09-24 02:07:40.838934+00:00). Current validate status: `needs_review`.
 

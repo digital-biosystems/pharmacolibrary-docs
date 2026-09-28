@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[iiv cl/f clozapine]` (not captured vs 93) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The clozapine model was quarantined because clearance, absorption rate constant and absorption lag time had no extracted values, so library placeholder defaults would have stood in for these parameters.**
+
+The record reports only V/F = 750 L and a βSmoker CL/F of 0.37 for clozapine, while clozapine's clearance, absorption rate constant (ka) and absorption lag time (Tlag) were left without values, meaning generic placeholder defaults would have been substituted and the model was held back rather than published with invented numbers. The absorption rate constant was not reported in the source, and the builder additionally assumed F = 1 and Fm = 1 with no molar correction, giving an apparent (/F) parameterization with first-order extravascular input. A second reader disagreed on the parameter values: they read the i.v. CL/F for clozapine as 93 where this record has none, and left the βSmoker CL/F blank where this record gives 0.37. A structure check also failed, obtaining a one-compartment enteral topology where a parent–metabolite structure was expected, though this check could not be fully adjudicated. Extracted — clozapine: V/F 750 L, CL/F 0.37.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of iiv cl/f clozapine: this record has none, the second reading 93; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Reeves S; Bertrand J; Obee SJ; Hunter S; Howard R; Flanagan RJ et al. (2024). British journal of clinical pharmacology 90
@@ -26,6 +29,9 @@ Reeves S; Bertrand J; Obee SJ; Hunter S; Howard R; Flanagan RJ et al. (2024). Br
 
 ## Model component
 <dbs-pgx drug="clozapine" model-id="Clozapine_Reeves2024_reference" status="model_quarantined" stale="false" population="patients receiving therapeutic drug monitoring for clozapine" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

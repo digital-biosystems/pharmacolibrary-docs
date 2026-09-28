@@ -4,7 +4,7 @@
 
 - **generic name:** algeldrate
 - **ATC codes:** `A02AB02`
-- **DrugBank:** [DB06723](https://go.drugbank.com/drugs/DB06723)
+- **DrugBank:** [DB06723](https://go.drugbank.com/drugs/DB06723) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 10:56 | 26:12 | 0/0/0 | 0/0/0 | 1/0/0 | 449,756/10,707 | ollama / qwen3.8:27b-mtp-q8_0 | 23 | 6/17 | 22/1 | 0 |
+| 2026-09-26 09:25 | 3:27 | 0/0/0 | 0/0/0 | 1/0/0 | 5,170/1,056 | ollama / qwen3.8:27b-mtp-q8_0 | 23 | 6/17 | 22/1 | 0 |
 
 ## popPK records
 
@@ -27,7 +27,7 @@ _not available_
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | **HLA-DR3-DQ2** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Hannelius_2020](drugs/drug_algeldrate/pgx_Hannelius_2020_HLA_DR3_DQ2_safety.md) | Hannelius U et al., Efficacy of GAD-alum immunotherapy asso…, Diabetologia (2020) | [10.1007/s00125-020-05227-z](https://doi.org/10.1007/s00125-020-05227-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **HLA-DR3-DQ2** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Hannelius_2020](drugs/drug_algeldrate/pgx_Hannelius_2020_HLA_DR3_DQ2_safety.md) | Hannelius U et al., Efficacy of GAD-alum immunotherapy asso…, Diabetologia (2020) | [10.1007/s00125-020-05227-z](https://doi.org/10.1007/s00125-020-05227-z) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>
@@ -52,7 +52,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 145 matched, 103 returned
+- **PubMed hits:** 157 matched, 104 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -160,6 +160,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | PD | Toothaker_1989 | not_relevant | 0 | 0 | The text describes only the pharmacokinetic properties (absorption, bioavailability, half-life) of enoxacin and contains no pharmacodynamic or exposure-response data. |
 | popPK | Vergin_1989 | irrelevant | 0 | 0 | The study investigates the effect of an antacid on the pharmacokinetics of pirenzepine, not algeldrate. |
 | popPK | Walden_2021 | irrelevant | 0 | 0 | The study focuses on fluoroquinolones and their chelation with metals, not algeldrate, and is a computational study without algeldrate PK parameters. |
+| popPK | Wang_2021 | irrelevant | 0 | 0 | The paper is an immunological study on asthma genetics and does not involve the drug algeldrate or pharmacokinetic parameters. |
 | PGx | Wang_2021 | not_relevant | 0 | 0 | The paper investigates genetic associations with childhood asthma and immune responses, not the pharmacokinetics or pharmacodynamics of algeldrate. |
 | popPK | Wilner_2000 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ziprasidone, not algeldrate. |
 | PD | Xiang_2023 | not_relevant | 0 | 0 | The paper describes the adsorption of fluoride by a modified diatomite material in an environmental context, not the pharmacodynamics of a drug in a biological system. |

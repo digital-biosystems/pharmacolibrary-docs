@@ -5,7 +5,8 @@
 
 - **generic name:** butorphanol
 - **ATC codes:** `N02AF01`
-- **DrugBank:** [DB00611](https://go.drugbank.com/drugs/DB00611)
+- **DrugBank:** [DB00611](https://go.drugbank.com/drugs/DB00611) · **PubChem:** [CID 6916249](https://pubchem.ncbi.nlm.nih.gov/compound/6916249)
+- **molar mass:** 327.4605 g/mol (C21H29NO2) — DrugBank
 - **groups:** approved, illicit, investigational, vet_approved
 
 ## About
@@ -22,12 +23,12 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Pypendop_2021_reference](drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference.md) | Pypendop BH et al., Pharmacokinetics of butorphanol in male…, Journal of veterinary pharm… (2021) | [10.1111/jvp.13014](https://doi.org/10.1111/jvp.13014) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Knych_2024_estimate](drugs/drug_butorphanol/Butorphanol_Knych2024_estimate.md) | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Knych_2024_shrinkage](drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage.md) | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Saeed_2026_reference](drugs/drug_butorphanol/Butorphanol_Saeed2026_reference.md) | Saeed AM et al., Butorphanol Pharmacokinetics Across Spe…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70293](https://doi.org/10.1002/psp4.70293) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Pypendop_2021_reference](drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference.md) | 2-compartment, IV | 10 | Pypendop BH et al., Pharmacokinetics of butorphanol in male…, Journal of veterinary pharm… (2021) | [10.1111/jvp.13014](https://doi.org/10.1111/jvp.13014) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Knych_2024_estimate](drugs/drug_butorphanol/Butorphanol_Knych2024_estimate.md) | 3-compartment, oral | 12 | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Knych_2024_shrinkage](drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage.md) | 3-compartment, oral | 8 | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Saeed_2026_reference](drugs/drug_butorphanol/Butorphanol_Saeed2026_reference.md) | 1-compartment (no model) | 1 (+1 cov.) | Saeed AM et al., Butorphanol Pharmacokinetics Across Spe…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70293](https://doi.org/10.1002/psp4.70293) |
 
 ## Pharmacodynamics (PD)
 

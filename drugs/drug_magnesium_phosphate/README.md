@@ -4,7 +4,8 @@
 
 - **generic name:** magnesium phosphate
 - **ATC codes:** `B05XA10`
-- **DrugBank:** [DB13862](https://go.drugbank.com/drugs/DB13862)
+- **DrugBank:** [DB13862](https://go.drugbank.com/drugs/DB13862) · **PubChem:** not captured
+- **molar mass:** 262.858 g/mol (Mg3O8P2) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

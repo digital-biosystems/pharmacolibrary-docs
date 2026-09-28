@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for clofarabine's clearance and volume of distribution.**
+
+The model was built, but clofarabine's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — clofarabine: CLNR 24 L/h, CLR 29.8 L/h, V 186 L.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Nijstad AL; Nierkens S; Lindemans CA; Boelens JJ; Bierings M; Versluys AB; et al. et al. (2021). British journal of clinical pharmacology 87
@@ -25,6 +27,9 @@ Nijstad AL; Nierkens S; Lindemans CA; Boelens JJ; Bierings M; Versluys AB; et al
 
 ## Model component
 <dbs-pgx drug="clofarabine" model-id="Clofarabine_Nijstad2021_reference" status="model_quarantined" stale="false" population="paediatric patients undergoing allogeneic hematopoietic cell transplantation" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 6 scholar param(s) emitted or defaulted — got 2 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (loperamide vs M1) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The loperamide parent–metabolite model was quarantined because N-desmethyl loperamide's clearance, volume of distribution and formation rate had no values and placeholder numbers were substituted, and V2/F, Q/F, kabs and tlag were also unextracted.**
+
+The record lists loperamide parameters CL/F 293 L/h, V1/F 3380 L, V2/F 1770 L, Q/F 219 L/h, Frel 1.00, kabs 1.19 h−1, tlag 0.149 h and D1 0.551 h, but the metabolism link to N-desmethyl loperamide carries no parameter value, so the metabolite's clearance, volume of distribution and formation rate had no extracted value and library placeholder numbers stood in, holding the model back rather than publishing it with invented numbers. The parameter-coverage check expected 6 parameters emitted or defaulted but covered only 2, with V2/F, Q/F, kabs and tlag neither emitted nor defaulted. The builder also assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent. A second reader further disagreed on the primary analyte and on the metabolite identity, reading the linked metabolite as M1 rather than N-desmethyl loperamide. Extracted — loperamide: CL/F 293 L/h, V1/F 3.38e+03 L, V2/F 1.77e+03 L, Q/F 219 L/h, Frel 1, kabs 1.19 h−1, tlag 0.149 h, D1 0.551 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has loperamide, the second reading M1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Valenzuela B; Gisleskog PO; Cirillo I; Coenen E; Ariyawansa J; Ali SR; et al. et al. (2025). Clinical and translational science 18
@@ -26,6 +29,9 @@ Valenzuela B; Gisleskog PO; Cirillo I; Coenen E; Ariyawansa J; Ali SR; et al. et
 
 ## Model component
 <dbs-pgx drug="loperamide" model-id="Loperamide_Valenzuela2025_loperamide" status="model_quarantined" stale="false" population="healthy adults" measured-compound="loperamide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

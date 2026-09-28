@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (quinidine vs quinidine sulphate and quinidine bisulphate) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — quinidine: CLR 0.0566, V1 161 l, Q 12.6, V2 66.7 l, tmax 1.37 h, Fab 1.36.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has quinidine, the second reading quinidine sulphate and quinidine bisulphate. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Fattinger K; Vozeh S; Ha HR; Borner M; Follath F et al. (1991). British journal of clinical pharmacology 31
@@ -26,6 +29,9 @@ Fattinger K; Vozeh S; Ha HR; Borner M; Follath F et al. (1991). British journal 
 
 ## Model component
 <dbs-pgx drug="quinidine" model-id="Quinidine_Fattinger1991v2_reference" status="needs_review" stale="false" population="patients with arrhythmias" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 

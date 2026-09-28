@@ -4,7 +4,8 @@
 
 - **generic name:** amoxapine
 - **ATC codes:** `N06AA17`
-- **DrugBank:** [DB00543](https://go.drugbank.com/drugs/DB00543)
+- **DrugBank:** [DB00543](https://go.drugbank.com/drugs/DB00543) · **PubChem:** [CID 2170](https://pubchem.ncbi.nlm.nih.gov/compound/2170)
+- **molar mass:** 313.781 g/mol (C17H16ClN3O) — DrugBank
 - **groups:** approved
 
 ## About

@@ -4,7 +4,8 @@
 
 - **generic name:** sulfasalazine
 - **ATC codes:** `A07EC01`
-- **DrugBank:** [DB00795](https://go.drugbank.com/drugs/DB00795)
+- **DrugBank:** [DB00795](https://go.drugbank.com/drugs/DB00795) · **PubChem:** [CID 5359476](https://pubchem.ncbi.nlm.nih.gov/compound/5359476)
+- **molar mass:** 398.393 g/mol (C18H14N4O5S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

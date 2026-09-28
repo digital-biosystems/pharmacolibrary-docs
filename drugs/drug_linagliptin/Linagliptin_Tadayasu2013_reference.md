@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**This linagliptin model was rejected because a structural parameter has a dimension mismatch and the one-compartment structure leaves the reported peripheral parameters (Q3/F 73.0 L/h, V3/F 683 L) without a connected compartment.**
+
+The record lists a one-compartment structure, yet the extracted parameters include two-compartment distribution terms — inter-compartmental clearance Q3/F of 73.0 L/h and peripheral volume V3/F of 683 L — which have no path from the dose in a single-compartment model, making that peripheral compartment unreachable. A dimension mismatch was also flagged on one of the structural parameters. Additionally, one of the reported units could not be expressed in SI units, so that parameter entered the model build without a valid SI value. The record was therefore held back rather than published. Extracted — linagliptin: Fab 1, kabs 1.63, CL/F 121 L/h, V2/F 633 L, Q3/F 73 L/h, V3/F 683 L, Bmax 6.07 nmol/L, KD 0.108 nmol/L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tadayasu Y; Sarashina A; Tsuda Y; Tatami S; Friedrich C; Retlich S; et al. et al. (2013). Journal of pharmacy & pharmaceutical sciences : a publication of the Canadian Society for Pharmaceutical Sciences, Societe canadienne des sciences pharmaceutiques 16
@@ -25,6 +27,9 @@ Tadayasu Y; Sarashina A; Tsuda Y; Tatami S; Friedrich C; Retlich S; et al. et al
 
 ## Model component
 <dbs-pgx drug="linagliptin" model-id="Linagliptin_Tadayasu2013_reference" status="rejected" stale="false" population="Japanese patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, Q3/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

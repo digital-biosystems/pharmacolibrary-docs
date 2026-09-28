@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11C&quot;,&quot;href&quot;:&quot;atc/A11C.md&quot;},{&quot;label&quot;:&quot;calcitriol&quot;,&quot;href&quot;:&quot;drugs/drug_calcitriol/&quot;},{&quot;label&quot;:&quot;Kim_2012 \u00b7 PD bone formation markers&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bone formation markers — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>

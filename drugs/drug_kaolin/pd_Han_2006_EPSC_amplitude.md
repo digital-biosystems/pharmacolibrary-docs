@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07B&quot;,&quot;href&quot;:&quot;atc/A07B.md&quot;},{&quot;label&quot;:&quot;kaolin&quot;,&quot;href&quot;:&quot;drugs/drug_kaolin/&quot;},{&quot;label&quot;:&quot;Han_2006 \u00b7 PD name&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>

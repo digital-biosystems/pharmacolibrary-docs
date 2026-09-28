@@ -4,7 +4,8 @@
 
 - **generic name:** heptaminol
 - **ATC codes:** `C01DX08`
-- **DrugBank:** [DB13574](https://go.drugbank.com/drugs/DB13574)
+- **DrugBank:** [DB13574](https://go.drugbank.com/drugs/DB13574) · **PubChem:** not captured
+- **molar mass:** 145.246 g/mol (C8H19NO) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

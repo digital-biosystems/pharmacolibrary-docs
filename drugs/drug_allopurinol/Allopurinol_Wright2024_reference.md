@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (0.85 vs not captured) and 13 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.85, the second reading none; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Wright DFB; Hishe HZ; Stocker SL; Dalbeth N; Horne A; Drake J; et al. et al. (2024). British journal of clinical pharmacology 90

@@ -4,7 +4,8 @@
 
 - **generic name:** bexagliflozin
 - **ATC codes:** `A10BK08`
-- **DrugBank:** [DB12236](https://go.drugbank.com/drugs/DB12236)
+- **DrugBank:** [DB12236](https://go.drugbank.com/drugs/DB12236) · **PubChem:** [CID 25195624](https://pubchem.ncbi.nlm.nih.gov/compound/25195624)
+- **molar mass:** 464.94 g/mol (C24H29ClO7) — DrugBank
 - **groups:** approved, investigational
 
 ## About

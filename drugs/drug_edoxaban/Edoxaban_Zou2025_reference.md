@@ -17,9 +17,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The edoxaban pediatric model was quarantined because clearance, absorption rate constant and absorption lag time had no source values and were left at library placeholder defaults, and the invented absorption rate constant (3.71 1/h) was judged not acceptable.**
+
+The record lists edoxaban parameters (CL/F 42.87 L/h, Ka 3.71 1/h, V1/F 261 L, Q/F 8.59 L/h, V2/F 343.5 L, Ktr 47.5 1/h), yet clearance, absorption rate constant and absorption lag time were missing from the source, so placeholder values stood in for them and the model was held back rather than published with invented numbers. The absorption rate constant was additionally flagged as invented, since Ka was not reported in the source. The model also assumes F=1, Fm=1 and no molar correction (apparent parameterization). Finally, although covariate effects such as the eGFR effect (0.268) are defined, only the reference individual was simulated, so the covariate scenarios were not exercised. Extracted — edoxaban: CL/F 42.9, kabs 3.71, V1/F 261 L, Q/F 8.59 L/h, V2/F 344 L, ktr 47.5.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zou P; Atluri A; Chang P; Goedecke M; Leil TA et al. (2025). CPT: pharmacometrics & systems pharmacology 14
@@ -27,6 +29,9 @@ Zou P; Atluri A; Chang P; Goedecke M; Leil TA et al. (2025). CPT: pharmacometric
 
 ## Model component
 <dbs-pgx drug="edoxaban" model-id="Edoxaban_Zou2025_reference" status="model_quarantined" stale="false" population="pediatric patients" measured-compound="edoxaban" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

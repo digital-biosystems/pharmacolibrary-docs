@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Macpherson M; Hamrén B; Braamskamp MJ; Kastelein JJ; Lundström T; Martin PD et al. (2016). European journal of clinical pharmacology 72
@@ -28,6 +31,9 @@ Macpherson M; Hamrén B; Braamskamp MJ; Kastelein JJ; Lundström T; Martin PD et
 
 ## Model component
 <dbs-pgx drug="rosuvastatin" model-id="Rosuvastatin_Macpherson2016_full" status="accepted_with_caveats" stale="false" population="pediatric patients with heterozygous familial hypercholesterolemia" measured-compound="rosuvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted, plus 1 covariate effect.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -139,6 +145,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_full/Rosuvastatin_Macpherson2016_full.svg" alt="Rosuvastatin_Macpherson2016_full diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.183 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_full/Rosuvastatin_Macpherson2016_full_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_full/Rosuvastatin_Macpherson2016_full_sim_controls.json"></dbs-fmusim>
 

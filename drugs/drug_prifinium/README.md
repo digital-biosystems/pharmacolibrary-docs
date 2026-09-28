@@ -4,7 +4,7 @@
 
 - **generic name:** Prifinium
 - **ATC codes:** `A03AB18`
-- **DrugBank:** [DB13254](https://go.drugbank.com/drugs/DB13254)
+- **DrugBank:** [DB13254](https://go.drugbank.com/drugs/DB13254) · **PubChem:** not captured
 - **groups:** experimental
 
 ## About
@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 21:45 | 4:22 | 0/0/0 | 0/0/0 | 0/0/0 | 20,532/3,916 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-26 09:45 | 0:30 | 0/0/0 | 0/0/0 | 0/0/0 | 2,349/161 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -51,7 +51,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Noguchi_1983.pdf` | Noguchi H et al., Pharmacokinetics of prifinium bromide i…, International journal of cl… (1983) | popPK | 10 | not captured | [6134685](https://pubmed.ncbi.nlm.nih.gov/6134685) | The paper reports quantitative PK parameters (CL, Vss, t1/2) for prifinium in healthy volunteers with all numeric values explicitly present in the text. |
 
-<sub>queue written 2026-09-15T21:45:39.537065+00:00</sub>
+<sub>queue written 2026-09-26T09:45:18.067958+00:00</sub>
 
 ## Screened and excluded
 
@@ -67,6 +67,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Hachet_1986 | irrelevant | 0 | 0 | The paper describes a method for measuring gut motility and lists prifinium as a test drug, but it does not report any pharmacokinetic parameters. |
 | popPK | Ishikawa_1993 | irrelevant | 0 | 0 | The paper is a clinical case report on the treatment of organophosphorus intoxication with prifinium and does not report any pharmacokinetic parameters. |
 | PD | Ishikawa_1993 | not_relevant | 1 | 0 | The text is a qualitative clinical summary describing the efficacy of prifinium bromide in treating chronic organophosphorus intoxication but provides no numeric PD parameters, dose-response data, or concentration-effect analysis. |
+| popPK | Ishikawa_1996 | irrelevant | 0 | 0 | The paper is an epidemiological and toxicological study where prifinium is mentioned only as a therapeutic antidote, with no pharmacokinetic parameters reported. |
 | PD | Ishikawa_1996 | not_relevant | 0 | 0 | The paper is an epidemiological and pathological report on organophosphorus toxicity; Prifinium is mentioned only as a treatment antidote without any dose-response or exposure-response analysis. |
 | popPK | Ishikawa_2016 | irrelevant | 0 | 0 | The study is a mechanistic investigation of sperm migration in mice where prifinium is used as a pharmacological tool to suppress contractions, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Kubo_1981 | irrelevant | 0 | 0 | The study is a pharmacological investigation of ganglion blocking activity in animals, and prifinium is used only as a comparator agent with no pharmacokinetic parameters reported. |

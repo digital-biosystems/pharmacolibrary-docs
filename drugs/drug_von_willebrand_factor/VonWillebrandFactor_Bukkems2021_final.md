@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (VWF/FVIII concentrate vs VWF/FVIII concentrate (Humate P/Haemate P)) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for von willebrand factor's bioavailability, clearance and absorption lag time.**
+
+The model was built, but von willebrand factor's bioavailability, clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — von willebrand factor: CL 39.1, Vnorm 7.3, V 6.49e+03 mL/70 kg, kabs 0.5 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has VWF/FVIII concentrate, the second reading VWF/FVIII concentrate (Humate P/Haemate P); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `VWF/FVIII concentrate`, measured `von Willebrand factor`.
 
@@ -28,6 +31,9 @@ Bukkems LH; Heijdra JM; de Jager NCB; Hazendonk HCAM; Fijnvandraat K; Meijer K; 
 
 ## Model component
 <dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Bukkems2021_final" status="model_quarantined" stale="false" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,7 @@
 
 # rifabutin — `Rifabutin_Deshpande2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The rifabutin one-compartment model was rejected because its extracted clearance (0.07 L/h) and volume (0.31 L) fall far outside physiological plausibility, indicating a unit or scale extraction error.**
+
+The record lists rifabutin extracellular clearance of 0.07 L/h and a volume of 0.31 L, magnitudes incompatible with rifabutin's known distribution and elimination, which is why the model was refused. A second reader extracted substantially different values for the same record — 73.37 and 75 where this record had no value, 5 and 1.88 where it had none, and 2.98 placed in a different field — showing the numbers were read inconsistently. The disagreement on five value fields, with nulls on one side, means the true parameter values could not be established from this record. Extracted — rifabutin: CL 0.07 L/h, V 0.31 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q325: this record has none, the second reading 73.37; it also differs on 5 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Deshpande D; Magombedze G; Srivastava S; Gumbo T et al. (2024). IJTLD open 1
@@ -25,6 +29,9 @@ Deshpande D; Magombedze G; Srivastava S; Gumbo T et al. (2024). IJTLD open 1
 
 ## Model component
 <dbs-pgx drug="rifabutin" model-id="Rifabutin_Deshpande2024_reference" status="rejected" stale="false" population="" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -54,9 +61,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.538 (7/13 fields) | 6 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q325]` | not captured | 73.37 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q364]` | not captured | 5 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 2.98 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q59]` | not captured | 2.98 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | not captured | 1.88 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q87]` | not captured | 75 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

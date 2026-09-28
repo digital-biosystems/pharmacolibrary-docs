@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The atorvastatin model was held back because the absorption rate constant ka and lag time Tlag were not reported in the source, so placeholder values were substituted, and the invented first-order absorption was judged not acceptable.**
+
+The record reports only CL/F = 1.05 L/h and V/F = 59.3 L for atorvastatin; ka and Tlag are absent from the source, so no values were extracted and library placeholder defaults were used instead. The builder further assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with a first-order depot input for extravascular dosing. The invented absorption — ka defaulted although not reported in the source — was adjudicated as not acceptable, which is why the model needs review. Extracted — atorvastatin: CL/F 1.05 L/h, V/F 59.3 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 22:52:00.709672+00:00) predates the upstream re-run (2026-09-23 23:36:01.242880+00:00). Current validate status: `extracted`.
 
@@ -130,7 +132,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_atorvastatin/Atorvastatin_Wen2023_reference/Atorvastatin_Wen2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_atorvastatin/Atorvastatin_Wen2023_reference/Atorvastatin_Wen2023_reference_sim_controls.json"></dbs-fmusim>
 

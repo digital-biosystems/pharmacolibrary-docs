@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[central volume of distribution]` (not captured vs 8.63) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — amikacin: CL 120 ml/min per 1.73 m 2 of body surface area, Q 1.66 liters/h, V 1.19 L, V2 4.26 liters.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central volume of distribution: this record has none, the second reading 8.63; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Alhadab AA; Ahmed MA; Brundage RC et al. (2018). Antimicrobial agents and chemotherapy 62
@@ -26,6 +29,9 @@ Alhadab AA; Ahmed MA; Brundage RC et al. (2018). Antimicrobial agents and chemot
 
 ## Model component
 <dbs-pgx drug="amikacin" model-id="Amikacin_Alhadab2018_reference" status="needs_review" stale="false" population="pediatric cancer patients" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

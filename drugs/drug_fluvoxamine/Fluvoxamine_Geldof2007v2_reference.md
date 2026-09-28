@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl]` (25.1 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The fluvoxamine rat parameters — clearance 25.1 ml/min, volume 256 ml, intercompartmental clearance 30.3 ml/min — fall outside physiological plausibility, so the record was rejected.**
+
+The record reports fluvoxamine clearance of 25.1 ml/min, central volume of 256 ml and intercompartmental clearance of 30.3 ml/min in rats, magnitudes judged physiologically implausible and attributed to a unit or scale extraction error. The source is abstract-only, meaning the paper's abstract alone was read and its summary statistics stood in for a fitted model. A second reader returned no values for clearance, volume and intercompartmental clearance, so no comparison could be computed for these parameters (ratio None). Extracted — fluvoxamine: CL 25.1 ml/min, V 256 ml, Q 30.3 ml/min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 25.1, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Geldof_2007_2)
 
 ## Model component
 <dbs-pgx drug="fluvoxamine" model-id="Fluvoxamine_Geldof2007v2_reference" status="rejected" stale="false" population="rats" measured-compound="fluvoxamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

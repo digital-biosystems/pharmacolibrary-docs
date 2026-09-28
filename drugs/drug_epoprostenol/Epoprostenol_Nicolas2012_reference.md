@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[k a]` (0.688 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 0.25, model 1.05); the covariate scenarios were not simulated.**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is epoprostenol's own; they describe 6-keto-prostacyclin F1a. Extracted — 6-keto-prostacyclin F1a: CL 84.9 l h -1, V 23.7 l, kabs 0.688 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of k a: this record has 0.688, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `epoprostenol`, measured `6-keto-prostacyclin F1a`.
 
@@ -30,6 +33,9 @@ Nicolas LB; Krause A; Gutierrez MM; Dingemanse J et al. (2012). British journal 
 
 ## Model component
 <dbs-pgx drug="epoprostenol" model-id="Epoprostenol_Nicolas2012_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="6-keto-prostacyclin F1a" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -158,6 +164,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference.svg" alt="Epoprostenol_Nicolas2012_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.688 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_sim_controls.json"></dbs-fmusim>
 

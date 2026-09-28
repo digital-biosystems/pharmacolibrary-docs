@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[q]` (79.034 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for desipramine's clearance.**
+
+The model was built, but desipramine's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — desipramine: V1 892 L, V2 369 L, Q 79 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q: this record has 79.034, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Asiimwe IG; S'fiso Ndzamba B; Mouksassi S; Pillai GC; Lombard A; Lang J et al. (2024). The AAPS journal 26
@@ -26,6 +29,9 @@ Asiimwe IG; S'fiso Ndzamba B; Mouksassi S; Pillai GC; Lombard A; Lang J et al. (
 
 ## Model component
 <dbs-pgx drug="desipramine" model-id="Desipramine_Asiimwe2024_reference" status="model_quarantined" stale="false" population="clinical trial subjects" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

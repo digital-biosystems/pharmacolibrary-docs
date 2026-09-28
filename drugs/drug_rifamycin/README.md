@@ -4,7 +4,8 @@
 
 - **generic name:** rifamycin
 - **ATC codes:** `A07AA13`, `D06AX15`, `J04AB03`, `S01AA16`, `S02AA12`
-- **DrugBank:** [DB11753](https://go.drugbank.com/drugs/DB11753)
+- **DrugBank:** [DB11753](https://go.drugbank.com/drugs/DB11753) · **PubChem:** not captured
+- **molar mass:** 697.778 g/mol (C37H47NO12) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
 ## About

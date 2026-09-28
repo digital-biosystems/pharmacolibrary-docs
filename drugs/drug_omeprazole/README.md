@@ -5,7 +5,8 @@
 
 - **generic name:** omeprazole
 - **ATC codes:** `A02BC01`
-- **DrugBank:** [DB00338](https://go.drugbank.com/drugs/DB00338)
+- **DrugBank:** [DB00338](https://go.drugbank.com/drugs/DB00338) · **PubChem:** [CID 4594](https://pubchem.ncbi.nlm.nih.gov/compound/4594)
+- **molar mass:** 345.416 g/mol (C17H19N3O3S) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -33,6 +34,16 @@ patients 1 month of age and older
 year of age and older 
 
 • Pathologic hypersecretory conditions in adults
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| omeprazole | parent | 345.416 | C17H19N3O3S | DrugBank | [4594](https://pubchem.ncbi.nlm.nih.gov/compound/4594) | Zhao_2018 |
+| 5-hydroxy-omeprazole | metabolite | — (mass units only) | — | — | — | — |
+| omeprazole sulfone | metabolite | 361.4 | — | PubChem | [145900](https://pubchem.ncbi.nlm.nih.gov/compound/145900) | Zhao_2018 |
 
 ## Extraction summary
 

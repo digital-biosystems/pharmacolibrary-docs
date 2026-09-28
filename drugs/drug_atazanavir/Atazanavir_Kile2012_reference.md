@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The atazanavir model was quarantined because its volume of distribution, absorption rate constant and absorption lag time had no extracted values and were left at library placeholder defaults.**
+
+The record reports only CL/F 16.7 L/h, V2/F 32.2 L and Q/F 7.29 L/h for atazanavir in HIV-negative volunteers; the volume of distribution, absorption rate constant and absorption lag time were missing from the source, so placeholder values stood in for them. The absorption rate constant in particular was invented by defaulting, since it is not reported in the source, and this invented absorption was judged not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction), implying extravascular dosing with a first-order depot input. Extracted — atazanavir: CL/F 16.7 liters/h, V2/F 32.2 liters, Q/F 7.29 liters/h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kile DA; MaWhinney S; Aquilante CL; Rower JE; Castillo-Mancilla JR; Anderson PL et al. (2012). AIDS research and human retroviruses 28
@@ -26,6 +29,9 @@ Kile DA; MaWhinney S; Aquilante CL; Rower JE; Castillo-Mancilla JR; Anderson PL 
 
 ## Model component
 <dbs-pgx drug="atazanavir" model-id="Atazanavir_Kile2012_reference" status="model_quarantined" stale="false" population="HIV-negative volunteers" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, Q/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

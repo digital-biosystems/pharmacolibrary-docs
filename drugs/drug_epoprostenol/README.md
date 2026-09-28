@@ -5,7 +5,8 @@
 
 - **generic name:** epoprostenol
 - **ATC codes:** `B01AC09`
-- **DrugBank:** [DB01240](https://go.drugbank.com/drugs/DB01240)
+- **DrugBank:** [DB01240](https://go.drugbank.com/drugs/DB01240) · **PubChem:** [CID 5280427](https://pubchem.ncbi.nlm.nih.gov/compound/5280427)
+- **molar mass:** 352.4651 g/mol (C20H32O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,12 +23,12 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Keizer_2010_reference](drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md) | Keizer RJ et al., A model of hypertension and proteinuria…, Journal of pharmacokinetics… (2010) | [10.1007/s10928-010-9164-2](https://doi.org/10.1007/s10928-010-9164-2) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Vizza_2017_reference](drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md) | Vizza CD et al., Efficacy of 1, 5, and 20 mg oral silden…, BMC pulmonary medicine (2017) | [10.1186/s12890-017-0374-x](https://doi.org/10.1186/s12890-017-0374-x) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Vucicevic_2025_reference](drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md) | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Nicolas_2012_reference](drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md) | Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.083). The first reading is what the record holds.">cross-check: partial</span> | [Keizer_2010_reference](drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md) | 1-compartment, IV | 2 | Keizer RJ et al., A model of hypertension and proteinuria…, Journal of pharmacokinetics… (2010) | [10.1007/s10928-010-9164-2](https://doi.org/10.1007/s10928-010-9164-2) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Vizza_2017_reference](drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md) | 1-compartment, oral | 3 | Vizza CD et al., Efficacy of 1, 5, and 20 mg oral silden…, BMC pulmonary medicine (2017) | [10.1186/s12890-017-0374-x](https://doi.org/10.1186/s12890-017-0374-x) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span> | [Vucicevic_2025_reference](drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md) | 1-compartment, oral | 3 | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Nicolas_2012_reference](drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md) | 1-compartment, oral | 3 (+3 cov.) | Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x) |
 
 ## Pharmacodynamics (PD)
 

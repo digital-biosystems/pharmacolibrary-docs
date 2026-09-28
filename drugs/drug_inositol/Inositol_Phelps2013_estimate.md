@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q61, Q22, Q47, Q57 — no SI value to build from.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**V, CL, kel and t1/2z have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V, CL, kel and t1/2z), so that value has no SI equivalent. Extracted — inositol: V 0.511 volume, CL 0.0679 clearance, kel 0.133 elimination rate; Cl/V, t1/2z 5.22 half-life; 0.693/k, E 39.2 endogenous concentration; R/Cl.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et al. (2013). Pediatric research 74
@@ -26,6 +29,9 @@ Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et 
 
 ## Model component
 <dbs-pgx drug="inositol" model-id="Inositol_Phelps2013_estimate" status="needs_review" stale="false" population="preterm infants" measured-compound="myo-inositol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

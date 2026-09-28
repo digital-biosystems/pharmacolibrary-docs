@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (phylloquinone vs 13C-phylloquinone) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has phylloquinone, the second reading 13C-phylloquinone; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Novotny JA; Kurilich AC; Britz SJ; Baer DJ; Clevidence BA et al. (2010). The British journal of nutrition 104
@@ -26,6 +29,9 @@ Novotny JA; Kurilich AC; Britz SJ; Baer DJ; Clevidence BA et al. (2010). The Bri
 
 ## Model component
 <dbs-pgx drug="phytomenadione" model-id="Phytomenadione_Novotny2010_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="phylloquinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

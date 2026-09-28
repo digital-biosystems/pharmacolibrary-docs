@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The budesonide two-compartment model was rejected because one compartment has no connection to the dosing route, and the record was built only from the paper's abstract rather than a fitted model.**
+
+The record describes a two-compartment model for budesonide in adults with moderate asthma, with V1 = 216 L, CL = 18.4 L·hr−1, absorption rate constant kabs = 19.7 hr−1 and V2 = 106 L. It was rejected because one of these compartments is unreachable or orphan — it has no path from the administered dose, so drug could never reach it. In addition, the record was built from the abstract alone, meaning only the paper's summary statistics stood in for a fitted model. Extracted — budesonide: V1 216 L, CL 18.4 L·hr−1, kabs 19.7 hr−1, V2 106 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `budesonide/formoterol`, measured `budesonide`.
 
@@ -27,6 +29,9 @@ Back HM; Lee JB; Kim A; Park SJ; Kim J; Chae JW; et al. et al. (2020). Pharmaceu
 
 ## Model component
 <dbs-pgx drug="budesonide" model-id="Budesonide_Back2020_reference" status="rejected" stale="false" population="adults with moderate asthma" measured-compound="budesonide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

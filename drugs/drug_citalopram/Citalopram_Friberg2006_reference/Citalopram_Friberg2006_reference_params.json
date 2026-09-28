@@ -1,0 +1,27 @@
+{
+ "model_id": "Citalopram_Friberg2006_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.138888888888889e-06,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.018285714285714287,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0004111111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10908.21643286573
+ },
+ "reference_peaks": {
+  "central.C": 7.41107581847191e-05
+ },
+ "stop_time": 777600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

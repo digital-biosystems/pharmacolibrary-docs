@@ -4,7 +4,8 @@
 
 - **generic name:** sodium citrate
 - **ATC codes:** `B05CB02`
-- **DrugBank:** [DB09154](https://go.drugbank.com/drugs/DB09154)
+- **DrugBank:** [DB09154](https://go.drugbank.com/drugs/DB09154) · **PubChem:** [CID 6224](https://pubchem.ncbi.nlm.nih.gov/compound/6224)
+- **molar mass:** 258.068 g/mol (C6H5Na3O7) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for melphalan's clearance.**
+
+The model was built, but melphalan's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — melphalan: V 24.2 L.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Shah GL; Boelens JJ; Carlow D; Lin A; Schofield R; Cruz Sitner N; et al. et al. (2022). Clinical pharmacokinetics 61
@@ -25,6 +27,9 @@ Shah GL; Boelens JJ; Carlow D; Lin A; Schofield R; Cruz Sitner N; et al. et al. 
 
 ## Model component
 <dbs-pgx drug="melphalan" model-id="Melphalan_Shah2022_reference" status="model_quarantined" stale="false" population="adult patients receiving hematopoietic cell transplantation" measured-compound="melphalan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

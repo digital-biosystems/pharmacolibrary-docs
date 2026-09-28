@@ -5,7 +5,8 @@
 
 - **generic name:** dofetilide
 - **ATC codes:** `C01BD04`
-- **DrugBank:** [DB00204](https://go.drugbank.com/drugs/DB00204)
+- **DrugBank:** [DB00204](https://go.drugbank.com/drugs/DB00204) · **PubChem:** [CID 71329](https://pubchem.ncbi.nlm.nih.gov/compound/71329)
+- **molar mass:** 441.565 g/mol (C19H27N3O5S2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Le_1995_reference](drugs/drug_dofetilide/Dofetilide_Le1995_reference.md) | Le Coz F et al., Pharmacokinetic and pharmacodynamic mod…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90038-1](https://doi.org/10.1016/0009-9236(95)90038-1) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gotta_2015_reference](drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md) | Gotta V et al., Inter-study variability of preclinical…, British journal of pharmaco… (2015) | [10.1111/bph.13218](https://doi.org/10.1111/bph.13218) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Le_1995_reference](drugs/drug_dofetilide/Dofetilide_Le1995_reference.md) | 1-compartment (no model) | 3 | Le Coz F et al., Pharmacokinetic and pharmacodynamic mod…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90038-1](https://doi.org/10.1016/0009-9236(95)90038-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gotta_2015_reference](drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md) | 1-compartment (no model) | 0 | Gotta V et al., Inter-study variability of preclinical…, British journal of pharmaco… (2015) | [10.1111/bph.13218](https://doi.org/10.1111/bph.13218) |
 
 ## Pharmacodynamics (PD)
 

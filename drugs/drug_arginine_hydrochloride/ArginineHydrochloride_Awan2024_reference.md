@@ -5,7 +5,7 @@
 
 # arginine hydrochloride — `ArginineHydrochloride_Awan2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The arginine hydrochloride one-compartment model was rejected because its clearance of 1.0 mL/day and volume of 0.0117 L fall far outside physiological ranges, indicating a unit or scale extraction error.**
+
+The record lists a clearance rate (CL) of 1.0 mL/day and a volume of distribution (V) of 0.0117 L for arginine hydrochloride, derived from CL·t½/ln2. Both magnitudes are physiologically implausible for this molecule, which the review attributed to a unit or scale error in extraction. A second reader recorded no value for this check, so the comparison could not be computed and the finding stands on the implausible magnitudes alone. Extracted — arginine hydrochloride: CL 1 mL/day, V 0.0117 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 1, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Awan SF; Pegu A; Strom L; Carter CA; Hendel CS; Holman LA; Costner PJ; Trofymenko O; Dyer R; Gordon IJ; Rothwell RSS; Hickman SP; Conan-Cibotti M; Doria-Rose NA; Lin BC; O'Connell S; Narpala SR; Almasri CG; Liu C; Ko S; Kwon YD; Namboodiri AM; Pandey JP; Arnold FJ; Carlton K; Gall JG; Kwong PD; Capparelli EV; Bailer RT; McDermott AB; Chen GL; Koup RA; Mascola JR; Coates EE; Ledgerwood JE; Gaudinski MR; VRC 610 study team et al. (2024). JCI insight 9
@@ -25,6 +29,9 @@ Awan SF; Pegu A; Strom L; Carter CA; Hendel CS; Holman LA; Costner PJ; Trofymenk
 
 ## Model component
 <dbs-pgx drug="arginine hydrochloride" model-id="ArginineHydrochloride_Awan2024_reference" status="rejected" stale="false" population="" measured-compound="arginine_hydrochloride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -54,9 +61,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.667 (2/3 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 1 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

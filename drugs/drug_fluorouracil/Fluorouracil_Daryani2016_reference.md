@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[rate constant transit tumor compartment].parameter_id` (Q47 vs Q306) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The fluorouracil model record was rejected because the maximum elimination rate Vmax (2040) was reported with a unit that could not be converted to SI, leaving a structural parameter dimensionally unusable.**
+
+The Vmax parameter for 5-fluorouracil carries only the label 'Vmax,plasma,m' as its unit, which is not a convertible unit, so the value 2040 could not be expressed in SI units and failed the dimensional consistency check on a structural parameter. Additionally, the tumor-transit rate constant kel (Kdel,m) is listed without any value. A second reader also disagreed on the identity of the transit rate constant parameter, reading it as a different identifier than the one recorded. Extracted — fluorouracil: Vmax 2.04e+03 Vmax,plasma,m, V1 0.962 V1,m, Q 1.67 Qm, V2 0.332 V2,m, fu 0.37 fu,m, V3 0.001 V3,m, CL 13 CLp, kabs 0.757 h−1, … (+1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[rate constant transit tumor compartment].parameter_id`: this record has Q47, the second reading Q306; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Daryani VM; Patel YT; Tagen M; Turner DC; Carcaboso AM; Atkinson JM; et al. et al. (2016). CPT: pharmacometrics & systems pharmacology 5

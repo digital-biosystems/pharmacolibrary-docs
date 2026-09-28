@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[kcm]` (0.367 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — sertraline: V/F 2.25e+03 L, kabs 0.314 h–1, k21 0.135 h–1, k12 0.367 h–1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of kcm: this record has 0.367, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Monfort A; Cardoso E; Eap CB; Ansermot N; Crettol S; Fischer Fumeaux CJ; et al. et al. (2024). British journal of clinical pharmacology 90
@@ -26,6 +29,9 @@ Monfort A; Cardoso E; Eap CB; Ansermot N; Crettol S; Fischer Fumeaux CJ; et al. 
 
 ## Model component
 <dbs-pgx drug="sertraline" model-id="Sertraline_Monfort2024_reference" status="needs_review" stale="false" population="women during the perinatal period" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted, plus 1 covariate effect.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

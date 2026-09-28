@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;proglumide&quot;,&quot;href&quot;:&quot;drugs/drug_proglumide/&quot;},{&quot;label&quot;:&quot;Martins_2006 \u00b7 PD duodenal longitudinal muscle relaxation&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # duodenal longitudinal muscle relaxation — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>

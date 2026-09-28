@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['fosphenytoin sodium', 'phenytoin', 'metabolism']] vs []) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for fosphenytoin's volume of distribution — all 6 extracted parameters describe phenytoin, not fosphenytoin.**
+
+The model was built, but fosphenytoin's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (V3), so that value has no SI equivalent. Extracted — phenytoin: CL 1.61 L/h, V1 20.3 L, Q 53.4 L/h, V2 26.5 L, V3 0.591 V3, kfm 4.96 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has fosphenytoin sodium → phenytoin (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `fosphenytoin`, measured `phenytoin`.
 
@@ -28,6 +31,9 @@ Tanaka J; Kasai H; Shimizu K; Shimasaki S; Kumagai Y et al. (2013). European jou
 
 ## Model component
 <dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Tanaka2013_reference" status="model_quarantined" stale="false" population="pediatric patients, adult patients, and healthy volunteers" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

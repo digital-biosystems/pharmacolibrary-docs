@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (tobramycin and netilmicin vs netilmicin, tobramycin) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for netilmicin's volume of distribution — the 1 extracted parameter describes tobramycin and netilmicin, not netilmicin.**
+
+The model was built, but netilmicin's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — tobramycin and netilmicin: CL 48 ml/min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tobramycin and netilmicin, the second reading netilmicin, tobramycin; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Winslade NE; Adelman MH; Evans EJ; Schentag JJ et al. (1987). Antimicrobial agents and chemotherapy 31
@@ -26,6 +29,9 @@ Winslade NE; Adelman MH; Evans EJ; Schentag JJ et al. (1987). Antimicrobial agen
 
 ## Model component
 <dbs-pgx drug="netilmicin" model-id="Netilmicin_Winslade1987v2_reference" status="model_quarantined" stale="false" population="normal volunteers" measured-compound="tobramycin and netilmicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clearance]` (46.8 vs not captured) and 4 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for bromopride's bioavailability and clearance.**
+
+The model was built, but bromopride's bioavailability and clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bromopride: kabs 0.08 h - 1, FR 32.6 %, tlag 0.47 h, V 230 l, CL 46.8 l h - 1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance: this record has 46.8, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lachi-Silva L; Barth AB; Santos GML; Ahamadi M; Bruschi ML; Kimura E; et al. et al. (2020). European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 142
@@ -26,6 +29,9 @@ Lachi-Silva L; Barth AB; Santos GML; Ahamadi M; Bruschi ML; Kimura E; et al. et 
 
 ## Model component
 <dbs-pgx drug="bromopride" model-id="Bromopride_LachiSilva2020_reference" status="model_quarantined" stale="false" population="healthy adults" measured-compound="bromopride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

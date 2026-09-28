@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl23/f]` (not captured vs 0.459) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The tamoxifen absorption rate constant kabs is reported with an unconvertible unit ('unit'), so the structural parameter has no SI value and the parent–metabolite model was rejected.**
+
+The record lists kabs = 1.08 for tamoxifen with the unit given only as 'unit', which cannot be converted to SI, leaving this structural absorption parameter dimensionally undefined. The model is a parent–metabolite structure in which tamoxifen forms endoxifen via the metabolic clearance CL23/F, but this link parameter has no value in the record while a second reader extracted 0.459 L/h for it, so the formation clearance is disputed. The remaining parameters (t lag 0.442 h, V/F 912 L, CL/F 5.10 L/h for endoxifen, V1/F 400 L, CL/F 5.07 L/h) carry consistent units, but the unconvertible kabs unit alone blocked publication. Extracted — tamoxifen: kabs 1.08 unit, tlag 0.442 hour, V/F 912 L, CL/F 5.07 L/hour; endoxifen: CL/F 5.1 L/hour, V1/F 400 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl23/f: this record has none, the second reading 0.459. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `tamoxifen`, measured `endoxifen`.
 

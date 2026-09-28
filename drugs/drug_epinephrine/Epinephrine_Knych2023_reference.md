@@ -5,7 +5,7 @@
 
 # epinephrine — `Epinephrine_Knych2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**This epinephrine two-compartment model record was rejected because one compartment has no path from the dose, and a second reader returned no values for the clearance, volumes, absorption rate and several other parameters.**
+
+The record describes a two-compartment epinephrine model with clearance 15.0 mL/min, central volume 410.4 L, peripheral volume 1579.7 L and absorption rate constant 1.92 1/h, but the structure check flagged an unreachable or orphan compartment — a compartment with no connection from the administered dose. The rejection rests on this structural finding. A second reader returned null for eight extracted values, including the clearance (15.0), absorption rate (1.92), central volume (410.4) and peripheral volume (1579.7), so those extractions stand without independent confirmation; the disagreement is inconclusive rather than a confirmed error. Extracted — epinephrine: CL 15 mL/min, V 410 L, V2 1.58e+03 L, kabs 1.92 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 15, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Knych HK; Katzman S; McKemie DS; Arthur RM; Blea J et al. (2023). BMC veterinary research 19
@@ -25,6 +29,9 @@ Knych HK; Katzman S; McKemie DS; Arthur RM; Blea J et al. (2023). BMC veterinary
 
 ## Model component
 <dbs-pgx drug="epinephrine" model-id="Epinephrine_Knych2023_reference" status="rejected" stale="false" population="" measured-compound="epinephrine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -56,9 +63,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.429 (6/14 fields) | 8 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 15 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | 1.92 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q59]` | 0.194 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | 3.49 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 410.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 1579.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q67]` | 3.56 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | 22.1 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

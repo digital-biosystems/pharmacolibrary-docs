@@ -17,9 +17,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The tegafur parent–metabolite model was quarantined because tegafur's clearance and volume of distribution had no extracted values, so library defaults were substituted, and the reported clearance of 1.68 'fold' could not be converted to SI units.**
+
+The record lists CL (estimated 5-FU clearance, tegafur compound) with value 1.68 and unit 'fold', a unit that could not be converted to SI, so the parameter was carried into the model without a usable value. Because no source values existed for tegafur's clearance and volume of distribution, placeholder values stood in for both, and the model was held back rather than published with invented numbers. The model structure also failed its structural check: the expected parent–metabolite structure was not matched, as the obtained structure was a one-compartment PK model. In addition, although the record defines covariate effects (theta_q49_category), only the reference individual was simulated, so the covariate scenarios were not exercised; this caveat is inconclusive rather than a demonstrated numerical error. Extracted — tegafur: CL 1.68 fold.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `S-1`, measured `tegafur`.
 
@@ -29,6 +31,9 @@ Kim TH; Shin S; Shin JC; Bulitta JB; Weon KY; Yoo SD; et al. et al. (2017). Mole
 
 ## Model component
 <dbs-pgx drug="tegafur" model-id="Tegafur_Kim2017_unit" status="model_quarantined" stale="false" population="Sprague-Dawley rats" measured-compound="tegafur" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 

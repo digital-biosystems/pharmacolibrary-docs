@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q33]` (1.09 vs 1.09) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The amoxicillin model was held back because the absorption rate constant ka and lag time Tlag were not reported in the source and were left at library placeholder defaults, an invented absorption the review judged not acceptable.**
+
+The record reports only oral clearance CL/F of 97.5 L/h and volume of distribution V of 1056 L for amoxicillin; ka and Tlag had no values in the source, so library placeholder values were substituted, meaning the absorption rate and lag time were invented rather than fitted or cited. The model was further parameterized as apparent, assuming F=1 and Fm=1 with no molar correction, and using a first-order depot input consistent with extravascular dosing. The failed check recorded 'invented_absorption: not acceptable'. A second reader disagreed on one extracted value (4 versus 67), though the other disputed values matched or were not computed. Extracted — amoxicillin: CL/F 97.5 L/h, V 1.06e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q33: this record has 1.09, the second reading 1.09; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Echizen H et al. (2016). Clinical pharmacokinetics 55

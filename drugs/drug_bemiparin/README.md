@@ -4,7 +4,7 @@
 
 - **generic name:** bemiparin
 - **ATC codes:** `B01AB12`
-- **DrugBank:** [DB09258](https://go.drugbank.com/drugs/DB09258)
+- **DrugBank:** [DB09258](https://go.drugbank.com/drugs/DB09258) · **PubChem:** not captured
 - **groups:** approved, investigational, withdrawn
 
 ## About

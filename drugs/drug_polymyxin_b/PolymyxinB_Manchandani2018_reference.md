@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (polymyxin_b vs polymyxin B) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading polymyxin B; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Manchandani P; Thamlikitkul V; Dubrovskaya Y; Babic JT; Lye DC; Lee LS; et al. et al. (2018). Clinical pharmacology and therapeutics 104
@@ -26,6 +29,9 @@ Manchandani P; Thamlikitkul V; Dubrovskaya Y; Babic JT; Lye DC; Lee LS; et al. e
 
 ## Model component
 <dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Manchandani2018_reference" status="curated_candidate" stale="false" population="adult patients" measured-compound="polymyxin_b" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -133,6 +139,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference/PolymyxinB_Manchandani2018_reference.svg" alt="PolymyxinB_Manchandani2018_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference/PolymyxinB_Manchandani2018_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference/PolymyxinB_Manchandani2018_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — c1 inhibitor plasma derived: V1 5.14e+03 mL, V 2.5e+03 mL.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Diris JH; Hermens WT; Hemker PW; Lagrand WK; Hack CE; van Dieijen-Visser MP et al. (2002). Clinical pharmacology and therapeutics 72
@@ -25,6 +27,9 @@ Diris JH; Hermens WT; Hemker PW; Lagrand WK; Hack CE; van Dieijen-Visser MP et a
 
 ## Model component
 <dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Diris2002_reference" status="needs_review" stale="false" population="patients with acute myocardial infarction" measured-compound="C1-inhibitor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

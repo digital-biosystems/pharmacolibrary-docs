@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/f70kg].parameter_id` (Q355 vs Q27) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**Kabs has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — hydrochlorothiazide: kabs 0.43, CLnorm/F 19 L/h, Vnorm/F 191 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f70kg].parameter_id`: this record has Q355, the second reading Q27; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Commander SJ; Wu H; Boakye-Agyeman F; Melloni C; Hornik CD; Zimmerman K; Al-Uzri A; Mendley SR; Harper B; Cohen-Wolkowiez M; Hornik CP; Best Pharmaceuticals for Children Act-Pediatric Trials Network Steering Committee et al. (2021). Journal of clinical pharmacology 61

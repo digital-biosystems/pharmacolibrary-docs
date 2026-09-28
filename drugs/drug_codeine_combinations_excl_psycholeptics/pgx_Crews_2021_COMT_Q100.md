@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine, combinations excl. psycholeptics&quot;,&quot;href&quot;:&quot;drugs/drug_codeine_combinations_excl_psycholeptics/&quot;},{&quot;label&quot;:&quot;Crews_2021 \u00b7 PGx COMT&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # COMT — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>

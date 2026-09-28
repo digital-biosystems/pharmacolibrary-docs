@@ -4,7 +4,7 @@
 
 - **generic name:** potassium salicylate
 - **ATC codes:** `N02BA12`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

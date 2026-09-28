@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jia M; Chai Y; Gao Y; Jing C; Zhu K; Zhu T; Wang L; Sun A; Yang J; Zhu Y; Feng Y; Cao Y; Li J et al. (2026). European journal of clinical pharmacology 82
@@ -25,6 +25,9 @@ Jia M; Chai Y; Gao Y; Jing C; Zhu K; Zhu T; Wang L; Sun A; Yang J; Zhu Y; Feng Y
 
 ## Model component
 <dbs-pgx drug="nickel" model-id="Nickel_Jia2026_reference" status="not_modelled" stale="false" population="" measured-compound="nickel" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -106,6 +109,8 @@ Jia M; Chai Y; Gao Y; Jing C; Zhu K; Zhu T; Wang L; Sun A; Yang J; Zhu Y; Feng Y
 </div><figure class="pk-models-diagram"><img src="drugs/toxin_nickel/Nickel_Jia2026_reference/Nickel_Jia2026_reference.svg" alt="Nickel_Jia2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.14 /h, lag 73.8 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/toxin_nickel/Nickel_Jia2026_reference/Nickel_Jia2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/toxin_nickel/Nickel_Jia2026_reference/Nickel_Jia2026_reference_sim_controls.json"></dbs-fmusim>
 

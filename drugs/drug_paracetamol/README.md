@@ -28,8 +28,7 @@ Because of its low risk of causing allergic reactions, this drug can be administ
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| acetaminophen | parent | 151.16 | — | PubChem | [1983](https://pubchem.ncbi.nlm.nih.gov/compound/1983) | Belle_2000 |
-| paracetamol | parent | 151.16 | — | PubChem | [1983](https://pubchem.ncbi.nlm.nih.gov/compound/1983) | Belle_2000 |
+| paracetamol (acetaminophen) | parent | 151.16 | — | PubChem | [1983](https://pubchem.ncbi.nlm.nih.gov/compound/1983) | Belle_2000 |
 
 ## Extraction summary
 

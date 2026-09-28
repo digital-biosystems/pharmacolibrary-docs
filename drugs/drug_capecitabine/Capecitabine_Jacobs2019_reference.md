@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jacobs BAW; Deenen MJ; Joerger M; Rosing H; de Vries N; Meulendijks D; et al. et al. (2019). CPT: pharmacometrics & systems pharmacology 8
@@ -25,6 +27,9 @@ Jacobs BAW; Deenen MJ; Joerger M; Rosing H; de Vries N; Meulendijks D; et al. et
 
 ## Model component
 <dbs-pgx drug="capecitabine" model-id="Capecitabine_Jacobs2019_reference" status="rejected" stale="false" population="heterogeneous population of cancer patients" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

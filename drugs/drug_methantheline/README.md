@@ -4,7 +4,8 @@
 
 - **generic name:** methantheline
 - **ATC codes:** `A03AB07`
-- **DrugBank:** [DB00940](https://go.drugbank.com/drugs/DB00940)
+- **DrugBank:** [DB00940](https://go.drugbank.com/drugs/DB00940) · **PubChem:** [CID 4097](https://pubchem.ncbi.nlm.nih.gov/compound/4097)
+- **molar mass:** 340.436 g/mol (C21H26NO3) — DrugBank
 - **groups:** approved
 
 ## About

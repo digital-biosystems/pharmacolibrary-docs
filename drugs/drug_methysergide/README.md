@@ -4,7 +4,8 @@
 
 - **generic name:** methysergide
 - **ATC codes:** `N02CA04`
-- **DrugBank:** [DB00247](https://go.drugbank.com/drugs/DB00247)
+- **DrugBank:** [DB00247](https://go.drugbank.com/drugs/DB00247) · **PubChem:** [CID 6540428](https://pubchem.ncbi.nlm.nih.gov/compound/6540428)
+- **molar mass:** 353.458 g/mol (C21H27N3O2) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

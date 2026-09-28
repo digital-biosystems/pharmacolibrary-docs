@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Muthukrishnan VY; Kerbusch T; Strong LE; Kleijn HJ; Pfister M; Chang AM; Acharya M; Nandy P; McCune JS et al. (2025). Clinical and translational science 18
@@ -25,6 +25,9 @@ Muthukrishnan VY; Kerbusch T; Strong LE; Kleijn HJ; Pfister M; Chang AM; Acharya
 
 ## Model component
 <dbs-pgx drug="cadmium" model-id="Cadmium_Muthukrishnan2025_reference" status="not_modelled" stale="false" population="" measured-compound="cadmium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -103,6 +106,8 @@ Muthukrishnan VY; Kerbusch T; Strong LE; Kleijn HJ; Pfister M; Chang AM; Acharya
 </div><figure class="pk-models-diagram"><img src="drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference/Cadmium_Muthukrishnan2025_reference.svg" alt="Cadmium_Muthukrishnan2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference/Cadmium_Muthukrishnan2025_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference/Cadmium_Muthukrishnan2025_reference_sim_controls.json"></dbs-fmusim>
 

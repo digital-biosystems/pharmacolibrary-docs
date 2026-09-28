@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;concizumab&quot;,&quot;href&quot;:&quot;drugs/drug_concizumab/&quot;},{&quot;label&quot;:&quot;Eichler_2019 \u00b7 PD free TFPI&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Concizumab_Agers2014_reference&quot;,&quot;label&quot;:&quot;Agers\u00f8_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_concizumab/Concizumab_Agers2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

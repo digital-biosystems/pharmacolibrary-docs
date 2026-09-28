@@ -5,7 +5,7 @@
 
 - **generic name:** romiplostim
 - **ATC codes:** `B02BX04`
-- **DrugBank:** [DB05332](https://go.drugbank.com/drugs/DB05332)
+- **DrugBank:** [DB05332](https://go.drugbank.com/drugs/DB05332) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +22,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Fan_2023_reference](drugs/drug_romiplostim/Romiplostim_Fan2023_reference.md) | Fan (2023) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Fan_2023_reference](drugs/drug_romiplostim/Romiplostim_Fan2023_reference.md) | 1-compartment (no model) | 2 | Fan (2023) | — |
 
 ## Pharmacodynamics (PD)
 

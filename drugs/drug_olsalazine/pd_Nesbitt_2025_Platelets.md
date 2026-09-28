@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;olsalazine&quot;,&quot;href&quot;:&quot;drugs/drug_olsalazine/&quot;},{&quot;label&quot;:&quot;Nesbitt_2025 \u00b7 PD Platelet recovery&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Platelet recovery — PD  <span class="pk-badge pk-badge--green">extracted</span>

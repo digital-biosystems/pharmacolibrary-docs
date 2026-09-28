@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine, combinations with psycholeptics&quot;,&quot;href&quot;:&quot;drugs/drug_codeine_combinations_with_psycholeptics/&quot;},{&quot;label&quot;:&quot;Chen_1991 \u00b7 PGx CYP2D6&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>

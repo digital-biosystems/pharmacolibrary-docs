@@ -4,7 +4,7 @@
 
 - **generic name:** insulin glulisine
 - **ATC codes:** `A10AB06`
-- **DrugBank:** [DB01309](https://go.drugbank.com/drugs/DB01309)
+- **DrugBank:** [DB01309](https://go.drugbank.com/drugs/DB01309) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

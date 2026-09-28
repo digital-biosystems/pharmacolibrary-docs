@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;coagulation factor XIII&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_xiii/&quot;},{&quot;label&quot;:&quot;Byrnes_2024 \u00b7 PD FXIII activity&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CoagulationFactorXiii_Dodds2005_reference&quot;,&quot;label&quot;:&quot;Dodds_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_xiii/CoagulationFactorXiii_Dodds2005_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

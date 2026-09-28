@@ -5,7 +5,8 @@
 
 - **generic name:** flucytosine
 - **ATC codes:** `D01AE21`, `J02AX01`
-- **DrugBank:** [DB01099](https://go.drugbank.com/drugs/DB01099)
+- **DrugBank:** [DB01099](https://go.drugbank.com/drugs/DB01099) · **PubChem:** [CID 3366](https://pubchem.ncbi.nlm.nih.gov/compound/3366)
+- **molar mass:** 129.0925 g/mol (C4H4FN3O) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Hope_2006_reference](drugs/drug_flucytosine/Flucytosine_Hope2006_reference.md) | Hope WW et al., Derivation of an in vivo drug exposure…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.00369-06](https://doi.org/10.1128/AAC.00369-06) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stott_2023_reference](drugs/drug_flucytosine/Flucytosine_Stott2023_reference.md) | Stott KE et al., Population pharmacokinetics and CSF pen…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad038](https://doi.org/10.1093/jac/dkad038) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Stegman_1999_reference](drugs/drug_flucytosine/Flucytosine_Stegman1999_reference.md) | Stegman LD et al., Noninvasive quantitation of cytosine de…, Proceedings of the National… (1999) | [10.1073/pnas.96.17.9821](https://doi.org/10.1073/pnas.96.17.9821) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Hope_2006_reference](drugs/drug_flucytosine/Flucytosine_Hope2006_reference.md) | 1-compartment, oral | 3 | Hope WW et al., Derivation of an in vivo drug exposure…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.00369-06](https://doi.org/10.1128/AAC.00369-06) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stott_2023_reference](drugs/drug_flucytosine/Flucytosine_Stott2023_reference.md) | 1-compartment, oral | 4 | Stott KE et al., Population pharmacokinetics and CSF pen…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad038](https://doi.org/10.1093/jac/dkad038) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Stegman_1999_reference](drugs/drug_flucytosine/Flucytosine_Stegman1999_reference.md) | general linear (no model) | 0 | Stegman LD et al., Noninvasive quantitation of cytosine de…, Proceedings of the National… (1999) | [10.1073/pnas.96.17.9821](https://doi.org/10.1073/pnas.96.17.9821) |
 
 ## ADME sites
 

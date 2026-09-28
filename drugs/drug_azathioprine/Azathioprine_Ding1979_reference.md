@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (azathioprine vs azathioprine, 6-mercaptopurine) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The azathioprine metabolite 8-hydroxymercaptopurine has no metabolic link from the dose, and the record was built from the abstract alone, so it was rejected.**
+
+The azathioprine model lists a metabolism rate constant (Kfm, 41.6 min half-life reported for 6-mercaptopurine) to both 6-mercaptopurine and 8-hydroxymercaptopurine, but the 8-hydroxymercaptopurine compartment has no path from the administered dose, making it an orphan metabolite. Additionally, the record was abstract-only: the reported summary statistics (t1/2z 41.6 min, CL 48.4 ml/min/kg, V 1.76 liters/kg for 6-mercaptopurine) stood in for a fitted model. A second reader also disputed the dose compartment (azathioprine alone versus azathioprine and 6-mercaptopurine) and could not confirm any of the three parameter values. Extracted — 6-mercaptopurine: t1/2z 41.6 min, CL 48.4 ml/min/kg, V 1.76 liters/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading azathioprine, 6-mercaptopurine; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 22:55:38.617280+00:00) predates the upstream re-run (2026-09-23 14:54:45.030420+00:00). Current validate status: `extracted`.
 

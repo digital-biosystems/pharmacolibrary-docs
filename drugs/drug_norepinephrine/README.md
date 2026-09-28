@@ -5,7 +5,8 @@
 
 - **generic name:** norepinephrine
 - **ATC codes:** `C01CA03`
-- **DrugBank:** [DB00368](https://go.drugbank.com/drugs/DB00368)
+- **DrugBank:** [DB00368](https://go.drugbank.com/drugs/DB00368) · **PubChem:** [CID 439260](https://pubchem.ncbi.nlm.nih.gov/compound/439260)
+- **molar mass:** 169.1778 g/mol (C8H11NO3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2024_estimate](drugs/drug_norepinephrine/Norepinephrine_Li2024_estimate.md) | Li Y et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01430-y](https://doi.org/10.1007/s40262-024-01430-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2024_parameter](drugs/drug_norepinephrine/Norepinephrine_Li2024_parameter.md) | Li Y et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01430-y](https://doi.org/10.1007/s40262-024-01430-y) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2024_estimate](drugs/drug_norepinephrine/Norepinephrine_Li2024_estimate.md) | 1-compartment (no model) | 0 | Li Y et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01430-y](https://doi.org/10.1007/s40262-024-01430-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2024_parameter](drugs/drug_norepinephrine/Norepinephrine_Li2024_parameter.md) | 1-compartment (no model) | 0 | Li Y et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01430-y](https://doi.org/10.1007/s40262-024-01430-y) |
 
 ## Pharmacodynamics (PD)
 

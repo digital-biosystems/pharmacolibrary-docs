@@ -17,16 +17,22 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[apparent clearance patients [cl/f (l/h)]].covariate_forms` (['power'] vs []) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The atogepant record was quarantined because clearance, distribution volume, absorption rate constant, absorption lag time and the intercompartmental rate constants had no extracted values, so library placeholders stood in for the published estimates.**
+
+The paper reports atogepant's two-compartment estimates (ka 1.31 /h, CL/F 18.2 L/h, V1/F 72.9 L, Q/F 0.771 L/h, V2/F 91.7 L, Q2/F 1.99 L/h, V3/F 22.3 L, tlag 0.298 h), yet the record's clearance, volume of distribution, ka, Tlag, k12 and k21 had no values extracted, meaning library placeholders would have replaced the source values. The builder also assumed F=1 and Fm=1 without molar correction (apparent parameterization) and defaulted ka, which the source does not report. In addition, the covariate effects defined in the record (dose on Frel, weight on ka, solution on Frel) were never exercised in simulation, and the two readers disagree on how the Frel covariate effects were classified, leaving those entries inconclusive. Extracted — atogepant: kabs 1.31, CL/F 18.2, V1/F 72.9, Q/F 0.771, V2/F 91.7, Q2/F 1.99, V3/F 22.3, tlag 0.298, … (+1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[apparent clearance patients [cl/f (l/h)]].covariate_forms`: this record has ['power'], the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Schlachter_2026)
 
 ## Model component
 <dbs-pgx drug="atogepant" model-id="Atogepant_Schlachter2026_phase_2_modela" status="model_quarantined" stale="false" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 9 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, Q/F, Q2/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

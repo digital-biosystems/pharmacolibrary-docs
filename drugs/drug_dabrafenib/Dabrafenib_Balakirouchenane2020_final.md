@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 3 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (dabrafenib vs dabrafenib, trametinib) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**Dabrafenib's clearance, distribution volume and absorption lag time had no extracted values, so library placeholders were substituted and the model was quarantined; V2/F and Q/F were also uncovered.**
+
+The paper reports CL/F 19.3 L/h, V1/F 39.1 L, kabs 1.8 1/h, Q/F 3.40 L/h and tlag 0.499 h, yet dabrafenib's clearance, volume of distribution and absorption lag time had no value in the record, so library placeholders stood in and the model was held back rather than published with invented numbers. The parameter coverage check found only 3 of 5 expected parameters covered, with V2/F and Q/F neither extracted nor defaulted. The reported two-compartment parent–metabolite structure, with hydroxy-dabrafenib formed from dabrafenib via the Kfm rate constant, did not match the simpler one-compartment enteral disposition actually built. The covariate parameter θage/(CLm/F) (−0.589, unit CLm/F) has a unit that could not be converted to SI, so it entered without an SI value; the builder assumed F=1 and Fm=1 with no molar correction, and a second reader disputed the dosed compound (dabrafenib plus trametinib rather than dabrafenib alone). Extracted — dabrafenib: CL/F 19.3 L/h, V1/F 39.1 L, kabs 1.8 1/h, Q/F 3.4 L/h, V2/F 5.11 L, tlag 0.499 h; hydroxy-dabrafenib: V1/F 18.7 L, CL/F 23.2 L/h, Q/F 7.21 L/h, V2/F 27.1 L, CLm/F -0.589 CLm/F.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dabrafenib, the second reading dabrafenib, trametinib; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Balakirouchenane D; Guégan S; Csajka C; Jouinot A; Heidelberger V; Puszkiel A; et al. et al. (2020). Cancers 12

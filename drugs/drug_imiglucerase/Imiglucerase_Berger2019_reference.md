@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[slow phase half-life].parameter_id` (Q57 vs Q60) — a structural parameter, so the record is disputed.
+**No volume or clearance — not a compartmental population PK model.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[slow phase half-life].parameter_id`: this record has Q57, the second reading Q60. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Berger J; Vigan M; Pereira B; Nguyen TT; Froissart R; Belmatoug N; et al. et al. (2019). Clinical pharmacokinetics 58

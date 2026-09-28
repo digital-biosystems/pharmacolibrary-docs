@@ -5,7 +5,8 @@
 
 - **generic name:** felbamate
 - **ATC codes:** `N03AX10`
-- **DrugBank:** [DB00949](https://go.drugbank.com/drugs/DB00949)
+- **DrugBank:** [DB00949](https://go.drugbank.com/drugs/DB00949) · **PubChem:** [CID 3331](https://pubchem.ncbi.nlm.nih.gov/compound/3331)
+- **molar mass:** 238.2399 g/mol (C11H14N2O4) — DrugBank
 - **groups:** approved
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Graves_1989_reference](drugs/drug_felbamate/Felbamate_Graves1989_reference.md) | Graves NM et al., Pharmacokinetics of felbamate, a novel…, Pharmacotherapy (1989) | [10.1002/j.1875-9114.1989.tb04151.x](https://doi.org/10.1002/j.1875-9114.1989.tb04151.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kelley_1997_reference](drugs/drug_felbamate/Felbamate_Kelley1997_reference.md) | Kelley MT et al., Population pharmacokinetics of felbamat…, Therapeutic drug monitoring (1997) | [10.1097/00007691-199702000-00005](https://doi.org/10.1097/00007691-199702000-00005) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Graves_1989_reference](drugs/drug_felbamate/Felbamate_Graves1989_reference.md) | 1-compartment (no model) | 1 | Graves NM et al., Pharmacokinetics of felbamate, a novel…, Pharmacotherapy (1989) | [10.1002/j.1875-9114.1989.tb04151.x](https://doi.org/10.1002/j.1875-9114.1989.tb04151.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kelley_1997_reference](drugs/drug_felbamate/Felbamate_Kelley1997_reference.md) | 1-compartment (no model) | 0 | Kelley MT et al., Population pharmacokinetics of felbamat…, Therapeutic drug monitoring (1997) | [10.1097/00007691-199702000-00005](https://doi.org/10.1097/00007691-199702000-00005) |
 
 ## ADME sites
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T3_param_coverage
-**How to address:** Open the emitted .mo and compare its base class and parameters with the record.
-<sub>owner: **engineer**</sub>
+**The fluorouracil one-compartment model was held back because its lag time (tlag, 0.000552 h) was neither emitted nor defaulted, leaving only 2 of the 3 expected parameters (CL 75.8 L/h, V1 90.6 L) covered.**
+
+The record lists three parameters for fluorouracil: clearance 75.8 L/h, central volume 90.6 L, and a lag time of 0.000552 h. The coverage check expected 3 parameters to be either emitted or defaulted, but obtained only 2, with tlag reported as neither emitted nor present in the defaulted set. Because the lag time was not covered, the model was marked needs_review rather than published. Extracted — fluorouracil: CL 75.8 L/h, V1 90.6 L, tlag 0.000552 h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Blesch KS; Gieschke R; Tsukamoto Y; Reigner BG; Burger HU; Steimer JL et al. (2003). Investigational new drugs 21
@@ -126,7 +128,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_fluorouracil/Fluorouracil_Blesch2003_reference/Fluorouracil_Blesch2003_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_fluorouracil/Fluorouracil_Blesch2003_reference/Fluorouracil_Blesch2003_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl].rse_percent` (18 vs not captured) and 4 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The midazolam rat model was rejected because the distribution volume V is reported as 85.8 L/70 kg, a body-weight-normalised unit that could not be converted to SI, leaving a structural parameter with a dimension mismatch.**
+
+The record lists V for midazolam as 85.8 with the unit L/70 kg, which is not a directly convertible unit, so the parameter entered the record without an SI value and failed the dimensional check on a structural parameter. The other extracted parameters (CL 0.067 L·min⁻¹·kg⁻¹, Vss 1.61 L·kg⁻¹, λ1 0.79 min⁻¹, λ2 0.026 min⁻¹, Fe 0.39, ka 0.073 min⁻¹) carry convertible units. The relative standard errors recorded for CL (18%), Vss (15%), ka (40%), Fe (40%) and λ2 (13%) were not confirmed by a second reader, so those uncertainty values stand unverified. Extracted — midazolam: CL 0.067 L · min-1 · kg-1, Vss 1.61 L · kg-1, λ1 0.79 min-1, λ2 0.026 min-1, fe 0.39, kabs 0.073 min-1, V 85.8 L/70 kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].rse_percent`: this record has 18, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Aarons L; Mandema JW; Danhof M et al. (1991). Journal of pharmacokinetics and biopharmaceutics 19

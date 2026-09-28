@@ -5,7 +5,8 @@
 
 - **generic name:** triamcinolone
 - **ATC codes:** `A01AC01`, `C05AA12`, `D07AB09`, `D07BB03`, `D07CB01`, `D07XB02`, `H02AB08`, `R01AD11`, `R03BA06`, `S01BA05`, `S02CA04`
-- **DrugBank:** [DB00620](https://go.drugbank.com/drugs/DB00620)
+- **DrugBank:** [DB00620](https://go.drugbank.com/drugs/DB00620) · **PubChem:** [CID 31307](https://pubchem.ncbi.nlm.nih.gov/compound/31307)
+- **molar mass:** 394.4339 g/mol (C21H27FO6) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -27,11 +28,11 @@ cancer, nonsuppurative thyroiditis, autoimmune hemolytic anemia, Diamond-Blackfa
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Beer_2003_reference](drugs/drug_triamcinolone/Triamcinolone_Beer2003_reference.md) | Beer PM et al., Intraocular concentration and pharmacok…, Ophthalmology (2003) | [10.1016/S0161-6420(02)01969-3](https://doi.org/10.1016/S0161-6420(02)01969-3) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [French_2000_reference](drugs/drug_triamcinolone/Triamcinolone_French2000_reference.md) | French K et al., Pharmacokinetics and metabolic effects…, Journal of veterinary pharm… (2000) | [10.1046/j.1365-2885.2000.00288.x](https://doi.org/10.1046/j.1365-2885.2000.00288.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Kraus_2018_reference](drugs/drug_triamcinolone/Triamcinolone_Kraus2018_reference.md) | Kraus VB et al., Synovial and systemic pharmacokinetics…, Osteoarthritis and cartilage (2018) | [10.1016/j.joca.2017.10.003](https://doi.org/10.1016/j.joca.2017.10.003) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Beer_2003_reference](drugs/drug_triamcinolone/Triamcinolone_Beer2003_reference.md) | 1-compartment (no model) | 2 | Beer PM et al., Intraocular concentration and pharmacok…, Ophthalmology (2003) | [10.1016/S0161-6420(02)01969-3](https://doi.org/10.1016/S0161-6420(02)01969-3) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [French_2000_reference](drugs/drug_triamcinolone/Triamcinolone_French2000_reference.md) | 1-compartment (no model) | 4 | French K et al., Pharmacokinetics and metabolic effects…, Journal of veterinary pharm… (2000) | [10.1046/j.1365-2885.2000.00288.x](https://doi.org/10.1046/j.1365-2885.2000.00288.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Kraus_2018_reference](drugs/drug_triamcinolone/Triamcinolone_Kraus2018_reference.md) | 1-compartment (no model) | 2 | Kraus VB et al., Synovial and systemic pharmacokinetics…, Osteoarthritis and cartilage (2018) | [10.1016/j.joca.2017.10.003](https://doi.org/10.1016/j.joca.2017.10.003) |
 
 ## Pharmacogenomics (PGx)
 

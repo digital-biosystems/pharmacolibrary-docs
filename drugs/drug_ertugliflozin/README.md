@@ -4,7 +4,8 @@
 
 - **generic name:** ertugliflozin
 - **ATC codes:** `A10BD23`, `A10BD24`, `A10BK04`
-- **DrugBank:** [DB11827](https://go.drugbank.com/drugs/DB11827)
+- **DrugBank:** [DB11827](https://go.drugbank.com/drugs/DB11827) · **PubChem:** [CID 44814423](https://pubchem.ncbi.nlm.nih.gov/compound/44814423)
+- **molar mass:** 436.89 g/mol (C22H25ClO7) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -4,7 +4,8 @@
 
 - **generic name:** doxepin
 - **ATC codes:** `D04AX01`, `N06AA12`
-- **DrugBank:** [DB01142](https://go.drugbank.com/drugs/DB01142)
+- **DrugBank:** [DB01142](https://go.drugbank.com/drugs/DB01142) · **PubChem:** [CID 667468](https://pubchem.ncbi.nlm.nih.gov/compound/667468)
+- **molar mass:** 279.3761 g/mol (C19H21NO) — DrugBank
 - **groups:** approved
 
 ## About

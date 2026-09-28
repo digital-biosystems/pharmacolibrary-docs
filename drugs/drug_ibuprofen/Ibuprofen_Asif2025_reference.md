@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-5.6-luna` read this paper differently on `screen.primary_analyte` (ibuprofen vs R- and S-ibuprofen) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The ibuprofen volume of distribution of 22.37 ml in extremely low gestational age neonates is physiologically implausible, indicating a unit or scale extraction error, so the model was rejected.**
+
+The record reports a distribution volume of 22.37 ml for ibuprofen, a magnitude far outside the physiological window for neonates and consistent with a unit misread (litres read as millilitres). The AUC0–24 h of 486 and the first-order absorption rate constant of 1.1 h⁻¹ were extracted, but the implausible volume magnitude was the stated ground for rejection. A second reader disagreed on several fields: they identified the analyte as R- and S-ibuprofen rather than ibuprofen, assigned a different identifier to the AUC0–24 h parameter, and read an AUC0–72 h of 1529 where this record has none; they left the volume and absorption constant fields empty, so the deviations remain unresolved. Extracted — ibuprofen: AUCt 486, V 22.4 ml, kabs 1.1 h -1.
+
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which molecule was measured: this record has ibuprofen, the second reading R- and S-ibuprofen; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Asif M; Sushko K; Razak A; Borhan S; Rieder M; van den Anker J; et al. et al. (2025). Journal of clinical pharmacology 65

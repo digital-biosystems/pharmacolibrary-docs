@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['levosimendan', 'or-1855', 'metabolism'], ['or-1855', 'or-1896', 'metabolism'], ['or-1896', 'or-1855', 'interconversion']] vs [['levosimendan', 'or-1855', 'metabolism'], ['or-1855', 'or-1896', 'interconversion']]) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has levosimendan → or-1855 (metabolism); or-1855 → or-1896 (metabolism); or-1896 → or-1855 (interconversion), the second reading levosimendan → or-1855 (metabolism); or-1855 → or-1896 (interconversion). That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Bertin S; Guidi M; Haefliger D; Thoueille P; Bardinet C; Decosterd LA; et al. et al. (2026). Clinical pharmacokinetics 65
@@ -26,6 +29,9 @@ Bertin S; Guidi M; Haefliger D; Thoueille P; Bardinet C; Decosterd LA; et al. et
 
 ## Model component
 <dbs-pgx drug="levosimendan" model-id="Levosimendan_Bertin2026_reference" status="rejected" stale="false" population="critically ill adults, neonates and infants on VA-ECMO" measured-compound="levosimendan" parameterization="apparent_wrt_Fm" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** apparent_wrt_Fm.
 

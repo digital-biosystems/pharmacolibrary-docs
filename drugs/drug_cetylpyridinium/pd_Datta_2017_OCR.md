@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;cetylpyridinium&quot;,&quot;href&quot;:&quot;drugs/drug_cetylpyridinium/&quot;},{&quot;label&quot;:&quot;Datta_2017 \u00b7 PD mitochondrial O2 consumption&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mitochondrial O2 consumption — PD  <span class="pk-badge pk-badge--green">extracted</span>

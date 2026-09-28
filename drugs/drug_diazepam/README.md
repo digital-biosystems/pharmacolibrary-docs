@@ -5,7 +5,8 @@
 
 - **generic name:** diazepam
 - **ATC codes:** `N05BA01`
-- **DrugBank:** [DB00829](https://go.drugbank.com/drugs/DB00829)
+- **DrugBank:** [DB00829](https://go.drugbank.com/drugs/DB00829) · **PubChem:** [CID 3016](https://pubchem.ncbi.nlm.nih.gov/compound/3016)
+- **molar mass:** 284.74 g/mol (C16H13ClN2O) — DrugBank
 - **groups:** approved, illicit, investigational, vet_approved
 
 ## About

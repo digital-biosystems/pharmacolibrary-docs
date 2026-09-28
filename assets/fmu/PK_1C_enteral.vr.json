@@ -1,5 +1,5 @@
 {
- "guid": "{ccb2f4b8-0ce1-46d4-9cb7-a4e90ddd55d7}",
+ "guid": "{66caf233-e3ce-4991-a6d1-96850fe41574}",
  "model": "Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral",
  "model_identifier": "Pharmacolibrary_Pharmacokinetic_Models_PK_1C_enteral",
  "generation_tool": "OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc",
@@ -126,6 +126,6 @@
   "elim.C",
   "periodicDose.route.absorptionLumen.C"
  ],
- "fmu_sha256": "b5e747cc4ed54724338d7f603e24456594b64b4132acb4addb329c83cca1fcd3",
+ "fmu_sha256": "e3104d3d21b82e0774a49efdc649e18413dd5353cbeca15a611178c90fa0085c",
  "js_bytes": 1825478
 }

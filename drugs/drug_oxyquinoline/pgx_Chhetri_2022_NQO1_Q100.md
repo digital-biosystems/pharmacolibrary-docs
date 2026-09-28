@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;oxyquinoline&quot;,&quot;href&quot;:&quot;drugs/drug_oxyquinoline/&quot;},{&quot;label&quot;:&quot;Chhetri_2022 \u00b7 PGx NQO1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # NQO1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>

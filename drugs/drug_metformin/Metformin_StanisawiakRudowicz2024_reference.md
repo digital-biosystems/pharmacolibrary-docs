@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The metformin record carries parameters labeled as olaparib control values, and the absorption rate constant ka and lag time were not reported in the source, so placeholder values were substituted.**
+
+The extracted CL/F (7.84 l/h) and V/F (22.49 l) are labeled verbatim as 'Cl/F of olaparib (control)' and 'Vd/F of olaparib (control)' despite being assigned to metformin, indicating the source values belong to a different compound. The absorption rate constant ka and lag time were not reported in the source, so no values were extracted and library placeholder values would have been used instead. The builder additionally assumed F=1 and Fm=1 without molar correction, giving an apparent (/F) parameterization with first-order depot input. The invented absorption deviation — a defaulted ka not reported in the source — was judged not acceptable, so the model was held back for review. Extracted — metformin: CL/F 7.84 l/h, V/F 22.5 l.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `metformin and olaparib`, measured `metformin`.
 

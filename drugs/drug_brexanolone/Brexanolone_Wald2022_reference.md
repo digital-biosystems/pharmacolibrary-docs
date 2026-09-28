@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_tmax.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's time of the peak (tmax) (paper 47.8, model 0.183).**
+
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, Cavg, Css and AUCt), so that value has no SI equivalent. Extracted — brexanolone: Cmax 89.7 ng/mL, tmax 47.8 h, Cavg 70.6 ng/mL, Css 80.1 ng/mL, AUCt 3.36e+03 ng·h/mL, AUC∞ 3.74e+03 ng·h/mL, t1/2z 11.3 h, kel 0.06 1/h, … (+2).
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `brexanolone`, measured `allopregnanolone`.
 
@@ -28,6 +31,9 @@ Wald J; Henningsson A; Hanze E; Hoffmann E; Li H; Colquhoun H; et al. et al. (20
 
 ## Model component
 <dbs-pgx drug="brexanolone" model-id="Brexanolone_Wald2022_reference" status="needs_review" stale="false" population="patients with postpartum depression and healthy lactating women" measured-compound="allopregnanolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -138,18 +144,23 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_modelica.zip" download>Brexanolone_Wald2022_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_matlab.zip" download>Brexanolone_Wald2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_matlab_simbio.zip" download>Brexanolone_Wald2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_sbml.zip" download>Brexanolone_Wald2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_cellml.zip" download>Brexanolone_Wald2022_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference.svg" alt="Brexanolone_Wald2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Brexanolone_Wald2022_reference_params.json` · controls `Brexanolone_Wald2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -5,7 +5,8 @@
 
 - **generic name:** levetiracetam
 - **ATC codes:** `N03AX14`
-- **DrugBank:** [DB01202](https://go.drugbank.com/drugs/DB01202)
+- **DrugBank:** [DB01202](https://go.drugbank.com/drugs/DB01202) · **PubChem:** [CID 5284583](https://pubchem.ncbi.nlm.nih.gov/compound/5284583)
+- **molar mass:** 170.212 g/mol (C8H14N2O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,15 +25,15 @@ Levetiracetam is also available as an orally dissolvable tablet that is indicate
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Schoemaker_2018_reference](drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md) | Schoemaker (2018) | — |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Majid_2016_aed_apparent_clearance_l_h_1](drugs/drug_levetiracetam/Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1.md) | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Majid_2016_number_of_subjects](drugs/drug_levetiracetam/Levetiracetam_Majid2016_number_of_subjects.md) | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Onos_2022_reference](drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md) | Onos KD et al., Pharmacokinetic, pharmacodynamic, and t…, Alzheimer's & dementia (New… (2022) | [10.1002/trc2.12329](https://doi.org/10.1002/trc2.12329) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023_base](drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md) | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023_final](drugs/drug_levetiracetam/Levetiracetam_Li2023_final.md) | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'variability' is a table statistic/structure column, not a study p…</sub><br><sub>route_to: `human_review`</sub> | [Majid_2016_variability](drugs/drug_levetiracetam/Levetiracetam_Majid2016_variability.md) | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Schoemaker_2018_reference](drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md) | 1-compartment, oral | 3 | Schoemaker (2018) | — |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Majid_2016_aed_apparent_clearance_l_h_1](drugs/drug_levetiracetam/Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1.md) | 1-compartment, IV | 2 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Majid_2016_number_of_subjects](drugs/drug_levetiracetam/Levetiracetam_Majid2016_number_of_subjects.md) | 1-compartment, IV | 1 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Onos_2022_reference](drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md) | 1-compartment, oral | 2 | Onos KD et al., Pharmacokinetic, pharmacodynamic, and t…, Alzheimer's & dementia (New… (2022) | [10.1002/trc2.12329](https://doi.org/10.1002/trc2.12329) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023_base](drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md) | 1-compartment (no model) | 1 | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023_final](drugs/drug_levetiracetam/Levetiracetam_Li2023_final.md) | 1-compartment (no model) | 1 | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'variability' is a table statistic/structure column, not a study p…</sub><br><sub>route_to: `human_review`</sub> | [Majid_2016_variability](drugs/drug_levetiracetam/Levetiracetam_Majid2016_variability.md) | 1-compartment (no model) | 1 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
 
 ## Pharmacodynamics (PD)
 

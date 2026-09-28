@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 3 scholar param(s) emitted or defaulted — got 2 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (thyroxine and triiodothyronine vs thyroxine) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The levothyroxine model was quarantined because its clearance had no extracted value and a library placeholder stood in for it, and the metabolism rate constant k12 (0.0428) reached the record without an SI value.**
+
+The record reports levothyroxine disposition with V = 33.8 L, kel = 0.434 per day, and a metabolite volume V3 = 14.1 L, linked to triiodothyronine by the rate constant K₁₂ = 0.0428. No clearance value for levothyroxine appears anywhere in the record, so a placeholder from the model library was substituted for the missing source value and the model was held back rather than published with an invented number. The k12 parameter (0.0428) also arrived with a unit that could not be converted to SI, so it lacked an SI value. A second reader further disagreed on the primary analyte (thyroxine alone versus thyroxine and triiodothyronine) and on whether the thyroxine–triiodothyronine link is metabolism or interconversion. Extracted — levothyroxine: V 33.8 liter, kel 0.434 per day, V3 14.1 liter, k12 0.0428.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has thyroxine and triiodothyronine, the second reading thyroxine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 23:22:39.640854+00:00) predates the upstream re-run (2026-09-24 00:18:54.716791+00:00). Current validate status: `needs_review`.
 

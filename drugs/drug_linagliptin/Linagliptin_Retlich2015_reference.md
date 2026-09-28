@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q49, Q95, Q303, Q69, Q61, Q32, Q331 — no SI value to build from.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Kabs, t1/2ka , k13, Q/F, V, Cmax and KD have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Bmax), so that value has no SI equivalent. Extracted — linagliptin: kabs 0.933, t1/2ka 0.795, k13 0.441, V1/F 715 L, Q/F 412, V 1.65e+03, CL/F 258 L/h, Bmax 4.97 nmol/L, … (+2).
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Retlich S; Duval V; Graefe-Mody U; Friedrich C; Patel S; Jaehde U; et al. et al. (2015). Clinical pharmacokinetics 54
@@ -25,6 +27,9 @@ Retlich S; Duval V; Graefe-Mody U; Friedrich C; Patel S; Jaehde U; et al. et al.
 
 ## Model component
 <dbs-pgx drug="linagliptin" model-id="Linagliptin_Retlich2015_reference" status="needs_review" stale="false" population="patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

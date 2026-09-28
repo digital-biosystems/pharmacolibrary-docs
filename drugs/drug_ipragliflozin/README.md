@@ -5,7 +5,8 @@
 
 - **generic name:** ipragliflozin
 - **ATC codes:** `A10BK05`
-- **DrugBank:** [DB11698](https://go.drugbank.com/drugs/DB11698)
+- **DrugBank:** [DB11698](https://go.drugbank.com/drugs/DB11698) · **PubChem:** [CID 10453870](https://pubchem.ncbi.nlm.nih.gov/compound/10453870)
+- **molar mass:** 404.45 g/mol (C21H21FO5S) — DrugBank
 - **groups:** investigational
 
 ## About
@@ -20,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Saito_2019_reference](drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference.md) | Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019) | [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Saito_2019_reference](drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference.md) | 1-compartment (no model) | 2 | Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019) | [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972) |
 
 ## Pharmacodynamics (PD)
 

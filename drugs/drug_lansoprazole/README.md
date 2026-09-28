@@ -5,7 +5,8 @@
 
 - **generic name:** lansoprazole
 - **ATC codes:** `A02BC03`
-- **DrugBank:** [DB00448](https://go.drugbank.com/drugs/DB00448)
+- **DrugBank:** [DB00448](https://go.drugbank.com/drugs/DB00448) · **PubChem:** [CID 3883](https://pubchem.ncbi.nlm.nih.gov/compound/3883)
+- **molar mass:** 369.361 g/mol (C16H14F3N3O2S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Katashima_1995_reference](drugs/drug_lansoprazole/Lansoprazole_Katashima1995_reference.md) | Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism and disposi… (1995) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sakurai_2007_1_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_1_compartment.md) | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sakurai_2007_2_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_2_compartment.md) | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Katashima_1995_reference](drugs/drug_lansoprazole/Lansoprazole_Katashima1995_reference.md) | 1-compartment (no model) | 1 | Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism and disposi… (1995) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sakurai_2007_1_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_1_compartment.md) | 1-compartment (no model) | 2 | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sakurai_2007_2_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_2_compartment.md) | 1-compartment (no model) | 2 | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
 
 ## Pharmacodynamics (PD)
 

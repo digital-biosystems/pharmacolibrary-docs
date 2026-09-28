@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc0-10]` (1 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — omeprazole: Cmax 731 ng/ml, tmax 1.29 h, AUCt 1 ng.h/ml, CL 115 mL/min, V 0.653 L, kabs 3 h-1, tlag 2.5 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0-10: this record has 1, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Leucuta A; Vlase L; Farcau D; Nanulescu M et al. (2004). Drug metabolism and drug interactions 20

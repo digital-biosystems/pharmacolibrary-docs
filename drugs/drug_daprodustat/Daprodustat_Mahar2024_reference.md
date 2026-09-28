@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The daprodustat record was built from the abstract alone, left the absorption rate constant and lag time at defaults, assumed F=1 and Fm=1 without molar correction, and invented a first-order absorption input, which was judged not acceptable.**
+
+Only the paper's abstract was read, so reported summary statistics (CL/F 24.6 L/h, V 26.9 L, AUC ratio 1.59, Cmax ratio 1.19) stood in for a fitted model. The absorption rate constant ka and lag time were not reported in the source, so library defaults were substituted, and the ka default itself counts as an invented absorption term judged not acceptable. The parameterization is apparent, meaning bioavailability F=1 and metabolite fraction Fm=1 were assumed with no molar correction, implying extravascular first-order depot dosing. A second reader disputed the apparent parameterization, calling it mechanistic, and could not confirm any of the four parameter values, returning null for each. Extracted — daprodustat: CL/F 24.6 L/h, V 26.9 L, AUC ratio 1.59, Cmax_ratio 1.19.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Mahar KM; Yang S; Mesic E; Post TM; Goulooze SC et al. (2024). Clinical pharmacokinetics 63
@@ -26,6 +29,9 @@ Mahar KM; Yang S; Mesic E; Post TM; Goulooze SC et al. (2024). Clinical pharmaco
 
 ## Model component
 <dbs-pgx drug="daprodustat" model-id="Daprodustat_Mahar2024_reference" status="needs_review" stale="false" population="adults with chronic kidney disease and anemia" measured-compound="daprodustat" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -145,6 +151,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_daprodustat/Daprodustat_Mahar2024_reference/Daprodustat_Mahar2024_reference.svg" alt="Daprodustat_Mahar2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_daprodustat/Daprodustat_Mahar2024_reference/Daprodustat_Mahar2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_daprodustat/Daprodustat_Mahar2024_reference/Daprodustat_Mahar2024_reference_sim_controls.json"></dbs-fmusim>
 

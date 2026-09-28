@@ -4,7 +4,8 @@
 
 - **generic name:** choline salicylate
 - **ATC codes:** `N02BA03`
-- **DrugBank:** [DB14006](https://go.drugbank.com/drugs/DB14006)
+- **DrugBank:** [DB14006](https://go.drugbank.com/drugs/DB14006) · **PubChem:** not captured
+- **molar mass:** 241.287 g/mol (C12H19NO4) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About

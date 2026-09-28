@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite; C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (fluorouracil vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The fluorouracil model was rejected: its metabolites 5FUH2, 5FDHU, SN38G and APC have no metabolism parameters linking them, and fluorouracil clearance of 256.0 L/h is physiologically implausible.**
+
+The structure links fluorouracil to its metabolites 5FUH2 and 5FDHU, and irinotecan/SN38 to SN38G and APC, but all these metabolism links carry no parameter value (link_parameter 'none'), leaving metabolites with no quantified path from the dose. The clearance check also failed: fluorouracil CL is 256.0 L/h against a distribution volume of only 0.18 L, an implausible magnitude suggesting a unit or scale extraction error. A second reader disagreed only on how the drug and metabolite names were transcribed (e.g. 'fluorouracil' versus '5-fluorouracil'), not on the structure or parameter values. Extracted — fluorouracil: V3 210 L, Q 0.78 L/h, V2 1.5 L, V1 0.18 L, CL 256 L/h, kabs 0.757 h−1, tlag 0.000552 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Deyme L; Barbolosi D; Gattacceca F et al. (2019). Cancer chemotherapy and pharmacology 83

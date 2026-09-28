@@ -4,7 +4,8 @@
 
 - **generic name:** ethyl biscoumacetate
 - **ATC codes:** `B01AA08`
-- **DrugBank:** [DB08794](https://go.drugbank.com/drugs/DB08794)
+- **DrugBank:** [DB08794](https://go.drugbank.com/drugs/DB08794) · **PubChem:** [CID 54685524](https://pubchem.ncbi.nlm.nih.gov/compound/54685524)
+- **molar mass:** 408.362 g/mol (C22H16O8) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

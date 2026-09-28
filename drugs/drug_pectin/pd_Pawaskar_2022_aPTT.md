@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07B&quot;,&quot;href&quot;:&quot;atc/A07B.md&quot;},{&quot;label&quot;:&quot;pectin&quot;,&quot;href&quot;:&quot;drugs/drug_pectin/&quot;},{&quot;label&quot;:&quot;Pawaskar_2022 \u00b7 PD activated partial thromboplastin time&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # activated partial thromboplastin time — PD  <span class="pk-badge pk-badge--red">rejected</span>

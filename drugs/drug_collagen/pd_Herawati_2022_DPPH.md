@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;collagen&quot;,&quot;href&quot;:&quot;drugs/drug_collagen/&quot;},{&quot;label&quot;:&quot;Herawati_2022 \u00b7 PD DPPH inhibition&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # DPPH inhibition — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span>

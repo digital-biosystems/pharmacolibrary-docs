@@ -5,7 +5,8 @@
 
 - **generic name:** buprenorphine
 - **ATC codes:** `N02AE01`, `N07BC01`
-- **DrugBank:** [DB00921](https://go.drugbank.com/drugs/DB00921)
+- **DrugBank:** [DB00921](https://go.drugbank.com/drugs/DB00921) · **PubChem:** [CID 644073](https://pubchem.ncbi.nlm.nih.gov/compound/644073)
+- **molar mass:** 467.6401 g/mol (C29H41NO4) — DrugBank
 - **groups:** approved, illicit, investigational, vet_approved
 
 ## About
@@ -32,11 +33,11 @@ Sublingual tablets and buccal films, in combination with naloxone, are indicated
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Nelson_2024_reference](drugs/drug_buprenorphine/Buprenorphine_Nelson2024_reference.md) | Nelson GR et al., Pharmacokinetics, pharmacodynamics and…, Veterinary anaesthesia and… (2024) | [10.1016/j.vaa.2024.05.001](https://doi.org/10.1016/j.vaa.2024.05.001) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ng_2015_reference](drugs/drug_buprenorphine/Buprenorphine_Ng2015_reference.md) | Ng CM et al., Population Pharmacokinetic Model of Sub…, Pharmacotherapy (2015) | [10.1002/phar.1610](https://doi.org/10.1002/phar.1610) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Priestley_2018_reference](drugs/drug_buprenorphine/Buprenorphine_Priestley2018_reference.md) | Priestley T et al., Converting from Transdermal to Buccal F…, Pain medicine (Malden, Mass… (2018) | [10.1093/pm/pnx235](https://doi.org/10.1093/pm/pnx235) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Nelson_2024_reference](drugs/drug_buprenorphine/Buprenorphine_Nelson2024_reference.md) | 1-compartment, IV | 3 | Nelson GR et al., Pharmacokinetics, pharmacodynamics and…, Veterinary anaesthesia and… (2024) | [10.1016/j.vaa.2024.05.001](https://doi.org/10.1016/j.vaa.2024.05.001) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ng_2015_reference](drugs/drug_buprenorphine/Buprenorphine_Ng2015_reference.md) | 1-compartment (no model) | 9 | Ng CM et al., Population Pharmacokinetic Model of Sub…, Pharmacotherapy (2015) | [10.1002/phar.1610](https://doi.org/10.1002/phar.1610) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Priestley_2018_reference](drugs/drug_buprenorphine/Buprenorphine_Priestley2018_reference.md) | 1-compartment (no model) | 0 | Priestley T et al., Converting from Transdermal to Buccal F…, Pain medicine (Malden, Mass… (2018) | [10.1093/pm/pnx235](https://doi.org/10.1093/pm/pnx235) |
 
 ## Pharmacodynamics (PD)
 

@@ -4,7 +4,7 @@
 
 - **generic name:** sulodexide
 - **ATC codes:** `B01AB11`
-- **DrugBank:** [DB06271](https://go.drugbank.com/drugs/DB06271)
+- **DrugBank:** [DB06271](https://go.drugbank.com/drugs/DB06271) · **PubChem:** not captured
 - **groups:** approved, investigational, withdrawn
 
 ## About

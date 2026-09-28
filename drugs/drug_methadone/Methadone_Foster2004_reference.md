@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 2 scholar param(s) emitted or defaulted — got 1 covered; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (methadone vs rac-methadone) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The methadone model was quarantined because Vd, ka and Tlag had no values in the source, so library defaults stood in, and the invented absorption rate constant ka was neither reported nor defaulted in the record.**
+
+The record lists Vd, ka and Tlag with no extracted values, so placeholder defaults would have been substituted for methadone's volume of distribution, absorption rate constant and lag time, and the model was held back rather than published. The parameter-coverage check found only 1 of 2 expected parameters covered, with k12 neither emitted nor defaulted. The absorption deviation was judged unacceptable: ka was defaulted although not reported in the source, and the model used first-order depot input with apparent (F=1) parameterization, i.e. extravascular dosing. The covariate scenarios were not simulated — only the reference individual was, so the covariate effects the record defines were never exercised. Extracted — methadone: CL/F 0.19 l h -1, k12 0.16 h -1, AUC 0.026, Ct 0.24.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has methadone, the second reading rac-methadone; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Foster DJ; Somogyi AA; White JM; Bochner F et al. (2004). British journal of clinical pharmacology 57
@@ -28,6 +31,9 @@ Foster DJ; Somogyi AA; White JM; Bochner F et al. (2004). British journal of cli
 
 ## Model component
 <dbs-pgx drug="methadone" model-id="Methadone_Foster2004_reference" status="model_quarantined" stale="false" population="methadone maintenance patients" measured-compound="methadone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

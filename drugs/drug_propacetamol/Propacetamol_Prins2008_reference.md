@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T3_param_coverage.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([] vs [['propacetamol', 'paracetamol', 'hydrolysis']]) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The record lacks a value for the intercompartmental clearance Q (116 l.h⁻¹.70 kg⁻¹ in the paper), so only 2 of 3 required parameters were covered and the propacetamol model was held back.**
+
+The abstract-only record for propacetamol in infants after craniofacial surgery reports paracetamol parameters (absorption half-life 4.6 h, hydrolysis half-life 0.028 h, clearance 12 l.h⁻¹.70 kg⁻¹, Q 116 l.h⁻¹.70 kg⁻¹, V 7.9 l.70 kg⁻¹), but the intercompartmental clearance Q was neither emitted nor defaulted, leaving 2 of 3 expected parameters covered. Because the record was built from the abstract alone, reported summary statistics stood in for a fitted model. A second reader also disagreed on the model links, proposing a propacetamol-to-paracetamol hydrolysis link that this record omits, and returned null for all five parameter values. Extracted — paracetamol: t1/2ka 4.6 h, t1/2z 0.028 h, CL 12 l.h(-1).70 kg(-1), Q 116 l.h(-1).70 kg(-1), V 7.9 l.70 kg(-1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `propacetamol`, measured `paracetamol`.
 
@@ -28,6 +31,9 @@ Prins SA; Van Dijk M; Van Leeuwen P; Searle S; Anderson BJ; Tibboel D; et al. et
 
 ## Model component
 <dbs-pgx drug="propacetamol" model-id="Propacetamol_Prins2008_reference" status="needs_review" stale="false" population="infants after craniofacial surgery" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -145,6 +151,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference.svg" alt="Propacetamol_Prins2008_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_sim_controls.json"></dbs-fmusim>
 

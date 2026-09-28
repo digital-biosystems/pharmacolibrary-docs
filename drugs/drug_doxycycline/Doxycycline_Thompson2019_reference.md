@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Thompson EJ; Wu H; Melloni C; Balevic S; Sullivan JE; Laughon M; et al. et al. (2019). Antimicrobial agents and chemotherapy 63
@@ -25,6 +27,9 @@ Thompson EJ; Wu H; Melloni C; Balevic S; Sullivan JE; Laughon M; et al. et al. (
 
 ## Model component
 <dbs-pgx drug="doxycycline" model-id="Doxycycline_Thompson2019_reference" status="curated_candidate" stale="false" population="children" measured-compound="doxycycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -110,6 +115,8 @@ Thompson EJ; Wu H; Melloni C; Balevic S; Sullivan JE; Laughon M; et al. et al. (
 </div><figure class="pk-models-diagram"><img src="drugs/drug_doxycycline/Doxycycline_Thompson2019_reference/Doxycycline_Thompson2019_reference.svg" alt="Doxycycline_Thompson2019_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_doxycycline/Doxycycline_Thompson2019_reference/Doxycycline_Thompson2019_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_doxycycline/Doxycycline_Thompson2019_reference/Doxycycline_Thompson2019_reference_sim_controls.json"></dbs-fmusim>
 

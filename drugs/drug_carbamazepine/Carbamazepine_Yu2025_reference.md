@@ -5,7 +5,7 @@
 
 # carbamazepine — `Carbamazepine_Yu2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The carbamazepine model (CL/F 0.177 L/h, V 227.0 L) was held back because ka and Tlag were not reported in the source and library defaults were substituted, and the invented first-order absorption with assumed F=1, Fm=1 and no molar correction was adjudicated not acceptable.**
+
+The record's only extracted parameters are CL/F 0.177 L/h and V 227.0 L for carbamazepine; ka and Tlag were missing from the source, so defaults were substituted, and the invented absorption (ka defaulted, not reported in the source) was judged not acceptable. The builder further assumed F=1 and Fm=1 with no molar correction, yielding an apparent (/F) parameterization with first-order depot input, which implies extravascular dosing. A second reader also disagreed on the value 0.13, reading null where the record holds 0.13. Extracted — carbamazepine: CL/F 0.177 L/h, V 227 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q315: this record has 0.13, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Yu L; Mao F; Chen S; Liu J; Xiao J; Chen M; et al. et al. (2025). Drug design, development and therapy 19
@@ -25,6 +29,9 @@ Yu L; Mao F; Chen S; Liu J; Xiao J; Chen M; et al. et al. (2025). Drug design, d
 
 ## Model component
 <dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Yu2025_reference" status="needs_review" stale="false" population="" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -60,9 +67,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q315]` | 0.13 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +140,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_carbamazepine/Carbamazepine_Yu2025_reference/Carbamazepine_Yu2025_reference.svg" alt="Carbamazepine_Yu2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_carbamazepine/Carbamazepine_Yu2025_reference/Carbamazepine_Yu2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_carbamazepine/Carbamazepine_Yu2025_reference/Carbamazepine_Yu2025_reference_sim_controls.json"></dbs-fmusim>
 

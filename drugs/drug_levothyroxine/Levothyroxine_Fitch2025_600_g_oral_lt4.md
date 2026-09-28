@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The levothyroxine transfer volume of 17.0 nL is physiologically implausible, indicating a unit or scale extraction error, so the one-compartment model was rejected.**
+
+The record reports a transfer volume of 17.0 nL for levothyroxine in healthy adults, a magnitude far outside any physiological distribution volume, while the plasma clearance of 24.13 mL/min/kg was accepted. The implausible volume points to a unit or scale error in the extracted value. The half-life (t 1/2 in h) was listed without a value, leaving the terminal phase unsupported by the record. Extracted — levothyroxine: CL 24.1 mL/min/kg, V 17 nL.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:22:39.457075+00:00) predates the upstream re-run (2026-09-24 00:18:48.279534+00:00). Current validate status: `rejected`.
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The dalteparin two-compartment model was rejected because one compartment has no connection to the dose or sampling, leaving the reported CL/F of 929 mL/h and V2/F of 7180 mL unsupported.**
+
+The record describes a two-compartment structure for dalteparin in pediatric VTE patients, but one of the two compartments is unreachable or orphaned — it has no path from the administered dose, so it cannot influence the anti-Xa observations. The extracted parameters (CL/F 929 mL/h, V2/F 7180 mL, kabs 1.04 1/h, and a weight effect of 1 on V/F) therefore do not describe a coherent connected model. This structural defect is the sole recorded reason for rejection. Extracted — dalteparin: CL/F 929, V2/F 7.18e+03, kabs 1.04, V/F 1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `dalteparin`, measured `anti-Xa`.
 
@@ -27,6 +29,9 @@ Damle B; Jen F; Sherman N; Jani D; Sweeney K et al. (2021). Journal of clinical 
 
 ## Model component
 <dbs-pgx drug="dalteparin" model-id="Dalteparin_Damle2021_reference" status="rejected" stale="false" population="pediatric patients with venous thromboembolism" measured-compound="anti-Xa" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

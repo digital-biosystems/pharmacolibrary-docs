@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The lacosamide absorption rate constant ka (2.45) was not reported in the source and was defaulted, so the record was held back for review.**
+
+The record reports CL/F 1.51 L/h and V/F 23.7 L for lacosamide in children with epilepsy, but the absorption rate constant ka (labelled Ka, value 2.45) was not reported in the source paper; a library default was substituted, along with a default Tlag. The builder also assumed F=1 and Fm=1 with no molar correction, parameterizing the model as apparent. The invented absorption parameter was judged not acceptable, and the adjudication could not compute a comparison (ratio None), leaving the record inconclusive pending review. Extracted — lacosamide: CL/F 1.51 L/h, V/F 23.7 L, kabs 2.45, CLnorm 0.294, CL 0.736.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Li Y; Guo HL; Fan L; Wang J; Hu YH; Zhang YY; et al. et al. (2025). NPJ genomic medicine 10
@@ -25,6 +27,9 @@ Li Y; Guo HL; Fan L; Wang J; Hu YH; Zhang YY; et al. et al. (2025). NPJ genomic 
 
 ## Model component
 <dbs-pgx drug="lacosamide" model-id="Lacosamide_Li2025_final_models" status="needs_review" stale="false" population="children with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -133,6 +138,8 @@ Li Y; Guo HL; Fan L; Wang J; Hu YH; Zhang YY; et al. et al. (2025). NPJ genomic 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_lacosamide/Lacosamide_Li2025_final_models/Lacosamide_Li2025_final_models.svg" alt="Lacosamide_Li2025_final_models diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_lacosamide/Lacosamide_Li2025_final_models/Lacosamide_Li2025_final_models_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lacosamide/Lacosamide_Li2025_final_models/Lacosamide_Li2025_final_models_sim_controls.json"></dbs-fmusim>
 

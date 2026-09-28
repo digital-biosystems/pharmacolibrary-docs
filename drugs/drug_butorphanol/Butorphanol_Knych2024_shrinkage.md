@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T1_cmax; T1_tmax
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00014, model 7.93e-07); the model does not reproduce the paper's time of the peak (tmax) (paper 0.43, model 1.68).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — butorphanol: kabs 6.28 1/h, V/F 0.465 L/kg, V2/F 0.42 L/kg, CL/F 9.85 mL/min/kg, V 0.144, V2 0.295, CL 0.053, Q 0.71.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Knych HK; Weiner D; McKemie DS; Traynham M; Blea J et al. (2024). Journal of veterinary pharmacology and therapeutics 47
@@ -25,6 +27,9 @@ Knych HK; Weiner D; McKemie DS; Traynham M; Blea J et al. (2024). Journal of vet
 
 ## Model component
 <dbs-pgx drug="butorphanol" model-id="Butorphanol_Knych2024_shrinkage" status="needs_review" stale="false" population="exercised Thoroughbred horses" measured-compound="butorphanol" parameterization="apparent" topology="3C"></dbs-pgx>
+
+**Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -137,6 +142,8 @@ Knych HK; Weiner D; McKemie DS; Traynham M; Blea J et al. (2024). Journal of vet
 </div><figure class="pk-models-diagram"><img src="drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage/Butorphanol_Knych2024_shrinkage.svg" alt="Butorphanol_Knych2024_shrinkage diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 6.28 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage/Butorphanol_Knych2024_shrinkage_params.json" metaurl="assets/fmu/PK_3C_enteral.vr.json" wasmurl="assets/fmu/PK_3C_enteral.js" controlsurl="drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage/Butorphanol_Knych2024_shrinkage_sim_controls.json"></dbs-fmusim>
 

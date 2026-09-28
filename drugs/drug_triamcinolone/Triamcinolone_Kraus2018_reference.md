@@ -5,7 +5,7 @@
 
 # triamcinolone — `Triamcinolone_Kraus2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The triamcinolone record was rejected because its extracted clearance (0.0001 mL/h/kg) and steady-state volume (0.0497 mL/kg) fall far outside physiological ranges, indicating a unit or scale extraction error.**
+
+The record lists a geometric-mean clearance of 0.0001 mL/h/kg and an observed steady-state volume of 0.0497 mL/kg for triamcinolone, magnitudes physiologically implausible for this drug and consistent with a unit or scale misreading. A second reader disagreed with several extracted values, for example 231 versus 966.7 and 168.0 versus 7.0, while leaving other contested values unconfirmed. The source is a review paper read at secondary level, so the parameters may not reflect a fitted model from the original study. Extracted — triamcinolone: CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 543, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `triamcinolone acetonide`, measured `triamcinolone`.
 
@@ -27,6 +31,9 @@ Kraus VB; Conaghan PG; Aazami HA; Mehra P; Kivitz AJ; Lufkin J; et al. et al. (2
 
 ## Model component
 <dbs-pgx drug="triamcinolone" model-id="Triamcinolone_Kraus2018_reference" status="rejected" stale="false" population="patients with knee osteoarthritis" measured-compound="triamcinolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,14 +58,24 @@ Kraus VB; Conaghan PG; Aazami HA; Mehra P; Kivitz AJ; Lufkin J; et al. et al. (2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q17]` | 543 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q19]` | 3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 0.0001 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | 231 | 966.7 | mismatch |
+| `gpt-oss:120b` | `values[Q56]` | 168.0 | 7.0 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

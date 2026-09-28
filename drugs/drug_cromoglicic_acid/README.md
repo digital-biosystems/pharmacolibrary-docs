@@ -5,7 +5,8 @@
 
 - **generic name:** cromoglicic acid
 - **ATC codes:** `A07EB01`, `D11AH03`, `R01AC01`, `R03BC01`, `S01GX01`
-- **DrugBank:** [DB01003](https://go.drugbank.com/drugs/DB01003)
+- **DrugBank:** [DB01003](https://go.drugbank.com/drugs/DB01003) · **PubChem:** [CID 2882](https://pubchem.ncbi.nlm.nih.gov/compound/2882)
+- **molar mass:** 468.3665 g/mol (C23H16O11) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Fuller_1983_reference](drugs/drug_cromoglicic_acid/CromoglicicAcid_Fuller1983_reference.md) | Fuller RW et al., The pharmacokinetic assessment of sodiu…, The Journal of pharmacy and… (1983) | [10.1111/j.2042-7158.1983.tb02936.x](https://doi.org/10.1111/j.2042-7158.1983.tb02936.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Neale_1986_reference](drugs/drug_cromoglicic_acid/CromoglicicAcid_Neale1986_reference.md) | Neale MG et al., The pharmacokinetics of sodium cromogly…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb02905.x](https://doi.org/10.1111/j.1365-2125.1986.tb02905.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Fuller_1983_reference](drugs/drug_cromoglicic_acid/CromoglicicAcid_Fuller1983_reference.md) | 1-compartment (no model) | 2 | Fuller RW et al., The pharmacokinetic assessment of sodiu…, The Journal of pharmacy and… (1983) | [10.1111/j.2042-7158.1983.tb02936.x](https://doi.org/10.1111/j.2042-7158.1983.tb02936.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Neale_1986_reference](drugs/drug_cromoglicic_acid/CromoglicicAcid_Neale1986_reference.md) | 1-compartment (no model) | 1 | Neale MG et al., The pharmacokinetics of sodium cromogly…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb02905.x](https://doi.org/10.1111/j.1365-2125.1986.tb02905.x) |
 
 ## ADME sites
 

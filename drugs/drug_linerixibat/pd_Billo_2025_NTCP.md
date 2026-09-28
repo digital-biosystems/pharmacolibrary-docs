@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05A&quot;,&quot;href&quot;:&quot;atc/A05A.md&quot;},{&quot;label&quot;:&quot;linerixibat&quot;,&quot;href&quot;:&quot;drugs/drug_linerixibat/&quot;},{&quot;label&quot;:&quot;Billo_2025 \u00b7 PD NTCP transport inhibition&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linerixibat_ZamekGliszczynski2021_reference&quot;,&quot;label&quot;:&quot;Zamek-Gliszczynski_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

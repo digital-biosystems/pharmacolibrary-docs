@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;ulinastatin&quot;,&quot;href&quot;:&quot;drugs/drug_ulinastatin/&quot;},{&quot;label&quot;:&quot;Ling_2019 \u00b7 PGx MMP-2&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # MMP-2 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span>

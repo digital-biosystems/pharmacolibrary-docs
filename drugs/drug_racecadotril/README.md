@@ -4,7 +4,8 @@
 
 - **generic name:** racecadotril
 - **ATC codes:** `A07XA04`
-- **DrugBank:** [DB11696](https://go.drugbank.com/drugs/DB11696)
+- **DrugBank:** [DB11696](https://go.drugbank.com/drugs/DB11696) · **PubChem:** [CID 107751](https://pubchem.ncbi.nlm.nih.gov/compound/107751)
+- **molar mass:** 385.48 g/mol (C21H23NO4S) — DrugBank
 - **groups:** investigational
 
 ## About

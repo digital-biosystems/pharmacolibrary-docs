@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl]` (0.136 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Every check that could be run on this record passed.**
+
+A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 0.136, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-17 22:23:49.092198+00:00) predates the upstream re-run (2026-09-23 12:18:07.588524+00:00). Current validate status: `needs_review`.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[s]` (not captured vs 0.2944) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The flurbiprofen elimination rate constant kel is recorded as 0.0001 L/h, a dimensionally wrong unit for a rate constant and inconsistent with the reported clearance 0.1068 L/h and volume 0.5159 L, so the record was rejected.**
+
+In a one-compartment model the elimination rate constant must carry the unit 1/h, but the record lists kel as 0.0001 L/h, a unit of clearance rather than of a first-order rate constant; this is the dimension mismatch on a structural parameter cited as the rejection reason. The reported unit could not be converted to SI, so the parameter reached the model without an SI value. A second reader also disputed the extracted parameter set, giving 0.2944 where the record holds no value. Extracted — flurbiprofen: kel 0.0001 L/h, V 0.516 L, CL 0.107 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of s: this record has none, the second reading 0.2944. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `flurbiprofen axetil`, measured `flurbiprofen`.
 
@@ -28,6 +31,9 @@ Zhang J; Zhang H; Zhao L; Gu J; Feng Y; An H et al. (2018). Journal of pain rese
 
 ## Model component
 <dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Zhang2018_reference" status="rejected" stale="false" population="Chinese patients with postoperative pain" measured-compound="flurbiprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

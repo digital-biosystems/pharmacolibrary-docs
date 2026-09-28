@@ -4,7 +4,8 @@
 
 - **generic name:** maprotiline
 - **ATC codes:** `N06AA21`
-- **DrugBank:** [DB00934](https://go.drugbank.com/drugs/DB00934)
+- **DrugBank:** [DB00934](https://go.drugbank.com/drugs/DB00934) · **PubChem:** [CID 4011](https://pubchem.ncbi.nlm.nih.gov/compound/4011)
+- **molar mass:** 277.4033 g/mol (C20H23N) — DrugBank
 - **groups:** approved
 
 ## About

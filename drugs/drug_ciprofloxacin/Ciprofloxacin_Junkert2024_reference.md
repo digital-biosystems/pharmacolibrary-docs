@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl].value` (25.4 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The ciprofloxacin two-compartment model was rejected because the peripheral volume V2 is reported as 2.83 L/kg, a body-weight-normalized unit that could not be converted to SI, leaving a structural parameter without an SI value.**
+
+The record lists V2 as 2.83 L/kg, a per-kilogram unit that could not be converted to SI, so the parameter reached the model without an SI value and failed the dimension check on a structural parameter. The central volume is likewise reported as 51.0 % rather than in litres, compounding the unit ambiguity. A second reader disagreed on several values, reading the proportional error as 15.3, the peripheral volume as 164, and no value for clearance where this record has 25.4 L/h. Extracted — ciprofloxacin: CL 25.4 L h À1, V 91.1 L, Q 91.9 L h À1, V1 51 %, add_error 14.3 %, V2 2.83 L/kg, kabs 1 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].value`: this record has 25.4, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:02:14.375292+00:00) predates the upstream re-run (2026-09-24 02:04:38.559178+00:00). Current validate status: `rejected`.
 

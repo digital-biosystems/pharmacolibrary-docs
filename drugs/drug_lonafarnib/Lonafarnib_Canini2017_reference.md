@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (lonafarnib vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
+**V has no unit.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — lonafarnib: kabs 0.43 1/h, V/F 223 L, kel 0.045 1/h, V 7.88.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lonafarnib, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Canini L; Koh C; Cotler SJ; Uprichard SL; Winters MA; Han MAT; Kleiner DE; Idilman R; Yurdaydin C; Glenn JS; Heller T; Dahari H et al. (2017). Hepatology communications 1

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**CL has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — budesonide: CL 81.5 lh-1, V 219 l, kel 3.72 h-1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lönnebo A; Grahnén A; Karlsson MO et al. (2007). British journal of clinical pharmacology 64
@@ -25,6 +27,9 @@ Lönnebo A; Grahnén A; Karlsson MO et al. (2007). British journal of clinical p
 
 ## Model component
 <dbs-pgx drug="budesonide" model-id="Budesonide_Lnnebo2007_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="budesonide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

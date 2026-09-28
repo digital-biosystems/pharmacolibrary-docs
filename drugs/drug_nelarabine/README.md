@@ -4,7 +4,8 @@
 
 - **generic name:** nelarabine
 - **ATC codes:** `L01BB07`
-- **DrugBank:** [DB01280](https://go.drugbank.com/drugs/DB01280)
+- **DrugBank:** [DB01280](https://go.drugbank.com/drugs/DB01280) · **PubChem:** [CID 3011155](https://pubchem.ncbi.nlm.nih.gov/compound/3011155)
+- **molar mass:** 297.2673 g/mol (C11H15N5O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -5,7 +5,7 @@
 
 - **generic name:** insulin aspart
 - **ATC codes:** `A10AB05`, `A10AD05`, `A10AD06`
-- **DrugBank:** [DB01306](https://go.drugbank.com/drugs/DB01306)
+- **DrugBank:** [DB01306](https://go.drugbank.com/drugs/DB01306) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -26,9 +26,9 @@ M
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Clausen_2006_reference](drugs/drug_insulin_aspart/InsulinAspart_Clausen2006_reference.md) | Clausen WH et al., Within-patient variation of the pharmac…, Diabetologia (2006) | [10.1007/s00125-006-0327-z](https://doi.org/10.1007/s00125-006-0327-z) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Clausen_2006_reference](drugs/drug_insulin_aspart/InsulinAspart_Clausen2006_reference.md) | 1-compartment, IV | 5 | Clausen WH et al., Within-patient variation of the pharmac…, Diabetologia (2006) | [10.1007/s00125-006-0327-z](https://doi.org/10.1007/s00125-006-0327-z) |
 
 ## Pharmacodynamics (PD)
 

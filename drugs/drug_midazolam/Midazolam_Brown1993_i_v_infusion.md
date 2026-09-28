@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[a]` (5560 vs not captured) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The midazolam record for healthy dogs was rejected because a structural parameter, the absorption rate constant (Ka) of 0.14 /h, carries a unit that could not be converted to SI, giving a dimension mismatch.**
+
+The midazolam model for healthy dogs lists λ1 = 0.514 min-1 and kel = 0.0220 min-1, but the absorption rate constant (Ka) is reported as 0.14 /h, a unit that could not be expressed in SI so the parameter entered the model without a consistent value, triggering the dimension-mismatch refusal. The equation variable A (5560 ng/ml) is a coefficient rather than a standard pharmacokinetic parameter, compounding the structural-parameter dimension problem. A second reader recorded no values for any of the seven disputed entries (A 5560, AUC 29800, CL 17.4, MRT 32.8, Vd(ss) 0.577, α 0.514, β 0.0220), so the comparisons could not be computed (ratio None) and the findings on those fields are inconclusive. Extracted — midazolam: λ1 0.514 min-1, kel 0.022 min-1, AUC 2.98e+04 ng/min/ml, MRT 32.8 min, V 0.577 l/kg, CL 17.4 ml/min/kg, kabs 0.14 /h, tlag 1.23 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of a: this record has 5560, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Brown SA; Jacobson JD; Hartsfield SM et al. (1993). Journal of veterinary pharmacology and therapeutics 16

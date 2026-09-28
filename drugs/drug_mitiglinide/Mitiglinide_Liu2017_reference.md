@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 1.2598)
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 1.26).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — mitiglinide: CL/F 7.8 L/h, V/F 24 L, kabs 9.57 /h, tlag 0.09 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Liu S; Chen P; Zhao Y; Dai G; Sun B; Wang Y; et al. et al. (2017). BMC pharmacology & toxicology 18
@@ -26,6 +29,9 @@ Liu S; Chen P; Zhao Y; Dai G; Sun B; Wang Y; et al. et al. (2017). BMC pharmacol
 
 ## Model component
 <dbs-pgx drug="mitiglinide" model-id="Mitiglinide_Liu2017_reference" status="needs_review" stale="false" population="healthy Chinese volunteers" measured-compound="mitiglinide" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

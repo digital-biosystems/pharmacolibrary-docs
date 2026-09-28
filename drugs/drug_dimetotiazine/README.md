@@ -4,7 +4,8 @@
 
 - **generic name:** dimetotiazine
 - **ATC codes:** `N02CX05`
-- **DrugBank:** [DB08967](https://go.drugbank.com/drugs/DB08967)
+- **DrugBank:** [DB08967](https://go.drugbank.com/drugs/DB08967) · **PubChem:** [CID 3089](https://pubchem.ncbi.nlm.nih.gov/compound/3089)
+- **molar mass:** 391.55 g/mol (C19H25N3O2S2) — DrugBank
 - **groups:** approved
 
 ## About

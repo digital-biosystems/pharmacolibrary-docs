@@ -5,7 +5,7 @@
 
 - **generic name:** fibrinogen, human
 - **ATC codes:** `B02BB01`
-- **DrugBank:** [DB09222](https://go.drugbank.com/drugs/DB09222)
+- **DrugBank:** [DB09222](https://go.drugbank.com/drugs/DB09222) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -24,12 +24,12 @@ In combination with thrombin, it is used indicated as an adjunct to hemostasis f
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Jia_2026_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md) | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ma_2026_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md) | Ma Y et al., Optimizing Colistin Sulfate Dosing in S…, Drug design, development an… (2026) | [10.2147/dddt.s600942](https://doi.org/10.2147/dddt.s600942) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Khayat_2023_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_Khayat2023_reference.md) | Khayat CD et al., Pharmacokinetics, efficacy and safety o…, Blood coagulation & fibrino… (2023) | [10.1097/MBC.0000000000001182](https://doi.org/10.1097/MBC.0000000000001182) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [van_2026_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_van2026_reference.md) | van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026) | [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span> | [Jia_2026_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md) | 1-compartment, oral | 4 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ma_2026_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md) | 1-compartment, IV | 2 | Ma Y et al., Optimizing Colistin Sulfate Dosing in S…, Drug design, development an… (2026) | [10.2147/dddt.s600942](https://doi.org/10.2147/dddt.s600942) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Khayat_2023_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_Khayat2023_reference.md) | 1-compartment (no model) | 5 | Khayat CD et al., Pharmacokinetics, efficacy and safety o…, Blood coagulation & fibrino… (2023) | [10.1097/MBC.0000000000001182](https://doi.org/10.1097/MBC.0000000000001182) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [van_2026_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_van2026_reference.md) | 1-compartment (no model) | 2 | van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026) | [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468) |
 
 ## Pharmacodynamics (PD)
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Every check that could be run on this record passed.**
+
+A reported unit could not be converted (Km), so that value has no SI equivalent.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kruizinga MD; Zuiker RGJA; Bergmann KR; Egas AC; Cohen AF; Santen GWE; et al. et al. (2022). British journal of clinical pharmacology 88
@@ -25,6 +27,9 @@ Kruizinga MD; Zuiker RGJA; Bergmann KR; Egas AC; Cohen AF; Santen GWE; et al. et
 
 ## Model component
 <dbs-pgx drug="clonazepam" model-id="Clonazepam_Kruizinga2022_reference" status="curated_candidate" stale="false" population="healthy adults" measured-compound="clonazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -130,6 +135,8 @@ Kruizinga MD; Zuiker RGJA; Bergmann KR; Egas AC; Cohen AF; Santen GWE; et al. et
 </div><figure class="pk-models-diagram"><img src="drugs/drug_clonazepam/Clonazepam_Kruizinga2022_reference/Clonazepam_Kruizinga2022_reference.svg" alt="Clonazepam_Kruizinga2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_clonazepam/Clonazepam_Kruizinga2022_reference/Clonazepam_Kruizinga2022_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_clonazepam/Clonazepam_Kruizinga2022_reference/Clonazepam_Kruizinga2022_reference_sim_controls.json"></dbs-fmusim>
 

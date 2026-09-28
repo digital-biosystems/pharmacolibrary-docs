@@ -4,7 +4,8 @@
 
 - **generic name:** methylnaltrexone bromide
 - **ATC codes:** `A06AH01`
-- **DrugBank:** [DB06800](https://go.drugbank.com/drugs/DB06800)
+- **DrugBank:** [DB06800](https://go.drugbank.com/drugs/DB06800) · **PubChem:** [CID 16089915](https://pubchem.ncbi.nlm.nih.gov/compound/16089915)
+- **molar mass:** 356.441 g/mol (C21H26NO4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

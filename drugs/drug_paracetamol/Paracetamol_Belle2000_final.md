@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[1 a]` (not captured vs 19.8) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The record holds only a microsomal Km for acetaminophen (38.5 M) with no distribution volume and no clearance, so it is not a compartmental population PK model, and the molar unit could not be converted to SI.**
+
+The paper (Belle_2000, human liver microsomes) reports a single Michaelis constant for acetaminophen, Km = 38.5 M, but no distribution volume and no clearance or elimination rate — it is an exposure/outcome study, not a compartmental population PK model. The reported molar (M) unit could not be converted to SI, so the Km parameter was carried without an SI value, and a dimension mismatch was flagged on this structural parameter. A second reader recorded Km as 19.8 where the record holds null, disagreeing on the parameter value. Extracted — paracetamol: Km 38.5 M.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 1 a: this record has none, the second reading 19.8. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `phenacetin`, measured `acetaminophen`.
 

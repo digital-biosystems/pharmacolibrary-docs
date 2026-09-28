@@ -4,7 +4,8 @@
 
 - **generic name:** reboxetine
 - **ATC codes:** `N06AX18`
-- **DrugBank:** [DB00234](https://go.drugbank.com/drugs/DB00234)
+- **DrugBank:** [DB00234](https://go.drugbank.com/drugs/DB00234) · **PubChem:** [CID 127151](https://pubchem.ncbi.nlm.nih.gov/compound/127151)
+- **molar mass:** 313.397 g/mol (C19H23NO3) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
 ## About

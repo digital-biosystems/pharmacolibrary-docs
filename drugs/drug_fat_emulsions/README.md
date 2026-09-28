@@ -4,7 +4,7 @@
 
 - **generic name:** fat emulsions
 - **ATC codes:** `B05BA02`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

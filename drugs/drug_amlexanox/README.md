@@ -4,7 +4,8 @@
 
 - **generic name:** amlexanox
 - **ATC codes:** `A01AD07`, `R03DX01`
-- **DrugBank:** [DB01025](https://go.drugbank.com/drugs/DB01025)
+- **DrugBank:** [DB01025](https://go.drugbank.com/drugs/DB01025) · **PubChem:** [CID 2161](https://pubchem.ncbi.nlm.nih.gov/compound/2161)
+- **molar mass:** 298.2934 g/mol (C16H14N2O4) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

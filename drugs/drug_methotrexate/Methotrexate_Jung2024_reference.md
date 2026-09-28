@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The methotrexate two-compartment model was rejected because one compartment has no path from the dose, making it unreachable in the structure.**
+
+The record describes a two-compartment structure for methotrexate in Korean patients with haematologic malignancy, with V1 = 24.67 L, V2 = 17.93 L, typical CL = 12.93 L/h and typical Q = 0.657 L/h, plus an absorption rate constant of 0.268 day−1 and an oral lag time of 0.36 h. The review's only stated reason for rejection is an unreachable or orphan compartment — a compartment with no dosing path — so the model was held back on structural grounds rather than on any parameter value. Extracted — methotrexate: V1 24.7 L, V2 17.9 L, kabs 0.268 day−1, tlag 0.36 hour.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:29:53.746757+00:00) predates the upstream re-run (2026-09-24 02:58:01.371795+00:00). Current validate status: `rejected`.
 

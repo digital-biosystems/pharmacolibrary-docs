@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for doxycycline's clearance and volume of distribution.**
+
+The model was built, but doxycycline's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — doxycycline: V 4.43, CL 1.47, t1/2z 2.09, AUC∞ 3.4.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `doxycycline hyclate`, measured `doxycycline`.
 
@@ -27,6 +29,9 @@ Mileva R; Rusenov A; Milanova A et al. (2021). Antibiotics (Basel, Switzerland) 
 
 ## Model component
 <dbs-pgx drug="doxycycline" model-id="Doxycycline_Mileva2021_reference" status="model_quarantined" stale="false" population="mature and immature rabbits" measured-compound="doxycycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

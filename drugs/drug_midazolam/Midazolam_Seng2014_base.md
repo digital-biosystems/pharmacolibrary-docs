@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the model was built but never simulated; the model was built differently from what the record describes. Evidence: T3_shared_parameters — expected 6 shared param(s) bound once — got possibly duplicated: ['CL', 'V', 'CL', 'V']
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (midazolam vs unknown) and 21 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**The midazolam parent–metabolite model was not simulated because the shared clearance and volume parameters (CL 13.1 L/h, V 27.2 L, and their metabolite counterparts) were duplicated rather than bound to a single value across compartments.**
+
+The record lists CL and V twice for the parent (13.1 L/h, 27.2 L) and again for the metabolites (145 L/h, 97.4 L, 2.04 L/h, 1 L), and the shared-parameter check found 'possibly duplicated: CL, V, CL, V' where six shared parameters should have been bound once. A second reader also returned null for the parent clearance, inter-compartmental clearance, and both volumes, and disagreed on the dose compartment and metabolite naming (midazolam vs midazolam, 1'-hydroxymidazolam vs 1-hydroxymidazolam). The model was built but has not been simulated yet, so the verdict is not_simulated. Extracted — midazolam: CL 13.1 L h À1, V 27.2 L, Q 17.6 L h À1; 1'-hydroxymidazolam: fm 0.6, CL 145 L h À1, V 97.4 L; 1'-hydroxymidazolam glucuronide: fm 0.279, CL 2.04 L h À1, V 1 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Seng KY; Hee KH; Soon GH; Sapari NS; Soong R; Goh BC; et al. et al. (2014). Journal of clinical pharmacology 54

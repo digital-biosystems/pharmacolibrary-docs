@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 2 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[km1].parameter_id` (Q301 vs Q1) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The alverine mouse model was quarantined because alverine's elimination clearance and intercompartmental clearance had no extracted values, so library placeholder defaults were substituted, and V2, k12 and kabs were also uncovered.**
+
+The record lists values for CL (0.512), Q (0.372), V2 (0.443), k12 (0.582) and kabs (6.9), yet the parameter-coverage check found only 2 of 5 expected parameters emitted or defaulted, with V2, k12 and kabs neither emitted nor defaulted. The model builder substituted placeholder defaults for alverine's elimination clearance and intercompartmental clearance, meaning library values stood in for missing source values, so the model was held back rather than published with invented numbers. A second reader additionally disagreed on the identifier assigned to the metabolism rate constant km1 and reported a volume of distribution vm1 of 47.905 where this record had none. Extracted — alverine: CL 0.512, Kp 1.16, V2 0.443, V3 0.29, Q 0.372, k12 0.582, kabs 6.9, fm 0.92.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[km1].parameter_id`: this record has Q301, the second reading Q1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Cho A; Jeong HC; Kim M; Cho I; Na HJ; Ko KC; et al. et al. (2026). CPT: pharmacometrics & systems pharmacology 15
@@ -26,6 +29,9 @@ Cho A; Jeong HC; Kim M; Cho I; Na HJ; Ko KC; et al. et al. (2026). CPT: pharmaco
 
 ## Model component
 <dbs-pgx drug="alverine" model-id="Alverine_Cho2026_estimate" status="model_quarantined" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

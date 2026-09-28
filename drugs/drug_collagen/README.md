@@ -4,7 +4,7 @@
 
 - **generic name:** collagen
 - **ATC codes:** `B02BC07`, `G04BX11`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

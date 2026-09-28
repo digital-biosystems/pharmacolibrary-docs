@@ -5,7 +5,8 @@
 
 - **generic name:** sumatriptan
 - **ATC codes:** `N02CC01`, `N02CC51`
-- **DrugBank:** [DB00669](https://go.drugbank.com/drugs/DB00669)
+- **DrugBank:** [DB00669](https://go.drugbank.com/drugs/DB00669) · **PubChem:** [CID 5358](https://pubchem.ncbi.nlm.nih.gov/compound/5358)
+- **molar mass:** 295.4 g/mol (C14H21N3O2S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,12 +23,12 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Christensen_2004_reference](drugs/drug_sumatriptan/Sumatriptan_Christensen2004_reference.md) | Christensen ML et al., Pharmacokinetics of sumatriptan nasal s…, Journal of clinical pharmac… (2004) | [10.1177/0091270004263467](https://doi.org/10.1177/0091270004263467) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Cosson_1999_reference](drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference.md) | Cosson VF et al., Mixed effect modeling of sumatriptan ph…, Journal of pharmacokinetics… (1999) | [10.1023/a:1020601906027](https://doi.org/10.1023/a:1020601906027) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Christensen_2003_reference](drugs/drug_sumatriptan/Sumatriptan_Christensen2003_reference.md) | Christensen ML et al., Pharmacokinetics of sumatriptan nasal s…, Journal of clinical pharmac… (2003) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ohk_2022_reference](drugs/drug_sumatriptan/Sumatriptan_Ohk2022_reference.md) | Ohk B et al., Evaluation of sex differences in the ph…, Biopharmaceutics & drug dis… (2022) | [10.1002/bdd.2307](https://doi.org/10.1002/bdd.2307) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Christensen_2004_reference](drugs/drug_sumatriptan/Sumatriptan_Christensen2004_reference.md) | 1-compartment (no model) | 5 | Christensen ML et al., Pharmacokinetics of sumatriptan nasal s…, Journal of clinical pharmac… (2004) | [10.1177/0091270004263467](https://doi.org/10.1177/0091270004263467) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Cosson_1999_reference](drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference.md) | 1-compartment (no model) | 2 | Cosson VF et al., Mixed effect modeling of sumatriptan ph…, Journal of pharmacokinetics… (1999) | [10.1023/a:1020601906027](https://doi.org/10.1023/a:1020601906027) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Christensen_2003_reference](drugs/drug_sumatriptan/Sumatriptan_Christensen2003_reference.md) | 1-compartment (no model) | 5 | Christensen ML et al., Pharmacokinetics of sumatriptan nasal s…, Journal of clinical pharmac… (2003) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ohk_2022_reference](drugs/drug_sumatriptan/Sumatriptan_Ohk2022_reference.md) | 1-compartment (no model) | 0 | Ohk B et al., Evaluation of sex differences in the ph…, Biopharmaceutics & drug dis… (2022) | [10.1002/bdd.2307](https://doi.org/10.1002/bdd.2307) |
 
 ## Pharmacodynamics (PD)
 

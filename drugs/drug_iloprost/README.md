@@ -4,7 +4,8 @@
 
 - **generic name:** iloprost
 - **ATC codes:** `B01AC11`
-- **DrugBank:** [DB01088](https://go.drugbank.com/drugs/DB01088)
+- **DrugBank:** [DB01088](https://go.drugbank.com/drugs/DB01088) · **PubChem:** [CID 5311181](https://pubchem.ncbi.nlm.nih.gov/compound/5311181)
+- **molar mass:** 360.494 g/mol (C22H32O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

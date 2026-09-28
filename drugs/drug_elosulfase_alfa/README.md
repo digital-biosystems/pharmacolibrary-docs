@@ -4,7 +4,7 @@
 
 - **generic name:** elosulfase alfa
 - **ATC codes:** `A16AB12`
-- **DrugBank:** [DB09051](https://go.drugbank.com/drugs/DB09051)
+- **DrugBank:** [DB09051](https://go.drugbank.com/drugs/DB09051) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

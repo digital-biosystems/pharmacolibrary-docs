@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — nalbuphine: CL 131, V1 208 litre, V2 153 litre, Q 75.8, kabs 0.357 h-1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Bressolle F; Khier S; Rochette A; Kinowski JM; Dadure C; Capdevila X et al. (2011). British journal of anaesthesia 106
@@ -25,6 +27,9 @@ Bressolle F; Khier S; Rochette A; Kinowski JM; Dadure C; Capdevila X et al. (201
 
 ## Model component
 <dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Bressolle2011_final" status="needs_review" stale="false" population="children after surgery" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

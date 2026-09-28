@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc0-t]` (19.29 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0-t: this record has 19.29, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Nasser A; Gomeni R; Wang Z; Kosheleff AR; Xie L; Adeojo LW; et al. et al. (2021). Journal of clinical pharmacology 61
@@ -26,6 +29,9 @@ Nasser A; Gomeni R; Wang Z; Kosheleff AR; Xie L; Adeojo LW; et al. et al. (2021)
 
 ## Model component
 <dbs-pgx drug="viloxazine" model-id="Viloxazine_Nasser2021_reference" status="rejected" stale="false" population="pediatric subjects with ADHD" measured-compound="viloxazine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

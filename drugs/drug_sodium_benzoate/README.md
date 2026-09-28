@@ -5,12 +5,22 @@
 
 - **generic name:** sodium benzoate
 - **ATC codes:** `A16AX11`, `A16AX30`, `V04CG30`
-- **DrugBank:** [DB03793](https://go.drugbank.com/drugs/DB03793)
+- **DrugBank:** [DB03793](https://go.drugbank.com/drugs/DB03793) · **PubChem:** [CID 243](https://pubchem.ncbi.nlm.nih.gov/compound/243)
+- **molar mass:** 122.123 g/mol (C7H6O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
 
 **Description.** A fungistatic compound that is widely used as a food preservative. It is conjugated to GLYCINE in the liver and excreted as hippuric acid. As the sodium salt form, sodium benzoate is used as a treatment for urea cycle disorders due to its ability to bind amino acids. This leads to excretion of these amino acids and a decrease in ammonia levels. Recent research shows that sodium benzoate may be beneficial as an add-on therapy (1 gram/day) in schizophrenia. Total Positive and Negative Syndrome Scale scores dropped by 21% compared to placebo.
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| benzoic acid | parent | 122.123 | C7H6O2 | DrugBank | [243](https://pubchem.ncbi.nlm.nih.gov/compound/243) | Kubota_1991 |
+| hippuric acid | metabolite | — (mass units only) | — | — | — | — |
 
 ## Extraction summary
 

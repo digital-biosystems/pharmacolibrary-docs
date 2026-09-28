@@ -4,7 +4,8 @@
 
 - **generic name:** pramlintide
 - **ATC codes:** `A10BX05`
-- **DrugBank:** [DB01278](https://go.drugbank.com/drugs/DB01278)
+- **DrugBank:** [DB01278](https://go.drugbank.com/drugs/DB01278) · **PubChem:** not captured
+- **molar mass:** 3949.44 g/mol (C171H267N51O53S2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

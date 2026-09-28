@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — doxycycline: V 865 ml/kg, kcomp 2.28 1/h, kel 0.08 1/h, CL 104 ml/h/kg, kabs 2.55 1/h, Cmax 5.88 μg/ml, tmax 1.73 h, Fab 52.3 %.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yang F; Si HB; Wang YQ; Zhao ZS; Zhou BH; Hao XQ et al. (2016). British poultry science 57
@@ -25,6 +27,9 @@ Yang F; Si HB; Wang YQ; Zhao ZS; Zhou BH; Hao XQ et al. (2016). British poultry 
 
 ## Model component
 <dbs-pgx drug="doxycycline" model-id="Doxycycline_Yang2016_reference" status="needs_review" stale="false" population="laying hens" measured-compound="doxycycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

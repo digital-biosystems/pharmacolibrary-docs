@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Every check that could be run on this record passed.**
+
+A reported unit could not be converted (Cmax and tmax), so that value has no SI equivalent.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-17 22:47:41.771661+00:00) predates the upstream re-run (2026-09-23 22:41:47.736748+00:00). Current validate status: `needs_review`.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (factor IX vs factor IX concentrate) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is coagulation factor ix's own; they describe factor IX. Extracted — factor IX: CL 284 mL h-170 kg-1, V1 5.45e+03 mL70 kg-1, Q 110 mL h-170 kg-1, V2 4.8e+03 mL70 kg-1, Q3 1.61e+03 mL h-170 kg-1, V3 2.04e+03 mL70 kg-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has factor IX, the second reading factor IX concentrate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Preijers T; Hazendonk HCAM; Liesner R; Chowdary P; Driessens MHE; Hart D; et al. et al. (2018). Journal of thrombosis and haemostasis : JTH 16
@@ -26,6 +29,9 @@ Preijers T; Hazendonk HCAM; Liesner R; Chowdary P; Driessens MHE; Hart D; et al.
 
 ## Model component
 <dbs-pgx drug="coagulation factor IX" model-id="CoagulationFactorIx_Preijers2018_reference" status="needs_review" stale="false" population="hemophilia B patients undergoing surgery" measured-compound="factor IX" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

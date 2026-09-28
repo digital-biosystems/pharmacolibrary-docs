@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;chymotrypsin&quot;,&quot;href&quot;:&quot;drugs/drug_chymotrypsin/&quot;},{&quot;label&quot;:&quot;Bognanni_2025 \u00b7 PD Trypsin-like activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Trypsin-like activity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>

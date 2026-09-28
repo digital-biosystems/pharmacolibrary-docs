@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The paclitaxel population model record was rejected because a structural parameter carries a dimensional mismatch, and the record rests on the paper's abstract alone rather than a fitted model.**
+
+The record for paclitaxel in adults with metastatic solid cancer lists a one-compartment-like structure with parameters including CL 29.7 L/h, V1 11.4 L, Km 0.108 μg/mL, Vmax 2.25 μg/mL/h, k21 0.207 h−1, Q3 33.5 L/h and V3 61.2 L, but one structural parameter fails a dimensional check (C5), meaning its units are inconsistent with its role in the model structure. Because the source was read at abstract-only level, the reported summary statistics stood in for a fitted model, so the parameter set cannot be traced to a full population fit. The refusal was driven by the dimension mismatch on the structural parameter. Extracted — paclitaxel: CL 29.7 L/h, V1 11.4 L, Km 0.108 μg/mL, Vmax 2.25 μg/mL/h, k21 0.207 h−1, Q3 33.5 L/h, V3 61.2 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `nab-paclitaxel`, measured `paclitaxel`.
 
@@ -26,6 +28,9 @@ not matched (stem Tsushima_2020)
 
 ## Model component
 <dbs-pgx drug="paclitaxel" model-id="Paclitaxel_Tsushima2020_reference" status="rejected" stale="false" population="adults with metastatic solid cancer" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 

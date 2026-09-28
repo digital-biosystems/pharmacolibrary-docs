@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The moxifloxacin two-compartment model in children with rifampicin-resistant tuberculosis was quarantined because clearance, distribution volume, absorption rate constant, lag time and both intercompartmental rate constants had no extracted values, so library defaults were substituted.**
+
+The record lists only CL/F 6.90 L/h, V1/F 61.1 L, Q/F 0.860 L/h, V2/F 44.5 L and MAT 1.01 h for moxifloxacin; the absorption rate constant, lag time and the micro-rate constants (k12, k21) corresponding to the reported Q/F and V2/F were absent, and Cl, Vd, ka, Tlag, k12 and k21 were left at library defaults. The absorption input was additionally invented (ka defaulted, not reported in the source) and judged not acceptable, with an apparent (/F) parameterization assuming F=1 and Fm=1 without molar correction. The established finding confirms the model was built but held back rather than published with invented numbers. Extracted — moxifloxacin: CL/F 6.9, V1/F 61.1, Q/F 0.86, V2/F 44.5, MAT 1.01 h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Palmer M; Zou Y; Hesseling AC; van der Laan L; Courtney I; Kinikar AA; et al. et al. (2025). British journal of clinical pharmacology 91
@@ -26,6 +29,9 @@ Palmer M; Zou Y; Hesseling AC; van der Laan L; Courtney I; Kinikar AA; et al. et
 
 ## Model component
 <dbs-pgx drug="moxifloxacin" model-id="Moxifloxacin_Palmer2025_reference" status="model_quarantined" stale="false" population="children with rifampicin-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

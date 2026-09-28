@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 0.215).
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.215).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (CL, V, Vss and t1/2α), so that value has no SI equivalent. Extracted — cabazitaxel: CL 34.5 n = 21, V 17.1 n = 21, Vss 3.66e+03 n = 21, t1/2α 3.57 n = 21, t1/2β 1.56 n = 21, t1/2γ 108 n = 21.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ferron GM; Dai Y; Semiond D et al. (2013). Cancer chemotherapy and pharmacology 71
@@ -25,6 +27,9 @@ Ferron GM; Dai Y; Semiond D et al. (2013). Cancer chemotherapy and pharmacology 
 
 ## Model component
 <dbs-pgx drug="cabazitaxel" model-id="Cabazitaxel_Ferron2013_ted6188_n_21" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="cabazitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

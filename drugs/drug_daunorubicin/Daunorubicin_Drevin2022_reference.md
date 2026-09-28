@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 3 scholar param(s) emitted or defaulted — got 2 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The daunorubicin parent–metabolite model was quarantined because daunorubicin's clearance, absorption rate constant and lag time had no values, V2 was uncovered, and an invented absorption depot was used.**
+
+Daunorubicin's clearance (Cl), absorption rate constant (ka) and lag time (Tlag) were left at library defaults, so placeholder numbers would have stood in for unreported parameters. The parameter-coverage check found only 2 of 3 expected parameters covered, with V2 (1393 L) neither emitted nor defaulted. The structure check failed: the record's parent–metabolite structure (daunorubicin metabolised to daunorubicinol) was simulated as a one-compartment extravascular model instead, and the absorption was flagged as invented since ka was not reported in the source, giving an apparent (/F) first-order extravascular input. The covariate effects defined in the record (creatinine and BSA on daunorubicinol clearance and volume) were never exercised in simulation, so their impact is unquantified. Extracted — daunorubicin: V1 22.4 L, V2 1.39e+03 L, V3 330 L, Q 75.1 L/h, Q2 135 L/h; daunorubicinol: Q 573 L/h, V2 79.2 L, allometric_exponent 0.98, kfm 3.9 1/h, CL 35.8 L/h, CL 1.04.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Drevin G; Briet M; Bazzoli C; Gyan E; Schmidt A; Dombret H; et al. et al. (2022). Pharmaceutics 14
@@ -28,6 +31,9 @@ Drevin G; Briet M; Bazzoli C; Gyan E; Schmidt A; Dombret H; et al. et al. (2022)
 
 ## Model component
 <dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Drevin2022_reference" status="model_quarantined" stale="false" population="adults with acute myeloid leukaemia" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 11 extracted, plus 1 covariate effect.
 
 **Parameterization:** apparent.
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Li Y; Wang ML; Guo Y; Cao YF; Zhao MM; Zhao LM et al. (2023). British journal of clinical pharmacology 89
@@ -25,6 +27,9 @@ Li Y; Wang ML; Guo Y; Cao YF; Zhao MM; Zhao LM et al. (2023). British journal of
 
 ## Model component
 <dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Li2023_base" status="rejected" stale="false" population="women with epilepsy during pregnancy" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

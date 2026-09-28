@@ -17,9 +17,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for doxycycline's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant; the covariate scenarios were not simulated.**
+
+The model was built, but doxycycline's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (CL and MAT), so that value has no SI equivalent. Extracted — doxycycline: V1 0.192, V2 0.595, V3 0.536, CL 0.259 Thetas fixed and OMEGA estimated, Q 1.18, MAT 13.9 feed, field conditions.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Toutain PL; Bousquet-Melou A; Ferran AA; Roques BB; Del Castillo JRE; Lees P; et al. et al. (2025). Journal of veterinary pharmacology and therapeutics 48
@@ -27,6 +29,9 @@ Toutain PL; Bousquet-Melou A; Ferran AA; Roques BB; Del Castillo JRE; Lees P; et
 
 ## Model component
 <dbs-pgx drug="doxycycline" model-id="Doxycycline_Toutain2025_reference" status="model_quarantined" stale="false" population="pigs" measured-compound="doxycycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
@@ -147,6 +152,8 @@ Toutain PL; Bousquet-Melou A; Ferran AA; Roques BB; Del Castillo JRE; Lees P; et
 </div><figure class="pk-models-diagram"><img src="drugs/drug_doxycycline/Doxycycline_Toutain2025_reference/Doxycycline_Toutain2025_reference.svg" alt="Doxycycline_Toutain2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_doxycycline/Doxycycline_Toutain2025_reference/Doxycycline_Toutain2025_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_doxycycline/Doxycycline_Toutain2025_reference/Doxycycline_Toutain2025_reference_sim_controls.json"></dbs-fmusim>
 

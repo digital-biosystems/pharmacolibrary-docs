@@ -4,7 +4,8 @@
 
 - **generic name:** pentazocine
 - **ATC codes:** `N02AD01`, `N02AD51`
-- **DrugBank:** [DB00652](https://go.drugbank.com/drugs/DB00652)
+- **DrugBank:** [DB00652](https://go.drugbank.com/drugs/DB00652) · **PubChem:** [CID 441278](https://pubchem.ncbi.nlm.nih.gov/compound/441278)
+- **molar mass:** 285.431 g/mol (C19H27NO) — DrugBank
 - **groups:** approved, vet_approved
 
 ## About

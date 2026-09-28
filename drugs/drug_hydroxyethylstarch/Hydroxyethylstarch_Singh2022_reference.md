@@ -5,7 +5,7 @@
 
 # hydroxyethylstarch — `Hydroxyethylstarch_Singh2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The hydroxyethylstarch record was held back because ka and Tlag were not reported in the source and left at library placeholder values, with an invented first-order absorption input (F=1, Fm=1, apparent parameterization) assumed for an intravenously given colloid.**
+
+The source reports only CL/F = 0.08 L day−1 and V/F = 6.11 L for hydroxyethylstarch; ka and Tlag are absent, so placeholder values would have been substituted. The builder assumed F=1 and Fm=1 with no molar correction (apparent parameterization) and imposed a first-order depot input, which the adjudication flagged as invented absorption — not acceptable, since the /F parameterization implies extravascular dosing for an intravenous agent. A second reader also disagreed on two summary values (18.4 vs 21.8; null vs 18.4), though these disagreements do not affect the hold-back cause. Extracted — hydroxyethylstarch: CL/F 0.08 L day−1, V/F 6.11 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 24.8, the second reading 24.8; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Singh D; Fuhr R; Bird NP; Mole S; Hardes K; Man YL; Cahn A; Yancey SW; Pouliquen IJ et al. (2022). British journal of clinical pharmacology 88
@@ -25,6 +29,9 @@ Singh D; Fuhr R; Bird NP; Mole S; Hardes K; Man YL; Cahn A; Yancey SW; Pouliquen
 
 ## Model component
 <dbs-pgx drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Singh2022_reference" status="needs_review" stale="false" population="" measured-compound="hydroxyethylstarch" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +62,22 @@ Singh D; Fuhr R; Bird NP; Mole S; Hardes K; Man YL; Cahn A; Yancey SW; Pouliquen
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q17]` | 24.8 | 24.8 | mismatch |
+| `gpt-oss:120b` | `values[Q19]` | 18.4 | 21.8 | mismatch |
+| `gpt-oss:120b` | `values[Q74]` | not captured | 18.4 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +142,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference/Hydroxyethylstarch_Singh2022_reference.svg" alt="Hydroxyethylstarch_Singh2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference/Hydroxyethylstarch_Singh2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference/Hydroxyethylstarch_Singh2022_reference_sim_controls.json"></dbs-fmusim>
 

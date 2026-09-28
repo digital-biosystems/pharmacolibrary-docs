@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[verteilungsvolumens von]` (4.7 vs not captured) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — piritramide: V 4.7 l/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of verteilungsvolumens von: this record has 4.7, the second reading none. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Bouillon T; Kietzmann D; Port R; Meineke I; Hoeft A et al. (1999). Anesthesiology 90
@@ -26,6 +29,9 @@ Bouillon T; Kietzmann D; Port R; Meineke I; Hoeft A et al. (1999). Anesthesiolog
 
 ## Model component
 <dbs-pgx drug="piritramide" model-id="Piritramide_Bouillon1999_reference" status="needs_review" stale="false" population="surgical patients" measured-compound="piritramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

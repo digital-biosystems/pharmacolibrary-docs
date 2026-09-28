@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — felbamate: V 51 L.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Graves NM; Ludden TM; Holmes GB; Fuerst RH; Leppik IE et al. (1989). Pharmacotherapy 9
@@ -25,6 +27,9 @@ Graves NM; Ludden TM; Holmes GB; Fuerst RH; Leppik IE et al. (1989). Pharmacothe
 
 ## Model component
 <dbs-pgx drug="felbamate" model-id="Felbamate_Graves1989_reference" status="needs_review" stale="false" population="patients with epilepsy" measured-compound="felbamate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

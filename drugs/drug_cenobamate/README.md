@@ -4,7 +4,8 @@
 
 - **generic name:** cenobamate
 - **ATC codes:** `N03AX25`
-- **DrugBank:** [DB06119](https://go.drugbank.com/drugs/DB06119)
+- **DrugBank:** [DB06119](https://go.drugbank.com/drugs/DB06119) · **PubChem:** not captured
+- **molar mass:** 267.67 g/mol (C10H10ClN5O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

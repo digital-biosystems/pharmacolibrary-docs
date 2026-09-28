@@ -4,7 +4,8 @@
 
 - **generic name:** carboquone
 - **ATC codes:** `L01AC03`
-- **DrugBank:** [DB13677](https://go.drugbank.com/drugs/DB13677)
+- **DrugBank:** [DB13677](https://go.drugbank.com/drugs/DB13677) · **PubChem:** not captured
+- **molar mass:** 321.333 g/mol (C15H19N3O5) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

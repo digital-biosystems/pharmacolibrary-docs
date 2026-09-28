@@ -5,7 +5,8 @@
 
 - **generic name:** atorvastatin
 - **ATC codes:** `C10AA05`, `C10BA05`, `C10BX03`, `C10BX08`, `C10BX15`
-- **DrugBank:** [DB01076](https://go.drugbank.com/drugs/DB01076)
+- **DrugBank:** [DB01076](https://go.drugbank.com/drugs/DB01076) · **PubChem:** [CID 60823](https://pubchem.ncbi.nlm.nih.gov/compound/60823)
+- **molar mass:** 558.6398 g/mol (C33H35FN2O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -25,6 +26,17 @@ Atorvastatin can be used as a preventive agent for myocardial infarction, stroke
 Atorvastatin may be used as a preventive agent for non-fatal myocardial infarction, fatal and non-fatal stroke, revascularization procedures, hospitalization for congestive heart failure and angina in patients with coronary heart disease.[A177397]
 
 Prescribing of statin medications is considered standard practice following any cardiovascular events and for people with a moderate to high risk of development of CVD. Statin-indicated conditions include diabetes mellitus, clinical atherosclerosis (including myocardial infarction, acute coronary syndromes, stable angina, documented coronary artery disease, stroke, trans ischemic attack (TIA), documented carotid disease, peripheral artery disease, and claudication), abdominal aortic aneurysm, chronic kidney disease, and severely elevated LDL-C levels.[A181087, A181406]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| atorvastatin | parent | 558.64 | C33H35FN2O5 | DrugBank | [60823](https://pubchem.ncbi.nlm.nih.gov/compound/60823) | Courlet_2020, Kong_2025 |
+| atorvastatin acid | metabolite | — (mass units only) | — | — | — | — |
+| atorvastatin lactone | metabolite | — (mass units only) | — | — | — | — |
+| o-OH-atorvastatin | metabolite | 136.1 | — | PubChem | [144226](https://pubchem.ncbi.nlm.nih.gov/compound/144226) | Courlet_2020 |
 
 ## Extraction summary
 

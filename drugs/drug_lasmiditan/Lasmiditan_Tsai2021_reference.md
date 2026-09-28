@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 2 covered.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[ntr]` (not captured vs 25.3) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The lasmiditan pediatric model was held back because its volume of distribution and absorption lag time had no extracted values, so library placeholder values would have been used, with V2/F and Q/F also uncovered and covariate effects unexercised.**
+
+The record lists V2/F = 127 L and Q/F = 21.2 L/h among its parameters, yet the coverage check expected 4 parameters emitted or defaulted and obtained only 2, leaving V2/F and Q/F neither emitted nor defaulted. Lasmiditan's volume of distribution and absorption lag time had no value in the source, so a library placeholder would have stood in and the model was held back rather than published with an invented number. The covariate effects of body weight on CL/F and V2/F (0.877 and 1.15) were defined but only the reference individual was simulated, so those scenarios were not exercised. A reported unit could not be converted to SI, and a second reader gave 25.3 for a parameter where this record has null. Extracted — lasmiditan: kabs 0.295 1/h, CL/F 107 L/h, V2/F 127 L, Q/F 21.2 L/h, V3/F 172 L, MTT 0.436 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ntr: this record has none, the second reading 25.3. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tsai M; Nery ESM; Kerr L; Khanna R; Komori M; Dennehy EB; et al. et al. (2021). Clinical pharmacokinetics 60
@@ -28,6 +31,9 @@ Tsai M; Nery ESM; Kerr L; Khanna R; Komori M; Dennehy EB; et al. et al. (2021). 
 
 ## Model component
 <dbs-pgx drug="lasmiditan" model-id="Lasmiditan_Tsai2021_reference" status="model_quarantined" stale="false" population="pediatric patients with migraine" measured-compound="lasmiditan" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 6 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

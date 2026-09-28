@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (fluorouracil vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The fluorouracil record was rejected because its metabolism structure is incomplete: the links from fluorouracil to its metabolites 5FUH2 and 5FDHU carry no metabolic clearance or fraction value, leaving these metabolites unconnected to the dose.**
+
+The record describes fluorouracil being metabolised to 5FUH2 and 5FDHU, but neither metabolic pathway has an associated parameter value (no clearance, fraction metabolised or rate), so these metabolites have no quantified path from the administered dose — an unlinked-metabolite defect. The same absence affects the SN38 to SN38G and SN38 to APC pathways of the co-modelled irinotecan moiety, while only the irinotecan to SN38 step carries a value (Fm). The extracted numbers themselves are complete (CL 25.2 L/h, V2 124 L, V3 262.5 L, Vss 31.9 L, Q 10.8 L/h, V1 2.58 L, kabs 0.757 h−1, tlag 0.000552 h), so the refusal rests on the structure, not the parameters. A second reader disagreed only on the spelling of the dose compound and primary analyte (fluorouracil versus 5-fluorouracil) and of the metabolite names, not on the missing metabolic parameters. Extracted — fluorouracil: CL 25.2 L/h, V2 124 L, V3 262 L, Vss 31.9 L, Q 10.8 L/h, V1 2.58 L, kabs 0.757 h−1, tlag 0.000552 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Deyme L; Barbolosi D; Gattacceca F et al. (2019). Cancer chemotherapy and pharmacology 83

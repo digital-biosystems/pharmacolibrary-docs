@@ -4,7 +4,8 @@
 
 - **generic name:** lactitol
 - **ATC codes:** `A06AD12`
-- **DrugBank:** [DB12942](https://go.drugbank.com/drugs/DB12942)
+- **DrugBank:** [DB12942](https://go.drugbank.com/drugs/DB12942) · **PubChem:** [CID 157355](https://pubchem.ncbi.nlm.nih.gov/compound/157355)
+- **molar mass:** 344.3124 g/mol (C12H24O11) — DrugBank
 - **groups:** approved
 
 ## About

@@ -4,14 +4,15 @@
 
 - **generic name:** mefenorex
 - **ATC codes:** `A08AA09`
-- **DrugBank:** [DB13852](https://go.drugbank.com/drugs/DB13852)
+- **DrugBank:** [DB13852](https://go.drugbank.com/drugs/DB13852) · **PubChem:** not captured
+- **molar mass:** 211.73 g/mol (C12H18ClN) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-12 01:17 | 11:37 | 0/0/0 | 0/0/0 | 0/0/0 | 117,680/6,763 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 0/0 | 11/0 | 0 |
+| 2026-09-26 10:20 | 0:33 | 0/0/0 | 0/0/0 | 0/0/0 | 1,576/170 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 0/0 | 11/0 | 0 |
 
 ## popPK records
 
@@ -25,7 +26,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 18 matched, 46 returned
+- **PubMed hits:** 0 matched, 46 returned
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -38,7 +39,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Rendić_1994.pdf` | Rendić S et al., Urinary excretion and metabolism of ora…, European journal of drug me… (1994) | popPK | 8 | [10.1007/BF03188831](https://doi.org/10.1007/BF03188831) | [8001591](https://pubmed.ncbi.nlm.nih.gov/8001591) | The study reports quantitative pharmacokinetic parameters (Kel, t1/2) for mefenorex in humans, with values explicitly provided in the text. |
 
-<sub>queue written 2026-09-12T01:17:23.546727+00:00</sub>
+<sub>queue written 2026-09-26T10:20:51.502147+00:00</sub>
 
 ## Screened and excluded
 

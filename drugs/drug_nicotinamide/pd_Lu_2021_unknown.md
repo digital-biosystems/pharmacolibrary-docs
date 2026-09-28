@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;nicotinamide&quot;,&quot;href&quot;:&quot;drugs/drug_nicotinamide/&quot;},{&quot;label&quot;:&quot;Lu_2021 \u00b7 PD SIRT6 deacetylation activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # SIRT6 deacetylation activity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>

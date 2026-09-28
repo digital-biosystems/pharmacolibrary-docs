@@ -5,7 +5,8 @@
 
 - **generic name:** abacavir
 - **ATC codes:** `J05AF06`, `J05AR02`, `J05AR04`, `J05AR13`
-- **DrugBank:** [DB01048](https://go.drugbank.com/drugs/DB01048)
+- **DrugBank:** [DB01048](https://go.drugbank.com/drugs/DB01048) · **PubChem:** [CID 441300](https://pubchem.ncbi.nlm.nih.gov/compound/441300)
+- **molar mass:** 286.3323 g/mol (C14H18N6O) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -13,6 +14,15 @@
 **Description.** Abacavir (ABC) is a powerful nucleoside analog reverse transcriptase inhibitor (NRTI) used to treat HIV and AIDS. Chemically, it is a synthetic carbocyclic nucleoside and is the enantiomer with 1S, 4R absolute configuration on the cyclopentene ring. In vivo, abacavir sulfate dissociates to its free base, abacavir.
 
 **Indication.** Abacavir is indicated in combination with other anti-retroviral agents for the treatment of HIV-1 infection.[L30400] It is available in a combination product alongside [dolutegravir] and [lamivudine] for the treatment of adult and pediatric patients with HIV-1 who weigh ≥10 kg.[L41365]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| abacavir | parent | 286.332 | C14H18N6O | DrugBank | [441300](https://pubchem.ncbi.nlm.nih.gov/compound/441300) | Hurwitz_2008 |
+| zidovudine | metabolite | 267.24 | — | PubChem | [35370](https://pubchem.ncbi.nlm.nih.gov/compound/35370) | Hurwitz_2008 |
 
 ## Extraction summary
 

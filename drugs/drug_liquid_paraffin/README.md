@@ -4,7 +4,7 @@
 
 - **generic name:** liquid paraffin
 - **ATC codes:** `A06AA01`
-- **DrugBank:** [DB11057](https://go.drugbank.com/drugs/DB11057)
+- **DrugBank:** [DB11057](https://go.drugbank.com/drugs/DB11057) · **PubChem:** not captured
 - **groups:** approved, investigational, vet_approved
 
 ## About

@@ -4,7 +4,8 @@
 
 - **generic name:** sodium picosulfate
 - **ATC codes:** `A06AB08`
-- **DrugBank:** [DB09268](https://go.drugbank.com/drugs/DB09268)
+- **DrugBank:** [DB09268](https://go.drugbank.com/drugs/DB09268) · **PubChem:** [CID 5243](https://pubchem.ncbi.nlm.nih.gov/compound/5243)
+- **molar mass:** 437.44 g/mol (C18H15NO8S2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

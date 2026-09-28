@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Welling PG; Patel RB; Patel UR; Gillespie WR; Craig WA; Albert KS et al. (1982). Journal of pharmaceutical sciences 71
@@ -25,6 +27,9 @@ Welling PG; Patel RB; Patel UR; Gillespie WR; Craig WA; Albert KS et al. (1982).
 
 ## Model component
 <dbs-pgx drug="tolazamide" model-id="Tolazamide_Welling1982_healthy_male_volunteers" status="rejected" stale="false" population="healthy male volunteers" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

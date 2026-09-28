@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default; C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[t1/2]` (0.48 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume; the clearance plausibility check could not be computed.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — lorcainide: t1/2z 0.48 h, CL 122 ml/min/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of t1/2: this record has 0.48, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Klotz U; Golbs E et al. (1980). Arzneimittel-Forschung 30
 
 ## Model component
 <dbs-pgx drug="lorcainide" model-id="Lorcainide_Klotz1980_reference" status="needs_review" stale="false" population="rats" measured-compound="lorcainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

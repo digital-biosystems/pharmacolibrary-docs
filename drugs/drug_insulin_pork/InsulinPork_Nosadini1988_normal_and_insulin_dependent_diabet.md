@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Nosadini R; De Kreutzenberg S; Duner E; Iori E; Avogaro A; Trevisan R; et al. et al. (1988). The Journal of clinical endocrinology and metabolism 67
@@ -25,6 +27,9 @@ Nosadini R; De Kreutzenberg S; Duner E; Iori E; Avogaro A; Trevisan R; et al. et
 
 ## Model component
 <dbs-pgx drug="insulin (pork)" model-id="InsulinPork_Nosadini1988_normal_and_insulin_dependent_diabet" status="rejected" stale="false" population="normal and insulin-dependent diabetic subjects" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

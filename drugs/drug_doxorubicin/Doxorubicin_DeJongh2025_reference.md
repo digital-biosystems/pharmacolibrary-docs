@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 DeJongh J; Cadogan E; Davies M; Ramos-Montoya A; Smith A; van Steeg T; Richards R et al. (2025). Journal of pharmacokinetics and pharmacodynamics 52
@@ -122,7 +122,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference/Doxorubicin_DeJongh2025_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference/Doxorubicin_DeJongh2025_reference_sim_controls.json"></dbs-fmusim>
 

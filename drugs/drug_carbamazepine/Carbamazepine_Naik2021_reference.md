@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The carbamazepine one-compartment model was held back because the absorption rate constant ka and lag time Tlag were not reported in the source, so placeholder values were substituted, and the invented first-order absorption was judged not acceptable.**
+
+The record reports only apparent clearance (CL/F, 10.8 L/h) and apparent volume of distribution (Vd/F, 174.5 L) for carbamazepine; the absorption rate constant ka and the lag time Tlag carry no values from the source, so library placeholder defaults would have been used. The builder further assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent, and imposed a first-order depot input implying extravascular dosing. The invented absorption — a ka that was never reported in the source — was adjudicated as not acceptable, which is why the model was not published but flagged for review. Extracted — carbamazepine: CL/F 10.8 L/h, V 174 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Naik H; Zhao Y; Forrestal F; Cleall S; Bockbrader H; Chapel S et al. (2021). European journal of drug metabolism and pharmacokinetics 46
@@ -25,6 +27,9 @@ Naik H; Zhao Y; Forrestal F; Cleall S; Bockbrader H; Chapel S et al. (2021). Eur
 
 ## Model component
 <dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Naik2021_reference" status="needs_review" stale="false" population="" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -127,6 +132,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_carbamazepine/Carbamazepine_Naik2021_reference/Carbamazepine_Naik2021_reference.svg" alt="Carbamazepine_Naik2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_carbamazepine/Carbamazepine_Naik2021_reference/Carbamazepine_Naik2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_carbamazepine/Carbamazepine_Naik2021_reference/Carbamazepine_Naik2021_reference_sim_controls.json"></dbs-fmusim>
 

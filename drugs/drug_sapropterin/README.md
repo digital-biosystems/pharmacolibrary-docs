@@ -1,11 +1,12 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;sapropterin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sapropterin_Feillet2008_reference&quot;,&quot;label&quot;:&quot;Feillet_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Feillet2008_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sapropterin_Muntau2017_reference&quot;,&quot;label&quot;:&quot;Muntau_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Muntau2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sapropterin_Qi2015_reference&quot;,&quot;label&quot;:&quot;Qi_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Qi2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sapropterin_Feillet2008_reference&quot;,&quot;label&quot;:&quot;Feillet_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Feillet2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sapropterin_Muntau2017_reference&quot;,&quot;label&quot;:&quot;Muntau_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Muntau2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sapropterin_Qi2015_reference&quot;,&quot;label&quot;:&quot;Qi_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Qi2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # sapropterin
 
 - **generic name:** sapropterin
 - **ATC codes:** `A16AX07`
-- **DrugBank:** [DB00360](https://go.drugbank.com/drugs/DB00360)
+- **DrugBank:** [DB00360](https://go.drugbank.com/drugs/DB00360) · **PubChem:** [CID 44257](https://pubchem.ncbi.nlm.nih.gov/compound/44257)
+- **molar mass:** 241.2471 g/mol (C9H15N5O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -13,6 +14,15 @@
 **Description.** Sapropterin (tetrahydrobiopterin or BH4) is a cofactor in the synthesis of nitric oxide. It is also essential in the conversion of phenylalanine to tyrosine by the enzyme phenylalanine-4-hydroxylase; the conversion of tyrosine to L-dopa by the enzyme tyrosine hydroxylase; and conversion of tryptophan to 5-hydroxytryptophan via tryptophan hydroxylase.
 
 **Indication.** For the treatment of tetrahydrobiopterin (BH4) deficiency.
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| sapropterin | parent | 241.247 | C9H15N5O3 | DrugBank | [44257](https://pubchem.ncbi.nlm.nih.gov/compound/44257) | Feillet_2008, Muntau_2017, Qi_2015 |
+| sapropterin (BH4) | metabolite | 241.2 | — | the paper | — | Muntau_2017, Qi_2015 |
 
 ## Extraction summary
 
@@ -24,7 +34,7 @@
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Feillet_2008_reference](drugs/drug_sapropterin/Sapropterin_Feillet2008_reference.md) | 1-compartment, oral | 3 | Feillet F et al., Pharmacokinetics of sapropterin in pati…, Clinical pharmacokinetics (2008) | [10.2165/0003088-200847120-00006](https://doi.org/10.2165/0003088-200847120-00006) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Feillet_2008_reference](drugs/drug_sapropterin/Sapropterin_Feillet2008_reference.md) | 1-compartment, oral | 3 | Feillet F et al., Pharmacokinetics of sapropterin in pati…, Clinical pharmacokinetics (2008) | [10.2165/0003088-200847120-00006](https://doi.org/10.2165/0003088-200847120-00006) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Muntau_2017_reference](drugs/drug_sapropterin/Sapropterin_Muntau2017_reference.md) | 1-compartment (no model) | 6 (+2 cov.) | Muntau AC et al., Efficacy, safety and population pharmac…, Orphanet journal of rare di… (2017) | [10.1186/s13023-017-0600-x](https://doi.org/10.1186/s13023-017-0600-x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Qi_2015_reference](drugs/drug_sapropterin/Sapropterin_Qi2015_reference.md) | 1-compartment (no model) | 5 (+2 cov.) | Qi Y et al., A prospective population pharmacokineti…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0196-4](https://doi.org/10.1007/s40262-014-0196-4) |
 
@@ -52,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 17 matched, 11 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

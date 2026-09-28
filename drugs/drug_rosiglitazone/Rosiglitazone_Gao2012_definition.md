@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** split column 'definition' is a table statistic/structure column, not a study population (mis-split estimate table).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (glucose vs rosiglitazone) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**'definition' is a column of the estimates table, not a study population.**
+
+The table was split into one record per column, and 'definition' holds a statistic rather than a second set of estimates. A reported unit could not be converted (kabs), so that value has no SI equivalent.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has glucose, the second reading rosiglitazone; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gao W; Jusko WJ et al. (2012). The Journal of pharmacology and experimental therapeutics 341
@@ -26,6 +29,9 @@ Gao W; Jusko WJ et al. (2012). The Journal of pharmacology and experimental ther
 
 ## Model component
 <dbs-pgx drug="rosiglitazone" model-id="Rosiglitazone_Gao2012_definition" status="rejected" stale="false" population="type 2 diabetic Goto-Kakizaki rats" measured-compound="rosiglitazone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

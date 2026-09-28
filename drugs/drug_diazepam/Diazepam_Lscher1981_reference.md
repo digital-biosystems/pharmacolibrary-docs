@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['diazepam', 'desmethyldiazepam', 'metabolism'], ['desmethyldiazepam', 'oxazepam', 'metabolism']] vs [['diazepam', 'desmethyldiazepam', 'metabolism'], ['diazepam', 'oxazepam', 'metabolism'], ['diazepam', '3-hydroxydiazepam', 'metabolism']]) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has diazepam → desmethyldiazepam (metabolism); desmethyldiazepam → oxazepam (metabolism), the second reading diazepam → desmethyldiazepam (metabolism); diazepam → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-17 23:09:36.485589+00:00) predates the upstream re-run (2026-09-24 04:16:08.531065+00:00). Current validate status: `rejected`.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[t 1/2 (hours) recommended dose]` (not captured vs not captured) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for morphine's clearance and volume of distribution.**
+
+The model was built, but morphine's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of t 1/2 (hours) recommended dose: this record has none, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yalcin N; Sürmelioğlu N; Allegaert K et al. (2022). BMJ paediatrics open 6
@@ -26,6 +29,9 @@ Yalcin N; Sürmelioğlu N; Allegaert K et al. (2022). BMJ paediatrics open 6
 
 ## Model component
 <dbs-pgx drug="morphine" model-id="Morphine_Yalcin2022_reference" status="model_quarantined" stale="false" population="critically ill neonates and infants undergoing extracorporeal membrane oxygenation" measured-compound="unknown" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

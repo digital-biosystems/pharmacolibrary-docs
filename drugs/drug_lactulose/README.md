@@ -4,7 +4,8 @@
 
 - **generic name:** lactulose
 - **ATC codes:** `A06AD11`
-- **DrugBank:** [DB00581](https://go.drugbank.com/drugs/DB00581)
+- **DrugBank:** [DB00581](https://go.drugbank.com/drugs/DB00581) · **PubChem:** [CID 11333](https://pubchem.ncbi.nlm.nih.gov/compound/11333)
+- **molar mass:** 342.2965 g/mol (C12H22O11) — DrugBank
 - **groups:** approved, investigational
 
 ## About

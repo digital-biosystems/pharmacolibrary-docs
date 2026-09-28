@@ -15,15 +15,20 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for carmustine's clearance.**
+
+The model was built, but carmustine's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — carmustine: V 3.25 liters/kg, CL 56 ml/minute/kg, kel 0.0324 MINUTE-1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Levin VA; Hoffman W; Weinkam RJ et al. (1978). Cancer treatment reports 62
 
 ## Model component
 <dbs-pgx drug="carmustine" model-id="Carmustine_Levin1978_reference" status="model_quarantined" stale="false" population="patients" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C2_reference failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[v m/f m].parameter_id` (Q352 vs Q61) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The tianeptine rat parent–metabolite model was held for review because a reference comparison could not be computed (ratio None), leaving the record's correctness inconclusive rather than demonstrably faulty.**
+
+The record reports a two-compartment tianeptine model in rats with a metabolite (MC5) linked by a fraction-metabolized parameter, and parameters V1 0.761 L/kg, Vnorm 2.971 L/kg, kel 2.792 h−1, k12 0.504 h−1, k21 0.628 h−1, F 0.694 and a covariate effect on kel of 0.416. The hold rests on a check that failed without producing a ratio, so no numerical comparison was made and the fault is not demonstrated. A second reader also disagreed on the identifier assigned to the metabolite-to-parent volume-of-distribution parameter (V m/f m), an unresolved discrepancy in the record's metadata. Extracted — tianeptine: V1 0.761 L/kg, Vnorm 2.97 L/kg, kel 2.79 h−1, k12 0.504 h−1, k21 0.628 h−1, Fab 0.694.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[v m/f m].parameter_id`: this record has Q352, the second reading Q61. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Szafarz M; Wencel A; Pociecha K; Fedak FA; Wlaź P; Wyska E et al. (2018). Naunyn-Schmiedeberg's archives of pharmacology 391
@@ -26,6 +29,9 @@ Szafarz M; Wencel A; Pociecha K; Fedak FA; Wlaź P; Wyska E et al. (2018). Nauny
 
 ## Model component
 <dbs-pgx drug="tianeptine" model-id="Tianeptine_Szafarz2018_estimate" status="needs_review" stale="false" population="rats" measured-compound="tianeptine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The cisapride neonatal record was rejected because the extracted apparent clearance of 3.91 mL/h and apparent volume of 17 mL fall far outside physiological plausibility, pointing to a unit or scale extraction error.**
+
+The record reports cisapride CL/F of 3.91 mL/h and V/F of 17 mL for neonates, magnitudes incompatible with neonatal physiology and consistent with a unit or scale misreading of the published values. Because only the paper's abstract was read, these summary statistics stood in for a fitted model, so no full parameter set could be corroborated. A second reader disputed the parameterization, judging the model mechanistic rather than apparent-parameter based, and returned null for both CL/F and V/F, meaning the comparison could not be computed and the values remain unconfirmed. Extracted — cisapride: V/F 17 mL, CL/F 3.91 mL/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Odoul F; Le Guellec C; Henrot A; Saliba E; Levron JC; Saux MC; et al. et al. (2002). European journal of clinical pharmacology 58
@@ -26,6 +29,9 @@ Odoul F; Le Guellec C; Henrot A; Saliba E; Levron JC; Saux MC; et al. et al. (20
 
 ## Model component
 <dbs-pgx drug="cisapride" model-id="Cisapride_Odoul2002_reference" status="rejected" stale="false" population="neonates" measured-compound="cisapride" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

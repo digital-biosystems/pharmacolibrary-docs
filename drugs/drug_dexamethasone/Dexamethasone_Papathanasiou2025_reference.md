@@ -5,7 +5,7 @@
 
 # dexamethasone — `Dexamethasone_Papathanasiou2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The dexamethasone two-compartment model was rejected because its peripheral compartment (V2, 6.63 L) is unreachable — no dosing path connects to it — and a second reader disputes both the compartmental structure and several parameter values.**
+
+The record describes a two-compartment dexamethasone model with systemic clearance 0.926 L/day, central volume 12.3 L, and peripheral volume 6.63 L, but the peripheral compartment has no link from the administered dose, making it an orphan compartment. A second reader read the structure as one compartment rather than two, and read different values for several parameters (33.2, 2.03, 13.2) that this record leaves empty, while this record's 6.63 L and 2.03 were read as null by the second reader. These unresolved disagreements on structure and parameter values leave the record's contents in doubt. Extracted — dexamethasone: CL 0.926 L/day, V1 12.3 L, V2 6.63 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q31: this record has none, the second reading 33.2; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Papathanasiou T; Kaullen J; Polireddy K; Chen X; Ho YL; Taylor A; et al. et al. (2025). Clinical pharmacokinetics 64
@@ -25,6 +29,9 @@ Papathanasiou T; Kaullen J; Polireddy K; Chen X; Ho YL; Taylor A; et al. et al. 
 
 ## Model component
 <dbs-pgx drug="dexamethasone" model-id="Dexamethasone_Papathanasiou2025_reference" status="rejected" stale="false" population="" measured-compound="dexamethasone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -50,14 +57,25 @@ Papathanasiou T; Kaullen J; Polireddy K; Chen X; Ho YL; Taylor A; et al. et al. 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.625 (10/16 fields) | 6 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.topology_template` | 2C | 1C | mismatch |
+| `gpt-oss:120b` | `values[Q31]` | not captured | 33.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q37]` | not captured | 2.03 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | not captured | 13.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 6.63 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q75]` | 2.03 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

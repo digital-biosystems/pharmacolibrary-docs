@@ -5,7 +5,8 @@
 
 - **generic name:** dolasetron
 - **ATC codes:** `A04AA04`
-- **DrugBank:** [DB00757](https://go.drugbank.com/drugs/DB00757)
+- **DrugBank:** [DB00757](https://go.drugbank.com/drugs/DB00757) · **PubChem:** [CID 3033818](https://pubchem.ncbi.nlm.nih.gov/compound/3033818)
+- **molar mass:** 324.38 g/mol (C19H20N2O3) — DrugBank
 - **groups:** approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl[reduced dolasetron], Vd[reduced dolasetron], formation_ra…</sub><br><sub>route_to: `scholar`</sub> | [Dow_1996_reference](drugs/drug_dolasetron/Dolasetron_Dow1996_reference.md) | Dow J et al., Comparison of the pharmacokinetics of d…, Journal of pharmaceutical s… (1996) | [10.1021/js960041m](https://doi.org/10.1021/js960041m) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl[reduced dolasetron], Vd[reduced dolasetron], formation_ra…</sub><br><sub>route_to: `scholar`</sub> | [Dow_1996_reference](drugs/drug_dolasetron/Dolasetron_Dow1996_reference.md) | parent + 1 metabolite (1-cmt each) | 8 | Dow J et al., Comparison of the pharmacokinetics of d…, Journal of pharmaceutical s… (1996) | [10.1021/js960041m](https://doi.org/10.1021/js960041m) |
 
 ## Pharmacodynamics (PD)
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C2_reference failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (metformin vs unknown) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The metformin model was held back because the CL/F weight-power covariate effect and one CL/F entry carry no values, and the comparison check failed without computing a result.**
+
+The record lists a weight-power covariate effect on CL/F and a second CL/F entry with no value, so library placeholders would have been used and the model was held back. The comparison check reported a failure with ratio None, meaning it could not compute a comparison — an inconclusive check rather than a demonstrated fault. A second reader also read ka as 0.6058 h⁻¹, t lag as 0.4042 h, and V/F as 303.6 L, disagreeing with the recorded 1.4 h⁻¹, 0.914 h, and 438 L, and read two parameters as 0.688 and 0.914 where this record has none. Extracted — metformin: V/F 438 L, kabs 1.4 h−1, tlag 0.914 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Li L; Guan Z; Li R; Zhao W; Hao G; Yan Y; et al. et al. (2020). Medicine 99

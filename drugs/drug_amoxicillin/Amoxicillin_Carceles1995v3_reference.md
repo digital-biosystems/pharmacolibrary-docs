@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q59 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (amoxicillin vs unknown) and 18 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**T1/2α has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — amoxicillin: t1/2α 143, k21 3.04 1/h, CL 0.11 L/h, AUC 186 mg*h/L, MRT 1.57 h, kabs 1 1/h, tlag 0.209 h, Cmax 5.75 mg/L, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amoxicillin, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Carceles_1995_3)

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T3_param_coverage
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[-cl]` (0.0188 vs not captured) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the emitted .mo and compare its base class and parameters with the record.
-<sub>owner: **engineer**</sub>
+**The marstacimab record lacks a value for the absorption lag time (tlag), so only 5 of 6 expected parameters were covered and the model was held back for review.**
+
+The three-compartment marstacimab model lists Cmax, V1 (3.61 L), CL (0.0188 L/h), V2 (4.99 L), V (8.6 L) and Q (0.00489 L/h), but the lag time (tlag, 2 h) was neither emitted nor defaulted, leaving 5 of 6 expected parameters covered. In pharmacokinetic terms, the absorption lag time had no value, so a placeholder would have been used. Additionally, the intercompartmental rate constants k13 and k31 were substituted with library defaults because no source values were available. A second reader returned no values for any of the parameters, so no independent confirmation exists. Extracted — marstacimab: Cmax 12.2, V1 3.61 L, CL 0.0188 L/h, tlag 2 h, V2 4.99 L, V 8.6 L, Q 0.00489 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of -cl: this record has 0.0188, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Nayak S; Suzuki A; Ravva P; Raje S et al. (2026). Clinical pharmacokinetics
@@ -26,6 +29,9 @@ Nayak S; Suzuki A; Ravva P; Raje S et al. (2026). Clinical pharmacokinetics
 
 ## Model component
 <dbs-pgx drug="marstacimab" model-id="Marstacimab_Nayak2026_reference" status="needs_review" stale="false" population="adolescent and adult participants with hemophilia and healthy volunteers" measured-compound="marstacimab" parameterization="mechanistic" topology="3C"></dbs-pgx>
+
+**Model structure:** 3-compartment, IV mammillary model — template `PK_3C`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -152,18 +158,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_modelica.zip" download>Marstacimab_Nayak2026_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_matlab.zip" download>Marstacimab_Nayak2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_matlab_simbio.zip" download>Marstacimab_Nayak2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_sbml.zip" download>Marstacimab_Nayak2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_cellml.zip" download>Marstacimab_Nayak2026_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_3C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference.svg" alt="Marstacimab_Nayak2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_params.json" metaurl="assets/fmu/PK_3C.vr.json" wasmurl="assets/fmu/PK_3C.js" controlsurl="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_3C` · parameters `Marstacimab_Nayak2026_reference_params.json` · controls `Marstacimab_Nayak2026_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

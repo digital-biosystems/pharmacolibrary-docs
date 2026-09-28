@@ -4,7 +4,7 @@
 
 - **generic name:** mesuximide
 - **ATC codes:** `N03AD03`
-- **DrugBank:** [DB05246](https://go.drugbank.com/drugs/DB05246)
+- **DrugBank:** [DB05246](https://go.drugbank.com/drugs/DB05246) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

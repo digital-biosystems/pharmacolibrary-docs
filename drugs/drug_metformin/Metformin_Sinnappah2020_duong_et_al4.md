@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — metformin: CLNR 1.6 L h-1, CLR 17 L h-1, Q/F 13 L h-1, V1/F 123 L, V2/F 335 L, kabs 0.51 h-1, Fab 0.55.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sinnappah KA; Kuan IHS; Thynne TRJ; Doogue MP; Wright DFB et al. (2020). British journal of clinical pharmacology 86

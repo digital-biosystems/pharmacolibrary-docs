@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[exponential coefficient for the effect of efv on pas cl/f]` (0.419 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+None of the extracted parameters is 4 aminosalicylic acid's own; they describe para-aminosalicylic acid.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of exponential coefficient for the effect of efv on pas cl/f: this record has 0.419, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem de_2014)
 
 ## Model component
 <dbs-pgx drug="4-aminosalicylic acid" model-id="D_4AminosalicylicAcid_de2014_reference" status="curated_candidate" stale="false" population="tuberculosis patients with and without HIV coinfection receiving antiretroviral therapy" measured-compound="para-aminosalicylic acid" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -143,6 +149,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference/D_4AminosalicylicAcid_de2014_reference.svg" alt="D_4AminosalicylicAcid_de2014_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.163 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference/D_4AminosalicylicAcid_de2014_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference/D_4AminosalicylicAcid_de2014_reference_sim_controls.json"></dbs-fmusim>
 

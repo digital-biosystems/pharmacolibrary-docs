@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q27, Q76, Q47, Q22 — no SI value to build from
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/f].value` (76.1 vs 67.22) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**CL/F, V/F, kel and CL have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — sertraline: CL/F 76.1, V/F 803, kel 0.098, CL 0.0068.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].value`: this record has 76.1, the second reading 67.22; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Zhang Z; Guo Z; Tan Y; Li L; Wang Z; Wen Y; et al. et al. (2024). Heliyon 10
@@ -26,6 +29,9 @@ Zhang Z; Guo Z; Tan Y; Li L; Wang Z; Wen Y; et al. et al. (2024). Heliyon 10
 
 ## Model component
 <dbs-pgx drug="sertraline" model-id="Sertraline_Zhang2024_reference" status="needs_review" stale="false" population="Chinese patients with psychiatric disorders" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

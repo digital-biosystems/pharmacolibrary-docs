@@ -5,7 +5,8 @@
 
 - **generic name:** codeine
 - **ATC codes:** `N02AJ06`, `N02AJ07`, `N02AJ08`, `R05DA04`
-- **DrugBank:** [DB00318](https://go.drugbank.com/drugs/DB00318)
+- **DrugBank:** [DB00318](https://go.drugbank.com/drugs/DB00318) · **PubChem:** [CID 5284371](https://pubchem.ncbi.nlm.nih.gov/compound/5284371)
+- **molar mass:** 299.3642 g/mol (C18H21NO3) — DrugBank
 - **groups:** approved, illicit, investigational
 
 ## About

@@ -5,7 +5,7 @@
 
 # pantoprazole — `Pantoprazole_Olivarez2022v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — pantoprazole: CL 200 mL/h/kg, V/F 0.55 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 3, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Olivarez JD; Mulon PY; Ebner LS; Cremerius H; Cantrell C; Rahn R; et al. et al. (2022). Frontiers in veterinary science 9
@@ -25,6 +29,9 @@ Olivarez JD; Mulon PY; Ebner LS; Cremerius H; Cantrell C; Rahn R; et al. et al. 
 
 ## Model component
 <dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Olivarez2022v2_reference" status="needs_review" stale="false" population="neonatal calves" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** V/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 
@@ -49,14 +56,26 @@ Olivarez JD; Mulon PY; Ebner LS; Cremerius H; Cantrell C; Rahn R; et al. et al. 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.533 (8/15 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q17]` | 3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q20]` | 5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | 3 | 105 | mismatch |
+| `gpt-oss:120b` | `values[Q40]` | 115.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 2.81 | 1.44 | mismatch |
+| `gpt-oss:120b` | `values[Q74]` | 3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q86]` | 2 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

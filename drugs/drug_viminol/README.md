@@ -4,7 +4,8 @@
 
 - **generic name:** viminol
 - **ATC codes:** `N02BG05`
-- **DrugBank:** [DB13353](https://go.drugbank.com/drugs/DB13353)
+- **DrugBank:** [DB13353](https://go.drugbank.com/drugs/DB13353) · **PubChem:** not captured
+- **molar mass:** 362.94 g/mol (C21H31ClN2O) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

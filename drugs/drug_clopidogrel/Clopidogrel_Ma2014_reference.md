@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q17]` (104.965 vs not captured) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The clopidogrel model was held back because the absorption rate constant ka and lag time Tlag were not reported in the source; library defaults were substituted, inventing an absorption input the paper never described.**
+
+The record reports only CL/F (0.309 L/h/kg) and V/F (5.079 L/kg) for clopidogrel; ka and Tlag had no values in the source, so defaults were used. The builder further assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization, and imposed a first-order depot input implying extravascular dosing. This invented absorption — a ka not reported in the source — was adjudicated not acceptable, so the model was not published and awaits review. Extracted — clopidogrel: CL/F 0.309 L/h/kg, V/F 5.08 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 104.965, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ma S; Ju W; Dai G; Zhao W; Cheng X; Fang Z; et al. et al. (2014). Evidence-based complementary and alternative medicine : eCAM 2014

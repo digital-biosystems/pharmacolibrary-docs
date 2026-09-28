@@ -5,7 +5,7 @@
 
 # Drotrecogin alfa — `DrotrecoginAlfa_Abboud2009_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — drotrecogin alfa: CL 108 L/hr, V 9.1 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q315: this record has 0.1, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Abboud I; Lerolle N; Urien S; Tadié JM; Leviel F; Fagon JY; Faisy C et al. (2009). Critical care (London, England) 13
@@ -25,6 +29,9 @@ Abboud I; Lerolle N; Urien S; Tadié JM; Leviel F; Fagon JY; Faisy C et al. (200
 
 ## Model component
 <dbs-pgx drug="Drotrecogin alfa" model-id="DrotrecoginAlfa_Abboud2009_reference" status="needs_review" stale="false" population="" measured-compound="drotrecogin_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -54,9 +61,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.667 (6/9 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q315]` | 0.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q317]` | 0.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 3.5 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

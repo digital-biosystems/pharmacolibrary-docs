@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q27]` (10.53 vs not captured) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 10.53, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Greenberg RG; Landersdorfer CB; Rivera-Chaparro N; Harward M; Conrad T; Nakamura A; Kirkpatrick CM; Gu K; Ghazaryhan V; Osborn B; Walter EB et al. (2022). Paediatric drugs 24
@@ -26,6 +27,9 @@ Greenberg RG; Landersdorfer CB; Rivera-Chaparro N; Harward M; Conrad T; Nakamura
 
 ## Model component
 <dbs-pgx drug="Bretylium" model-id="Bretylium_Greenberg2022_reference" status="curated_candidate" stale="false" population="" measured-compound="bretylium" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -139,6 +143,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_bretylium/Bretylium_Greenberg2022_reference/Bretylium_Greenberg2022_reference.svg" alt="Bretylium_Greenberg2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.537 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_bretylium/Bretylium_Greenberg2022_reference/Bretylium_Greenberg2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_bretylium/Bretylium_Greenberg2022_reference/Bretylium_Greenberg2022_reference_sim_controls.json"></dbs-fmusim>
 

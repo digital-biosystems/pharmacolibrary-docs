@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for 5-FU's clearance and volume of distribution and the rate at which 5-FU is formed.**
+
+The model was built, but 5-FU's clearance and volume of distribution and the rate at which 5-FU is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Cmax, AUClast and AUC∞), so that value has no SI equivalent. Extracted — tegafur: tmax 1.5 h, Cmax 9.33e+03 ng/mL, AUClast 5.54e+04 ng·h/mL, AUC∞ 5.57e+04 ng·h/mL, CL/F 1.7 mL/min/kg, V/F 0.3 L/kg, AUC ratio 2.5.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `S-1`, measured `tegafur`.
 
@@ -27,6 +29,9 @@ Kim TH; Shin S; Shin JC; Bulitta JB; Weon KY; Yoo SD; et al. et al. (2017). Mole
 
 ## Model component
 <dbs-pgx drug="tegafur" model-id="Tegafur_Kim2017_parameter" status="model_quarantined" stale="false" population="Sprague-Dawley rats" measured-compound="tegafur" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

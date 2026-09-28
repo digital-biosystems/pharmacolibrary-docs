@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (dofetilide vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dofetilide, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gotta V; Cools F; van Ammel K; Gallacher DJ; Visser SA; Sannajust F; et al. et al. (2015). British journal of pharmacology 172
@@ -26,6 +29,9 @@ Gotta V; Cools F; van Ammel K; Gallacher DJ; Visser SA; Sannajust F; et al. et a
 
 ## Model component
 <dbs-pgx drug="dofetilide" model-id="Dofetilide_Gotta2015_reference" status="rejected" stale="false" population="conscious dogs" measured-compound="dofetilide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

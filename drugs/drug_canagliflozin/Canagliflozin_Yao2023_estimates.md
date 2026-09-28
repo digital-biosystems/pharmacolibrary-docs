@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (dapagliflozin, canagliflozin, empagliflozin vs canagliflozin) and 8 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dapagliflozin, canagliflozin, empagliflozin, the second reading canagliflozin; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yao X; Zhou J; Song L; Ren Y; Hu P; Liu D et al. (2023). CPT: pharmacometrics & systems pharmacology 12
@@ -26,6 +27,9 @@ Yao X; Zhou J; Song L; Ren Y; Hu P; Liu D et al. (2023). CPT: pharmacometrics & 
 
 ## Model component
 <dbs-pgx drug="canagliflozin" model-id="Canagliflozin_Yao2023_estimates" status="curated_candidate" stale="false" population="healthy subjects and patients with type 2 diabetes" measured-compound="dapagliflozin, canagliflozin, empagliflozin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -144,6 +148,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates.svg" alt="Canagliflozin_Yao2023_estimates diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_sim_controls.json"></dbs-fmusim>
 

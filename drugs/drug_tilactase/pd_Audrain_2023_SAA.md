@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A09A&quot;,&quot;href&quot;:&quot;atc/A09A.md&quot;},{&quot;label&quot;:&quot;tilactase&quot;,&quot;href&quot;:&quot;drugs/drug_tilactase/&quot;},{&quot;label&quot;:&quot;Audrain_2023 \u00b7 PD TDP-43 seed amplification&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # TDP-43 seed amplification — PD  <span class="pk-badge pk-badge--green">extracted</span>

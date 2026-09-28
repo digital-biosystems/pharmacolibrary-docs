@@ -5,7 +5,8 @@
 
 - **generic name:** fludarabine
 - **ATC codes:** `L01BB05`
-- **DrugBank:** [DB01073](https://go.drugbank.com/drugs/DB01073)
+- **DrugBank:** [DB01073](https://go.drugbank.com/drugs/DB01073) · **PubChem:** [CID 657237](https://pubchem.ncbi.nlm.nih.gov/compound/657237)
+- **molar mass:** 285.235 g/mol (C10H12FN5O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -13,6 +14,15 @@
 **Description.** Fludarabine is a chemotherapeutic agent used in the treatment of hematological malignancies. It is commonly marketed under the brand name Fludara.
 
 **Indication.** For the treatment of adult patients with B-cell chronic lymphocytic leukemia (CLL) who have not responded to or whose disease has progressed during treatment with at least one standard alkylating-agent containing regimen
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| fludarabine | parent | 285.235 | C10H12FN5O4 | DrugBank | [657237](https://pubchem.ncbi.nlm.nih.gov/compound/657237) | Ivaturi_2017 |
+| f-ara-ATP | metabolite | 525.17 | — | PubChem | [22842095](https://pubchem.ncbi.nlm.nih.gov/compound/22842095) | Ivaturi_2017 |
 
 ## Extraction summary
 
@@ -22,11 +32,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Varela-González-Aller_2025_shrinkage](drugs/drug_fludarabine/Fludarabine_VarelaGonzlezAller2025_shrinkage.md) | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ivaturi_2017_reference](drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference.md) | Ivaturi V et al., Pharmacokinetics and Model-Based Dosing…, Biology of blood and marrow… (2017) | [10.1016/j.bbmt.2017.06.021](https://doi.org/10.1016/j.bbmt.2017.06.021) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Varela-González-Aller_2025_estimates_rse](drugs/drug_fludarabine/Fludarabine_VarelaGonzlezAller2025_estimates_rse.md) | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Varela-González-Aller_2025_shrinkage](drugs/drug_fludarabine/Fludarabine_VarelaGonzlezAller2025_shrinkage.md) | 1-compartment, IV | 1 | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ivaturi_2017_reference](drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference.md) | parent + metabolite (no model) | 5 (+1 cov.) | Ivaturi V et al., Pharmacokinetics and Model-Based Dosing…, Biology of blood and marrow… (2017) | [10.1016/j.bbmt.2017.06.021](https://doi.org/10.1016/j.bbmt.2017.06.021) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Varela-González-Aller_2025_estimates_rse](drugs/drug_fludarabine/Fludarabine_VarelaGonzlezAller2025_estimates_rse.md) | 1-compartment (no model) | 1 | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
 
 ## Pharmacodynamics (PD)
 

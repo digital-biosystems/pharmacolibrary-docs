@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (ornithine_oxoglurate vs ornithine_alpha_ketoglutarate) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The ornithine oxoglurate record was rejected because it was built from the abstract alone and its four metabolic pathways (to ornithine, proline, glutamine and arginine) carry no link parameter values, leaving metabolites unreachable from the dose.**
+
+The record was built from the paper's abstract only, so reported summary statistics (absorption constant 0.028 min-1, elimination half-life 89 min, creatinine clearance 26.0 mL/min, volume of distribution 33.2 L for ornithine) stood in for a fitted model. All four metabolism links from ornithine oxoglurate to ornithine, proline, glutamine and arginine have no link parameter, so the metabolites have no quantified path from the dose. A second reader also disputed the parent molecule, reading it as ornithine alpha-ketoglutarate rather than ornithine oxoglurate, and read no values for the four parameters. Extracted — ornithine oxoglurate: kabs 0.028 min-1, t1/2z 89 min, CL 26 mL/min, V 33.2 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ornithine_oxoglurate, the second reading ornithine_alpha_ketoglutarate; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `ornithine_oxoglurate`, measured `ornithine`.
 
@@ -28,6 +31,9 @@ Le Bricon T; Coudray-Lucas C; Lioret N; Lim SK; Plassart F; Schlegel L; et al. e
 
 ## Model component
 <dbs-pgx drug="ornithine oxoglurate" model-id="OrnithineOxoglurate_Le1997_reference" status="rejected" stale="false" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

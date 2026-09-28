@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (fluorouracil vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The fluorouracil model was rejected because a structural volume parameter fails a dimensional check and the metabolites 5FUH2, 5FDHU, SN38G and APC are unlinked, with no metabolism parameters assigned to their formation.**
+
+The dimension check failed on a structural parameter: the record lists Vss of 1387 L alongside V2 of 0.52 L and V1 of 3 L, volumes that are inconsistent in magnitude for a general linear structure. The metabolite links from fluorouracil to 5FUH2 and 5FDHU, and from SN38 to SN38G and APC, carry no link parameter (none, kind unknown), so these metabolites have no quantified formation path from the dose. Additionally, a reported unit could not be converted to SI, so at least one parameter reached the model build without an SI value. The second reader agreed on the measured compound and the link structure, differing only in molecule-name spelling, so the rejection rests on the dimensional mismatch and the unlinked metabolites. Extracted — fluorouracil: Vss 1.39e+03 L, V2 0.52 L, V1 3 L, Vmax 0.18 mg/h, CL 256 L/h, kabs 0.757 h−1, tlag 0.000552 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Deyme L; Barbolosi D; Gattacceca F et al. (2019). Cancer chemotherapy and pharmacology 83

@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Cirincione2017v2_parameter_estimate`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,15 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The exenatide clearance parameter CL, defined as Cl_int multiplied by an eGFR ratio, carries no SI unit, giving a dimension mismatch on a structural parameter, so the record was rejected.**
+
+The record lists CL for exenatide as Cl = Cl_int ⋅ eGFR80/Cl_eGFR with the unit reported only as 'unit'; this unit could not be converted to SI, so the parameter entered the model without an SI value, and this dimension mismatch on a structural parameter is the stated cause of rejection. A second reader also disagreed on several extracted values: 4.58 versus no value for Cl_int, 1 versus 100 for the bioavailability F, and 7.04 versus no value for the peripheral volume, while reporting 1.35 and 96 where this record has none. These disagreements leave the extracted parameter set for exenatide in adults with type 2 diabetes mellitus unconfirmed. Extracted — exenatide: CLint 4.58 l h −1, Km 567 pg ml −1, Vmax 1.55 μg h −1, Vss 7.04 l, V 7.03 l, Vnorm 2.67 unit, Fab 1, FR 0.628, … (+1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CLint: this record has 4.58, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Cirincione_2017_2)
 
 ## Model component
 <dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017v2_parameter_estimate" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -85,14 +92,24 @@ not matched (stem Cirincione_2017_2)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q310]` | not captured | 1.35 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | not captured | 96 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q3]` | 4.58 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 1 | 100 | mismatch |
+| `gpt-oss:120b` | `values[Q61]` | 7.04 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

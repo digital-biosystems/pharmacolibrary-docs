@@ -17,16 +17,22 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for N-acetylprocainamide's clearance and volume of distribution and the rate at which N-acetylprocainamide is formed; the covariate scenarios were not simulated.**
+
+The model was built, but N-acetylprocainamide's clearance and volume of distribution and the rate at which N-acetylprocainamide is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — procainamide: t1/2z 2.43 hours, V/F 1.44 L/kg, CL 0.412 L/kg/hr, Fab 85 %, t1/2ka 0.5 hours.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Papich MG; Davis LE; Davis CA; McKiernan BC; Brown SA et al. (1986). American journal of veterinary research 47
 
 ## Model component
 <dbs-pgx drug="procainamide" model-id="Procainamide_Papich1986_reference" status="model_quarantined" stale="false" population="dogs" measured-compound="procainamide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

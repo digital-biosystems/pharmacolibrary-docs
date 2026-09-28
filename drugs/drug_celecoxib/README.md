@@ -5,7 +5,8 @@
 
 - **generic name:** celecoxib
 - **ATC codes:** `C08CA51`, `L01XX33`, `M01AH01`, `N02AJ16`
-- **DrugBank:** [DB00482](https://go.drugbank.com/drugs/DB00482)
+- **DrugBank:** [DB00482](https://go.drugbank.com/drugs/DB00482) · **PubChem:** [CID 2662](https://pubchem.ncbi.nlm.nih.gov/compound/2662)
+- **molar mass:** 381.372 g/mol (C17H14F3N3O2S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -28,11 +29,11 @@ Celecoxib, in combination with [tramadol], is indicated for the management of ac
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Dhondt_2017_reference](drugs/drug_celecoxib/Celecoxib_Dhondt2017_reference.md) | Dhondt L et al., Comparative population pharmacokinetics…, Scientific reports (2017) | [10.1038/s41598-017-12159-z](https://doi.org/10.1038/s41598-017-12159-z) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Hannam_2023_reference](drugs/drug_celecoxib/Celecoxib_Hannam2023_reference.md) | Hannam JA et al., Modeling adult COX-2 cerebrospinal flui…, Paediatric anaesthesia (2023) | [10.1111/pan.14590](https://doi.org/10.1111/pan.14590) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Vaddady_2011_reference](drugs/drug_celecoxib/Celecoxib_Vaddady2011_reference.md) | Vaddady PK et al., Pharmacokinetics of a combination of Δ9…, Biopharmaceutics & drug dis… (2011) | [10.1002/bdd.740](https://doi.org/10.1002/bdd.740) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Dhondt_2017_reference](drugs/drug_celecoxib/Celecoxib_Dhondt2017_reference.md) | 1-compartment, oral | 1 | Dhondt L et al., Comparative population pharmacokinetics…, Scientific reports (2017) | [10.1038/s41598-017-12159-z](https://doi.org/10.1038/s41598-017-12159-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Hannam_2023_reference](drugs/drug_celecoxib/Celecoxib_Hannam2023_reference.md) | 1-compartment, IV | 4 | Hannam JA et al., Modeling adult COX-2 cerebrospinal flui…, Paediatric anaesthesia (2023) | [10.1111/pan.14590](https://doi.org/10.1111/pan.14590) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Vaddady_2011_reference](drugs/drug_celecoxib/Celecoxib_Vaddady2011_reference.md) | 1-compartment, IV | 2 | Vaddady PK et al., Pharmacokinetics of a combination of Δ9…, Biopharmaceutics & drug dis… (2011) | [10.1002/bdd.740](https://doi.org/10.1002/bdd.740) |
 
 ## Pharmacogenomics (PGx)
 

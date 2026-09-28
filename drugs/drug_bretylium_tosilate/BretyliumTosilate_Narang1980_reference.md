@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The bretylium record was rejected because total body clearance was recorded as 84 '%' — a percentage unit on a clearance parameter, a dimensional mismatch for a structural pharmacokinetic quantity.**
+
+The record lists bretylium total body clearance with a value of 84 and the unit '%', which is not a valid dimension for clearance (expected volume per time); this dimension mismatch on a structural parameter is the stated cause of rejection. The record was also built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model, and renal clearance was left without a numeric value, expressed only relative to glomerular filtration rate. Extracted — bretylium tosilate: t1/2β 7.8 hr, V/F 8.18 liters/kg, CL 84 %.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `bretylium_tosilate`, measured `bretylium`.
 
@@ -27,6 +29,9 @@ Narang PK; Adir J; Josselson J; Yacobi A; Sadler J et al. (1980). Journal of pha
 
 ## Model component
 <dbs-pgx drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_reference" status="rejected" stale="false" population="healthy adults" measured-compound="bretylium" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

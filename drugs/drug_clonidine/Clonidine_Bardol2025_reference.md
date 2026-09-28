@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/&quot;},{&quot;label&quot;:&quot;Bardol_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Larsson2011_reference&quot;,&quot;label&quot;:&quot;Larsson_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Larsson2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Clonidine_Chiang1986_reference&quot;,&quot;label&quot;:&quot;Chiang_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Chiang1986_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Davies1977_reference&quot;,&quot;label&quot;:&quot;Davies_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Davies1977_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Paalzow1979_reference&quot;,&quot;label&quot;:&quot;Paalzow_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Paalzow1979_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Potts2007_reference&quot;,&quot;label&quot;:&quot;Potts_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Potts2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clonidine — `Clonidine_Bardol2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['midazolam', '1-oh midazolam', 'metabolism']] vs [['midazolam', '1-oh-midazolam', 'metabolism']]) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clonidine and midazolam, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Bardol M; Sheng Y; Baarslag M; Ceci A; Dörje F; Ilmoja ML; et al. et al. (2025). Paediatric anaesthesia 35
@@ -27,42 +30,88 @@ Bardol M; Sheng Y; Baarslag M; Ceci A; Dörje F; Ilmoja ML; et al. et al. (2025)
 ## Model component
 <dbs-pgx drug="clonidine" model-id="Clonidine_Bardol2025_reference" status="rejected" stale="false" population="mechanically ventilated children in pediatric intensive care" measured-compound="clonidine and midazolam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 4 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Vclon (L/70 kg) | `Q63` · V1 | 202.4 | L/70 kg | 0.2024 | [l] / [70kg] | not captured | exact (1.0) | Bardol_2025_table_2:row1:col1 | — | not captured |
+| CLmmid (L/h/70 kg) | `Q370` · CLfm | 33.4 | L/h/70 kg | 9.277777777777778e-06 | [l] / [[h] · [70kg]] | not captured | exact (1.0) | Bardol_2025_table_2:row8:col1 | — | not captured |
+| Vmmid (L/70 kg) | `Q61` · V | 90.8 | L/70 kg | 0.0908 | [l] / [70kg] | not captured | exact (1.0) | Bardol_2025_table_2:row9:col1 | — | not captured |
+| CLommid (L/h/70 kg) | `Q22` · CL | 211.6 | L/h/70 kg | 5.877777777777779e-05 | [l] / [[h] · [70kg]] | not captured | exact (1.0) | Bardol_2025_table_2:row10:col1 | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Clonidine' — extend the ontology if this is a real PK parameter (source ['tab_1:row1:col1', 'tab_1:row1:col2'])
-- dropped unlinked row (NIL): 'Midazolam' — extend the ontology if this is a real PK parameter (source ['tab_1:row8:col1', 'tab_1:row8:col2'])
+- column 'parameter' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'Clonidine' — extend the ontology if this is a real PK parameter (source ['Bardol_2025_table_2:row0:col1', 'Bardol_2025_table_2:row0:col2'])
+- routed 'Err propclon (%)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'PMA_50clon' — extend the ontology if this is a real PK parameter (source ['Bardol_2025_table_2:row5:col1'])
+- dropped unlinked row (NIL): 'Hillclon' — extend the ontology if this is a real PK parameter (source ['Bardol_2025_table_2:row6:col1'])
+- dropped unlinked row (NIL): 'Midazolam' — extend the ontology if this is a real PK parameter (source ['Bardol_2025_table_2:row7:col1', 'Bardol_2025_table_2:row7:col2'])
+- routed 'Err propmid (%)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- routed 'Err addmid (ng/mL)' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- routed 'Err propmmid(%)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- routed 'Err addmmid (ng/mL)' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'PMA_50mid' — extend the ontology if this is a real PK parameter (source ['Bardol_2025_table_2:row17:col1'])
+- dropped PD-category row 'Hillmid' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Bardol_2025_table_2:row18:col1'])
+- metabolite volume: 'Vmmid (L/70 kg)' Q63→Q61 for 1-OH midazolam — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clonidine and midazolam
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at route_to_review — not promoted
+- template fit: PK_Parent_Metabolite — one metabolite formed from central, both 1-compartment
+- row roles (LLM): model_class=compartmental; 19/19 row label(s) assigned, 4 linked by role; re-tagged parent→1-OH midazolam ×6, parent→midazolam ×5
+- molar mass: no plausible PubChem entry for 'clonidine and midazolam' ('no full name in the paper') — left in mass units
+- molar mass: none found for 'clonidine and midazolam' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tab_1:row0:col3 = 'Bootstrap median (90% CI)'
-- unparsed cell tab_1:row1:col3 = '28.1 (19.2-37.1)'
-- unparsed cell tab_1:row8:col3 = '75.6 (37.7-124.5)'
+- final table tab_1: grid unusable → re-running vision table extraction for Bardol_2025
+- final table tab_1: no readable grid (GROBID mangled)
+- unparsed cell Bardol_2025_table_2:row0:col3 = '28.1 (19.2–37.1)'
+- unparsed cell Bardol_2025_table_2:row1:col2 = '202.2 (122.8–289.3)'
+- unparsed cell Bardol_2025_table_2:row2:col2 = '46.9 (20.7–65.6)'
+- unparsed cell Bardol_2025_table_2:row3:col2 = '85.0 (57.4–106.8)'
+- unparsed cell Bardol_2025_table_2:row4:col2 = '43.6 (20.7–56.6)'
+- unparsed cell Bardol_2025_table_2:row7:col3 = '75.6 (37.7–124.5)'
+- unparsed cell Bardol_2025_table_2:row8:col2 = '35.3 (22.3–61.7)'
+- unparsed cell Bardol_2025_table_2:row9:col2 = '87.3 (39.0–222.9)'
+- unparsed cell Bardol_2025_table_2:row10:col2 = '214.7 (178.5–295.5)'
+- unparsed cell Bardol_2025_table_2:row11:col2 = '84.9 (42.4–113.1)'
+- unparsed cell Bardol_2025_table_2:row12:col2 = '131.1 (66.3–236.2)'
+- unparsed cell Bardol_2025_table_2:row13:col2 = '45.8 (22.4–58.3)'
+- unparsed cell Bardol_2025_table_2:row14:col2 = '1.25 (0.24–1.79)'
+- unparsed cell Bardol_2025_table_2:row15:col2 = '57.4 (42.4–72.8)'
+- unparsed cell Bardol_2025_table_2:row16:col2 = '0.023 (0.014–0.037)'
+- companion parameter table 2 transcribed (21 record(s), model stage 'final')
+- LLM selected parameter table(s) 2
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.6 (3/5 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['midazolam', '1-oh midazolam', 'metabolism']] | [['midazolam', '1-oh-midazolam', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[volumes]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vclon]` | 202.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vclon]` | not captured | 202.4 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | clonidine and midazolam | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | clonidine and midazolam | unknown | mismatch |
 
 </details>
 
@@ -76,8 +125,18 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bardol_2025_table_2:row10:col1'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bardol_2025_table_2:row8:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bardol_2025_table_2:row9:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bardol_2025_table_2:row1:col1'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 211.6 | not captured | not captured | ['Bardol_2025_table_2:row10:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 212 L/h | not captured | not captured | ['Bardol_2025_table_2:row10:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 90.8 L | not captured | not captured | ['Bardol_2025_table_2:row9:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 202 L | not captured | not captured | ['Bardol_2025_table_2:row1:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

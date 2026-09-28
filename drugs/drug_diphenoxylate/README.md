@@ -4,7 +4,8 @@
 
 - **generic name:** diphenoxylate
 - **ATC codes:** `A07DA01`
-- **DrugBank:** [DB01081](https://go.drugbank.com/drugs/DB01081)
+- **DrugBank:** [DB01081](https://go.drugbank.com/drugs/DB01081) · **PubChem:** [CID 13505](https://pubchem.ncbi.nlm.nih.gov/compound/13505)
+- **molar mass:** 452.5873 g/mol (C30H32N2O2) — DrugBank
 - **groups:** approved, illicit
 
 ## About

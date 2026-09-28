@@ -4,7 +4,8 @@
 
 - **generic name:** eletriptan
 - **ATC codes:** `N02CC06`
-- **DrugBank:** [DB00216](https://go.drugbank.com/drugs/DB00216)
+- **DrugBank:** [DB00216](https://go.drugbank.com/drugs/DB00216) · **PubChem:** [CID 77993](https://pubchem.ncbi.nlm.nih.gov/compound/77993)
+- **molar mass:** 382.519 g/mol (C22H26N2O2S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

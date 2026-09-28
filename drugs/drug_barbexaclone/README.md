@@ -5,7 +5,8 @@
 
 - **generic name:** barbexaclone
 - **ATC codes:** `N03AA04`
-- **DrugBank:** [DB09001](https://go.drugbank.com/drugs/DB09001)
+- **DrugBank:** [DB09001](https://go.drugbank.com/drugs/DB09001) · **PubChem:** [CID 71196](https://pubchem.ncbi.nlm.nih.gov/compound/71196)
+- **molar mass:** 387.524 g/mol (C22H33N3O3) — DrugBank
 - **groups:** experimental
 
 ## About
@@ -26,9 +27,9 @@ There has been a case of barbexaclone abuse due to the amphetamine like properti
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Iven_1983_reference](drugs/drug_barbexaclone/Barbexaclone_Iven1983_reference.md) | Iven H et al., Pharmacokinetics of phenobarbital and p…, Naunyn-Schmiedeberg's archi… (1983) | [10.1007/BF00497022](https://doi.org/10.1007/BF00497022) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Iven_1983_reference](drugs/drug_barbexaclone/Barbexaclone_Iven1983_reference.md) | general linear (no model) | 6 | Iven H et al., Pharmacokinetics of phenobarbital and p…, Naunyn-Schmiedeberg's archi… (1983) | [10.1007/BF00497022](https://doi.org/10.1007/BF00497022) |
 
 ## ADME sites
 

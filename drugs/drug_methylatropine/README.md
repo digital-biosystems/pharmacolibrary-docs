@@ -4,7 +4,8 @@
 
 - **generic name:** methylatropine
 - **ATC codes:** `A03BB02`
-- **DrugBank:** [DB13833](https://go.drugbank.com/drugs/DB13833)
+- **DrugBank:** [DB13833](https://go.drugbank.com/drugs/DB13833) · **PubChem:** not captured
+- **molar mass:** 304.409 g/mol (C18H26NO3) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

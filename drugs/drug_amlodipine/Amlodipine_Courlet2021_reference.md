@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_cmax
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[10 mg qd with efavirenz]` (not captured vs 0.83) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 1.36e-05, model 9.11e-05); the covariate scenarios were not simulated.**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — amlodipine: kabs 0.69 h−1, tlag 0.87 h, V/F 1e+03 L, CL/F 17 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 10 mg qd with efavirenz: this record has none, the second reading 0.83; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 22:47:41.593295+00:00) predates the upstream re-run (2026-09-23 22:44:40.931949+00:00). Current validate status: `extracted`.
 
@@ -162,7 +165,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.69 /h, lag 52.2 min, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.69 /h, lag 52.2 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_amlodipine/Amlodipine_Courlet2021_reference/Amlodipine_Courlet2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_amlodipine/Amlodipine_Courlet2021_reference/Amlodipine_Courlet2021_reference_sim_controls.json"></dbs-fmusim>
 

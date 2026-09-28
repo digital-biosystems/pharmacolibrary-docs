@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05C&quot;,&quot;href&quot;:&quot;atc/B05C.md&quot;},{&quot;label&quot;:&quot;glucose&quot;,&quot;href&quot;:&quot;drugs/drug_glucose/&quot;},{&quot;label&quot;:&quot;Mousavi_2017 \u00b7 PGx SLC47A1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # SLC47A1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>

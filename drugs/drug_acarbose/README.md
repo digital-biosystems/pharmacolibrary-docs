@@ -4,7 +4,8 @@
 
 - **generic name:** acarbose
 - **ATC codes:** `A10BD17`, `A10BF01`
-- **DrugBank:** [DB00284](https://go.drugbank.com/drugs/DB00284)
+- **DrugBank:** [DB00284](https://go.drugbank.com/drugs/DB00284) · **PubChem:** [CID 9811704](https://pubchem.ncbi.nlm.nih.gov/compound/9811704)
+- **molar mass:** 645.608 g/mol (C25H43NO18) — DrugBank
 - **groups:** approved, investigational
 
 ## About

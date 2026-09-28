@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (5-fluorocytosine vs 5-FC) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has 5-fluorocytosine, the second reading 5-FC; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `5-fluorocytosine`, measured `5-fluorouracil`.
 
@@ -28,6 +31,9 @@ Stegman LD; Rehemtulla A; Beattie B; Kievit E; Lawrence TS; Blasberg RG; et al. 
 
 ## Model component
 <dbs-pgx drug="flucytosine" model-id="Flucytosine_Stegman1999_reference" status="rejected" stale="false" population="human tumor xenografts in nude mice" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

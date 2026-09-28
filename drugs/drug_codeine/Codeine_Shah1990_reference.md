@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (8.3 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — codeine: Vnorm 5.1 liters/kg, CL 6.2 liters/kg/hr, AUC ratio 0.05, Fab 8.3 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 8.3, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:06:14.227963+00:00) predates the upstream re-run (2026-09-23 14:29:46.261079+00:00). Current validate status: `needs_review`.
 

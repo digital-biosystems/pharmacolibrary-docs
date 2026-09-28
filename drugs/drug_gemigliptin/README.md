@@ -4,7 +4,8 @@
 
 - **generic name:** gemigliptin
 - **ATC codes:** `A10BD18`, `A10BD30`, `A10BH06`, `A10BH52`
-- **DrugBank:** [DB12412](https://go.drugbank.com/drugs/DB12412)
+- **DrugBank:** [DB12412](https://go.drugbank.com/drugs/DB12412) · **PubChem:** [CID 11953153](https://pubchem.ncbi.nlm.nih.gov/compound/11953153)
+- **molar mass:** 489.37 g/mol (C18H19F8N5O2) — DrugBank
 - **groups:** investigational
 
 ## About

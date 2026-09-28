@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[area under the plasma vernakalant concentration-time curve from 0 to 90 minutes]` (15 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The vernakalant record was rejected for a dimensional mismatch on the clearance parameter (0.35 L/h/kg), and it was built from the abstract alone rather than a fitted model.**
+
+The median systemic clearance of vernakalant, 0.35 L/h/kg, triggered a dimension mismatch on a structural parameter, which led to rejection. The record was abstract-only, meaning the paper's summary statistics stood in for a fitted model. A second reader (gpt-oss:120b) disagreed with both extracted values, reading null for the clearance (0.35) and for the AUC from 0 to 90 minutes (15 %), leaving the parameter values unconfirmed. Extracted — vernakalant: CL 0.35 L/h/kg, AUCt 15 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of area under the plasma vernakalant concentration-time curve from 0 to 90 minutes: this record has 15, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Mao ZL; Townsend RW; Gao Y; Wheeler JJ; Kastrissios H; Keirns J et al. (2012). Journal of clinical pharmacology 52
@@ -26,6 +29,9 @@ Mao ZL; Townsend RW; Gao Y; Wheeler JJ; Kastrissios H; Keirns J et al. (2012). J
 
 ## Model component
 <dbs-pgx drug="vernakalant" model-id="Vernakalant_Mao2012_reference" status="rejected" stale="false" population="patients with atrial fibrillation or atrial flutter and healthy volunteers" measured-compound="vernakalant" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

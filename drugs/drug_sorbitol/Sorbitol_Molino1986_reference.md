@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[functional liver plasma flow, as measured by d-sorbitol clearance]` (2.83 vs not captured) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of functional liver plasma flow, as measured by d-sorbitol clearance: this record has 2.83, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Molino G; Avagnina P; Cavanna A; Ballarè M; Torchio M; Bona B; et al. et al. (1986). Research communications in chemical pathology and pharmacology 52
 
 ## Model component
 <dbs-pgx drug="sorbitol" model-id="Sorbitol_Molino1986_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

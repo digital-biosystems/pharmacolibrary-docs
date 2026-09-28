@@ -5,7 +5,8 @@
 
 - **generic name:** metronidazole
 - **ATC codes:** `A01AB17`, `A02BD01`, `A02BD02`, `A02BD03`, `A02BD08`, `A02BD11`, `A02BD13`, `A02BD15`, `D06BX01`, `G01AF01`, `J01RA03`, `J01RA04`, `J01RA10`, `J01RA14`, `J01XD01`, `P01AB01`, `P01AB51`, `P01AB52`
-- **DrugBank:** [DB00916](https://go.drugbank.com/drugs/DB00916)
+- **DrugBank:** [DB00916](https://go.drugbank.com/drugs/DB00916) · **PubChem:** [CID 4173](https://pubchem.ncbi.nlm.nih.gov/compound/4173)
+- **molar mass:** 171.154 g/mol (C6H9N3O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ It is also used off-label in the treatment of Crohn's disease, as a prophylactic
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Suyagh_2011_reference](drugs/drug_metronidazole/Metronidazole_Suyagh2011_reference.md) | Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011) | [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Suyagh_2011_reference](drugs/drug_metronidazole/Metronidazole_Suyagh2011_reference.md) | 1-compartment (no model) | 0 | Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011) | [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807) |
 
 ## ADME sites
 

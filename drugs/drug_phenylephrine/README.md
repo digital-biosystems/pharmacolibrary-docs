@@ -5,7 +5,8 @@
 
 - **generic name:** phenylephrine
 - **ATC codes:** `C01CA06`, `C05AX06`, `R01AA04`, `R01AB01`, `R01BA03`, `S01FB01`, `S01FB51`, `S01GA05`
-- **DrugBank:** [DB00388](https://go.drugbank.com/drugs/DB00388)
+- **DrugBank:** [DB00388](https://go.drugbank.com/drugs/DB00388) · **PubChem:** [CID 6041](https://pubchem.ncbi.nlm.nih.gov/compound/6041)
+- **molar mass:** 167.205 g/mol (C9H13NO2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ Phenylephrine was granted FDA approval in 1939.[L9413]
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2017_children and adults](drugs/drug_phenylephrine/Phenylephrine_Anderson2017_children_and_adults.md) | Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017) | [10.1111/pan.13221](https://doi.org/10.1111/pan.13221) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2017_children and adults](drugs/drug_phenylephrine/Phenylephrine_Anderson2017_children_and_adults.md) | — (no model) | 0 | Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017) | [10.1111/pan.13221](https://doi.org/10.1111/pan.13221) |
 
 ## Pharmacodynamics (PD)
 

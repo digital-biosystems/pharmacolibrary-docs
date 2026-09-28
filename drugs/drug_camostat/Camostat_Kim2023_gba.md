@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[aucinf].value` (762.8 vs 1710) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The camostat record was rejected because the GBA volume of distribution carries the wrong dimension (h instead of L) and the camostat mesylate-to-GBPA metabolic step has no parameter value, leaving an unlinked metabolite.**
+
+The structural parameter V for GBA is reported as 404.5 with unit 'h', a dimension mismatch for a volume of distribution, and that unit could not be converted to SI. The metabolism link from camostat mesylate to GBPA has no parameter value, so GBPA has no path from the dose. A second reader also extracted different values for every GBA parameter (e.g., Cmax 376.9 vs 175.5 ng/mL, AUCinf 1710 vs 762.8 h × ng/mL, Vd 604.8 vs 404.5), so the reported numbers are disputed. Extracted — GBA: t1/2z 1.94 h, Cmax 176 ng/mL, AUClast 618 h × ng/mL, AUC∞ 763 h × ng/mL, CL/F 719 L/h, V 404 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[aucinf].value`: this record has 762.8, the second reading 1710; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `camostat mesylate`, measured `GBPA`.
 
@@ -28,6 +31,9 @@ Kim G; Moon HK; Kim T; Yun SH; Yun HY; Hong JH; et al. et al. (2023). Pharmaceut
 
 ## Model component
 <dbs-pgx drug="camostat" model-id="Camostat_Kim2023_gba" status="rejected" stale="false" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -5,7 +5,8 @@
 
 - **generic name:** mitiglinide
 - **ATC codes:** `A10BX08`
-- **DrugBank:** [DB01252](https://go.drugbank.com/drugs/DB01252)
+- **DrugBank:** [DB01252](https://go.drugbank.com/drugs/DB01252) · **PubChem:** [CID 121891](https://pubchem.ncbi.nlm.nih.gov/compound/121891)
+- **molar mass:** 315.413 g/mol (C19H25NO3) — DrugBank
 - **groups:** investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.2598)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2017_reference](drugs/drug_mitiglinide/Mitiglinide_Liu2017_reference.md) | Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017) | [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.2598)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2017_reference](drugs/drug_mitiglinide/Mitiglinide_Liu2017_reference.md) | 1-compartment, oral | 4 | Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017) | [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6) |
 
 ## Pharmacodynamics (PD)
 

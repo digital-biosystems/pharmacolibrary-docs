@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The absorption rate constant kabs = 0.01347 for amlodipine was invented rather than taken from the Vlachou_2021 paper, so the record was held back for review.**
+
+The two-compartment amlodipine model for healthy adults carries fitted parameters (CL/F 370 ml/min, V1/F 1300 ml, Q/F 295 ml/min, V2/F 85800 ml, Kd 1.4954), but the 'estimated true absorption rate constant' kabs = 0.01347 is a deviation: the model builder assumed a value not reported in the source. This invented absorption parameter was judged not acceptable, and the record was therefore not published but flagged for review. Extracted — amlodipine: KD 1.5, CL/F 370 ml/min, V1/F 1.3e+03 ml, kabs 0.0135, Q/F 295 ml/min, V2/F 8.58e+04 ml.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 22:47:41.821582+00:00) predates the upstream re-run (2026-09-23 22:44:52.025120+00:00). Current validate status: `needs_review`.
 

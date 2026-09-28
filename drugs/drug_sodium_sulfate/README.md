@@ -4,7 +4,8 @@
 
 - **generic name:** sodium sulfate
 - **ATC codes:** `A06AD13`, `A12CA02`
-- **DrugBank:** [DB09472](https://go.drugbank.com/drugs/DB09472)
+- **DrugBank:** [DB09472](https://go.drugbank.com/drugs/DB09472) · **PubChem:** [CID 24436](https://pubchem.ncbi.nlm.nih.gov/compound/24436)
+- **molar mass:** 142.042 g/mol (Na2O4S) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About

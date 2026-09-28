@@ -4,7 +4,8 @@
 
 - **generic name:** droxidopa
 - **ATC codes:** `C01CA27`
-- **DrugBank:** [DB06262](https://go.drugbank.com/drugs/DB06262)
+- **DrugBank:** [DB06262](https://go.drugbank.com/drugs/DB06262) · **PubChem:** [CID 92974](https://pubchem.ncbi.nlm.nih.gov/compound/92974)
+- **molar mass:** 213.189 g/mol (C9H11NO5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

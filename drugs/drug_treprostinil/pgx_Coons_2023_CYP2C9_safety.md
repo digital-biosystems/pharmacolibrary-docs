@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;treprostinil&quot;,&quot;href&quot;:&quot;drugs/drug_treprostinil/&quot;},{&quot;label&quot;:&quot;Coons_2023 \u00b7 PGx CYP2C9&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # CYP2C9 — PGx  <span class="pk-badge pk-badge--green">extracted</span>

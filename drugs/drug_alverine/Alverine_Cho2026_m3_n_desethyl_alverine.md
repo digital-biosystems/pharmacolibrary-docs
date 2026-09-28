@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The alverine mouse record was rejected because the paper reports no distribution volume and no clearance, and the M3 exposure values (Cmax 0.0021 μmol/L, tmax 0.7000 h) carry a μmol/L unit that could not be converted to SI, alongside a dimension mismatch on the structural metabolism rate constant Kfm.**
+
+The record contains only exposure summary statistics for metabolite M3 (tmax 0.7000 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L, AUC ratio 0.0064) with no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model but an exposure/outcome paper. The Cmax unit μmol/L could not be converted to SI units, so the parameter was carried without an SI value. A dimension mismatch was flagged on a structural parameter: the same metabolism rate constant Kfm is used for all three metabolic links (alverine to M1, alverine to M3, and M1 to M2). An orphan/unlinked-metabolite check was also raised, though its outcome is not quantified in the record. Extracted — M3: tmax 0.7 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L, AUC ratio 0.0064 Metabolite/Parent.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Cho A; Jeong HC; Kim M; Cho I; Na HJ; Ko KC; et al. et al. (2026). CPT: pharmacometrics & systems pharmacology 15
@@ -26,6 +29,9 @@ Cho A; Jeong HC; Kim M; Cho I; Na HJ; Ko KC; et al. et al. (2026). CPT: pharmaco
 
 ## Model component
 <dbs-pgx drug="alverine" model-id="Alverine_Cho2026_m3_n_desethyl_alverine" status="rejected" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

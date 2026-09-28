@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;domiphen&quot;,&quot;href&quot;:&quot;drugs/drug_domiphen/&quot;},{&quot;label&quot;:&quot;Biosca_2019 \u00b7 PD parasite growth inhibition&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # parasite growth inhibition — PD  <span class="pk-badge pk-badge--green">extracted</span>

@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[mtt_ratio_for_visit_2_visit_1_1]` (0.27 vs not captured) — not a structural parameter.
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of mtt_ratio_for_visit_2_visit_1_1: this record has 0.27, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Chen_2022_2)
@@ -162,7 +165,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 3 /h, lag 150 min, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 3 /h, lag 150 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Chen2022v2_sir_median/Omeprazole_Chen2022v2_sir_median_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Chen2022v2_sir_median/Omeprazole_Chen2022v2_sir_median_sim_controls.json"></dbs-fmusim>
 

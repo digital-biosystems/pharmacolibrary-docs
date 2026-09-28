@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — brexpiprazole: CL/F 1.15 L/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Higashi K; Sasaki T; Aoki K; Sekine D; Maeda K; Shiomi Y; et al. et al. (2025). Drug metabolism and pharmacokinetics 62

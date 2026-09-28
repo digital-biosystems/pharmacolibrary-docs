@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q350 — no SI value to build from; C2_reference failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['remdesivir', 'intermediate metabolites', 'metabolism'], ['intermediate metabolites', 'nucleoside monophosphate', 'metabolism']] vs [['remdesivir', 'intermediate metabolites', 'metabolism'], ['intermediate metabolites', 'nucleoside monophosphate', 'metabolism'], ['nucleoside monophosphate', 'gs-443902', 'metabolism']]) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The remdesivir record was held back because a dimensioned clearance parameter was extracted without a unit, leaving no SI value, and the clearance plausibility and reference checks could not compute any comparison.**
+
+The record gives remdesivir a mean total clearance of 1171.0 mL/min and a volume of distribution of 93.0 L, but one dimensioned parameter carries no unit, so it could not be converted to SI and no value could be built from it. The clearance plausibility check and the reference check both failed with ratio None, meaning no comparison could be computed; the 1171 mL/min clearance is therefore unverified rather than demonstrated wrong. A second reader additionally reported formation clearance values absent from this record (2.3 for clc,rdv; 50.02 for qnuc; 0.31 for qrdv) and an extra metabolic link from nucleoside monophosphate to GS-443902, indicating the extracted structure and parameter set are incomplete. The Kic value 0.15 also has no unit, so it cannot be converted or used. Extracted — remdesivir: kic 0.15 Sörgel et al., 2021, CL 1.17e+03 mL/min, V 93 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (metabolism); intermediate metabolites → nucleoside monophosphate (metabolism), the second reading remdesivir → intermediate metabolites (metabolism); intermediate metabolites → nucleoside monophosphate (metabolism); nucleoside monophosphate → gs-443902 (metabolism); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zhang S; Jeong S; Jiang B; Ho H et al. (2025). Frontiers in pharmacology 16

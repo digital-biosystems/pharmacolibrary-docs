@@ -5,7 +5,8 @@
 
 - **generic name:** cilostazol
 - **ATC codes:** `B01AC23`
-- **DrugBank:** [DB01166](https://go.drugbank.com/drugs/DB01166)
+- **DrugBank:** [DB01166](https://go.drugbank.com/drugs/DB01166) · **PubChem:** [CID 2754](https://pubchem.ncbi.nlm.nih.gov/compound/2754)
+- **molar mass:** 369.4607 g/mol (C20H27N5O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lee_2014_healthy Korean subjects](drugs/drug_cilostazol/Cilostazol_Lee2014_healthy_korean_subjects.md) | Lee D et al., Population pharmacokinetic analysis of…, Therapeutic drug monitoring (2014) | [10.1097/FTD.0000000000000077](https://doi.org/10.1097/FTD.0000000000000077) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yoo_2010_healthy subjects](drugs/drug_cilostazol/Cilostazol_Yoo2010_healthy_subjects.md) | Yoo HD et al., Population pharmacokinetic analysis of…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2009.03558.x](https://doi.org/10.1111/j.1365-2125.2009.03558.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lee_2014_healthy Korean subjects](drugs/drug_cilostazol/Cilostazol_Lee2014_healthy_korean_subjects.md) | — (no model) | 0 | Lee D et al., Population pharmacokinetic analysis of…, Therapeutic drug monitoring (2014) | [10.1097/FTD.0000000000000077](https://doi.org/10.1097/FTD.0000000000000077) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yoo_2010_healthy subjects](drugs/drug_cilostazol/Cilostazol_Yoo2010_healthy_subjects.md) | — (no model) | 0 | Yoo HD et al., Population pharmacokinetic analysis of…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2009.03558.x](https://doi.org/10.1111/j.1365-2125.2009.03558.x) |
 
 ## ADME sites
 

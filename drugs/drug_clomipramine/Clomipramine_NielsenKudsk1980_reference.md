@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[biological half-life of amitriptyline in the myocardium]` (37.7 vs not captured) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of biological half-life of amitriptyline in the myocardium: this record has 37.7, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Nielsen-Kudsk F; Quist S et al. (1980). Acta pharmacologica et toxicologica 46
@@ -26,6 +29,9 @@ Nielsen-Kudsk F; Quist S et al. (1980). Acta pharmacologica et toxicologica 46
 
 ## Model component
 <dbs-pgx drug="clomipramine" model-id="Clomipramine_NielsenKudsk1980_reference" status="rejected" stale="false" population="isolated rabbit hearts" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

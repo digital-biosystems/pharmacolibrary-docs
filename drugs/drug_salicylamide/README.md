@@ -4,7 +4,8 @@
 
 - **generic name:** salicylamide
 - **ATC codes:** `N02BA05`
-- **DrugBank:** [DB08797](https://go.drugbank.com/drugs/DB08797)
+- **DrugBank:** [DB08797](https://go.drugbank.com/drugs/DB08797) · **PubChem:** [CID 5147](https://pubchem.ncbi.nlm.nih.gov/compound/5147)
+- **molar mass:** 137.136 g/mol (C7H7NO2) — DrugBank
 - **groups:** approved
 
 ## About

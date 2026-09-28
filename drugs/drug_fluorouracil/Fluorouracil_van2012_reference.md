@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**CL has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — fluorouracil: V1 20.2 L, V2 15.7 L, CL 66.9 L h, Q 17.3 L/h, kabs 0.757 h−1, tlag 0.000552 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 van Kuilenburg AB; Häusler P; Schalhorn A; Tanck MW; Proost JH; Terborg C; et al. et al. (2012). Clinical pharmacokinetics 51

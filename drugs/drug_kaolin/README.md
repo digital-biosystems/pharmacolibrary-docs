@@ -4,7 +4,8 @@
 
 - **generic name:** kaolin
 - **ATC codes:** `A07BC02`
-- **DrugBank:** [DB01575](https://go.drugbank.com/drugs/DB01575)
+- **DrugBank:** [DB01575](https://go.drugbank.com/drugs/DB01575) · **PubChem:** [CID 92024769](https://pubchem.ncbi.nlm.nih.gov/compound/92024769)
+- **molar mass:** 258.156 g/mol (Al2H4O9Si2) — DrugBank
 - **groups:** approved
 
 ## About

@@ -5,7 +5,7 @@
 
 # levetiracetam — `Levetiracetam_Onos2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The levetiracetam record was held back because the absorption rate constant ka and lag time Tlag were not reported in the source and library defaults were substituted, and an invented first-order absorption was judged not acceptable.**
+
+The source reports only CL/F (0.36 L/h/kg) and V/F (1.33 L/kg) for levetiracetam; ka and Tlag have no values in the paper, so placeholders were used. The builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization, and introduced a first-order depot input implying extravascular dosing that the source does not report. This invented absorption was adjudicated as not acceptable, so the record needs review. Extracted — levetiracetam: CL/F 0.36 L/h/kg, V/F 1.33 L/kg.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Onos KD; Quinney SK; Jones DR; Masters AR; Pandey R; Keezer KJ; et al. et al. (2022). Alzheimer's & dementia (New York, N. Y.) 8
@@ -25,6 +29,9 @@ Onos KD; Quinney SK; Jones DR; Masters AR; Pandey R; Keezer KJ; et al. et al. (2
 
 ## Model component
 <dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Onos2022_reference" status="needs_review" stale="false" population="5XFAD mice" measured-compound="levetiracetam" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,12 +62,12 @@ Onos KD; Quinney SK; Jones DR; Masters AR; Pandey R; Keezer KJ; et al. et al. (2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
 
 _Every reader agrees on every compared field of this record._
 
@@ -125,6 +132,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference/Levetiracetam_Onos2022_reference.svg" alt="Levetiracetam_Onos2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference/Levetiracetam_Onos2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference/Levetiracetam_Onos2022_reference_sim_controls.json"></dbs-fmusim>
 

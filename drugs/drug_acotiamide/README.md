@@ -4,7 +4,8 @@
 
 - **generic name:** acotiamide
 - **ATC codes:** `A03FA10`
-- **DrugBank:** [DB12482](https://go.drugbank.com/drugs/DB12482)
+- **DrugBank:** [DB12482](https://go.drugbank.com/drugs/DB12482) · **PubChem:** [CID 5282338](https://pubchem.ncbi.nlm.nih.gov/compound/5282338)
+- **molar mass:** 450.55 g/mol (C21H30N4O5S) — DrugBank
 - **groups:** investigational
 
 ## About

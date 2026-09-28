@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The absorption rate constant kabs of carvedilol is recorded as 0.62 l h⁻¹, a first-order rate constant that must carry the unit h⁻¹, so the record was rejected for a dimensional mismatch on a structural parameter.**
+
+The record lists the first-order absorption rate constant kabs with the verbatim label 'KA (l h -1 )' and value 0.62 in l h⁻¹, but a rate constant has the dimension of reciprocal time (h⁻¹), not flow (l h⁻¹); this unit-versus-dimension mismatch on a structural parameter is the stated reason for rejection. The remaining carvedilol parameters (CL/F 37.6 l h⁻¹, V2/F 21.8 l, V3/F 103.7 l, Q/F 13.6 l h⁻¹, tlag 0.15 h) carry dimensionally consistent units. The finding also notes that the reported unit l h⁻¹ for this parameter could not be converted to SI units, so kabs entered the model without an SI value; the record is otherwise a one-compartment structure for paediatric congestive heart failure patients. Extracted — carvedilol: CL/F 37.6 l h -1, V2/F 21.8 l, V3/F 104 l, Q/F 13.6 l h -1, kabs 0.62 l h -1, tlag 0.15 h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Albers S; Meibohm B; Mir TS; Läer S et al. (2008). British journal of clinical pharmacology 65
@@ -26,6 +29,9 @@ Albers S; Meibohm B; Mir TS; Läer S et al. (2008). British journal of clinical 
 
 ## Model component
 <dbs-pgx drug="carvedilol" model-id="Carvedilol_Albers2008_reference" status="rejected" stale="false" population="paediatric patients with congestive heart failure" measured-compound="carvedilol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The piritramide record was held back because its absorption rate constant ka was not reported in the source and a library default was substituted, an invented absorption the adjudication ruled unacceptable.**
+
+The single-compartment piritramide model carries only two parameters, both mislabeled: CLu (8.7 ml/min) is labelled 'Kreatininclearance von', i.e. creatinine clearance rather than piritramide clearance, and V is 4.7 l/kg. The builder assumed F=1 and Fm=1 with no molar correction (apparent parameterization), and defaulted both ka and Tlag because the source reported no values — the ka default constitutes invented absorption, which the adjudication judged 'not acceptable'. The apparent (/F) parameterization also implies extravascular first-order depot input, a structural assumption not grounded in the source text, which is review-secondary. Extracted — piritramide: CLu 8.7 ml/min, V 4.7 l/kg.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `piritramid`, measured `piritramide`.
 
@@ -27,6 +29,9 @@ Hinrichs M; Weyland A; Bantel C et al. (2017). Schmerz (Berlin, Germany) 31
 
 ## Model component
 <dbs-pgx drug="piritramide" model-id="Piritramide_Hinrichs2017_reference" status="needs_review" stale="false" population="adults" measured-compound="piritramide" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** apparent.
 
@@ -129,6 +134,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_piritramide/Piritramide_Hinrichs2017_reference/Piritramide_Hinrichs2017_reference.svg" alt="Piritramide_Hinrichs2017_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_piritramide/Piritramide_Hinrichs2017_reference/Piritramide_Hinrichs2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_piritramide/Piritramide_Hinrichs2017_reference/Piritramide_Hinrichs2017_reference_sim_controls.json"></dbs-fmusim>
 

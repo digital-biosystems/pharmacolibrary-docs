@@ -15,15 +15,18 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Zhao H; Ge P; Chang X; Ren X; Chen L; Gao J; et al. et al. (2017). Wei sheng yan jiu = Journal of hygiene research 46
 
 ## Model component
 <dbs-pgx drug="nickel" model-id="Nickel_Zhao2017_reference" status="not_modelled" stale="false" population="rat and occupational population" measured-compound="nickel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -112,6 +115,8 @@ Zhao H; Ge P; Chang X; Ren X; Chen L; Gao J; et al. et al. (2017). Wei sheng yan
 </div><figure class="pk-models-diagram"><img src="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference.svg" alt="Nickel_Zhao2017_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.14 /h, lag 73.8 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_sim_controls.json"></dbs-fmusim>
 

@@ -4,7 +4,8 @@
 
 - **generic name:** pizotifen
 - **ATC codes:** `N02CX01`
-- **DrugBank:** [DB06153](https://go.drugbank.com/drugs/DB06153)
+- **DrugBank:** [DB06153](https://go.drugbank.com/drugs/DB06153) · **PubChem:** [CID 27400](https://pubchem.ncbi.nlm.nih.gov/compound/27400)
+- **molar mass:** 295.44 g/mol (C19H21NS) — DrugBank
 - **groups:** approved
 
 ## About

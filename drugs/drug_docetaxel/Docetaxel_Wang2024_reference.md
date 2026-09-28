@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — docetaxel: Fab 8 %, CL 8.57e+03 L h−1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Wang D; Jackson C; Hung N; Hung T; Kwan R; Chan WK; et al. et al. (2024). Journal of pharmacokinetics and pharmacodynamics 51
@@ -25,6 +27,9 @@ Wang D; Jackson C; Hung N; Hung T; Kwan R; Chan WK; et al. et al. (2024). Journa
 
 ## Model component
 <dbs-pgx drug="docetaxel" model-id="Docetaxel_Wang2024_reference" status="needs_review" stale="false" population="oncology patients" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

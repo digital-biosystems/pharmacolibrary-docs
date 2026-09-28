@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[k]` (not captured vs 5.97) and 4 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The clopidogrel record was rejected because the metabolite SR26334's peripheral compartment has no linked path from the dose, and the model was built from the paper's abstract alone rather than a fitted model.**
+
+The structure is a one-compartment parent model with the metabolite SR26334 formed from clopidogrel in the central compartment and given a second (peripheral) compartment, but that compartment was flagged as unreachable, so the record failed review. The record is abstract-only, meaning only the paper's abstract was read and its summary statistics stood in for a fitted model. The extracted parameters for SR26334 are an elimination/transfer rate constant kel of 5.97 h⁻¹, a central volume of 21.0 L, and a peripheral volume of 38.8 L; a second reader agreed on the values 5.97, 21.0 and 38.8 but assigned them to differently named parameter fields, so the disagreement concerns only the parameter labels, not the numbers. Extracted — SR26334: kel 5.97 h(-1), V1 21 L, V2 38.8 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of k: this record has none, the second reading 5.97; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `clopidogrel`, measured `SR26334`.
 

@@ -4,7 +4,7 @@
 
 - **generic name:** zimeldine
 - **ATC codes:** `N06AB02`
-- **DrugBank:** [DB04832](https://go.drugbank.com/drugs/DB04832)
+- **DrugBank:** [DB04832](https://go.drugbank.com/drugs/DB04832) · **PubChem:** not captured
 - **groups:** approved, withdrawn
 
 ## About

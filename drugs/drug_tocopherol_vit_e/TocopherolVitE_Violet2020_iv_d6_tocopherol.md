@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (alpha-tocopherol vs d6-α-tocopherol) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The alpha-tocopherol elimination rate (0.024) carries no convertible unit, so the parameter could not be given an SI value and the record was refused.**
+
+The elimination rate constant for alpha-tocopherol is reported with the unit written as 'Ke' rather than a proper inverse-time unit, which could not be converted to SI, creating a dimension mismatch on a structural parameter. A second reading of the paper also found different values for nearly every reported figure — half-life 39.0 h instead of 30.0 h, Cmax 0.20 µM instead of 0.48 µM, AUC0–72h 8.6 µM×h instead of 17.5 µM×h, Tmax 8.5 h instead of 7.7 h, elimination rate 0.019 instead of 0.024 — and read the measured compound as d6-α-tocopherol rather than alpha-tocopherol, plus a fractional absorption of 0.537 absent from this record. These conflicting readings leave the extracted parameter values unreliable. Extracted — alpha-tocopherol: kel 0.024 Ke, t1/2z 30 h, Cmax 0.48, tmax 7.7, AUCt 17.5.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alpha-tocopherol, the second reading d6-α-tocopherol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Violet PC; Ebenuwa IC; Wang Y; Niyyati M; Padayatty SJ; Head B; et al. et al. (2020). JCI insight 5
@@ -26,6 +29,9 @@ Violet PC; Ebenuwa IC; Wang Y; Niyyati M; Padayatty SJ; Head B; et al. et al. (2
 
 ## Model component
 <dbs-pgx drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_iv_d6_tocopherol" status="rejected" stale="false" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

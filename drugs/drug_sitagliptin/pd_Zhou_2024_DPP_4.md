@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;sitagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_sitagliptin/&quot;},{&quot;label&quot;:&quot;Zhou_2024 \u00b7 PD DPP-4 inhibition&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # DPP-4 inhibition — PD  <span class="pk-badge pk-badge--red">rejected</span>

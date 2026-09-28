@@ -4,7 +4,8 @@
 
 - **generic name:** lysine
 - **ATC codes:** `B05XB03`, `V03AF11`
-- **DrugBank:** [DB00123](https://go.drugbank.com/drugs/DB00123)
+- **DrugBank:** [DB00123](https://go.drugbank.com/drugs/DB00123) · **PubChem:** [CID 5962](https://pubchem.ncbi.nlm.nih.gov/compound/5962)
+- **molar mass:** 146.1876 g/mol (C6H14N2O2) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About

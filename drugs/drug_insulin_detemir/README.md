@@ -4,7 +4,7 @@
 
 - **generic name:** insulin detemir
 - **ATC codes:** `A10AE05`
-- **DrugBank:** [DB01307](https://go.drugbank.com/drugs/DB01307)
+- **DrugBank:** [DB01307](https://go.drugbank.com/drugs/DB01307) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q32]` (not captured vs 1551) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The fluorouracil two-compartment model was held back because the absorption rate constant ka and lag time were not reported in the source and placeholder values were substituted, alongside an assumed first-order absorption with F=1 and Fm=1 and no molar correction.**
+
+The record reports CL/F 37.9 L/h, V/F 902.0 L, V2/F 519.0 L and Q/F 132.0 L for fluorouracil in healthy volunteers, but ka and Tlag are missing from the source, so library placeholder values would have been used in their place. The builder assumed F=1 and Fm=1 with no molar correction (apparent /F parameterization) and imposed a first-order depot input implying extravascular dosing. The invented absorption — a defaulted ka not reported in the source — was adjudicated not acceptable, which is the failing check behind the needs_review verdict. A second reader also disagreed on several extracted values, reading 1551 and 960 where this record has null, and null where this record reads 132 for Q/F. Extracted — fluorouracil: CL/F 37.9 L/h, V/F 902 L, V2/F 519 L, Q/F 132 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has none, the second reading 1551; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kang M; Kim J; Lee Y; Shin JS; Park MS; Jiang Q; Chung EK; Lee JI et al. (2025). Pharmaceuticals (Basel, Switzerland) 18
@@ -146,7 +149,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_fluorouracil/Fluorouracil_Kang2025_reference/Fluorouracil_Kang2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_fluorouracil/Fluorouracil_Kang2025_reference/Fluorouracil_Kang2025_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['lignocaine', 'megx', 'metabolism']] vs []) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (CL), so that value has no SI equivalent. None of the extracted parameters is lidocaine's own; they describe MEGX. Extracted — MEGX: CL 7.5 ml min -1 kg -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lignocaine → megx (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `lignocaine`, measured `MEGX`.
 
@@ -28,6 +31,9 @@ Reichel C; Skodra T; Nacke A; Spengler U; Sauerbruch T et al. (1998). British jo
 
 ## Model component
 <dbs-pgx drug="lidocaine" model-id="Lidocaine_Reichel1998_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="MEGX" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

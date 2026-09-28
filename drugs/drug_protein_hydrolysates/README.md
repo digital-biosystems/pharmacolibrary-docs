@@ -4,7 +4,7 @@
 
 - **generic name:** protein hydrolysates
 - **ATC codes:** `B05BA04`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

@@ -5,7 +5,8 @@
 
 - **generic name:** linerixibat
 - **ATC codes:** `A05AX08`
-- **DrugBank:** [DB11729](https://go.drugbank.com/drugs/DB11729)
+- **DrugBank:** [DB11729](https://go.drugbank.com/drugs/DB11729) · **PubChem:** [CID 53492727](https://pubchem.ncbi.nlm.nih.gov/compound/53492727)
+- **molar mass:** 546.68 g/mol (C28H38N2O7S) — DrugBank
 - **groups:** investigational
 
 ## About
@@ -20,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span> | [Zamek-Gliszczynski_2021_reference](drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md) | Zamek-Gliszczynski MJ et al., Pharmacokinetics and ADME Characterizat…, Drug metabolism and disposi… (2021) | [10.1124/dmd.121.000595](https://doi.org/10.1124/dmd.121.000595) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span> | [Zamek-Gliszczynski_2021_reference](drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md) | 1-compartment, IV | 5 | Zamek-Gliszczynski MJ et al., Pharmacokinetics and ADME Characterizat…, Drug metabolism and disposi… (2021) | [10.1124/dmd.121.000595](https://doi.org/10.1124/dmd.121.000595) |
 
 ## Pharmacodynamics (PD)
 

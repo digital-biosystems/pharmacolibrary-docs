@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — linsidomine: t1/2z 13.1 h, CL/F 39.8 ml h-1 kg-1, AUC ratio 4.5 100.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `molsidomine`, measured `linsidomine`.
 
@@ -26,6 +28,9 @@ not matched (stem Spreux-Varoquaux_1991)
 
 ## Model component
 <dbs-pgx drug="linsidomine" model-id="Linsidomine_SpreuxVaroquaux1991_reference" status="needs_review" stale="false" population="patients with liver cirrhosis" measured-compound="linsidomine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

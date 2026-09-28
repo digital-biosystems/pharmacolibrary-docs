@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 2 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[alag1].parameter_id` (Q56 vs Q83) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The chloroquine two-compartment model was quarantined because its volume of distribution (Vd) and absorption lag time (Tlag) had no values in the source, so library defaults were substituted.**
+
+The record lists fitted parameters CL/F (33.3 l/h), V2/F (3630 l), Q/F (58.7 l/h), V3/F (5120 l) and ka (0.559 h⁻¹), but no value for chloroquine's volume of distribution or absorption lag time; placeholders from the library base model stood in for both. A coverage check confirmed only 2 of 4 expected parameters were covered, with V2/F and Q/F neither emitted nor defaulted. The builder also assumed F=1 and Fm=1 with no molar correction, treating all parameters as apparent. A second reader additionally disagreed on how the absorption rate parameter (ka) was identified in the record. Extracted — chloroquine: CL/F 33.3 l/h, V2/F 3.63e+03 l, Q/F 58.7 l/h, V3/F 5.12e+03 l, kabs 0.559 h -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[alag1].parameter_id`: this record has Q56, the second reading Q83. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Yao X; Yan X; Wang X; Cai T; Zhang S; Cui C; et al. et al. (2021). European journal of clinical pharmacology 77
@@ -26,6 +29,9 @@ Yao X; Yan X; Wang X; Cai T; Zhang S; Cui C; et al. et al. (2021). European jour
 
 ## Model component
 <dbs-pgx drug="chloroquine" model-id="Chloroquine_Yao2021_reference" status="model_quarantined" stale="false" population="COVID-19 patients" measured-compound="chloroquine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

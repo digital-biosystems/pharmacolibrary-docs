@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `fosphenytoin`, measured `phenytoin`.
 
@@ -26,6 +28,9 @@ not matched (stem Wainwright_2018)
 
 ## Model component
 <dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Wainwright2018_reference" status="rejected" stale="false" population="critically ill children" measured-compound="phenytoin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

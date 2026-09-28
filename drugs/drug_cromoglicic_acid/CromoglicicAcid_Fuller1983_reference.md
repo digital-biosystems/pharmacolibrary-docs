@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**CL has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is cromoglicic acid's own; they describe sodium cromoglycate. Extracted — sodium cromoglycate: V/F 0.2 litre kg-1, CL 0.35 litre h-1kg-1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Fuller RW; Collier JG et al. (1983). The Journal of pharmacy and pharmacology 35
@@ -25,6 +27,9 @@ Fuller RW; Collier JG et al. (1983). The Journal of pharmacy and pharmacology 35
 
 ## Model component
 <dbs-pgx drug="cromoglicic acid" model-id="CromoglicicAcid_Fuller1983_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="sodium cromoglycate" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

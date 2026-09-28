@@ -4,14 +4,14 @@
 
 - **generic name:** aluminium hydroxide
 - **ATC codes:** `A02AB01`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 12:21 | 24:55 | 0/0/0 | 0/0/0 | 1/0/0 | 225,677/5,390 | ollama / qwen3.8:27b-mtp-q8_0 | 42 | 12/27 | 37/5 | 0 |
+| 2026-09-26 09:32 | 4:06 | 0/0/0 | 0/0/0 | 1/0/0 | 31,420/1,840 | ollama / qwen3.8:27b-mtp-q8_0 | 42 | 12/30 | 37/5 | 0 |
 
 ## popPK records
 
@@ -21,7 +21,7 @@ _not available_
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | **HLA-DR3-DQ2** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Hannelius_2020](drugs/drug_aluminium_hydroxide/pgx_Hannelius_2020_HLA_DR3_DQ2_safety.md) | Hannelius U et al., Efficacy of GAD-alum immunotherapy asso…, Diabetologia (2020) | [10.1007/s00125-020-05227-z](https://doi.org/10.1007/s00125-020-05227-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **HLA-DR3-DQ2** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Hannelius_2020](drugs/drug_aluminium_hydroxide/pgx_Hannelius_2020_HLA_DR3_DQ2_safety.md) | Hannelius U et al., Efficacy of GAD-alum immunotherapy asso…, Diabetologia (2020) | [10.1007/s00125-020-05227-z](https://doi.org/10.1007/s00125-020-05227-z) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>
@@ -45,7 +45,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 151 matched, 113 returned
+- **PubMed hits:** 163 matched, 117 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -56,7 +56,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|---|---|
 | popPK | Achira_2002 | irrelevant | 0 | 0 | The study investigates P-glycoprotein activity using doxorubicin as a substrate in rats and does not report pharmacokinetic parameters for aluminium_hydroxide. |
 | popPK | Ahlén_2025 | irrelevant | 0 | 0 | The paper is a metabolomics study on SARS-CoV-2 vaccines in ferrets and does not report pharmacokinetic parameters for aluminium_hydroxide. |
+| popPK | Authier_2006 | irrelevant | 0 | 0 | The study focuses on the histopathology and genetic influence of macrophagic myofasciitis lesions, not on quantitative pharmacokinetic parameters (CL, V, ka) for aluminium hydroxide. |
+| popPK | Bagwe_2023 | irrelevant | 0 | 0 | The study is an immunology/vaccine efficacy trial in mice where aluminium hydroxide (Alhydrogel) is used as an adjuvant, not as the subject drug for pharmacokinetic analysis. |
 | popPK | Bartlett_1992 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of droxicam, with aluminium hydroxide serving only as a co-administered antacid comparator rather than the subject drug. |
+| popPK | Battula_2023 | irrelevant | 0 | 0 | The paper focuses on the antitumor efficacy and mechanism of an IL-12 complex using aluminum hydroxide as an adjuvant, not on the pharmacokinetic disposition parameters of aluminum hydroxide itself. |
 | popPK | Becker_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of riociguat, with aluminium hydroxide serving only as a co-administered antacid to assess drug-drug interactions, not as the subject drug. |
 | popPK | Bergeron_1989 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of fluoroquinolones, and aluminium hydroxide is only mentioned as a co-administered antacid that reduces absorption, not as the subject drug. |
 | popPK | Bloksma_1981 | irrelevant | 0 | 0 | The paper studies the immunological effects of Lactobacillus in mice and does not involve aluminium_hydroxide or pharmacokinetic parameters. |
@@ -77,6 +80,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | Cookenham_2020 | irrelevant | 0 | 0 | The paper is an immunology study on influenza vaccination in mice and does not report pharmacokinetic parameters for aluminium hydroxide. |
 | PD | Coulson_2022 | not_relevant | 3 | 2 | The paper is a systematic review reporting median concentrations for different toxicity outcomes (neurotoxicity vs bone disease) but does not provide a fitted dose-response curve, Emax/EC50 parameters, or a quantitative PK/PD model. |
 | PD | De_2008 | not_relevant | 1 | 0 | The paper is a commentary on the mechanism of action of aluminium hydroxide (Nlrp3 inflammasome activation) and does not report any quantitative pharmacodynamic or exposure-response data. |
+| popPK | Dillard_2024 | irrelevant | 0 | 0 | The paper is an immunology study on SARS-CoV-2 vaccines where aluminium hydroxide is used as an adjuvant, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Dillingh_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of adalimumab (Humira), using aluminum hydroxide only as an adjuvant in a pharmacodynamic whole blood challenge, not as the subject drug. |
 | popPK | Dong_2019 | irrelevant | 0 | 0 | The paper focuses on a cancer immunotherapy nanovaccine (ovalbumin/CpG) and does not study aluminium_hydroxide or report pharmacokinetic parameters. |
 | popPK | Du_2023 | irrelevant | 0 | 0 | The paper is a clinical oncology study on non-small cell lung cancer treatment outcomes and does not report any pharmacokinetic parameters for aluminium_hydroxide. |
 | popPK | EFSA_2024 | irrelevant | 0 | 0 | The paper is a risk assessment of polybrominated diphenyl ethers (PBDEs) and does not involve aluminium_hydroxide or report pharmacokinetic parameters for it. |
@@ -90,6 +95,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | PD | Guld_1978 | not_relevant | 2 | 0 | The paper mentions dose-response relationships and compares antibody responses to aluminium hydroxide vs BCG, but it is a qualitative summary of experiments without providing specific numeric PD parameters (Emax, EC50) or extractable concentration-effect curves in the text. |
 | popPK | Guo_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of docetaxel, not aluminium_hydroxide. |
 | popPK | Hege_2023 | irrelevant | 0 | 0 | The paper focuses on the synthesis and immunological screening of methacrylate oligomers as vaccine adjuvants and does not report pharmacokinetic parameters for aluminium hydroxide. |
+| popPK | Heise_2023 | irrelevant | 0 | 0 | The paper is an immunology study on SARS-CoV-2 vaccines where aluminium hydroxide is used as an adjuvant, not as the subject drug for pharmacokinetic analysis. |
 | popPK | Hockey_1987 | irrelevant | 0 | 0 | The paper is a clinical review of primary gastric lymphoma and contains no pharmacokinetic data for aluminium hydroxide. |
 | PD | Holt_1987 | not_relevant | 0 | 0 | The paper discusses aluminium hydroxide only as an adjuvant that abrogates tolerance in an immunological context, without reporting any pharmacokinetic or pharmacodynamic exposure-response data or numeric PD parameters for the compound itself. |
 | popPK | Hughes_1989 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cefpodoxime proxetil, with aluminium hydroxide used only as a gastric pH modifier/comparator, not as the subject drug. |
@@ -100,6 +106,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | PD | Jacobse_2021 | not_relevant | 0 | 0 | The paper focuses on PK and local tolerability of adalimumab; aluminium hydroxide is only used as an adjuvant in an ex-vivo cytokine assay, and no PD or exposure-response relationship for aluminium hydroxide is reported. |
 | PD | Kellner_1992 | not_relevant | 2 | 1 | The paper provides only a qualitative comparison of adjuvant efficacy (antibody titers) without reporting specific numeric dose-response parameters or curves for aluminium hydroxide. |
 | popPK | Kirch_1982 | irrelevant | 0 | 0 | The paper is a review of atenolol pharmacokinetics where aluminium hydroxide is only mentioned as a co-administered agent causing an interaction, not as the subject drug. |
+| popPK | Krishna_2007 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of garenoxacin, with aluminium hydroxide serving only as a co-administered antacid agent rather than the subject drug. |
 | popPK | Krishna_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of raltegravir, with aluminium hydroxide serving only as a co-administered antacid comparator rather than the subject drug. |
 | popPK | Kun_1986 | irrelevant | 0 | 0 | The paper is a clinical oncology trial regarding chemotherapy for cancer and does not involve aluminium_hydroxide or pharmacokinetic parameters. |
 | popPK | Kwak_2022 | irrelevant | 0 | 0 | The paper is a clinical study on imiquimod for lentigo maligna and contains no pharmacokinetic data for aluminium_hydroxide. |
@@ -110,7 +117,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | PD | Lofthouse_2002 | not_relevant | 2 | 1 | The paper compares vaccine delivery vehicles and mentions a qualitative dose-response trend for the matrix implant, but it does not report numeric PD parameters (Emax, EC50, etc.) or a quantitative exposure-response model for aluminium hydroxide. |
 | popPK | Luo_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of an anti-SEB mRNA antibody, not aluminium_hydroxide (which is only mentioned as a comparator adjuvant). |
 | popPK | Lyons-Weiler_2020 | irrelevant | 2 | 0 | The paper is a modeling study on aluminum toxicity exposure limits rather than a primary pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for aluminum hydroxide, and no specific numeric PK values are present in the evidence. |
+| popPK | Lücker_1985 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of muzolimine, with aluminium hydroxide serving only as a co-administered agent to test for interactions, and no PK parameters for aluminium hydroxide itself are reported. |
 | PD | Lücker_1985 | not_relevant | 0 | 0 | The study reports no change in pharmacokinetics or pharmacodynamics (urinary excretion) and provides no numeric PD parameters or concentration-effect relationship. |
+| popPK | Mahieu_1998 | irrelevant | 0 | 0 | The study investigates the renal handling of phosphate and parathyroid function in rats, not the pharmacokinetic disposition parameters (CL, V, etc.) of aluminium hydroxide. |
+| popPK | Marco_2010 | irrelevant | 0 | 0 | The paper is a clinical case report on the treatment of calcinosis with pamidronate, and aluminium hydroxide is only mentioned as a previous ineffective treatment without any pharmacokinetic data. |
+| popPK | Mistry_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of an IL-12 drug conjugate (mANK-101), where aluminium hydroxide serves only as a scaffold/adjuvant rather than the subject drug. |
 | popPK | Mitkus_2011 | irrelevant | 2 | 0 | The paper is a safety assessment/review that updates a previous model but does not report original quantitative PK parameters (CL, V, etc.) for aluminum hydroxide in the provided text. |
 | popPK | Morris_2022 | irrelevant | 0 | 0 | The paper discusses circulating tumor DNA (ctDNA) in colon cancer and does not involve the drug aluminium_hydroxide or any pharmacokinetic parameters. |
 | popPK | Muir_1993 | irrelevant | 0 | 0 | The study investigates the effect of aluminium hydroxide (as an antacid) on the pharmacokinetics of theophylline, not the pharmacokinetics of aluminium hydroxide itself. |
@@ -135,6 +146,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | Scoville_2018 | irrelevant | 0 | 0 | The study focuses on acetaminophen pharmacokinetics during renal replacement therapy and does not involve aluminium_hydroxide. |
 | popPK | Seale_1992 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of polyvinylpyrrolidone (PVP), not aluminium_hydroxide. |
 | popPK | Shen_2016 | irrelevant | 0 | 0 | The study focuses on the immunogenicity and stability of a hepatitis B vaccine formulation where aluminium hydroxide is an adjuvant, not a pharmacokinetic study of aluminium hydroxide as a subject drug. |
+| popPK | Shen_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lesinurad, with aluminium hydroxide serving only as a co-administered antacid comparator, not the subject drug. |
 | popPK | Shimada_1993 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of sparfloxacin, with aluminium hydroxide mentioned only as an antacid that reduces sparfloxacin bioavailability, not as the subject drug. |
 | popPK | Sojati_2025 | irrelevant | 0 | 0 | The paper is an immunology study on human metapneumovirus (HMPV) and interferon responses, and does not involve aluminium_hydroxide or pharmacokinetic parameters. |
 | PD | Stephen_2017 | not_relevant | 0 | 0 | The paper describes the mechanism of action (neutrophil swarming and NET formation) using qualitative imaging and knockout mouse comparisons, but does not report any quantitative exposure-response or dose-response data with numeric PD parameters. |
@@ -147,9 +159,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | Tvedskov_2024 | irrelevant | 0 | 0 | The paper is a clinical oncology study regarding axillary clearance in breast cancer and does not contain any pharmacokinetic data for aluminium_hydroxide. |
 | PD | Varela-Martínez_2023 | not_relevant | 0 | 0 | The paper reports differential miRNA expression in sheep spleens following vaccination with aluminium hydroxide adjuvants, but it does not provide any pharmacokinetic data, concentration-effect curves, or numeric pharmacodynamic parameters (e.g., Emax, EC50) for the adjuvant itself. |
 | popPK | Vergin_1989 | irrelevant | 0 | 0 | The study investigates the effect of aluminium hydroxide on the pharmacokinetics of pirenzepine, not the pharmacokinetic parameters of aluminium hydroxide itself. |
+| popPK | Wang_2021 | irrelevant | 0 | 0 | The paper is an immunological study using aluminium hydroxide as an in-vitro immune stimulant, not a pharmacokinetic study of the drug. |
 | PGx | Wang_2021 | not_relevant | 0 | 0 | The paper investigates the mediation of asthma risk by immune responses to aluminium hydroxide as an innate ligand, not the pharmacokinetics or pharmacodynamics of aluminium hydroxide as a therapeutic drug. |
 | popPK | Wang_2022 | irrelevant | 0 | 0 | The paper focuses on ultrasound-mediated delivery of immune adjuvants for tumor immunotherapy and does not report pharmacokinetic parameters for aluminium hydroxide. |
 | popPK | Wang_2024 | irrelevant | 0 | 0 | The paper is an immunology study on cryptococcal vaccines and does not report pharmacokinetic parameters for aluminium hydroxide. |
+| popPK | Wilner_2000 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ziprasidone, with aluminium hydroxide (Maalox) serving only as a co-administered antacid comparator, not the subject drug. |
 | popPK | Zeng_2026 | irrelevant | 0 | 0 | The paper focuses on LNP-based delivery of CpG for cancer vaccines and does not report pharmacokinetic parameters for aluminium_hydroxide. |
 | popPK | Zhang_2021 | irrelevant | 0 | 0 | The paper is a surgical case report on axillary lymph node clearance and contains no pharmacokinetic data for aluminium_hydroxide. |
 | popPK | Zhao_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of rasagiline, with aluminium hydroxide serving only as an excipient to modulate release, not as the subject drug. |

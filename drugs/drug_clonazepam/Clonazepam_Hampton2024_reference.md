@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clonazepam: t1/2z 7.3 h, MRT 7.4 h, V/F 5.7 L/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hampton CE; Kleine SA; Smith JS; Mulon PY; Smith CK; Shanks GA; et al. et al. (2024). Journal of veterinary pharmacology and therapeutics 47
@@ -25,6 +27,9 @@ Hampton CE; Kleine SA; Smith JS; Mulon PY; Smith CK; Shanks GA; et al. et al. (2
 
 ## Model component
 <dbs-pgx drug="clonazepam" model-id="Clonazepam_Hampton2024_reference" status="needs_review" stale="false" population="growing commercial pigs" measured-compound="clonazepam" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

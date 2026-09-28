@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (44 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 44, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Doshi S; Chow A; Pérez Ruixo JJ et al. (2010). Journal of clinical pharmacology 50
@@ -26,6 +29,9 @@ Doshi S; Chow A; Pérez Ruixo JJ et al. (2010). Journal of clinical pharmacology
 
 ## Model component
 <dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Doshi2010_reference" status="curated_candidate" stale="false" population="anemic patients with chronic kidney disease not receiving dialysis" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -142,6 +148,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference/DarbepoetinAlfa_Doshi2010_reference.svg" alt="DarbepoetinAlfa_Doshi2010_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference/DarbepoetinAlfa_Doshi2010_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference/DarbepoetinAlfa_Doshi2010_reference_sim_controls.json"></dbs-fmusim>
 

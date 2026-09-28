@@ -4,7 +4,8 @@
 
 - **generic name:** ademetionine
 - **ATC codes:** `A16AA02`
-- **DrugBank:** [DB00118](https://go.drugbank.com/drugs/DB00118)
+- **DrugBank:** [DB00118](https://go.drugbank.com/drugs/DB00118) · **PubChem:** [CID 34755](https://pubchem.ncbi.nlm.nih.gov/compound/34755)
+- **molar mass:** 398.44 g/mol (C15H22N6O5S) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About

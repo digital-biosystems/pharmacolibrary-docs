@@ -4,7 +4,8 @@
 
 - **generic name:** glibornuride
 - **ATC codes:** `A10BB04`
-- **DrugBank:** [DB08962](https://go.drugbank.com/drugs/DB08962)
+- **DrugBank:** [DB08962](https://go.drugbank.com/drugs/DB08962) · **PubChem:** [CID 12818200](https://pubchem.ncbi.nlm.nih.gov/compound/12818200)
+- **molar mass:** 366.48 g/mol (C18H26N2O4S) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

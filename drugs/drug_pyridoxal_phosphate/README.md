@@ -4,7 +4,8 @@
 
 - **generic name:** pyridoxal phosphate
 - **ATC codes:** `A11HA06`
-- **DrugBank:** [DB00114](https://go.drugbank.com/drugs/DB00114)
+- **DrugBank:** [DB00114](https://go.drugbank.com/drugs/DB00114) · **PubChem:** [CID 1051](https://pubchem.ncbi.nlm.nih.gov/compound/1051)
+- **molar mass:** 247.1419 g/mol (C8H10NO6P) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About

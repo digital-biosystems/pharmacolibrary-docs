@@ -4,7 +4,8 @@
 
 - **generic name:** methoxyflurane
 - **ATC codes:** `N02BG09`
-- **DrugBank:** [DB01028](https://go.drugbank.com/drugs/DB01028)
+- **DrugBank:** [DB01028](https://go.drugbank.com/drugs/DB01028) · **PubChem:** [CID 4116](https://pubchem.ncbi.nlm.nih.gov/compound/4116)
+- **molar mass:** 164.966 g/mol (C3H4Cl2F2O) — DrugBank
 - **groups:** approved, investigational, vet_approved, withdrawn
 
 ## About

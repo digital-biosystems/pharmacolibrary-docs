@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (sodium salicylate vs sodium_salicylate) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 5, model 1.38).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — sodium salicylate: V 5.43 liter, t1/2β 247 min, CL 0.04 L/h/kg, kabs 0.64 1/h, tlag 0.42 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sodium salicylate, the second reading sodium_salicylate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sodium salicylate`, measured `salicylic acid`.
 
@@ -28,6 +31,9 @@ Lowenthal DT; Briggs WA; Levy G et al. (1974). The Journal of clinical investiga
 
 ## Model component
 <dbs-pgx drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_four_normal_subjects" status="needs_review" stale="false" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -157,6 +163,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects/SodiumSalicylate_Lowenthal1974_four_normal_subjects.svg" alt="SodiumSalicylate_Lowenthal1974_four_normal_subjects diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.64 /h, lag 25.2 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects/SodiumSalicylate_Lowenthal1974_four_normal_subjects_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects/SodiumSalicylate_Lowenthal1974_four_normal_subjects_sim_controls.json"></dbs-fmusim>
 

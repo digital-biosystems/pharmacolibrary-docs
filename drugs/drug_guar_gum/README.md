@@ -4,7 +4,7 @@
 
 - **generic name:** guar gum
 - **ATC codes:** `A10BX01`
-- **DrugBank:** [DB13446](https://go.drugbank.com/drugs/DB13446)
+- **DrugBank:** [DB13446](https://go.drugbank.com/drugs/DB13446) · **PubChem:** not captured
 - **groups:** investigational
 
 ## Extraction summary

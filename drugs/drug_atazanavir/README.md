@@ -5,7 +5,8 @@
 
 - **generic name:** atazanavir
 - **ATC codes:** `J05AE08`, `J05AR15`, `J05AR23`
-- **DrugBank:** [DB01072](https://go.drugbank.com/drugs/DB01072)
+- **DrugBank:** [DB01072](https://go.drugbank.com/drugs/DB01072) · **PubChem:** [CID 148192](https://pubchem.ncbi.nlm.nih.gov/compound/148192)
+- **molar mass:** 704.8555 g/mol (C38H52N6O7) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,12 +23,12 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Foissac_2011_reference](drugs/drug_atazanavir/Atazanavir_Foissac2011_reference.md) | Foissac (2011) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Kengo_2025_reference](drugs/drug_atazanavir/Atazanavir_Kengo2025_reference.md) | Kengo A et al., Model-based evaluation of the interacti…, British journal of clinical… (2025) | [10.1002/bcp.70195](https://doi.org/10.1002/bcp.70195) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kile_2012_reference](drugs/drug_atazanavir/Atazanavir_Kile2012_reference.md) | Kile DA et al., A population pharmacokinetic-pharmacoge…, AIDS research and human ret… (2012) | [10.1089/aid.2011.0378](https://doi.org/10.1089/aid.2011.0378) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Punyawudho_2017_reference](drugs/drug_atazanavir/Atazanavir_Punyawudho2017_reference.md) | Punyawudho (2017) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Foissac_2011_reference](drugs/drug_atazanavir/Atazanavir_Foissac2011_reference.md) | 1-compartment, oral | 3 | Foissac (2011) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Kengo_2025_reference](drugs/drug_atazanavir/Atazanavir_Kengo2025_reference.md) | 1-compartment, IV | 2 | Kengo A et al., Model-based evaluation of the interacti…, British journal of clinical… (2025) | [10.1002/bcp.70195](https://doi.org/10.1002/bcp.70195) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kile_2012_reference](drugs/drug_atazanavir/Atazanavir_Kile2012_reference.md) | 1-compartment, oral | 3 | Kile DA et al., A population pharmacokinetic-pharmacoge…, AIDS research and human ret… (2012) | [10.1089/aid.2011.0378](https://doi.org/10.1089/aid.2011.0378) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Punyawudho_2017_reference](drugs/drug_atazanavir/Atazanavir_Punyawudho2017_reference.md) | 1-compartment, oral | 1 | Punyawudho (2017) | — |
 
 ## Pharmacodynamics (PD)
 

@@ -4,7 +4,7 @@
 
 - **generic name:** retinol (vit A)
 - **ATC codes:** `A11CA01`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

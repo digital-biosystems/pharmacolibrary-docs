@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q38]` (not captured vs 12) and 1 more field(s) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The amlodipine two-compartment model was held back because the absorption rate constant ka and lag time Tlag were not reported and placeholder values were substituted, alongside an assumed first-order absorption with F=1.**
+
+The record reports CL/F 39.4 L/h, Vc 13.8 L, Vp 14.2 L and Q 2.02 L/h for amlodipine, but ka and Tlag have no extracted values, so library placeholder values would have stood in for them. The builder further assumed F=1 and Fm=1 with no molar correction, and imposed a first-order depot input consistent with the apparent (/F) parameterization, even though ka was not reported in the source. A second reader also disagreed on the intercompartmental clearance, giving 12 L/h (and 9 L/h in another field) where this record carries no value. Extracted — amlodipine: CL/F 39.4 l h À1, V1 13.8 l, V2 14.2 l, Q 2.02 l h À1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q38: this record has none, the second reading 12; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 22:47:41.650412+00:00) predates the upstream re-run (2026-09-23 22:39:52.452292+00:00). Current validate status: `extracted`.
 
@@ -145,7 +148,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_amlodipine/Amlodipine_Heo2016_reference/Amlodipine_Heo2016_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_amlodipine/Amlodipine_Heo2016_reference/Amlodipine_Heo2016_reference_sim_controls.json"></dbs-fmusim>
 

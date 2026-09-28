@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_beta
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl].covariate_forms` ([] vs ['linear_fractional']) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 2, model 12.5); the covariate scenarios were not simulated.**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — pantoprazole: CL 5.08 l h -1, V1 2.2 l, Q 1.1 l h -1, V2 2.69 l, kabs 0.325 h -1, tlag 2.5 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Pettersen G; Mouksassi MS; Théorêt Y; Labbé L; Faure C; Nguyen B; et al. et al. (2009). British journal of clinical pharmacology 67
@@ -28,6 +31,9 @@ Pettersen G; Mouksassi MS; Théorêt Y; Labbé L; Faure C; Nguyen B; et al. et a
 
 ## Model component
 <dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Pettersen2009_reference" status="needs_review" stale="false" population="paediatric intensive care patients" measured-compound="pantoprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -174,6 +180,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference.svg" alt="Pantoprazole_Pettersen2009_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.325 /h, lag 150 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_sim_controls.json"></dbs-fmusim>
 

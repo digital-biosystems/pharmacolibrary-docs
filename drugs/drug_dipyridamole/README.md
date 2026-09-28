@@ -5,7 +5,8 @@
 
 - **generic name:** dipyridamole
 - **ATC codes:** `B01AC07`
-- **DrugBank:** [DB00975](https://go.drugbank.com/drugs/DB00975)
+- **DrugBank:** [DB00975](https://go.drugbank.com/drugs/DB00975) · **PubChem:** [CID 3108](https://pubchem.ncbi.nlm.nih.gov/compound/3108)
+- **molar mass:** 504.6256 g/mol (C24H40N8O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1979_healthy adults](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1979_healthy_adults.md) | Nielsen-Kudsk F et al., Pharmacokinetics of dipyridamole, Acta pharmacologica et toxi… (1979) | [10.1111/j.1600-0773.1979.tb02350.x](https://doi.org/10.1111/j.1600-0773.1979.tb02350.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1980_isolated rabbit hearts](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1980_isolated_rabbit_hearts.md) | Nielsen-Kudsk F et al., Myocardial pharmacokinetics and pharmac…, Acta pharmacologica et toxi… (1980) | [10.1111/j.1600-0773.1980.tb01559.x](https://doi.org/10.1111/j.1600-0773.1980.tb01559.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1979_healthy adults](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1979_healthy_adults.md) | — (no model) | 0 | Nielsen-Kudsk F et al., Pharmacokinetics of dipyridamole, Acta pharmacologica et toxi… (1979) | [10.1111/j.1600-0773.1979.tb02350.x](https://doi.org/10.1111/j.1600-0773.1979.tb02350.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1980_isolated rabbit hearts](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1980_isolated_rabbit_hearts.md) | — (no model) | 0 | Nielsen-Kudsk F et al., Myocardial pharmacokinetics and pharmac…, Acta pharmacologica et toxi… (1980) | [10.1111/j.1600-0773.1980.tb01559.x](https://doi.org/10.1111/j.1600-0773.1980.tb01559.x) |
 
 ## Pharmacodynamics (PD)
 

@@ -4,7 +4,8 @@
 
 - **generic name:** mitapivat
 - **ATC codes:** `B06AX04`
-- **DrugBank:** [DB16236](https://go.drugbank.com/drugs/DB16236)
+- **DrugBank:** [DB16236](https://go.drugbank.com/drugs/DB16236) · **PubChem:** not captured
+- **molar mass:** 450.56 g/mol (C24H26N4O3S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

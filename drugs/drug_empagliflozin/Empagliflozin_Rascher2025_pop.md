@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 2 covered; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/f].value` (1.00 vs 6.74) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The empagliflozin paediatric model record reports placeholder values of 1.00 for all six parameters (CL/F, V2/F, kabs, Q/F, V3/F, D1) because the source gave no values for Vd, ka and Tlag, so the model was quarantined rather than published.**
+
+Every parameter in the record — CL/F, V2/F, kabs, Q/F, V3/F and D1 for empagliflozin — carries the value 1.00, which reflects library defaults substituted for missing source values rather than fitted estimates. The volume of distribution, absorption rate constant and absorption lag time were never reported in the source, so placeholders stood in and the model was held back. A second reader extracted substantially different values (e.g. CL/F 6.74 L/h vs 1.00, V3/F 71.7 L vs 1.00, ka 0.239 1/h vs 1.00), and the absorption input was flagged as invented since ka was defaulted, not reported. The record also assumes F=1 and Fm=1 without molar correction, i.e. an apparent-parameterization. Extracted — empagliflozin: CL/F 1 L/h, V2/F 1 L, kabs 1, Q/F 1 L/h, V3/F 1 L, D1 1 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].value`: this record has 1.00, the second reading 6.74; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Rascher J; Cheng S; Johnston C; Härtter S; Jan-Georg W; Marquard J; et al. et al. (2025). British journal of clinical pharmacology 91
@@ -26,6 +29,9 @@ Rascher J; Cheng S; Johnston C; Härtter S; Jan-Georg W; Marquard J; et al. et a
 
 ## Model component
 <dbs-pgx drug="empagliflozin" model-id="Empagliflozin_Rascher2025_pop" status="model_quarantined" stale="false" population="paediatric patients aged 10–17 years with type 2 diabetes mellitus" measured-compound="empagliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

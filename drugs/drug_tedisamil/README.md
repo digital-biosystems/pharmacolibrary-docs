@@ -4,7 +4,8 @@
 
 - **generic name:** tedisamil
 - **ATC codes:** `C01BD06`
-- **DrugBank:** [DB06200](https://go.drugbank.com/drugs/DB06200)
+- **DrugBank:** [DB06200](https://go.drugbank.com/drugs/DB06200) · **PubChem:** [CID 65825](https://pubchem.ncbi.nlm.nih.gov/compound/65825)
+- **molar mass:** 288.4708 g/mol (C19H32N2) — DrugBank
 - **groups:** experimental
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (R-salbutamol, S-salbutamol vs salbutamol) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**Rejected because the R- and S-salbutamol enantiomer compartments are unlinked: the interconversion from salbutamol carries no parameter value, so the enantiomers have no path from the dose.**
+
+The structure lists interconversion links from salbutamol to R-salbutamol and to S-salbutamol, but both link parameters are recorded as 'none' with unknown kind, leaving the measured enantiomer compartments unreachable from the administered dose. A second reader also disputed the extracted values, reading CLR-salbutamol as 42 L/h/70 kg versus 16.3, CLS-salbutamol as 37 versus 8.82, and Vc as 281 L/70 kg versus 12.9, and listed no interconversion links at all. Extracted — salbutamol: CLR 16.3 L/h/70 kg, CL 8.82 L/h/70 kg, V1 12.9 L/70 kg, Q 20.4 L/h/70 kg, V2 45.5 L/70 kg; R-salbutamol, S-salbutamol: kabs 3.71 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R-salbutamol, S-salbutamol, the second reading salbutamol; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:47:13.055722+00:00) predates the upstream re-run (2026-09-24 04:46:42.394432+00:00). Current validate status: `rejected`.
 

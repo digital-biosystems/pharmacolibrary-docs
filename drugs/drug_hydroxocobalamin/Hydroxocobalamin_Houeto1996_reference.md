@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The hydroxocobalamin record was held back because an absorption rate constant (ka) and lag time absent from the abstract were replaced by library defaults, and an extravascular first-order input was assumed despite the abstract-only source.**
+
+The record for hydroxocobalamin in smoke inhalation victims rests on the paper's abstract alone, so the reported half-lives (1.86 h distribution, 26.2 h elimination), apparent volume of distribution (0.45 L/kg) and clearance (0.31 L/h) are summary statistics rather than outputs of a fitted model. The absorption rate constant ka and lag time were not reported in the source, so defaults were substituted, and the abstract's apparent (/F) parameterization was taken to imply F=1, Fm=1, no molar correction, and a first-order extravascular input. This invented absorption assumption was judged not acceptable and triggered the hold. A second reader disagreed on the parameterization (mechanistic rather than apparent) and returned no values for the four parameters, so the numeric comparisons could not be computed. Extracted — hydroxocobalamin: t1/2α 1.86 h, t1/2z 26.2 h, V/F 0.45 L/kg, CL 0.31 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Houeto P; Borron SW; Sandouk P; Imbert M; Levillain P; Baud FJ et al. (1996). Journal of toxicology. Clinical toxicology 34
@@ -26,6 +29,9 @@ Houeto P; Borron SW; Sandouk P; Imbert M; Levillain P; Baud FJ et al. (1996). Jo
 
 ## Model component
 <dbs-pgx drug="hydroxocobalamin" model-id="Hydroxocobalamin_Houeto1996_reference" status="needs_review" stale="false" population="smoke inhalation victims" measured-compound="hydroxocobalamin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -148,6 +154,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference/Hydroxocobalamin_Houeto1996_reference.svg" alt="Hydroxocobalamin_Houeto1996_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference/Hydroxocobalamin_Houeto1996_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference/Hydroxocobalamin_Houeto1996_reference_sim_controls.json"></dbs-fmusim>
 

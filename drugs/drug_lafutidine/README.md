@@ -4,7 +4,8 @@
 
 - **generic name:** lafutidine
 - **ATC codes:** `A02BA08`
-- **DrugBank:** [DB12770](https://go.drugbank.com/drugs/DB12770)
+- **DrugBank:** [DB12770](https://go.drugbank.com/drugs/DB12770) · **PubChem:** [CID 5282136](https://pubchem.ncbi.nlm.nih.gov/compound/5282136)
+- **molar mass:** 431.55 g/mol (C22H29N3O4S) — DrugBank
 - **groups:** investigational
 
 ## About

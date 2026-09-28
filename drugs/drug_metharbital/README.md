@@ -4,7 +4,8 @@
 
 - **generic name:** metharbital
 - **ATC codes:** `N03AA30`
-- **DrugBank:** [DB00463](https://go.drugbank.com/drugs/DB00463)
+- **DrugBank:** [DB00463](https://go.drugbank.com/drugs/DB00463) · **PubChem:** [CID 4099](https://pubchem.ncbi.nlm.nih.gov/compound/4099)
+- **molar mass:** 198.2191 g/mol (C9H14N2O3) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

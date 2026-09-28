@@ -4,7 +4,8 @@
 
 - **generic name:** sotagliflozin
 - **ATC codes:** `A10BK06`
-- **DrugBank:** [DB12713](https://go.drugbank.com/drugs/DB12713)
+- **DrugBank:** [DB12713](https://go.drugbank.com/drugs/DB12713) · **PubChem:** [CID 24831714](https://pubchem.ncbi.nlm.nih.gov/compound/24831714)
+- **molar mass:** 424.94 g/mol (C21H25ClO5S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

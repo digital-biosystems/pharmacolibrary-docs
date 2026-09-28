@@ -5,7 +5,8 @@
 
 - **generic name:** chloramphenicol
 - **ATC codes:** `D06AX02`, `D10AF03`, `G01AA05`, `J01BA01`, `S01AA01`, `S02AA01`, `S03AA08`
-- **DrugBank:** [DB00446](https://go.drugbank.com/drugs/DB00446)
+- **DrugBank:** [DB00446](https://go.drugbank.com/drugs/DB00446) · **PubChem:** [CID 5959](https://pubchem.ncbi.nlm.nih.gov/compound/5959)
+- **molar mass:** 323.129 g/mol (C11H12Cl2N2O5) — DrugBank
 - **groups:** approved, vet_approved, withdrawn
 
 ## About
@@ -24,9 +25,9 @@ The FDA has withdrawn all oral drug products containing chloramphenicol, due to 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Anderson_1983_reference](drugs/drug_chloramphenicol/Chloramphenicol_Anderson1983_reference.md) | Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veterinary pharm… (1983) | [10.1111/j.1365-2885.1983.tb00005.x](https://doi.org/10.1111/j.1365-2885.1983.tb00005.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Anderson_1983_reference](drugs/drug_chloramphenicol/Chloramphenicol_Anderson1983_reference.md) | 1-compartment, IV | 1 | Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veterinary pharm… (1983) | [10.1111/j.1365-2885.1983.tb00005.x](https://doi.org/10.1111/j.1365-2885.1983.tb00005.x) |
 
 ## ADME sites
 

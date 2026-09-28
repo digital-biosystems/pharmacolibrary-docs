@@ -4,7 +4,8 @@
 
 - **generic name:** pralatrexate
 - **ATC codes:** `L01BA05`
-- **DrugBank:** [DB06813](https://go.drugbank.com/drugs/DB06813)
+- **DrugBank:** [DB06813](https://go.drugbank.com/drugs/DB06813) · **PubChem:** [CID 148121](https://pubchem.ncbi.nlm.nih.gov/compound/148121)
+- **molar mass:** 477.4726 g/mol (C23H23N7O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

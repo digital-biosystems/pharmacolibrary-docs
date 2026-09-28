@@ -5,7 +5,8 @@
 
 - **generic name:** daprodustat
 - **ATC codes:** `B03XA07`
-- **DrugBank:** [DB11682](https://go.drugbank.com/drugs/DB11682)
+- **DrugBank:** [DB11682](https://go.drugbank.com/drugs/DB11682) · **PubChem:** [CID 91617630](https://pubchem.ncbi.nlm.nih.gov/compound/91617630)
+- **molar mass:** 393.44 g/mol (C19H27N3O6) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -27,9 +28,9 @@ of anemia. It is also not indicated in patients not on dialysis.[L44958]
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Mahar_2024_reference](drugs/drug_daprodustat/Daprodustat_Mahar2024_reference.md) | Mahar KM et al., Integrated Population Pharmacokinetics…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01417-9](https://doi.org/10.1007/s40262-024-01417-9) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Mahar_2024_reference](drugs/drug_daprodustat/Daprodustat_Mahar2024_reference.md) | 1-compartment, oral | 4 | Mahar KM et al., Integrated Population Pharmacokinetics…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01417-9](https://doi.org/10.1007/s40262-024-01417-9) |
 
 ## Pharmacodynamics (PD)
 

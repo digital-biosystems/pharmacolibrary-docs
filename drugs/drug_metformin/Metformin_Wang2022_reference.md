@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q355]` (not captured vs 0.49) and 1 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The metformin two-compartment model was rejected because a compartment has no path from the dose, and the record carries two conflicting peripheral volumes (Vp/F 413.0 L versus V2 190.0 L/70 kg).**
+
+The record lists a two-compartment metformin structure with CL/F 102.0 L/h, Vc/F 76.8 L, Vp/F 413.0 L and absorption rate Ka 0.3 /h, but the review found an unreachable or orphan compartment, meaning a compartment with no path from the administered dose, so the structure is not a valid closed model. Two distinct peripheral volume entries appear in the same record (Vp/F 413.0 L and V2 190.0 L/70 kg), an unexplained deviation. The second reader disagreed with this record on one extracted value, reading 0.49 where this record has none, and vice versa, though the affected quantity is not identified in the findings. Extracted — metformin: CL/F 102 L/h, V1/F 76.8 L, V2/F 413 L, V2 190 L/70 kg, kabs 0.3 /h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q355: this record has none, the second reading 0.49; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang X; Tang J; Shen C; Wang X; Hu H; Xie H et al. (2022). BioMed research international 2022

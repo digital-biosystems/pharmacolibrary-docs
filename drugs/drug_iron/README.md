@@ -5,7 +5,8 @@
 
 - **generic name:** Iron
 - **ATC codes:** `A11AA01`, `B03AE03`
-- **DrugBank:** [DB01592](https://go.drugbank.com/drugs/DB01592)
+- **DrugBank:** [DB01592](https://go.drugbank.com/drugs/DB01592) · **PubChem:** [CID 23925](https://pubchem.ncbi.nlm.nih.gov/compound/23925)
+- **molar mass:** 55.845 g/mol (Fe) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,13 +23,13 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ekobena_2025_reference](drugs/drug_iron/Iron_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Lv_2025_reference](drugs/drug_iron/Iron_Lv2025_reference.md) | Lv D et al., Population Pharmacokinetic Modeling Ana…, Drug design, development an… (2025) | [10.2147/dddt.s517282](https://doi.org/10.2147/dddt.s517282) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Xu_2026_reference](drugs/drug_iron/Iron_Xu2026_reference.md) | Xu C et al., Modeling, Simulation, and Extrapolation…, Journal of pharmacokinetics… (2026) | [10.1007/s10928-026-10024-z](https://doi.org/10.1007/s10928-026-10024-z) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Fan_2025_reference](drugs/drug_iron/Iron_Fan2025_reference.md) | Fan X et al., A whole-body mechanistic physiologicall…, Drug delivery and translati… (2025) | [10.1007/s13346-024-01675-x](https://doi.org/10.1007/s13346-024-01675-x) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Phatruengdet_2022_reference](drugs/drug_iron/Iron_Phatruengdet2022_reference.md) | Phatruengdet T et al., Pharmacokinetic/Pharmacodynamic Determi…, Nanotheranostics (2022) | [10.7150/ntno.63310](https://doi.org/10.7150/ntno.63310) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> | [Ekobena_2025_reference](drugs/drug_iron/Iron_Ekobena2025_reference.md) | 1-compartment, oral | 4 | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Lv_2025_reference](drugs/drug_iron/Iron_Lv2025_reference.md) | 2-compartment, IV | 4 | Lv D et al., Population Pharmacokinetic Modeling Ana…, Drug design, development an… (2025) | [10.2147/dddt.s517282](https://doi.org/10.2147/dddt.s517282) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Xu_2026_reference](drugs/drug_iron/Iron_Xu2026_reference.md) | 2-compartment, oral | 4 | Xu C et al., Modeling, Simulation, and Extrapolation…, Journal of pharmacokinetics… (2026) | [10.1007/s10928-026-10024-z](https://doi.org/10.1007/s10928-026-10024-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Fan_2025_reference](drugs/drug_iron/Iron_Fan2025_reference.md) | nonlinear / manual (no model) | 4 | Fan X et al., A whole-body mechanistic physiologicall…, Drug delivery and translati… (2025) | [10.1007/s13346-024-01675-x](https://doi.org/10.1007/s13346-024-01675-x) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Phatruengdet_2022_reference](drugs/drug_iron/Iron_Phatruengdet2022_reference.md) | 1-compartment, oral | 5 | Phatruengdet T et al., Pharmacokinetic/Pharmacodynamic Determi…, Nanotheranostics (2022) | [10.7150/ntno.63310](https://doi.org/10.7150/ntno.63310) |
 
 ## Pharmacodynamics (PD)
 

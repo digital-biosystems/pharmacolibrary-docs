@@ -5,7 +5,8 @@
 
 - **generic name:** scopolamine
 - **ATC codes:** `A04AD01`, `N05CM05`, `S01FA02`
-- **DrugBank:** [DB00747](https://go.drugbank.com/drugs/DB00747)
+- **DrugBank:** [DB00747](https://go.drugbank.com/drugs/DB00747) · **PubChem:** [CID 3000322](https://pubchem.ncbi.nlm.nih.gov/compound/3000322)
+- **molar mass:** 303.3529 g/mol (C17H21NO4) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,11 +25,11 @@ Scopolamine was first approved by the FDA on December 31, 1979, and is currently
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Alvarez-Jimenez_2016_reference](drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md) | Alvarez-Jimenez R et al., Model-based exposure-response analysis…, British journal of clinical… (2016) | [10.1111/bcp.13031](https://doi.org/10.1111/bcp.13031) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Ebert_2001_reference](drugs/drug_scopolamine/Scopolamine_Ebert2001_reference.md) | Ebert U et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122009836](https://doi.org/10.1177/00912700122009836) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Liem-Moolenaar_2011_reference](drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md) | Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Alvarez-Jimenez_2016_reference](drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md) | 1-compartment, IV | 2 | Alvarez-Jimenez R et al., Model-based exposure-response analysis…, British journal of clinical… (2016) | [10.1111/bcp.13031](https://doi.org/10.1111/bcp.13031) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Ebert_2001_reference](drugs/drug_scopolamine/Scopolamine_Ebert2001_reference.md) | 1-compartment (no model) | 5 | Ebert U et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122009836](https://doi.org/10.1177/00912700122009836) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Liem-Moolenaar_2011_reference](drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md) | 1-compartment, IV | 4 | Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x) |
 
 ## Pharmacodynamics (PD)
 

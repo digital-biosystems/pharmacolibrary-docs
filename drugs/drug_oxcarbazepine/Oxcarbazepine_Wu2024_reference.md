@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The oxcarbazepine record was quarantined because clearance, volume of distribution, absorption rate constant and lag time had no extracted values, so library defaults were substituted, and the reported units could not be converted to SI.**
+
+For the 1-compartment MHD model in Chinese paediatric epilepsy patients, only the absorption half-life (0.83 h) carried a value; CL and V/F had empty values with unconvertible units, so CL, Vd, ka and Tlag were left at library defaults. The absorption was further flagged as invented: ka was defaulted, not reported in the source, and the first-order depot input with apparent (/F) parameterization was an assumption. The unit conversion failure meant the parameters reached model building without SI values. A second reader disagreed on the parameterization (mechanistic vs apparent) and read no value for ka where this record read 0.83 h. Extracted — MHD: t1/2ka 0.83 （）.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `oxcarbazepine`, measured `MHD`.
 
@@ -28,6 +31,9 @@ Wu W; Yang WS; Xu XY; Ge XL; Lu J; Wang GF; et al. et al. (2024). Basic & clinic
 
 ## Model component
 <dbs-pgx drug="oxcarbazepine" model-id="Oxcarbazepine_Wu2024_reference" status="model_quarantined" stale="false" population="Chinese paediatric patients with epilepsy" measured-compound="MHD" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

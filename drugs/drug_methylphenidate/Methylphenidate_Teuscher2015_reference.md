@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (methylphenidate hydrochloride extended-release multiple-layer beads vs methylphenidate) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for methylphenidate's clearance and volume of distribution.**
+
+The model was built, but methylphenidate's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (EC50), so that value has no SI equivalent. Extracted — methylphenidate: Emax -35, EC50 5.77 ng/mL, CL 1.3, V 64.7, tlag 5.75.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has methylphenidate hydrochloride extended-release multiple-layer beads, the second reading methylphenidate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `methylphenidate hydrochloride extended-release multiple-layer beads`, measured `methylphenidate`.
 
@@ -28,6 +31,9 @@ Teuscher NS; Adjei A; Findling RL; Greenhill LL; Kupper RJ; Wigal S et al. (2015
 
 ## Model component
 <dbs-pgx drug="methylphenidate" model-id="Methylphenidate_Teuscher2015_reference" status="model_quarantined" stale="false" population="pediatric subjects with attention deficit hyperactivity disorder" measured-compound="methylphenidate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

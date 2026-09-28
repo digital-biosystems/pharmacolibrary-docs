@@ -5,7 +5,7 @@
 
 - **generic name:** insulin (human)
 - **ATC codes:** `A10AB01`, `A10AB01;A10AC01`, `A10AC01`, `A10AD01`, `A10AE01`, `A10AF01`
-- **DrugBank:** [DB00030](https://go.drugbank.com/drugs/DB00030)
+- **DrugBank:** [DB00030](https://go.drugbank.com/drugs/DB00030) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -24,11 +24,11 @@ Insulin is an important treatment in the management of Type 1 Diabetes (T1D) whi
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nosadini_1988_normal and insulin-dependent diabetic subjects](drugs/drug_insulin_human/InsulinHuman_Nosadini1988_normal_and_insulin_dependent_diabe.md) | Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988) | [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Potocka_2011_healthy volunteers](drugs/drug_insulin_human/InsulinHuman_Potocka2011_healthy_volunteers.md) | Potocka E et al., Population pharmacokinetic model of hum…, Journal of clinical pharmac… (2011) | [10.1177/0091270010378520](https://doi.org/10.1177/0091270010378520) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Vølund_1987_conscious dogs](drugs/drug_insulin_human/InsulinHuman_Vlund1987_conscious_dogs.md) | Vølund A et al., Calculated pattern of intraportal insul…, Diabetes (1987) | [10.2337/diab.36.10.1195](https://doi.org/10.2337/diab.36.10.1195) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nosadini_1988_normal and insulin-dependent diabetic subjects](drugs/drug_insulin_human/InsulinHuman_Nosadini1988_normal_and_insulin_dependent_diabe.md) | — (no model) | 0 | Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988) | [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Potocka_2011_healthy volunteers](drugs/drug_insulin_human/InsulinHuman_Potocka2011_healthy_volunteers.md) | — (no model) | 0 | Potocka E et al., Population pharmacokinetic model of hum…, Journal of clinical pharmac… (2011) | [10.1177/0091270010378520](https://doi.org/10.1177/0091270010378520) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Vølund_1987_conscious dogs](drugs/drug_insulin_human/InsulinHuman_Vlund1987_conscious_dogs.md) | — (no model) | 0 | Vølund A et al., Calculated pattern of intraportal insul…, Diabetes (1987) | [10.2337/diab.36.10.1195](https://doi.org/10.2337/diab.36.10.1195) |
 
 ## Pharmacodynamics (PD)
 

@@ -4,7 +4,8 @@
 
 - **generic name:** prifinium bromide
 - **ATC codes:** `A03AB18`
-- **DrugBank:** [DB13254](https://go.drugbank.com/drugs/DB13254)
+- **DrugBank:** [DB13254](https://go.drugbank.com/drugs/DB13254) · **PubChem:** not captured
+- **molar mass:** 306.472 g/mol (C22H28N) — DrugBank
 - **groups:** experimental
 
 ## About

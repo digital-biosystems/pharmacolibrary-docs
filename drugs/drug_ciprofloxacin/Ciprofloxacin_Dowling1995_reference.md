@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (6.8 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 6.8, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-17 23:02:13.929907+00:00) predates the upstream re-run (2026-09-24 02:07:58.291263+00:00). Current validate status: `extracted`.
 
@@ -154,7 +157,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1 /h, F 6.8).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1 /h, F 6.8). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference/Ciprofloxacin_Dowling1995_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference/Ciprofloxacin_Dowling1995_reference_sim_controls.json"></dbs-fmusim>
 

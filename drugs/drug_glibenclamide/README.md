@@ -5,7 +5,7 @@
 
 - **generic name:** glibenclamide
 - **ATC codes:** `A10BB01`
-- **DrugBank:** [DB01016](https://go.drugbank.com/drugs/DB01016)
+- **DrugBank:** [DB01016](https://go.drugbank.com/drugs/DB01016) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -24,11 +24,11 @@ Glyburide was granted FDA approval on 1 May 1984.[L8117] A formulation with metf
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Rambiritch_2016_2_reference](drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_reference.md) | Rambiritch (2016) | — |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Savic_2007_lag](drugs/drug_glibenclamide/Glibenclamide_Savic2007_lag.md) | Savic RM et al., Implementation of a transit compartment…, Journal of pharmacokinetics… (2007) | [10.1007/s10928-007-9066-0](https://doi.org/10.1007/s10928-007-9066-0) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Savic_2007_transit](drugs/drug_glibenclamide/Glibenclamide_Savic2007_transit.md) | Savic RM et al., Implementation of a transit compartment…, Journal of pharmacokinetics… (2007) | [10.1007/s10928-007-9066-0](https://doi.org/10.1007/s10928-007-9066-0) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Rambiritch_2016_2_reference](drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_reference.md) | 1-compartment, oral | 5 | Rambiritch (2016) | — |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Savic_2007_lag](drugs/drug_glibenclamide/Glibenclamide_Savic2007_lag.md) | 1-compartment, oral | 8 | Savic RM et al., Implementation of a transit compartment…, Journal of pharmacokinetics… (2007) | [10.1007/s10928-007-9066-0](https://doi.org/10.1007/s10928-007-9066-0) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Savic_2007_transit](drugs/drug_glibenclamide/Glibenclamide_Savic2007_transit.md) | 1-compartment, oral | 8 | Savic RM et al., Implementation of a transit compartment…, Journal of pharmacokinetics… (2007) | [10.1007/s10928-007-9066-0](https://doi.org/10.1007/s10928-007-9066-0) |
 
 ## ADME sites
 

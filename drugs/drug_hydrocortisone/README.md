@@ -5,7 +5,8 @@
 
 - **generic name:** hydrocortisone
 - **ATC codes:** `A01AC03`, `A07EA02`, `C05AA01`, `D07AA02`, `D07BA04`, `D07CA01`, `D07XA01`, `H02AB09`, `S01BA02`, `S01BB01`, `S01CA03`, `S01CB03`, `S02BA01`, `S02CA03`, `S03CA04`
-- **DrugBank:** [DB00741](https://go.drugbank.com/drugs/DB00741)
+- **DrugBank:** [DB00741](https://go.drugbank.com/drugs/DB00741) · **PubChem:** [CID 5754](https://pubchem.ncbi.nlm.nih.gov/compound/5754)
+- **molar mass:** 362.4599 g/mol (C21H30O5) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -24,10 +25,10 @@ Hydrocortisone was granted FDA approval on 5 August 1952.[L10574]
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamitouche_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_reference.md) | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamitouche_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_reference.md) | 1-compartment (no model) | 2 | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | 1-compartment (no model) | 3 | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
 
 ## ADME sites
 

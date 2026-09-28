@@ -4,7 +4,8 @@
 
 - **generic name:** isoprenaline
 - **ATC codes:** `C01CA02`, `R03AB02`, `R03AK02`, `R03CB01`
-- **DrugBank:** [DB01064](https://go.drugbank.com/drugs/DB01064)
+- **DrugBank:** [DB01064](https://go.drugbank.com/drugs/DB01064) · **PubChem:** [CID 3779](https://pubchem.ncbi.nlm.nih.gov/compound/3779)
+- **molar mass:** 211.2576 g/mol (C11H17NO3) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q302, Q47, Q301, Q17 — no SI value to build from.
-**Second reading:** `gpt-5.6-luna` read this paper differently on `parameters[cib].parameter_id` (Q22 vs Q23) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**K21, kel, k12 and AUC∞ have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (k21, kel, k12 and AUC∞), so that value has no SI equivalent. Extracted — amoxicillin: t1/2z 0.27 h, k21 1.99 h-', kel 1.16 h-', k12 0.92 h-', CL 13.3 liters/h, V 11.8 liters, AUC∞ 37 h-', kabs 0.17 h−1.
+
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on `parameters[cib].parameter_id`: this record has Q22, the second reading Q23; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Arancibia A; Guttmann J; González G; González C et al. (1980). Antimicrobial agents and chemotherapy 17

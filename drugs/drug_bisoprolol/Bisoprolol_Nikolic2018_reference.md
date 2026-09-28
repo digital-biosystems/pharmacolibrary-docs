@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 2.4141)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 2.41).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — bisoprolol: CL/F 2.54 l/h, V 214 l, CL 0.0341 ml/min, IIV 0.0803.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Nikolic_2018)
 
 ## Model component
 <dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Nikolic2018_reference" status="needs_review" stale="false" population="patients with stable coronary artery disease" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

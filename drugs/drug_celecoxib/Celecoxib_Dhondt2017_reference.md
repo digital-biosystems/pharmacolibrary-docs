@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[po cf 1].parameter_id` (Q76 vs Q27) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The celecoxib model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values, so library placeholder defaults were substituted for these four parameters.**
+
+The record reports only V/F = 19.12 for celecoxib; clearance, volume of distribution, absorption rate constant and absorption lag time had no value in the source, so generic placeholder numbers would have stood in and the model was held back rather than published with invented values. The builder further assumed F=1 and Fm=1 without molar correction (apparent parameterization), defaulted the absorption rate constant although it was not reported in the source, and used a first-order depot input implied by the apparent (/F) parameterization. The invented-absorption deviation was judged not acceptable. A second reader also disagreed on several parameter entries, reading values (10, 0.88, 1, 0.9) where this record had none. Extracted — celecoxib: V/F 19.1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[po cf 1].parameter_id`: this record has Q76, the second reading Q27; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Dhondt L; Devreese M; Croubels S; De Baere S; Haesendonck R; Goessens T; et al. et al. (2017). Scientific reports 7
@@ -26,6 +29,9 @@ Dhondt L; Devreese M; Croubels S; De Baere S; Haesendonck R; Goessens T; et al. 
 
 ## Model component
 <dbs-pgx drug="celecoxib" model-id="Celecoxib_Dhondt2017_reference" status="model_quarantined" stale="false" population="cockatiels (Nymphicus hollandicus)" measured-compound="celecoxib, mavacoxib, meloxicam" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

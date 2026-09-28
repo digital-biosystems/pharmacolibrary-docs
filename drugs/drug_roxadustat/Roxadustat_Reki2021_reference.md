@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The roxadustat record was held back because the absorption rate constant ka and lag time Tlag were never reported in the source, so placeholder values would have been used, and the absorption input was judged invented, with the model built from the abstract alone.**
+
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The absorption rate constant ka and lag time Tlag had no values in the source, so no value was extracted and a library placeholder would have been used; the ka placeholder was judged an invented absorption deviation, which was not acceptable. The apparent parameterization (F=1, Fm=1, no molar correction) with first-order depot input was also disputed by a second reader, who read the parameterization as mechanistic and could not confirm the clearance of 1.1 L/h or the volume of distribution of 14.9 L. Extracted — roxadustat: CL/F 1.1 L/h, V 14.9 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Rekić D; Kerbusch-Herben V; Någård M; Chou J; Huang J; Bradley C; et al. et al. (2021). Clinical pharmacokinetics 60
@@ -26,6 +29,9 @@ Rekić D; Kerbusch-Herben V; Någård M; Chou J; Huang J; Bradley C; et al. et a
 
 ## Model component
 <dbs-pgx drug="roxadustat" model-id="Roxadustat_Reki2021_reference" status="needs_review" stale="false" population="dialysis- and non-dialysis-dependent patients with chronic kidney disease" measured-compound="roxadustat" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -141,6 +147,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_roxadustat/Roxadustat_Reki2021_reference/Roxadustat_Reki2021_reference.svg" alt="Roxadustat_Reki2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_roxadustat/Roxadustat_Reki2021_reference/Roxadustat_Reki2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_roxadustat/Roxadustat_Reki2021_reference/Roxadustat_Reki2021_reference_sim_controls.json"></dbs-fmusim>
 

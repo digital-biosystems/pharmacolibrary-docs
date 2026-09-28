@@ -5,7 +5,7 @@
 
 - **generic name:** sodium salicylate
 - **ATC codes:** `N02BA04`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary
@@ -16,11 +16,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Mathurkar_2018_reference](drugs/drug_sodium_salicylate/SodiumSalicylate_Mathurkar2018_reference.md) | Mathurkar S et al., Pharmacokinetics of Salicylic Acid Foll…, Animals : an open access jo… (2018) | [10.3390/ani8070122](https://doi.org/10.3390/ani8070122) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Lowenthal_1974_four_normal_subjects](drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects.md) | Lowenthal DT et al., Kinetics of salicylate elimination by a…, The Journal of clinical inv… (1974) | [10.1172/JCI107865](https://doi.org/10.1172/JCI107865) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Lowenthal_1974_six_anephric_patients](drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_six_anephric_patients.md) | Lowenthal DT et al., Kinetics of salicylate elimination by a…, The Journal of clinical inv… (1974) | [10.1172/JCI107865](https://doi.org/10.1172/JCI107865) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Mathurkar_2018_reference](drugs/drug_sodium_salicylate/SodiumSalicylate_Mathurkar2018_reference.md) | 1-compartment, oral | 3 | Mathurkar S et al., Pharmacokinetics of Salicylic Acid Foll…, Animals : an open access jo… (2018) | [10.3390/ani8070122](https://doi.org/10.3390/ani8070122) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Lowenthal_1974_four_normal_subjects](drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects.md) | 1-compartment, oral | 5 | Lowenthal DT et al., Kinetics of salicylate elimination by a…, The Journal of clinical inv… (1974) | [10.1172/JCI107865](https://doi.org/10.1172/JCI107865) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Lowenthal_1974_six_anephric_patients](drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_six_anephric_patients.md) | 1-compartment, oral | 5 | Lowenthal DT et al., Kinetics of salicylate elimination by a…, The Journal of clinical inv… (1974) | [10.1172/JCI107865](https://doi.org/10.1172/JCI107865) |
 
 ## Pharmacodynamics (PD)
 

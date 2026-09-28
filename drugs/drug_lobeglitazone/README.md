@@ -4,7 +4,8 @@
 
 - **generic name:** lobeglitazone
 - **ATC codes:** `A10BD26`, `A10BG04`
-- **DrugBank:** [DB09198](https://go.drugbank.com/drugs/DB09198)
+- **DrugBank:** [DB09198](https://go.drugbank.com/drugs/DB09198) · **PubChem:** [CID 9826451](https://pubchem.ncbi.nlm.nih.gov/compound/9826451)
+- **molar mass:** 480.54 g/mol (C24H24N4O5S) — DrugBank
 - **groups:** investigational
 
 ## About

@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q25]` (4.7 vs not captured) and 7 more field(s) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q25: this record has 4.7, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Snelder N; Ploeger BA; Luttringer O; Rigel DF; Fu F; Beil M; et al. et al. (2014). British journal of pharmacology 171
@@ -141,7 +142,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.17 /h, F 0.9).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.17 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference/Hydrochlorothiazide_Snelder2014_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference/Hydrochlorothiazide_Snelder2014_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q76 — no SI value to build from
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl].value` (105 vs 69.3) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**V/F has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — remdesivir: CL 105 L/h, V 121 L, CLm/F 15.9 L/h, Vm/F 429 L, V/F 46.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].value`: this record has 105, the second reading 69.3; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Roberts DM; Liu X; Parker SL; Burke A; Peek J; Carland JE; Murnion B; Seah V; Wallis SC; Sumi CD; Pandey S; Buscher H; Byrne A; Sandaradura I; Bowen D; Holz S; Stewart AG; Hajkowicz KM; Roberts JA et al. (2025). Clinical pharmacokinetics 64

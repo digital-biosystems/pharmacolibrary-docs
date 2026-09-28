@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The chlortetracycline record was held back because the absorption rate constant (ka) and lag time were not reported in the source and placeholder values would have been used, alongside an assumed bioavailability F=1.**
+
+The paper's abstract reports chlortetracycline V/F 40.9 L/kg, kel 0.0478 h⁻¹, CL/F 1.8 L/kg/h, t1/2z 16.2 h, AUC/dose 0.29 h·µg/L, Cmax/dose 4.5 ng/mL and tmax 23.3 h, but no absorption rate constant or lag time; since no value was extracted for ka and Tlag, library placeholders would have been used and the model was held back. The model builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization, and used a first-order depot input consistent with extravascular dosing. This invented absorption input was judged not acceptable. Because the record was built from the abstract alone, the reported summary statistics stood in for a fitted model. Extracted — chlortetracycline: V/F 40.9 L/kg, kel 0.0478 h(-1), AUC/dose 0.29 h x microg/L, CL/F 1.8 L/kg/h, t1/2z 16.2 h, Cmax/dose 4.5 ng/mL, tmax 23.3 h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Reinbold JB; Coetzee JF; Gehring R; Havel JA; Hollis LC; Olson KC; et al. et al. (2010). Journal of veterinary pharmacology and therapeutics 33
@@ -25,6 +27,9 @@ Reinbold JB; Coetzee JF; Gehring R; Havel JA; Hollis LC; Olson KC; et al. et al.
 
 ## Model component
 <dbs-pgx drug="chlortetracycline" model-id="Chlortetracycline_Reinbold2010_reference" status="needs_review" stale="false" population="group fed, ruminating, Holstein steers" measured-compound="chlortetracycline" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -128,6 +133,8 @@ Reinbold JB; Coetzee JF; Gehring R; Havel JA; Hollis LC; Olson KC; et al. et al.
 </div><figure class="pk-models-diagram"><img src="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference.svg" alt="Chlortetracycline_Reinbold2010_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_sim_controls.json"></dbs-fmusim>
 

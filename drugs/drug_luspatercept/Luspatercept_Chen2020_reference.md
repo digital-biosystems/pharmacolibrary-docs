@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/f].covariate_forms` ([] vs ['linear_fractional']) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chen N; Kassir N; Laadem A; Maxwell SE; Sriraman P; Giuseppi AC; et al. et al. (2020). CPT: pharmacometrics & systems pharmacology 9
@@ -26,6 +27,9 @@ Chen N; Kassir N; Laadem A; Maxwell SE; Sriraman P; Giuseppi AC; et al. et al. (
 
 ## Model component
 <dbs-pgx drug="luspatercept" model-id="Luspatercept_Chen2020_reference" status="curated_candidate" stale="false" population="anemic patients with myelodysplastic syndromes" measured-compound="luspatercept" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -157,6 +161,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference.svg" alt="Luspatercept_Chen2020_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.019 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_sim_controls.json"></dbs-fmusim>
 

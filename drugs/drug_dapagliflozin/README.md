@@ -5,7 +5,8 @@
 
 - **generic name:** dapagliflozin
 - **ATC codes:** `A10BD15`, `A10BD21`, `A10BD25`, `A10BD29`, `A10BD30`, `A10BK01`
-- **DrugBank:** [DB06292](https://go.drugbank.com/drugs/DB06292)
+- **DrugBank:** [DB06292](https://go.drugbank.com/drugs/DB06292) · **PubChem:** [CID 9887712](https://pubchem.ncbi.nlm.nih.gov/compound/9887712)
+- **molar mass:** 408.873 g/mol (C21H25ClO6) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ Dapagliflozin was originally approved by the FDA on Jan 08, 2014, to improve gly
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kobuchi_2025_reference](drugs/drug_dapagliflozin/Dapagliflozin_Kobuchi2025_reference.md) | Kobuchi S et al., Population Pharmacokinetic-pharmacodyna…, International journal of me… (2025) | [10.7150/ijms.111519](https://doi.org/10.7150/ijms.111519) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kobuchi_2025_reference](drugs/drug_dapagliflozin/Dapagliflozin_Kobuchi2025_reference.md) | 1-compartment, oral | 3 | Kobuchi S et al., Population Pharmacokinetic-pharmacodyna…, International journal of me… (2025) | [10.7150/ijms.111519](https://doi.org/10.7150/ijms.111519) |
 
 ## Pharmacodynamics (PD)
 

@@ -4,7 +4,7 @@
 
 - **generic name:** susoctocog alfa
 - **ATC codes:** `B02BD14`
-- **DrugBank:** [DB11606](https://go.drugbank.com/drugs/DB11606)
+- **DrugBank:** [DB11606](https://go.drugbank.com/drugs/DB11606) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

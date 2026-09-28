@@ -4,7 +4,8 @@
 
 - **generic name:** fenfluramine
 - **ATC codes:** `A08AA02`, `N03AX26`
-- **DrugBank:** [DB00574](https://go.drugbank.com/drugs/DB00574)
+- **DrugBank:** [DB00574](https://go.drugbank.com/drugs/DB00574) · **PubChem:** [CID 3337](https://pubchem.ncbi.nlm.nih.gov/compound/3337)
+- **molar mass:** 231.2573 g/mol (C12H16F3N) — DrugBank
 - **groups:** approved, illicit, investigational, withdrawn
 
 ## About

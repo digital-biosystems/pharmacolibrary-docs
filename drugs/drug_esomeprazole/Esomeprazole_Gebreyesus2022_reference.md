@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gebreyesus MS; Decloedt EH; Cluver CA; Hunfeld NGM; Helgadóttir H; Björnsson ES; et al. et al. (2022). British journal of clinical pharmacology 88
@@ -26,6 +29,9 @@ Gebreyesus MS; Decloedt EH; Cluver CA; Hunfeld NGM; Helgadóttir H; Björnsson E
 
 ## Model component
 <dbs-pgx drug="esomeprazole" model-id="Esomeprazole_Gebreyesus2022_reference" status="rejected" stale="false" population="patients with preterm preeclampsia and non-pregnant participants" measured-compound="esomeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

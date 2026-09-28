@@ -4,7 +4,7 @@
 
 - **generic name:** not captured
 - **ATC codes:** not captured
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** [CID 23976](https://pubchem.ncbi.nlm.nih.gov/compound/23976)
 - **groups:** approved
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['cilazapril', 'cilazaprilat', 'hydrolysis']] vs []) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The cilazapril record was rejected because the hydrolysis link to the metabolite cilazaprilat carries no parameter, leaving the metabolite unconnected to the dose, and the model was built from the abstract alone rather than a fitted model.**
+
+The record contains a hydrolysis link from cilazapril to cilazaprilat, but the link parameter is 'none' of unknown kind, so cilazaprilat has no quantitative path from the dose — an unlinked metabolite. The record was also built from the paper's abstract only, meaning reported summary statistics (CL 7.8 l/h, t1/2α 2.5 h, Ka 0.319 h⁻¹, LAG 2.0 h) stood in for a fitted model. A second reader disagreed on several fields: they read the parameterization as apparent rather than mechanistic, left the cilazaprilat hydrolysis link out entirely, and assigned the 7.8 l/h value to apparent oral clearance and the 2.5 h value to plasma half-life, whereas this record left those fields empty; the second reader in turn left Ka and lag empty. These disagreements leave the parameter assignments inconclusive. Extracted — cilazapril: CL 7.8 l/h, t1/2α 2.5 h, kabs 0.319 h–1, tlag 2 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has cilazapril → cilazaprilat (hydrolysis), the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gross V; Treher E; Haag K; Neis W; Wiegand U; Schölmerich J et al. (1993). Journal of hepatology 17

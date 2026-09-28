@@ -4,7 +4,7 @@
 
 - **generic name:** ecallantide
 - **ATC codes:** `B06AC03`
-- **DrugBank:** [DB05311](https://go.drugbank.com/drugs/DB05311)
+- **DrugBank:** [DB05311](https://go.drugbank.com/drugs/DB05311) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

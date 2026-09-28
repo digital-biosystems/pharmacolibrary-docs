@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;naltrexone&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/&quot;},{&quot;label&quot;:&quot;Christie_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naltrexone_Li1996_reference&quot;,&quot;label&quot;:&quot;Li_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Li1996_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Reuning1979_reference&quot;,&quot;label&quot;:&quot;Reuning_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Reuning1979_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Dunbar2007_reference&quot;,&quot;label&quot;:&quot;Dunbar_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Dunbar2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naltrexone_Reuning1979_reference&quot;,&quot;label&quot;:&quot;Reuning_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Reuning1979_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Dunbar2007_reference&quot;,&quot;label&quot;:&quot;Dunbar_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Dunbar2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Li1996_reference&quot;,&quot;label&quot;:&quot;Li_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Li1996_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong)
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q17]` (1896 vs not captured) and 11 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The naltrexone two-compartment model was rejected because its apparent clearance CL/F is recorded as -1618 mL/min/kg, a negative and pharmacokinetically implausible value.**
+
+The record lists naltrexone apparent oral clearance CL/F as -1618.0 mL/min/kg alongside V1 89.9 mL/kg, V2 588.0 mL/kg, Q 44.6 mL/min/kg and kabs 0.484 1/min. A negative clearance cannot arise from a physically meaningful model, indicating the base value or a covariate shift was misread or misrecorded. The second reader did not dispute the recorded -1618 value, so the implausible negative clearance stands as the grounds for rejection. Extracted — naltrexone: CL/F -1.62e+03 mL/ min/kg, V1 89.9 mL/kg, V2 588 mL/ kg, Q 44.6 mL/ min/kg, kabs 0.484 1/ min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 1896, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Christie JT; Bruce M; Pfitzer S; Laubscher L; Raath JP; Laurence M; et al. et al. (2025). Journal of veterinary pharmacology and therapeutics 48
@@ -26,6 +29,9 @@ Christie JT; Bruce M; Pfitzer S; Laubscher L; Raath JP; Laurence M; et al. et al
 
 ## Model component
 <dbs-pgx drug="naltrexone" model-id="Naltrexone_Christie2025_reference" status="rejected" stale="false" population="" measured-compound="naltrexone" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

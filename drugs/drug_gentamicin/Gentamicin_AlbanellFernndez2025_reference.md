@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (vancomycin vs unknown) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for gentamicin's clearance and volume of distribution.**
+
+The model was built, but gentamicin's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — gentamicin: V 0.66.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has vancomycin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Albanell-Fernández M; Rodríguez-Reyes M; Bastida C; Soy D et al. (2025). Clinical pharmacokinetics 64
@@ -26,6 +29,9 @@ Albanell-Fernández M; Rodríguez-Reyes M; Bastida C; Soy D et al. (2025). Clini
 
 ## Model component
 <dbs-pgx drug="gentamicin" model-id="Gentamicin_AlbanellFernndez2025_reference" status="model_quarantined" stale="false" population="neonates and infants" measured-compound="vancomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

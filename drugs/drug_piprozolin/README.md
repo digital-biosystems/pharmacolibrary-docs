@@ -5,7 +5,8 @@
 
 - **generic name:** piprozolin
 - **ATC codes:** `A05AX01`
-- **DrugBank:** [DB13202](https://go.drugbank.com/drugs/DB13202)
+- **DrugBank:** [DB13202](https://go.drugbank.com/drugs/DB13202) · **PubChem:** not captured
+- **molar mass:** 298.4 g/mol (C14H22N2O3S) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary
@@ -16,9 +17,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gladigau_1977_reference](drugs/drug_piprozolin/Piprozolin_Gladigau1977_reference.md) | Gladigau V et al., [Metabolism and pharmacokinetics of pip…, Arzneimittel-Forschung (1977) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gladigau_1977_reference](drugs/drug_piprozolin/Piprozolin_Gladigau1977_reference.md) | parent + metabolite (no model) | 0 | Gladigau V et al., [Metabolism and pharmacokinetics of pip…, Arzneimittel-Forschung (1977) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

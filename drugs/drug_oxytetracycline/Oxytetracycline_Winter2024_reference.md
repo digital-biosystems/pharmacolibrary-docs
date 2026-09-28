@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (mechanistic vs apparent) and 19 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The oxytetracycline two-compartment cattle model was rejected because a compartment is unreachable from the dose and the adult clearance unit could not be converted to SI, leaving tvCl (68.35) without an SI value.**
+
+The record was refused for an unreachable or orphan compartment in the two-compartment structure, and because the reported unit attached to the adult parameters (tvV1 143, tvV2 973, tvV3 2458 and tvCl 68.35) could not be converted to SI units, so clearance 68.35 entered the build without an SI value. A second reader also disagreed on several extracted values, reading tvCl as 62.67 rather than 68.35, a covariate effect of 14.96 rather than 15.74, and assigning an rse_percent of 68.35 where this record had none. The second reader further read the model as apparent rather than mechanistic parameterization and extracted a calf-to-adult volume ratio of 0.358 where this record had none, while this record carried a calf-to-adult clearance ratio of 0.570 that the second reader did not. Extracted — oxytetracycline: V1 143 adult, V2 973 adult, V3 2.46e+03 adult, CL 68.3 adult, kabs 0.235, Fab 1.42, tlag 1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Winter EA; Pelligand L; Toutain PL; Lees P; Milanova A; Gehring R et al. (2024). Frontiers in microbiology 15
@@ -26,6 +29,9 @@ Winter EA; Pelligand L; Toutain PL; Lees P; Milanova A; Gehring R et al. (2024).
 
 ## Model component
 <dbs-pgx drug="oxytetracycline" model-id="Oxytetracycline_Winter2024_reference" status="rejected" stale="false" population="calves and adult cattle" measured-compound="oxytetracycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 7 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 

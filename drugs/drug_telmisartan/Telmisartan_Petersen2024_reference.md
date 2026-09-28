@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (not captured vs 9.4) and 6 more field(s) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The telmisartan record was held back because the absorption rate constant ka and lag time Tlag were not reported and defaults were substituted, the invented first-order absorption was judged unacceptable, and the ABCC2 covariate effects were never simulated.**
+
+For telmisartan (one-compartment, apparent clearance 13.4 mL/min/kg, apparent volume of distribution 5.8 L/kg), ka and Tlag were missing from the source, so placeholder defaults were used, and the builder assumed F=1, Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input. The defaulted ka — an absorption term not reported in the source — was adjudicated 'invented absorption: not acceptable'. Although covariate effects for ABCC2 are defined (C/T −0.0269, T/T −0.0853, C/C 0.0), only the reference individual was simulated, so the covariate scenarios were not exercised. A second reader reported values for several fields left empty in this record (e.g., 9.4, 44, 9.8, 15, 21.2, 21, 28). Extracted — telmisartan: CL/F 13.4 mL/min/kg, V/F 5.8 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has none, the second reading 9.4; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-23 12:15:41.503850+00:00) predates the upstream re-run (2026-09-27 13:49:44.569966+00:00). Current validate status: `extracted`.
 
@@ -150,7 +153,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_sim_controls.json"></dbs-fmusim>
 

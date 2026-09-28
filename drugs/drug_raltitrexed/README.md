@@ -5,7 +5,8 @@
 
 - **generic name:** raltitrexed
 - **ATC codes:** `L01BA03`
-- **DrugBank:** [DB00293](https://go.drugbank.com/drugs/DB00293)
+- **DrugBank:** [DB00293](https://go.drugbank.com/drugs/DB00293) · **PubChem:** [CID 104758](https://pubchem.ncbi.nlm.nih.gov/compound/104758)
+- **molar mass:** 458.488 g/mol (C21H22N4O6S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Blair_2004_model_development](drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_development.md) | Blair EY et al., Population pharmacokinetics of raltitre…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2003.02050.x](https://doi.org/10.1111/j.1365-2125.2003.02050.x) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Blair_2004_model_validation](drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation.md) | Blair EY et al., Population pharmacokinetics of raltitre…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2003.02050.x](https://doi.org/10.1111/j.1365-2125.2003.02050.x) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Blair_2004_total_cohort](drugs/drug_raltitrexed/Raltitrexed_Blair2004_total_cohort.md) | Blair EY et al., Population pharmacokinetics of raltitre…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2003.02050.x](https://doi.org/10.1111/j.1365-2125.2003.02050.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Blair_2004_model_development](drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_development.md) | 1-compartment, IV | 3 | Blair EY et al., Population pharmacokinetics of raltitre…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2003.02050.x](https://doi.org/10.1111/j.1365-2125.2003.02050.x) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Blair_2004_model_validation](drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation.md) | 1-compartment, IV | 3 | Blair EY et al., Population pharmacokinetics of raltitre…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2003.02050.x](https://doi.org/10.1111/j.1365-2125.2003.02050.x) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Blair_2004_total_cohort](drugs/drug_raltitrexed/Raltitrexed_Blair2004_total_cohort.md) | 1-compartment, IV | 3 | Blair EY et al., Population pharmacokinetics of raltitre…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2003.02050.x](https://doi.org/10.1111/j.1365-2125.2003.02050.x) |
 
 ## ADME sites
 

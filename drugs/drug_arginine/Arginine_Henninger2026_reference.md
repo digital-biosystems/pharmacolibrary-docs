@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Henninger RH; Schouten WM; Arana B; Gillon JY; Mowbray CE; Kratz JM; Van Bocxlaer K; Dorlo TPC et al. (2026). Clinical and translational science 19
@@ -25,6 +25,9 @@ Henninger RH; Schouten WM; Arana B; Gillon JY; Mowbray CE; Kratz JM; Van Bocxlae
 
 ## Model component
 <dbs-pgx drug="Arginine" model-id="Arginine_Henninger2026_reference" status="curated_candidate" stale="false" population="" measured-compound="arginine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -123,6 +126,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference.svg" alt="Arginine_Henninger2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.36 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference_sim_controls.json"></dbs-fmusim>
 

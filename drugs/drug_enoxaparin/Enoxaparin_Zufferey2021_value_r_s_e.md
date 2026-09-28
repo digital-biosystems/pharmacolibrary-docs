@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for enoxaparin's bioavailability, clearance, volume of distribution and absorption lag time.**
+
+The model was built, but enoxaparin's bioavailability, clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — enoxaparin: kabs 0.48 h-1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Zufferey PJ; Dupont A; Lanoiselée J; Bauters A; Poissy J; Goutay J; et al. et al. (2021). Thrombosis research 205
@@ -26,6 +29,9 @@ Zufferey PJ; Dupont A; Lanoiselée J; Bauters A; Poissy J; Goutay J; et al. et a
 
 ## Model component
 <dbs-pgx drug="enoxaparin" model-id="Enoxaparin_Zufferey2021_value_r_s_e" status="model_quarantined" stale="false" population="COVID-19 critically ill patients" measured-compound="enoxaparin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

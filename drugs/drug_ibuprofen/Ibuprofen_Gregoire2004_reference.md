@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 0.2818)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (ibuprofen racemate vs unknown) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.282).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. None of the extracted parameters is ibuprofen's own; they describe R-ibuprofen and S-ibuprofen. Extracted — R-ibuprofen and S-ibuprofen: CL 5 mL/h, V 62 mL/kg, kabs 1.1 h -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ibuprofen racemate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `ibuprofen racemate`, measured `R-ibuprofen and S-ibuprofen`.
 

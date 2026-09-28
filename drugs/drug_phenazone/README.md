@@ -5,7 +5,7 @@
 
 - **generic name:** phenazone
 - **ATC codes:** `N02BB01`, `S02DA03`
-- **DrugBank:** [DB01435](https://go.drugbank.com/drugs/DB01435)
+- **DrugBank:** [DB01435](https://go.drugbank.com/drugs/DB01435) · **PubChem:** not captured
 - **groups:** approved
 
 ## About
@@ -24,10 +24,10 @@ In combination with benzocaine in otic solutions, antipyrine is indicated for th
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Doyle_1981_reference](drugs/drug_phenazone/Phenazone_Doyle1981_reference.md) | Doyle E et al., Comparative pharmacokinetics of antipyr…, Toxicology (1981) | [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Eichelbaum_1982_reference](drugs/drug_phenazone/Phenazone_Eichelbaum1982_reference.md) | Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Doyle_1981_reference](drugs/drug_phenazone/Phenazone_Doyle1981_reference.md) | 1-compartment, oral | 2 | Doyle E et al., Comparative pharmacokinetics of antipyr…, Toxicology (1981) | [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Eichelbaum_1982_reference](drugs/drug_phenazone/Phenazone_Eichelbaum1982_reference.md) | 1-compartment, oral | 4 | Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982) | — |
 
 ## Pharmacodynamics (PD)
 

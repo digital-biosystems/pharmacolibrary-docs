@@ -4,7 +4,7 @@
 
 - **generic name:** coagulation factor X
 - **ATC codes:** `B02BD13`
-- **DrugBank:** [DB13148](https://go.drugbank.com/drugs/DB13148)
+- **DrugBank:** [DB13148](https://go.drugbank.com/drugs/DB13148) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;mexiletine&quot;,&quot;href&quot;:&quot;drugs/drug_mexiletine/&quot;},{&quot;label&quot;:&quot;Clancy_2007 \u00b7 PGx SCN5A&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mexiletine_Vozeh1982_reference&quot;,&quot;label&quot;:&quot;Vozeh_1982_reference&quot;,&quot;href&quot;:&quot;drugs/drug_mexiletine/Mexiletine_Vozeh1982_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

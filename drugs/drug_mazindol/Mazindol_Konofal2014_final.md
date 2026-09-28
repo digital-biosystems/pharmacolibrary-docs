@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for mazindol's clearance and volume of distribution.**
+
+The model was built, but mazindol's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — mazindol: tlag 0.3 h, kabs 1.02 h−1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 15:08:44.743109+00:00) predates the upstream re-run (2026-09-22 07:20:04.434543+00:00). Current validate status: `extracted`.
 
@@ -27,6 +29,9 @@ Konofal E; Zhao W; Laouénan C; Lecendreux M; Kaguelidou F; Benadjaoud L; et al.
 
 ## Model component
 <dbs-pgx drug="mazindol" model-id="Mazindol_Konofal2014_final" status="extracted" stale="true" population="children with ADHD" measured-compound="mazindol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

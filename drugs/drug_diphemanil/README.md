@@ -4,7 +4,8 @@
 
 - **generic name:** diphemanil
 - **ATC codes:** `A03AB15`, `A03CA08`
-- **DrugBank:** [DB13720](https://go.drugbank.com/drugs/DB13720)
+- **DrugBank:** [DB13720](https://go.drugbank.com/drugs/DB13720) · **PubChem:** not captured
+- **molar mass:** 278.418 g/mol (C20H24N) — DrugBank
 - **groups:** approved, vet_approved, withdrawn
 
 ## About

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The isosorbide dinitrate model was rejected because its metabolite compartments, isosorbide 5-mononitrate and isosorbide 2-mononitrate, are unlinked, and it was built from the abstract alone rather than a fitted model.**
+
+The structure assigns a metabolism rate constant Kfm from isosorbide dinitrate to both isosorbide 5-mononitrate and isosorbide 2-mononitrate, but these metabolites have no path from the dose, so the check for unreachable or orphan compartments and unlinked metabolites failed. In addition, the record is abstract-only: only the paper's abstract was read, so the reported summary statistics (t1/2z 4.7 min, Vss 90 L, CL 136 L/hr, Fab 29%) stood in for a fitted model. Extracted — isosorbide dinitrate: t1/2z 4.7 minutes, Vss 90 L, CL 136 L/hr, Fab 29 %.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Straehl P; Galeazzi RL et al. (1985). Clinical pharmacology and therapeutics 38
@@ -25,6 +27,9 @@ Straehl P; Galeazzi RL et al. (1985). Clinical pharmacology and therapeutics 38
 
 ## Model component
 <dbs-pgx drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Straehl1985_reference" status="rejected" stale="false" population="healthy adults" measured-compound="isosorbide dinitrate" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

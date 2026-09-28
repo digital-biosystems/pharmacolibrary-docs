@@ -5,7 +5,7 @@
 
 - **generic name:** phospholipids
 - **ATC codes:** `A05BA10`
-- **DrugBank:** [DB11133](https://go.drugbank.com/drugs/DB11133)
+- **DrugBank:** [DB11133](https://go.drugbank.com/drugs/DB11133) · **PubChem:** not captured
 - **groups:** approved, investigational, nutraceutical
 
 ## About
@@ -22,9 +22,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Hummel_1975_non pregnant female rats](drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md) | Hummel L, Studies on the synthesis of liver phosp…, Acta biologica et medica Ge… (1975) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Hummel_1975_non pregnant female rats](drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md) | — (no model) | 0 | Hummel L, Studies on the synthesis of liver phosp…, Acta biologica et medica Ge… (1975) | — |
 
 ## Pharmacodynamics (PD)
 

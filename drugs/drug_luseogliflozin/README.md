@@ -5,7 +5,8 @@
 
 - **generic name:** luseogliflozin
 - **ATC codes:** `A10BK07`
-- **DrugBank:** [DB12214](https://go.drugbank.com/drugs/DB12214)
+- **DrugBank:** [DB12214](https://go.drugbank.com/drugs/DB12214) · **PubChem:** [CID 11988953](https://pubchem.ncbi.nlm.nih.gov/compound/11988953)
+- **molar mass:** 434.55 g/mol (C23H30O6S) — DrugBank
 - **groups:** investigational
 
 ## About
@@ -20,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Samukawa_2017_reference](drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference.md) | Samukawa (2017) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Samukawa_2017_reference](drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference.md) | 1-compartment, oral | 4 | Samukawa (2017) | — |
 
 ## Pharmacodynamics (PD)
 

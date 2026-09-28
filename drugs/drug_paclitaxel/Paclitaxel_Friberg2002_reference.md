@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is paclitaxel's own; they describe leukocytes, neutrophils.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `docetaxel, paclitaxel, etoposide, DMDC, irinotecan, vinflunine`, measured `leukocytes, neutrophils`.
 
@@ -27,6 +29,9 @@ Friberg LE; Henningsson A; Maas H; Nguyen L; Karlsson MO et al. (2002). Journal 
 
 ## Model component
 <dbs-pgx drug="paclitaxel" model-id="Paclitaxel_Friberg2002_reference" status="rejected" stale="false" population="cancer patients" measured-compound="leukocytes, neutrophils" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

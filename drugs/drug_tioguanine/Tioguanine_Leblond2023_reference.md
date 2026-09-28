@@ -5,7 +5,7 @@
 
 # tioguanine — `Tioguanine_Leblond2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The tioguanine record was held back because the absorption rate constant ka and lag time Tlag were not reported in the source and library placeholder values were substituted, with an assumed first-order depot input.**
+
+The record reports only CL/F = 1.1 L/h/kg and V/F = 6.5 L/kg for tioguanine; ka and Tlag had no values in the source, so placeholder values would have been used in their place, and the absorption check failed with 'invented_absorption: not acceptable' because ka was defaulted rather than reported. The model builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization implying extravascular first-order depot dosing. A second reader further disputed the extracted V/F value (2.3 vs 4.6) and supplied values for three fields left empty in this record. Extracted — tioguanine: CL/F 1.1 L/h/kg, V/F 6.5 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q311: this record has none, the second reading 5; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Leblond P; Tresch-Bruneel E; Probst A; Néant N; Solas C; Sterin A; Boulanger T; Aerts I; Faure-Conter C; Bertozzi AI; Chastagner P; Entz-Werlé N; De Carli E; Deley ML; Bouche G; André N et al. (2023). Cancers 15
@@ -25,6 +29,9 @@ Leblond P; Tresch-Bruneel E; Probst A; Néant N; Solas C; Sterin A; Boulanger T;
 
 ## Model component
 <dbs-pgx drug="tioguanine" model-id="Tioguanine_Leblond2023_reference" status="needs_review" stale="false" population="" measured-compound="tioguanine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +62,23 @@ Leblond P; Tresch-Bruneel E; Probst A; Néant N; Solas C; Sterin A; Boulanger T;
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q311]` | not captured | 5 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q325]` | not captured | 7 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q364]` | not captured | 2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 2.3 | 4.6 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -125,6 +141,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_tioguanine/Tioguanine_Leblond2023_reference/Tioguanine_Leblond2023_reference.svg" alt="Tioguanine_Leblond2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_tioguanine/Tioguanine_Leblond2023_reference/Tioguanine_Leblond2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tioguanine/Tioguanine_Leblond2023_reference/Tioguanine_Leblond2023_reference_sim_controls.json"></dbs-fmusim>
 

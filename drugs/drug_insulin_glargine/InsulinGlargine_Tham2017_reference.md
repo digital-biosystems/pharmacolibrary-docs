@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (insulin vs insulin glargine) and 10 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Rejected because a structural parameter failed a dimensional check and the dose effect on clearance is negative (-0.282), an implausible clearance shift, with one reported unit unconvertible to SI.**
+
+The record for insulin glargine (Tham_2017, healthy adults, 1-compartment) carries a covariate effect of dose on clearance of -0.282, a negative shift that makes clearance decrease with dose and was judged implausible. A structural parameter also failed a dimensional consistency check, and one reported unit could not be converted to SI units, so that parameter entered the record without an SI value. A second reader disputed most extracted values, reading absorption lag 0.378 h, absorption rate constant 0.0830 1/h, apparent clearance 74.5 L/h, apparent volume of distribution 768 L, and a baseline endogenous insulin concentration of 79.7 where the record has none, so the numbers themselves are contested. Extracted — insulin glargine: Fab 1 Unit, kabs 0.0365 Unit, tlag 0.265 h, V/F 43 L, CL/F 30.5 L/h, CL -0.282 Unit.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has insulin, the second reading insulin glargine; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tham LS; Schneck K; Ertekin A; Reviriego J et al. (2017). Journal of clinical pharmacology 57
@@ -26,6 +29,9 @@ Tham LS; Schneck K; Ertekin A; Reviriego J et al. (2017). Journal of clinical ph
 
 ## Model component
 <dbs-pgx drug="insulin glargine" model-id="InsulinGlargine_Tham2017_reference" status="rejected" stale="false" population="healthy adults" measured-compound="insulin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

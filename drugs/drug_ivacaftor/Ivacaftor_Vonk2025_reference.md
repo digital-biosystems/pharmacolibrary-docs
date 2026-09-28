@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['elexacaftor', 'm23-elexacaftor', 'metabolism'], ['tezacaftor', 'm1-tezacaftor', 'metabolism'], ['ivacaftor', 'hydroxymethyl-ivacaftor', 'metabolism'], ['hydroxymethyl-ivacaftor', 'ivacaftor-carboxylate', 'metabolism']] vs [['elexacaftor', 'elexacaftor metabolite', 'metabolism'], ['tezacaftor', 'tezacaftor metabolite', 'metabolism'], ['ivacaftor', 'ivacaftor metabolite', 'metabolism']]) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The ivacaftor, elexacaftor and tezacaftor metabolism links carry no clearance values, leaving the metabolites (M23-elexacaftor, M1-tezacaftor, hydroxymethyl-ivacaftor, ivacaftor-carboxylate) unreachable from the dose, and the volume 59.0 L/70 kg could not be converted to SI.**
+
+All four metabolism links in the triple-combination model (elexacaftor to M23-elexacaftor, tezacaftor to M1-tezacaftor, ivacaftor to hydroxymethyl-ivacaftor, and hydroxymethyl-ivacaftor to ivacaftor-carboxylate) were recorded with no link parameter, so each metabolite compartment has no path from the dose and the structure check failed. The reported distribution volume of 59.0 L per 70 kg also lacked a unit convertible to SI, so that parameter reached the record without an SI value. A second reader further disagreed on the parameter assignments: this record attributes an AUC of 19.0 mg*h/L to ivacaftor-M6 while the second reader read 21.2 for ivacaftor-M1, and it attributes apparent clearance 1.76 L/h and volume 59.0 L to the combination while the second reader read these as CL elx/F and CL/F. Extracted — ivacaftor: AUC 19 mg*h/L; elexacaftor-tezacaftor-ivacaftor: CL/F 1.76 L/h, V 59 L, CL 1.5 L/h, V/F 59 L/ 70 kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has elexacaftor → m23-elexacaftor (metabolism); tezacaftor → m1-tezacaftor (metabolism); ivacaftor → hydroxymethyl-ivacaftor (metabolism) …, the second reading elexacaftor → elexacaftor metabolite (metabolism); tezacaftor → tezacaftor metabolite (metabolism); ivacaftor → ivacaftor metabolite (metabolism); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Vonk SEM; Terheggen-Lagro SWJ; Haarman EG; Hashimoto S; Maitland-van der Zee AH; Mathôt RAA; et al. et al. (2025). Journal of cystic fibrosis : official journal of the European Cystic Fibrosis Society 24
@@ -26,6 +29,9 @@ Vonk SEM; Terheggen-Lagro SWJ; Haarman EG; Hashimoto S; Maitland-van der Zee AH;
 
 ## Model component
 <dbs-pgx drug="ivacaftor" model-id="Ivacaftor_Vonk2025_reference" status="rejected" stale="false" population="children with cystic fibrosis" measured-compound="elexacaftor-tezacaftor-ivacaftor" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

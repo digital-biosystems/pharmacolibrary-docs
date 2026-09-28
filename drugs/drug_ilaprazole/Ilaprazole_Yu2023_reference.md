@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The ilaprazole two-compartment record lists central and peripheral volumes (V 6.795 L, V2 5.544 L) and clearance (3.394 L/h) but no intercompartmental clearance, leaving the peripheral compartment unreachable from the dose, so it was rejected.**
+
+The record describes a two-compartment structure for ilaprazole with a central volume of 6.795 L, a peripheral volume (Vp) of 5.544 L, and a clearance of 3.394 L/h, plus covariate effects of weight on Vp (1.545) and sex on clearance (-0.213). However, no intercompartmental clearance parameter connecting the central and peripheral compartments was extracted, so the peripheral compartment has no path from the administered dose. With that compartment orphaned, drug amounts and the weight effect on its volume could never influence the predicted ilaprazole profile, and the model was rejected. Extracted — ilaprazole: V 6.79 L, V2 5.54 L, CL 3.39 L/h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Yu M; Liu S; Wu X; Wang H et al. (2023). Frontiers in pharmacology 14
@@ -25,6 +27,9 @@ Yu M; Liu S; Wu X; Wang H et al. (2023). Frontiers in pharmacology 14
 
 ## Model component
 <dbs-pgx drug="ilaprazole" model-id="Ilaprazole_Yu2023_reference" status="rejected" stale="false" population="healthy subjects and patients with duodenal ulcer" measured-compound="ilaprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted, plus 2 covariate effects.
 
 **Parameterization:** mechanistic.
 

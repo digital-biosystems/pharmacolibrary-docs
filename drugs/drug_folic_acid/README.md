@@ -5,7 +5,8 @@
 
 - **generic name:** folic acid
 - **ATC codes:** `B03AD01`, `B03AD02`, `B03AD03`, `B03AD04`, `B03AD05`, `B03AE01`, `B03AE02`, `B03BB01`, `V04CX02`
-- **DrugBank:** [DB00158](https://go.drugbank.com/drugs/DB00158)
+- **DrugBank:** [DB00158](https://go.drugbank.com/drugs/DB00158) · **PubChem:** [CID 6037](https://pubchem.ncbi.nlm.nih.gov/compound/6037)
+- **molar mass:** 441.3975 g/mol (C19H19N7O6) — DrugBank
 - **groups:** approved, investigational, nutraceutical, vet_approved
 
 ## About
@@ -24,9 +25,9 @@ In order to function within the body, folic acid must first be reduced by the en
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Crider_2019_women of reproductive age](drugs/drug_folic_acid/FolicAcid_Crider2019_women_of_reproductive_age.md) | Crider KS et al., Systematic Review and Bayesian Meta-ana…, Nutrients (2019) | [10.3390/nu11010071](https://doi.org/10.3390/nu11010071) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Crider_2019_women of reproductive age](drugs/drug_folic_acid/FolicAcid_Crider2019_women_of_reproductive_age.md) | — (no model) | 0 | Crider KS et al., Systematic Review and Bayesian Meta-ana…, Nutrients (2019) | [10.3390/nu11010071](https://doi.org/10.3390/nu11010071) |
 
 ## Pharmacodynamics (PD)
 

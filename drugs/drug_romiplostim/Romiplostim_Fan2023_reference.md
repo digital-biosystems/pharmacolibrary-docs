@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[tmp]` (not captured vs 106) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The romiplostim elimination rate constant kel is reported as 52.94 ×10–4/h with the unit given only as 'units', which cannot be converted to SI, so the structural parameter carries a dimensional mismatch and the record was rejected.**
+
+The parameter kel (labelled 'KE (×10–4/h)') has value 52.94 with the unit reported only as 'units', a unit that could not be converted to SI, so the elimination rate constant entered the model without a usable SI value; this dimension mismatch on a structural parameter is the stated cause of rejection. The record also omits two parameters the second reader extracted (tmp = 106 and tret = 35.13, both null here), and disagrees on kae: this record gives 0.0269 1/h while the second reader left it null. These extraction deviations leave the romiplostim parameter set incomplete and inconsistent between readers. Extracted — romiplostim: kel 52.9 units, kabs 0.0269 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of tmp: this record has none, the second reading 106; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Fan_2023)
 
 ## Model component
 <dbs-pgx drug="romiplostim" model-id="Romiplostim_Fan2023_reference" status="rejected" stale="false" population="rats with chemotherapy-induced anemia and thrombocytopenia" measured-compound="romiplostim" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,8 @@
 
 - **generic name:** methotrexate
 - **ATC codes:** `L01BA01`, `L04AX03`
-- **DrugBank:** [DB00563](https://go.drugbank.com/drugs/DB00563)
+- **DrugBank:** [DB00563](https://go.drugbank.com/drugs/DB00563) · **PubChem:** [CID 126941](https://pubchem.ncbi.nlm.nih.gov/compound/126941)
+- **molar mass:** 454.4393 g/mol (C20H22N8O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

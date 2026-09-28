@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_cmax; T1_tmax.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (atenolol and metoprolol vs atenolol, metoprolol) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The metoprolol/atenolol rat model was held back because its simulated peak concentration (0.00028469390330175033 vs 0.025 µg/mL-equivalent) and time of peak (1.81 vs 5.0 min) miss the paper's values, and an unreported absorption rate was invented.**
+
+The model reproduces neither the paper's Cmax (expected 0.025, 0.0228, 0.0143, 0.0206; model 0.00028469390330175033, ratios 0.0114–0.0199) nor its tmax (expected 5.0 min, model 1.8099519719819221 h, ratio 0.362). The absorption rate constant ka was not reported in the source, so a default was substituted — an invented absorption the record flags as not acceptable — and F and Tlag were likewise left at defaults for missing source values. Additionally, a reported unit could not be converted to SI, so a parameter reached the model without an SI value. A second reader returned null for all three parameter values (CL 16.04 mL/min/kg, k01 1.19 mg/min/kg, Vss 1.41 L/kg), leaving the extraction unconfirmed. Extracted — atenolol and metoprolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, V 1.41 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atenolol and metoprolol, the second reading atenolol, metoprolol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kir F; Sahin S; Jusko WJ et al. (2025). European journal of drug metabolism and pharmacokinetics 50
@@ -26,6 +29,9 @@ Kir F; Sahin S; Jusko WJ et al. (2025). European journal of drug metabolism and 
 
 ## Model component
 <dbs-pgx drug="metoprolol" model-id="Metoprolol_Kir2025_reference" status="needs_review" stale="false" population="malnourished and non-malnourished rats" measured-compound="atenolol and metoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -147,6 +153,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference.svg" alt="Metoprolol_Kir2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_sim_controls.json"></dbs-fmusim>
 

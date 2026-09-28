@@ -4,7 +4,7 @@
 
 - **generic name:** pepsin
 - **ATC codes:** `A09AA03`, `A09AC01`
-- **DrugBank:** [DB13198](https://go.drugbank.com/drugs/DB13198)
+- **DrugBank:** [DB13198](https://go.drugbank.com/drugs/DB13198) · **PubChem:** not captured
 - **groups:** approved, withdrawn
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[5% (b) + 95%]` (not captured vs 720.7) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The ascorbic acid record reports no distribution volume and no clearance, and its only parameter, AUC%ext (150.4, unit 'e'), has a dimension mismatch with a unit that could not be converted to SI, so it is not a compartmental popPK model.**
+
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The single structural parameter, AUC%ext, carries the value 150.4 with the verbatim unit 'e', a unit that could not be converted to SI, so the parameter was recorded without an SI value and a dimension mismatch was flagged. A second reader instead read 720.7 for the parameter labelled '5% (b) + 95%' and left '5% (f) + 95%' empty, disagreeing with this record's 150.4, so the extracted value itself is uncertain. Extracted — ascorbic acid: AUC%ext 150 e.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 5% (b) + 95%: this record has none, the second reading 720.7; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Bluck LJ; Izzard AP; Bates CJ et al. (1996). Journal of mass spectrometry : JMS 31
@@ -26,6 +29,9 @@ Bluck LJ; Izzard AP; Bates CJ et al. (1996). Journal of mass spectrometry : JMS 
 
 ## Model component
 <dbs-pgx drug="ascorbic acid" model-id="AscorbicAcid_Bluck1996_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ascorbic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

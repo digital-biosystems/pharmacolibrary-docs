@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q49, Q22, Q63, Q64, Q30 — no SI value to build from
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (polymyxin_b vs polymyxin B) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**Kabs, CL, V1, V2 and Q have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — polymyxin b: kabs 14.7, CL 0.437, V1 0.74, V2 0.743, Q 0.315, fu 0.166.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading polymyxin B; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chauzy A; Akrong G; Aranzana-Climent V; Moreau J; Prouvensier L; Mirfendereski H; et al. et al. (2022). Frontiers in pharmacology 13
@@ -26,6 +29,9 @@ Chauzy A; Akrong G; Aranzana-Climent V; Moreau J; Prouvensier L; Mirfendereski H
 
 ## Model component
 <dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Chauzy2022_reference" status="needs_review" stale="false" population="neutropenic mice with Acinetobacter baumannii thigh infection" measured-compound="polymyxin_b" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

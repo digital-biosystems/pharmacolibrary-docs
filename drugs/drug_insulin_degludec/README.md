@@ -4,7 +4,7 @@
 
 - **generic name:** insulin degludec
 - **ATC codes:** `A10AD06`, `A10AE06`, `A10AE56`
-- **DrugBank:** [DB09564](https://go.drugbank.com/drugs/DB09564)
+- **DrugBank:** [DB09564](https://go.drugbank.com/drugs/DB09564) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;troglitazone&quot;,&quot;href&quot;:&quot;drugs/drug_troglitazone/&quot;},{&quot;label&quot;:&quot;Mansour_2011 \u00b7 PD apoptosis&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # apoptosis — PD  <span class="pk-badge pk-badge--green">extracted</span>

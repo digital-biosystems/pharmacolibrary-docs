@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 2 scholar param(s) emitted or defaulted — got 1 covered.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (R- and S-citalopram and desmethylcitalopram vs citalopram) and 11 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The citalopram model was held back because elimination clearance had no extracted value and a library default was substituted, with V/F also uncovered.**
+
+The record for R- and S-citalopram and desmethylcitalopram in Alzheimer's patients reports CL Rm/F of 24.4 L/h but no elimination clearance value, so a placeholder stood in and the model was held back rather than published with an invented number. The parameter-coverage check expected 2 parameters emitted or defaulted but only 1 was covered, with V/F (1390 L) neither emitted nor defaulted. A reported unit could not be converted to SI, so that parameter entered the build without an SI value, and the covariate effects the record defines were not simulated — only the reference individual was. A second reader also disagreed on several entries, reading citalopram as the primary analyte, an absorption rate constant of 1, and four covariate coefficients on the agitation-severity scale (13, 22.1, 16.3, 24.4) where the record has none. Extracted — citalopram: V/F 1.39e+03, CL 24.4, Vss 167, add_error 13.4 additive.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R- and S-citalopram and desmethylcitalopram, the second reading citalopram; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `citalopram`, measured `R- and S-citalopram and desmethylcitalopram`.
 
@@ -30,6 +33,9 @@ Akil A; Bies RR; Pollock BG; Avramopoulos D; Devanand DP; Mintzer JE; et al. et 
 
 ## Model component
 <dbs-pgx drug="citalopram" model-id="Citalopram_Akil2016_reference" status="model_quarantined" stale="false" population="Alzheimer&#39;s disease patients with agitation" measured-compound="R- and S-citalopram and desmethylcitalopram" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

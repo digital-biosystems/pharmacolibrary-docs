@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (VWF/FVIII concentrate vs VWF/FVIII concentrate (Humate P/Haemate P)) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — von willebrand factor: CL 460, Vnorm 4.35e+03, V 6.49e+03 mL/70 kg, kabs 0.5 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has VWF/FVIII concentrate, the second reading VWF/FVIII concentrate (Humate P/Haemate P); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `VWF/FVIII concentrate`, measured `von Willebrand factor`.
 
@@ -28,6 +31,9 @@ Bukkems LH; Heijdra JM; de Jager NCB; Hazendonk HCAM; Fijnvandraat K; Meijer K; 
 
 ## Model component
 <dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Bukkems2021_base" status="needs_review" stale="false" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

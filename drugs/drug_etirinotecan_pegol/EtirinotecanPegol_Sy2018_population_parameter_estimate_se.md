@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** the model was built but never simulated
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**The model was built but has not been simulated yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sy SKB; Chia YL; Gordi T; Hoch U; Eldon MA et al. (2018). Cancer chemotherapy and pharmacology 81
@@ -25,6 +25,9 @@ Sy SKB; Chia YL; Gordi T; Hoch U; Eldon MA et al. (2018). Cancer chemotherapy an
 
 ## Model component
 <dbs-pgx drug="etirinotecan pegol" model-id="EtirinotecanPegol_Sy2018_population_parameter_estimate_se" status="not_simulated" stale="false" population="cancer patients with solid tumors" measured-compound="etirinotecan pegol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

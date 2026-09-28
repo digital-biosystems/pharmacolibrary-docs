@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — paracetamol: CL 6.2 ml/min/kg, tlag 4.2 min.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Brookhuis SAM; Allegaert K; Hanff LM; Lub-de Hooge MN; Dallmann A; Mian P et al. (2021). Pharmaceutics 13

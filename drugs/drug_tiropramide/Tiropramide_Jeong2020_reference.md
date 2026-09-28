@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc0-inf]` (419.54 vs not captured) and 6 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax, AUCt and AUC∞), so that value has no SI equivalent. Extracted — tiropramide: kabs 3.19, t1/2ka 3.18, CL/F 4.67e+05 mL/h, tlag 0.196 h, kel 2.91 h−1, tmax 1.9 h, Cmax 105 ng/mL, AUCt 395 h·ng/mL, … (+1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0-inf: this record has 419.54, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jeong SH; Jang JH; Cho HY; Lee YB et al. (2020). Pharmaceutics 12
@@ -26,6 +29,9 @@ Jeong SH; Jang JH; Cho HY; Lee YB et al. (2020). Pharmaceutics 12
 
 ## Model component
 <dbs-pgx drug="tiropramide" model-id="Tiropramide_Jeong2020_reference" status="needs_review" stale="false" population="healthy Korean adults" measured-compound="tiropramide" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

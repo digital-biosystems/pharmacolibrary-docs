@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_cmax; T1_t_half_terminal
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/f].value` (292 vs 281) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 2.88e-05, model 6.55e-05); the model does not reproduce the paper's terminal half-life (paper 6.77, model 2.7).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — simvastatin: kabs 1.83 h-1, CL/F 292 L/h, V1/F 1.06e+03 L, Q/F 73.2 L/h, V2/F 1.06e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].value`: this record has 292, the second reading 281; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kim MS; Baek IH et al. (2021). Journal of veterinary pharmacology and therapeutics 44
@@ -164,7 +167,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.83 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.83 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_simvastatin/Simvastatin_Kim2021_reference/Simvastatin_Kim2021_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_simvastatin/Simvastatin_Kim2021_reference/Simvastatin_Kim2021_reference_sim_controls.json"></dbs-fmusim>
 

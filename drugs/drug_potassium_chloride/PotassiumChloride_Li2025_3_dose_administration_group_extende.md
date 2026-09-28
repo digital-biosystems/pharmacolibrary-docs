@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (potassium chloride vs potassium chloride extended-release tablets and potassium citrate granules) and 1 more field(s) — a structural parameter, so the record is disputed.
+**The potassium record was rejected because the paper reports no distribution volume and no clearance, making it an exposure/outcome study rather than a compartmental population PK model, and the AUC∞ unit mmol·h/L could not be converted to SI.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The paper (Li_2025, potassium chloride in cardiovascular emergencies) reports only C0 (3.34 mmol/L), Tmax (6.11 h), Cmax (4.15 mmol/L), Ka (0.32 per hour), t1/2 (6.55 h) and AUC∞ (141.74 mmol·h/L) for potassium; with no volume of distribution and no clearance or elimination rate, the one-compartment structure cannot be a compartmental population PK model. A dimension mismatch was also flagged on a structural parameter, and the AUC∞ unit mmol·h/L could not be converted to SI, so that parameter was carried without an SI value. A second reader disagreed on the dosed compound, reading it as potassium chloride extended-release tablets and potassium citrate granules rather than potassium chloride, and on which AUC parameter the reported value 141.74 mmol·h/L corresponds to. Extracted — potassium chloride: C0 3.34 mmol/L, tmax 6.11 h, Cmax 4.15 mmol/L, kabs 0.32 per hour, t1/2z 6.55 h, AUC∞ 142 mmol·h/L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has potassium chloride, the second reading potassium chloride extended-release tablets and potassium citrate granules; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `potassium chloride`, measured `potassium`.
 
@@ -27,6 +31,9 @@ Li X; Qu M; Li H; Li T et al. (2025). Frontiers in cardiovascular medicine 12
 
 ## Model component
 <dbs-pgx drug="potassium chloride" model-id="PotassiumChloride_Li2025_3_dose_administration_group_extende" status="rejected" stale="false" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

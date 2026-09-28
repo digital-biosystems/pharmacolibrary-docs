@@ -4,7 +4,7 @@
 
 - **generic name:** tilactase
 - **ATC codes:** `A09AA04`
-- **DrugBank:** [DB13761](https://go.drugbank.com/drugs/DB13761)
+- **DrugBank:** [DB13761](https://go.drugbank.com/drugs/DB13761) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

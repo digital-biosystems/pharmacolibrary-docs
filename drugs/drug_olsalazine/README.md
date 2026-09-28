@@ -4,7 +4,8 @@
 
 - **generic name:** olsalazine
 - **ATC codes:** `A07EC03`
-- **DrugBank:** [DB01250](https://go.drugbank.com/drugs/DB01250)
+- **DrugBank:** [DB01250](https://go.drugbank.com/drugs/DB01250) · **PubChem:** [CID 6003770](https://pubchem.ncbi.nlm.nih.gov/compound/6003770)
+- **molar mass:** 302.239 g/mol (C14H10N2O6) — DrugBank
 - **groups:** approved
 
 ## About

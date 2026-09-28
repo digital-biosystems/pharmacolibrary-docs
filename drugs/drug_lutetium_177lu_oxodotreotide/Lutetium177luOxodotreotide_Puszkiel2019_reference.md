@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** missing key parameters — none reported by this paper.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (lutetium_177lu_oxodotreotide vs 177Lu-Dotatate) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lutetium_177lu_oxodotreotide, the second reading 177Lu-Dotatate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Puszkiel A; Bauriaud-Mallet M; Bourgeois R; Dierickx L; Courbon F; Chatelut E et al. (2019). Clinical pharmacokinetics 58
@@ -26,6 +29,9 @@ Puszkiel A; Bauriaud-Mallet M; Bourgeois R; Dierickx L; Courbon F; Chatelut E et
 
 ## Model component
 <dbs-pgx drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Puszkiel2019_reference" status="rejected" stale="false" population="cancer patients" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,8 @@
 
 - **generic name:** prucalopride
 - **ATC codes:** `A06AX05`
-- **DrugBank:** [DB06480](https://go.drugbank.com/drugs/DB06480)
+- **DrugBank:** [DB06480](https://go.drugbank.com/drugs/DB06480) · **PubChem:** [CID 3052762](https://pubchem.ncbi.nlm.nih.gov/compound/3052762)
+- **molar mass:** 367.87 g/mol (C18H26ClN3O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -36,11 +37,11 @@ CIC is one of the most common chronic functional gastrointestinal disorders worl
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [van_2016_estimate](drugs/drug_prucalopride/Prucalopride_van2016_estimate.md) | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_pru_usa_12](drugs/drug_prucalopride/Prucalopride_van2016_pru_usa_12.md) | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_spd555_303](drugs/drug_prucalopride/Prucalopride_van2016_spd555_303.md) | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [van_2016_estimate](drugs/drug_prucalopride/Prucalopride_van2016_estimate.md) | 1-compartment (no model) | 7 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_pru_usa_12](drugs/drug_prucalopride/Prucalopride_van2016_pru_usa_12.md) | 1-compartment (no model) | 3 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_spd555_303](drugs/drug_prucalopride/Prucalopride_van2016_spd555_303.md) | 1-compartment (no model) | 5 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
 
 ## Pharmacodynamics (PD)
 

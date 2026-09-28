@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (vinblastine vs vincristine, vinblastine, vindesine) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The vinblastine two-compartment record in rhesus monkeys was rejected because a structural parameter failed a dimensional check, and the AUC∞ unit nM·min could not be expressed in SI.**
+
+The record reports vinblastine half-lives (t1/2α 1.9 min, t1/2β 152 min), volumes (V1 0.210 l/kg, V 1.50 l/kg), clearance 7.0 ml/min/kg, micro-rate constants (k10 0.054, k12 0.281, k21 0.031 min⁻¹) and a lag time of 0.17 h, but a dimension mismatch was flagged on a structural parameter. The AUC∞ of 31146 nM·min is reported in a unit that could not be converted to SI, so the value entered the review without an SI equivalent. A second reader also disagreed on the dosed compound, reading vincristine, vinblastine and vindesine where the record lists only vinblastine. Extracted — vinblastine: t1/2α 1.9 min, t1/2β 152 min, V1 0.21 l/kg, V 1.5 l/kg, AUC∞ 3.11e+04 nM · min, CL 7 ml/min/kg, kel 0.054 min⁻¹, k12 0.281 min⁻¹, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has vinblastine, the second reading vincristine, vinblastine, vindesine. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Sethi VS; Surratt P; Spurr CL et al. (1984). Cancer chemotherapy and pharmacology 12

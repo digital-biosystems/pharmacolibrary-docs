@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_beta; T1_tmax.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc0‐τ, mean (cv%)]` (not captured vs 183) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 648, model 407); the model does not reproduce the paper's time of the peak (tmax) (paper 0.5, model 0.183).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUCt, Cmax, Cavg and Ctrough), so that value has no SI equivalent. Extracted — eptinezumab: AUCt 158 h·μg mL−1, Cmax 0.279 μg mL−1, Cavg 0.0785 μg mL−1, Ctrough 0.0232 μg mL−1, Css 0.091 μg mL−1, CL 0.0062 L h−1, V 3.64 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0‐τ, mean (cv%): this record has none, the second reading 183; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Baker B; Schaeffler B; Beliveau M; Rubets I; Pederson S; Trinh M; et al. et al. (2020). Pharmacology research & perspectives 8
@@ -26,6 +29,9 @@ Baker B; Schaeffler B; Beliveau M; Rubets I; Pederson S; Trinh M; et al. et al. 
 
 ## Model component
 <dbs-pgx drug="eptinezumab" model-id="Eptinezumab_Baker2020_reference" status="needs_review" stale="false" population="patients with episodic and chronic migraine and healthy volunteers" measured-compound="eptinezumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -164,6 +170,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference/Eptinezumab_Baker2020_reference.svg" alt="Eptinezumab_Baker2020_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference/Eptinezumab_Baker2020_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference/Eptinezumab_Baker2020_reference_sim_controls.json"></dbs-fmusim>
 

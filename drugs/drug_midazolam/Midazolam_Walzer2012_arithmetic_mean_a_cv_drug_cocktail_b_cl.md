@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc 0-24]` (8783 vs not captured) and 8 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The record was rejected because the midazolam metabolite 1-hydroxymidazolam has no metabolic link parameter, and the clobazam clearance unit ml/kg/hour could not be converted to SI.**
+
+The structure links midazolam to its metabolite 1-hydroxymidazolam by metabolism but with link_parameter 'none', leaving that metabolite without a quantitative formation path from the dose — an unlinked metabolite. Additionally, the clobazam clearance (43.2 ml/kg/hour) carries a unit that could not be converted to SI, so it entered the record without an SI value. The exposure values for N-desmethylclobazam (AUC 30883 and 31320 ng·h/mL, Cmax 2208 ng/mL) were read by a second reader only as nulls with alternative values (40622, 40028, 4676), so the disagreements are inconclusive. Extracted — N-desmethylclobazam: AUC 3.09e+04 ng·h/mL, AUC∞ 3.13e+04 ng·h/mL, Cmax 2.21e+03 ng/ml; midazolam: AUCt 8.78e+03 ng·h/mL; clobazam: CL 43.2 ml/kg/hour.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc 0-24: this record has 8783, the second reading none; it also differs on 8 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Walzer M; Bekersky I; Blum RA; Tolbert D et al. (2012). Pharmacotherapy 32

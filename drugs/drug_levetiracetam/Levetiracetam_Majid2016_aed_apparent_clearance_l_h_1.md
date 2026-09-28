@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for levetiracetam's volume of distribution.**
+
+The model was built, but levetiracetam's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (CLb), so that value has no SI equivalent. Extracted — levetiracetam: CL 3.65 l h −1, CLb 3.38 males.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `perampanel`, measured `concomitant antiepileptic drugs`.
 
@@ -27,6 +29,9 @@ Majid O; Laurenza A; Ferry J; Hussein Z et al. (2016). British journal of clinic
 
 ## Model component
 <dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1" status="model_quarantined" stale="false" population="patients with refractory partial-onset seizures" measured-compound="concomitant antiepileptic drugs" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -4,7 +4,8 @@
 
 - **generic name:** nortriptyline
 - **ATC codes:** `N06AA10`
-- **DrugBank:** [DB00540](https://go.drugbank.com/drugs/DB00540)
+- **DrugBank:** [DB00540](https://go.drugbank.com/drugs/DB00540) · **PubChem:** [CID 4543](https://pubchem.ncbi.nlm.nih.gov/compound/4543)
+- **molar mass:** 263.3767 g/mol (C19H21N) — DrugBank
 - **groups:** approved, investigational
 
 ## About

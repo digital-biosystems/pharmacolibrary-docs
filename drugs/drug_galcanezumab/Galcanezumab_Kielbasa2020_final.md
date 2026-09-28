@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — galcanezumab: CL/F 0.601.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kielbasa W; Quinlan T et al. (2020). Journal of clinical pharmacology 60
@@ -26,6 +29,9 @@ Kielbasa W; Quinlan T et al. (2020). Journal of clinical pharmacology 60
 
 ## Model component
 <dbs-pgx drug="galcanezumab" model-id="Galcanezumab_Kielbasa2020_final" status="needs_review" stale="false" population="healthy individuals and patients with migraine" measured-compound="galcanezumab" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 1 extracted, plus 3 covariate effects.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

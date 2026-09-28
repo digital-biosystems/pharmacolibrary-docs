@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** nonlinear topology.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (ferric carboxymaltose vs ferric carboxymaltose (FCM)) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (engineer: the topology is outside the template set the engineer can build).
-<sub>owner: **engineer**</sub>
+**The iron model's structure is nonlinear and cannot be expressed as a standard compartmental model, and a second reader could not confirm any of its four parameter values, so the record was held for review.**
+
+The record describes an iron model in mice with clearance 0.46 L/h, apparent distribution volume 11.6 L, absorption rate 2.6 h−1 and lag time 0.235 h, but its model structure is flagged as nonlinear — a structure outside the set of standard compartmental forms that can be built, which is why it was held back. A second reader disagreed on the dose compound (ferric carboxymaltose vs ferric carboxymaltose (FCM)) and read null for all four parameter values (absorption rate, apparent distribution volume, clearance, lag time), meaning those numbers could not be confirmed from the source. The verdict is needs_review. Extracted — iron: CL 0.46 L/h, V 11.6 L, kabs 2.6 h−1, tlag 0.235 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ferric carboxymaltose, the second reading ferric carboxymaltose (FCM); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `ferric carboxymaltose`, measured `iron`.
 
@@ -28,6 +31,9 @@ Fan X; Cao K; Wong RSM; Yan X et al. (2025). Drug delivery and translational res
 
 ## Model component
 <dbs-pgx drug="Iron" model-id="Iron_Fan2025_reference" status="needs_review" stale="false" population="mice (iron deficient, iron adequate, iron loaded)" measured-compound="iron" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+
+**Model structure:** nonlinear / manual; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

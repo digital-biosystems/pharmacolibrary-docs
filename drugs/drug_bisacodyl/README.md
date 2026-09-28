@@ -4,7 +4,8 @@
 
 - **generic name:** bisacodyl
 - **ATC codes:** `A06AB02`, `A06AG02`
-- **DrugBank:** [DB09020](https://go.drugbank.com/drugs/DB09020)
+- **DrugBank:** [DB09020](https://go.drugbank.com/drugs/DB09020) · **PubChem:** [CID 2391](https://pubchem.ncbi.nlm.nih.gov/compound/2391)
+- **molar mass:** 361.3906 g/mol (C22H19NO4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

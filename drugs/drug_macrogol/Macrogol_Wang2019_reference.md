@@ -5,7 +5,7 @@
 
 # macrogol — `Macrogol_Wang2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The macrogol record was held back because the absorption rate constant ka was not reported in the source and a default placeholder was substituted, alongside an apparent (F=1) extravascular parameterization and several extracted values a second reader disputed.**
+
+The record reports macrogol CL/F of 353.43 ml/h/kg and a V/F of 39.2617 L that was not fitted but derived from CL·t½/ln2, with F=1 and Fm=1 assumed and no molar correction. The absorption rate constant ka and Tlag were missing from the source, so library defaults were substituted — an invented absorption input that the adjudication judged not acceptable. A second reader also disagreed on several extracted values, e.g. 36 versus 128.53, 1.1 versus 2.57, and nulls where the second reader read 8.6, 15.6 and 773.42. Extracted — macrogol: CL/F 353 ml/h/kg, V/F 39.3 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 8.6; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang C; Cheng S; Zhang Y; Ding Y; Chong H; Xing H; et al. et al. (2019). Viruses 11
@@ -25,6 +29,9 @@ Wang C; Cheng S; Zhang Y; Ding Y; Chong H; Xing H; et al. et al. (2019). Viruses
 
 ## Model component
 <dbs-pgx drug="macrogol" model-id="Macrogol_Wang2019_reference" status="needs_review" stale="false" population="" measured-compound="macrogol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +62,25 @@ Wang C; Cheng S; Zhang Y; Ding Y; Chong H; Xing H; et al. et al. (2019). Viruses
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.571 (8/14 fields) | 6 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q21]` | not captured | 8.6 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q321]` | 36 | 128.53 | mismatch |
+| `gpt-oss:120b` | `values[Q352]` | 773.42 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 1.1 | 2.57 | mismatch |
+| `gpt-oss:120b` | `values[Q75]` | not captured | 15.6 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q76]` | not captured | 773.42 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +145,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_macrogol/Macrogol_Wang2019_reference/Macrogol_Wang2019_reference.svg" alt="Macrogol_Wang2019_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_macrogol/Macrogol_Wang2019_reference/Macrogol_Wang2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_macrogol/Macrogol_Wang2019_reference/Macrogol_Wang2019_reference_sim_controls.json"></dbs-fmusim>
 

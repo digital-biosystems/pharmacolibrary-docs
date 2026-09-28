@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sullivan J; Blea J; McKemie DS; Kass PH; Knych HK et al. (2026). Journal of veterinary pharmacology and therapeutics 49
@@ -25,6 +27,9 @@ Sullivan J; Blea J; McKemie DS; Kass PH; Knych HK et al. (2026). Journal of vete
 
 ## Model component
 <dbs-pgx drug="betamethasone" model-id="Betamethasone_Sullivan2026_reference" status="rejected" stale="false" population="exercised thoroughbred horses" measured-compound="betamethasone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

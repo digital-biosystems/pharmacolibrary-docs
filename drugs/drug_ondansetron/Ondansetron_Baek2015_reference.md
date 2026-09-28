@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The ondansetron beagle record was rejected because the extracted volume of 1.8 mL and clearance of 525.0 mL/h fall outside the physiological window, consistent with a unit or scale extraction error, and only abstract summary statistics were available.**
+
+The record reports ondansetron parameters from Baek_2015 in beagles: Cmax 11.5 ng/mL, AUClast 15.9 ng·h/mL, terminal half-life 1.3 h, clearance 525.0 mL·h⁻¹, and a brain volume of 1.8 mL. The clearance-to-volume magnitudes were judged physiologically implausible, with a unit or scale extraction error suspected. Because the source was abstract-only, these reported summary statistics stood in for a fitted model, so no full model could be validated. Extracted — ondansetron: Cmax 11.5 ng/mL, AUClast 15.9 ng·h/mL, t1/2z 1.3 h, CL 525 mL⋅h -1, V 1.8 mL.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Baek IH; Lee BY; Kang J; Kwon KI et al. (2015). Journal of veterinary pharmacology and therapeutics 38
@@ -25,6 +27,9 @@ Baek IH; Lee BY; Kang J; Kwon KI et al. (2015). Journal of veterinary pharmacolo
 
 ## Model component
 <dbs-pgx drug="ondansetron" model-id="Ondansetron_Baek2015_reference" status="rejected" stale="false" population="beagles" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

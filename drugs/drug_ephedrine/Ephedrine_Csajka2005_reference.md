@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (32 vs not captured) and 4 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The ephedrine parent–metabolite record was rejected because the absorption rate constant kabs carries a dimension mismatch (0.064 l·min⁻¹ instead of min⁻¹), and the record was built from the paper's abstract alone rather than a fitted model.**
+
+The structural absorption rate constant for ephedrine is recorded as 0.064 l·min⁻¹, a dimension mismatch for a first-order rate constant, which triggered the rejection. The record is abstract-only, so the reported summary statistics stood in for a fitted model, compounding uncertainty in all extracted values (CL 0.083 l·min⁻¹, V 38.6 l, kabs 0.064, Frel 32 %). A second reader returned null for every parameter, including the relative bioavailability of 32 %, so no independent confirmation of any value exists. Extracted — ephedrine: CL 0.083 l min(-1), V 38.6 l, kabs 0.064 l min(-1), Frel 32 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 32, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Csajka C; Haller CA; Benowitz NL; Verotta D et al. (2005). British journal of clinical pharmacology 59
@@ -26,6 +29,9 @@ Csajka C; Haller CA; Benowitz NL; Verotta D et al. (2005). British journal of cl
 
 ## Model component
 <dbs-pgx drug="ephedrine" model-id="Ephedrine_Csajka2005_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="ephedrine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

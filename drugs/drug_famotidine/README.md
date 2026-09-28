@@ -5,7 +5,8 @@
 
 - **generic name:** famotidine
 - **ATC codes:** `A02BA03`
-- **DrugBank:** [DB00927](https://go.drugbank.com/drugs/DB00927)
+- **DrugBank:** [DB00927](https://go.drugbank.com/drugs/DB00927) · **PubChem:** [CID 3325](https://pubchem.ncbi.nlm.nih.gov/compound/3325)
+- **molar mass:** 337.445 g/mol (C8H15N7O2S3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -28,11 +29,11 @@ Over-the-counter famotidine is used for the management and prevention of heartbu
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ikawa_2007_reference](drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md) | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Maish_1998_reference](drugs/drug_famotidine/Famotidine_Maish1998_reference.md) | Maish WA et al., Pharmacokinetics of famotidine in patie…, Journal of clinical pharmac… (1998) | [10.1177/009127009803801104](https://doi.org/10.1177/009127009803801104) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [McCann_2023_reference](drugs/drug_famotidine/Famotidine_McCann2023_reference.md) | McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span> | [Ikawa_2007_reference](drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md) | 1-compartment, oral | 4 | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Maish_1998_reference](drugs/drug_famotidine/Famotidine_Maish1998_reference.md) | 1-compartment, oral | 8 | Maish WA et al., Pharmacokinetics of famotidine in patie…, Journal of clinical pharmac… (1998) | [10.1177/009127009803801104](https://doi.org/10.1177/009127009803801104) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [McCann_2023_reference](drugs/drug_famotidine/Famotidine_McCann2023_reference.md) | 1-compartment, oral | 4 | McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2) |
 
 ## Pharmacodynamics (PD)
 

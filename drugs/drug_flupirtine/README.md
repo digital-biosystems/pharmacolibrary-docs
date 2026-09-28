@@ -5,7 +5,8 @@
 
 - **generic name:** flupirtine
 - **ATC codes:** `N02BG07`
-- **DrugBank:** [DB06623](https://go.drugbank.com/drugs/DB06623)
+- **DrugBank:** [DB06623](https://go.drugbank.com/drugs/DB06623) · **PubChem:** [CID 53276](https://pubchem.ncbi.nlm.nih.gov/compound/53276)
+- **molar mass:** 304.3195 g/mol (C15H17FN4O2) — DrugBank
 - **groups:** investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Giorgi_2016_reference](drugs/drug_flupirtine/Flupirtine_Giorgi2016_reference.md) | Giorgi M et al., Pharmacokinetics and disposition of flu…, Veterinary journal (London,… (2016) | [10.1016/j.tvjl.2015.08.019](https://doi.org/10.1016/j.tvjl.2015.08.019) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Giorgi_2016_reference](drugs/drug_flupirtine/Flupirtine_Giorgi2016_reference.md) | 1-compartment (no model) | 2 | Giorgi M et al., Pharmacokinetics and disposition of flu…, Veterinary journal (London,… (2016) | [10.1016/j.tvjl.2015.08.019](https://doi.org/10.1016/j.tvjl.2015.08.019) |
 
 ## Pharmacodynamics (PD)
 

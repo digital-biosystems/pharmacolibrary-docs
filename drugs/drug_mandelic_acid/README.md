@@ -4,7 +4,8 @@
 
 - **generic name:** mandelic acid
 - **ATC codes:** `B05CA06`, `J01XX06`
-- **DrugBank:** [DB13218](https://go.drugbank.com/drugs/DB13218)
+- **DrugBank:** [DB13218](https://go.drugbank.com/drugs/DB13218) · **PubChem:** not captured
+- **molar mass:** 152.149 g/mol (C8H8O3) — DrugBank
 - **groups:** approved
 
 ## About

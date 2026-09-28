@@ -5,7 +5,7 @@
 
 - **generic name:** icatibant
 - **ATC codes:** `B06AC02`
-- **DrugBank:** [DB06196](https://go.drugbank.com/drugs/DB06196)
+- **DrugBank:** [DB06196](https://go.drugbank.com/drugs/DB06196) · **PubChem:** [CID 71364](https://pubchem.ncbi.nlm.nih.gov/compound/71364)
 - **groups:** approved, investigational
 
 ## About
@@ -24,10 +24,10 @@ Icatibant was approved by the FDA on August 25, 2011, and by the EMA in 2008 as 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_typical_value](drugs/drug_icatibant/Icatibant_Wang2021_typical_value.md) | Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_typical_value_rse](drugs/drug_icatibant/Icatibant_Wang2021_typical_value_rse.md) | Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_typical_value](drugs/drug_icatibant/Icatibant_Wang2021_typical_value.md) | 1-compartment, oral | 3 | Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_typical_value_rse](drugs/drug_icatibant/Icatibant_Wang2021_typical_value_rse.md) | 1-compartment, oral | 2 | Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768) |
 
 ## Pharmacodynamics (PD)
 

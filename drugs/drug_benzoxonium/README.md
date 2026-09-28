@@ -4,7 +4,7 @@
 
 - **generic name:** Benzoxonium
 - **ATC codes:** `A01AB14`, `D08AJ05`
-- **DrugBank:** [DB13565](https://go.drugbank.com/drugs/DB13565)
+- **DrugBank:** [DB13565](https://go.drugbank.com/drugs/DB13565) · **PubChem:** not captured
 - **groups:** experimental
 
 ## Extraction summary

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The metformin rat model was rejected because the reported volumes V1 and V2 carry dimensionally inconsistent units and the three-compartment structure contains a compartment with no connection to the dose.**
+
+The structural volume parameters V1 (0.03) and V2 (0.01) are reported in units of (mg/kg)/(μg/mL), a dimension mismatch for volume-of-distribution parameters that should be in L/kg like the reported Vz/F (0.04 L/kg). The three-compartment topology also includes an unreachable or orphan compartment, i.e. a compartment with no path from the administered dose. In addition, one reported unit could not be converted to SI, so that parameter entered the model without an SI value. Extracted — metformin: tmax 1 h, t1/2z 2.75 h, MRT 4.29 h, V/F 0.04 L/kg, CL/F 0.01 L/kg*hr, V1 0.03 μg/mL, V2 0.01 μg/mL, k12 0.45, … (+3).
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Patel O; Muller CJF; Joubert E; Rosenkranz B; Taylor MJC; Louw J; et al. et al. (2019). Frontiers in pharmacology 10

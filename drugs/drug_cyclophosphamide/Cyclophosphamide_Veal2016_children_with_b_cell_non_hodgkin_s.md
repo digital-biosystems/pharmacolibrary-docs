@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Veal GJ; Cole M; Chinnaswamy G; Sludden J; Jamieson D; Errington J; et al. et al. (2016). European journal of cancer (Oxford, England : 1990) 55
@@ -25,6 +27,9 @@ Veal GJ; Cole M; Chinnaswamy G; Sludden J; Jamieson D; Errington J; et al. et al
 
 ## Model component
 <dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Veal2016_children_with_b_cell_non_hodgkin_s" status="rejected" stale="false" population="children with B-cell non-Hodgkin&#39;s lymphoma" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

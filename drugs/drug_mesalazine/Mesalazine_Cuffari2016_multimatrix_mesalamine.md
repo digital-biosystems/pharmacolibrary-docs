@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[% dose absorbed, mean]` (22.1 vs not captured) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for Ac-5-ASA's clearance and volume of distribution and the rate at which Ac-5-ASA is formed.**
+
+The model was built, but Ac-5-ASA's clearance and volume of distribution and the rate at which Ac-5-ASA is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — mesalazine: CL 85.6 L/h, V 109 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of % dose absorbed, mean: this record has 22.1, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `mesalazine`, measured `5-ASA`.
 
@@ -28,6 +31,9 @@ Cuffari C; Pierce D; Korczowski B; Fyderek K; Van Heusen H; Hossack S; et al. et
 
 ## Model component
 <dbs-pgx drug="mesalazine" model-id="Mesalazine_Cuffari2016_multimatrix_mesalamine" status="model_quarantined" stale="false" population="children and adolescents with ulcerative colitis" measured-compound="5-ASA" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

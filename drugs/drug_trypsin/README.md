@@ -4,7 +4,7 @@
 
 - **generic name:** trypsin
 - **ATC codes:** `B06AA07`, `D03BA01`
-- **DrugBank:** [DB11237](https://go.drugbank.com/drugs/DB11237)
+- **DrugBank:** [DB11237](https://go.drugbank.com/drugs/DB11237) · **PubChem:** not captured
 - **groups:** approved, investigational, vet_approved
 
 ## About

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;nesiritide&quot;,&quot;href&quot;:&quot;drugs/drug_nesiritide/&quot;},{&quot;label&quot;:&quot;Dabour_2026 \u00b7 PD GDF15&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # GDF15 — PD  <span class="pk-badge pk-badge--green">extracted</span>

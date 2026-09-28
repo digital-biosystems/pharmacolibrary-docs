@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;papaverine&quot;,&quot;href&quot;:&quot;drugs/drug_papaverine/&quot;},{&quot;label&quot;:&quot;Rehman_2022 \u00b7 PD tracheal contraction&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Papaverine_Ritschel1977_reference&quot;,&quot;label&quot;:&quot;Ritschel_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_papaverine/Papaverine_Ritschel1977_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

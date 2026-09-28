@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc]` (27.8 vs not captured) and 4 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — sumatriptan: Cmax 8.1 ng/mL, t1/2z 1.4 hours, AUC 27.8 ng*h/mL, CL 197 L/h, V 751 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 27.8, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Christensen ML; Mottern RK; Jabbour JT; Fuseau E et al. (2004). Journal of clinical pharmacology 44
@@ -26,6 +29,9 @@ Christensen ML; Mottern RK; Jabbour JT; Fuseau E et al. (2004). Journal of clini
 
 ## Model component
 <dbs-pgx drug="sumatriptan" model-id="Sumatriptan_Christensen2004_reference" status="needs_review" stale="false" population="children with migraine" measured-compound="sumatriptan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

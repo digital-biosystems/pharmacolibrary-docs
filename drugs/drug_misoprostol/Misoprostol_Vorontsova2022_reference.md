@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The misoprostol acid absorption rate constant ka is reported with the unit 'buccal, 25 μg' instead of a rate unit (1/h), a dimension mismatch on a structural parameter that could not be converted to SI, so the model was rejected.**
+
+The record lists ka for misoprostol acid as 0.709 with the verbatim unit 'buccal, 25 μg', which is a dosing-route and dose label rather than an inverse-time unit, so no SI value could be derived for this structural parameter. The other parameters (CL/F 730 L/h, V/F 610 L, Vmax/F 5.45 pg/ml, Km 2.5 pg) carry convertible units, but the unconvertible ka unit meant the parameter entered model assembly without an SI value. The verdict is rejection on this dimension mismatch. Extracted — misoprostol acid: CL/F 730 L/h, V/F 610 L, kabs 0.709 buccal, 25 μg, Vmax 5.45 pg/ml, Km 2.5 pg.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `misoprostol`, measured `misoprostol acid`.
 
@@ -27,6 +29,9 @@ Vorontsova Y; Haas DM; Flannery K; Masters AR; Silva LL; Pierson RC; et al. et a
 
 ## Model component
 <dbs-pgx drug="misoprostol" model-id="Misoprostol_Vorontsova2022_reference" status="rejected" stale="false" population="women undergoing labor induction at term" measured-compound="misoprostol acid" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

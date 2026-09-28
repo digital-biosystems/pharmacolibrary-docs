@@ -5,7 +5,7 @@
 
 # nalbuphine — `Nalbuphine_Nie2023_estimates`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for nalbuphine's bioavailability, clearance, volume of distribution, absorption lag time, central→peripheral rate constant and peripheral→central rate constant.**
+
+The model was built, but nalbuphine's bioavailability, clearance, volume of distribution, absorption lag time, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — nalbuphine: CL 32.9, V1 31, Q 261, V2 85.9, kabs 0.357 h-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q317: this record has 2.9, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Nie X; Gao X; Gao J; Heng T; Zhang Y; Sun Y; Feng Z; Jia L; Wang M et al. (2023). Frontiers in pharmacology 14
@@ -25,6 +29,9 @@ Nie X; Gao X; Gao J; Heng T; Zhang Y; Sun Y; Feng Z; Jia L; Wang M et al. (2023)
 
 ## Model component
 <dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Nie2023_estimates" status="model_quarantined" stale="false" population="adults undergoing general anesthesia surgery" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -67,9 +74,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q317]` | 2.9 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

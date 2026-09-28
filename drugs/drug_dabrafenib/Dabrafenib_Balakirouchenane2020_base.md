@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 3 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (dabrafenib vs dabrafenib, trametinib) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**Dabrafenib's clearance, distribution volume and absorption lag time had no extracted values, so library placeholders would have stood in, and V2/F and Q/F were also uncovered, so the model was quarantined.**
+
+The record lists CL/F 17.7 L/h, V1/F 39.5 L and tlag 0.50 h for dabrafenib, yet the established finding states these had no value, meaning a library placeholder would have been used and the model held back rather than published with an invented number. The parameter coverage check found only 3 of 5 expected parameters covered, with V2/F and Q/F neither emitted nor defaulted. The structure also mismatched the parent–metabolite topology, being a one-compartment enteral model instead. A second reader further disagreed that the dose compound was dabrafenib plus trametinib rather than dabrafenib alone. Extracted — dabrafenib: CL/F 17.7 L/h, V1/F 39.5 L, kabs 1.8 1/h, Q/F 3.85 L/h, V2/F 5.23 L, tlag 0.5 h; hydroxy-dabrafenib: V1/F 19.6 L, CL/F 22.8 L/h, Q/F 7.39 L/h, V2/F 25.7 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dabrafenib, the second reading dabrafenib, trametinib; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Balakirouchenane D; Guégan S; Csajka C; Jouinot A; Heidelberger V; Puszkiel A; et al. et al. (2020). Cancers 12

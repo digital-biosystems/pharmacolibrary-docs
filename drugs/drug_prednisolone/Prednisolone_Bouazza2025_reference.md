@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[βfdose]` (not captured vs -0.28) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of βfdose: this record has none, the second reading -0.28. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -28,6 +29,9 @@ Bouazza N; Semeraro M; Lui G; Froelicher-Bournaud L; Choupeaux L; Treluyer JM; e
 
 ## Model component
 <dbs-pgx drug="prednisolone" model-id="Prednisolone_Bouazza2025_reference" status="curated_candidate" stale="false" population="systemic lupus erythematosus patients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -146,6 +150,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference.svg" alt="Prednisolone_Bouazza2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 80000 mg, single dose, first-order absorption (ka 1.19 /h, lag 10.2 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_sim_controls.json"></dbs-fmusim>
 

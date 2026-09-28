@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bretylium: t1/2z 535 min, Fab 27 per cent, CLR 735 ml min-1, Vss 589 i.v., V 167 L, kabs 0.537 h−1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Garrett ER; Green JR; Bialer M et al. (1982). Biopharmaceutics & drug disposition 3
@@ -25,6 +27,9 @@ Garrett ER; Green JR; Bialer M et al. (1982). Biopharmaceutics & drug dispositio
 
 ## Model component
 <dbs-pgx drug="Bretylium" model-id="Bretylium_Garrett1982_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

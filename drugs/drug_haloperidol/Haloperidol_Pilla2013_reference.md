@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[bhaz: placebo].parameter_id` (Q341 vs Q342) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The haloperidol model was held back because the absorption rate constant ka and the lag time Tlag were not reported in the source, so library default values were substituted, and this invented absorption was judged not acceptable.**
+
+The record lists ka (Ka, value 6) and tlag (value 6, delay in drug effect in days) among the parameters, but the model builder's deviations state that ka and Tlag were defaulted because their values were missing from the source, meaning the absorption was invented rather than estimated. Additionally, the reported unit for ka (h j1, i.e. per hour) could not be converted to SI, so that parameter entered the model without an SI value. The apparent-parameter assumption (F=1, Fm=1, no molar correction) was also applied. A second reader disagreed on how the placebo decay parameter and the kt parameter should be classified, though these disagreements concern naming rather than the numeric values. Extracted — haloperidol: CL/F 86 L/h, Q/F 12 L/h, V1/F 9 L, V2/F 12 L, kabs 6 h j1, sigma 0.44, E0 0.5, Cmax 4, … (+5).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[bhaz: placebo].parameter_id`: this record has Q341, the second reading Q342; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Pilla_2013)
 
 ## Model component
 <dbs-pgx drug="haloperidol" model-id="Haloperidol_Pilla2013_reference" status="needs_review" stale="false" population="patients with schizophrenia" measured-compound="haloperidol" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 13 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -183,6 +189,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_haloperidol/Haloperidol_Pilla2013_reference/Haloperidol_Pilla2013_reference.svg" alt="Haloperidol_Pilla2013_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_haloperidol/Haloperidol_Pilla2013_reference/Haloperidol_Pilla2013_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_haloperidol/Haloperidol_Pilla2013_reference/Haloperidol_Pilla2013_reference_sim_controls.json"></dbs-fmusim>
 

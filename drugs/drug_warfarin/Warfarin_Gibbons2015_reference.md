@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'enzalutamide carboxylic acid metabolite', 'metabolism'], ['n-desmethyl enzalutamide', 'enzalutamide carboxylic acid metabolite', 'metabolism']] vs [['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'enzalutamide carboxylic acid metabolite', 'metabolism'], ['n-desmethyl enzalutamide', 'enzalutamide carboxylic acid metabolite', 'metabolism'], ['pioglitazone', 'hydroxy-pioglitazone (m-iv)', 'metabolism'], ['midazolam', '1-hydroxy-midazolam', 'metabolism'], ['omeprazole', '5-hydroxy-omeprazole', 'metabolism']]) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The enzalutamide record was rejected because both metabolites, N-desmethyl enzalutamide and the carboxylic acid metabolite, have no compartments (n_cmt 0), leaving them unlinked, and a reported unit could not be converted to SI.**
+
+The structure lists N-desmethyl enzalutamide and the enzalutamide carboxylic acid metabolite each with n_cmt 0, so these metabolites are unreachable from the enzalutamide dose despite the three metabolism links carrying formation clearance. Additionally, a reported unit could not be converted to SI, so a parameter entered the model without a usable numeric value. A second reader also disagreed on the extracted values, reading AUC∞ as 30.0 ng·h/mL instead of 9.19 and Cmax as 9.45 ng/mL instead of 3.22, and listed additional metabolism links for pioglitazone, midazolam and omeprazole absent from this record. Extracted — warfarin: AUC∞ 9.19 ng·h/mL, Cmax 3.22 ng/mL, Ctrough 12 μg/mL, AUCt 322 μg·h/mL, CL/F 0.52 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has enzalutamide → n-desmethyl enzalutamide (metabolism); enzalutamide → enzalutamide carboxylic acid metabolite (metabolism); n-desmethyl enzalutamide → enzalutamide carboxylic acid metabolite (metabolism), the second reading enzalutamide → n-desmethyl enzalutamide (metabolism); enzalutamide → enzalutamide carboxylic acid metabolite (metabolism); n-desmethyl enzalutamide → enzalutamide carboxylic acid metabolite (metabolism) …; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gibbons JA; de Vries M; Krauwinkel W; Ohtsu Y; Noukens J; van der Walt JS; et al. et al. (2015). Clinical pharmacokinetics 54

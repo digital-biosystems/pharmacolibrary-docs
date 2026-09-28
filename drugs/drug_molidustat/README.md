@@ -4,7 +4,8 @@
 
 - **generic name:** molidustat
 - **ATC codes:** `B03XA09`
-- **DrugBank:** [DB15642](https://go.drugbank.com/drugs/DB15642)
+- **DrugBank:** [DB15642](https://go.drugbank.com/drugs/DB15642) · **PubChem:** not captured
+- **molar mass:** 314.309 g/mol (C13H14N8O2) — DrugBank
 - **groups:** investigational
 
 ## About

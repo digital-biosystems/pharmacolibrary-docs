@@ -5,7 +5,8 @@
 
 - **generic name:** tolazamide
 - **ATC codes:** `A10BB05`
-- **DrugBank:** [DB00839](https://go.drugbank.com/drugs/DB00839)
+- **DrugBank:** [DB00839](https://go.drugbank.com/drugs/DB00839) · **PubChem:** [CID 5503](https://pubchem.ncbi.nlm.nih.gov/compound/5503)
+- **molar mass:** 311.4 g/mol (C14H21N3O3S) — DrugBank
 - **groups:** approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Welling_1982_healthy male volunteers](drugs/drug_tolazamide/Tolazamide_Welling1982_healthy_male_volunteers.md) | Welling PG et al., Bioavailability of tolazamide from tabl…, Journal of pharmaceutical s… (1982) | [10.1002/jps.2600711119](https://doi.org/10.1002/jps.2600711119) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Welling_1982_healthy male volunteers](drugs/drug_tolazamide/Tolazamide_Welling1982_healthy_male_volunteers.md) | — (no model) | 0 | Welling PG et al., Bioavailability of tolazamide from tabl…, Journal of pharmaceutical s… (1982) | [10.1002/jps.2600711119](https://doi.org/10.1002/jps.2600711119) |
 
 ## ADME sites
 

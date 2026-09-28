@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (apraglutide vs unknown) and 5 more field(s) — a structural parameter, so the record is disputed.
+**The paper reports none of the model's key parameters.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has apraglutide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Bolognani F; Kruithof AC; Schulthess P; Machacek M; de Kam ML; Bergmann KR; et al. et al. (2023). The Journal of pharmacology and experimental therapeutics 386
@@ -25,6 +29,9 @@ Bolognani F; Kruithof AC; Schulthess P; Machacek M; de Kam ML; Bergmann KR; et a
 
 ## Model component
 <dbs-pgx drug="apraglutide" model-id="Apraglutide_Bolognani2023_reference" status="rejected" stale="false" population="healthy adults" measured-compound="apraglutide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

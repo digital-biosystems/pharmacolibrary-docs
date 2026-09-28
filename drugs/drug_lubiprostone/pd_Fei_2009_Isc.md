@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;lubiprostone&quot;,&quot;href&quot;:&quot;drugs/drug_lubiprostone/&quot;},{&quot;label&quot;:&quot;Fei_2009 \u00b7 PD short-circuit current&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # short-circuit current — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>

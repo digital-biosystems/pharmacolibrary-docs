@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[k a (hr -1 ) 1.21 ± 0.595 1.12 ± 0.575].parameter_id` (Q95 vs Q49) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+None of the extracted parameters is hydrochlorothiazide's own; they describe irbesartan, hydrochlorothiazide.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[k a (hr -1 ) 1.21 ± 0.595 1.12 ± 0.575].parameter_id`: this record has Q95, the second reading Q49. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `irbesartan and hydrochlorothiazide`, measured `irbesartan, hydrochlorothiazide`.
 

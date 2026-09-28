@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C2_reference failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl]` (not captured vs not captured) and 9 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The fentanyl model for critically ill children lacks values for CL, Q, V1 and V2, and the weight exponent 222 is attributed to the V1 covariate here but to a different clearance exponent by a second reader, so it was held for review.**
+
+Only the clearance equation variable θ1 = 34.6 L/h and three weight-power covariate exponents (222, 8.58, 311) were extracted; the central clearance, intercompartmental clearance, and both distribution volumes carry no values, so library placeholders would have been used and the model was held back. The check comparing the record against the paper's reference failed without computing a comparison (ratio None), making it an inconclusive check rather than a demonstrated fault. A second reader assigned the value 222 to a different weight-power covariate exponent while this record assigns it to the volume-of-distribution exponent, and read the θ1 identifier as the clearance covariate identifier instead.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Hagos FT; Horvat CM; Au AK; Conley YP; Li L; Poloyac SM; et al. et al. (2019). Clinical pharmacokinetics 58

@@ -5,7 +5,7 @@
 
 # tetracycline — `Tetracycline_Lakota2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 2.06; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lakota EA; Van Wart SA; Trang M; Tzanis E; Bhavnani SM; Safir MC; et al. et al. (2020). Antimicrobial agents and chemotherapy 64
@@ -25,6 +27,9 @@ Lakota EA; Van Wart SA; Trang M; Tzanis E; Bhavnani SM; Safir MC; et al. et al. 
 
 ## Model component
 <dbs-pgx drug="tetracycline" model-id="Tetracycline_Lakota2020_reference" status="curated_candidate" stale="false" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -53,14 +58,30 @@ Lakota EA; Van Wart SA; Trang M; Tzanis E; Bhavnani SM; Safir MC; et al. et al. 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.0 (0/11 fields) | 11 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q21]` | not captured | 2.06 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 10.3 | 8.69 | mismatch |
+| `gpt-oss:120b` | `values[Q30]` | 21.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | not captured | 0.00663 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q46]` | not captured | 21 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | 1.74 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q56]` | not captured | 1.52 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | 21.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 79.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q73]` | not captured | 0.568 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q77]` | 129 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +148,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference.svg" alt="Tetracycline_Lakota2020_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.74 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_sim_controls.json"></dbs-fmusim>
 

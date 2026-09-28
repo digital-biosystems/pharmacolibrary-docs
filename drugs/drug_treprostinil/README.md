@@ -4,7 +4,8 @@
 
 - **generic name:** treprostinil
 - **ATC codes:** `B01AC21`
-- **DrugBank:** [DB00374](https://go.drugbank.com/drugs/DB00374)
+- **DrugBank:** [DB00374](https://go.drugbank.com/drugs/DB00374) · **PubChem:** [CID 6918140](https://pubchem.ncbi.nlm.nih.gov/compound/6918140)
+- **molar mass:** 390.5131 g/mol (C23H34O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

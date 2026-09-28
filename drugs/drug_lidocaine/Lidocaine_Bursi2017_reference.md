@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['lidocaine', '2,6-xylidine', 'metabolism'], ['lidocaine', 'monoethylglycinexylidide', 'metabolism'], ['monoethylglycinexylidide', 'glycinexylidide', 'metabolism']] vs [['lidocaine', '2,6-xylidine', 'metabolism'], ['lidocaine', 'glycinexylidide', 'metabolism'], ['glycinexylidide', 'monoethylglycinexylidide', 'metabolism']]) and 15 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (V1, theta_k31_category and theta_v1_category), so that value has no SI equivalent. Extracted — lidocaine: kcomp 1.93 h−1, k31 -0.526 h−1, V1 0.312 IIV.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lidocaine → 2,6-xylidine (metabolism); lidocaine → monoethylglycinexylidide (metabolism); monoethylglycinexylidide → glycinexylidide (metabolism), the second reading lidocaine → 2,6-xylidine (metabolism); lidocaine → glycinexylidide (metabolism); glycinexylidide → monoethylglycinexylidide (metabolism); it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Bursi R; Piana C; Grevel J; Huntjens D; Boesl I et al. (2017). European journal of drug metabolism and pharmacokinetics 42
@@ -26,6 +29,9 @@ Bursi R; Piana C; Grevel J; Huntjens D; Boesl I et al. (2017). European journal 
 
 ## Model component
 <dbs-pgx drug="lidocaine" model-id="Lidocaine_Bursi2017_reference" status="needs_review" stale="false" population="post-herpetic neuralgia patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 3 extracted, plus 5 covariate effects.
 
 **Parameterization:** mechanistic.
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for raltitrexed's clearance.**
+
+The model was built, but raltitrexed's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — raltitrexed: CL 33 %, V 6.65 l, Q 0.54 l h -1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Blair EY; Rivory LP; Clarke SJ; McLachlan AJ et al. (2004). British journal of clinical pharmacology 57
@@ -25,6 +27,9 @@ Blair EY; Rivory LP; Clarke SJ; McLachlan AJ et al. (2004). British journal of c
 
 ## Model component
 <dbs-pgx drug="raltitrexed" model-id="Raltitrexed_Blair2004_model_validation" status="model_quarantined" stale="false" population="patients with advanced solid tumours" measured-compound="raltitrexed" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

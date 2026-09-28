@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[15% decrease in acenocoumarol clearance with concomitant antibiotics]` (not captured vs 15) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 15% decrease in acenocoumarol clearance with concomitant antibiotics: this record has none, the second reading 15; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Delavenne X; Laporte S; Demasles S; Mallouk N; Basset T; Tod M; Girard P; Mismetti P et al. (2009). Fundamental & clinical pharmacology 23
@@ -26,6 +27,9 @@ Delavenne X; Laporte S; Demasles S; Mallouk N; Basset T; Tod M; Girard P; Mismet
 
 ## Model component
 <dbs-pgx drug="acenocoumarol" model-id="Acenocoumarol_Delavenne2009_reference" status="curated_candidate" stale="false" population="healthy volunteers" measured-compound="acenocoumarol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -144,6 +148,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference/Acenocoumarol_Delavenne2009_reference.svg" alt="Acenocoumarol_Delavenne2009_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 4.04 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference/Acenocoumarol_Delavenne2009_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference/Acenocoumarol_Delavenne2009_reference_sim_controls.json"></dbs-fmusim>
 

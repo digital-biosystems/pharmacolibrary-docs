@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[aucinf].value` (156.5 vs 477.5) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**This camostat/GBPA record was rejected because a structural parameter carries a dimension mismatch, the metabolite GBA has no path from the dose, and the volume of distribution was reported in hours, a unit that could not be converted to SI.**
+
+The GBPA model is a linear chain in which camostat mesylate forms GBPA by metabolism and GBPA clears to GBA via CLmet, but the GBA metabolite is unreachable from the administered dose, and a structural parameter shows a dimension mismatch. The volume of distribution was reported with the unit 'h' instead of a volume unit, so no SI value could be derived for it. A second reader also disputed the extracted GBPA values, reading AUC∞ as 477.5 versus 156.5, AUClast as 464.8 versus 152.3, Cmax as 273.9 versus 72.68, CL/F as 179.6 versus 141.7, and Vd as 977.8 versus 1046. Extracted — GBPA: t1/2z 1.01 h, Cmax 72.7 ng/mL, AUClast 152 h × ng/mL, AUC∞ 156 h × ng/mL, CL/F 142 L/h, V 1.05e+03 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[aucinf].value`: this record has 156.5, the second reading 477.5; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `camostat mesylate`, measured `GBPA`.
 
@@ -28,6 +31,9 @@ Kim G; Moon HK; Kim T; Yun SH; Yun HY; Hong JH; et al. et al. (2023). Pharmaceut
 
 ## Model component
 <dbs-pgx drug="camostat" model-id="Camostat_Kim2023_gbpa" status="rejected" stale="false" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

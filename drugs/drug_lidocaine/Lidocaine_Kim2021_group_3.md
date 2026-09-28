@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (mechanistic vs apparent) and 15 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The lidocaine rat record was rejected because the paper reports only non-compartmental exposure metrics (t1/2z 1.20 h, Cmax 1204.21 ng/mL, Tmax 0.58 h, AUC∞ 2588.77 h × ng/mL) with no volume of distribution or clearance, and the metabolite link leaves MEGX and GX without a dose path.**
+
+The record lists a general linear structure with lidocaine metabolized to MEGX and MEGX to GX, both via the same rate constant Kfm, but no volume or clearance/elimination parameter is reported, so it is an exposure/outcome paper rather than a compartmental population PK model. The metabolite compartments MEGX and GX are unreachable from the lidocaine dose, failing the connectivity check. Additionally, a reported unit could not be converted to SI, so a parameter reached the record without an SI value. A second reader disagreed on the parameterization (mechanistic vs apparent) and on several parameters, reading CLD/F 0.13, CLM1/F 14.94, FM1 0.65 and FR 0.373 where this record had nulls, and nulls where this record had t1/2z 1.20, Cmax 1204.21 and AUC∞ 2588.77. Extracted — lidocaine: t1/2z 1.2 h, Cmax 1.2e+03 ng/mL, tmax 0.58 h, AUC∞ 2.59e+03 h × ng/mL.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kim JH; Kang DW; Choi GW; Lee SB; Lee S; Cho HY et al. (2021). Pharmaceutics 13
@@ -26,6 +29,9 @@ Kim JH; Kang DW; Choi GW; Lee SB; Lee S; Cho HY et al. (2021). Pharmaceutics 13
 
 ## Model component
 <dbs-pgx drug="lidocaine" model-id="Lidocaine_Kim2021_group_3" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

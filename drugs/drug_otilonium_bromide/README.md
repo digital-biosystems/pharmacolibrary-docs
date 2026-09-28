@@ -4,7 +4,8 @@
 
 - **generic name:** otilonium bromide
 - **ATC codes:** `A03AB06`, `A03CA04`
-- **DrugBank:** [DB13500](https://go.drugbank.com/drugs/DB13500)
+- **DrugBank:** [DB13500](https://go.drugbank.com/drugs/DB13500) · **PubChem:** not captured
+- **molar mass:** 483.672 g/mol (C29H43N2O4) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

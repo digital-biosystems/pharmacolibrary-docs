@@ -4,7 +4,7 @@
 
 - **generic name:** crofelemer
 - **ATC codes:** `A07XA06`
-- **DrugBank:** [DB04941](https://go.drugbank.com/drugs/DB04941)
+- **DrugBank:** [DB04941](https://go.drugbank.com/drugs/DB04941) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

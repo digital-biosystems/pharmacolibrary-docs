@@ -4,7 +4,8 @@
 
 - **generic name:** dextropropoxyphene
 - **ATC codes:** `N02AC04`
-- **DrugBank:** [DB00647](https://go.drugbank.com/drugs/DB00647)
+- **DrugBank:** [DB00647](https://go.drugbank.com/drugs/DB00647) · **PubChem:** [CID 10100](https://pubchem.ncbi.nlm.nih.gov/compound/10100)
+- **molar mass:** 339.4712 g/mol (C22H29NO2) — DrugBank
 - **groups:** approved, illicit, withdrawn
 
 ## About

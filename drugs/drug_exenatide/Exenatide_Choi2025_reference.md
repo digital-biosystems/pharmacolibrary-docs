@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Choi2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.467). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**This exenatide two-compartment model record was rejected because a compartment has no path from the dose, and a second reader disputed several extracted values, including CL/F (0.044 vs 0.032 L/h).**
+
+The record describes a two-compartment exenatide model with CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L and absorption rate constant ka 0.006 h-1, but it was refused because one compartment is unreachable or orphan — it has no dosing path, so the structure is not a connected pharmacokinetic system. A second reader disagreed on multiple extracted values: CL/F 0.044 versus 0.032 L/h, one value 2.68 versus 46.27, and several values present in one reading and absent in the other (e.g. 18 vs null, 6 vs null, 21 vs null, and null vs 5.52, 24.8, 66.93). These disagreements mean the extracted parameter set is not reliably established, though the stated rejection cause is the orphan compartment. Extracted — exenatide: CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 0.044, the second reading 0.032; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Choi S; Seo J; Park S; Kim NY; Kim H; Lim HS et al. (2025). Frontiers in pharmacology 16
@@ -25,6 +29,9 @@ Choi S; Seo J; Park S; Kim NY; Kim H; Lim HS et al. (2025). Frontiers in pharmac
 
 ## Model component
 <dbs-pgx drug="exenatide" model-id="Exenatide_Choi2025_reference" status="rejected" stale="false" population="" measured-compound="exenatide" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -51,14 +58,27 @@ Choi S; Seo J; Park S; Kim NY; Kim H; Lim HS et al. (2025). Frontiers in pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.467 (7/15 fields) | 8 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q27]` | 0.044 | 0.032 | mismatch |
+| `gpt-oss:120b` | `values[Q311]` | not captured | 5.52 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | 18 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q41]` | not captured | 24.8 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q81]` | 2.68 | 46.27 | mismatch |
+| `gpt-oss:120b` | `values[Q87]` | not captured | 66.93 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | 21 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

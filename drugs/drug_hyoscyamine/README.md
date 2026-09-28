@@ -4,7 +4,8 @@
 
 - **generic name:** hyoscyamine
 - **ATC codes:** `A03BA03`, `A03CB31`
-- **DrugBank:** [DB00424](https://go.drugbank.com/drugs/DB00424)
+- **DrugBank:** [DB00424](https://go.drugbank.com/drugs/DB00424) · **PubChem:** [CID 154417](https://pubchem.ncbi.nlm.nih.gov/compound/154417)
+- **molar mass:** 289.3694 g/mol (C17H23NO3) — DrugBank
 - **groups:** approved
 
 ## About

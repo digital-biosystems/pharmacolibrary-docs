@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The clavulanic acid structural parameters carry wrong units — V2 is reported as 1.51 h and CL/F as 1.08 h instead of volume (l/kg) and clearance (l/h/kg) — and the two-compartment structure contains an unreachable compartment, so the record was rejected.**
+
+The table lists V2 (labelled '2VlRT(h)') with value 1.51 and unit h, and CL/F (labelled 'CUF (1/h/kg)') with value 1.08 and unit h, both for clavulanic acid; a distribution volume and a clearance cannot have the dimension of time, so these structural parameters fail a dimensional check. The model structure (two compartments) also includes a compartment with no path from the dose, i.e. an unreachable compartment. Additionally, one reported unit could not be converted to SI, so that parameter entered the record without an SI value. The remaining clavulanic acid parameters (t1/2z 0.09 h, Cmax 7.99 mg/l, V/F 2.311 l/kg, AUC 14.32 mg/h/l, Fab 85.49 %, kabs 0.17 h−1) are dimensionally consistent. Extracted — clavulanic acid: t1/2z 0.09 h, Cmax 7.99 mg/1, V/F 2.31 I/kg, AUC 14.3 mg/h/1, V2 1.51 h, MAT 0.34 h, CL/F 1.08 h, Fab 85.5; amoxicillin and clavulanic acid: kabs 0.17 h−1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `amoxicillin-clavulanic acid`, measured `amoxicillin and clavulanic acid`.
 

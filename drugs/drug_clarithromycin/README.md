@@ -5,7 +5,8 @@
 
 - **generic name:** clarithromycin
 - **ATC codes:** `A02BD04`, `A02BD05`, `A02BD06`, `A02BD07`, `A02BD09`, `A02BD11`, `A02BD12`, `A02BD14`, `J01FA09`
-- **DrugBank:** [DB01211](https://go.drugbank.com/drugs/DB01211)
+- **DrugBank:** [DB01211](https://go.drugbank.com/drugs/DB01211) · **PubChem:** [CID 84029](https://pubchem.ncbi.nlm.nih.gov/compound/84029)
+- **molar mass:** 747.9534 g/mol (C38H69NO13) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ Clarithromycin is indicated in combination with [vonoprazan] and [amoxicillin] a
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Shah_2025_reference](drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference.md) | Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Shah_2025_reference](drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference.md) | 1-compartment, IV | 3 | Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559) |
 
 ## Pharmacodynamics (PD)
 

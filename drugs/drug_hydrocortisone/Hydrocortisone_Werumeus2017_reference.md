@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — hydrocortisone: CL 338 L/h, V 486 L, t1/2z 1 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `hydrocortisone`, measured `cortisol`.
 
@@ -27,6 +29,9 @@ Werumeus Buning J; Touw DJ; Brummelman P; Dullaart RPF; van den Berg G; van der 
 
 ## Model component
 <dbs-pgx drug="hydrocortisone" model-id="Hydrocortisone_Werumeus2017_reference" status="needs_review" stale="false" population="patients with secondary adrenal insufficiency" measured-compound="cortisol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

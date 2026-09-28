@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Thorsteinsson B; Fugleberg S; Binder C et al. (1987). European journal of clinical pharmacology 33
@@ -25,6 +27,9 @@ Thorsteinsson B; Fugleberg S; Binder C et al. (1987). European journal of clinic
 
 ## Model component
 <dbs-pgx drug="insulin (pork)" model-id="InsulinPork_Thorsteinsson1987_normal_and_type_i_diabetic_sub" status="rejected" stale="false" population="normal and type I diabetic subjects" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

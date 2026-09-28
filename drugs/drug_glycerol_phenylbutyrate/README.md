@@ -4,7 +4,8 @@
 
 - **generic name:** glycerol phenylbutyrate
 - **ATC codes:** `A16AX09`
-- **DrugBank:** [DB08909](https://go.drugbank.com/drugs/DB08909)
+- **DrugBank:** [DB08909](https://go.drugbank.com/drugs/DB08909) · **PubChem:** [CID 10482134](https://pubchem.ncbi.nlm.nih.gov/compound/10482134)
+- **molar mass:** 530.6512 g/mol (C33H38O6) — DrugBank
 - **groups:** approved, investigational
 
 ## About

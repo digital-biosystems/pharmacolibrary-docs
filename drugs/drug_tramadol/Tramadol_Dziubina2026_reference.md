@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q17]` (137.17 vs 137.17) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The tramadol record was held back because the absorption rate constant ka and lag time were not reported in the source, so library defaults were substituted and the first-order absorption input was judged invented and not acceptable.**
+
+The record gives tramadol CL/F of 36.5 L/h/kg and a V/F of 13122.4656 L derived from CL·t½/ln2, but the source reports no ka or Tlag, so base defaults were used for both. The model was parameterized as apparent (F=1, Fm=1, no molar correction) with a first-order depot input for extravascular dosing, and the defaulted ka — not reported in the source — was adjudicated as an invented absorption input, which was ruled not acceptable. A second reader returned no value for four of the extracted quantities (36.5, 187.73, 3.56 among them), leaving those comparisons incomputable, while agreeing on the others (137.17, 231.44, 0.19, 2.91, 0.083). Extracted — tramadol: CL/F 36.5 L/h/kg, V/F 1.31e+04 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 137.17, the second reading 137.17; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Dziubina A; Szkatuła D; Szafarz M; Siwek A; Kowalski M; Gdula-Argasińska J et al. (2026). Methods and protocols 9
@@ -26,6 +29,9 @@ Dziubina A; Szkatuła D; Szafarz M; Siwek A; Kowalski M; Gdula-Argasińska J et 
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Dziubina2026_reference" status="needs_review" stale="false" population="" measured-compound="tramadol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -141,6 +147,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_tramadol/Tramadol_Dziubina2026_reference/Tramadol_Dziubina2026_reference.svg" alt="Tramadol_Dziubina2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_tramadol/Tramadol_Dziubina2026_reference/Tramadol_Dziubina2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tramadol/Tramadol_Dziubina2026_reference/Tramadol_Dziubina2026_reference_sim_controls.json"></dbs-fmusim>
 

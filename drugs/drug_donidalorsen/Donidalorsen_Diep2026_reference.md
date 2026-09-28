@@ -17,9 +17,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The donidalorsen record was quarantined because clearance, distribution volume, absorption rate constant, lag time and both intercompartmental rate constants were left as library placeholders instead of the reported values (CL/F 12.8 L/h, V1/F 69.8 L, ka 0.952 1/h), and the weight covariate effects were never simulated.**
+
+The paper reports CL/F 12.8 L/h, V1/F 69.8 L, Q/F 2.58 L/h, V/F 1840 L and ka 0.952 1/h, yet clearance, volume of distribution, absorption rate constant, absorption lag time, central→peripheral and peripheral→central rate constants had no extracted value, so defaults stood in and the model was held back rather than published with invented numbers. The absorption rate constant was additionally flagged as invented by defaulting, despite 0.952 1/h appearing in the record. The weight covariate effects on CL/F and Q/F (1.52 and 1.79, plus the theta terms 2.34 and 1.60) were defined but only the reference individual was simulated, so those scenarios were not exercised. The apparent-parameterization assumption (F=1, Fm=1, no molar correction) was also recorded as a deviation. Extracted — donidalorsen: CL/F 12.8, V1/F 69.8, Q/F 2.58, V/F 1.84e+03, kabs 0.952.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Diep JK; Liu M; Singh P; Dorow S; Cohn DM; Bordone L; et al. et al. (2026). CPT: pharmacometrics & systems pharmacology 15
@@ -27,6 +29,9 @@ Diep JK; Liu M; Singh P; Dorow S; Cohn DM; Bordone L; et al. et al. (2026). CPT:
 
 ## Model component
 <dbs-pgx drug="donidalorsen" model-id="Donidalorsen_Diep2026_reference" status="model_quarantined" stale="false" population="healthy volunteers and patients with hereditary angioedema" measured-compound="donidalorsen" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted, plus 4 covariate effects.
 
 **Parameterization:** CL/F, Q/F, V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

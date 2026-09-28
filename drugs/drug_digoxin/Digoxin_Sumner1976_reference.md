@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[apparent ka]` (2.29 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — digoxin: CLR 119 ml/min, V 0.418 L/kg, kabs 2.29 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of apparent ka: this record has 2.29, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sumner DJ; Russell AJ et al. (1976). British journal of clinical pharmacology 3
@@ -26,6 +29,9 @@ Sumner DJ; Russell AJ et al. (1976). British journal of clinical pharmacology 3
 
 ## Model component
 <dbs-pgx drug="digoxin" model-id="Digoxin_Sumner1976_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

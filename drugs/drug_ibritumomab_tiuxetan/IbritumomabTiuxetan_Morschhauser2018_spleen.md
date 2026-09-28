@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The ibritumomab tiuxetan clearance of 1.03 ml.min was reported in a unit that could not be converted to SI, so the parameter had no usable value and the record was rejected.**
+
+The record lists ibritumomab tiuxetan clearance as 1.03 with the unit given verbatim as ml.min, a unit for which no SI equivalent could be established, so no usable value was derived for this disposition parameter. Because the clearance lacked an SI value, a dimension mismatch was flagged on this structural parameter. The other reported parameters (Cmax 0.308 µg.mL−1, terminal half-life 83.6 h, MRT 114.1 h, AUC 1708.1 and AUCcum 4d 261.98 µg.min.mL−1) carry convertible units, but the unusable clearance alone led to rejection. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Morschhauser F; Dekyndt B; Baillet C; Barthélémy C; Malek E; Fulcrand J; et al. et al. (2018). Scientific reports 8
@@ -25,6 +27,9 @@ Morschhauser F; Dekyndt B; Baillet C; Barthélémy C; Malek E; Fulcrand J; et al
 
 ## Model component
 <dbs-pgx drug="ibritumomab tiuxetan" model-id="IbritumomabTiuxetan_Morschhauser2018_spleen" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab_tiuxetan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

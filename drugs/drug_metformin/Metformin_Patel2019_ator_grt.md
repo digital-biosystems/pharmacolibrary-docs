@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The metformin rat model was rejected because the reported volume of distribution V1 = 0.37 (mg/kg)/(µg/mL) could not be expressed in SI units, leaving a dimension mismatch on a structural parameter.**
+
+The record reports metformin in Wistar rats with a one-compartment structure and parameters including tmax 0.67 h, t1/2z 3.12 h, AUC∞ 176.27 µg/mL·h, MRT 5.48 h, k12 7.06 1/h, k21 0.38 1/h, Ka 0.41 h⁻¹ and tlag 0.34 h. The volume of distribution V1 was reported as 0.37 in the unit (mg/kg)/(µg/mL), a unit that could not be converted to SI, so the parameter entered the model without a usable value. This dimension mismatch on a structural parameter is the stated cause of rejection. Extracted — metformin: tmax 0.67 h, t1/2z 3.12 h, AUC∞ 176 µg/mL*h, MRT 5.48 h, V 0.37 μg/mL, k12 7.06, k21 0.38, kabs 0.41 h -1, … (+1).
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Patel O; Muller CJF; Joubert E; Rosenkranz B; Taylor MJC; Louw J; et al. et al. (2019). Frontiers in pharmacology 10

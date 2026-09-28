@@ -4,7 +4,8 @@
 
 - **generic name:** betaine
 - **ATC codes:** `A09AB02`, `A16AA06`
-- **DrugBank:** [DB06756](https://go.drugbank.com/drugs/DB06756)
+- **DrugBank:** [DB06756](https://go.drugbank.com/drugs/DB06756) · **PubChem:** [CID 247](https://pubchem.ncbi.nlm.nih.gov/compound/247)
+- **molar mass:** 117.1463 g/mol (C5H11NO2) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About

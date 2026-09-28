@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default; nonlinear topology.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl]` (160.67 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **modeller**</sub>
+**The gabapentin model record for postpartum lactating women lacks a volume of distribution, so only clearance (160.67 mL/kg/hr) was extracted and the model was held back; the clearance plausibility check also could not be computed.**
+
+Only clearance was extracted — no volume of distribution — so the model would have had to rely on a library default for volume and was not published. The clearance plausibility check could not be computed because it had no reference to compare the 160.67 mL/kg/hr value against, leaving the clearance unverified rather than shown to be wrong. The record also flags a nonlinear model structure. A second reader returned no values for clearance, absorption rate constant (5.24 1/hr), or lag time (0.45 hr), so none of the parameter values were independently confirmed. Extracted — gabapentin: CL 161 mL/kg/hr, kabs 5.24 1/hr, tlag 0.45 hr.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 160.67, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Silvola R; O'Kane A; Heathman M; Marotta H; Trussel H; Ray B; et al. et al. (2025). CPT: pharmacometrics & systems pharmacology 14
@@ -26,6 +29,9 @@ Silvola R; O'Kane A; Heathman M; Marotta H; Trussel H; Ray B; et al. et al. (202
 
 ## Model component
 <dbs-pgx drug="gabapentin" model-id="Gabapentin_Silvola2025_reference" status="needs_review" stale="false" population="postpartum lactating women" measured-compound="gabapentin" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+
+**Model structure:** nonlinear / manual; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

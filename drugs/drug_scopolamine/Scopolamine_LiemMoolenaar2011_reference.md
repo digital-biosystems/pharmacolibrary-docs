@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for scopolamine's clearance.**
+
+The model was built, but scopolamine's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — scopolamine: CL 2.53 lmin-1, V 66.3 l, Q 4.78 lmin-1, Vss 250 l.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Liem-Moolenaar M; de Boer P; Timmers M; Schoemaker RC; van Hasselt JG; Schmidt S; et al. et al. (2011). British journal of clinical pharmacology 71
@@ -25,6 +27,9 @@ Liem-Moolenaar M; de Boer P; Timmers M; Schoemaker RC; van Hasselt JG; Schmidt S
 
 ## Model component
 <dbs-pgx drug="scopolamine" model-id="Scopolamine_LiemMoolenaar2011_reference" status="model_quarantined" stale="false" population="healthy males" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

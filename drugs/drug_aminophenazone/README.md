@@ -4,7 +4,8 @@
 
 - **generic name:** aminophenazone
 - **ATC codes:** `N02BB03`
-- **DrugBank:** [DB01424](https://go.drugbank.com/drugs/DB01424)
+- **DrugBank:** [DB01424](https://go.drugbank.com/drugs/DB01424) · **PubChem:** [CID 6009](https://pubchem.ncbi.nlm.nih.gov/compound/6009)
+- **molar mass:** 231.2936 g/mol (C13H17N3O) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

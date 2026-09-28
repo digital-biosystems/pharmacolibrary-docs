@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The barbexaclone record was rejected because its hydrolysis links to phenobarbital and propylhexedrine carry no parameter values, and only the paper's abstract was read, so reported summary statistics stood in for a fitted model.**
+
+The structure lists barbexaclone hydrolysing to phenobarbital and to propylhexedrine, but both links have link_parameter 'none' with unknown kind, leaving the metabolite paths without quantitative values. The record is abstract-only, so no fitted model underlies the reported numbers (e.g., phenobarbital half-life 7.5 h, volume of distribution 0.78 l/kg, bioavailability 0.37). The failed check on unreachable or unlinked metabolites could not be resolved because the link parameters were absent. Extracted — phenobarbital: t1/2z 7.5 h, V 0.78 l/kg, t1/2α 0.31 h, t1/2β 2.5 h, V2 19.3 l/kg, Fab 0.37 monoexponentially.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `barbexaclone`, measured `phenobarbital`.
 
@@ -27,6 +29,9 @@ Iven H; Feldbusch E et al. (1983). Naunyn-Schmiedeberg's archives of pharmacolog
 
 ## Model component
 <dbs-pgx drug="barbexaclone" model-id="Barbexaclone_Iven1983_reference" status="rejected" stale="false" population="mice" measured-compound="phenobarbital" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,7 @@
 
 # gemcitabine — `Gemcitabine_Sathe2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The gemcitabine two-compartment record was rejected because its peripheral compartment (V2 = 0.908 L or 2177.0 L) has no intercompartmental clearance linking it to the dose, leaving it unreachable.**
+
+The structure lists two compartments with volumes V1/F = 49.0 L and V2 = 0.908 L (also V2/F = 2177.0 L) and clearance CL = 0.133 L/h, but no distribution clearance (Q) parameter was extracted, so the second compartment has no path from the administered dose — the reason cited for rejection. The parameter labels also carry the SN38 suffix (CLSG, V1SN38/F, V2SN38/F, V2SN38/F) although the compound is gemcitabine, suggesting labels carried over from another molecule's model. A second reader recorded a value of 0.508 where this record has none, so that comparison could not be computed. Extracted — gemcitabine: CL 0.133 L/h, V1/F 49 L, V2 0.908 L, V2/F 2.18e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q319: this record has none, the second reading 0.508. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Sathe AG; Singh I; Singh P; Diderichsen PM; Wang X; Chang P; Taqui A; Phan S; Girish S; Othman AA et al. (2024). Clinical pharmacokinetics 63
@@ -25,6 +29,9 @@ Sathe AG; Singh I; Singh P; Diderichsen PM; Wang X; Chang P; Taqui A; Phan S; Gi
 
 ## Model component
 <dbs-pgx drug="gemcitabine" model-id="Gemcitabine_Sathe2024_reference" status="rejected" stale="false" population="" measured-compound="gemcitabine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** V1/F, V2/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 
@@ -56,9 +63,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q319]` | not captured | 0.508 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

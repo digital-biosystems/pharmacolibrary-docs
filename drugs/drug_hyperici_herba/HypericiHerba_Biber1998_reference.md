@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clearance]` (70 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is hyperici herba's own; they describe hyperforin. Extracted — hyperforin: t1/2z 6 h, CL 70 ml/min/kg, MRT 12 h, Css 100 ng/ml.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance: this record has 70, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `hypericum extract`, measured `hyperforin`.
 
@@ -28,6 +31,9 @@ Biber A; Fischer H; Römer A; Chatterjee SS et al. (1998). Pharmacopsychiatry 31
 
 ## Model component
 <dbs-pgx drug="Hyperici herba" model-id="HypericiHerba_Biber1998_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="hyperforin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

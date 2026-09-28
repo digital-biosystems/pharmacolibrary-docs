@@ -4,7 +4,7 @@
 
 - **generic name:** diastase
 - **ATC codes:** `A09AA01`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

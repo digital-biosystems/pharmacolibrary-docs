@@ -5,7 +5,7 @@
 
 # valoctocogene roxaparvovec — `ValoctocogeneRoxaparvovec_Cao2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The valoctocogene roxaparvovec record was rejected because the extracted clearance (0.011 L/h/kg) and distribution parameters (V1 3.23, V2 14.2, Q 0.591, all in L/h) fall outside physiological plausibility, indicating a unit or scale extraction error.**
+
+The clearance value of 0.011 L/h/kg is implausibly small for a gene-therapy vector, and the volume parameters carry inconsistent units: V1 (Vc, 3.23) and V2 (Vp, 14.2) are volumes but are reported in L/h, the unit of flow, suggesting the units were misread from the source. A second reader could not confirm the inter-compartmental clearance Q (0.591) or the volumes, returning no values for them, and also disagreed on the model structure, reading a one-compartment model where this record holds a two-compartment structure. The rejection rests on the implausible magnitude of the clearance and volume parameters, consistent with a unit or scale extraction error. Extracted — valoctocogene roxaparvovec: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Q: this record has 0.591, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Cao M; Katial R; Liu Y; Lu X; Gu Q; Chen C; Liu K; Zhu Z; Marshall MR; Yu Y; Wang Z et al. (2025). Gene therapy 32
@@ -25,6 +29,9 @@ Cao M; Katial R; Liu Y; Lu X; Gu Q; Chen C; Liu K; Zhu Z; Marshall MR; Yu Y; Wan
 
 ## Model component
 <dbs-pgx drug="valoctocogene roxaparvovec" model-id="ValoctocogeneRoxaparvovec_Cao2025_reference" status="rejected" stale="false" population="" measured-compound="valoctocogene_roxaparvovec" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,14 +58,23 @@ Cao M; Katial R; Liu Y; Lu X; Gu Q; Chen C; Liu K; Zhu Z; Marshall MR; Yu Y; Wan
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.714 (10/14 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.topology_template` | 2C | 1C | mismatch |
+| `gpt-oss:120b` | `values[Q30]` | 0.591 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | 3.23 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 14.2 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (ibritumomab tiuxetan vs ibritumomab tiuxetan_90y) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The record for 90Y-ibritumomab tiuxetan was rejected because the clearance unit was reported as 'ml.min' without the per-time notation, so clearance (1.03 ml.min) could not be given an SI value and a dimension mismatch resulted.**
+
+The reported clearance of 1.03 for ibritumomab tiuxetan carries the unit 'ml.min', which is dimensionally incomplete for a clearance parameter (it should express volume per time, e.g. mL/min). This unit could not be converted to SI, so the parameter entered the model without a valid SI value, producing a dimension mismatch on a structural parameter and the rejection. A second reader also disagreed on the measured compound, reading the analyte as 90Y-ibritumomab tiuxetan rather than ibritumomab tiuxetan, and read additional parameters (AUCcum 7d 558.03, blood 4131.0, vertebrae L2-L4 7.84) that this record lacks. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ibritumomab tiuxetan, the second reading ibritumomab tiuxetan_90y; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Morschhauser F; Dekyndt B; Baillet C; Barthélémy C; Malek E; Fulcrand J; et al. et al. (2018). Scientific reports 8
@@ -26,6 +29,9 @@ Morschhauser F; Dekyndt B; Baillet C; Barthélémy C; Malek E; Fulcrand J; et al
 
 ## Model component
 <dbs-pgx drug="ibritumomab tiuxetan (90Y)" model-id="IbritumomabTiuxetan90y_Morschhauser2018_f1" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab tiuxetan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

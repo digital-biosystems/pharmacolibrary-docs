@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 12:33:44.371304+00:00) predates the upstream re-run (2026-09-21 18:50:54.191859+00:00). Current validate status: `not captured`.
 
@@ -26,6 +28,9 @@ Beylot M; Martin C; Beaufrere B; Riou JP; Mornex R et al. (1987). Journal of lip
 
 ## Model component
 <dbs-pgx drug="glycerol" model-id="Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia" status="" stale="true" population="normal subjects and insulin-dependent diabetic patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

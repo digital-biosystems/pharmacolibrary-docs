@@ -4,7 +4,8 @@
 
 - **generic name:** chlorpropamide
 - **ATC codes:** `A10BB02`
-- **DrugBank:** [DB00672](https://go.drugbank.com/drugs/DB00672)
+- **DrugBank:** [DB00672](https://go.drugbank.com/drugs/DB00672) · **PubChem:** [CID 2727](https://pubchem.ncbi.nlm.nih.gov/compound/2727)
+- **molar mass:** 276.74 g/mol (C10H13ClN2O3S) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

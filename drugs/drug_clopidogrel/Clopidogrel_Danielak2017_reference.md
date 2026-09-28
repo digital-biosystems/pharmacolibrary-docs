@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['clopidogrel', 'h4', 'metabolism']] vs []) and 12 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**Rejected because the clopidogrel oral clearance is recorded as 14500 L/h, a physiologically impossible magnitude, and the absorption-rate parameter k12 is given as a negative value (-0.087 1/h).**
+
+The record lists CL/F for clopidogrel as 14500 L/h, far outside any plausible range for oral clearance and consistent with a unit or scale extraction error. The parameter labelled 'k12 and V2/F' carries the value -0.087, which is not admissible for a first-order rate constant. A second reader also disputed several values, reading CL/F as 13250 L/h, FM as 0.044 (absent in this record), k12 as 0.556 1/h, and Q2/F as 232 L/h (null here), and disagreed on whether the clopidogrel-to-H4 metabolism link exists. These conflicting readings leave the extracted parameter set unreliable. Extracted — clopidogrel: kabs 0.592 1/h, V1/F 7.66e+03 L, CL/F 1.45e+04 L/h, k12 -0.087; H4: fm 0.045, V1/F 4.89 L, Q/F 252 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has clopidogrel → h4 (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Danielak D; Karaźniewicz-Łada M; Komosa A; Burchardt P; Lesiak M; Kruszyna Ł; et al. et al. (2017). European journal of clinical pharmacology 73

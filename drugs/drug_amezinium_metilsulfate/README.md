@@ -4,7 +4,8 @@
 
 - **generic name:** amezinium metilsulfate
 - **ATC codes:** `C01CA25`
-- **DrugBank:** [DB13330](https://go.drugbank.com/drugs/DB13330)
+- **DrugBank:** [DB13330](https://go.drugbank.com/drugs/DB13330) · **PubChem:** not captured
+- **molar mass:** 313.33 g/mol (C12H15N3O5S) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

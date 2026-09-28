@@ -4,7 +4,8 @@
 
 - **generic name:** mirogabalin
 - **ATC codes:** `N02BF03`
-- **DrugBank:** [DB11825](https://go.drugbank.com/drugs/DB11825)
+- **DrugBank:** [DB11825](https://go.drugbank.com/drugs/DB11825) · **PubChem:** [CID 59509752](https://pubchem.ncbi.nlm.nih.gov/compound/59509752)
+- **molar mass:** 209.289 g/mol (C12H19NO2) — DrugBank
 - **groups:** investigational
 
 ## About

@@ -4,7 +4,8 @@
 
 - **generic name:** naratriptan
 - **ATC codes:** `N02CC02`
-- **DrugBank:** [DB00952](https://go.drugbank.com/drugs/DB00952)
+- **DrugBank:** [DB00952](https://go.drugbank.com/drugs/DB00952) · **PubChem:** [CID 4440](https://pubchem.ncbi.nlm.nih.gov/compound/4440)
+- **molar mass:** 335.464 g/mol (C17H25N3O2S) — DrugBank
 - **groups:** approved
 
 ## About

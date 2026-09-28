@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction); C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (engineer: the topology is outside the template set the engineer can build).
-<sub>owner: **engineer**</sub>
+**The ciprofloxacin record was rejected because apparent parameters were doubly corrected (violating apparent-parameter coherence) and a structural parameter has a dimension mismatch, with the goat model's structure not reproducible as specified.**
+
+The review found two failed checks: apparent-parameter coherence was violated through a double correction, and a dimension mismatch was flagged on a structural parameter. The model links enrofloxacin metabolism to ciprofloxacin formation via Vmax (4.61 mg/L/h) with Km 0.86 mg/L, and carries apparent parameters such as CL 0.81 L/h/kg and CLm/F 4.56 L/h/kg. The model's structure — a manually specified enrofloxacin-to-ciprofloxacin metabolic link — cannot be reproduced as written, so the record was refused rather than published. Extracted — ciprofloxacin: Fab 0.8, kabs 0.25 parent, fu 0.39, CL 0.81 L/h/kg, V1 0.65 L/kg, Q 0.28 L/h/kg, V2 2.83 L/kg, CLm/F 4.56 L/h/kg, … (+5).
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:02:13.867977+00:00) predates the upstream re-run (2026-09-24 02:07:09.994804+00:00). Current validate status: `rejected`.
 

@@ -5,7 +5,8 @@
 
 - **generic name:** azathioprine
 - **ATC codes:** `L04AX01`
-- **DrugBank:** [DB00993](https://go.drugbank.com/drugs/DB00993)
+- **DrugBank:** [DB00993](https://go.drugbank.com/drugs/DB00993) · **PubChem:** [CID 2265](https://pubchem.ncbi.nlm.nih.gov/compound/2265)
+- **molar mass:** 277.263 g/mol (C9H7N7O2S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

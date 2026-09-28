@@ -5,7 +5,8 @@
 
 - **generic name:** paclitaxel
 - **ATC codes:** `L01CD01`, `L01CD51`
-- **DrugBank:** [DB01229](https://go.drugbank.com/drugs/DB01229)
+- **DrugBank:** [DB01229](https://go.drugbank.com/drugs/DB01229) · **PubChem:** [CID 36314](https://pubchem.ncbi.nlm.nih.gov/compound/36314)
+- **molar mass:** 853.9061 g/mol (C47H51NO14) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -22,15 +23,15 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: F, Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [He_2022_reference](drugs/drug_paclitaxel/Paclitaxel_He2022_reference.md) | He J et al., Population pharmacokinetics for oral pa…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12799](https://doi.org/10.1002/psp4.12799) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Chen_2014_reference](drugs/drug_paclitaxel/Paclitaxel_Chen2014_reference.md) | Chen (2014) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cheng_2021_estimates_rse](drugs/drug_paclitaxel/Paclitaxel_Cheng2021_estimates_rse.md) | Cheng S et al., Pharmacokinetic-Pharmacodynamic Modelin…, Pharmaceutics (2021) | [10.3390/pharmaceutics13010092](https://doi.org/10.3390/pharmaceutics13010092) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cheng_2021_units](drugs/drug_paclitaxel/Paclitaxel_Cheng2021_units.md) | Cheng S et al., Pharmacokinetic-Pharmacodynamic Modelin…, Pharmaceutics (2021) | [10.3390/pharmaceutics13010092](https://doi.org/10.3390/pharmaceutics13010092) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Friberg_2002_reference](drugs/drug_paclitaxel/Paclitaxel_Friberg2002_reference.md) | Friberg LE et al., Model of chemotherapy-induced myelosupp…, Journal of clinical oncolog… (2002) | [10.1200/JCO.2002.02.140](https://doi.org/10.1200/JCO.2002.02.140) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2021_reference](drugs/drug_paclitaxel/Paclitaxel_Li2021_reference.md) | Li (2021) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Tsushima_2020_reference](drugs/drug_paclitaxel/Paclitaxel_Tsushima2020_reference.md) | Tsushima (2020) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: F, Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [He_2022_reference](drugs/drug_paclitaxel/Paclitaxel_He2022_reference.md) | 1-compartment, oral | 6 | He J et al., Population pharmacokinetics for oral pa…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12799](https://doi.org/10.1002/psp4.12799) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Chen_2014_reference](drugs/drug_paclitaxel/Paclitaxel_Chen2014_reference.md) | 1-compartment (no model) | 0 | Chen (2014) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cheng_2021_estimates_rse](drugs/drug_paclitaxel/Paclitaxel_Cheng2021_estimates_rse.md) | general linear (no model) | 0 | Cheng S et al., Pharmacokinetic-Pharmacodynamic Modelin…, Pharmaceutics (2021) | [10.3390/pharmaceutics13010092](https://doi.org/10.3390/pharmaceutics13010092) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cheng_2021_units](drugs/drug_paclitaxel/Paclitaxel_Cheng2021_units.md) | general linear (no model) | 0 | Cheng S et al., Pharmacokinetic-Pharmacodynamic Modelin…, Pharmaceutics (2021) | [10.3390/pharmaceutics13010092](https://doi.org/10.3390/pharmaceutics13010092) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Friberg_2002_reference](drugs/drug_paclitaxel/Paclitaxel_Friberg2002_reference.md) | parent + metabolite (no model) | 2 | Friberg LE et al., Model of chemotherapy-induced myelosupp…, Journal of clinical oncolog… (2002) | [10.1200/JCO.2002.02.140](https://doi.org/10.1200/JCO.2002.02.140) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2021_reference](drugs/drug_paclitaxel/Paclitaxel_Li2021_reference.md) | 1-compartment (no model) | 0 | Li (2021) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Tsushima_2020_reference](drugs/drug_paclitaxel/Paclitaxel_Tsushima2020_reference.md) | 1-compartment (no model) | 7 | Tsushima (2020) | — |
 
 ## ADME sites
 

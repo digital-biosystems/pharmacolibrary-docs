@@ -4,7 +4,8 @@
 
 - **generic name:** sodium glycerophosphate
 - **ATC codes:** `B05XA14`
-- **DrugBank:** [DB09561](https://go.drugbank.com/drugs/DB09561)
+- **DrugBank:** [DB09561](https://go.drugbank.com/drugs/DB09561) · **PubChem:** [CID 22251426](https://pubchem.ncbi.nlm.nih.gov/compound/22251426)
+- **molar mass:** 216.036 g/mol (C3H7Na2O6P) — DrugBank
 - **groups:** approved
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The diazepam record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside assumed F=1 and Fm=1 and a V/F of 11346.4742 L back-calculated from the half-life rather than reported.**
+
+The source reports only CL/F (65.77 L/h) for diazepam; V/F (11346.4742 L) was derived from CL·t½/ln2 rather than estimated directly, and ka and Tlag had no values extracted so library placeholder defaults were substituted. The model builder additionally assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization and a first-order depot input not stated in the source. The failed check concerns this invented absorption: the ka default was judged not acceptable, so the record requires review. Extracted — diazepam: CL/F 65.8 L/h, V/F 1.13e+04 L.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:09:36.516604+00:00) predates the upstream re-run (2026-09-24 04:14:22.297775+00:00). Current validate status: `extracted`.
 
@@ -131,7 +134,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_diazepam/Diazepam_Wang2022_reference/Diazepam_Wang2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_diazepam/Diazepam_Wang2022_reference/Diazepam_Wang2022_reference_sim_controls.json"></dbs-fmusim>
 

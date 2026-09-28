@@ -5,7 +5,8 @@
 
 - **generic name:** lusutrombopag
 - **ATC codes:** `B02BX07`
-- **DrugBank:** [DB13125](https://go.drugbank.com/drugs/DB13125)
+- **DrugBank:** [DB13125](https://go.drugbank.com/drugs/DB13125) · **PubChem:** [CID 49843517](https://pubchem.ncbi.nlm.nih.gov/compound/49843517)
+- **molar mass:** 591.54 g/mol (C29H32Cl2N2O5S) — DrugBank
 - **groups:** approved
 
 ## About
@@ -24,9 +25,9 @@ In September 2015, lusutrombopag received its first global approval in Japan to 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Katsube_2019_reference](drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference.md) | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Katsube_2019_reference](drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference.md) | 1-compartment, oral | 9 | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
 
 ## Pharmacodynamics (PD)
 

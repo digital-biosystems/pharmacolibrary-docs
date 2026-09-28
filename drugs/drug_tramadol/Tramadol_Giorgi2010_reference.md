@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['tramadol', 'o-desmethyl-tramadol', 'metabolism'], ['tramadol', 'n-,n-didesmethyl-tramadol', 'metabolism'], ['tramadol', 'n-,o-didesmethyl-tramadol', 'metabolism']] vs []) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The tramadol model in beagle dogs was rejected because all three metabolite links (to O-desmethyl-, N,N-didesmethyl- and N,O-didesmethyl-tramadol) carry no metabolic rate parameter, leaving the metabolites unlinked, and the fraction metabolized (f%) was not extracted.**
+
+The three metabolism links from tramadol to O-desmethyl-tramadol, N,N-didesmethyl-tramadol and N,O-didesmethyl-tramadol each have link_parameter 'none' of unknown kind, so the metabolite compartments have no path from the dose and the structure check failed. The second reader agreed the links are present but disputed the parameter field: f% is null in this record while the second reader read 92. The remaining extracted parameters (kel 1.18, k12 8.74, k21 20.21, CL 1131, V1 7.00, V2 1003, Vss, kabs 6.90, tlag 0.40, tmax 0.34, Cmax 2.52, AUC∞ 3.59, MRT 1.13, AUMC 6.07) are otherwise populated. Extracted — tramadol: kel 1.18, k12 8.74, k21 20.2, t1/2ka 0.73, CL 1.13e+03, AUMC 6.07, MRT 1.13, Vss 1e+03, … (+7).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has tramadol → o-desmethyl-tramadol (metabolism); tramadol → n-,n-didesmethyl-tramadol (metabolism); tramadol → n-,o-didesmethyl-tramadol (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Giorgi M; Del Carlo S; Łebkowska-Wieruszewska B; Kowalski CJ; Saccomanni G et al. (2010). Polish journal of veterinary sciences 13
@@ -26,6 +29,9 @@ Giorgi M; Del Carlo S; Łebkowska-Wieruszewska B; Kowalski CJ; Saccomanni G et a
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Giorgi2010_reference" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="tramadol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 15 extracted.
 
 **Parameterization:** mechanistic.
 

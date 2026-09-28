@@ -5,7 +5,8 @@
 
 - **generic name:** clofarabine
 - **ATC codes:** `L01BB06`
-- **DrugBank:** [DB00631](https://go.drugbank.com/drugs/DB00631)
+- **DrugBank:** [DB00631](https://go.drugbank.com/drugs/DB00631) · **PubChem:** [CID 119182](https://pubchem.ncbi.nlm.nih.gov/compound/119182)
+- **molar mass:** 303.677 g/mol (C10H11ClFN5O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Nijstad_2021_reference](drugs/drug_clofarabine/Clofarabine_Nijstad2021_reference.md) | Nijstad AL et al., Population pharmacokinetics of clofarab…, British journal of clinical… (2021) | [10.1111/bcp.14738](https://doi.org/10.1111/bcp.14738) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Nijstad_2021_reference](drugs/drug_clofarabine/Clofarabine_Nijstad2021_reference.md) | 1-compartment, IV | 3 | Nijstad AL et al., Population pharmacokinetics of clofarab…, British journal of clinical… (2021) | [10.1111/bcp.14738](https://doi.org/10.1111/bcp.14738) |
 
 ## Pharmacogenomics (PGx)
 

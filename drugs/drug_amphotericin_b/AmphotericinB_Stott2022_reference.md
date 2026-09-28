@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T3_param_coverage.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The liposomal amphotericin B record is incomplete: the intercompartmental transfer rate k21 (2.222 h⁻¹) was neither extracted nor defaulted, leaving only 2 of 3 required parameters covered.**
+
+The one-compartment model for liposomal amphotericin B in adults with HIV-associated cryptococcal meningoencephalitis reports clearance 0.416 L/h and volume of distribution 4.566 L, but the first-order transfer rate from central to peripheral compartment (k21, 2.222 h⁻¹) was not captured, so the record was held back for review. Additionally, the record was built from the paper's abstract alone, meaning the reported summary statistics stand in for a fitted model rather than full parameter estimates. Extracted — amphotericin b: CL 0.416 L/h, V 4.57 L, k21 2.22 h-1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Stott KE; Moyo M; Ahmadu A; Kajanga C; Gondwe E; Chimang'anga W; et al. et al. (2022). The Journal of antimicrobial chemotherapy 78
@@ -25,6 +27,9 @@ Stott KE; Moyo M; Ahmadu A; Kajanga C; Gondwe E; Chimang'anga W; et al. et al. (
 
 ## Model component
 <dbs-pgx drug="amphotericin B" model-id="AmphotericinB_Stott2022_reference" status="needs_review" stale="false" population="adults with HIV-associated cryptococcal meningoencephalitis" measured-compound="liposomal amphotericin B" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -111,6 +116,8 @@ Stott KE; Moyo M; Ahmadu A; Kajanga C; Gondwe E; Chimang'anga W; et al. et al. (
 </div><figure class="pk-models-diagram"><img src="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference.svg" alt="AmphotericinB_Stott2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_sim_controls.json"></dbs-fmusim>
 

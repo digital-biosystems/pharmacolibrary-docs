@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Liu Y; Zhou C; Lv H; Tian L; Jiang J; Shi J et al. (2025). Drug design, development and therapy 19
@@ -25,6 +27,9 @@ Liu Y; Zhou C; Lv H; Tian L; Jiang J; Shi J et al. (2025). Drug design, developm
 
 ## Model component
 <dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Liu2025_covariate_effect" status="rejected" stale="false" population="Chinese adults undergoing cardiac surgery with cardiopulmonary bypass" measured-compound="tranexamic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

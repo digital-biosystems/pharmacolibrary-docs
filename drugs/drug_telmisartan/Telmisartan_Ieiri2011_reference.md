@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_cmax; T1_tmax
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[t g].parameter_id` (Q57 vs Q83) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **engineer**</sub>
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000836, model 0.00104); the model does not reproduce the paper's time of the peak (tmax) (paper 0.773, model 1.08) (+2 more).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — telmisartan: k12 8.09 h -1, CL/F 15.9 l/h, V/F 83.1 l, t1/2z 3.83 h, tlag 0.242 h, kabs 4.53 /h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[t g].parameter_id`: this record has Q57, the second reading Q83; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Ieiri I; Nishimura C; Maeda K; Sasaki T; Kimura M; Chiyoda T; et al. et al. (2011). Pharmacogenetics and genomics 21
@@ -165,7 +168,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 4.53 /h, lag 14.5 min, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 4.53 /h, lag 14.5 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference/Telmisartan_Ieiri2011_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference/Telmisartan_Ieiri2011_reference_sim_controls.json"></dbs-fmusim>
 

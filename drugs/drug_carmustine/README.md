@@ -5,7 +5,8 @@
 
 - **generic name:** carmustine
 - **ATC codes:** `L01AD01`
-- **DrugBank:** [DB00262](https://go.drugbank.com/drugs/DB00262)
+- **DrugBank:** [DB00262](https://go.drugbank.com/drugs/DB00262) · **PubChem:** [CID 2578](https://pubchem.ncbi.nlm.nih.gov/compound/2578)
+- **molar mass:** 214.05 g/mol (C5H9Cl2N3O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Russo_1981_reference](drugs/drug_carmustine/Carmustine_Russo1981_reference.md) | Russo R et al., Differential pulse polarographic determ…, Cancer treatment reports (1981) | — |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Levin_1978_reference](drugs/drug_carmustine/Carmustine_Levin1978_reference.md) | Levin VA et al., Pharmacokinetics of BCNU in man: a prel…, Cancer treatment reports (1978) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [El-Yazigi_1988_reference](drugs/drug_carmustine/Carmustine_ElYazigi1988_reference.md) | El-Yazigi A et al., Capillary gas chromatography and thermi…, Pharmaceutical research (1988) | [10.1023/a:1015989612562](https://doi.org/10.1023/a:1015989612562) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Russo_1981_reference](drugs/drug_carmustine/Carmustine_Russo1981_reference.md) | 1-compartment, IV | 3 | Russo R et al., Differential pulse polarographic determ…, Cancer treatment reports (1981) | — |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Levin_1978_reference](drugs/drug_carmustine/Carmustine_Levin1978_reference.md) | 1-compartment, IV | 3 | Levin VA et al., Pharmacokinetics of BCNU in man: a prel…, Cancer treatment reports (1978) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [El-Yazigi_1988_reference](drugs/drug_carmustine/Carmustine_ElYazigi1988_reference.md) | 1-compartment (no model) | 3 | El-Yazigi A et al., Capillary gas chromatography and thermi…, Pharmaceutical research (1988) | [10.1023/a:1015989612562](https://doi.org/10.1023/a:1015989612562) |
 
 ## Pharmacodynamics (PD)
 

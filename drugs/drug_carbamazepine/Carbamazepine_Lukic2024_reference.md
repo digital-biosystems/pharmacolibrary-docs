@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T3_output_variable; T3_topology_template
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (carbamazepine and carbamazepine-10,11-epoxide vs carbamazepine) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **engineer**</sub>
+**The record was refused because the model's output is the parent drug's central compartment instead of the measured carbamazepine-10,11-epoxide, and its structure is a single enteral parent compartment rather than the stated parent–metabolite system, with F and Tlag left at library defaults.**
+
+The measured compounds are carbamazepine and carbamazepine-10,11-epoxide, but the model's output is the parent drug's central plasma compartment rather than the metabolite compartment, so the simulated concentrations do not correspond to the analyte. The stated structure is parent–metabolite, yet the implemented model is a one-compartment enteral parent model without a linked metabolite, so it does not match the declared topology. Bioavailability (F) and absorption lag time (Tlag) had no extracted values, so library defaults were substituted. A second reader also disagreed on the primary analyte, recording carbamazepine alone instead of carbamazepine with its epoxide metabolite. Extracted — carbamazepine and carbamazepine-10,11-epoxide: CL 9.09 L/h, V 174 L, kabs 0.873 /h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has carbamazepine and carbamazepine-10,11-epoxide, the second reading carbamazepine. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `carbamazepine`, measured `carbamazepine and carbamazepine-10,11-epoxide`.
 
@@ -28,6 +31,9 @@ Lukic V; Jankovic SM; Petrovic NZ; Vucinic S; Jovic Stosic J; Djordjevic S; et a
 
 ## Model component
 <dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Lukic2024_reference" status="rejected" stale="false" population="adults with carbamazepine self-poisoning" measured-compound="carbamazepine and carbamazepine-10,11-epoxide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -133,6 +139,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.873 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference/Carbamazepine_Lukic2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference/Carbamazepine_Lukic2024_reference_sim_controls.json"></dbs-fmusim>
 

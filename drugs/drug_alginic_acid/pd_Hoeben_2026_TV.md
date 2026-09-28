@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;alginic acid&quot;,&quot;href&quot;:&quot;drugs/drug_alginic_acid/&quot;},{&quot;label&quot;:&quot;Hoeben_2026 \u00b7 PD tumor volume&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tumor volume — PD  <span class="pk-badge pk-badge--red">rejected</span>

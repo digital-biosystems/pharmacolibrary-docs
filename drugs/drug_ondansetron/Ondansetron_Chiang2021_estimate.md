@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 4.9, model 3.05e+03).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — ondansetron: CL 24.6 L/h, V1 63.3 L, Q 211 L/h, V 107 L, Kp 0.145, V2 108 l.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (2021). British journal of clinical pharmacology 87
@@ -25,6 +27,9 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
 
 ## Model component
 <dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2021_estimate" status="needs_review" stale="false" population="adults undergoing elective hip or knee arthroplasty" measured-compound="ondansetron" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -126,6 +131,8 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
 </div><figure class="pk-models-diagram"><img src="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate.svg" alt="Ondansetron_Chiang2021_estimate diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate_sim_controls.json"></dbs-fmusim>
 

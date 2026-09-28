@@ -4,7 +4,7 @@
 
 - **generic name:** hemoglobin raffimer
 - **ATC codes:** `B05AA09`
-- **DrugBank:** [DB13658](https://go.drugbank.com/drugs/DB13658)
+- **DrugBank:** [DB13658](https://go.drugbank.com/drugs/DB13658) · **PubChem:** not captured
 - **groups:** investigational
 
 ## Extraction summary

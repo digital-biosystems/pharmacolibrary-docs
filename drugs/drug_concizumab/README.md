@@ -5,7 +5,7 @@
 
 - **generic name:** concizumab
 - **ATC codes:** `B02BX10`
-- **DrugBank:** [DB12820](https://go.drugbank.com/drugs/DB12820)
+- **DrugBank:** [DB12820](https://go.drugbank.com/drugs/DB12820) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -26,9 +26,9 @@ Concizumab-mtci (Alhemo) was approved by the FDA in December 2024 for use in pat
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Agersø_2014_reference](drugs/drug_concizumab/Concizumab_Agers2014_reference.md) | Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal of pharmac… (2014) | [10.1016/j.ejps.2014.02.009](https://doi.org/10.1016/j.ejps.2014.02.009) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Agersø_2014_reference](drugs/drug_concizumab/Concizumab_Agers2014_reference.md) | 1-compartment (no model) | 2 | Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal of pharmac… (2014) | [10.1016/j.ejps.2014.02.009](https://doi.org/10.1016/j.ejps.2014.02.009) |
 
 ## Pharmacodynamics (PD)
 

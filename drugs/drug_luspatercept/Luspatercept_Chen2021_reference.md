@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The luspatercept record was held back because the absorption rate constant ka (0.410 1/day) was not reported in the source and was substituted with a default, an invented absorption deemed not acceptable.**
+
+The record lists ka as 0.410 1/day, but this value was not reported in the source paper; the model builder defaulted both ka and Tlag, so the absorption description is invented rather than fitted. The parameterization is apparent, assuming F=1 and Fm=1 with no molar correction. Additionally, although covariate effects on CL/F (weight 0.809, albumin −0.886) and V/F (weight 0.718) are defined, only the reference individual was simulated, so the covariate scenarios were not exercised. Extracted — luspatercept: CL/F 0.532 L/day, V/F 8.39 L, kabs 0.41.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Chen N; Kassir N; Laadem A; Giuseppi AC; Shetty J; Maxwell SE; et al. et al. (2021). Journal of clinical pharmacology 61
@@ -28,6 +31,9 @@ Chen N; Kassir N; Laadem A; Giuseppi AC; Shetty J; Maxwell SE; et al. et al. (20
 
 ## Model component
 <dbs-pgx drug="luspatercept" model-id="Luspatercept_Chen2021_reference" status="needs_review" stale="false" population="adult patients with β-thalassemia" measured-compound="luspatercept" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted, plus 3 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -158,6 +164,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference.svg" alt="Luspatercept_Chen2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_sim_controls.json"></dbs-fmusim>
 

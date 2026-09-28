@@ -5,7 +5,8 @@
 
 - **generic name:** busulfan
 - **ATC codes:** `L01AB01`
-- **DrugBank:** [DB01008](https://go.drugbank.com/drugs/DB01008)
+- **DrugBank:** [DB01008](https://go.drugbank.com/drugs/DB01008) · **PubChem:** [CID 2478](https://pubchem.ncbi.nlm.nih.gov/compound/2478)
+- **molar mass:** 246.302 g/mol (C6H14O6S2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lawson_2022_pediatric stem cell transplantation recipients](drugs/drug_busulfan/Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci.md) | Lawson R et al., Population pharmacokinetic model for on…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12809](https://doi.org/10.1002/psp4.12809) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lawson_2022_pediatric stem cell transplantation recipients](drugs/drug_busulfan/Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci.md) | — (no model) | 0 | Lawson R et al., Population pharmacokinetic model for on…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12809](https://doi.org/10.1002/psp4.12809) |
 
 ## Pharmacogenomics (PGx)
 

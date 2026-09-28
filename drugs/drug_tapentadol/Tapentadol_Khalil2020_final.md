@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (0.349 vs 0.283) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — tapentadol: CL 94.6 L/h, V 414 L, kabs 2.19 h−1, Fab 0.349, tlag 0.266 h, kel 0.122 wks −1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.349, the second reading 0.283; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Khalil F; Choi SL; Watson E; Tzschentke TM; Lefeber C; Eerdekens M; et al. et al. (2020). Journal of pain research 13
@@ -26,6 +29,9 @@ Khalil F; Choi SL; Watson E; Tzschentke TM; Lefeber C; Eerdekens M; et al. et al
 
 ## Model component
 <dbs-pgx drug="tapentadol" model-id="Tapentadol_Khalil2020_final" status="needs_review" stale="false" population="pediatric patients from birth to &lt;18 years old" measured-compound="tapentadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 

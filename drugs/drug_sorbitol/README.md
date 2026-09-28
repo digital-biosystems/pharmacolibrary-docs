@@ -5,7 +5,8 @@
 
 - **generic name:** sorbitol
 - **ATC codes:** `A06AD18`, `A06AG07`, `B05CX02`, `V04CC01`
-- **DrugBank:** [DB01638](https://go.drugbank.com/drugs/DB01638)
+- **DrugBank:** [DB01638](https://go.drugbank.com/drugs/DB01638) · **PubChem:** [CID 5780](https://pubchem.ncbi.nlm.nih.gov/compound/5780)
+- **molar mass:** 182.1718 g/mol (C6H14O6) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Molino_1986_reference](drugs/drug_sorbitol/Sorbitol_Molino1986_reference.md) | Molino G et al., Sorbitol clearance: a parameter reflect…, Research communications in… (1986) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nau_1992_reference](drugs/drug_sorbitol/Sorbitol_Nau1992_reference.md) | Nau R et al., Low blood-to-cerebrospinal fluid passag…, Stroke (1992) | [10.1161/01.str.23.9.1276](https://doi.org/10.1161/01.str.23.9.1276) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Molino_1986_reference](drugs/drug_sorbitol/Sorbitol_Molino1986_reference.md) | 1-compartment (no model) | 1 | Molino G et al., Sorbitol clearance: a parameter reflect…, Research communications in… (1986) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nau_1992_reference](drugs/drug_sorbitol/Sorbitol_Nau1992_reference.md) | 1-compartment (no model) | 0 | Nau R et al., Low blood-to-cerebrospinal fluid passag…, Stroke (1992) | [10.1161/01.str.23.9.1276](https://doi.org/10.1161/01.str.23.9.1276) |
 
 ## Pharmacodynamics (PD)
 

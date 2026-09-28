@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction).
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The dihydrocodeine record was rejected because its apparent parameters are incoherent: the reported CL/F of 43 L/h and V/F of 203 L imply an elimination rate constant that conflicts with the separately reported kel of 0.216 1/h, a double correction of the same clearance.**
+
+The record lists both CL/F (43 L/h) with V/F (203 L) and a separate kel (0.216 1/h) for dihydrocodeine; since kel should equal CL/F divided by V/F, the two sets of values double-correct the same elimination process and fail the apparent-parameter coherence check. The record was additionally built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The metabolite dihydromorphine's formation fraction fm is given as 0.015 systemic, while its presystemic formation link parameter Kfm is left by the abstract as either fixed at 0 or estimated during first-pass modelling. Extracted — dihydrocodeine: CL/F 43 L/h, V/F 203 l, kabs 11 1/h, tlag 0.3 h, kel 0.216 1/h, t1/2z 13 min; dihydromorphine: fm 0.015, kel 0.339 1/h, V 200 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Webb JA; Rostami-Hodjegan A; Abdul-Manap R; Hofmann U; Mikus G; Kamali F et al. (2001). British journal of clinical pharmacology 52

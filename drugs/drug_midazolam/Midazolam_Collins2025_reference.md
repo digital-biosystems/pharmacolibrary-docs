@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** missing key parameters — none reported by this paper
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (midazolam vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Collins KS; Aruldhas BW; Metzger IF; Lu JBL; Heathman MA; Quinney SK; et al. et al. (2025). CPT: pharmacometrics & systems pharmacology 14

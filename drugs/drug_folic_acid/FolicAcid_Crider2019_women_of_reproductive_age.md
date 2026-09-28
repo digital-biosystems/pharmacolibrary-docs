@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 08:46:53.708995+00:00) predates the upstream re-run (2026-09-19 00:57:10.849216+00:00). Current validate status: `not captured`.
 
@@ -27,6 +29,9 @@ Crider KS; Devine O; Qi YP; Yeung LF; Sekkarie A; Zaganjor I; et al. et al. (201
 
 ## Model component
 <dbs-pgx drug="folic acid" model-id="FolicAcid_Crider2019_women_of_reproductive_age" status="" stale="true" population="women of reproductive age" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

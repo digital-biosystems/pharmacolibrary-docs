@@ -4,7 +4,8 @@
 
 - **generic name:** ethacridine lactate
 - **ATC codes:** `B05CA08`, `D08AA01`
-- **DrugBank:** [DB13190](https://go.drugbank.com/drugs/DB13190)
+- **DrugBank:** [DB13190](https://go.drugbank.com/drugs/DB13190) · **PubChem:** not captured
+- **molar mass:** 253.305 g/mol (C15H15N3O) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

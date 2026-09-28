@@ -4,7 +4,8 @@
 
 - **generic name:** acetohexamide
 - **ATC codes:** `A10BB31`
-- **DrugBank:** [DB00414](https://go.drugbank.com/drugs/DB00414)
+- **DrugBank:** [DB00414](https://go.drugbank.com/drugs/DB00414) · **PubChem:** [CID 1989](https://pubchem.ncbi.nlm.nih.gov/compound/1989)
+- **molar mass:** 324.395 g/mol (C15H20N2O4S) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** split column 'parameter' is a table statistic/structure column, not a study population (mis-split estimate table)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**'parameter' is a column of the estimates table, not a study population.**
+
+The table was split into one record per column, and 'parameter' holds a statistic rather than a second set of estimates.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sy SKB; Chia YL; Gordi T; Hoch U; Eldon MA et al. (2018). Cancer chemotherapy and pharmacology 81
@@ -25,6 +27,9 @@ Sy SKB; Chia YL; Gordi T; Hoch U; Eldon MA et al. (2018). Cancer chemotherapy an
 
 ## Model component
 <dbs-pgx drug="etirinotecan pegol" model-id="EtirinotecanPegol_Sy2018_parameter" status="rejected" stale="false" population="cancer patients with solid tumors" measured-compound="etirinotecan pegol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

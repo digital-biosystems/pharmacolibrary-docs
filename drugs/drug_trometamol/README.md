@@ -4,7 +4,7 @@
 
 - **generic name:** trometamol
 - **ATC codes:** `B05BB03`, `B05XX02`
-- **DrugBank:** [DB03754](https://go.drugbank.com/drugs/DB03754)
+- **DrugBank:** [DB03754](https://go.drugbank.com/drugs/DB03754) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

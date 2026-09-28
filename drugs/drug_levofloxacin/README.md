@@ -5,7 +5,8 @@
 
 - **generic name:** levofloxacin
 - **ATC codes:** `A02BD10`, `J01MA12`, `J01RA05`, `J04AM12`, `S01AE05`
-- **DrugBank:** [DB01137](https://go.drugbank.com/drugs/DB01137)
+- **DrugBank:** [DB01137](https://go.drugbank.com/drugs/DB01137) · **PubChem:** [CID 149096](https://pubchem.ncbi.nlm.nih.gov/compound/149096)
+- **molar mass:** 361.3675 g/mol (C18H20FN3O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -26,11 +27,11 @@ In its ophthalmic formulation, levofloxacin is indicated for the treatment of ba
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Setiawan_2022_mean](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md) | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Setiawan_2022_median](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median.md) | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [He_2024_reference](drugs/drug_levofloxacin/Levofloxacin_He2024_reference.md) | He YY et al., Population pharmacokinetics and dose op…, British journal of clinical… (2024) | [10.1111/bcp.16003](https://doi.org/10.1111/bcp.16003) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Setiawan_2022_mean](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md) | 2-compartment, IV | 4 | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Setiawan_2022_median](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median.md) | 2-compartment, IV | 4 | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [He_2024_reference](drugs/drug_levofloxacin/Levofloxacin_He2024_reference.md) | 1-compartment (no model) | 1 | He YY et al., Population pharmacokinetics and dose op…, British journal of clinical… (2024) | [10.1111/bcp.16003](https://doi.org/10.1111/bcp.16003) |
 
 ## ADME sites
 

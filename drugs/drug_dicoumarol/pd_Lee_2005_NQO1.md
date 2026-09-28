@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;dicoumarol&quot;,&quot;href&quot;:&quot;drugs/drug_dicoumarol/&quot;},{&quot;label&quot;:&quot;Lee_2005 \u00b7 PD NQO1 activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # NQO1 activity — PD  <span class="pk-badge pk-badge--red">rejected</span>

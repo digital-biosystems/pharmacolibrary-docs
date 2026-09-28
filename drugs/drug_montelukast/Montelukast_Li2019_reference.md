@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[central compartment volume of distribution]` (14.0 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (V1 and V), so that value has no SI equivalent. Extracted — montelukast: V1 14 %CV, V 45.4 %CV, CL 0.87 L/h, kabs 0.357 h-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central compartment volume of distribution: this record has 14.0, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:33:24.398561+00:00) predates the upstream re-run (2026-09-24 17:00:34.043890+00:00). Current validate status: `needs_review`.
 

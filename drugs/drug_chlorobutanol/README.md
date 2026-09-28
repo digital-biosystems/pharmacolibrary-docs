@@ -4,7 +4,8 @@
 
 - **generic name:** chlorobutanol
 - **ATC codes:** `A04AD04`
-- **DrugBank:** [DB11386](https://go.drugbank.com/drugs/DB11386)
+- **DrugBank:** [DB11386](https://go.drugbank.com/drugs/DB11386) · **PubChem:** [CID 5977](https://pubchem.ncbi.nlm.nih.gov/compound/5977)
+- **molar mass:** 177.45 g/mol (C4H7Cl3O) — DrugBank
 - **groups:** approved, investigational, vet_approved, withdrawn
 
 ## About

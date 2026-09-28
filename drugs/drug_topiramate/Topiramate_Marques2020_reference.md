@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The record was rejected because the absorption rate constant ka is reported as 127 %, a percentage that cannot serve as a first-order rate constant (unit 1/h) in the one-compartment topiramate model, and the model itself was only taken from the paper's abstract rather than a fitted model.**
+
+The topiramate model for neonates with hypoxic ischaemic encephalopathy under therapeutic hypothermia has a one-compartment structure with V = 3.22 L, but the absorption parameter ka is given as 127 % and clearance as 65 %, both dimensionless percentages where a pharmacokinetic rate constant (1/h) and a clearance (L/h) are expected — a dimensional mismatch on a structural parameter. Because only the paper's abstract was read, these summary statistics stand in for a fitted model, so the values cannot be traced to a full parameterisation. Extracted — topiramate: V 3.22 L, kabs 127 %, CL 65 %.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Marques MR; Garcia-Robles A; Usach I; Vento M; Poveda JL; Peris JE; et al. et al. (2020). Acta paediatrica (Oslo, Norway : 1992) 109
@@ -25,6 +27,9 @@ Marques MR; Garcia-Robles A; Usach I; Vento M; Poveda JL; Peris JE; et al. et al
 
 ## Model component
 <dbs-pgx drug="topiramate" model-id="Topiramate_Marques2020_reference" status="rejected" stale="false" population="neonates with hypoxic ischaemic encephalopathy undergoing therapeutic hypothermia" measured-compound="topiramate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

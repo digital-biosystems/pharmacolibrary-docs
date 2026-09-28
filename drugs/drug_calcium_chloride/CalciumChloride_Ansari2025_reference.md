@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12A&quot;,&quot;href&quot;:&quot;atc/A12A.md&quot;},{&quot;label&quot;:&quot;calcium chloride&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_chloride/&quot;},{&quot;label&quot;:&quot;Ansari_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumChloride_Ansari2022_reference&quot;,&quot;label&quot;:&quot;Ansari_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_chloride/CalciumChloride_Ansari2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CalciumChloride_Ansari2025_reference&quot;,&quot;label&quot;:&quot;Ansari_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_chloride/CalciumChloride_Ansari2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumChloride_Ansari2022_reference&quot;,&quot;label&quot;:&quot;Ansari_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_chloride/CalciumChloride_Ansari2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CalciumChloride_Ansari2025_reference&quot;,&quot;label&quot;:&quot;Ansari_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_chloride/CalciumChloride_Ansari2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (calcium chloride vs unknown) and 7 more field(s) — a structural parameter, so the record is disputed.
+**The calcium chloride record was rejected because its two-compartment structure leaves a compartment with no dosing path, and the parameters (CL 0.18 l/min, V1 10.9 l, V2 16.5 l) come only from the paper's abstract, not a fitted model.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record describes a two-compartment model for ionized calcium in parturients undergoing cesarean delivery, with systemic clearance 0.18 l/min, central volume 10.9 l and peripheral volume 16.5 l, but one compartment has no connection from the dose, making it unreachable in the model structure. Because only the paper's abstract was read, the reported summary statistics stood in for a fitted model, so the parameter values are not derived from the full published analysis. A second reader disagreed on the dosing compound (calcium chloride versus unknown) and the primary analyte (ionized calcium versus unknown), and returned null values for all three parameters, so the parameter comparison could not be computed. Extracted — ionized calcium: CL 0.18 l/min, V1 10.9 l, V2 16.5 l.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has calcium chloride, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `calcium chloride`, measured `ionized calcium`.
 
@@ -27,6 +31,9 @@ Ansari JR; Conti DJ; Michel G; Yarmosh A; Cole NM; Shafer SL et al. (2025). Anes
 
 ## Model component
 <dbs-pgx drug="calcium chloride" model-id="CalciumChloride_Ansari2025_reference" status="rejected" stale="false" population="parturients undergoing cesarean delivery" measured-compound="ionized calcium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

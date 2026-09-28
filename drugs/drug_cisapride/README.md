@@ -5,7 +5,8 @@
 
 - **generic name:** cisapride
 - **ATC codes:** `A03FA02`
-- **DrugBank:** [DB00604](https://go.drugbank.com/drugs/DB00604)
+- **DrugBank:** [DB00604](https://go.drugbank.com/drugs/DB00604) · **PubChem:** [CID 6917698](https://pubchem.ncbi.nlm.nih.gov/compound/6917698)
+- **molar mass:** 465.945 g/mol (C23H29ClFN3O4) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Preechagoon_1999_reference](drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md) | Preechagoon Y et al., Population pharmacokinetics of enterall…, British journal of clinical… (1999) | [10.1046/j.1365-2125.1999.00068.x](https://doi.org/10.1046/j.1365-2125.1999.00068.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Michiels_1987_reference](drugs/drug_cisapride/Cisapride_Michiels1987_reference.md) | Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1987) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Odoul_2002_reference](drugs/drug_cisapride/Cisapride_Odoul2002_reference.md) | Odoul F et al., Population pharmacokinetics of cisaprid…, European journal of clinica… (2002) | [10.1007/s00228-002-0504-z](https://doi.org/10.1007/s00228-002-0504-z) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Preechagoon_1999_reference](drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md) | 1-compartment, oral | 3 | Preechagoon Y et al., Population pharmacokinetics of enterall…, British journal of clinical… (1999) | [10.1046/j.1365-2125.1999.00068.x](https://doi.org/10.1046/j.1365-2125.1999.00068.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Michiels_1987_reference](drugs/drug_cisapride/Cisapride_Michiels1987_reference.md) | 1-compartment (no model) | 3 | Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1987) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Odoul_2002_reference](drugs/drug_cisapride/Cisapride_Odoul2002_reference.md) | 1-compartment (no model) | 2 | Odoul F et al., Population pharmacokinetics of cisaprid…, European journal of clinica… (2002) | [10.1007/s00228-002-0504-z](https://doi.org/10.1007/s00228-002-0504-z) |
 
 ## ADME sites
 

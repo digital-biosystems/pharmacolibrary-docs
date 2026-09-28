@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The semaglutide apparent clearance (CL/F 0.0575 L/hr) and apparent volume (V/F 0.0028 L) are orders of magnitude outside physiological plausibility, indicating a unit or scale extraction error, so the record was rejected.**
+
+The record lists semaglutide apparent clearance CL/F,ss as 0.0575 L/hr (mean at the 0.2 mg dose) and an apparent volume V/F of 0.0028 L, the latter explicitly derived from CL·t½/ln2. Both magnitudes are physiologically implausible for a large peptide dosed subcutaneously, consistent with a unit or scale error during extraction. The review flagged the clearance/volume as outside the physiological window on this basis and rejected the record. Extracted — semaglutide: CL/F 0.0575 L/hr, V/F 0.0028 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Guo W; Xu Z; Zou H; Li F; Li Y; Feng J; et al. et al. (2023). Molecular metabolism 75

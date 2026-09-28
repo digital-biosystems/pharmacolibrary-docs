@@ -4,7 +4,7 @@
 
 - **generic name:** Ethacridine
 - **ATC codes:** `B05CA08`, `D08AA01`
-- **DrugBank:** [DB13190](https://go.drugbank.com/drugs/DB13190)
+- **DrugBank:** [DB13190](https://go.drugbank.com/drugs/DB13190) · **PubChem:** not captured
 - **groups:** investigational
 
 ## Extraction summary

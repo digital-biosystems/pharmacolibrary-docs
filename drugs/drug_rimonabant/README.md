@@ -4,7 +4,8 @@
 
 - **generic name:** rimonabant
 - **ATC codes:** `A08AX01`
-- **DrugBank:** [DB06155](https://go.drugbank.com/drugs/DB06155)
+- **DrugBank:** [DB06155](https://go.drugbank.com/drugs/DB06155) · **PubChem:** [CID 104850](https://pubchem.ncbi.nlm.nih.gov/compound/104850)
+- **molar mass:** 463.787 g/mol (C22H21Cl3N4O) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

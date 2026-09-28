@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/fm].parameter_id` (Q27 vs Q351) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The allopurinol–oxypurinol model was held back because absorption rate constant ka and lag time Tlag were left at library defaults (ka not reported in the source) and the covariate effects were never simulated.**
+
+The model builder substituted defaults for the unreported absorption parameters ka and Tlag, so the invented ka is not from the source paper, and assumed F=1, Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order extravascular input. The covariate effects on oxypurinol clearance — the standardized creatinine clearance power on baseline serum urate (−0.18) and the ABCB2 genotype effects (CA 0.0539, CC 0.0183) — were defined but only the reference individual was simulated, so these effects were not exercised. Adjudication of the invented absorption deviation returned 'not acceptable'. A second reader also disagreed on several extracted values, e.g. reading 0.45 versus null for a creatinine covariate exponent and −0.18 versus null for the serum urate effect. Extracted — oxypurinol: CL/F 1.05 L/h, V/F 59.3 L, kfm 1.1 /h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/fm].parameter_id`: this record has Q27, the second reading Q351; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
 

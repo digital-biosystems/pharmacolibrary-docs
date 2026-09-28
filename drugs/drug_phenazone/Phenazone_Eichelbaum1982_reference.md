@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (97 vs not captured) and 4 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — phenazone: Fab 97 %, t1/2z 9.7 h, V 0.134 l kg -1, kabs 0.158 h -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 97, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Eichelbaum M; Ochs HR; Roberts G; Somogyi A et al. (1982). Arzneimittel-Forschung 32
 
 ## Model component
 <dbs-pgx drug="phenazone" model-id="Phenazone_Eichelbaum1982_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="antipyrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

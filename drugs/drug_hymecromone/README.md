@@ -4,7 +4,8 @@
 
 - **generic name:** hymecromone
 - **ATC codes:** `A05AX02`
-- **DrugBank:** [DB07118](https://go.drugbank.com/drugs/DB07118)
+- **DrugBank:** [DB07118](https://go.drugbank.com/drugs/DB07118) · **PubChem:** [CID 5280567](https://pubchem.ncbi.nlm.nih.gov/compound/5280567)
+- **molar mass:** 176.1687 g/mol (C10H8O3) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

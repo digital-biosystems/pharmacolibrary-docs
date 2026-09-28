@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;belotecan&quot;,&quot;href&quot;:&quot;drugs/drug_belotecan/&quot;},{&quot;label&quot;:&quot;Wu_2012_2 \u00b7 PD monocytes&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # monocytes — PD  <span class="pk-badge pk-badge--green">extracted</span>

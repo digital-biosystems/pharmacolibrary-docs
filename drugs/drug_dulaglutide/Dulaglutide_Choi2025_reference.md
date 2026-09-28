@@ -5,7 +5,7 @@
 
 # dulaglutide — `Dulaglutide_Choi2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.562). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The dulaglutide 2-compartment model was rejected because a compartment has no dosing path: the structure leaves one compartment unreachable, so the recorded CL/F, V1, V2 and ka values cannot be accepted.**
+
+The record describes a 2-compartment dulaglutide model with CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L and absorption rate constant ka 0.006 h⁻¹, but the structure check found an unreachable or orphan compartment — a compartment with no path from the dose — so the model was refused. A second reader also disagreed with the record on several extracted values, reading 5.52, 66.93, 24.8 and 75.2 where the record had null, and null where the record had 18, 6 and 21; these disagreements are inconclusive as to which values are correct. Extracted — dulaglutide: CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q311: this record has none, the second reading 5.52; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Choi S; Seo J; Park S; Kim NY; Kim H; Lim HS et al. (2025). Frontiers in pharmacology 16
@@ -25,6 +29,9 @@ Choi S; Seo J; Park S; Kim NY; Kim H; Lim HS et al. (2025). Frontiers in pharmac
 
 ## Model component
 <dbs-pgx drug="dulaglutide" model-id="Dulaglutide_Choi2025_reference" status="rejected" stale="false" population="" measured-compound="dulaglutide" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -56,9 +63,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.562 (9/16 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q311]` | not captured | 5.52 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | not captured | 66.93 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | 18 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | not captured | 24.8 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q87]` | not captured | 75.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | 21 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

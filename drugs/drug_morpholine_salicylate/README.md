@@ -4,7 +4,8 @@
 
 - **generic name:** morpholine salicylate
 - **ATC codes:** `N02BA08`
-- **DrugBank:** [DB13669](https://go.drugbank.com/drugs/DB13669)
+- **DrugBank:** [DB13669](https://go.drugbank.com/drugs/DB13669) · **PubChem:** not captured
+- **molar mass:** 87.1204 g/mol (C4H9NO) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

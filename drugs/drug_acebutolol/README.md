@@ -4,7 +4,8 @@
 
 - **generic name:** acebutolol
 - **ATC codes:** `C07AB04`, `C07BB04`
-- **DrugBank:** [DB01193](https://go.drugbank.com/drugs/DB01193)
+- **DrugBank:** [DB01193](https://go.drugbank.com/drugs/DB01193) · **PubChem:** [CID 1978](https://pubchem.ncbi.nlm.nih.gov/compound/1978)
+- **molar mass:** 336.4259 g/mol (C18H28N2O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

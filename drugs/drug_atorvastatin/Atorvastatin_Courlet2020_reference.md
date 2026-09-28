@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['atorvastatin', 'o-oh-atorvastatin', 'metabolism']] vs []) and 8 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — atorvastatin: kabs 2.59 1/h, CL 230 L/h, V 2.91e+03 L, Q 98 L/h, kel 0.0072 h−1; o-OH-atorvastatin: fm 10, CL 116 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has atorvastatin → o-oh-atorvastatin (metabolism), the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Courlet P; Decosterd LA; Alves Saldanha S; Cavassini M; Stader F; Stoeckle M; et al. et al. (2020). Clinical pharmacokinetics 59

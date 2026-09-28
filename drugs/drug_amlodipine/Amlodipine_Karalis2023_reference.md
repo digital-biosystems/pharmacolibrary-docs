@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-17 22:47:41.705811+00:00) predates the upstream re-run (2026-09-23 22:40:44.965014+00:00). Current validate status: `extracted`.
 
@@ -129,7 +129,7 @@ Karalis VD et al. (2023). Pharmaceuticals (Basel, Switzerland) 16
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.85 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.85 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_sim_controls.json"></dbs-fmusim>
 

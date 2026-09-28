@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[extracellular clearance]` (0.07 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The rifabutin one-compartment model was rejected because its clearance (0.07 L/h) and volume (0.135 L) are physiologically implausible, indicating a unit or scale extraction error.**
+
+The record lists rifabutin clearance as 0.07 L/h and volume as 0.135 L, magnitudes far outside the physiological range for this drug, which points to a unit or scale error when the values were taken from the paper. The absorption rate constant (0.16 h−1) and lag time (0.825 h) were also recorded, but a second reader could not confirm any of the four parameter values, leaving the extracted numbers uncorroborated. The rejection rests on the implausible clearance and volume magnitudes; the failed corroboration of all parameters is inconclusive rather than a confirmed error. Extracted — rifabutin: CL 0.07 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of extracellular clearance: this record has 0.07, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Li RC; Narang PK; Poggesi I; Strolin-Benedetti M et al. (1996). Biopharmaceutics & drug disposition 17
@@ -26,6 +29,9 @@ Li RC; Narang PK; Poggesi I; Strolin-Benedetti M et al. (1996). Biopharmaceutics
 
 ## Model component
 <dbs-pgx drug="rifabutin" model-id="Rifabutin_Li1996_reference" status="rejected" stale="false" population="healthy normal volunteers" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

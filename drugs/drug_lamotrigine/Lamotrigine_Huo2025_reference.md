@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[σ 1].parameter_id` (Q315 vs Q316) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for lamotrigine's bioavailability, volume of distribution and absorption lag time.**
+
+The model was built, but lamotrigine's bioavailability, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (sigma), so that value has no SI equivalent. Extracted — lamotrigine: kabs 1.93 h -1, CL 2.44 L/h, sigma 0.3 multiplicative, CV.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[σ 1].parameter_id`: this record has Q315, the second reading Q316. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Huo J; Liu Y; Yang J; Chen M; Yang L; Wang L; et al. et al. (2025). Drug design, development and therapy 19
@@ -26,6 +29,9 @@ Huo J; Liu Y; Yang J; Chen M; Yang L; Wang L; et al. et al. (2025). Drug design,
 
 ## Model component
 <dbs-pgx drug="lamotrigine" model-id="Lamotrigine_Huo2025_reference" status="model_quarantined" stale="false" population="Chinese perigestational epilepsy patients" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

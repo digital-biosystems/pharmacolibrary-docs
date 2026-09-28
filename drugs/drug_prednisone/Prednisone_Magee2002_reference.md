@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q49, Q353, Q27, Q355, Q88 — no SI value to build from.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Kabs, Vnorm/F, CL/F, CLnorm/F and AUC have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is prednisone's own; they describe prednisolone. Extracted — prednisolone: kabs 5.62 hx1, tlag 0.283 h, V/F 44.8 l, Vnorm/F 0.59 lkgx1, CL/F 13.5 lhx1, CLnorm/F 0.178 lhx1kgx1, t1/2z 2.33 h, AUC 1.64e+03 ngmlx1h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -27,6 +29,9 @@ Magee MH; Blum RA; Lates CD; Jusko WJ et al. (2002). British journal of clinical
 
 ## Model component
 <dbs-pgx drug="prednisone" model-id="Prednisone_Magee2002_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, CLnorm/F, V/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

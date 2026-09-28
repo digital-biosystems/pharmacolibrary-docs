@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[ka]` (0.636 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**This abstract-only salbutamol sulphate rat record was refused because a structural parameter fails a dimensional check: clearance 28.0 L h−1 against volume 167.02 L gives inconsistent dimensions for the one-compartment structure.**
+
+The record was built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model. The refusal cites a dimension mismatch on a structural parameter: the listed clearance of 28.0 L h−1 with distribution volume 167.02 L is dimensionally inconsistent for the reported one-compartment salbutamol sulphate model. A second reader could not confirm the absorption rate constant ka (0.636 h−1), Km (0.54 mM) or Vmax (0.726 mM/h), leaving those values uncorroborated. Extracted — salbutamol: kabs 0.636 h(-1), Vmax 0.726 mM/h, Km 0.54 mM, CL 28 L h−1, V 167 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ka: this record has 0.636, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:47:13.043871+00:00) predates the upstream re-run (2026-09-24 04:46:52.795659+00:00). Current validate status: `rejected`.
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The carmustine one-compartment record was refused because a structural parameter carries a dimension inconsistent with the reported values (λ1 2.898 hr-1, kel 0.1228 hr-1, CL 7.211 liters/hr.kg), and it was built from the abstract alone.**
+
+The record for BCNU in rabbits lists only three parameters — the alpha rate constant λ1 at 2.898 hr-1, the beta rate constant kel at 0.1228 hr-1, and a total-body clearance of 7.211 liters/hr.kg — and the dimension check failed on a structural parameter of this one-compartment structure. Because only the paper's abstract was read, these reported summary statistics stood in for a fitted model, so the parameter set is incomplete for the stated structure. Extracted — carmustine: λ1 2.9 hr-1, kel 0.123 hr-1, CL 7.21 liters/hr.kg.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 El-Yazigi A; Martin CR et al. (1988). Pharmaceutical research 5
@@ -25,6 +27,9 @@ El-Yazigi A; Martin CR et al. (1988). Pharmaceutical research 5
 
 ## Model component
 <dbs-pgx drug="carmustine" model-id="Carmustine_ElYazigi1988_reference" status="rejected" stale="false" population="rabbits" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

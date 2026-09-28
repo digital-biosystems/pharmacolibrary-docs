@@ -4,7 +4,8 @@
 
 - **generic name:** oxyquinoline
 - **ATC codes:** `A01AB07`, `D08AH03`, `G01AC30`, `R02AA14`
-- **DrugBank:** [DB11145](https://go.drugbank.com/drugs/DB11145)
+- **DrugBank:** [DB11145](https://go.drugbank.com/drugs/DB11145) · **PubChem:** [CID 1923](https://pubchem.ncbi.nlm.nih.gov/compound/1923)
+- **molar mass:** 145.158 g/mol (C9H7NO) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About

@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q60]` (not captured vs 23) and 1 more field(s) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**Allopurinol record held back: absorption rate constant ka and lag time Tlag were not reported and left at library defaults, with an invented first-order absorption, and the ABCB2 covariate effects were never simulated.**
+
+The record reports CL/F = 11.0 l/h and V/F = 50.0 litres for allopurinol, but ka and Tlag are missing from the source, so library placeholder defaults were substituted and the model was held back. The builder also assumed F = 1 and Fm = 1 with no molar correction, giving the apparent (/F) parameterization with extravascular first-order input. The invented absorption (ka defaulted, not reported in the source) was judged not acceptable. Although the record defines ABCB2 covariate effects (AA 0.0, CA 0.0539, CC 0.0183), only the reference individual was simulated, so the covariate scenarios were not exercised; a second reader also disagreed on two extracted values (23 vs null and 5.6 vs null). Extracted — allopurinol: CL/F 11 l/h, V/F 50 litres.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q60: this record has none, the second reading 23; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Day RO; Kamel B; Kannangara DR; Williams KM; Graham GG et al. (2016). Clinical science (London, England : 1979) 130

@@ -5,7 +5,8 @@
 
 - **generic name:** warfarin
 - **ATC codes:** `B01AA03`
-- **DrugBank:** [DB00682](https://go.drugbank.com/drugs/DB00682)
+- **DrugBank:** [DB00682](https://go.drugbank.com/drugs/DB00682) · **PubChem:** [CID 54678486](https://pubchem.ncbi.nlm.nih.gov/compound/54678486)
+- **molar mass:** 308.3279 g/mol (C19H16O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -25,6 +26,18 @@
 **Off-label** uses include:
 
 1) Secondary prevention of stroke and transient ischemic attacks in patients with rheumatic mitral valve disease but without atrial fibrillation.[A179182]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| warfarin | parent | 308.328 | C19H16O4 | DrugBank | [54678486](https://pubchem.ncbi.nlm.nih.gov/compound/54678486) | Kubo_2017, Ohara_2014, Zhu_2017 |
+| enzalutamide | metabolite | 464.4 | — | PubChem | [15951529](https://pubchem.ncbi.nlm.nih.gov/compound/15951529) | Gibbons_2015 |
+| enzalutamide carboxylic acid metabolite | metabolite | — (mass units only) | — | — | — | — |
+| N-desmethyl enzalutamide | metabolite | 450.4 | — | PubChem | [70678916](https://pubchem.ncbi.nlm.nih.gov/compound/70678916) | Gibbons_2015 |
+| S-warfarin | metabolite | 308.3 | — | PubChem | [54688261](https://pubchem.ncbi.nlm.nih.gov/compound/54688261) | Kubo_2017, Ohara_2014, Zhu_2017 |
 
 ## Extraction summary
 

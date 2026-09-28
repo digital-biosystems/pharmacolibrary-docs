@@ -5,7 +5,8 @@
 
 - **generic name:** gemcitabine
 - **ATC codes:** `L01BC05`
-- **DrugBank:** [DB00441](https://go.drugbank.com/drugs/DB00441)
+- **DrugBank:** [DB00441](https://go.drugbank.com/drugs/DB00441) · **PubChem:** [CID 60750](https://pubchem.ncbi.nlm.nih.gov/compound/60750)
+- **molar mass:** 263.1981 g/mol (C9H11F2N3O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -31,11 +32,11 @@ Gemcitabine is marketed as Gemzar and it is available as intravenous injection. 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Doi_2017_reference](drugs/drug_gemcitabine/Gemcitabine_Doi2017_reference.md) | Doi T et al., NC-6004 Phase I study in combination wi…, Cancer chemotherapy and pha… (2017) | [10.1007/s00280-017-3254-4](https://doi.org/10.1007/s00280-017-3254-4) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Terranova_2021_reference](drugs/drug_gemcitabine/Gemcitabine_Terranova2021_reference.md) | Terranova N et al., Population pharmacokinetics of ATR inhi…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04184-z](https://doi.org/10.1007/s00280-020-04184-z) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sathe_2024_reference](drugs/drug_gemcitabine/Gemcitabine_Sathe2024_reference.md) | Sathe AG et al., Population Pharmacokinetics of Sacituzu…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01366-3](https://doi.org/10.1007/s40262-024-01366-3) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> | [Doi_2017_reference](drugs/drug_gemcitabine/Gemcitabine_Doi2017_reference.md) | 2-compartment, IV | 4 | Doi T et al., NC-6004 Phase I study in combination wi…, Cancer chemotherapy and pha… (2017) | [10.1007/s00280-017-3254-4](https://doi.org/10.1007/s00280-017-3254-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Terranova_2021_reference](drugs/drug_gemcitabine/Gemcitabine_Terranova2021_reference.md) | 2-compartment, IV | 4 | Terranova N et al., Population pharmacokinetics of ATR inhi…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04184-z](https://doi.org/10.1007/s00280-020-04184-z) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sathe_2024_reference](drugs/drug_gemcitabine/Gemcitabine_Sathe2024_reference.md) | 2-compartment (no model) | 4 | Sathe AG et al., Population Pharmacokinetics of Sacituzu…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01366-3](https://doi.org/10.1007/s40262-024-01366-3) |
 
 ## Pharmacodynamics (PD)
 

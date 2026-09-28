@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The alogliptin model was rejected because its structure leaves a compartment unreachable from the dose: with a one-compartment topology, the reported central volume V2/F (27.6 L) refers to a second compartment that has no dosing path.**
+
+The record describes a single-compartment structure for alogliptin, yet the parameters are labelled as second-compartment quantities — oral clearance CL/F of 53.7 L/hr in pediatric subjects and central volume of distribution V2/F of 27.6 L. A compartment numbered 2 in a one-compartment model has no connection from the dose site, making it an orphan compartment. This structural inconsistency is the sole recorded reason for rejection; no other failed checks or builder substitutions are reported. Extracted — alogliptin: CL/F 53.7 L/hr, V2/F 27.6 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Dudkowski C; Tsai M; Liu J; Zhao Z; Schmidt E; Xie J et al. (2017). European journal of clinical pharmacology 73
@@ -25,6 +27,9 @@ Dudkowski C; Tsai M; Liu J; Zhao Z; Schmidt E; Xie J et al. (2017). European jou
 
 ## Model component
 <dbs-pgx drug="alogliptin" model-id="Alogliptin_Dudkowski2017_dose_mg" status="rejected" stale="false" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

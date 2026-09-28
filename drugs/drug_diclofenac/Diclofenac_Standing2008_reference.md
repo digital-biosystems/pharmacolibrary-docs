@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The diclofenac record was rejected because its clearance (0.026 L/h) and volume of distribution (0.23 L) fall far outside physiologically plausible ranges, indicating a unit or scale extraction error.**
+
+The record reports a one-compartment model for diclofenac in children and adults with clearance 0.026 L/h and distribution volume 0.23 L. Both magnitudes are implausible for diclofenac in a population spanning children and adults, and the review attributed this to an error in extracting the units or scale of the values. No other parameters were extracted, so the record could not be accepted on the strength of these two values alone. Extracted — diclofenac: CL 0.026 L/h, V 0.23 L.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:13:39.652486+00:00) predates the upstream re-run (2026-09-24 03:37:52.320885+00:00). Current validate status: `rejected`.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q30]` (9.79 vs not captured) and 6 more field(s) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The simvastatin two-compartment model was held back because the absorption rate constant ka was invented (defaulted, not reported in the source), alongside defaulted Tlag and k21 and assumed F=1 and Fm=1 without molar correction.**
+
+For the simvastatin model (Friedrich_2014, two-compartment structure with first-order extravascular input under an apparent /F parameterization), the source reported only CL/F = 15.3 L/h, V = 228.0 L, and Q = 9.79 L/h; ka, Tlag, and k21 were not reported, so library default values were substituted, and bioavailability F and metabolite fraction Fm were assumed to be 1 with no molar correction. The invented absorption constant ka was judged not acceptable, which is the deviation that caused the hold. A second reader also disagreed on parameter placement, reading Q = 9.79 L/h in a field where this record has it null, and 228 L where this record places it, indicating the extracted values may sit in the wrong parameter slots. Extracted — simvastatin: CL/F 15.3 (l/hour), V 228 (l), Q 9.79 (l/hour).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Q: this record has 9.79, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Friedrich S; Kastelein JJ; James D; Waterhouse T; Nissen SE; Nicholls SJ; et al. et al. (2014). CPT: pharmacometrics & systems pharmacology 3
@@ -146,7 +149,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_sim_controls.json"></dbs-fmusim>
 

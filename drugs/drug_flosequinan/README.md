@@ -4,7 +4,8 @@
 
 - **generic name:** flosequinan
 - **ATC codes:** `C01DB01`
-- **DrugBank:** [DB13228](https://go.drugbank.com/drugs/DB13228)
+- **DrugBank:** [DB13228](https://go.drugbank.com/drugs/DB13228) · **PubChem:** not captured
+- **molar mass:** 239.26 g/mol (C11H10FNO2S) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

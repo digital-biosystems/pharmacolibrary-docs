@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (2.5 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**This two-compartment fluorouracil model (CL 2.5 L/h/kg, V1 0.39 L/kg, V2 0.59 L/kg) was rejected because one compartment has no path from the dose, and the two readers disagreed on which parameter each value belongs to.**
+
+The record describes a two-compartment structure for fluorouracil with clearance 2.5 L/h/kg, central volume 0.39 L/kg and a second volume 0.59 L/kg, but the structure check found an unreachable or orphan compartment — a compartment with no connection from the administered dose — so the model was refused. The second reader also disagreed with the parameter assignment: this record places 2.5 under one parameter with the other two left empty, while the second reader assigned 2.5 to a different parameter and additionally read 18.0, leaving the attribution of the clearance and volume values unsettled. Extracted — fluorouracil: CL 2.5 L/h/kg, V1 0.39 L/kg, V2 0.59 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 2.5, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kobuchi S; Ito Y; Sakaeda T et al. (2017). European journal of drug metabolism and pharmacokinetics 42

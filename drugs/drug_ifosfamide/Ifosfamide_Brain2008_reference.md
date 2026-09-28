@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**Ifosfamide's clearance had no extracted value, so a library placeholder stood in for Cl and the parent–metabolite model was quarantined rather than published.**
+
+The record gives ifosfamide's volume of distribution (46.0 L) but no clearance value; the builder's substitution list shows Cl was defaulted, with placeholder values substituted for the missing source value. The established note confirms a placeholder stood in for ifosfamide's clearance and the model was held back rather than published with an invented number. The structural check also failed: the expected parent–metabolite structure (parent with metabolite compartment linked by the metabolism rate constant Kfm) did not match the obtained single-compartment parent structure, so this mismatch is recorded alongside the missing clearance. Extracted — ifosfamide: V 46 l.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Brain EG; Rezai K; Lokiec F; Gutierrez M; Urien S et al. (2008). British journal of clinical pharmacology 65
@@ -25,6 +27,9 @@ Brain EG; Rezai K; Lokiec F; Gutierrez M; Urien S et al. (2008). British journal
 
 ## Model component
 <dbs-pgx drug="ifosfamide" model-id="Ifosfamide_Brain2008_reference" status="model_quarantined" stale="false" population="adults with advanced solid tumours" measured-compound="ifosfamide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

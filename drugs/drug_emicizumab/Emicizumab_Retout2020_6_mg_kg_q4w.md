@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The emicizumab record was held back because its clearance, volume of distribution, absorption rate constant and absorption lag time had no reported values, so library placeholder numbers were substituted and an absorption rate constant was invented.**
+
+The paper reports only summary exposure metrics for emicizumab (t1/2z 26.8 day, Cmax,SS 66.8 μg/mL, tmax,SS 4.99 day, Ctrough,SS 38.3 μg/mL, AUCss,τ 1499 μg·day/mL, Cav,SS 53.5 μg/mL) and between-parameter variability percentages, but no fitted clearance, volume of distribution, absorption rate constant or lag time. With those four parameters missing, placeholder values stood in and the absorption rate constant was effectively invented, which was judged unacceptable. The record also assumes F=1 and Fm=1 with no molar correction (apparent parameterization) and uses a first-order depot input, and a reported unit could not be converted to SI. A second reader disagreed on the parameterization (mechanistic vs apparent) and on the two between-parameter-variability entries, and could not compute the Cmax,SS/Ctrough,SS comparison (ratio None). Extracted — emicizumab: t1/2z 26.8 day, Cmax 66.8 μg/mL, tmax 4.99 day, Ctrough 38.3 μg/mL, AUCSS 1.5e+03 μg × day/mL, Cavg 53.5 μg/mL, CL/F 56.4 %, V/F 60.7 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Retout S; Schmitt C; Petry C; Mercier F; Frey N et al. (2020). Clinical pharmacokinetics 59
@@ -26,6 +29,9 @@ Retout S; Schmitt C; Petry C; Mercier F; Frey N et al. (2020). Clinical pharmaco
 
 ## Model component
 <dbs-pgx drug="emicizumab" model-id="Emicizumab_Retout2020_6_mg_kg_q4w" status="model_quarantined" stale="false" population="adult and pediatric persons with hemophilia A" measured-compound="emicizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

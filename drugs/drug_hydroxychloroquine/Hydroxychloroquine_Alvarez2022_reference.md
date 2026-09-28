@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 1 covered
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**Hydroxychloroquine's elimination clearance and intercompartmental clearance had no extracted values, so library defaults were substituted and the model was quarantined; tlag, kabs, CL/F and V2/F were also uncovered.**
+
+The record lists tlag 0.389, kabs 1.15, CL/F 9.16 and V2/F 2190 for hydroxychloroquine plus CL 7.57 for desethylchloroquine, yet only one of the five expected parameters was covered — tlag, kabs, CL/F and V2/F were neither emitted nor defaulted. Hydroxychloroquine's elimination clearance and intercompartmental clearance had no value extracted, meaning a library placeholder would have stood in for them, so the model was held back rather than published with invented numbers. The builder additionally assumed F=1 and Fm=1 with no molar correction (apparent parameterization), and the structure links hydroxychloroquine by formation clearance to desethylhydroxychloroquine, desethylchloroquine and didesethylchloroquine. Extracted — hydroxychloroquine: tlag 0.389, kabs 1.15, CL/F 9.16, V2/F 2.19e+03, CL 7.57.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Alvarez JC; Davido B; Moine P; Etting I; Annane D; Larabi IA; et al. et al. (2022). Pharmaceuticals (Basel, Switzerland) 15
@@ -26,6 +29,9 @@ Alvarez JC; Davido B; Moine P; Etting I; Annane D; Larabi IA; et al. et al. (202
 
 ## Model component
 <dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Alvarez2022_reference" status="model_quarantined" stale="false" population="hospitalized COVID-19 patients" measured-compound="hydroxychloroquine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

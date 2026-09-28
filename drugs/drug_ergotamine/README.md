@@ -5,7 +5,8 @@
 
 - **generic name:** ergotamine
 - **ATC codes:** `N02CA02`
-- **DrugBank:** [DB00696](https://go.drugbank.com/drugs/DB00696)
+- **DrugBank:** [DB00696](https://go.drugbank.com/drugs/DB00696) · **PubChem:** [CID 8223](https://pubchem.ncbi.nlm.nih.gov/compound/8223)
+- **molar mass:** 581.6615 g/mol (C33H35N5O5) — DrugBank
 - **groups:** approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tfelt-Hansen_1985_reference](drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_reference.md) | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tfelt-Hansen_1985_reference](drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_reference.md) | 1-compartment (no model) | 1 | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
 
 ## Pharmacodynamics (PD)
 

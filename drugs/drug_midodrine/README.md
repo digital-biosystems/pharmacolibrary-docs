@@ -4,7 +4,8 @@
 
 - **generic name:** midodrine
 - **ATC codes:** `C01CA17`
-- **DrugBank:** [DB00211](https://go.drugbank.com/drugs/DB00211)
+- **DrugBank:** [DB00211](https://go.drugbank.com/drugs/DB00211) · **PubChem:** [CID 4195](https://pubchem.ncbi.nlm.nih.gov/compound/4195)
+- **molar mass:** 254.2823 g/mol (C12H18N2O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

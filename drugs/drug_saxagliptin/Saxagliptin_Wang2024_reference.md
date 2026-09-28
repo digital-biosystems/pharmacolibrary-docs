@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['saxagliptin', '5-hydroxy saxagliptin', 'metabolism']] vs [['saxagliptin', '5-oh saxagliptin', 'metabolism']]) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — saxagliptin: Cmax 3.72e+03 ng/mL, tmax 0.11 h, AUC 585 ng*h/mL, t1/2ka 0.07 h, t1/2α 0.06 h, t1/2β 0.36 h, V 2.31e+03 mL/kg, V2 1.84e+04 mL/kg, … (+4).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has saxagliptin → 5-hydroxy saxagliptin (metabolism), the second reading saxagliptin → 5-oh saxagliptin (metabolism); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Wang T; Tao T; Liu Y; Dong J; Ni S; Liu Y; et al. et al. (2024). BMC pharmacology & toxicology 25
@@ -26,6 +29,9 @@ Wang T; Tao T; Liu Y; Dong J; Ni S; Liu Y; et al. et al. (2024). BMC pharmacolog
 
 ## Model component
 <dbs-pgx drug="saxagliptin" model-id="Saxagliptin_Wang2024_reference" status="needs_review" stale="false" population="rats with Type 2 Diabetes Mellitus" measured-compound="saxagliptin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 12 extracted.
 
 **Parameterization:** mechanistic.
 

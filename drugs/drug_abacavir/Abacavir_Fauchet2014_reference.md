@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for abacavir's clearance.**
+
+The model was built, but abacavir's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (CL/F), so that value has no SI equivalent. Extracted — abacavir: CL/F 41.3 liter • h Ϫ1, V/F 119 liters, kabs 0.46 /h, tlag 0.46 h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 22:42:01.473067+00:00) predates the upstream re-run (2026-09-23 18:22:04.841792+00:00). Current validate status: `needs_review`.
 

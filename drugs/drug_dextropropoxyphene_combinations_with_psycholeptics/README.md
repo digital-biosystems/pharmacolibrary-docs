@@ -4,7 +4,7 @@
 
 - **generic name:** dextropropoxyphene, combinations with psycholeptics
 - **ATC codes:** `N02AC74`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

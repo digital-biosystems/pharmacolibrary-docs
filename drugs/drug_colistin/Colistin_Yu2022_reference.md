@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C2_reference failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The colistin sulfate model (TVCL 0.994 L/h, TVV 20.7 L) was held back because the reference check could not compute a comparison, returning no ratio, so the clearance value is unverified rather than demonstrably wrong.**
+
+The record describes a one-compartment model for colistin sulfate in critically ill patients, with typical clearance TVCL of 0.994 L/h, volume TVV of 20.7 L, and a creatinine-clearance covariate effect theta_cl_crcl of 0.525. The check intended to compare the reported clearance against its reference failed without producing a ratio, meaning no numerical comparison could be computed. This is therefore an inconclusive check rather than a demonstrated fault in the parameter values themselves. Extracted — colistin: V 20.7 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Yu XB; Zhang XS; Wang YX; Wang YZ; Zhou HM; Xu FM; et al. et al. (2022). Frontiers in pharmacology 13
@@ -25,6 +27,9 @@ Yu XB; Zhang XS; Wang YX; Wang YZ; Zhou HM; Xu FM; et al. et al. (2022). Frontie
 
 ## Model component
 <dbs-pgx drug="colistin" model-id="Colistin_Yu2022_reference" status="needs_review" stale="false" population="critically ill patients with carbapenem-resistant organism infections" measured-compound="colistin sulfate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 

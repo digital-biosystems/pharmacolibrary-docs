@@ -5,7 +5,8 @@
 
 - **generic name:** temozolomide
 - **ATC codes:** `L01AX03`
-- **DrugBank:** [DB00853](https://go.drugbank.com/drugs/DB00853)
+- **DrugBank:** [DB00853](https://go.drugbank.com/drugs/DB00853) · **PubChem:** [CID 5394](https://pubchem.ncbi.nlm.nih.gov/compound/5394)
+- **molar mass:** 194.1508 g/mol (C6H6N6O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ Temozolomide was granted FDA approval on August 11, 1999, as an oral capsule and
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Büsker_2022_reference](drugs/drug_temozolomide/Temozolomide_Bsker2022_reference.md) | Büsker S et al., Pharmacokinetics of metronomic temozolo…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04424-4](https://doi.org/10.1007/s00280-022-04424-4) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Büsker_2022_reference](drugs/drug_temozolomide/Temozolomide_Bsker2022_reference.md) | 2-compartment (no model) | 6 | Büsker S et al., Pharmacokinetics of metronomic temozolo…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04424-4](https://doi.org/10.1007/s00280-022-04424-4) |
 
 ## Pharmacodynamics (PD)
 

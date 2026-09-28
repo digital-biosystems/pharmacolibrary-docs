@@ -4,7 +4,8 @@
 
 - **generic name:** broxyquinoline
 - **ATC codes:** `A07AX01`, `G01AC06`, `P01AA01`
-- **DrugBank:** [DB13536](https://go.drugbank.com/drugs/DB13536)
+- **DrugBank:** [DB13536](https://go.drugbank.com/drugs/DB13536) · **PubChem:** not captured
+- **molar mass:** 302.95 g/mol (C9H5Br2NO) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

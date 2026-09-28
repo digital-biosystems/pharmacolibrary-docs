@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for meloxicam's volume of distribution.**
+
+The model was built, but meloxicam's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — meloxicam: CL 0.347 l h -1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Meineke I; Türck D et al. (2003). British journal of clinical pharmacology 55
@@ -26,6 +29,9 @@ Meineke I; Türck D et al. (2003). British journal of clinical pharmacology 55
 
 ## Model component
 <dbs-pgx drug="meloxicam" model-id="Meloxicam_Meineke2003_reference" status="model_quarantined" stale="false" population="rheumatoid arthritis patients" measured-compound="meloxicam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

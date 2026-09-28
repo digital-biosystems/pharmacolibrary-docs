@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q347, Q290, Q30, Q82, Q49, Q83 — no SI value to build from
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**K14, V1/F, Q, V2/F, kabs and tlag have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — telmisartan: k14 1.14, V1/F 106, Q 104, V2/F 106, kabs 102, tlag 101, CL/F 18.3 L/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Tatami S; Sarashina A; Yamamura N; Igarashi T; Tanigawara Y et al. (2003). Drug metabolism and pharmacokinetics 18

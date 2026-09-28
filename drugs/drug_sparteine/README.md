@@ -4,7 +4,8 @@
 
 - **generic name:** sparteine
 - **ATC codes:** `C01BA04`
-- **DrugBank:** [DB06727](https://go.drugbank.com/drugs/DB06727)
+- **DrugBank:** [DB06727](https://go.drugbank.com/drugs/DB06727) · **PubChem:** [CID 168213](https://pubchem.ncbi.nlm.nih.gov/compound/168213)
+- **molar mass:** 234.387 g/mol (C15H26N2) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

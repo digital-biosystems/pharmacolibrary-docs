@@ -4,7 +4,8 @@
 
 - **generic name:** xamoterol
 - **ATC codes:** `C01CX07`
-- **DrugBank:** [DB13781](https://go.drugbank.com/drugs/DB13781)
+- **DrugBank:** [DB13781](https://go.drugbank.com/drugs/DB13781) · **PubChem:** [CID 155774](https://pubchem.ncbi.nlm.nih.gov/compound/155774)
+- **molar mass:** 339.392 g/mol (C16H25N3O5) — DrugBank
 - **groups:** approved
 
 ## About

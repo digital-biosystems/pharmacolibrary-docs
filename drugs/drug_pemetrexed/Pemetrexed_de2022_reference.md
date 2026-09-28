@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for pemetrexed's volume of distribution.**
+
+The model was built, but pemetrexed's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — pemetrexed: CLNR 0.79 L/h, CL 4.1 L/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 de Rouw N; Derijks HJ; Hilbrands LB; Boosman RJ; Piet B; Koolen SLW; et al. et al. (2022). British journal of clinical pharmacology 88
@@ -25,6 +27,9 @@ de Rouw N; Derijks HJ; Hilbrands LB; Boosman RJ; Piet B; Koolen SLW; et al. et a
 
 ## Model component
 <dbs-pgx drug="pemetrexed" model-id="Pemetrexed_de2022_reference" status="model_quarantined" stale="false" population="adults with lung cancer" measured-compound="pemetrexed" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

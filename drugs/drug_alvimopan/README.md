@@ -4,7 +4,8 @@
 
 - **generic name:** alvimopan
 - **ATC codes:** `A06AH02`
-- **DrugBank:** [DB06274](https://go.drugbank.com/drugs/DB06274)
+- **DrugBank:** [DB06274](https://go.drugbank.com/drugs/DB06274) · **PubChem:** [CID 5488548](https://pubchem.ncbi.nlm.nih.gov/compound/5488548)
+- **molar mass:** 424.5326 g/mol (C25H32N2O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

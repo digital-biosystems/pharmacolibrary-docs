@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 4 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[beta_k 23 _t cda].parameter_id` (Q60 vs Q68) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The capecitabine model was quarantined because its elimination clearance had no value and a library placeholder was used, and the V/F parameter was not covered.**
+
+No value for capecitabine's elimination clearance was extracted, so a library placeholder stood in for it and the model was held back rather than published with an invented number. The parameter coverage check expected 5 parameters emitted or defaulted but obtained 4, with V/F neither emitted nor defaulted. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization), and a second reader disagreed on which parameter the beta half-life 'beta_k 23 _t CDA' (44.9 h) actually is. Extracted — capecitabine: kabs 13.6 /h, tlag 10.9 h, Frel 14.4, V/F 11.8 L, kel 12.2 /h, k13 11.6 /h, k31 12.4 /h, k12 14.9 /h, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[beta_k 23 _t cda].parameter_id`: this record has Q60, the second reading Q68; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Lunar N; Etienne-Grimaldi MC; Macaire P; Thomas F; Dalenc F; Ferrero JM; et al. et al. (2021). Cancer chemotherapy and pharmacology 87
@@ -26,6 +29,9 @@ Lunar N; Etienne-Grimaldi MC; Macaire P; Thomas F; Dalenc F; Ferrero JM; et al. 
 
 ## Model component
 <dbs-pgx drug="capecitabine" model-id="Capecitabine_Lunar2021_reference" status="model_quarantined" stale="false" population="patients with metastatic breast cancer" measured-compound="capecitabine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

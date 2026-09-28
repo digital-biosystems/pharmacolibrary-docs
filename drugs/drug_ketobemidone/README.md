@@ -4,7 +4,8 @@
 
 - **generic name:** ketobemidone
 - **ATC codes:** `N02AB01`, `N02AG02`
-- **DrugBank:** [DB06738](https://go.drugbank.com/drugs/DB06738)
+- **DrugBank:** [DB06738](https://go.drugbank.com/drugs/DB06738) · **PubChem:** [CID 10101](https://pubchem.ncbi.nlm.nih.gov/compound/10101)
+- **molar mass:** 247.3327 g/mol (C15H21NO2) — DrugBank
 - **groups:** investigational
 
 ## About

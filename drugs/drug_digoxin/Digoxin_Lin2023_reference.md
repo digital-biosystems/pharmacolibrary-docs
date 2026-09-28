@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[apparent ka]` (2.29 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of apparent ka: this record has 2.29, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lin ZQ; Guo L; Zhang LM; Lu JJ; Jiang X et al. (2023). Drugs & aging 40
@@ -26,6 +29,9 @@ Lin ZQ; Guo L; Zhang LM; Lu JJ; Jiang X et al. (2023). Drugs & aging 40
 
 ## Model component
 <dbs-pgx drug="digoxin" model-id="Digoxin_Lin2023_reference" status="curated_candidate" stale="false" population="older patients with heart failure and chronic kidney disease" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -138,6 +144,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_digoxin/Digoxin_Lin2023_reference/Digoxin_Lin2023_reference.svg" alt="Digoxin_Lin2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2.29 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_digoxin/Digoxin_Lin2023_reference/Digoxin_Lin2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_digoxin/Digoxin_Lin2023_reference/Digoxin_Lin2023_reference_sim_controls.json"></dbs-fmusim>
 

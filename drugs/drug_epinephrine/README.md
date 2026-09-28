@@ -5,7 +5,8 @@
 
 - **generic name:** epinephrine
 - **ATC codes:** `A01AD01`, `B02BC09`, `C01CA24`, `R01AA14`, `R03AA01`, `R03AK01`, `S01EA01`
-- **DrugBank:** [DB00668](https://go.drugbank.com/drugs/DB00668)
+- **DrugBank:** [DB00668](https://go.drugbank.com/drugs/DB00668) · **PubChem:** [CID 5816](https://pubchem.ncbi.nlm.nih.gov/compound/5816)
+- **molar mass:** 183.2044 g/mol (C9H13NO3) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -30,11 +31,11 @@ In addition to the above, epinephrine is used as an over the counter (OTC) agent
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Frechen_2015_reference](drugs/drug_epinephrine/Epinephrine_Frechen2015_reference.md) | Frechen S et al., Population pharmacokinetic and pharmaco…, Drug metabolism and pharmac… (2015) | [10.1016/j.dmpk.2015.08.002](https://doi.org/10.1016/j.dmpk.2015.08.002) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Heradstveit_2023_reference](drugs/drug_epinephrine/Epinephrine_Heradstveit2023_reference.md) | Heradstveit BE et al., Pharmacokinetics of Epinephrine During…, Resuscitation (2023) | [10.1016/j.resuscitation.2023.110025](https://doi.org/10.1016/j.resuscitation.2023.110025) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Knych_2023_reference](drugs/drug_epinephrine/Epinephrine_Knych2023_reference.md) | Knych HK et al., Pharmacokinetics and metabolism of lido…, BMC veterinary research (2023) | [10.1186/s12917-023-03787-x](https://doi.org/10.1186/s12917-023-03787-x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Frechen_2015_reference](drugs/drug_epinephrine/Epinephrine_Frechen2015_reference.md) | 1-compartment, oral | 5 | Frechen S et al., Population pharmacokinetic and pharmaco…, Drug metabolism and pharmac… (2015) | [10.1016/j.dmpk.2015.08.002](https://doi.org/10.1016/j.dmpk.2015.08.002) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Heradstveit_2023_reference](drugs/drug_epinephrine/Epinephrine_Heradstveit2023_reference.md) | 1-compartment, oral | 3 | Heradstveit BE et al., Pharmacokinetics of Epinephrine During…, Resuscitation (2023) | [10.1016/j.resuscitation.2023.110025](https://doi.org/10.1016/j.resuscitation.2023.110025) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Knych_2023_reference](drugs/drug_epinephrine/Epinephrine_Knych2023_reference.md) | 2-compartment (no model) | 4 | Knych HK et al., Pharmacokinetics and metabolism of lido…, BMC veterinary research (2023) | [10.1186/s12917-023-03787-x](https://doi.org/10.1186/s12917-023-03787-x) |
 
 ## Pharmacodynamics (PD)
 

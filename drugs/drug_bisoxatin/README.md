@@ -4,7 +4,8 @@
 
 - **generic name:** bisoxatin
 - **ATC codes:** `A06AB09`
-- **DrugBank:** [DB09219](https://go.drugbank.com/drugs/DB09219)
+- **DrugBank:** [DB09219](https://go.drugbank.com/drugs/DB09219) · **PubChem:** [CID 28689](https://pubchem.ncbi.nlm.nih.gov/compound/28689)
+- **molar mass:** 333.343 g/mol (C20H15NO4) — DrugBank
 - **groups:** approved
 
 ## About

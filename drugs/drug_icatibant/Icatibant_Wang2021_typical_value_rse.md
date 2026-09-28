@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Wang Y; Jomphe C; Marier JF; Martin P et al. (2021). Journal of clinical pharmacology 61
@@ -26,6 +29,9 @@ Wang Y; Jomphe C; Marier JF; Martin P et al. (2021). Journal of clinical pharmac
 
 ## Model component
 <dbs-pgx drug="icatibant" model-id="Icatibant_Wang2021_typical_value_rse" status="rejected" stale="false" population="pediatric and adult patients with hereditary angioedema and healthy adults" measured-compound="icatibant" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

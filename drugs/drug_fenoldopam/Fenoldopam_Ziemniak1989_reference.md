@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['fenoldopam', 'fenoldopam-8-sulfate', 'metabolism']] vs [['fenoldopam', 'fenoldopam-8-sulfate', 'metabolism'], ['fenoldopam-8-sulfate', 'fenoldopam', 'interconversion']]) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has fenoldopam → fenoldopam-8-sulfate (metabolism), the second reading fenoldopam → fenoldopam-8-sulfate (metabolism); fenoldopam-8-sulfate → fenoldopam (interconversion); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ziemniak JA; Boppana VK; Cyronak MJ; Stote RM et al. (1989). Pharmaceutical research 6
@@ -26,6 +29,9 @@ Ziemniak JA; Boppana VK; Cyronak MJ; Stote RM et al. (1989). Pharmaceutical rese
 
 ## Model component
 <dbs-pgx drug="fenoldopam" model-id="Fenoldopam_Ziemniak1989_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="fenoldopam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

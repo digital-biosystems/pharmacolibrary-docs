@@ -4,7 +4,7 @@
 
 - **generic name:** givosiran
 - **ATC codes:** `A16AX16`
-- **DrugBank:** [DB15066](https://go.drugbank.com/drugs/DB15066)
+- **DrugBank:** [DB15066](https://go.drugbank.com/drugs/DB15066) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

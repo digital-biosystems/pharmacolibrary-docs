@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (von Willebrand factor vs VWF:Ag) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The von Willebrand factor model was rejected because the clearance (229 mL/h), volume (158 mL) and distribution parameter (3290 mL) carry garbled labels and implausible magnitudes, indicating unit/scale extraction errors on structural parameters.**
+
+The parameter labels are corrupted (clearance and volume both rendered as repeated placeholder glyphs, and the intercompartmental flow Q is labelled in mL rather than mL/h), and one reported unit could not be converted to SI, so the parameter values reached the record without reliable scaling. The rejection cites a dimension mismatch on a structural parameter and a clearance/volume outside the physiological window for alphanate/VWF in von Willebrand disease patients. A second reader disagreed on most values, reading clearance 74.2 mL/h, volume 4537 mL, baseline VWF 0.28, and no absorption rate constant, and additionally read the primary analyte as VWF:Ag with links to factor VIII and interconversion, whereas this record lists no links. The conflicting readings support that the numeric extraction of the VWF parameters was unreliable. Extracted — von willebrand factor: CL 229 mL/h, V 158 mL, Q 3.29e+03 mL, kabs 0.5 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has von Willebrand factor, the second reading VWF:Ag; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Daniel MY; Rauch A; Paris C; Jeanpierre E; Goudemand J; Marichez C; Pradines B; Zawadzki C; Dupont A; Denis CV; Lenting PJ; Susen S; Delavenne X et al. (2026). Blood advances 10
@@ -26,6 +29,9 @@ Daniel MY; Rauch A; Paris C; Jeanpierre E; Goudemand J; Marichez C; Pradines B; 
 
 ## Model component
 <dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Daniel2026_bauer_et_al_6" status="rejected" stale="false" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

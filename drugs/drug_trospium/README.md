@@ -5,7 +5,8 @@
 
 - **generic name:** trospium
 - **ATC codes:** `A03DA06`, `G04BD09`
-- **DrugBank:** [DB00209](https://go.drugbank.com/drugs/DB00209)
+- **DrugBank:** [DB00209](https://go.drugbank.com/drugs/DB00209) · **PubChem:** [CID 5284632](https://pubchem.ncbi.nlm.nih.gov/compound/5284632)
+- **molar mass:** 392.518 g/mol (C25H30NO3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Doroshyenko_2005_reference](drugs/drug_trospium/Trospium_Doroshyenko2005_reference.md) | Doroshyenko O et al., Clinical pharmacokinetics of trospium c…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544070-00003](https://doi.org/10.2165/00003088-200544070-00003) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Oefelein_2013_reference](drugs/drug_trospium/Trospium_Oefelein2013_reference.md) | Oefelein MG et al., Effect of concomitant administration of…, Clinical drug investigation (2013) | [10.1007/s40261-012-0049-6](https://doi.org/10.1007/s40261-012-0049-6) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Doroshyenko_2005_reference](drugs/drug_trospium/Trospium_Doroshyenko2005_reference.md) | 1-compartment, IV | 5 | Doroshyenko O et al., Clinical pharmacokinetics of trospium c…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544070-00003](https://doi.org/10.2165/00003088-200544070-00003) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Oefelein_2013_reference](drugs/drug_trospium/Trospium_Oefelein2013_reference.md) | 1-compartment, oral | 2 | Oefelein MG et al., Effect of concomitant administration of…, Clinical drug investigation (2013) | [10.1007/s40261-012-0049-6](https://doi.org/10.1007/s40261-012-0049-6) |
 
 ## Pharmacodynamics (PD)
 

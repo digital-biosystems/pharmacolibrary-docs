@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[bioavailability drop]` (not captured vs 0.685) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The atropine horse model was quarantined because clearance, distribution volume, absorption rate, lag time and both intercompartmental rate constants had no reported values, so library defaults were substituted, and the eye-drop absorption parameter's ilogit unit could not be expressed in SI.**
+
+The record lists atropine's V1 (0.646), V2 (1.148), CL (1.905), Q (2.477) and the half-lives, yet the source reported no values for clearance, volume of distribution, absorption rate constant, absorption lag time, k12 or k21, so library placeholders stood in and the model was held back; the absorption rate constant was defaulted rather than reported, judged not acceptable. The eye-drop absorption parameter (value 0.781 on the ilogit scale) carried a unit that could not be converted to SI, so it entered the model without an SI value. A second reader also disagreed on this eye-drop parameter, reading 0.685 where this record left it empty, and on its parameter identifier. Extracted — atropine: V1 0.646, V2 1.15, CL 1.91, Q 2.48, Fab 0.781 ilogit, eye drop, kabs 5.95, t1/2ka 0.117, t1/2β 0.798 terminal phase, … (+3).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of bioavailability drop: this record has none, the second reading 0.685; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `atropine sulfate`, measured `atropine`.
 
@@ -28,6 +31,9 @@ Ström L; Dalin F; Domberg M; Stenlund C; Bondesson U; Hedeland M; et al. et al.
 
 ## Model component
 <dbs-pgx drug="atropine" model-id="Atropine_Strm2021_reference" status="model_quarantined" stale="false" population="horses" measured-compound="atropine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 11 extracted.
 
 **Parameterization:** mechanistic.
 

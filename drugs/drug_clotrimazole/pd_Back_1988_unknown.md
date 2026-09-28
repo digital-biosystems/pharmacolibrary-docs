@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;clotrimazole&quot;,&quot;href&quot;:&quot;drugs/drug_clotrimazole/&quot;},{&quot;label&quot;:&quot;Back_1988 \u00b7 PD tolbutamide hydroxylase activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tolbutamide hydroxylase activity — PD  <span class="pk-badge pk-badge--red">rejected</span>

@@ -4,7 +4,7 @@
 
 - **generic name:** Pyridoxine
 - **ATC codes:** `A11HA02`
-- **DrugBank:** [DB00165](https://go.drugbank.com/drugs/DB00165)
+- **DrugBank:** [DB00165](https://go.drugbank.com/drugs/DB00165) · **PubChem:** not captured
 - **groups:** approved, investigational, nutraceutical, vet_approved
 
 ## About

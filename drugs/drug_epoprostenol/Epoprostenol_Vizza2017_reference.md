@@ -5,7 +5,7 @@
 
 # epoprostenol — `Epoprostenol_Vizza2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Vizza CD; Sastry BK; Safdar Z; Harnisch L; Gao X; Zhang M; Lamba M; Jing ZC et al. (2017). BMC pulmonary medicine 17
@@ -25,6 +27,9 @@ Vizza CD; Sastry BK; Safdar Z; Harnisch L; Gao X; Zhang M; Lamba M; Jing ZC et a
 
 ## Model component
 <dbs-pgx drug="epoprostenol" model-id="Epoprostenol_Vizza2017_reference" status="curated_candidate" stale="false" population="" measured-compound="epoprostenol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -52,12 +57,12 @@ Vizza CD; Sastry BK; Safdar Z; Harnisch L; Gao X; Zhang M; Lamba M; Jing ZC et a
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
 _Every reader agrees on every compared field of this record._
 
@@ -123,6 +128,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference/Epoprostenol_Vizza2017_reference.svg" alt="Epoprostenol_Vizza2017_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2.16 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference/Epoprostenol_Vizza2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference/Epoprostenol_Vizza2017_reference_sim_controls.json"></dbs-fmusim>
 

@@ -4,7 +4,8 @@
 
 - **generic name:** cangrelor
 - **ATC codes:** `B01AC25`
-- **DrugBank:** [DB06441](https://go.drugbank.com/drugs/DB06441)
+- **DrugBank:** [DB06441](https://go.drugbank.com/drugs/DB06441) · **PubChem:** [CID 9854012](https://pubchem.ncbi.nlm.nih.gov/compound/9854012)
+- **molar mass:** 776.35 g/mol (C17H25Cl2F3N5O12P3S2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

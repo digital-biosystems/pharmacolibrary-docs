@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Methotrexate's absorption rate constant carries an impossible unit, h/L instead of L/h, and the one-compartment structure leaves a compartment unreachable from the dose, so the record was rejected.**
+
+The structural parameter Ka is reported as 1.69 h/L, a dimension mismatch for a first-order absorption rate constant, and the reported unit could not be converted to SI, so the parameter was used without an SI value. The structure is a single compartment, yet the check for compartments with no path from the dose failed, indicating an orphan compartment in the model structure. The remaining parameters, CL/F 8.04 L/h and V2/F 32.8 L, are internally consistent, but the dimension error and the unreachable compartment together justified rejection. Extracted — methotrexate: CL/F 8.04 L/h, V2/F 32.8 L, kabs 1.69 h/L, CL 0.76, V/F 10.8 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang Z; Zhang N; Chen C; Chen S; Xu J; Zhou Y; et al. et al. (2019). Current drug metabolism 20

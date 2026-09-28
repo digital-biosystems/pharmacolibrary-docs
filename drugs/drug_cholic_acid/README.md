@@ -5,7 +5,8 @@
 
 - **generic name:** cholic acid
 - **ATC codes:** `A05AA03`
-- **DrugBank:** [DB02659](https://go.drugbank.com/drugs/DB02659)
+- **DrugBank:** [DB02659](https://go.drugbank.com/drugs/DB02659) · **PubChem:** [CID 221493](https://pubchem.ncbi.nlm.nih.gov/compound/221493)
+- **molar mass:** 408.5714 g/mol (C24H40O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -23,9 +24,9 @@ Cholic acid, formulated as Cholbam capsules, is approved by the United States Fo
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Quarfordt_1973_reference](drugs/drug_cholic_acid/CholicAcid_Quarfordt1973_reference.md) | Quarfordt SH et al., Estimation of cholesterol and bile acid…, The Journal of clinical inv… (1973) | [10.1172/JCI107378](https://doi.org/10.1172/JCI107378) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Quarfordt_1973_reference](drugs/drug_cholic_acid/CholicAcid_Quarfordt1973_reference.md) | general linear (no model) | 0 | Quarfordt SH et al., Estimation of cholesterol and bile acid…, The Journal of clinical inv… (1973) | [10.1172/JCI107378](https://doi.org/10.1172/JCI107378) |
 
 ## ADME sites
 

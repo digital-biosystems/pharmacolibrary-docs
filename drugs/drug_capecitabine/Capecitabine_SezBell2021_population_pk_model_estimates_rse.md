@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the model was built but never simulated; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 2 covered
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**The capecitabine model was not simulated because three of its five parameters — V2 (13 L), tlag (29) and kabs (15) — had no extracted values and no defaults, leaving absorption and distribution incomplete.**
+
+The record lists five parameters for capecitabine: CL 12 L/h, V2 13 L, tlag 29, kabs 15 and Q 17, but the coverage check found only 2 of the 5 expected parameters covered, with V2, tlag and kabs neither emitted nor defaulted. No value was extracted for these three, so library placeholders would have been used in their place, and the model was held back. The builder also substituted a default for the missing Q1 value. The metabolism chain from capecitabine via 5'-deoxy-5-fluorouridine to 5-fluorouracil is present, but with absorption and distribution parameters unresolved the model has not been simulated. Extracted — capecitabine: CL 12 L/h, V2 13 L, tlag 29, kabs 15, Q 17.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Sáez-Belló M; Mangas-Sanjuán V; Martínez-Gómez MA; López-Montenegro Soria MÁ; Climente-Martí M; Merino-Sanjuán M et al. (2021). British journal of clinical pharmacology 87
@@ -25,6 +27,9 @@ Sáez-Belló M; Mangas-Sanjuán V; Martínez-Gómez MA; López-Montenegro Soria 
 
 ## Model component
 <dbs-pgx drug="capecitabine" model-id="Capecitabine_SezBell2021_population_pk_model_estimates_rse" status="not_simulated" stale="false" population="adults with colorectal cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

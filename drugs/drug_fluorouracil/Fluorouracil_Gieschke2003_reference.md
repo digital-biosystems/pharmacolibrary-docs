@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (5-fluorouracil vs capecitabine) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**This fluorouracil population model from Gieschke_2003 was rejected because a structural parameter has a dimension mismatch, the metabolic chain from capecitabine to 5'-deoxy-5-fluorouridine to 5-fluorouracil to alpha-fluorobeta-alanine carries no parameter values, and a reported unit could not be converted to SI.**
+
+The three metabolism steps (capecitabine to 5'-deoxy-5-fluorouridine, 5'-deoxy-5-fluorouridine to 5-fluorouracil, and 5-fluorouracil to alpha-fluorobeta-alanine) all have link_parameter 'none' with unknown kind, so these metabolites are unlinked and the check for unreachable or orphan compartments failed. A dimension mismatch was found on a structural parameter, though the record does not state which of kabs (70 l h-1), tlag (5.52E-4 h), V1 (30 l), CL (24 l h-1), V2 (17.8 l), Q (33 l h-1) or V3 (26 l) is affected. One reported unit could not be converted to SI units, so that parameter entered the model without a usable value. A second reader also disagreed on the primary analyte, reading it as capecitabine rather than 5-fluorouracil, and on the metabolite naming in the links. Extracted — fluorouracil: kabs 70 l h -1, tlag 0.000552 h, V1 30 l, CL 24 l h -1, V2 17.8 l, Q 33 l h -1, V3 26 l.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has 5-fluorouracil, the second reading capecitabine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `capecitabine`, measured `5-fluorouracil`.
 

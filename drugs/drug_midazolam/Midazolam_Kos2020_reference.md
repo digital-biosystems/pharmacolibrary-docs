@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (midazolam vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for midazolam's clearance.**
+
+The model was built, but midazolam's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — midazolam: V1 5.71 L/70 kg, V2 39.8 L/70 kg, Q 25.5 L/h/70 kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kos MK; Miksić M; Jovanović M; Roškar R; Grosek Š; Grabnar I et al. (2020). European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 141

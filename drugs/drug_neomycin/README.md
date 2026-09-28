@@ -5,7 +5,7 @@
 
 - **generic name:** neomycin
 - **ATC codes:** `A01AB08`, `A07AA01`, `B05CA09`, `D06AX04`, `J01GB05`, `R02AB01`, `S01AA03`, `S02AA07`, `S03AA01`
-- **DrugBank:** [DB00994](https://go.drugbank.com/drugs/DB00994)
+- **DrugBank:** [DB00994](https://go.drugbank.com/drugs/DB00994) · **PubChem:** not captured
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -28,12 +28,12 @@ The ophthalmic solution containing neomycin in combination with polymyxin B sulf
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Lentzen_1981_reference](drugs/drug_neomycin/Neomycin_Lentzen1981_reference.md) | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_control](drugs/drug_neomycin/Neomycin_Samuel1968_control.md) | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_neomycin](drugs/drug_neomycin/Neomycin_Samuel1968_neomycin.md) | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_placebo](drugs/drug_neomycin/Neomycin_Samuel1968_placebo.md) | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Lentzen_1981_reference](drugs/drug_neomycin/Neomycin_Lentzen1981_reference.md) | 1-compartment (no model) | 2 | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_control](drugs/drug_neomycin/Neomycin_Samuel1968_control.md) | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_neomycin](drugs/drug_neomycin/Neomycin_Samuel1968_neomycin.md) | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_placebo](drugs/drug_neomycin/Neomycin_Samuel1968_placebo.md) | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
 
 ## Pharmacodynamics (PD)
 

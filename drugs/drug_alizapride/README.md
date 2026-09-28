@@ -4,7 +4,8 @@
 
 - **generic name:** alizapride
 - **ATC codes:** `A03FA05`
-- **DrugBank:** [DB01425](https://go.drugbank.com/drugs/DB01425)
+- **DrugBank:** [DB01425](https://go.drugbank.com/drugs/DB01425) · **PubChem:** [CID 43008](https://pubchem.ncbi.nlm.nih.gov/compound/43008)
+- **molar mass:** 315.3702 g/mol (C16H21N5O2) — DrugBank
 - **groups:** investigational
 
 ## About

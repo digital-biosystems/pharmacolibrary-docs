@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[s 1]` (not captured vs 0.110) and 9 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The oxycodone 3-compartment model was rejected because one compartment has no path from the dose, and a reported unit could not be converted to SI, leaving a parameter without a usable value.**
+
+The record lists oxycodone parameters including unbound clearance 48.1 L/h, volume 153 L, Vss 286 L, and half-lives of 2.5 min and 4.2 h, but the structure check found an unreachable or orphan compartment in the 3-compartment model. Additionally, one reported unit could not be converted to SI units, so that parameter entered the model without a usable value. A second reader also disagreed on several values: it read 0.110, 1153, 133, and 0.549 where this record had no value, while this record's 0.054 for V1 was read as null by the second reader. Extracted — oxycodone: CLu 48.1 litre h 21, V 153 litre, t1/2z 2.5 min, t1/2β 4.2 h, Vss 286 litre, V1 0.054, V2 0.14, V3 2.5.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of s 1: this record has none, the second reading 0.110; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Saari TI; Ihmsen H; Neuvonen PJ; Olkkola KT; Schwilden H et al. (2012). British journal of anaesthesia 108
@@ -26,6 +29,9 @@ Saari TI; Ihmsen H; Neuvonen PJ; Olkkola KT; Schwilden H et al. (2012). British 
 
 ## Model component
 <dbs-pgx drug="oxycodone" model-id="Oxycodone_Saari2012_reference" status="rejected" stale="false" population="adults and elderly patients" measured-compound="oxycodone" parameterization="mechanistic" topology="3C"></dbs-pgx>
+
+**Model structure:** 3-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

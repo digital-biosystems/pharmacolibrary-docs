@@ -4,7 +4,7 @@
 
 - **generic name:** moracizine
 - **ATC codes:** `C01BG01`
-- **DrugBank:** [DB00680](https://go.drugbank.com/drugs/DB00680)
+- **DrugBank:** [DB00680](https://go.drugbank.com/drugs/DB00680) · **PubChem:** not captured
 - **groups:** approved, withdrawn
 
 ## About

@@ -4,7 +4,8 @@
 
 - **generic name:** itopride
 - **ATC codes:** `A03FA07`
-- **DrugBank:** [DB04924](https://go.drugbank.com/drugs/DB04924)
+- **DrugBank:** [DB04924](https://go.drugbank.com/drugs/DB04924) · **PubChem:** [CID 3792](https://pubchem.ncbi.nlm.nih.gov/compound/3792)
+- **molar mass:** 358.4314 g/mol (C20H26N2O4) — DrugBank
 - **groups:** investigational
 
 ## About

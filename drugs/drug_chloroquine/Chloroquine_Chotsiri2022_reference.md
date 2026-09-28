@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (chloroquine vs chloroquine and azithromycin) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The chloroquine model was quarantined because bioavailability, clearance, volume of distribution and absorption lag time had no extracted values and were left at library defaults, and the built one-compartment enteral structure did not match the declared parent–metabolite topology.**
+
+The only extracted parameter is the absorption rate constant kabs = 0.350 hr⁻¹ for chloroquine; F, Cl, Vd and Tlag had no values in the source, so library placeholder numbers stood in for them and the model was held back rather than published with invented numbers. The declared structure is parent–metabolite (chloroquine metabolising to desethylchloroquine via an unknown link parameter), but the obtained structure was a one-compartment enteral model, a topology mismatch. A second reader also disagreed on the dose compound and primary analyte, reading chloroquine together with azithromycin rather than chloroquine alone. Extracted — chloroquine: kabs 0.35 hr -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has chloroquine, the second reading chloroquine and azithromycin; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Chotsiri P; Tarning J; Hoglund RM; Watson JA; White NJ et al. (2022). Clinical pharmacology and therapeutics 112
@@ -26,6 +29,9 @@ Chotsiri P; Tarning J; Hoglund RM; Watson JA; White NJ et al. (2022). Clinical p
 
 ## Model component
 <dbs-pgx drug="chloroquine" model-id="Chloroquine_Chotsiri2022_reference" status="model_quarantined" stale="false" population="healthy adult volunteers" measured-compound="chloroquine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

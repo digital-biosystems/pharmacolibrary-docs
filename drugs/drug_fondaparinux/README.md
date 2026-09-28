@@ -5,7 +5,8 @@
 
 - **generic name:** fondaparinux
 - **ATC codes:** `B01AX05`
-- **DrugBank:** [DB00569](https://go.drugbank.com/drugs/DB00569)
+- **DrugBank:** [DB00569](https://go.drugbank.com/drugs/DB00569) · **PubChem:** [CID 49852292](https://pubchem.ncbi.nlm.nih.gov/compound/49852292)
+- **molar mass:** 1508.263 g/mol (C31H53N3O49S8) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Michaličková_2022_dialysis-dependent chronic kidney disease patients](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_dialysis_dependent_chronic_kidne.md) | Michaličková (2022) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Michaličková_2022_dialysis-dependent chronic kidney disease patients](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_dialysis_dependent_chronic_kidne.md) | — (no model) | 0 | Michaličková (2022) | — |
 
 ## Pharmacodynamics (PD)
 

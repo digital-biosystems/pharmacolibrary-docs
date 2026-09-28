@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Goyal RK; Moffett BS; Gobburu JVS; Al Mohajer M et al. (2022). Frontiers in pharmacology 13
@@ -26,6 +27,9 @@ Goyal RK; Moffett BS; Gobburu JVS; Al Mohajer M et al. (2022). Frontiers in phar
 
 ## Model component
 <dbs-pgx drug="vancomycin" model-id="Vancomycin_Goyal2022_population_typical_value" status="curated_candidate" stale="false" population="pregnant women" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -135,6 +139,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value/Vancomycin_Goyal2022_population_typical_value.svg" alt="Vancomycin_Goyal2022_population_typical_value diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value/Vancomycin_Goyal2022_population_typical_value_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value/Vancomycin_Goyal2022_population_typical_value_sim_controls.json"></dbs-fmusim>
 

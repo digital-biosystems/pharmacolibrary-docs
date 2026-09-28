@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc]` (3644.3 vs not captured) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — montelukast: AUC 3.64e+03 ng x h/mL, CL 0.87 L/h, kabs 0.357 h-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 3644.3, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:33:24.394307+00:00) predates the upstream re-run (2026-09-24 17:00:47.030448+00:00). Current validate status: `needs_review`.
 

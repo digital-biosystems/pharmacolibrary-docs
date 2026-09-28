@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The racemic ibuprofen record was rejected because the clearance parameter carries the unconvertible unit '3' (no SI value) and the R↔S-ibuprofen interconversion link has no parameter value.**
+
+The clearance of racemic ibuprofen is reported as 0.062 with unit '3', a unit that could not be converted to SI, so the parameter entered the model without a usable value. The structure specifies interconversion between R-ibuprofen and S-ibuprofen, but the link parameter is 'none' of unknown kind, leaving the two enantiomers connected without a defined rate. As a result the record fails the check for compartments or species with no connection to the dose and was not published. Extracted — racemic ibuprofen: CL 0.062 3, V 10.9 L, kabs 1.1 h -1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kirchheiner J; Meineke I; Freytag G; Meisel C; Roots I; Brockmöller J et al. (2002). Clinical pharmacology and therapeutics 72

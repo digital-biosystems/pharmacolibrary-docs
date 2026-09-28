@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Wang XP; Zhou ZL; Yang M; Mai LP; Zheng ZJ; He GD; et al. et al. (2015). International journal of clinical pharmacology and therapeutics 53
@@ -25,6 +27,9 @@ Wang XP; Zhou ZL; Yang M; Mai LP; Zheng ZJ; He GD; et al. et al. (2015). Interna
 
 ## Model component
 <dbs-pgx drug="eptifibatide" model-id="Eptifibatide_Wang2015_healthy_chinese_volunteers" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

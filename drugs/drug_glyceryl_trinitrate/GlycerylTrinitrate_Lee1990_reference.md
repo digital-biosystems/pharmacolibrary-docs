@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The glyceryl trinitrate record was rejected because its apparent parameters are incoherent: oral bioavailability 0.015 carries the unit mg/kg, and the abstract-only summary statistics were double-corrected as if fitted values.**
+
+The record for glyceryl trinitrate in conscious dogs was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The coherence check on apparent parameters failed with a double correction: the bioavailability of oral GTN (0.25 mg/kg dose) is given as 0.015 but with the unit mg/kg, a fraction mislabelled as a dose-normalized amount, while CL/F (16 ml/min/kg), V/F (6.5 L), t1/2z (45 min) and kabs (0.02 h−1) are all apparent (F-corrected) values treated inconsistently. A second reader disagreed on the parameterization, preferring a mechanistic rather than apparent reading, and returned null for the bioavailability value (0.015) and for every parameter value, leaving the numeric comparisons unresolved. Extracted — glyceryl trinitrate: Fab 0.015 mg/kg, t1/2z 45 min, CL/F 16 ml/min/kg, V/F 6.5 L, kabs 0.02 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Lee FW; Salmonson T; Metzler CH; Benet LZ et al. (1990). The Journal of pharmacology and experimental therapeutics 255
 
 ## Model component
 <dbs-pgx drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_Lee1990_reference" status="rejected" stale="false" population="conscious dogs" measured-compound="glyceryl_trinitrate" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

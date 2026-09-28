@@ -4,7 +4,7 @@
 
 - **generic name:** reteplase
 - **ATC codes:** `B01AD07`
-- **DrugBank:** [DB00015](https://go.drugbank.com/drugs/DB00015)
+- **DrugBank:** [DB00015](https://go.drugbank.com/drugs/DB00015) · **PubChem:** not captured
 - **groups:** approved, investigational, withdrawn
 
 ## About

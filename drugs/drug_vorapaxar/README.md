@@ -4,7 +4,8 @@
 
 - **generic name:** vorapaxar
 - **ATC codes:** `B01AC26`
-- **DrugBank:** [DB09030](https://go.drugbank.com/drugs/DB09030)
+- **DrugBank:** [DB09030](https://go.drugbank.com/drugs/DB09030) · **PubChem:** [CID 10077130](https://pubchem.ncbi.nlm.nih.gov/compound/10077130)
+- **molar mass:** 492.5817 g/mol (C29H33FN2O4) — DrugBank
 - **groups:** approved
 
 ## About

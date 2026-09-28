@@ -4,7 +4,8 @@
 
 - **generic name:** pyridoxine (vit B6)
 - **ATC codes:** `A11HA02`
-- **DrugBank:** [DB00165](https://go.drugbank.com/drugs/DB00165)
+- **DrugBank:** [DB00165](https://go.drugbank.com/drugs/DB00165) · **PubChem:** [CID 1054](https://pubchem.ncbi.nlm.nih.gov/compound/1054)
+- **molar mass:** 169.1778 g/mol (C8H11NO3) — DrugBank
 - **groups:** approved, investigational, nutraceutical, vet_approved
 
 ## About

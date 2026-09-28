@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q87]` (-2725.975 vs not captured) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q87: this record has -2725.975, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jadhav SB; Amore BM; Bockbrader H; Crass RL; Chapel S; Sasiela WJ; Emery MG et al. (2023). Journal of pharmacokinetics and pharmacodynamics 50
@@ -136,7 +137,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.4 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.4 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference/Simvastatin_Jadhav2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference/Simvastatin_Jadhav2023_reference_sim_controls.json"></dbs-fmusim>
 

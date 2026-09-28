@@ -4,7 +4,7 @@
 
 - **generic name:** not captured
 - **ATC codes:** not captured
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** [CID 8461](https://pubchem.ncbi.nlm.nih.gov/compound/8461)
 - **groups:** not captured
 
 ## Extraction summary

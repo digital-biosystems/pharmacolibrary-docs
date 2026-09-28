@@ -4,7 +4,7 @@
 
 - **generic name:** aminobutyric acid
 - **ATC codes:** `N03AG03`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

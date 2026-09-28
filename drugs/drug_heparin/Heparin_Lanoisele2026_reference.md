@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal; T3_param_coverage
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (unfractionated heparin vs UFH) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **engineer**</sub>
+**The heparin model was held back because its terminal half-life (8.84) is 176.7595-fold the paper's reported 0.05, a minutes-to-hours unit mismatch, and the intercompartmental clearance Q was never extracted.**
+
+When simulated as the paper dosed it, the model's terminal half-life is 8.84 against the paper's 0.05, a ratio of 176.7595, with the note indicating a minutes-to-SI versus simulated-hours unit discrepancy. The parameter coverage check found only 3 of the 4 expected parameters covered: Q (intercompartmental clearance, 0.29 L/h) was neither emitted nor defaulted. The builder substituted library defaults for the missing bioavailability F and lag time Tlag. A second reader also disputed the model structure, listing UFH–protamine interconversion links where the record has none, though the parameter values themselves were not contested. Extracted — heparin: CL 1.5 L h -1, Q 0.29 L h -1, V 3.66e+03 mL, kabs 0.079 h -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has unfractionated heparin, the second reading UFH; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Lanoiselée J; Gibert A; Gouin-Thibault I; Mansour A; Pontis A; Morizot C; et al. et al. (2026). British journal of anaesthesia 136
@@ -26,6 +29,9 @@ Lanoiselée J; Gibert A; Gouin-Thibault I; Mansour A; Pontis A; Morizot C; et al
 
 ## Model component
 <dbs-pgx drug="heparin" model-id="Heparin_Lanoisele2026_reference" status="needs_review" stale="false" population="adults undergoing cardiopulmonary bypass" measured-compound="unfractionated heparin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -162,6 +168,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference.svg" alt="Heparin_Lanoisele2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.079 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference_sim_controls.json"></dbs-fmusim>
 

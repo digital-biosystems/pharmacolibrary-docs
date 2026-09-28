@@ -4,7 +4,8 @@
 
 - **generic name:** hydroquinidine
 - **ATC codes:** `C01BA13`
-- **DrugBank:** [DB15300](https://go.drugbank.com/drugs/DB15300)
+- **DrugBank:** [DB15300](https://go.drugbank.com/drugs/DB15300) · **PubChem:** not captured
+- **molar mass:** 326.44 g/mol (C20H26N2O2) — DrugBank
 - **groups:** investigational
 
 ## About

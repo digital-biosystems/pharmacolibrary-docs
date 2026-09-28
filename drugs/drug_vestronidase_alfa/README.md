@@ -5,7 +5,7 @@
 
 - **generic name:** vestronidase alfa
 - **ATC codes:** `A16AB18`
-- **DrugBank:** [DB12366](https://go.drugbank.com/drugs/DB12366)
+- **DrugBank:** [DB12366](https://go.drugbank.com/drugs/DB12366) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

@@ -5,7 +5,8 @@
 
 - **generic name:** protriptyline
 - **ATC codes:** `N06AA11`
-- **DrugBank:** [DB00344](https://go.drugbank.com/drugs/DB00344)
+- **DrugBank:** [DB00344](https://go.drugbank.com/drugs/DB00344) · **PubChem:** [CID 4976](https://pubchem.ncbi.nlm.nih.gov/compound/4976)
+- **molar mass:** 263.3767 g/mol (C19H21N) — DrugBank
 - **groups:** approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Ziegler_1978_reference](drugs/drug_protriptyline/Protriptyline_Ziegler1978_reference.md) | Ziegler VE et al., Protriptyline kinetics, Clinical pharmacology and t… (1978) | [10.1002/cpt1978235580](https://doi.org/10.1002/cpt1978235580) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Ziegler_1978_reference](drugs/drug_protriptyline/Protriptyline_Ziegler1978_reference.md) | 1-compartment (no model) | 2 | Ziegler VE et al., Protriptyline kinetics, Clinical pharmacology and t… (1978) | [10.1002/cpt1978235580](https://doi.org/10.1002/cpt1978235580) |
 
 ## ADME sites
 

@@ -4,7 +4,7 @@
 
 - **generic name:** Glutamic acid
 - **ATC codes:** `A09AB01`
-- **DrugBank:** [DB00142](https://go.drugbank.com/drugs/DB00142)
+- **DrugBank:** [DB00142](https://go.drugbank.com/drugs/DB00142) · **PubChem:** not captured
 - **groups:** approved, investigational, nutraceutical
 
 ## About

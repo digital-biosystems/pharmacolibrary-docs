@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (tranexamic acid vs tranexamic_acid) and 12 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 1.85, model 9.72e+03); the covariate scenarios were not simulated.**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — tranexamic acid: CL 0.077 L/min, V1 9.25 L, Q 0.32 L/min, V2 9.49 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gilliot S; Ducloy-Bouthors AS; Loingeville F; Hennart B; Allorge D; Lebuffe G; et al. et al. (2022). Pharmaceutics 14
@@ -28,6 +31,9 @@ Gilliot S; Ducloy-Bouthors AS; Loingeville F; Hennart B; Allorge D; Lebuffe G; e
 
 ## Model component
 <dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Gilliot2022_original_dataset" status="needs_review" stale="false" population="parturients undergoing hemorrhagic cesarean delivery" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -182,6 +188,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset.svg" alt="TranexamicAcid_Gilliot2022_original_dataset diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset_sim_controls.json"></dbs-fmusim>
 

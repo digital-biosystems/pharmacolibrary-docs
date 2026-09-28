@@ -4,7 +4,8 @@
 
 - **generic name:** melitracen
 - **ATC codes:** `N06AA14`, `N06CA02`
-- **DrugBank:** [DB13384](https://go.drugbank.com/drugs/DB13384)
+- **DrugBank:** [DB13384](https://go.drugbank.com/drugs/DB13384) · **PubChem:** not captured
+- **molar mass:** 291.438 g/mol (C21H25N) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

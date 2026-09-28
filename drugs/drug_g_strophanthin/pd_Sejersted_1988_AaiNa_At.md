@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;g-strophanthin&quot;,&quot;href&quot;:&quot;drugs/drug_g_strophanthin/&quot;},{&quot;label&quot;:&quot;Sejersted_1988 \u00b7 PD Na,K pump rate&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Na,K pump rate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>

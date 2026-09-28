@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (deuterium-labelled coenzyme Q10 vs d5-CoQ10) and 7 more field(s) — a structural parameter, so the record is disputed.
+**No volume or clearance — not a compartmental population PK model.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has deuterium-labelled coenzyme Q10, the second reading d5-CoQ10; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `deuterium-labelled coenzyme Q10`, measured `coenzyme Q10`.
 

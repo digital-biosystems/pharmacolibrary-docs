@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The crizanlizumab two-compartment record was rejected because one compartment has no connection to the dose, and the linear elimination rate kint was extracted with no value.**
+
+The record describes a two-compartment model for crizanlizumab in healthy subjects and sickle cell disease patients, with a clearance of 0.75, a dissociation constant KD of 0.354, and both volume parameters V and V2 fixed at 1. The structural check found an unreachable or orphan compartment, meaning one of the two compartments has no path from the administered dose, so the stated two-compartment topology is not fully connected. Additionally, the elimination rate constant kint appears in the parameter list without any extracted value, so a placeholder would have stood in for it. These deviations make the record internally incomplete and it was refused. Extracted — crizanlizumab: V 1, KD 0.354, CL 0.75, V2 1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Sy SKB; Tanaka C; Grosch K et al. (2023). Clinical pharmacokinetics 62
@@ -25,6 +27,9 @@ Sy SKB; Tanaka C; Grosch K et al. (2023). Clinical pharmacokinetics 62
 
 ## Model component
 <dbs-pgx drug="crizanlizumab" model-id="Crizanlizumab_Sy2023_reference" status="rejected" stale="false" population="healthy subjects and patients with sickle cell disease" measured-compound="crizanlizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

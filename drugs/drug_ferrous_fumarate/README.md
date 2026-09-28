@@ -4,7 +4,8 @@
 
 - **generic name:** ferrous fumarate
 - **ATC codes:** `B03AA02`, `B03AD02`
-- **DrugBank:** [DB14491](https://go.drugbank.com/drugs/DB14491)
+- **DrugBank:** [DB14491](https://go.drugbank.com/drugs/DB14491) · **PubChem:** [CID 6433164](https://pubchem.ncbi.nlm.nih.gov/compound/6433164)
+- **molar mass:** 169.901 g/mol (C4H2FeO4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

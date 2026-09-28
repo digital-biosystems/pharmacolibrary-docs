@@ -4,7 +4,8 @@
 
 - **generic name:** magnesium carbonate
 - **ATC codes:** `A02AA01`, `A06AD01`, `V03AE04`
-- **DrugBank:** [DB09481](https://go.drugbank.com/drugs/DB09481)
+- **DrugBank:** [DB09481](https://go.drugbank.com/drugs/DB09481) · **PubChem:** [CID 11029](https://pubchem.ncbi.nlm.nih.gov/compound/11029)
+- **molar mass:** 84.314 g/mol (CMgO3) — DrugBank
 - **groups:** approved
 
 ## About

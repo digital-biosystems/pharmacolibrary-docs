@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q19, Q18 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**AUCt and AUCSS have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax, Cmin, AUCt and AUCSS), so that value has no SI equivalent. Extracted — tapentadol: Cmax 159 ng/mL, Cmin 22.2 ng/mL, AUCt 231 h•ng/mL, AUCSS 292 h•ng/mL, CL 93.7 L/h, CL/F 272 L/h, V/F 1.2e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jończyk R; Beuter C; Bulawa B; Buller S; Eibl C; Elling C; et al. et al. (2022). Journal of pain research 15
@@ -26,6 +29,9 @@ Jończyk R; Beuter C; Bulawa B; Buller S; Eibl C; Elling C; et al. et al. (2022)
 
 ## Model component
 <dbs-pgx drug="tapentadol" model-id="Tapentadol_Joczyk2022_reference" status="needs_review" stale="false" population="children aged 2 to &lt;7 years" measured-compound="tapentadol" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

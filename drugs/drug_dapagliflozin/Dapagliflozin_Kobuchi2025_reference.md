@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[t1/2hba1c].value` (16.1 vs 15.3) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The dapagliflozin model was quarantined because clearance, absorption rate constant and absorption lag time had no source values, so library placeholders stood in, and the invented ka of 57.4/day was judged not acceptable.**
+
+The record lists no value for dapagliflozin's CL/F, and ka and Tlag were likewise missing from the source, so generic placeholder values were substituted for these three parameters and the model was held back rather than published with invented numbers. The absorption rate constant of 57.4/day was not reported in the source paper and was adjudicated as invented absorption, deemed not acceptable. Although the record defines a body-weight covariate effect (θBW = 0.41), only the reference individual was simulated, so the covariate scenarios were never exercised. A second reader also disagreed with the extracted values, reading t1/2z as 15.3 days instead of 16.1 days and θBW as 0.22 instead of 0.41. Extracted — dapagliflozin: t1/2z 16.1 day, kabs 57.4, V/F 73.9 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[t1/2hba1c].value`: this record has 16.1, the second reading 15.3; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kobuchi S; Sakai S; Terada R; Kato KI; Hayakawa T; Sakaeda T et al. (2025). International journal of medical sciences 22
@@ -28,6 +31,9 @@ Kobuchi S; Sakai S; Terada R; Kato KI; Hayakawa T; Sakaeda T et al. (2025). Inte
 
 ## Model component
 <dbs-pgx drug="dapagliflozin" model-id="Dapagliflozin_Kobuchi2025_reference" status="model_quarantined" stale="false" population="Japanese patients with type 2 diabetes mellitus" measured-compound="dapagliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F, θCL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

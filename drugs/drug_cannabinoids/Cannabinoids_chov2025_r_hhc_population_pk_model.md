@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 0.3746)
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.375).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. None of the extracted parameters is cannabinoids's own; they describe hexahydrocannabinol. Extracted — hexahydrocannabinol: tlag 0.49 h, kabs 0.47 h−1, V/F 1.51e+03 mL, CL/F 2.46e+03 mL/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Šíchová K; Mallarino B; Janečková L; Palivec P; Vágnerová M; Vejmola Č; Nikolič M; Ladislavová L; Mazochová K; Ryšánek P; Šíma M; Šafanda A; Hiep BQ; Koutrouli IRA; Kuchař M; Páleníček T et al. (2025). The international journal of neuropsychopharmacology 28
@@ -25,6 +27,9 @@
 
 ## Model component
 <dbs-pgx drug="cannabinoids" model-id="Cannabinoids_chov2025_r_hhc_population_pk_model" status="needs_review" stale="false" population="male Wistar rats" measured-compound="hexahydrocannabinol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

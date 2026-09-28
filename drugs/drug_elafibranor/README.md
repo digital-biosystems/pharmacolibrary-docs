@@ -4,7 +4,8 @@
 
 - **generic name:** elafibranor
 - **ATC codes:** `A05AX06`
-- **DrugBank:** [DB05187](https://go.drugbank.com/drugs/DB05187)
+- **DrugBank:** [DB05187](https://go.drugbank.com/drugs/DB05187) · **PubChem:** [CID 9864881](https://pubchem.ncbi.nlm.nih.gov/compound/9864881)
+- **molar mass:** 384.49 g/mol (C22H24O4S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

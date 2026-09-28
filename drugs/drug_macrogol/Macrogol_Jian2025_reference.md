@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jian W; Yin Y; Chen R; Luo P; Wang T; Gu J; et al. et al. (2025). CPT: pharmacometrics & systems pharmacology 14
@@ -25,6 +25,9 @@ Jian W; Yin Y; Chen R; Luo P; Wang T; Gu J; et al. et al. (2025). CPT: pharmacom
 
 ## Model component
 <dbs-pgx drug="macrogol" model-id="Macrogol_Jian2025_reference" status="curated_candidate" stale="false" population="" measured-compound="macrogol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** V/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 
@@ -123,6 +126,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_macrogol/Macrogol_Jian2025_reference/Macrogol_Jian2025_reference.svg" alt="Macrogol_Jian2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.000417 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_macrogol/Macrogol_Jian2025_reference/Macrogol_Jian2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_macrogol/Macrogol_Jian2025_reference/Macrogol_Jian2025_reference_sim_controls.json"></dbs-fmusim>
 

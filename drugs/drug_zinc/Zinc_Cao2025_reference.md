@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12C&quot;,&quot;href&quot;:&quot;atc/A12C.md&quot;},{&quot;label&quot;:&quot;zinc&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/&quot;},{&quot;label&quot;:&quot;Cao_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zinc_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zinc_Giesy1980_reference&quot;,&quot;label&quot;:&quot;Giesy_1980_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Giesy1980_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zinc_Cao2025_reference&quot;,&quot;label&quot;:&quot;Cao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Cao2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zinc_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zinc_Giesy1980_reference&quot;,&quot;label&quot;:&quot;Giesy_1980_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Giesy1980_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zinc_Cao2025_reference&quot;,&quot;label&quot;:&quot;Cao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Cao2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (0.011 vs 0.162) — a structural parameter, so the record is disputed.
+**The zinc clearance of 0.011 L/h/kg is physiologically implausible, indicating a unit or scale extraction error, and a second reader read the value as 0.162 L/h/kg instead.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record lists zinc clearance (CL) as 0.011 L/h/kg, a magnitude outside the physiological window for clearance per kilogram, consistent with a unit or scale extraction error. The two-compartment structure otherwise carries plausible volumes (V1 3.23 L/h, V2 14.2 L/h) and intercompartmental clearance (Q 0.591 L/h). A second reader disputed the clearance value, reading 0.162 rather than 0.011, so the recorded figure is contested. The model was therefore rejected on the implausible clearance magnitude. Extracted — zinc: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.011, the second reading 0.162. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Cao M; Katial R; Liu Y; Lu X; Gu Q; Chen C; Liu K; Zhu Z; Marshall MR; Yu Y; Wang Z et al. (2025). Gene therapy 32
@@ -25,6 +29,9 @@ Cao M; Katial R; Liu Y; Lu X; Gu Q; Chen C; Liu K; Zhu Z; Marshall MR; Yu Y; Wan
 
 ## Model component
 <dbs-pgx drug="zinc" model-id="Zinc_Cao2025_reference" status="rejected" stale="false" population="" measured-compound="zinc" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

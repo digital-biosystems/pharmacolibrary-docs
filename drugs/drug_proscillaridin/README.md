@@ -4,7 +4,8 @@
 
 - **generic name:** proscillaridin
 - **ATC codes:** `C01AB01`
-- **DrugBank:** [DB13307](https://go.drugbank.com/drugs/DB13307)
+- **DrugBank:** [DB13307](https://go.drugbank.com/drugs/DB13307) · **PubChem:** [CID 5284613](https://pubchem.ncbi.nlm.nih.gov/compound/5284613)
+- **molar mass:** 530.658 g/mol (C30H42O8) — DrugBank
 - **groups:** experimental
 
 ## About

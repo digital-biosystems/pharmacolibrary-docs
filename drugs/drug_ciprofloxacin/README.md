@@ -5,7 +5,8 @@
 
 - **generic name:** ciprofloxacin
 - **ATC codes:** `J01MA02`, `J01RA10`, `J01RA11`, `J01RA12`, `S01AE03`, `S02AA15`, `S03AA07`
-- **DrugBank:** [DB00537](https://go.drugbank.com/drugs/DB00537)
+- **DrugBank:** [DB00537](https://go.drugbank.com/drugs/DB00537) · **PubChem:** [CID 2764](https://pubchem.ncbi.nlm.nih.gov/compound/2764)
+- **molar mass:** 331.3415 g/mol (C17H18FN3O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -23,6 +24,15 @@ A ciprofloxacin otic solution and otic suspension with hydrocortisone are indica
 A ciprofloxacin eye drop is indicated for bacterial corneal ulcers and conjunctivitis.[L6472] A ciprofloxacin eye ointment is indicated for bacterial conjunctivitis.[L6475]
 
 A ciprofloxacin extended release tablet is indicated for uncomplicated urinary tract infections, complicated urinary tract infections, and acute uncomplicated pyelonephritis.[L6487]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| ciprofloxacin | parent | 331.341 | C17H18FN3O3 | DrugBank | [2764](https://pubchem.ncbi.nlm.nih.gov/compound/2764) | Šíma_2022 |
+| desethylene ciprofloxacin | metabolite | 305.3 | — | PubChem | [63000](https://pubchem.ncbi.nlm.nih.gov/compound/63000) | Šíma_2022 |
 
 ## Extraction summary
 

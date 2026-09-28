@@ -5,7 +5,7 @@
 
 # tetracycline — `Tetracycline_Grada2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The tetracycline two-compartment model was rejected because one compartment has no path from the dose, and the two readers disagreed on which extracted values belong to which parameter.**
+
+The record describes a two-compartment tetracycline model with CL/F 3.15 L/h, V1/F 54.2 L, V2/F 15.1 L and absorption rate constant ka 3.45 h−1, but the structure contains a compartment that is unreachable from the dose site, so the model was refused. The second reader also disagreed with the extracted values: this record lists 21.7, 19, 26, 22 and 27 where the second reader read null, and null where the second reader read 21.7 and 31, meaning the parameter-to-value assignments are inconsistent between readers. Extracted — tetracycline: CL/F 3.15 L/h, V1/F 54.2 L, V2/F 15.1 L, kabs 3.45 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q18: this record has 21.7, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Grada A; Del Rosso JQ; Graber E; Bunick CG; Stein Gold L; Moore AY; et al. et al. (2022). Dermatologic therapy 35
@@ -25,6 +29,9 @@ Grada A; Del Rosso JQ; Graber E; Bunick CG; Stein Gold L; Moore AY; et al. et al
 
 ## Model component
 <dbs-pgx drug="tetracycline" model-id="Tetracycline_Grada2022_reference" status="rejected" stale="false" population="" measured-compound="tetracycline" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -56,9 +63,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.5 (7/14 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q18]` | 21.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q21]` | not captured | 21.7 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | 19 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q33]` | not captured | 31 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 26 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q84]` | 22 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | 27 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

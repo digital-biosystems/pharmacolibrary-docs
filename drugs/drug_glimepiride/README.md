@@ -5,7 +5,8 @@
 
 - **generic name:** glimepiride
 - **ATC codes:** `A10BB12`, `A10BD04`, `A10BD06`
-- **DrugBank:** [DB00222](https://go.drugbank.com/drugs/DB00222)
+- **DrugBank:** [DB00222](https://go.drugbank.com/drugs/DB00222) · **PubChem:** [CID 3476](https://pubchem.ncbi.nlm.nih.gov/compound/3476)
+- **molar mass:** 490.62 g/mol (C24H34N4O5S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -26,9 +27,9 @@ It may also be indicated for use in combination with metformin or insulin to low
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yoo_2020_2_reference](drugs/drug_glimepiride/Glimepiride_Yoo2020v2_reference.md) | Yoo H et al., Pharmacokinetic/Pharmacodynamic Interac…, Drug design, development an… (2020) | [10.2147/DDDT.S275343](https://doi.org/10.2147/DDDT.S275343) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yoo_2020_2_reference](drugs/drug_glimepiride/Glimepiride_Yoo2020v2_reference.md) | 1-compartment, oral | 2 | Yoo H et al., Pharmacokinetic/Pharmacodynamic Interac…, Drug design, development an… (2020) | [10.2147/DDDT.S275343](https://doi.org/10.2147/DDDT.S275343) |
 
 ## Pharmacodynamics (PD)
 

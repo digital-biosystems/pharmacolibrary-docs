@@ -4,7 +4,8 @@
 
 - **generic name:** evogliptin
 - **ATC codes:** `A10BD22`, `A10BH07`
-- **DrugBank:** [DB12625](https://go.drugbank.com/drugs/DB12625)
+- **DrugBank:** [DB12625](https://go.drugbank.com/drugs/DB12625) · **PubChem:** [CID 25022354](https://pubchem.ncbi.nlm.nih.gov/compound/25022354)
+- **molar mass:** 401.43 g/mol (C19H26F3N3O3) — DrugBank
 - **groups:** investigational
 
 ## About

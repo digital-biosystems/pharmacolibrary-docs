@@ -4,7 +4,8 @@
 
 - **generic name:** balsalazide
 - **ATC codes:** `A07EC04`
-- **DrugBank:** [DB01014](https://go.drugbank.com/drugs/DB01014)
+- **DrugBank:** [DB01014](https://go.drugbank.com/drugs/DB01014) · **PubChem:** [CID 6335412](https://pubchem.ncbi.nlm.nih.gov/compound/6335412)
+- **molar mass:** 357.3175 g/mol (C17H15N3O6) — DrugBank
 - **groups:** approved
 
 ## About

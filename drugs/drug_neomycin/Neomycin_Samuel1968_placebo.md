@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (cholesterol-7a-3H vs cholesterol-7α-3H) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has cholesterol-7a-3H, the second reading cholesterol-7α-3H; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `neomycin`, measured `cholesterol`.
 
@@ -28,6 +31,9 @@ Samuel P; Holtzman CH; Meilman E; Perl W et al. (1968). The Journal of clinical 
 
 ## Model component
 <dbs-pgx drug="neomycin" model-id="Neomycin_Samuel1968_placebo" status="rejected" stale="false" population="adults with hypercholesterolemia" measured-compound="cholesterol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

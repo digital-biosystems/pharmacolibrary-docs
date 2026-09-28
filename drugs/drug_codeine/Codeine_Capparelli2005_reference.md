@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q316]` (not captured vs 13) and 2 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The codeine one-compartment model was rejected because its clearance of 0.18 ml/h and volume of distribution of 66.0 ml are physiologically implausible, indicating a unit or scale extraction error.**
+
+The record lists codeine clearance (CL) as 0.18 ml/h and central volume (V1) as 66.0 ml, magnitudes far outside the physiological window for this drug, which is why the model was refused. The source of these values is a review-secondary text rather than the original fitted analysis. A second reader additionally reported different values for three quantities (13, 701 and 6.1) where this record extracted none, so those comparisons could not be computed for this record. Extracted — codeine: CL 0.18 ml/h, V1 66 ml.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q316: this record has none, the second reading 13; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:06:14.218948+00:00) predates the upstream re-run (2026-09-23 14:27:45.779098+00:00). Current validate status: `rejected`.
 

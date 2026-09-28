@@ -4,7 +4,8 @@
 
 - **generic name:** decitabine
 - **ATC codes:** `L01BC08`
-- **DrugBank:** [DB01262](https://go.drugbank.com/drugs/DB01262)
+- **DrugBank:** [DB01262](https://go.drugbank.com/drugs/DB01262) · **PubChem:** [CID 451668](https://pubchem.ncbi.nlm.nih.gov/compound/451668)
+- **molar mass:** 228.2053 g/mol (C8H12N4O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

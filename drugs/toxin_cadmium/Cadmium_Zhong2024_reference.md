@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Zhong G; Lin Z; Liu F; Xie M; Chen R; Tan QG et al. (2024). Environmental science & technology 58
@@ -25,6 +25,9 @@ Zhong G; Lin Z; Liu F; Xie M; Chen R; Tan QG et al. (2024). Environmental scienc
 
 ## Model component
 <dbs-pgx drug="cadmium" model-id="Cadmium_Zhong2024_reference" status="not_modelled" stale="false" population="six bivalve species (Perna viridis, Mytilus unguiculatus, Mytilus galloprovincialis, Magallana gigas, Magallana hongkongensis, Magallana angulata)" measured-compound="cadmium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -113,6 +116,8 @@ Zhong G; Lin Z; Liu F; Xie M; Chen R; Tan QG et al. (2024). Environmental scienc
 </div><figure class="pk-models-diagram"><img src="drugs/toxin_cadmium/Cadmium_Zhong2024_reference/Cadmium_Zhong2024_reference.svg" alt="Cadmium_Zhong2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2.6 /h, lag 14.1 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/toxin_cadmium/Cadmium_Zhong2024_reference/Cadmium_Zhong2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/toxin_cadmium/Cadmium_Zhong2024_reference/Cadmium_Zhong2024_reference_sim_controls.json"></dbs-fmusim>
 

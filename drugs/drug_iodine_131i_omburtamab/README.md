@@ -4,7 +4,7 @@
 
 - **generic name:** iodine (131I) omburtamab
 - **ATC codes:** `V10XA03`
-- **DrugBank:** [DB17124](https://go.drugbank.com/drugs/DB17124)
+- **DrugBank:** [DB17124](https://go.drugbank.com/drugs/DB17124) · **PubChem:** not captured
 - **groups:** investigational
 
 ## Extraction summary

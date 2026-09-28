@@ -5,7 +5,8 @@
 
 - **generic name:** arginine hydrochloride
 - **ATC codes:** `B05XB01`
-- **DrugBank:** [DB00125](https://go.drugbank.com/drugs/DB00125)
+- **DrugBank:** [DB00125](https://go.drugbank.com/drugs/DB00125) · **PubChem:** [CID 6322](https://pubchem.ncbi.nlm.nih.gov/compound/6322)
+- **molar mass:** 174.201 g/mol (C6H14N4O2) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Wang_2018_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference.md) | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yeo_2013_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_reference.md) | Yeo TW et al., A randomized pilot study of L-arginine…, PloS one (2013) | [10.1371/journal.pone.0069587](https://doi.org/10.1371/journal.pone.0069587) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Awan_2024_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Awan2024_reference.md) | Awan SF et al., Phase 1 trial evaluating safety and pha…, JCI insight (2024) | [10.1172/jci.insight.175375](https://doi.org/10.1172/jci.insight.175375) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Wang_2018_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference.md) | 1-compartment, IV | 2 | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yeo_2013_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_reference.md) | 2-compartment, IV | 4 | Yeo TW et al., A randomized pilot study of L-arginine…, PloS one (2013) | [10.1371/journal.pone.0069587](https://doi.org/10.1371/journal.pone.0069587) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Awan_2024_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Awan2024_reference.md) | 1-compartment (no model) | 2 | Awan SF et al., Phase 1 trial evaluating safety and pha…, JCI insight (2024) | [10.1172/jci.insight.175375](https://doi.org/10.1172/jci.insight.175375) |
 
 ## ADME sites
 

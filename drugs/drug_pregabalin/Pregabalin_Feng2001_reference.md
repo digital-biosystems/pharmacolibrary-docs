@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[absorption rate constant]` (2.0 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption rate constant: this record has 2.0, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Feng MR; Turluck D; Burleigh J; Lister R; Fan C; Middlebrook A; et al. et al. (2001). European journal of drug metabolism and pharmacokinetics 26
@@ -26,6 +29,9 @@ Feng MR; Turluck D; Burleigh J; Lister R; Fan C; Middlebrook A; et al. et al. (2
 
 ## Model component
 <dbs-pgx drug="pregabalin" model-id="Pregabalin_Feng2001_reference" status="rejected" stale="false" population="rats" measured-compound="pregabalin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

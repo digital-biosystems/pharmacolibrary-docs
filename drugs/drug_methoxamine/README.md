@@ -4,7 +4,8 @@
 
 - **generic name:** methoxamine
 - **ATC codes:** `C01CA10`
-- **DrugBank:** [DB00723](https://go.drugbank.com/drugs/DB00723)
+- **DrugBank:** [DB00723](https://go.drugbank.com/drugs/DB00723) · **PubChem:** [CID 6082](https://pubchem.ncbi.nlm.nih.gov/compound/6082)
+- **molar mass:** 211.2576 g/mol (C11H17NO3) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
 ## About

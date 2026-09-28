@@ -5,7 +5,7 @@
 
 - **generic name:** retinol
 - **ATC codes:** `A11CA01`, `D10AD02`, `R01AX02`, `S01XA02`
-- **DrugBank:** [DB00162](https://go.drugbank.com/drugs/DB00162)
+- **DrugBank:** [DB00162](https://go.drugbank.com/drugs/DB00162) · **PubChem:** not captured
 - **groups:** approved, investigational, nutraceutical, vet_approved
 
 ## About
@@ -22,10 +22,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Adams_1995_4_hpr](drugs/drug_retinol/Retinol_Adams1995_4_hpr.md) | Adams WR et al., Effects of N-(4-hydroxyphenyl)retinamid…, Proceedings of the Society… (1995) | [10.3181/00379727-208-43849](https://doi.org/10.3181/00379727-208-43849) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Adams_1995_control](drugs/drug_retinol/Retinol_Adams1995_control.md) | Adams WR et al., Effects of N-(4-hydroxyphenyl)retinamid…, Proceedings of the Society… (1995) | [10.3181/00379727-208-43849](https://doi.org/10.3181/00379727-208-43849) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Adams_1995_4_hpr](drugs/drug_retinol/Retinol_Adams1995_4_hpr.md) | 1-compartment, IV | 1 | Adams WR et al., Effects of N-(4-hydroxyphenyl)retinamid…, Proceedings of the Society… (1995) | [10.3181/00379727-208-43849](https://doi.org/10.3181/00379727-208-43849) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Adams_1995_control](drugs/drug_retinol/Retinol_Adams1995_control.md) | 1-compartment, IV | 1 | Adams WR et al., Effects of N-(4-hydroxyphenyl)retinamid…, Proceedings of the Society… (1995) | [10.3181/00379727-208-43849](https://doi.org/10.3181/00379727-208-43849) |
 
 ## Pharmacodynamics (PD)
 

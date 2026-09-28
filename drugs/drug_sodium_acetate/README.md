@@ -4,7 +4,8 @@
 
 - **generic name:** sodium acetate
 - **ATC codes:** `B05XA08`
-- **DrugBank:** [DB09395](https://go.drugbank.com/drugs/DB09395)
+- **DrugBank:** [DB09395](https://go.drugbank.com/drugs/DB09395) · **PubChem:** [CID 517045](https://pubchem.ncbi.nlm.nih.gov/compound/517045)
+- **molar mass:** 82.0338 g/mol (C2H3NaO2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Siegel JD; McCracken GH; Thomas ML; Threlkeld N et al. (1979). Antimicrobial agents and chemotherapy 15
@@ -26,6 +29,9 @@ Siegel JD; McCracken GH; Thomas ML; Threlkeld N et al. (1979). Antimicrobial age
 
 ## Model component
 <dbs-pgx drug="netilmicin" model-id="Netilmicin_Siegel1979_reference" status="rejected" stale="false" population="newborn infants" measured-compound="netilmicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

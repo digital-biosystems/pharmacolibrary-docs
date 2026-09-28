@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C2_reference failed (ratio None); C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (clopidogrel vs unknown) and 17 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clopidogrel parent–metabolite model was held back because its clearance plausibility and reference checks could not compute a comparison (ratio None), leaving the central clearance of 9257.28 L/h unverified rather than shown wrong.**
+
+The record describes a linear parent–metabolite structure for clopidogrel with two hepatic metabolites (clopidogrel H4 and clopidogrel carboxylic acid), each linked by a metabolic fraction (fm1 0.125, fm2 0.960), with parent clearance 9257.28 L/h and intercompartmental clearance 845.70 L/h. Both failed checks reported a failure without computing a comparison, so they are inconclusive rather than a demonstrated fault: the clearance plausibility check had no reference value to compare against, so the clearance is unverified. A second reader disagreed on several entries, including the dose compartment and primary analyte (both clopidogrel in this record) and the absorption rate constant 19.64 h−1, which the second reader left blank while reading an elimination rate constant of 0.006 h−1 instead. Extracted — clopidogrel: V1 1.46e+03 L, V2 2.82e+03 L, CL 9.26e+03 L/h, QH 846 L/h, kabs 19.6 h−1, tlag 0.196 h; clopidogrel carboxylic acid: Q 588 L/h, fm 0.96, V1 17.3 L, V2 51.9 L, CL 7.25 L/h; clopidogrel H4: fm 0.125, V 51.5 L, CL 74.2 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clopidogrel, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Jung YS; Jin BH; Park MS; Kim CO; Chae D et al. (2024). CPT: pharmacometrics & systems pharmacology 13

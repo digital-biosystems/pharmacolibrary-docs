@@ -5,7 +5,8 @@
 
 - **generic name:** biotin
 - **ATC codes:** `A11HA05`
-- **DrugBank:** [DB00121](https://go.drugbank.com/drugs/DB00121)
+- **DrugBank:** [DB00121](https://go.drugbank.com/drugs/DB00121) · **PubChem:** [CID 171548](https://pubchem.ncbi.nlm.nih.gov/compound/171548)
+- **molar mass:** 244.311 g/mol (C10H16N2O3S) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2001_reference](drugs/drug_biotin/Biotin_Wang2001_reference.md) | Wang KS et al., The clearance and metabolism of biotin…, The Journal of nutrition (2001) | [10.1093/jn/131.4.1271](https://doi.org/10.1093/jn/131.4.1271) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2023_reference](drugs/drug_biotin/Biotin_Wang2023_reference.md) | Wang Y et al., A picogram BA-ELISA quantification assa…, PLoS neglected tropical dis… (2023) | [10.1371/journal.pntd.0011568](https://doi.org/10.1371/journal.pntd.0011568) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2001_reference](drugs/drug_biotin/Biotin_Wang2001_reference.md) | 1-compartment, IV | 2 | Wang KS et al., The clearance and metabolism of biotin…, The Journal of nutrition (2001) | [10.1093/jn/131.4.1271](https://doi.org/10.1093/jn/131.4.1271) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Wang_2023_reference](drugs/drug_biotin/Biotin_Wang2023_reference.md) | 1-compartment, IV | 2 | Wang Y et al., A picogram BA-ELISA quantification assa…, PLoS neglected tropical dis… (2023) | [10.1371/journal.pntd.0011568](https://doi.org/10.1371/journal.pntd.0011568) |
 
 ## Pharmacodynamics (PD)
 

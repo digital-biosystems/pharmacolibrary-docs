@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The aprepitant record was rejected because the clearance parameter carries a dimension mismatch — 'Clearance of dexamethasone' is given as 24.7 '%' instead of a flow unit — and the record rests on abstract-only summary statistics rather than a fitted model.**
+
+The structural parameter labelled 'Clearance of dexamethasone' is reported as 24.7 with unit '%', a percentage that cannot serve as a clearance in the one-compartment aprepitant model, which otherwise lists V/F = 72.1 L, absorption constant 0.893 /h and lag time 0.295 h. The record was built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model. A second reader disagreed on the parameterization, judging it mechanistic rather than apparent, and set all four parameter values (0.893 /h, 0.295 h, 72.1 L, 24.7 %) to null in their reading. Extracted — aprepitant: V/F 72.1 L, kabs 0.893 /h, tlag 0.295 h, CL 24.7 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Nakade S; Ohno T; Kitagawa J; Hashimoto Y; Katayama M; Awata H; et al. et al. (2008). Cancer chemotherapy and pharmacology 63
@@ -26,6 +29,9 @@ Nakade S; Ohno T; Kitagawa J; Hashimoto Y; Katayama M; Awata H; et al. et al. (2
 
 ## Model component
 <dbs-pgx drug="aprepitant" model-id="Aprepitant_Nakade2008_reference" status="rejected" stale="false" population="Japanese cancer patients and healthy volunteers" measured-compound="aprepitant" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

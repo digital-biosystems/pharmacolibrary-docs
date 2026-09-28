@@ -5,7 +5,7 @@
 
 # pantoprazole — `Pantoprazole_Olivarez2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.368). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q20: this record has 46.41, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Olivarez JD; Kreuder AJ; Tatarniuk DM; Wulf LW; Dembek KA; Mochel JP; et al. et al. (2020). Frontiers in veterinary science 7
@@ -25,6 +27,9 @@ Olivarez JD; Kreuder AJ; Tatarniuk DM; Wulf LW; Dembek KA; Mochel JP; et al. et 
 
 ## Model component
 <dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Olivarez2020_reference" status="curated_candidate" stale="false" population="neonatal Holstein calves" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -47,14 +52,31 @@ Olivarez JD; Kreuder AJ; Tatarniuk DM; Wulf LW; Dembek KA; Mochel JP; et al. et 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.368 (7/19 fields) | 12 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q20]` | 46.41 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q352]` | not captured | 0.301 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q36]` | not captured | 3.83 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q53]` | 3.45 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q56]` | not captured | 2.42 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 2.8 | 3.45 | mismatch |
+| `gpt-oss:120b` | `values[Q61]` | 0.301 | 0.285 | mismatch |
+| `gpt-oss:120b` | `values[Q66]` | not captured | 7.02 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q71]` | not captured | 4.62 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q74]` | 13.37 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q86]` | 4.62 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | not captured | 13.37 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -118,6 +140,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference/Pantoprazole_Olivarez2020_reference.svg" alt="Pantoprazole_Olivarez2020_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference/Pantoprazole_Olivarez2020_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference/Pantoprazole_Olivarez2020_reference_sim_controls.json"></dbs-fmusim>
 

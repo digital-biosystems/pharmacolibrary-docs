@@ -4,7 +4,8 @@
 
 - **generic name:** orlistat
 - **ATC codes:** `A08AB01`
-- **DrugBank:** [DB01083](https://go.drugbank.com/drugs/DB01083)
+- **DrugBank:** [DB01083](https://go.drugbank.com/drugs/DB01083) · **PubChem:** [CID 3034010](https://pubchem.ncbi.nlm.nih.gov/compound/3034010)
+- **molar mass:** 495.7348 g/mol (C29H53NO5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

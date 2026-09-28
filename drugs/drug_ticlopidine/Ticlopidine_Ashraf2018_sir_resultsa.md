@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The ticlopidine/S-ketamine parent–metabolite model was rejected because a structural parameter's reported unit could not be converted to SI, leaving a dimension mismatch on that parameter.**
+
+The record describes a parent–metabolite structure for ticlopidine with metabolism from S-ketamine to norketamine (rate constant Kfm) and reports CLint 304 L/h, V 14.4 L and Q 288 L/h. One of the reported units could not be expressed in SI units, so that structural parameter entered the model with an unconvertible unit and failed the dimensional consistency check. Because the mismatched parameter could not be resolved to consistent units, the model was refused rather than published. Extracted — ticlopidine: CLint 304 L/h, V 14.4 L, Q 288 L/h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ashraf MW; Peltoniemi MA; Olkkola KT; Neuvonen PJ; Saari TI et al. (2018). CPT: pharmacometrics & systems pharmacology 7
@@ -25,6 +27,9 @@ Ashraf MW; Peltoniemi MA; Olkkola KT; Neuvonen PJ; Saari TI et al. (2018). CPT: 
 
 ## Model component
 <dbs-pgx drug="ticlopidine" model-id="Ticlopidine_Ashraf2018_sir_resultsa" status="rejected" stale="false" population="healthy volunteers" measured-compound="S-ketamine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

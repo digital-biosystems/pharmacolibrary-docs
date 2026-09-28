@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default; C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (polymyxin_b vs polymyxin B) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume; cL has no unit (+1 more).**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — polymyxin b: CL 100 mg · h/liter.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading polymyxin B; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lakota EA; Landersdorfer CB; Nation RL; Li J; Kaye KS; Rao GG; et al. et al. (2018). Antimicrobial agents and chemotherapy 62
@@ -26,6 +29,9 @@ Lakota EA; Landersdorfer CB; Nation RL; Li J; Kaye KS; Rao GG; et al. et al. (20
 
 ## Model component
 <dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Lakota2018_reference" status="needs_review" stale="false" population="adults with multidrug-resistant Gram-negative bacterial infections" measured-compound="polymyxin_b" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

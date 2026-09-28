@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;pentazocine&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/&quot;},{&quot;label&quot;:&quot;Rybczynska_2008 \u00b7 PD 11C-methionine uptake&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # 11C-methionine uptake — PD  <span class="pk-badge pk-badge--red">rejected</span>

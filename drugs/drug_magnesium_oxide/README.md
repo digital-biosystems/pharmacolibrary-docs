@@ -4,7 +4,8 @@
 
 - **generic name:** magnesium oxide
 - **ATC codes:** `A02AA02`, `A06AD02`, `A12CC10`
-- **DrugBank:** [DB01377](https://go.drugbank.com/drugs/DB01377)
+- **DrugBank:** [DB01377](https://go.drugbank.com/drugs/DB01377) · **PubChem:** [CID 14792](https://pubchem.ncbi.nlm.nih.gov/compound/14792)
+- **molar mass:** 40.304 g/mol (MgO) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (recombinant human erythropoietin vs recombinant human erythropoietin (rHuEPO)) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is erythropoietin's own; they describe recombinant human erythropoietin. Extracted — recombinant human erythropoietin: V 6 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has recombinant human erythropoietin, the second reading recombinant human erythropoietin (rHuEPO); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Olsson-Gisleskog P; Jacqmin P; Perez-Ruixo JJ et al. (2007). Clinical pharmacokinetics 46
@@ -26,6 +29,9 @@ Olsson-Gisleskog P; Jacqmin P; Perez-Ruixo JJ et al. (2007). Clinical pharmacoki
 
 ## Model component
 <dbs-pgx drug="erythropoietin" model-id="Erythropoietin_OlssonGisleskog2007_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="recombinant human erythropoietin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

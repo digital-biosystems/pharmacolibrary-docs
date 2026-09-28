@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Pypendop BH; Shilo-Benjamini Y et al. (2021). Journal of veterinary pharmacology and therapeutics 44
@@ -25,6 +25,9 @@ Pypendop BH; Shilo-Benjamini Y et al. (2021). Journal of veterinary pharmacology
 
 ## Model component
 <dbs-pgx drug="butorphanol" model-id="Butorphanol_Pypendop2021_reference" status="curated_candidate" stale="false" population="male neutered cats anesthetized with isoflurane" measured-compound="butorphanol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -121,6 +124,8 @@ Pypendop BH; Shilo-Benjamini Y et al. (2021). Journal of veterinary pharmacology
 </div><figure class="pk-models-diagram"><img src="drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference/Butorphanol_Pypendop2021_reference.svg" alt="Butorphanol_Pypendop2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference/Butorphanol_Pypendop2021_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference/Butorphanol_Pypendop2021_reference_sim_controls.json"></dbs-fmusim>
 

@@ -5,7 +5,8 @@
 
 - **generic name:** cyanocobalamin
 - **ATC codes:** `B03BA01`
-- **DrugBank:** [DB00115](https://go.drugbank.com/drugs/DB00115)
+- **DrugBank:** [DB00115](https://go.drugbank.com/drugs/DB00115) · **PubChem:** [CID 70678590](https://pubchem.ncbi.nlm.nih.gov/compound/70678590)
+- **molar mass:** 1355.3652 g/mol (C63H88CoN14O14P) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About
@@ -45,9 +46,9 @@ Vitamin B12 supplements are widely available and indicated in patients who requi
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nava-Ocampo_2005_reference](drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_reference.md) | Nava-Ocampo AA et al., Pharmacokinetics of high doses of cyano…, Clinical and experimental p… (2005) | [10.1111/j.1440-1681.2005.04145.x](https://doi.org/10.1111/j.1440-1681.2005.04145.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nava-Ocampo_2005_reference](drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_reference.md) | 1-compartment (no model) | 0 | Nava-Ocampo AA et al., Pharmacokinetics of high doses of cyano…, Clinical and experimental p… (2005) | [10.1111/j.1440-1681.2005.04145.x](https://doi.org/10.1111/j.1440-1681.2005.04145.x) |
 
 ## ADME sites
 

@@ -5,7 +5,8 @@
 
 - **generic name:** clonazepam
 - **ATC codes:** `N03AE01`
-- **DrugBank:** [DB01068](https://go.drugbank.com/drugs/DB01068)
+- **DrugBank:** [DB01068](https://go.drugbank.com/drugs/DB01068) · **PubChem:** [CID 2802](https://pubchem.ncbi.nlm.nih.gov/compound/2802)
+- **molar mass:** 315.711 g/mol (C15H10ClN3O3) — DrugBank
 - **groups:** approved, illicit, investigational
 
 ## About
@@ -26,12 +27,12 @@ Alternatively, some regional prescribing information note that clonazepam is ind
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Kruizinga_2022_reference](drugs/drug_clonazepam/Clonazepam_Kruizinga2022_reference.md) | Kruizinga MD et al., Population pharmacokinetics of clonazep…, British journal of clinical… (2022) | [10.1111/bcp.15152](https://doi.org/10.1111/bcp.15152) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Hampton_2024_reference](drugs/drug_clonazepam/Clonazepam_Hampton2024_reference.md) | Hampton CE et al., Pharmacokinetics of oral clonazepam in…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13451](https://doi.org/10.1111/jvp.13451) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yukawa_2001_reference](drugs/drug_clonazepam/Clonazepam_Yukawa2001_reference.md) | Yukawa E et al., Pharmacoepidemiologic investigation of…, Journal of clinical psychop… (2001) | [10.1097/00004714-200112000-00008](https://doi.org/10.1097/00004714-200112000-00008) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yukawa_2002_reference](drugs/drug_clonazepam/Clonazepam_Yukawa2002_reference.md) | Yukawa E et al., Pharmacoepidemiologic investigation of…, Journal of clinical pharmac… (2002) | [10.1177/0091270002042001009](https://doi.org/10.1177/0091270002042001009) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Kruizinga_2022_reference](drugs/drug_clonazepam/Clonazepam_Kruizinga2022_reference.md) | 2-compartment, IV | 6 | Kruizinga MD et al., Population pharmacokinetics of clonazep…, British journal of clinical… (2022) | [10.1111/bcp.15152](https://doi.org/10.1111/bcp.15152) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Hampton_2024_reference](drugs/drug_clonazepam/Clonazepam_Hampton2024_reference.md) | 1-compartment, oral | 3 | Hampton CE et al., Pharmacokinetics of oral clonazepam in…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13451](https://doi.org/10.1111/jvp.13451) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yukawa_2001_reference](drugs/drug_clonazepam/Clonazepam_Yukawa2001_reference.md) | 1-compartment (no model) | 0 | Yukawa E et al., Pharmacoepidemiologic investigation of…, Journal of clinical psychop… (2001) | [10.1097/00004714-200112000-00008](https://doi.org/10.1097/00004714-200112000-00008) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yukawa_2002_reference](drugs/drug_clonazepam/Clonazepam_Yukawa2002_reference.md) | 1-compartment (no model) | 0 | Yukawa E et al., Pharmacoepidemiologic investigation of…, Journal of clinical pharmac… (2002) | [10.1177/0091270002042001009](https://doi.org/10.1177/0091270002042001009) |
 
 ## Pharmacogenomics (PGx)
 

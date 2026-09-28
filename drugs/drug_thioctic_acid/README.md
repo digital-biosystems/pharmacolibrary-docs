@@ -5,7 +5,8 @@
 
 - **generic name:** thioctic acid
 - **ATC codes:** `A16AX01`
-- **DrugBank:** [DB00166](https://go.drugbank.com/drugs/DB00166)
+- **DrugBank:** [DB00166](https://go.drugbank.com/drugs/DB00166) · **PubChem:** [CID 6112](https://pubchem.ncbi.nlm.nih.gov/compound/6112)
+- **molar mass:** 206.326 g/mol (C8H14O2S2) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About
@@ -13,6 +14,14 @@
 **Description.** A vitamin-like antioxidant.
 
 **Indication.** For nutritional supplementation, also for treating dietary shortage or imbalance.
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| thioctic_acid | metabolite | 206.326 | — | DrugBank | — | Field_2021 |
 
 ## Extraction summary
 

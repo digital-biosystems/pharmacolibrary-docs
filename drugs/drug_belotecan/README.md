@@ -4,7 +4,8 @@
 
 - **generic name:** belotecan
 - **ATC codes:** `L01CE04`
-- **DrugBank:** [DB12459](https://go.drugbank.com/drugs/DB12459)
+- **DrugBank:** [DB12459](https://go.drugbank.com/drugs/DB12459) · **PubChem:** [CID 6456014](https://pubchem.ncbi.nlm.nih.gov/compound/6456014)
+- **molar mass:** 433.508 g/mol (C25H27N3O4) — DrugBank
 - **groups:** investigational
 
 ## About

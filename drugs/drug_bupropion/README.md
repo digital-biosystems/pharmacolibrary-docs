@@ -5,7 +5,8 @@
 
 - **generic name:** bupropion
 - **ATC codes:** `A08AA62`, `N06AX12`, `N06AX62`
-- **DrugBank:** [DB01156](https://go.drugbank.com/drugs/DB01156)
+- **DrugBank:** [DB01156](https://go.drugbank.com/drugs/DB01156) · **PubChem:** [CID 444](https://pubchem.ncbi.nlm.nih.gov/compound/444)
+- **molar mass:** 239.741 g/mol (C13H18ClNO) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -30,9 +31,9 @@ Bupropion is also used off-label as a first-line treatment in patients with ADHD
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Butz_1981_reference](drugs/drug_bupropion/Bupropion_Butz1981_reference.md) | Butz RF et al., Radioimmunoassay and pharmacokinetic pr…, The Journal of pharmacology… (1981) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Butz_1981_reference](drugs/drug_bupropion/Bupropion_Butz1981_reference.md) | 1-compartment (no model) | 0 | Butz RF et al., Radioimmunoassay and pharmacokinetic pr…, The Journal of pharmacology… (1981) | — |
 
 ## ADME sites
 

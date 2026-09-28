@@ -4,7 +4,8 @@
 
 - **generic name:** cymarin
 - **ATC codes:** `C01AC03`
-- **DrugBank:** [DB13240](https://go.drugbank.com/drugs/DB13240)
+- **DrugBank:** [DB13240](https://go.drugbank.com/drugs/DB13240) · **PubChem:** not captured
+- **molar mass:** 548.673 g/mol (C30H44O9) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

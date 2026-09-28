@@ -4,7 +4,7 @@
 
 - **generic name:** diosmectite
 - **ATC codes:** `A07BC05`
-- **DrugBank:** [DB13654](https://go.drugbank.com/drugs/DB13654)
+- **DrugBank:** [DB13654](https://go.drugbank.com/drugs/DB13654) · **PubChem:** not captured
 - **groups:** investigational
 
 ## Extraction summary

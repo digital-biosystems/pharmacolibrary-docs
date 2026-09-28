@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (atorvastatin vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atorvastatin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kong W; Pan Y; Wu Y; Hu Y; Jiang Z; Tian X; et al. et al. (2025). Clinical pharmacology and therapeutics 117
@@ -189,7 +190,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 7.53 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 7.53 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_atorvastatin/Atorvastatin_Kong2025_reference/Atorvastatin_Kong2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_atorvastatin/Atorvastatin_Kong2025_reference/Atorvastatin_Kong2025_reference_sim_controls.json"></dbs-fmusim>
 

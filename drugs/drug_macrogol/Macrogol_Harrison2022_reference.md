@@ -5,7 +5,7 @@
 
 # macrogol — `Macrogol_Harrison2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The macrogol model was held back because the absorption rate constant ka and lag time were not reported in the source, so placeholder values were substituted, and the invented absorption was judged not acceptable.**
+
+The record reports only CL/F = 4.3 L/h and V1/F = 202.1 L for macrogol; ka and Tlag were missing from the source, so no value was extracted and library placeholders would have been used. The builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with extravascular first-order input. The failed check returned 'invented_absorption: not acceptable', since ka was defaulted rather than reported, and this deviation was the reason the model needs review. Extracted — macrogol: CL/F 4.3 L/h, V1/F 202 L.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Harrison SA; Mayo PR; Hobbs TM; Canizares C; Foster EP; Zhao C; Ure DR; Trepanier DJ; Greytok JA; Foster RT et al. (2022). Hepatology communications 6
@@ -25,6 +29,9 @@ Harrison SA; Mayo PR; Hobbs TM; Canizares C; Foster EP; Zhao C; Ure DR; Trepanie
 
 ## Model component
 <dbs-pgx drug="macrogol" model-id="Macrogol_Harrison2022_reference" status="needs_review" stale="false" population="" measured-compound="macrogol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,12 +62,12 @@ Harrison SA; Mayo PR; Hobbs TM; Canizares C; Foster EP; Zhao C; Ure DR; Trepanie
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | confirmed | 1.0 (5/5 fields) | none |
 
 _Every reader agrees on every compared field of this record._
 
@@ -127,6 +134,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_macrogol/Macrogol_Harrison2022_reference/Macrogol_Harrison2022_reference.svg" alt="Macrogol_Harrison2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_macrogol/Macrogol_Harrison2022_reference/Macrogol_Harrison2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_macrogol/Macrogol_Harrison2022_reference/Macrogol_Harrison2022_reference_sim_controls.json"></dbs-fmusim>
 

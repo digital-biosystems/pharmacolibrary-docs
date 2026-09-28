@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[the elimination half-life (t1/2)beta]` (not captured vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of the elimination half-life (t1/2)beta: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Raaflaub J; Dubach UC et al. (1975). European journal of clinical pharmacology 8
@@ -26,6 +29,9 @@ Raaflaub J; Dubach UC et al. (1975). European journal of clinical pharmacology 8
 
 ## Model component
 <dbs-pgx drug="phenacetin" model-id="Phenacetin_Raaflaub1975_reference" status="rejected" stale="false" population="healthy adults" measured-compound="phenacetin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

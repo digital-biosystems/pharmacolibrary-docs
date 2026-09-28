@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build).
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Naik H; Chan S; Vakilynejad M; Chen G; Loft H; Mahableshwarkar AR; et al. et al. (2016). Basic & clinical pharmacology & toxicology 118
@@ -26,6 +29,9 @@ Naik H; Chan S; Vakilynejad M; Chen G; Loft H; Mahableshwarkar AR; et al. et al.
 
 ## Model component
 <dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Naik2016v2_reference" status="rejected" stale="false" population="patients with major depressive disorder" measured-compound="vortioxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

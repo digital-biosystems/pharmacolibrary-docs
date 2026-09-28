@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl]` (160.67 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The gabapentin rat record was rejected because a structural parameter failed a dimensional-consistency check, and the record was built only from the paper's abstract rather than a fitted model.**
+
+The rejection cause is a dimension mismatch on a structural parameter: the Michaelis–Menten capacity Km is recorded as 44.1 mg/kg and Vmax as 41.9 mg/h·kg for gabapentin, alongside CL 160.67 mL/kg/hr, absorption rate 5.24 1/hr and lag time 0.45 hr in a one-compartment structure. Because only the paper's abstract was read, these reported summary statistics stood in for a fitted model, so the record could not be published as a model. A second reader returned no value (null) for every parameter — Km, Vmax, CL, kabs and tlag — so the disagreement checks could not compute a comparison and are inconclusive. Extracted — gabapentin: Km 44.1 mg/kg, Vmax 41.9 mg/h∙kg, CL 161 mL/kg/hr, kabs 5.24 1/hr, tlag 0.45 hr.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 160.67, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Larsen MS; Keizer R; Munro G; Mørk A; Holm R; Savic R; et al. et al. (2016). Pharmaceutical research 33
@@ -26,6 +29,9 @@ Larsen MS; Keizer R; Munro G; Mørk A; Holm R; Savic R; et al. et al. (2016). Ph
 
 ## Model component
 <dbs-pgx drug="gabapentin" model-id="Gabapentin_Larsen2016_reference" status="rejected" stale="false" population="rats with CFA-induced inflammatory hyperalgesia" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

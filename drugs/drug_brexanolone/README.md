@@ -5,7 +5,8 @@
 
 - **generic name:** brexanolone
 - **ATC codes:** `N06AX29`
-- **DrugBank:** [DB11859](https://go.drugbank.com/drugs/DB11859)
+- **DrugBank:** [DB11859](https://go.drugbank.com/drugs/DB11859) · **PubChem:** [CID 92786](https://pubchem.ncbi.nlm.nih.gov/compound/92786)
+- **molar mass:** 318.4935 g/mol (C21H34O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -26,9 +27,9 @@ And finally, although brexanolone may also be undergoing clinical trials to inve
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Wald_2022_reference](drugs/drug_brexanolone/Brexanolone_Wald2022_reference.md) | Wald J et al., Allopregnanolone Concentrations in Brea…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01155-w](https://doi.org/10.1007/s40262-022-01155-w) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Wald_2022_reference](drugs/drug_brexanolone/Brexanolone_Wald2022_reference.md) | 1-compartment, IV | 10 | Wald J et al., Allopregnanolone Concentrations in Brea…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01155-w](https://doi.org/10.1007/s40262-022-01155-w) |
 
 ## ADME sites
 

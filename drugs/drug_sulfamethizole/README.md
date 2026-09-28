@@ -4,7 +4,8 @@
 
 - **generic name:** sulfamethizole
 - **ATC codes:** `B05CA04`, `D06BA04`, `J01EB02`, `S01AB01`
-- **DrugBank:** [DB00576](https://go.drugbank.com/drugs/DB00576)
+- **DrugBank:** [DB00576](https://go.drugbank.com/drugs/DB00576) · **PubChem:** [CID 5328](https://pubchem.ncbi.nlm.nih.gov/compound/5328)
+- **molar mass:** 270.331 g/mol (C9H10N4O2S2) — DrugBank
 - **groups:** approved, vet_approved
 
 ## About

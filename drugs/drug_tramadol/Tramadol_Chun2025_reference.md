@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** missing key parameters — none reported by this paper.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['tramadol', 'o-desmethyltramadol (m1)', 'metabolism'], ['tramadol', 'n-desmethyltramadol (m2)', 'metabolism']] vs [['tramadol', 'o-desmethyl tramadol (m1)', 'metabolism'], ['tramadol', 'n-desmethyl tramadol (m2)', 'metabolism']]) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (engineer: the topology is outside the template set the engineer can build).
-<sub>owner: **engineer**</sub>
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No model template covers this structure. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has tramadol → o-desmethyltramadol (m1) (metabolism); tramadol → n-desmethyltramadol (m2) (metabolism), the second reading tramadol → o-desmethyl tramadol (m1) (metabolism); tramadol → n-desmethyl tramadol (m2) (metabolism); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chun D; Mehta P; Guzy S; Cicali B; Lauretti GR; Lanchote VL; Vozmediano V; De Moraes N et al. (2025). CPT: pharmacometrics & systems pharmacology 14
@@ -26,6 +29,9 @@ Chun D; Mehta P; Guzy S; Cicali B; Lauretti GR; Lanchote VL; Vozmediano V; De Mo
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Chun2025_reference" status="rejected" stale="false" population="adults with chronic neuropathic pain" measured-compound="tramadol" parameterization="apparent_wrt_Fm" topology="manual_model_class"></dbs-pgx>
+
+**Model structure:** nonlinear / manual; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** apparent_wrt_Fm.
 

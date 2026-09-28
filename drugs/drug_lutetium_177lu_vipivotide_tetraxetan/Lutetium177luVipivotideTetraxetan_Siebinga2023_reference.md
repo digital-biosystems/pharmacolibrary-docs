@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (lutetium_177lu_vipivotide_tetraxetan vs lutetium-177 lu vipivotide tetraxetan) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record was rejected because the lutetium-177 vipivotide tetraxetan model lists rate constants k13, k31, k14 and k41 for compartments 3 and 4 that have no connection from the dose in the stated two-compartment structure.**
+
+The structure is declared as two compartments, yet the parameter set contains k13 (0.00867 h−1), k31 (0.0141 h−1), k14 (0.0238 h−1) and k41 (0.0283 h−1), implying third and fourth compartments that are unreachable from the administered dose. The rejection reason is an unreachable or orphan compartment. The two readings also disagree on compartment 2 and 3 volumes (24.6 L and 30.4 L versus null) and on a k15 of 0.000248 h−1 with tumor volume 0.705 that this record lacks, so the extracted parameter set is inconsistent. Extracted — lutetium 177lu vipivotide tetraxetan: kel 0.288 h−1, k12 0.0238 h−1, k21 0.0307 h−1, k13 0.00867 h−1, k31 0.0141 h−1, k14 0.0238 h−1, k41 0.0283 h−1, V1 10.3 L, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lutetium_177lu_vipivotide_tetraxetan, the second reading lutetium-177 lu vipivotide tetraxetan; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Siebinga H; Privé BM; Peters SMB; Nagarajah J; Dorlo TPC; Huitema ADR; de Wit-van der Veen BJ; Hendrikx JJMA et al. (2023). CPT: pharmacometrics & systems pharmacology 12
@@ -26,6 +29,9 @@ Siebinga H; Privé BM; Peters SMB; Nagarajah J; Dorlo TPC; Huitema ADR; de Wit-v
 
 ## Model component
 <dbs-pgx drug="lutetium (177Lu) vipivotide tetraxetan" model-id="Lutetium177luVipivotideTetraxetan_Siebinga2023_reference" status="rejected" stale="false" population="patients with low volume metastatic prostate cancer" measured-compound="lutetium_177lu_vipivotide_tetraxetan" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 

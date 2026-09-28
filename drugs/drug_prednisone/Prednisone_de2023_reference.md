@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is prednisone's own; they describe prednisolone.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -27,6 +29,9 @@ de Truchis C; Bouazza N; Foissac F; Charbit M; Dehoux L; Lui G; et al. et al. (2
 
 ## Model component
 <dbs-pgx drug="prednisone" model-id="Prednisone_de2023_reference" status="curated_candidate" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -109,6 +114,8 @@ de Truchis C; Bouazza N; Foissac F; Charbit M; Dehoux L; Lui G; et al. et al. (2
 </div><figure class="pk-models-diagram"><img src="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference.svg" alt="Prednisone_de2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference_sim_controls.json"></dbs-fmusim>
 

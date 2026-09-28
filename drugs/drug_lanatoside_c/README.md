@@ -4,7 +4,8 @@
 
 - **generic name:** lanatoside C
 - **ATC codes:** `C01AA06`
-- **DrugBank:** [DB13467](https://go.drugbank.com/drugs/DB13467)
+- **DrugBank:** [DB13467](https://go.drugbank.com/drugs/DB13467) · **PubChem:** not captured
+- **molar mass:** 985.127 g/mol (C49H76O20) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

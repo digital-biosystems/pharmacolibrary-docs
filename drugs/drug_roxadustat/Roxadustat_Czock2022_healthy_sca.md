@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal; T1_cmax.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[dose]` (not captured vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The roxadustat model fails to reproduce the paper's terminal half-life (13 h reported vs 11.8 h simulated) and Cmax (0.01 vs 0.00193 µg/mL), and substitutes an unreported absorption rate constant ka, so it was held for review.**
+
+The terminal half-life check failed against every reported value (3.46 to 18.2 h) compared with the simulated 11.824535982400858 h, with ratios from 0.6497 to 15.9791, and the peak concentration differed by a factor of about 5 (ratio 0.1928). The builder defaulted ka and Tlag because they were not reported in the source, assumed F=1 and Fm=1 without molar correction, and used an invented first-order absorption input. The fraction unbound (fu) was recorded with the unit h instead of %, and the V/F unit could not be converted to SI, so that parameter reached the model without an SI value. Extracted — roxadustat: AUC 480 h·ng/mL per mg, Cmax 65 ng/mL per mg, CL/F 2.29 L/h, t1/2z 15.7 h, fu 0.94 h, V/F 39 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dose: this record has none, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Czock D; Keller F et al. (2022). Clinical pharmacokinetics 61
@@ -26,6 +29,9 @@ Czock D; Keller F et al. (2022). Clinical pharmacokinetics 61
 
 ## Model component
 <dbs-pgx drug="roxadustat" model-id="Roxadustat_Czock2022_healthy_sca" status="needs_review" stale="false" population="chronic kidney disease patients" measured-compound="roxadustat" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -244,6 +250,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy_sca/Roxadustat_Czock2022_healthy_sca.svg" alt="Roxadustat_Czock2022_healthy_sca diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy_sca/Roxadustat_Czock2022_healthy_sca_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy_sca/Roxadustat_Czock2022_healthy_sca_sim_controls.json"></dbs-fmusim>
 

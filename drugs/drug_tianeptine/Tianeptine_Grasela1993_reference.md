@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22, Q30 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[absorption rate constant]` (0.63 vs not captured) and 4 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**CL and Q have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tianeptine: CL 0.17 l.h-1 x kg-1, V1 0.13 l.kg-1, Q 0.07 l.h-1 x kg-1, V 1.17 l.kg-1, kabs 0.63 h-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption rate constant: this record has 0.63, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Grasela_1993)
 
 ## Model component
 <dbs-pgx drug="tianeptine" model-id="Tianeptine_Grasela1993_reference" status="needs_review" stale="false" population="patients with depression and alcoholism" measured-compound="tianeptine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

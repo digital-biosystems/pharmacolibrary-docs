@@ -4,7 +4,8 @@
 
 - **generic name:** levomilnacipran
 - **ATC codes:** `N06AX28`
-- **DrugBank:** [DB08918](https://go.drugbank.com/drugs/DB08918)
+- **DrugBank:** [DB08918](https://go.drugbank.com/drugs/DB08918) · **PubChem:** [CID 6917779](https://pubchem.ncbi.nlm.nih.gov/compound/6917779)
+- **molar mass:** 246.348 g/mol (C15H22N2O) — DrugBank
 - **groups:** approved
 
 ## About

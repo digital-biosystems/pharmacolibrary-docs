@@ -5,7 +5,7 @@
 
 # von Willebrand factor — `VonWillebrandFactor_Chelle2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The von Willebrand factor record was rejected because its intercompartmental clearance Q is recorded as 0.078 L/h, a physiologically implausible magnitude suggesting a misread value, which a second reader gives as 0.456 L/h.**
+
+The two-compartment model for von Willebrand factor (Alphanate and related products) lists CL 0.195 L/h, V1 2.3 L, V2 0.449 L and Q 0.078 L/h. The rejection rests on the clearance/volume plausibility check: Q at 0.078 L/h falls outside the physiological window, consistent with a unit or scale extraction error. A second reader disputed the Q value, reading 0.456 L/h where this record holds null-to-0.078, so the recorded magnitude is contested. The remaining parameters were not flagged. Extracted — von willebrand factor: CL 0.195 L/h, V1 2.3 L, V2 0.449 L, Q 0.078 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has none, the second reading 0.456. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Chelle P; Yeung CHT; Bonanad S; Morales Muñoz JC; Ozelo MC; Megías Vericat JE; Iorio A; Spears J; Mir R; Edginton A et al. (2019). Journal of pharmacokinetics and pharmacodynamics 46
@@ -25,6 +29,9 @@ Chelle P; Yeung CHT; Bonanad S; Morales Muñoz JC; Ozelo MC; Megías Vericat JE;
 
 ## Model component
 <dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Chelle2019_reference" status="rejected" stale="false" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -56,9 +63,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q312]` | not captured | 0.456 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

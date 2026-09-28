@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Huledal G; Ruiz-Garcia A; Kawakatsu S; Wang X; Sjöberg P; Gullbo J; et al. et al. (2024). Journal of clinical pharmacology 64
@@ -25,6 +27,9 @@ Huledal G; Ruiz-Garcia A; Kawakatsu S; Wang X; Sjöberg P; Gullbo J; et al. et a
 
 ## Model component
 <dbs-pgx drug="melphalan flufenamide" model-id="MelphalanFlufenamide_Huledal2024_patients_with_relapsed_refr" status="rejected" stale="false" population="patients with relapsed refractory multiple myeloma" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

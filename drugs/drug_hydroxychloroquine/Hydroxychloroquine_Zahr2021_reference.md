@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (hydroxychloroquine sulfate vs hydroxychloroquine) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The hydroxychloroquine model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no values in the source, so library defaults (CL/F 25.1 L, V/F 16.1 L, ka 1.15 h⁻¹ aside) stood in.**
+
+The record reports only three fitted hydroxychloroquine parameters — ka 1.15 h⁻¹, V/F 16.1 L and CL/F 25.1 L — while the source gave no values for clearance, distribution volume, absorption rate constant and absorption lag time, so placeholder defaults were substituted and the model was held back. The builder also assumed F=1 and Fm=1 with no molar correction, i.e. an apparent parameterization, and the defaulted ka amounts to an invented absorption rate constant, which the adjudication judged not acceptable. A second reader additionally disagreed on the dosing compound, reading the dose as hydroxychloroquine rather than hydroxychloroquine sulfate. Extracted — hydroxychloroquine: kabs 1.15, V/F 16.1, CL/F 25.1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has hydroxychloroquine sulfate, the second reading hydroxychloroquine. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `hydroxychloroquine sulfate`, measured `hydroxychloroquine`.
 
@@ -28,6 +31,9 @@ Zahr N; Urien S; Llopis B; Pourcher V; Paccoud O; Bleibtreu A; et al. et al. (20
 
 ## Model component
 <dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Zahr2021_reference" status="model_quarantined" stale="false" population="hospitalized patients with COVID-19" measured-compound="hydroxychloroquine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q17, Q22, Q88 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (90 vs not captured) and 10 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**AUC∞, CL and AUC have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clomipramine: t1/2z 12.3 h, AUC∞ 652 ngxh/mL, CL 0.393 L/hxkg, V 5 L/kg, MRT 13.5 h, AUC 948 ngxh/mL, Cmax 87.5 ng/mL, tmax 6.2 h, … (+1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 90, the second reading none; it also differs on 10 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lainesse C; Frank D; Meucci V; Intorre L; Soldani G; Doucet M et al. (2006). Journal of veterinary pharmacology and therapeutics 29
@@ -26,6 +29,9 @@ Lainesse C; Frank D; Meucci V; Intorre L; Soldani G; Doucet M et al. (2006). Jou
 
 ## Model component
 <dbs-pgx drug="clomipramine" model-id="Clomipramine_Lainesse2006_reference" status="needs_review" stale="false" population="adult cats" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** mechanistic.
 

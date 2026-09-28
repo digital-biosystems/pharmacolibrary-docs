@@ -5,7 +5,7 @@
 
 # digoxin — `Digoxin_Song2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The digoxin record was held back because the absorption rate constant ka and lag time Tlag are absent from the source, so defaults were substituted, and a first-order absorption input with F=1 was invented rather than reported.**
+
+The record reports digoxin CL/F of 2.19 L/h and V/F of 12.638 L (derived from CL·t½/ln2), but ka and Tlag were not reported in the source and base defaults were used in their place. The builder further assumed F=1 and Fm=1 with no molar correction, and introduced a first-order depot (extravascular) input whose absorption constant was defaulted, not reported; adjudication judged this invented absorption not acceptable. Several extracted values also disagree between the two readers (e.g., 18.7 vs 12.3, and values present for one reader but null for the other), though the stated hold-back reason is the absorption deviations. Extracted — digoxin: CL/F 2.19 L/h, V/F 12.6 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 21.7, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Song IH; Ilic K; Murphy J; Lasseter K; Martin P et al. (2020). Journal of clinical pharmacology 60
@@ -25,6 +29,9 @@ Song IH; Ilic K; Murphy J; Lasseter K; Martin P et al. (2020). Journal of clinic
 
 ## Model component
 <dbs-pgx drug="digoxin" model-id="Digoxin_Song2020_reference" status="needs_review" stale="false" population="" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +62,28 @@ Song IH; Ilic K; Murphy J; Lasseter K; Martin P et al. (2020). Journal of clinic
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.4 (6/15 fields) | 9 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q17]` | 21.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q19]` | 91.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q313]` | not captured | 25 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q33]` | not captured | 25.7 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q37]` | not captured | 2.13 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q74]` | 18.7 | 12.3 | mismatch |
+| `gpt-oss:120b` | `values[Q75]` | 2.13 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q84]` | not captured | 32 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | not captured | 91.5 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +148,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_digoxin/Digoxin_Song2020_reference/Digoxin_Song2020_reference.svg" alt="Digoxin_Song2020_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_digoxin/Digoxin_Song2020_reference/Digoxin_Song2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_digoxin/Digoxin_Song2020_reference/Digoxin_Song2020_reference_sim_controls.json"></dbs-fmusim>
 

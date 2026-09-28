@@ -4,7 +4,8 @@
 
 - **generic name:** zuranolone
 - **ATC codes:** `N06AX31`
-- **DrugBank:** [DB15490](https://go.drugbank.com/drugs/DB15490)
+- **DrugBank:** [DB15490](https://go.drugbank.com/drugs/DB15490) · **PubChem:** not captured
+- **molar mass:** 409.574 g/mol (C25H35N3O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

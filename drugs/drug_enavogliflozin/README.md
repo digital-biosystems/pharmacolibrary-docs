@@ -4,7 +4,8 @@
 
 - **generic name:** enavogliflozin
 - **ATC codes:** `A10BK09`
-- **DrugBank:** [DB18970](https://go.drugbank.com/drugs/DB18970)
+- **DrugBank:** [DB18970](https://go.drugbank.com/drugs/DB18970) · **PubChem:** not captured
+- **molar mass:** 446.92 g/mol (C24H27ClO6) — DrugBank
 - **groups:** investigational
 
 ## About

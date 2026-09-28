@@ -4,7 +4,8 @@
 
 - **generic name:** enprostil
 - **ATC codes:** `A02BB02`
-- **DrugBank:** [DB13824](https://go.drugbank.com/drugs/DB13824)
+- **DrugBank:** [DB13824](https://go.drugbank.com/drugs/DB13824) · **PubChem:** not captured
+- **molar mass:** 400.471 g/mol (C23H28O6) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

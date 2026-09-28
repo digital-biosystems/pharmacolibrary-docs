@@ -4,7 +4,8 @@
 
 - **generic name:** domiphen
 - **ATC codes:** `A01AB06`
-- **DrugBank:** [DB11594](https://go.drugbank.com/drugs/DB11594)
+- **DrugBank:** [DB11594](https://go.drugbank.com/drugs/DB11594) · **PubChem:** [CID 3149](https://pubchem.ncbi.nlm.nih.gov/compound/3149)
+- **molar mass:** 334.567 g/mol (C22H40NO) — DrugBank
 - **groups:** approved
 
 ## About

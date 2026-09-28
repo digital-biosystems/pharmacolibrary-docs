@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The dulaglutide record was held back because ka and Tlag were not reported in the source and library defaults were substituted, alongside an apparent F=1 parameterization that invented an absorption input.**
+
+The record reports only CL/F (4.4 mL/day/kg) and V/F (16.7 mL/kg) for dulaglutide; ka and Tlag had no values in the source, so defaults were used in their place. The builder assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent (/F), and the first-order depot input implies extravascular dosing. The invented absorption — a defaulted ka not reported in the source — was adjudicated not acceptable, so the model was not published and awaits review. Extracted — dulaglutide: CL/F 4.4 mL/day/kg, V/F 16.7 mL/kg.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `CpdH`, measured `dulaglutide`.
 
@@ -27,6 +29,9 @@ Zheng S; Polidori D; Wang Y; Geist B; Lin-Schmidt X; Furman JL; Nelson S; Nawroc
 
 ## Model component
 <dbs-pgx drug="dulaglutide" model-id="Dulaglutide_Zheng2023_reference" status="needs_review" stale="false" population="obese cynomolgus monkeys" measured-compound="dulaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -130,6 +135,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference/Dulaglutide_Zheng2023_reference.svg" alt="Dulaglutide_Zheng2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference/Dulaglutide_Zheng2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference/Dulaglutide_Zheng2023_reference_sim_controls.json"></dbs-fmusim>
 

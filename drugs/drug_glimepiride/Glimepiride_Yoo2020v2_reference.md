@@ -5,7 +5,7 @@
 
 # glimepiride — `Glimepiride_Yoo2020v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The glimepiride record was held back because the absorption rate constant ka and lag time Tlag were never reported in the source, so library placeholder values were substituted, and an invented first-order absorption with F=1 was assumed.**
+
+The record reports glimepiride CL/F of 45.6 L/h and V/F of 1868.3478 L in a one-compartment structure, but ka and Tlag are missing from the source, so no value was extracted and library placeholders would have been used. The absorption was therefore flagged as invented — ka defaulted, not reported in the source — and ruled not acceptable. Additional assumptions include F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with extravascular first-order depot input. A second reader also disagreed on several extracted values, e.g. reading 0.97 where this record has null and null where this record has 45.6. Extracted — glimepiride: CL/F 45.6 L/h, V/F 1.87e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 0.97; it also differs on 5 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `evogliptin, glimepiride`, measured `glimepiride`.
 
@@ -27,6 +31,9 @@ Yoo H; Kim Y; Jang IJ; Yu KS; Lee S et al. (2020). Drug design, development and 
 
 ## Model component
 <dbs-pgx drug="glimepiride" model-id="Glimepiride_Yoo2020v2_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="glimepiride" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -62,9 +69,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q21]` | not captured | 0.97 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q26]` | 8.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q27]` | 45.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q44]` | 19.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 28.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | not captured | 28.4 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +145,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_glimepiride/Glimepiride_Yoo2020v2_reference/Glimepiride_Yoo2020v2_reference.svg" alt="Glimepiride_Yoo2020v2_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_glimepiride/Glimepiride_Yoo2020v2_reference/Glimepiride_Yoo2020v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_glimepiride/Glimepiride_Yoo2020v2_reference/Glimepiride_Yoo2020v2_reference_sim_controls.json"></dbs-fmusim>
 

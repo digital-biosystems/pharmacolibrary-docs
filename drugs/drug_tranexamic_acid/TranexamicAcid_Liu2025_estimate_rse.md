@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (tranexamic acid vs tranexamic_acid) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The two-compartment tranexamic acid model was refused because the intercompartmental clearance Q (CL2, L/h) has no extracted value, leaving the peripheral compartment without a defined connection to the dosed central compartment.**
+
+The record lists CL2 (L/h) with no value while CL (4.7 L/h), V1 (4.9 L) and V2 (11.1 L) are given, so the intercompartmental clearance would have been left at a library placeholder rather than the published estimate. With Q undefined, the second compartment has no path from the dose, making it unreachable in the structure. A second reader additionally read relative standard errors for the parameters (CL1 6.89%, CL2 21.36%, V1 9.86%, V2 6.83%) that this record leaves blank, and disagreed only on spelling of the drug and analyte names (tranexamic acid vs tranexamic_acid). Extracted — tranexamic acid: CL 4.7 L/h, V1 4.9 L, V2 11.1 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Liu Y; Zhou C; Lv H; Tian L; Jiang J; Shi J et al. (2025). Drug design, development and therapy 19
@@ -26,6 +29,9 @@ Liu Y; Zhou C; Lv H; Tian L; Jiang J; Shi J et al. (2025). Drug design, developm
 
 ## Model component
 <dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Liu2025_estimate_rse" status="rejected" stale="false" population="Chinese adults undergoing cardiac surgery with cardiopulmonary bypass" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (naproxcinod vs naproxcinod, naproxen) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The naproxen one-compartment oral model was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside an assumed Tlag and F=1.**
+
+The record's absorption rate constant ka and lag time Tlag were missing from the source, so library default values were substituted for both; the ka default constitutes an invented absorption input not reported for naproxen. The model also assumes F=1 and Fm=1 with no molar correction, making all parameters apparent (/F) values — CL/F of 515 l h⁻¹ and unbound volume of distribution of 4290 l — rather than directly estimated clearances and volumes. A second reader disagreed only on the dose compound naming (naproxcinod versus naproxcinod plus naproxen), not on the parameter findings. Extracted — naproxen: CL/F 515 l h -1, V 4.29e+03 l.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has naproxcinod, the second reading naproxcinod, naproxen. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `naproxcinod`, measured `naproxen`.
 
@@ -28,6 +31,9 @@ Björnsson MA; Simonsson US et al. (2011). British journal of clinical pharmacol
 
 ## Model component
 <dbs-pgx drug="naproxen" model-id="Naproxen_Bjrnsson2011_reference" status="needs_review" stale="false" population="adults with dental pain" measured-compound="naproxen" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -144,6 +150,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference.svg" alt="Naproxen_Bjrnsson2011_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The vortioxetine record was rejected because the central volume V2 (0.094) and half-life t1/2z (65.8) carry the non-dimensioned unit 'N = 887a' instead of L and h, and the one-compartment structure leaves a compartment unreachable from the dose.**
+
+The structural volume parameter V2 is reported as 0.094 with the unit string 'N = 887a', which is not a volume unit, and the elimination half-life t1/2z is 65.8 with the same non-dimensioned unit string, so neither could be converted to SI. The absorption rate constant kabs (0.14 L/h) and oral clearance CL/F (33 L/h) for vortioxetine are dimensionally consistent, but the model structure is a single compartment while a V2 (peripheral/central volume index 2) is reported, and the check for dose-reachable compartments found an unreachable or orphan compartment. The reported unit 'N = 887a' could not be converted, so the affected parameters reached the model build without SI values. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 33 L/h, V2 0.094 N = 887a, t1/2z 65.8 N = 887a.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Miao J; Wang G; Hou J; Areberg J; Zhao Y; Højer AM; et al. et al. (2019). Advances in therapy 36
@@ -26,6 +29,9 @@ Miao J; Wang G; Hou J; Areberg J; Zhao Y; Højer AM; et al. et al. (2019). Advan
 
 ## Model component
 <dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a" status="rejected" stale="false" population="Chinese healthy subjects and patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

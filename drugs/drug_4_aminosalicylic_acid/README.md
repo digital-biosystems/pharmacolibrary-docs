@@ -5,7 +5,7 @@
 
 - **generic name:** 4-aminosalicylic acid
 - **ATC codes:** `J04AA01`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary
@@ -16,10 +16,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [de_2014_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md) | de (2014) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Sy_2015_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md) | Sy (2015) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [de_2014_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md) | 1-compartment, oral | 4 | de (2014) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Sy_2015_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md) | 1-compartment, oral | 4 (+1 cov.) | Sy (2015) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

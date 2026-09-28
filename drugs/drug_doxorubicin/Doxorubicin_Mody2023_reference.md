@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22, Q61, Q30, Q64, Q308, Q77 — no SI value to build from.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**CL, V, Q, V2, Q3 and V3 have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL, V, Q and V2), so that value has no SI equivalent. Extracted — doxorubicin: CL 53.3 L/h/1.8m2, V 17.7 L/1.8m2, Q 58.7 L/h/1.8m2, V2 1.83e+03 L/1.8m2, Q3 21.8 L/h/1.8m2, V3 71.6 L/1.8m2, kel 1 h−1, k12 1 h−1, … (+2).
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Mody H; Vaidya TR; Ait-Oudhia S et al. (2023). Scientific reports 13

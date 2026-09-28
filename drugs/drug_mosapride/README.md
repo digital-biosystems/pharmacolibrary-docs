@@ -4,7 +4,8 @@
 
 - **generic name:** mosapride
 - **ATC codes:** `A03FA09`
-- **DrugBank:** [DB11675](https://go.drugbank.com/drugs/DB11675)
+- **DrugBank:** [DB11675](https://go.drugbank.com/drugs/DB11675) · **PubChem:** [CID 119584](https://pubchem.ncbi.nlm.nih.gov/compound/119584)
+- **molar mass:** 421.9 g/mol (C21H25ClFN3O3) — DrugBank
 - **groups:** investigational
 
 ## About

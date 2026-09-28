@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for caplacizumab's bioavailability, volume of distribution and absorption lag time.**
+
+The model was built, but caplacizumab's bioavailability, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — caplacizumab: CL 0.35 mL/h/kg, kabs 0.46 1/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sargentini-Maier ML; De Decker P; Tersteeg C; Canvin J; Callewaert F; De Winter H et al. (2019). Expert review of clinical pharmacology 12
@@ -25,6 +27,9 @@ Sargentini-Maier ML; De Decker P; Tersteeg C; Canvin J; Callewaert F; De Winter 
 
 ## Model component
 <dbs-pgx drug="caplacizumab" model-id="Caplacizumab_SargentiniMaier2019_reference" status="model_quarantined" stale="false" population="adults with acquired thrombotic thrombocytopenic purpura" measured-compound="caplacizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

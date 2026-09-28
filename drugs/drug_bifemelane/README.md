@@ -4,7 +4,8 @@
 
 - **generic name:** bifemelane
 - **ATC codes:** `N06AX08`
-- **DrugBank:** [DB13550](https://go.drugbank.com/drugs/DB13550)
+- **DrugBank:** [DB13550](https://go.drugbank.com/drugs/DB13550) · **PubChem:** not captured
+- **molar mass:** 269.388 g/mol (C18H23NO) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

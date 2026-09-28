@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The pethidine (meperidine) record was held back because an absorption rate constant was invented — ka was never reported in the source, so a library default was substituted and a first-order depot input assumed.**
+
+The record rests on the paper's abstract alone, so the reported summary statistics (t1/2z 4.4 h, total plasma clearance 10.4 ml/min/kg, apparent volume of distribution 3.74 L/kg for meperidine) stand in for a fitted model. Since the abstract gives no absorption parameters, ka and Tlag were left at library defaults, and the builder then assumed a first-order depot input with F=1, Fm=1 and no molar correction, giving an apparent (/F) parameterization. The invented absorption was judged not acceptable, which triggered the hold-back. A second reader disputed the apparent parameterization, arguing it should be mechanistic, and could not confirm any of the three parameter values (all read back as null). Extracted — pethidine: t1/2z 4.4 hours, CL 10.4 ml/min/kg, V/F 3.74 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Koska AJ; Kramer WG; Romagnoli A; Keats AS; Sabawala PB et al. (1981). Anesthesia and analgesia 60
 
 ## Model component
 <dbs-pgx drug="pethidine" model-id="Pethidine_Koska1981_reference" status="needs_review" stale="false" population="surgical patients" measured-compound="meperidine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -143,6 +149,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_pethidine/Pethidine_Koska1981_reference/Pethidine_Koska1981_reference.svg" alt="Pethidine_Koska1981_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_pethidine/Pethidine_Koska1981_reference/Pethidine_Koska1981_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_pethidine/Pethidine_Koska1981_reference/Pethidine_Koska1981_reference_sim_controls.json"></dbs-fmusim>
 

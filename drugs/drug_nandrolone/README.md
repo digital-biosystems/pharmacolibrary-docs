@@ -5,12 +5,21 @@
 
 - **generic name:** nandrolone
 - **ATC codes:** `A14AB01`, `S01XA11`
-- **DrugBank:** [DB13169](https://go.drugbank.com/drugs/DB13169)
+- **DrugBank:** [DB13169](https://go.drugbank.com/drugs/DB13169) · **PubChem:** [CID 9904](https://pubchem.ncbi.nlm.nih.gov/compound/9904)
+- **molar mass:** 274.3978 g/mol (C18H26O2) — DrugBank
 - **groups:** investigational
 
 ## About
 
 **Description.** Nandrolone, also known as 19-nortestosterone or 19-norandrostenolone, is a synthetic anabolic-androgenic steroid (AAS) derived from testosterone.
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| nandrolone | parent | — (mass units only) | C18H26O2 | — | [9904](https://pubchem.ncbi.nlm.nih.gov/compound/9904) | — |
 
 ## Extraction summary
 
@@ -20,9 +29,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wijnand_1985_reference](drugs/drug_nandrolone/Nandrolone_Wijnand1985_reference.md) | Wijnand HP et al., Pharmacokinetic parameters of nandrolon…, Acta endocrinologica. Suppl… (1985) | [10.1530/acta.0.109s00019](https://doi.org/10.1530/acta.0.109s00019) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wijnand_1985_reference](drugs/drug_nandrolone/Nandrolone_Wijnand1985_reference.md) | general linear (no model) | 1 | Wijnand HP et al., Pharmacokinetic parameters of nandrolon…, Acta endocrinologica. Suppl… (1985) | [10.1530/acta.0.109s00019](https://doi.org/10.1530/acta.0.109s00019) |
 
 ## Pharmacogenomics (PGx)
 

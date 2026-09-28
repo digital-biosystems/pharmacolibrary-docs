@@ -17,9 +17,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Tegafur's clearance and volume of distribution had no extracted values so library defaults were substituted, and the formation rate constant kfm (0.122) carries the unit 'BSV', which could not be converted to SI.**
+
+The record for tegafur in Sprague-Dawley rats defines a parent–metabolite structure with tegafur metabolising to 5-FU (rate constant kfm, 0.122), but tegafur's clearance and volume of distribution had no value in the source, so placeholders stood in and the model was held back rather than published with invented numbers. The unit 'BSV' reported for kfm could not be converted to SI, so the parameter reached the simulation without an SI value. In addition, the covariate effects (theta values 0.296, 0.0813, 0.184, 0.0464, 0.623, 0.137) were defined but only the reference individual was simulated, so those scenarios were not exercised. Extracted — tegafur: kfm 0.122 BSV, CL 1.68 fold.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `S-1`, measured `tegafur`.
 
@@ -29,6 +31,9 @@ Kim TH; Shin S; Shin JC; Bulitta JB; Weon KY; Yoo SD; et al. et al. (2017). Mole
 
 ## Model component
 <dbs-pgx drug="tegafur" model-id="Tegafur_Kim2017_population_mean_bsv" status="model_quarantined" stale="false" population="Sprague-Dawley rats" measured-compound="tegafur" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted, plus 6 covariate effects.
 
 **Parameterization:** mechanistic.
 

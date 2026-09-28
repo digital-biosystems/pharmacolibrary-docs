@@ -4,7 +4,8 @@
 
 - **generic name:** proglumide
 - **ATC codes:** `A02BX06`
-- **DrugBank:** [DB13431](https://go.drugbank.com/drugs/DB13431)
+- **DrugBank:** [DB13431](https://go.drugbank.com/drugs/DB13431) · **PubChem:** not captured
+- **molar mass:** 334.416 g/mol (C18H26N2O4) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

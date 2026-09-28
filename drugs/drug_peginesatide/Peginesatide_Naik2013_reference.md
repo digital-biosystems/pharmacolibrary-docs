@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default; C2_reference failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[central volume of distribution (v2), in ml/kg].covariate_forms` ([] vs ['power']) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The peginesatide record lacks a clearance value — only volumes (V2 35.6 mL/kg, V3 7.42 mL/kg, Q 5.23 mL/kg/hr) were extracted — so the disposition half would default to a library placeholder and the model was held back.**
+
+The record lists Vmax 44.7 ng/mL/hr, Km 1860 ng/mL, V2 35.6 mL/kg, kabs 0.00869 1/hr, Fab 0.499, Q 5.23 mL/kg/hr and V3 7.42 mL/kg, but no clearance parameter, meaning the missing half would have been silently filled from a library default. A concentration-referencing check could not compute a comparison (ratio None), so it is inconclusive rather than a demonstrated fault. A second reader also disagreed on covariate forms for V2 (power listed versus none) and on whether theta_v2_bmi_power (-0.485) belongs to V2 or the mean volume of distribution entry. Extracted — peginesatide: Vmax 44.7, Km 1.86e+03, V2 35.6, kabs 0.00869, Fab 0.499 F1, Q 5.23, V3 7.42, V 34.9 mL/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[central volume of distribution (v2), in ml/kg].covariate_forms`: this record has none, the second reading ['power']; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Naik H; Tsai MC; Fiedler-Kelly J; Qiu P; Vakilynejad M et al. (2013). PloS one 8
@@ -26,6 +29,9 @@ Naik H; Tsai MC; Fiedler-Kelly J; Qiu P; Vakilynejad M et al. (2013). PloS one 8
 
 ## Model component
 <dbs-pgx drug="peginesatide" model-id="Peginesatide_Naik2013_reference" status="needs_review" stale="false" population="patients with chronic kidney disease on dialysis" measured-compound="peginesatide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 8 extracted, plus 5 covariate effects.
 
 **Parameterization:** mechanistic.
 

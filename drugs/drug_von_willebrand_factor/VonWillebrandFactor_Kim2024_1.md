@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** split column '1' is a table statistic/structure column, not a study population (mis-split estimate table); C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (BT200 vs unknown) and 9 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record is a mis-split estimates-table column ('1', a table statistic, not a study population), and its factor VIII clearance of 0.000242 L/h and absorption rate constant of 1530890000 1/h are physiologically implausible, indicating unit/scale extraction errors.**
+
+The estimates table was split into one record per column, but the column labelled '1' contains a table statistic rather than a second set of parameter estimates, so this record does not represent a study population. The extracted factor VIII clearance of 0.000242 L/h and absorption rate constant of 1530890000 1/h fall far outside physiological windows, consistent with a unit or scale extraction error; the volume of distribution of 8.35 L is the only value a second reader could not dispute. The second reader instead attributed the clearance, absorption rate constant, and an additional intercompartmental clearance of 62.7 L/h to a separate record, and read the dosing compound and primary analyte as von Willebrand factor rather than factor VIII. Extracted — factor VIII: CL 0.000242 L/h, V 8.35 L, kabs 1.53e+09.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has BT200, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `BT200`, measured `factor VIII`.
 
@@ -28,6 +31,9 @@ Kim MS; Hajducek DM; Gilbert JC; Iorio A; Jilma B; Edginton AN et al. (2024). Th
 
 ## Model component
 <dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Kim2024_1" status="rejected" stale="false" population="humans" measured-compound="factor VIII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

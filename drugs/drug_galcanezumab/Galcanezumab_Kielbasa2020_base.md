@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kielbasa W; Quinlan T et al. (2020). Journal of clinical pharmacology 60
@@ -26,6 +29,9 @@ Kielbasa W; Quinlan T et al. (2020). Journal of clinical pharmacology 60
 
 ## Model component
 <dbs-pgx drug="galcanezumab" model-id="Galcanezumab_Kielbasa2020_base" status="rejected" stale="false" population="healthy individuals and patients with migraine" measured-compound="galcanezumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,8 @@
 
 - **generic name:** hydromorphone
 - **ATC codes:** `N02AA03`, `N02AA53`, `N02AG04`
-- **DrugBank:** [DB00327](https://go.drugbank.com/drugs/DB00327)
+- **DrugBank:** [DB00327](https://go.drugbank.com/drugs/DB00327) · **PubChem:** [CID 5284570](https://pubchem.ncbi.nlm.nih.gov/compound/5284570)
+- **molar mass:** 285.3377 g/mol (C17H19NO3) — DrugBank
 - **groups:** approved, illicit, investigational
 
 ## About
@@ -28,10 +29,10 @@ Off-label, hydromorphone can be administered for the suppression of refractory c
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wimbish_2024_reference](drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference.md) | Wimbish C et al., Pharmacokinetics of a continuous intrav…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1362730](https://doi.org/10.3389/fvets.2024.1362730) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Meissner_2025_reference](drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference.md) | Meissner K et al., Morphine and hydromorphone pharmacokine…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.08.042](https://doi.org/10.1016/j.bja.2024.08.042) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span> | [Wimbish_2024_reference](drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference.md) | 2-compartment, IV | 3 | Wimbish C et al., Pharmacokinetics of a continuous intrav…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1362730](https://doi.org/10.3389/fvets.2024.1362730) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Meissner_2025_reference](drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference.md) | general linear (no model) | 2 | Meissner K et al., Morphine and hydromorphone pharmacokine…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.08.042](https://doi.org/10.1016/j.bja.2024.08.042) |
 
 ## Pharmacodynamics (PD)
 

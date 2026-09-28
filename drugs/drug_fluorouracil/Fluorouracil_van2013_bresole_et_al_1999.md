@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — fluorouracil: V 161 L, kabs 0.757 h−1, tlag 0.000552 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem van_2013)

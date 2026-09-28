@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[absorption rate constant in group 1].value` (0.319 vs 0.325) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The nadroparin one-compartment model was rejected because a structural parameter's reported unit could not be converted to SI, leaving the absorption rate constant kabs (0.319 1/h) without an SI value, and a second reader read kabs as 0.325 rather than 0.319.**
+
+The record reports nadroparin (Fraxiparine/Fraxiparine forte) in adults with COVID-19 with a one-compartment structure and three group-1 parameters: apparent volume of distribution V/F 6.62 L, apparent clearance CL/F 1.15 L/h, and absorption rate constant kabs 0.319 1/h. One of these parameters was reported in a unit that could not be converted to SI, so it entered the model without an SI value, producing a dimension mismatch on a structural parameter and rejection. A second reader (gpt-oss:120b) disagreed on the absorption rate constant value, reading 0.325 instead of 0.319, and supplied relative standard errors (kabs 10.5%, CL/F 4.2%, V/F 9.6%) that are absent (null) in this record. Extracted — nadroparin: V/F 6.62 unit, CL/F 1.15 unit, kabs 0.319 unit.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[absorption rate constant in group 1].value`: this record has 0.319, the second reading 0.325; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Piwowarczyk P; Szczukocka M; Cios W; Okuńska P; Raszewski G; Borys M; et al. et al. (2023). Clinical pharmacokinetics 62
@@ -26,6 +29,9 @@ Piwowarczyk P; Szczukocka M; Cios W; Okuńska P; Raszewski G; Borys M; et al. et
 
 ## Model component
 <dbs-pgx drug="nadroparin" model-id="Nadroparin_Piwowarczyk2023_estimate_unit" status="rejected" stale="false" population="adults with COVID-19" measured-compound="nadroparin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

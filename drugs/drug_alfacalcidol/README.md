@@ -4,7 +4,8 @@
 
 - **generic name:** alfacalcidol
 - **ATC codes:** `A11CC03`
-- **DrugBank:** [DB01436](https://go.drugbank.com/drugs/DB01436)
+- **DrugBank:** [DB01436](https://go.drugbank.com/drugs/DB01436) · **PubChem:** [CID 5282181](https://pubchem.ncbi.nlm.nih.gov/compound/5282181)
+- **molar mass:** 400.6371 g/mol (C27H44O2) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
 ## About

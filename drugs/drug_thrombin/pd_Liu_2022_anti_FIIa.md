@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;thrombin&quot;,&quot;href&quot;:&quot;drugs/drug_thrombin/&quot;},{&quot;label&quot;:&quot;Liu_2022 \u00b7 PD Anti-FIIa&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Anti-FIIa — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>

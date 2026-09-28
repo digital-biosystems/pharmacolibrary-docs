@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[central volume of distribution]` (0.5115 vs not captured) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — inositol: V 0.511 l/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central volume of distribution: this record has 0.5115, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et al. (2013). Pediatric research 74
@@ -26,6 +29,9 @@ Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et 
 
 ## Model component
 <dbs-pgx drug="inositol" model-id="Inositol_Phelps2013_covariate_estimate_standard_error" status="needs_review" stale="false" population="preterm infants" measured-compound="myo-inositol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

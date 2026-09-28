@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q17]` (92 vs not captured) and 5 more field(s) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The midazolam 1-compartment model was held back because the absorption rate constant ka and lag time Tlag were not reported in the source and placeholder values were substituted, and the resulting invented first-order absorption was judged not acceptable.**
+
+The record for midazolam reports only CL/F = 10.6 L/h and V/F = 307.0 L; ka and Tlag are missing from the source, so no extracted values existed and library placeholder defaults were used in their place, and the apparent (/F) parameterization additionally assumed F=1 and Fm=1 with no molar correction, giving an extravascular first-order depot input. The failed check found that the defaulted ka amounts to an invented absorption process not reported in the source, which was adjudicated as not acceptable. In addition, six derived quantity values (92, 20276, 5, 46, 25, 12944) lack a second reader's confirmation, with the second reader returning null on each. Extracted — midazolam: CL/F 10.6 L/h, V/F 307 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 92, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gupta N; Hanley MJ; Griffin RJ; Zhang P; Venkatakrishnan K; Sinha V et al. (2023). Clinical pharmacokinetics 62
@@ -143,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_sim_controls.json"></dbs-fmusim>
 

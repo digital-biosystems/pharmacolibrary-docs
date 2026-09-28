@@ -4,7 +4,7 @@
 
 - **generic name:** etranacogene dezaparvovec
 - **ATC codes:** `B02BD16`
-- **DrugBank:** [DB16791](https://go.drugbank.com/drugs/DB16791)
+- **DrugBank:** [DB16791](https://go.drugbank.com/drugs/DB16791) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

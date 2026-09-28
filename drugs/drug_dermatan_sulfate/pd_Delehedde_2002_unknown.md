@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;dermatan sulfate&quot;,&quot;href&quot;:&quot;drugs/drug_dermatan_sulfate/&quot;},{&quot;label&quot;:&quot;Delehedde_2002 \u00b7 PD DNA synthesis&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # DNA synthesis — PD  <span class="pk-badge pk-badge--green">extracted</span>

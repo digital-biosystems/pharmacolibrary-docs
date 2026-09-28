@@ -5,7 +5,7 @@
 
 # amino acids — `AminoAcids_Thorsted2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The amino acids one-compartment model was held back because ka and Tlag were not reported and defaults were substituted, the invented first-order absorption was judged not acceptable, and a second reader disputed several extracted values.**
+
+The record reports CL/F 0.113 L/day and V/F 6.44 L for amino acids in a one-compartment structure, but the absorption rate constant ka and lag time Tlag were missing from the source, so library defaults were substituted and the invented absorption was adjudicated not acceptable. The apparent (/F) parameterization additionally assumed F=1 and Fm=1 with no molar correction, implying extravascular first-order depot input. A second reader disagreed on multiple extracted values, including CL/F (0.113 vs 0.093 L/day) and a volume-related quantity (39.4 vs 48.6 L), and several fields were extracted by only one of the two readers. Extracted — amino acids: CL/F 0.113 L/day, V/F 6.44 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q18: this record has 778.8, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Thorsted A; Tanneau L; Lavalley-Morelle A; Follows R; Jacques L; Bird N; Gevaert P; Pavord I; Ribbing J; Gupta A; Howarth P; Schalkwijk S et al. (2026). Journal of clinical pharmacology 66
@@ -25,6 +29,9 @@ Thorsted A; Tanneau L; Lavalley-Morelle A; Follows R; Jacques L; Bird N; Gevaert
 
 ## Model component
 <dbs-pgx drug="amino acids" model-id="AminoAcids_Thorsted2026_reference" status="needs_review" stale="false" population="" measured-compound="amino_acids" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +62,29 @@ Thorsted A; Tanneau L; Lavalley-Morelle A; Follows R; Jacques L; Bird N; Gevaert
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q18]` | 778.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q27]` | 0.113 | 0.093 | mismatch |
+| `gpt-oss:120b` | `values[Q320]` | not captured | 84.8 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q321]` | not captured | 0.194 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | 12.29 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q37]` | 0.585 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q56]` | 8.41 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 39.4 | 48.6 | mismatch |
+| `gpt-oss:120b` | `values[Q76]` | 6.44 | 6.53 | mismatch |
+| `gpt-oss:120b` | `values[Q87]` | 0.88 | 1 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -126,6 +148,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference.svg" alt="AminoAcids_Thorsted2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal of drug metabolism and pharmacokinetics 15
@@ -119,7 +119,7 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_sim_controls.json"></dbs-fmusim>
 

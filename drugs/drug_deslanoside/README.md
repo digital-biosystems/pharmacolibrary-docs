@@ -4,7 +4,8 @@
 
 - **generic name:** deslanoside
 - **ATC codes:** `C01AA07`
-- **DrugBank:** [DB01078](https://go.drugbank.com/drugs/DB01078)
+- **DrugBank:** [DB01078](https://go.drugbank.com/drugs/DB01078) · **PubChem:** [CID 28620](https://pubchem.ncbi.nlm.nih.gov/compound/28620)
+- **molar mass:** 943.0791 g/mol (C47H74O19) — DrugBank
 - **groups:** approved
 
 ## About

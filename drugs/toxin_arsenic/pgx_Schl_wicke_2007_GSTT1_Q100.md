@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Schl\u00e4wicke_2007 \u00b7 PGx GSTT1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # GSTT1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>

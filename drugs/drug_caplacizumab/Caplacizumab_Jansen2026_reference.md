@@ -5,7 +5,7 @@
 
 # caplacizumab — `Caplacizumab_Jansen2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The caplacizumab two-compartment record was rejected because its peripheral compartment (Vp 4730 mL) has no intercompartmental clearance linking it to the central compartment, leaving it unreachable from the dose.**
+
+The record lists only CL (16.4 mL/h), Vc (3620 mL) and Vp (4730 mL) for caplacizumab; no intercompartmental clearance (Q) is present, so the peripheral compartment has no path from the dose and the structure check failed. A second reader disagreed on several extracted values: they read no clearance (versus 16.4 mL/h), an intercompartmental clearance of 71.8 mL/h where this record has none, no value where this record gives 0.833 and 15.9, and no values for the volumes (3620 mL, 4730 mL). These disagreements indicate the extracted parameter set is not consistently established from the source. Extracted — caplacizumab: CL 16.4 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 16.4, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Jansen E; Bockstal V; Herschke F; Olsson Gisleskog P; Rinaldi M; Boerboom A; Hadi S; Gaibu N; Moutschen M; Tersago D et al. (2026). PLoS medicine 23
@@ -25,6 +29,9 @@ Jansen E; Bockstal V; Herschke F; Olsson Gisleskog P; Rinaldi M; Boerboom A; Had
 
 ## Model component
 <dbs-pgx drug="caplacizumab" model-id="Caplacizumab_Jansen2026_reference" status="rejected" stale="false" population="" measured-compound="caplacizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -55,9 +62,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.0 (0/6 fields) | 6 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 16.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | not captured | 71.8 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q56]` | 0.833 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 15.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | 3620 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 4730 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

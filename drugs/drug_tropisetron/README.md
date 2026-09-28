@@ -4,7 +4,8 @@
 
 - **generic name:** tropisetron
 - **ATC codes:** `A04AA03`
-- **DrugBank:** [DB11699](https://go.drugbank.com/drugs/DB11699)
+- **DrugBank:** [DB11699](https://go.drugbank.com/drugs/DB11699) · **PubChem:** [CID 656665](https://pubchem.ncbi.nlm.nih.gov/compound/656665)
+- **molar mass:** 284.3529 g/mol (C17H20N2O2) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
 ## About

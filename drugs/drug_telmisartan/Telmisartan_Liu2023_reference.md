@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (telmisartan vs telmisartan, candesartan cilexetil, tenofovir disoproxil fumarate) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**This telmisartan model was rejected because its structure contains metabolism links from candesartan cilexetil and tenofovir disoproxil fumarate — compounds foreign to the telmisartan model — with no link parameters, leaving unlinked moieties.**
+
+The record's structure lists two metabolism links, from candesartan cilexetil to candesartan and from tenofovir disoproxil fumarate to tenofovir, each with no link parameter specified, so these prodrugs and metabolites have no quantified connection to the telmisartan model. This triggered the rejection for an unreachable compartment or unlinked metabolite. The second reader also disagreed on the dosed compound and primary analyte, listing telmisartan together with candesartan cilexetil and tenofovir disoproxil fumarate, whereas the record names only telmisartan, and found no such links in the model. The extracted telmisartan parameters themselves (kel 1.09 h−1, V 500.0 L, kabs 4.53 /h, tlag 0.25 h) are not at issue. Extracted — telmisartan: kel 1.09 h−1, V 500 L, kabs 4.53 /h, tlag 0.25 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has telmisartan, the second reading telmisartan, candesartan cilexetil, tenofovir disoproxil fumarate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `telmisartan, candesartan cilexetil, tenofovir disoproxil fumarate`, measured `telmisartan`.
 

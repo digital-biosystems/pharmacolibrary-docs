@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;sodium phenylbutyrate&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/&quot;},{&quot;label&quot;:&quot;Wang_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Eriksen2023_reference&quot;,&quot;label&quot;:&quot;Eriksen_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Piscitelli1995_reference&quot;,&quot;label&quot;:&quot;Piscitelli_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Piscitelli1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Eriksen2023_reference&quot;,&quot;label&quot;:&quot;Eriksen_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;SodiumPhenylbutyrate_Piscitelli1995_reference&quot;,&quot;label&quot;:&quot;Piscitelli_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Piscitelli1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sodium phenylbutyrate — `SodiumPhenylbutyrate_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,14 +13,20 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The sodium phenylbutyrate record was held back because the absorption rate constant ka and lag time were not reported in the source, so library defaults were substituted and the invented first-order absorption was judged not acceptable.**
+
+The record reports only apparent clearance (CL/F 14.9 L/h) and volume (V 33.2 L) for sodium phenylbutyrate in a one-compartment structure. The source did not report an absorption rate constant (ka) or lag time (Tlag), so placeholder defaults were used, and the model assumed an invented first-order absorption with F=1, Fm=1 and no molar correction — an apparent (/F) parameterization implying extravascular dosing. This invented absorption was adjudicated as not acceptable, so the model was marked needs_review. Extracted — sodium phenylbutyrate: CL/F 14.9 L/h, V 33.2 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang X; Vilchez RA et al. (2022). Clinical pharmacokinetics 61
   ·  DOI: [10.1007/s40262-021-01075-1](https://doi.org/10.1007/s40262-021-01075-1)
 
 ## Model component
-<dbs-pgx drug="sodium phenylbutyrate" model-id="SodiumPhenylbutyrate_Wang2022_reference" status="extracted" stale="false" population="" measured-compound="sodium_phenylbutyrate" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sodium phenylbutyrate" model-id="SodiumPhenylbutyrate_Wang2022_reference" status="needs_review" stale="false" population="" measured-compound="sodium_phenylbutyrate" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.
@@ -28,6 +34,8 @@ Wang X; Vilchez RA et al. (2022). Clinical pharmacokinetics 61
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Apparent clearance for PAGN (normal renal function) | `Q27` · CL/F | 14.9 | L/h | 4.138888888888889e-06 | L/h | not captured | review (0.7) | Wang_2022:review | — | not captured |
@@ -66,6 +74,18 @@ Wang X; Vilchez RA et al. (2022). Clinical pharmacokinetics 61
 | C9_phys_window_Q27 | pass | clearance within physiological range | 14.9 L/h | not captured | not captured | ['Wang_2022:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 33.2 L | not captured | not captured | ['Wang_2022:review'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=sodium_phenylbutyrate) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -74,6 +94,9 @@ Wang X; Vilchez RA et al. (2022). Clinical pharmacokinetics 61
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_sodium_phenylbutyrate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2022` / `Wang_2022::reference`)
+- model: `../../../knowledgebase/drugs/drug_sodium_phenylbutyrate/models/modelica/SodiumPhenylbutyrate_Wang2022_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_sodium_phenylbutyrate/models/modelica/SodiumPhenylbutyrate_Wang2022_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_sodium_phenylbutyrate/models/modelica/SodiumPhenylbutyrate_Wang2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

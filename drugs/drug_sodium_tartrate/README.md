@@ -4,7 +4,8 @@
 
 - **generic name:** sodium tartrate
 - **ATC codes:** `A06AD21`
-- **DrugBank:** [DB13707](https://go.drugbank.com/drugs/DB13707)
+- **DrugBank:** [DB13707](https://go.drugbank.com/drugs/DB13707) · **PubChem:** [CID 162637](https://pubchem.ncbi.nlm.nih.gov/compound/162637)
+- **molar mass:** 194.05 g/mol (C4H4Na2O6) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

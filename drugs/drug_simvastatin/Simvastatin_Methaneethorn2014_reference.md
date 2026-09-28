@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['simvastatin', 'simvastatin hydroxy acid', 'metabolism'], ['nelfinavir', 'm8', 'metabolism']] vs [['simvastatin', 'simvastatin hydroxy acid', 'hydrolysis'], ['nelfinavir', 'm8', 'metabolism']]) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The simvastatin model was refused because its metabolite compartments (simvastatin hydroxy acid and M8) have no dose path, and the absorption and volume parameters lack second-reader confirmation.**
+
+The record lists metabolism links from simvastatin to simvastatin hydroxy acid and from nelfinavir to M8, but no link parameter values were extracted, so the metabolite compartments are unreachable from the dose. The second reader disputed the relation for simvastatin to hydroxy acid, reading it as hydrolysis rather than metabolism, and did not confirm the extracted absorption rate (Ka = 0.7 h⁻¹) or distribution volume (Vd = 161.12 L), leaving those values unconfirmed. Systemic clearance (12.2 L/h) was recorded without dispute. Extracted — simvastatin: kabs 0.7 h -1, V 161 L, CL 12.2 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has simvastatin → simvastatin hydroxy acid (metabolism); nelfinavir → m8 (metabolism), the second reading simvastatin → simvastatin hydroxy acid (hydrolysis); nelfinavir → m8 (metabolism); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Methaneethorn_2014)

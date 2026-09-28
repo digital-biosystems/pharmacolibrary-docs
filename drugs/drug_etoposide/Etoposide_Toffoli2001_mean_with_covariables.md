@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for etoposide's clearance.**
+
+The model was built, but etoposide's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (CL, k12 and k21), so that value has no SI equivalent. Extracted — etoposide: CL 1.14 l h x1, V 6.1 l, k12 0.14 h x1, k21 0.07 h x1, Fab 0.44.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Toffoli G; Corona G; Sorio R; Robieux I; Basso B; Colussi AM; et al. et al. (2001). British journal of clinical pharmacology 52
@@ -25,6 +27,9 @@ Toffoli G; Corona G; Sorio R; Robieux I; Basso B; Colussi AM; et al. et al. (200
 
 ## Model component
 <dbs-pgx drug="etoposide" model-id="Etoposide_Toffoli2001_mean_with_covariables" status="model_quarantined" stale="false" population="adults with solid tumours" measured-compound="etoposide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

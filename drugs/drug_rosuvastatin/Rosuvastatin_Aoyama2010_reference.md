@@ -5,7 +5,7 @@
 
 # rosuvastatin — `Rosuvastatin_Aoyama2010_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q328: this record has 1.97, the second reading 1.97; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Aoyama T; Omori T; Watabe S; Shioya A; Ueno T; Fukuda N; et al. et al. (2010). Biological & pharmaceutical bulletin 33
@@ -25,6 +27,9 @@ Aoyama T; Omori T; Watabe S; Shioya A; Ueno T; Fukuda N; et al. et al. (2010). B
 
 ## Model component
 <dbs-pgx drug="rosuvastatin" model-id="Rosuvastatin_Aoyama2010_reference" status="curated_candidate" stale="false" population="healthy adults" measured-compound="rosuvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -54,14 +59,23 @@ Aoyama T; Omori T; Watabe S; Shioya A; Ueno T; Fukuda N; et al. et al. (2010). B
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q328]` | 1.97 | 1.97 | mismatch |
+| `gpt-oss:120b` | `values[Q47]` | not captured | 1.06 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | 0.368 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 15.5 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -130,6 +144,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference.svg" alt="Rosuvastatin_Aoyama2010_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.368 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 7 scholar param(s) emitted or defaulted — got 6 covered.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Metamizole's elimination clearance and intercompartmental clearance had no extracted values, so library defaults were substituted and the model was quarantined; V1/F also lacked a usable unit.**
+
+The record reports metamizole dosing to 4-methylaminoantipyrine and downstream metabolites, with parameters kabs 2.528 1/h, V1/F 71.2 L, k12 0.030, k14 0.006, kel 0.178, V2/F 35.6 L, kcomp 0.552, k21 0.008, V3/F 55.1 L, k31 0.074 1/h. But metamizole's elimination clearance and one intercompartmental clearance were never extracted, so placeholder values from a library stood in for them. The parameter-coverage check found 6 of 7 expected parameters covered, with V1/F neither emitted nor defaulted. Also, a reported unit (n = 8, a sample size rather than a unit) could not be converted to SI, so that parameter reached the model builder without an SI value. The builder additionally assumed F=1 and Fm=1 with no molar correction, treating all parameters as apparent. Extracted — metamizole: kabs 2.53 n = 8, V1/F 71.2 L, k12 0.03 n = 8, k14 0.006 n = 8, kel 0.178 n = 8, V2/F 35.6 L, kcomp 0.552 n = 8, k21 0.008 n = 8, … (+3).
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `metamizole`, measured `4-methylaminoantipyrine`.
 
@@ -27,6 +29,9 @@ Blaser LS; Duthaler U; Bouitbir J; Leuppi-Taegtmeyer AB; Liakoni E; Dolf R; et a
 
 ## Model component
 <dbs-pgx drug="Metamizole" model-id="Metamizole_Blaser2021_metamizole_n_8" status="model_quarantined" stale="false" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 11 extracted.
 
 **Parameterization:** V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -4,7 +4,7 @@
 
 - **generic name:** docusate sodium
 - **ATC codes:** `A06AA02`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

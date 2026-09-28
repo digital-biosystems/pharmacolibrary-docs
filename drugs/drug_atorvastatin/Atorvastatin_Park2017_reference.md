@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q18]` (not captured vs 90.38) and 7 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — atorvastatin: CL 500 L/h, V 5.46e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q18: this record has none, the second reading 90.38; it also differs on 7 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 22:52:00.685530+00:00) predates the upstream re-run (2026-09-23 23:34:32.309641+00:00). Current validate status: `needs_review`.
 

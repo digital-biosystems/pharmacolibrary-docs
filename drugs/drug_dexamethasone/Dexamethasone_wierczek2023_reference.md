@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (CL/F), so that value has no SI equivalent. Extracted — dexamethasone: CL/F 0.077 L h−1 kg−1, kabs 0.773 day -1, tlag 0.29 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Świerczek A; Jusko WJ et al. (2023). Clinical and translational science 16
@@ -25,6 +27,9 @@
 
 ## Model component
 <dbs-pgx drug="dexamethasone" model-id="Dexamethasone_wierczek2023_reference" status="needs_review" stale="false" population="adults with COVID-19" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

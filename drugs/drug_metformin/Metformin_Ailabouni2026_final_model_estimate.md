@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_cmax
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (metformin vs unknown) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000787, model 0.000124); the covariate scenarios were not simulated.**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — metformin: CL/F 96.4 L/h/70 kg, V/F 546 L, kabs 0.941 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ailabouni AS; Halpin K; Boone EC; Gaedigk A; Nadai T; Irie K; et al. et al. (2026). Pediatric research

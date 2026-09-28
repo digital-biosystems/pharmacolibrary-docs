@@ -5,7 +5,8 @@
 
 - **generic name:** fluvoxamine
 - **ATC codes:** `N06AB08`
-- **DrugBank:** [DB00176](https://go.drugbank.com/drugs/DB00176)
+- **DrugBank:** [DB00176](https://go.drugbank.com/drugs/DB00176) · **PubChem:** [CID 3404](https://pubchem.ncbi.nlm.nih.gov/compound/3404)
+- **molar mass:** 318.34 g/mol (C15H21F3N2O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -23,11 +24,11 @@ Fluvoxamine has been in use in clinical practice since 1983 and has a clinical t
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> | [Strauss_1999_reference](drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference.md) | Strauss WL et al., Characterization of human brain pharmac…, Biological psychiatry (1999) | [10.1016/s0006-3223(98)00324-2](https://doi.org/10.1016/s0006-3223(98)00324-2) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Geldof_2007_reference](drugs/drug_fluvoxamine/Fluvoxamine_Geldof2007_reference.md) | Geldof (2007) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Geldof_2007_2_reference](drugs/drug_fluvoxamine/Fluvoxamine_Geldof2007v2_reference.md) | Geldof (2007) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> | [Strauss_1999_reference](drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference.md) | 1-compartment, IV | 3 | Strauss WL et al., Characterization of human brain pharmac…, Biological psychiatry (1999) | [10.1016/s0006-3223(98)00324-2](https://doi.org/10.1016/s0006-3223(98)00324-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Geldof_2007_reference](drugs/drug_fluvoxamine/Fluvoxamine_Geldof2007_reference.md) | 1-compartment (no model) | 0 | Geldof (2007) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Geldof_2007_2_reference](drugs/drug_fluvoxamine/Fluvoxamine_Geldof2007v2_reference.md) | 1-compartment (no model) | 3 | Geldof (2007) | — |
 
 ## Pharmacodynamics (PD)
 

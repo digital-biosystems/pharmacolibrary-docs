@@ -5,7 +5,8 @@
 
 - **generic name:** phenobarbital
 - **ATC codes:** `N03AA02`
-- **DrugBank:** [DB01174](https://go.drugbank.com/drugs/DB01174)
+- **DrugBank:** [DB01174](https://go.drugbank.com/drugs/DB01174) · **PubChem:** [CID 4763](https://pubchem.ncbi.nlm.nih.gov/compound/4763)
+- **molar mass:** 232.2353 g/mol (C12H12N2O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Stoschus_2025_reference](drugs/drug_phenobarbital/Phenobarbital_Stoschus2025_reference.md) | Stoschus M et al., Optimizing phenobarbital dosing in crit…, Epilepsia (2025) | [10.1111/epi.18517](https://doi.org/10.1111/epi.18517) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Teixeira-da-Silva_2022_reference](drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md) | Teixeira-da-Silva P et al., Population Pharmacokinetics of Valproic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14040811](https://doi.org/10.3390/pharmaceutics14040811) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yalcin_2022_reference](drugs/drug_phenobarbital/Phenobarbital_Yalcin2022_reference.md) | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Stoschus_2025_reference](drugs/drug_phenobarbital/Phenobarbital_Stoschus2025_reference.md) | 1-compartment, oral | 3 | Stoschus M et al., Optimizing phenobarbital dosing in crit…, Epilepsia (2025) | [10.1111/epi.18517](https://doi.org/10.1111/epi.18517) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: partial</span> | [Teixeira-da-Silva_2022_reference](drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md) | 1-compartment, oral | 3 | Teixeira-da-Silva P et al., Population Pharmacokinetics of Valproic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14040811](https://doi.org/10.3390/pharmaceutics14040811) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> | [Yalcin_2022_reference](drugs/drug_phenobarbital/Phenobarbital_Yalcin2022_reference.md) | 1-compartment, IV | 2 | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
 
 ## Pharmacodynamics (PD)
 

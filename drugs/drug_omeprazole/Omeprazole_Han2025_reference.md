@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q290]` (not captured vs 24.9) and 8 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**This omeprazole two-compartment model was rejected because one of its compartments is unreachable from the dose, and several extracted parameter values (e.g. V/F 24.9 L) are disputed between the two readers.**
+
+The record describes a two-compartment omeprazole structure with CL/F 2.91 L/h, V/F 24.9 L and absorption rate 0.3 h−1, plus CYP2C19 covariate effects (e.g. poor metaboliser −0.9054 relative to extensive metaboliser). The rejection reason is an unreachable or orphan compartment: a compartment or metabolite in the structure has no path from the administered dose, so the model as recorded is not a coherent pharmacokinetic system. In addition, a second reader disagreed on several extracted values — for example this record lists 24.9 L for one parameter where the second reader found none, and vice versa for others (46, 0.053, 24.9, 128 recorded here but null for the second reader; 24.9, 120, 4 recorded by the second reader but null here) — leaving the parameter set uncertain. Extracted — omeprazole: CL/F 2.91 L/h, V/F 24.9 L, V2/F 24.9 L, kabs 0.3 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q290: this record has none, the second reading 24.9; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Han B; Xu N; Ma C; Ju G; Xi X; Qian C; Guo N; Liu X; Zhu X; Li C; Liu L et al. (2025). Pharmaceutics 17

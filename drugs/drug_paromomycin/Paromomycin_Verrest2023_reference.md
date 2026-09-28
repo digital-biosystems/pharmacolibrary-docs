@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q30 — no SI value to build from
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**Q has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — paromomycin: CL 2.62 L/h, V1 13.6 L, Q 0.26, V2 2.22 L, kabs 2.05 h−1, Fab 1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Verrest L; Roseboom IC; Wasunna M; Mbui J; Njenga S; Musa AM; et al. et al. (2023). The Journal of antimicrobial chemotherapy 78
@@ -25,6 +27,9 @@ Verrest L; Roseboom IC; Wasunna M; Mbui J; Njenga S; Musa AM; et al. et al. (202
 
 ## Model component
 <dbs-pgx drug="paromomycin" model-id="Paromomycin_Verrest2023_reference" status="needs_review" stale="false" population="children and adults with visceral leishmaniasis" measured-compound="paromomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 

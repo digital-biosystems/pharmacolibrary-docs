@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (iron-tannic nanoparticles vs Iron-tannic nanoparticles (FTs)) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The iron model was quarantined because iron's bioavailability and clearance had no extracted values (library defaults stood in), the parent–metabolite structure did not match the record, and a reported unit could not be converted to SI.**
+
+All five extracted parameters (CLb 0.96 hr-1, metabolite clearance 0.07 hr-1, V 11.6 L, kabs 2.6 h−1, tlag 0.235 h) describe iron-tannic nanoparticles, leaving iron's bioavailability and clearance without values, so placeholders were substituted and the model held back. The declared parent–metabolite topology was not what the record actually contained — a single enteral parent compartment with a metabolism link to nanoparticle metabolites — a mismatch that independently blocked publication. Additionally, one reported unit could not be converted to SI, so that parameter entered the build without an SI value. A second reader also disputed the dosing compound, primary analyte, and link naming, and could not confirm the five parameter values, though these disagreements alone are not the stated cause. Extracted — iron-tannic nanoparticles: CLb 0.96 hr-1, CL 0.07 hr-1, V 11.6 L, kabs 2.6 h−1, tlag 0.235 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has iron-tannic nanoparticles, the second reading Iron-tannic nanoparticles (FTs); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Phatruengdet T; Khuemjun P; Intakhad J; Krunchanuchat S; Chariyakornkul A; Wongpoomchai R; et al. et al. (2022). Nanotheranostics 6
@@ -26,6 +29,9 @@ Phatruengdet T; Khuemjun P; Intakhad J; Krunchanuchat S; Chariyakornkul A; Wongp
 
 ## Model component
 <dbs-pgx drug="Iron" model-id="Iron_Phatruengdet2022_reference" status="model_quarantined" stale="false" population="rats" measured-compound="iron-tannic nanoparticles" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

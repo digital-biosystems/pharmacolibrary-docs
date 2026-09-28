@@ -5,7 +5,8 @@
 
 - **generic name:** atropine
 - **ATC codes:** `A03BA01`, `A03CB03`, `S01FA01`, `V03AB54`
-- **DrugBank:** [DB00572](https://go.drugbank.com/drugs/DB00572)
+- **DrugBank:** [DB00572](https://go.drugbank.com/drugs/DB00572) · **PubChem:** [CID 174174](https://pubchem.ncbi.nlm.nih.gov/compound/174174)
+- **molar mass:** 289.3694 g/mol (C17H23NO3) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -24,12 +25,12 @@ In combination with difenoxin or diphenoxylate (tablets for oral use), atropine 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.931). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Ström_2021_reference](drugs/drug_atropine/Atropine_Strm2021_reference.md) | Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary research (2021) | [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ekstrand_2022_reference](drugs/drug_atropine/Atropine_Ekstrand2022_reference.md) | Ekstrand C et al., Plasma atropine concentrations associat…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.951300](https://doi.org/10.3389/fvets.2022.951300) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hinderling_1985_reference](drugs/drug_atropine/Atropine_Hinderling1985_reference.md) | Hinderling PH et al., Integrated pharmacokinetics and pharmac…, Journal of pharmaceutical s… (1985) | [10.1002/jps.2600740702](https://doi.org/10.1002/jps.2600740702) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Parrot_2024_reference](drugs/drug_atropine/Atropine_Parrot2024_reference.md) | Parrot M et al., Clinical pharmacokinetics of atropine o…, Clinical and translational… (2024) | [10.1111/cts.13753](https://doi.org/10.1111/cts.13753) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.931). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Ström_2021_reference](drugs/drug_atropine/Atropine_Strm2021_reference.md) | 2-compartment, oral | 11 | Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary research (2021) | [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ekstrand_2022_reference](drugs/drug_atropine/Atropine_Ekstrand2022_reference.md) | 1-compartment (no model) | 0 | Ekstrand C et al., Plasma atropine concentrations associat…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.951300](https://doi.org/10.3389/fvets.2022.951300) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hinderling_1985_reference](drugs/drug_atropine/Atropine_Hinderling1985_reference.md) | parent + metabolite (no model) | 0 | Hinderling PH et al., Integrated pharmacokinetics and pharmac…, Journal of pharmaceutical s… (1985) | [10.1002/jps.2600740702](https://doi.org/10.1002/jps.2600740702) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Parrot_2024_reference](drugs/drug_atropine/Atropine_Parrot2024_reference.md) | 1-compartment (no model) | 0 | Parrot M et al., Clinical pharmacokinetics of atropine o…, Clinical and translational… (2024) | [10.1111/cts.13753](https://doi.org/10.1111/cts.13753) |
 
 ## ADME sites
 

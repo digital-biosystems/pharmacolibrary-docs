@@ -5,7 +5,7 @@
 
 # pethidine — `Pethidine_Zhang2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The pethidine model was held back because absorption rate constant ka was not reported in the source and was left at a library default, so the assumed first-order absorption was judged invented and not acceptable.**
+
+The record reports pethidine with a one-compartment structure and apparent parameters CL/F of 15.92 L·h−1 and V/F of 59.87 L·kg−1, but the source gives no values for ka or Tlag, so library defaults were substituted. The apparent (/F) parameterization implies F=1, Fm=1 and no molar correction, with first-order depot input assumed for extravascular dosing. The failed check found the invented absorption — a defaulted ka not reported in the source — not acceptable, and this deviation is the reason the model was not published. Extracted — pethidine: CL/F 15.9 L·h−1, V/F 59.9 L·kg−1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zhang C; Yu Z; Li X; Xu Y; Liu D et al. (2014). PloS one 9
@@ -25,6 +29,9 @@ Zhang C; Yu Z; Li X; Xu Y; Liu D et al. (2014). PloS one 9
 
 ## Model component
 <dbs-pgx drug="pethidine" model-id="Pethidine_Zhang2014_reference" status="needs_review" stale="false" population="" measured-compound="pethidine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,12 +62,12 @@ Zhang C; Yu Z; Li X; Xu Y; Liu D et al. (2014). PloS one 9
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
 _Every reader agrees on every compared field of this record._
 
@@ -127,6 +134,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_pethidine/Pethidine_Zhang2014_reference/Pethidine_Zhang2014_reference.svg" alt="Pethidine_Zhang2014_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_pethidine/Pethidine_Zhang2014_reference/Pethidine_Zhang2014_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_pethidine/Pethidine_Zhang2014_reference/Pethidine_Zhang2014_reference_sim_controls.json"></dbs-fmusim>
 

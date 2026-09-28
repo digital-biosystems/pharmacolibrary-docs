@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The ondansetron two-compartment neonatal model was rejected because its parameters are physiologically implausible: volume of distribution 0.29 L and intercompartmental clearance 6.15 L/h in neonates suggest a unit or scale extraction error.**
+
+The record reports ondansetron clearance of 0.58 L/h, central volume 0.29 L, peripheral volume 0.91 L, intercompartmental clearance 6.15 L/h, absorption rate constant 0.19 h−1 and bioavailability 0.62 for neonates with neonatal opioid withdrawal syndrome. The intercompartmental clearance (6.15 L/h) exceeds the total clearance (0.58 L/h) by more than tenfold, and the central volume (0.29 L) is far below any plausible neonatal body-water space for ondansetron. These magnitudes fall outside the physiological window expected for a neonatal population, consistent with a unit or scale error in the extracted parameter values. Extracted — ondansetron: CL 0.58 L/h, V 0.29 L, V2 0.91 L, Q 6.15 L/h, kabs 0.19 h−1, Fab 0.62.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Lam K; Mondick JT; Peltz G; Wu M; Kraft WK et al. (2025). Clinical and translational science 18
@@ -25,6 +27,9 @@ Lam K; Mondick JT; Peltz G; Wu M; Kraft WK et al. (2025). Clinical and translati
 
 ## Model component
 <dbs-pgx drug="ondansetron" model-id="Ondansetron_Lam2025_reference" status="rejected" stale="false" population="neonates with neonatal opioid withdrawal syndrome" measured-compound="ondansetron" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

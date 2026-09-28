@@ -5,7 +5,8 @@
 
 - **generic name:** fostamatinib
 - **ATC codes:** `B02BX09`
-- **DrugBank:** [DB12010](https://go.drugbank.com/drugs/DB12010)
+- **DrugBank:** [DB12010](https://go.drugbank.com/drugs/DB12010) · **PubChem:** [CID 11671467](https://pubchem.ncbi.nlm.nih.gov/compound/11671467)
+- **molar mass:** 580.4595 g/mol (C23H26FN6O9P) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ Recently, fostamatinib has been identified as a potential therapeutic for contro
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Boström_2014_reference](drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_reference.md) | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Boström_2014_reference](drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_reference.md) | 1-compartment (no model) | 0 | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
 
 ## ADME sites
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Cohen JL; Jao JY; Jusko WJ et al. (1971). British journal of pharmacology 43
@@ -25,6 +27,9 @@ Cohen JL; Jao JY; Jusko WJ et al. (1971). British journal of pharmacology 43
 
 ## Model component
 <dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Cohen1971_cancer_patients" status="rejected" stale="false" population="cancer patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

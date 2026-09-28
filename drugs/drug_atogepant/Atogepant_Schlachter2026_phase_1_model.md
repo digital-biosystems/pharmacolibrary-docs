@@ -17,16 +17,22 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[f]` (not captured vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The atogepant record was quarantined because its clearance, volumes, absorption rate constant and lag time were left as library defaults — ka was invented — and the sex and weight covariate effects were never simulated.**
+
+The record lists fitted values for atogepant (ka 2.44 /h, CL/F 19.82 L/h, V1/F 73.52 L, Q/F 2.75 L/h, V2/F 47.97 L, tlag 0.30 h), yet the deviations show CL, Vd, ka, Tlag, k12 and k21 had no source values and placeholders were substituted, with ka explicitly not reported in the paper. The absorption rate constant was therefore invented, which was judged not acceptable. In addition, although the record carries covariate effects (female sex on CL/F −0.19, weight power on ka −0.41, famotidine on relative bioavailability −0.15), only the reference individual was simulated, so these covariate scenarios were not exercised. A second reader also disagreed on where the female-sex effect belongs, reading it as a clearance covariate rather than leaving the parameter unnamed. Extracted — atogepant: kabs 2.44, CL/F 19.8, V1/F 73.5, Q/F 2.75, V2/F 48, tlag 0.3, Frel -0.15.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of f: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Schlachter_2026)
 
 ## Model component
 <dbs-pgx drug="atogepant" model-id="Atogepant_Schlachter2026_phase_1_model" status="model_quarantined" stale="false" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 7 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

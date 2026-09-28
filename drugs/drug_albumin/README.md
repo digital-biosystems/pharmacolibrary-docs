@@ -4,7 +4,7 @@
 
 - **generic name:** albumin
 - **ATC codes:** `B05AA01`
-- **DrugBank:** [DB00062](https://go.drugbank.com/drugs/DB00062)
+- **DrugBank:** [DB00062](https://go.drugbank.com/drugs/DB00062) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — eslicarbazepine: CL/F 2.36 L/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `eslicarbazepine acetate`, measured `eslicarbazepine`.
 
@@ -27,6 +29,9 @@ Falcão A; Fuseau E; Nunes T; Almeida L; Soares-da-Silva P et al. (2012). CNS dr
 
 ## Model component
 <dbs-pgx drug="eslicarbazepine" model-id="Eslicarbazepine_Falco2012_reference" status="needs_review" stale="false" population="adult patients with partial-onset seizures" measured-compound="eslicarbazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

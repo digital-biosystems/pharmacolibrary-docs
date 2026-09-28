@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;betaxolol&quot;,&quot;href&quot;:&quot;drugs/drug_betaxolol/&quot;},{&quot;label&quot;:&quot;Messina_2014 \u00b7 PGx ADRB1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ADRB1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['doxorubicin', 'doxorubicinol', 'metabolism']] vs [['doxorubicinentrapped', 'doxorubicinfree', 'interconversion'], ['doxorubicinfree', 'doxorubicinol', 'metabolism']]) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The doxorubicin record was rejected because its structure leaves a compartment unreachable: the TLD-1–doxorubicin interconversion link (CL1) has an unknown parameter kind, so the doxorubicinol metabolite is not properly connected to the dose.**
+
+The structure check flagged an unreachable/orphan compartment or unlinked metabolite: the only link into doxorubicin comes from TLD-1 as an 'interconversion' whose link parameter CL1 is of unknown kind rather than a defined clearance, leaving the doxorubicinol metabolite (formed via CL2, 0.450 L/h) without a valid path from the dose. A second reader also read the structure differently, splitting doxorubicin into wrapped and free species with interconversion followed by metabolism to doxorubicinol, and extracted two parameters absent from this record: V4 of 8152 L for doxorubicinol and a shared parameter θ of 0.643. The extracted doxorubicin parameters themselves (V1 3.39 L, CL1 0.0271 L/h, V2 0.531 L, V2_BSA 4.47, Q 0.136 L/h, V3_BSA 11.5) carry no unit flags, but the structural disconnection alone held the record back. Extracted — doxorubicin: V1 3.39 L, CL 0.0271 L/h, V1 0.531 L, V2 4.47, Q 0.136 L/h, V3 11.5; doxorubicinol: CLfm 0.45 L/h, V 8.15e+03 L, CL 74.6 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has doxorubicin → doxorubicinol (metabolism), the second reading doxorubicinentrapped → doxorubicinfree (interconversion); doxorubicinfree → doxorubicinol (metabolism); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `TLD-1`, measured `doxorubicin`.
 

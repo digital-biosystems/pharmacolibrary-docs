@@ -4,7 +4,7 @@
 
 - **generic name:** Retatrutide
 - **ATC codes:** not captured
-- **DrugBank:** [DB18993](https://go.drugbank.com/drugs/DB18993)
+- **DrugBank:** [DB18993](https://go.drugbank.com/drugs/DB18993) · **PubChem:** not captured
 - **groups:** investigational
 
 ## About

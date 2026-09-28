@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([] vs [['propacetamol', 'paracetamol', 'hydrolysis']]) and 11 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**CL and V have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (equation variable, t1/2ka , CL and V), so that value has no SI equivalent. Extracted — paracetamol: t1/2ka 0.007 a, CL 1.87 lAEh )1 70 kg )1, V 45 lAE70 kg )1, tlag 4.2 min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `propacetamol`, measured `paracetamol`.
 

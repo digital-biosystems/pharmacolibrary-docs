@@ -5,7 +5,8 @@
 
 - **generic name:** montelukast
 - **ATC codes:** `R03DC03`
-- **DrugBank:** [DB00471](https://go.drugbank.com/drugs/DB00471)
+- **DrugBank:** [DB00471](https://go.drugbank.com/drugs/DB00471) · **PubChem:** [CID 5281040](https://pubchem.ncbi.nlm.nih.gov/compound/5281040)
+- **molar mass:** 586.183 g/mol (C35H36ClNO3S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

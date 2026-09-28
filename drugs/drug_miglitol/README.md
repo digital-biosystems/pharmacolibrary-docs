@@ -4,7 +4,8 @@
 
 - **generic name:** miglitol
 - **ATC codes:** `A10BF02`
-- **DrugBank:** [DB00491](https://go.drugbank.com/drugs/DB00491)
+- **DrugBank:** [DB00491](https://go.drugbank.com/drugs/DB00491) · **PubChem:** [CID 441314](https://pubchem.ncbi.nlm.nih.gov/compound/441314)
+- **molar mass:** 207.2243 g/mol (C8H17NO5) — DrugBank
 - **groups:** approved
 
 ## About

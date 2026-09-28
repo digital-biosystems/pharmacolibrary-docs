@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[fesc]` (not captured vs 0.019) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The fitusiran record was refused because it carries no distribution volume and no clearance or elimination rate — it is an exposure/outcome paper, not a compartmental population PK model — and a structural parameter, Km (27.44, labelled ×105 nM), was entered with a unitless 'units' value that fails the dimensional check.**
+
+The extracted parameter set for fitusiran (kabs 1.48 1/h, fu 0.0066 1/h, Rtot 33.1 nM, Vmax 0.98 nmol/h, Km 27.44, koff 0.021 1/h, kint 7.84 nM−1·h−1, KD 0.14 nM) contains no volume of distribution and no clearance or elimination parameter, so the structure (one compartment) cannot function as a population PK model; the paper is an exposure/outcome report. The Km entry is dimensionally inconsistent: its label reads ×105 nM but the recorded unit is 'units', and that unit could not be converted to SI, so the parameter reached the build without an SI value. A second reader additionally extracted four parameters absent from this record — fesc 0.019, kdegd 0.012, kpliver 1.02 and psliver 0.96 — leaving the record's parameterisation incomplete relative to the paper. Extracted — fitusiran: kabs 1.48 units, fu 0.0066 units, Rtot 33.1 nM, Vmax 0.98 nmol/h, Km 27.4 units, koff 0.021 units, kint 7.84 nM−1·h−1, KD 0.14 nM.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of fesc: this record has none, the second reading 0.019; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Fan X; Xiao Y; Cao K; Zhang R; Yan X et al. (2026). Molecular therapy. Nucleic acids 37
@@ -26,6 +29,9 @@ Fan X; Xiao Y; Cao K; Zhang R; Yan X et al. (2026). Molecular therapy. Nucleic a
 
 ## Model component
 <dbs-pgx drug="fitusiran" model-id="Fitusiran_Fan2026_micea" status="rejected" stale="false" population="mice, rats, monkeys, and humans" measured-compound="fitusiran" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

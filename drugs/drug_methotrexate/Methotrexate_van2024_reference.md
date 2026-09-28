@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q312]` (0.101 vs 37) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The methotrexate record was held back because the absorption rate constant ka and lag time Tlag were not reported in the source and library defaults were substituted, alongside an invented first-order absorption with F=1 assumed.**
+
+The record reports only CL/F (0.365 l/day/82 kg) and V/F (14.7 l/82 kg) for methotrexate; ka and Tlag were missing from the source, so placeholder defaults were used, and the invented-absorption deviation was adjudicated not acceptable. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization) and imposed a first-order depot input implying extravascular dosing. A second reader further disagreed on several extracted values (e.g., 0.101 vs 37, 33.2 vs null, null vs 6.8), leaving the record's numbers unconfirmed. Extracted — methotrexate: CL/F 0.365 l/day/82 kg, V/F 14.7 l/82 kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 0.101, the second reading 37; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:29:54.263387+00:00) predates the upstream re-run (2026-09-24 02:56:19.842037+00:00). Current validate status: `extracted`.
 
@@ -143,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference_sim_controls.json"></dbs-fmusim>
 

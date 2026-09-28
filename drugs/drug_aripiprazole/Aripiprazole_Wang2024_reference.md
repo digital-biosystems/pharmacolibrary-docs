@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[aom 400]` (400 vs not captured) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for aripiprazole's clearance and volume of distribution.**
+
+The model was built, but aripiprazole's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — aripiprazole: Fab 400 mg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of aom 400: this record has 400, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Wang_2024)
 
 ## Model component
 <dbs-pgx drug="aripiprazole" model-id="Aripiprazole_Wang2024_reference" status="model_quarantined" stale="false" population="adults with schizophrenia or bipolar I disorder" measured-compound="aripiprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

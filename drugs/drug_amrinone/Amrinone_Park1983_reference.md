@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (0.93 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — amrinone: Fab 0.93, kel 0.19 hr-1, t1/2z 3.6 hr.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.93, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Park GB; Kershner RP; Angellotti J; Williams RL; Benet LZ; Edelson J et al. (1983). Journal of pharmaceutical sciences 72
@@ -26,6 +29,9 @@ Park GB; Kershner RP; Angellotti J; Williams RL; Benet LZ; Edelson J et al. (198
 
 ## Model component
 <dbs-pgx drug="amrinone" model-id="Amrinone_Park1983_reference" status="needs_review" stale="false" population="healthy males" measured-compound="amrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auec0-24]` (1570 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The alogliptin two-compartment record was rejected because a compartment has no path from the dose, and the reported AUEC0–24 unit (%·hr) could not be converted to SI.**
+
+The model structure lists two compartments, but the rejection cites an unreachable or orphan compartment — a compartment with no dosing path — so the topology was judged invalid. The AUEC0–24 value of 1570 %·hr could not be converted to SI units, leaving that exposure parameter without a usable value. A second reader also disagreed on three extracted values: AUEC0–24 (1570 vs null), E24 (null vs 52.0), and Fe (60.713 vs null), so the urinary excretion fraction and 24-hour exposure entries are contested. Extracted — alogliptin: AUCt 1.57e+03 %·hr, Cmax 57.9 ng/mL, AUC∞ 789 ng·hr./mL, CL/F 16.2 L/hr, V/F 388 L, t1/2z 16.8 hr, CLR 11.6 L/hr, fe 60.7, … (+1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auec0-24: this record has 1570, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Dudkowski C; Tsai M; Liu J; Zhao Z; Schmidt E; Xie J et al. (2017). European journal of clinical pharmacology 73
@@ -26,6 +29,9 @@ Dudkowski C; Tsai M; Liu J; Zhao Z; Schmidt E; Xie J et al. (2017). European jou
 
 ## Model component
 <dbs-pgx drug="alogliptin" model-id="Alogliptin_Dudkowski2017_alo_12_5_mg" status="rejected" stale="false" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** CL/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

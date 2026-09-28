@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[k a].parameter_id` (Q95 vs Q49) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 19.7, model 24.8).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — carbamazepine: CL/F 3.59 L/hr, V/F 102 L, kabs 0.197 hr−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[k a].parameter_id`: this record has Q95, the second reading Q49. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Punyawudho B; Ramsay ER; Brundage RC; Macias FM; Collins JF; Birnbaum AK et al. (2012). Therapeutic drug monitoring 34
@@ -26,6 +29,9 @@ Punyawudho B; Ramsay ER; Brundage RC; Macias FM; Collins JF; Birnbaum AK et al. 
 
 ## Model component
 <dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Punyawudho2012_reference" status="needs_review" stale="false" population="elderly patients with epilepsy" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -156,6 +162,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference/Carbamazepine_Punyawudho2012_reference.svg" alt="Carbamazepine_Punyawudho2012_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.197 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference/Carbamazepine_Punyawudho2012_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference/Carbamazepine_Punyawudho2012_reference_sim_controls.json"></dbs-fmusim>
 

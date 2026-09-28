@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[theta_q22_weight_power]` (1.38 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — hydrochlorothiazide: kabs 1.34 h -1, CLNR 2.44 l/h, V1 97.3 l, Q 17.2 l/h, V2 178 l.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of theta_q22_weight_power: this record has 1.38, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Van Wart SA; Shoaf SE; Mallikaarjun S; Mager DE et al. (2013). Biopharmaceutics & drug disposition 34

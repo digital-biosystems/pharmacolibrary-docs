@@ -5,7 +5,8 @@
 
 - **generic name:** apixaban
 - **ATC codes:** `B01AF02`
-- **DrugBank:** [DB06605](https://go.drugbank.com/drugs/DB06605)
+- **DrugBank:** [DB06605](https://go.drugbank.com/drugs/DB06605) · **PubChem:** [CID 10182969](https://pubchem.ncbi.nlm.nih.gov/compound/10182969)
+- **molar mass:** 459.4971 g/mol (C25H25N5O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Byon_2019_reference](drugs/drug_apixaban/Apixaban_Byon2019_reference.md) | Byon W et al., Apixaban: A Clinical Pharmacokinetic an…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00775-z](https://doi.org/10.1007/s40262-019-00775-z) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Byon_2019_reference](drugs/drug_apixaban/Apixaban_Byon2019_reference.md) | 1-compartment, IV | 2 | Byon W et al., Apixaban: A Clinical Pharmacokinetic an…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00775-z](https://doi.org/10.1007/s40262-019-00775-z) |
 
 ## ADME sites
 

@@ -5,7 +5,8 @@
 
 - **generic name:** thiotepa
 - **ATC codes:** `L01AC01`
-- **DrugBank:** [DB04572](https://go.drugbank.com/drugs/DB04572)
+- **DrugBank:** [DB04572](https://go.drugbank.com/drugs/DB04572) · **PubChem:** [CID 5453](https://pubchem.ncbi.nlm.nih.gov/compound/5453)
+- **molar mass:** 189.218 g/mol (C6H12N3PS) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Huitema_2001_patients undergoing high-dose chemotherapy](drugs/drug_thiotepa/Thiotepa_Huitema2001_patients_undergoing_high_dose_chemother.md) | Huitema (2001) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Przepiorka_1995_adults undergoing marrow transplantation](drugs/drug_thiotepa/Thiotepa_Przepiorka1995_adults_undergoing_marrow_transplanta.md) | Przepiorka D et al., Dosing of thioTEPA for myeloablative th…, Cancer chemotherapy and pha… (1995) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [de_2004_patients receiving high-dose chemotherapy](drugs/drug_thiotepa/Thiotepa_de2004_patients_receiving_high_dose_chemotherapy.md) | de Jonge ME et al., Integrated Population Pharmacokinetic M…, Journal of pharmacokinetics… (2004) | [10.1023/b:jopa.0000034405.03895.c2](https://doi.org/10.1023/b:jopa.0000034405.03895.c2) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Huitema_2001_patients undergoing high-dose chemotherapy](drugs/drug_thiotepa/Thiotepa_Huitema2001_patients_undergoing_high_dose_chemother.md) | — (no model) | 0 | Huitema (2001) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Przepiorka_1995_adults undergoing marrow transplantation](drugs/drug_thiotepa/Thiotepa_Przepiorka1995_adults_undergoing_marrow_transplanta.md) | — (no model) | 0 | Przepiorka D et al., Dosing of thioTEPA for myeloablative th…, Cancer chemotherapy and pha… (1995) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [de_2004_patients receiving high-dose chemotherapy](drugs/drug_thiotepa/Thiotepa_de2004_patients_receiving_high_dose_chemotherapy.md) | — (no model) | 0 | de Jonge ME et al., Integrated Population Pharmacokinetic M…, Journal of pharmacokinetics… (2004) | [10.1023/b:jopa.0000034405.03895.c2](https://doi.org/10.1023/b:jopa.0000034405.03895.c2) |
 
 ## ADME sites
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;atomoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/&quot;},{&quot;label&quot;:&quot;Cheng_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Cheng2024_reference&quot;,&quot;label&quot;:&quot;Cheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Notsu2020_reference&quot;,&quot;label&quot;:&quot;Notsu_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Notsu2020_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Cheng2024_reference&quot;,&quot;label&quot;:&quot;Cheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Notsu2020_reference&quot;,&quot;label&quot;:&quot;Notsu_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Notsu2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[ex]` (not captured vs -0.182) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for atomoxetine's elimination clearance and intercompartmental clearance.**
+
+The model was built, but atomoxetine's elimination clearance and intercompartmental clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — atomoxetine: kel 7.35.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ex: this record has none, the second reading -0.182; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Cheng S; Al-Kofahi M; Leeder JS; Brown JT et al. (2024). Clinical pharmacology and therapeutics 115
@@ -26,6 +29,9 @@ Cheng S; Al-Kofahi M; Leeder JS; Brown JT et al. (2024). Clinical pharmacology a
 
 ## Model component
 <dbs-pgx drug="atomoxetine" model-id="Atomoxetine_Cheng2024_reference" status="model_quarantined" stale="false" population="children and adolescents with ADHD" measured-compound="atomoxetine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** CL/F, Q/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

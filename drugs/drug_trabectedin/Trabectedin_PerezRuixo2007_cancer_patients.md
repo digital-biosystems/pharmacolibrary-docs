@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Perez-Ruixo JJ; Zannikos P; Hirankarn S; Stuyckens K; Ludwig EA; Soto-Matos A; et al. et al. (2007). Clinical pharmacokinetics 46
@@ -25,6 +25,9 @@ Perez-Ruixo JJ; Zannikos P; Hirankarn S; Stuyckens K; Ludwig EA; Soto-Matos A; e
 
 ## Model component
 <dbs-pgx drug="trabectedin" model-id="Trabectedin_PerezRuixo2007_cancer_patients" status="not_modelled" stale="false" population="cancer patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

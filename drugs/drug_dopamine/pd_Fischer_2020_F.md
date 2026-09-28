@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;dopamine&quot;,&quot;href&quot;:&quot;drugs/drug_dopamine/&quot;},{&quot;label&quot;:&quot;Fischer_2020 \u00b7 PD cytosolic calcium rise&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cytosolic calcium rise — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>

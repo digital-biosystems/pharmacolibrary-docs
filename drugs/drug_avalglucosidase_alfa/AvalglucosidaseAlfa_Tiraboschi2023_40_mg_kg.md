@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (avalglucosidase_alfa vs unknown) and 4 more field(s) — a structural parameter, so the record is disputed.
+**The paper reports none of the model's key parameters.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has avalglucosidase_alfa, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Tiraboschi G; Marchionni D; Tuffal G; Fabre D; Martinez JM; Haack KA; et al. et al. (2023). Journal of pharmacokinetics and pharmacodynamics 50
@@ -25,6 +29,9 @@ Tiraboschi G; Marchionni D; Tuffal G; Fabre D; Martinez JM; Haack KA; et al. et 
 
 ## Model component
 <dbs-pgx drug="avalglucosidase alfa" model-id="AvalglucosidaseAlfa_Tiraboschi2023_40_mg_kg" status="rejected" stale="false" population="pediatric and adult patients with Pompe disease" measured-compound="avalglucosidase_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

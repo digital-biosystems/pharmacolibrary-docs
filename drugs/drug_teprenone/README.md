@@ -4,7 +4,8 @@
 
 - **generic name:** teprenone
 - **ATC codes:** `A02BX15`
-- **DrugBank:** [DB15955](https://go.drugbank.com/drugs/DB15955)
+- **DrugBank:** [DB15955](https://go.drugbank.com/drugs/DB15955) · **PubChem:** not captured
+- **molar mass:** 330.556 g/mol (C23H38O) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

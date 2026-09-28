@@ -4,7 +4,8 @@
 
 - **generic name:** isosorbide mononitrate
 - **ATC codes:** `C01DA14`
-- **DrugBank:** [DB01020](https://go.drugbank.com/drugs/DB01020)
+- **DrugBank:** [DB01020](https://go.drugbank.com/drugs/DB01020) · **PubChem:** [CID 27661](https://pubchem.ncbi.nlm.nih.gov/compound/27661)
+- **molar mass:** 191.1388 g/mol (C6H9NO6) — DrugBank
 - **groups:** approved, investigational
 
 ## About

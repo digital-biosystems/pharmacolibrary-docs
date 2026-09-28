@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q321]` (8.13 vs not captured) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The brexpiprazole record was held back because ka and Tlag were not reported and library defaults were substituted, F=1 was assumed, and the CYP2D6 covariate effects (EM 0.0, IM 0.6364) were never simulated.**
+
+The absorption rate constant ka and lag time Tlag were missing from the source, so placeholder defaults were used, and this invented absorption was judged not acceptable. The record defines CYP2D6 covariate effects (EM 0.0, IM 0.6364), but only the reference individual was simulated, so the covariate scenarios were not exercised. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order extravascular input, and a second reader disputed the value 8.13 on one field, reading it as null. Extracted — brexpiprazole: CL/F 25.7 mL/h/kg, V/F 124 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q321: this record has 8.13, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wong DF; Raoufinia A; Bricmont P; Brašić JR; McQuade RD; Forbes RA; et al. et al. (2021). European journal of clinical pharmacology 77

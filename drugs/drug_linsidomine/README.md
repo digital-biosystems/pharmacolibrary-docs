@@ -5,7 +5,8 @@
 
 - **generic name:** linsidomine
 - **ATC codes:** `C01DX18`
-- **DrugBank:** [DB13400](https://go.drugbank.com/drugs/DB13400)
+- **DrugBank:** [DB13400](https://go.drugbank.com/drugs/DB13400) · **PubChem:** not captured
+- **molar mass:** 170.172 g/mol (C6H10N4O2) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary
@@ -16,9 +17,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Spreux-Varoquaux_1991_reference](drugs/drug_linsidomine/Linsidomine_SpreuxVaroquaux1991_reference.md) | Spreux-Varoquaux (1991) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Spreux-Varoquaux_1991_reference](drugs/drug_linsidomine/Linsidomine_SpreuxVaroquaux1991_reference.md) | parent + metabolite (no model) | 3 | Spreux-Varoquaux (1991) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

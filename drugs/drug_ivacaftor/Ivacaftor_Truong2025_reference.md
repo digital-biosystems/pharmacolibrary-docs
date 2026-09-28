@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (elexacaftor/tezacaftor/ivacaftor vs elexacaftor, tezacaftor, ivacaftor) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The ivacaftor record was quarantined because clearance, absorption rate constant and absorption lag time had no extracted values, so library placeholder values stood in for these parameters.**
+
+No value for ivacaftor's CL, ka or Tlag was reported in the source, and the builder substituted generic placeholder values for all three, so the published numbers (CL/F 13.4, V/F 183 L/70 kg) rest on placeholders for key disposition and absorption parameters. The absorption rate constant was additionally flagged as invented, since ka was defaulted rather than reported. The record also assumes F=1 and Fm=1 with no molar correction, making the parameterization apparent (/F), and a second reader disputed the additive error identifier and left the proportional error (0.278) unmatched. Extracted — ivacaftor: CL/F 13.4, V/F 183 L/70 kg, CL 0.37, add_error 0.131, prop_error 0.278.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has elexacaftor/tezacaftor/ivacaftor, the second reading elexacaftor, tezacaftor, ivacaftor; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Truong NH; Benaboud S; Bouazza N; Barboura M; Bardin E; Miralles M; et al. et al. (2025). Clinical and translational science 18
@@ -26,6 +29,9 @@ Truong NH; Benaboud S; Bouazza N; Barboura M; Bardin E; Miralles M; et al. et al
 
 ## Model component
 <dbs-pgx drug="ivacaftor" model-id="Ivacaftor_Truong2025_reference" status="model_quarantined" stale="false" population="pediatric patients with cystic fibrosis" measured-compound="elexacaftor/tezacaftor/ivacaftor" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

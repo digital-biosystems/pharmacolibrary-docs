@@ -4,7 +4,8 @@
 
 - **generic name:** obeticholic acid
 - **ATC codes:** `A05AA04`
-- **DrugBank:** [DB05990](https://go.drugbank.com/drugs/DB05990)
+- **DrugBank:** [DB05990](https://go.drugbank.com/drugs/DB05990) · **PubChem:** [CID 447715](https://pubchem.ncbi.nlm.nih.gov/compound/447715)
+- **molar mass:** 420.6252 g/mol (C26H44O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

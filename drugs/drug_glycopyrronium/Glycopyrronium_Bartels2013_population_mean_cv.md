@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[fast lung absorption half-life].parameter_id` (Q59 vs Q95) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The glycopyrronium record was quarantined because clearance, distribution volume, absorption rate constant, absorption lag time and both intercompartmental rate constants had no extracted values, so library placeholder values stood in for the fitted parameters.**
+
+The paper reports fitted values for glycopyrronium's systemic clearance (44.9), central volume (11.3), intercompartmental clearance (8.23), peripheral volume (71.5) and steady-state volume (102), but the record's clearance, volume of distribution, absorption rate constant, absorption lag time, central→peripheral rate constant and peripheral→central rate constant had no value extracted, meaning a library placeholder would have been used and the model was held back. The absorption rate constant was additionally flagged as invented, since it was not reported in the source. A second reader also disagreed on several absorption half-life entries: the fast lung absorption half-life was left without a value, the intermediate lung absorption half-life was recorded as 0.45 while the second reader found none, and a parameter for the fraction of dose with slow absorption was recorded as absent while the second reader read 6.48. Extracted — glycopyrronium: CL 44.9, V1 11.3, Q 8.23, V2 71.5, Fab 1.11, kabs 0.009, Vss 102, t1/2z 0.45.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[fast lung absorption half-life].parameter_id`: this record has Q59, the second reading Q95; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Bartels C; Looby M; Sechaud R; Kaiser G et al. (2013). British journal of clinical pharmacology 76
@@ -26,6 +29,9 @@ Bartels C; Looby M; Sechaud R; Kaiser G et al. (2013). British journal of clinic
 
 ## Model component
 <dbs-pgx drug="glycopyrronium" model-id="Glycopyrronium_Bartels2013_population_mean_cv" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

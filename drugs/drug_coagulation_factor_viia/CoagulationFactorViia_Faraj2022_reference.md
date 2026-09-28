@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (marzeptacog alfa (activated) vs FVIIa) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has marzeptacog alfa (activated), the second reading FVIIa; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Faraj A; Knudsen T; Desai S; Neuman L; Blouse GE; Simonsson USH et al. (2022). CPT: pharmacometrics & systems pharmacology 11
@@ -26,6 +29,9 @@ Faraj A; Knudsen T; Desai S; Neuman L; Blouse GE; Simonsson USH et al. (2022). C
 
 ## Model component
 <dbs-pgx drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Faraj2022_reference" status="rejected" stale="false" population="patients with hemophilia A or B with inhibitors" measured-compound="marzeptacog alfa (activated)" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** apparent_wrt_Fm.
 

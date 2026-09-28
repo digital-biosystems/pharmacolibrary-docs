@@ -4,7 +4,8 @@
 
 - **generic name:** tenapanor
 - **ATC codes:** `A06AX08`
-- **DrugBank:** [DB11761](https://go.drugbank.com/drugs/DB11761)
+- **DrugBank:** [DB11761](https://go.drugbank.com/drugs/DB11761) · **PubChem:** [CID 71587953](https://pubchem.ncbi.nlm.nih.gov/compound/71587953)
+- **molar mass:** 1145.04 g/mol (C50H66Cl4N8O10S2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

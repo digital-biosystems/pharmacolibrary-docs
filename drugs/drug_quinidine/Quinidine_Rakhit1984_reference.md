@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the model was built but never simulated; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 3 scholar param(s) emitted or defaulted — got 2 covered.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (0.78 vs not captured) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The quinidine record was held back because the elimination rate constant kel (0.003 min-1) had no extracted value, so a library placeholder would have been used, and the record rests on abstract-only summary statistics rather than a fitted model.**
+
+The parameter-coverage check found only 2 of the expected 3 parameters covered: kel (elimination rate constant, kmu) was neither emitted nor defaulted, meaning no value was extracted and a placeholder would have been used. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. In addition, a second reader returned null for all six parameter fields (V 0.37 L/kg, CL 3.86 ml/min/kg, kfm 0.0012 min-1, kel 0.003 min-1, bioavailability 0.78), so the values could not be independently confirmed. The model was built but has not been simulated yet. Extracted — quinidine: V 0.37 L/kg, CL 3.86 ml/min/kg, kfm 0.0012 min-1, kel 0.003 min-1, Fab 0.78.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.78, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Rakhit A; Holford NH; Guentert TW; Maloney K; Riegelman S et al. (1984). Journal of pharmacokinetics and biopharmaceutics 12
@@ -26,6 +29,9 @@ Rakhit A; Holford NH; Guentert TW; Maloney K; Riegelman S et al. (1984). Journal
 
 ## Model component
 <dbs-pgx drug="quinidine" model-id="Quinidine_Rakhit1984_reference" status="not_simulated" stale="false" population="healthy volunteers" measured-compound="quinidine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

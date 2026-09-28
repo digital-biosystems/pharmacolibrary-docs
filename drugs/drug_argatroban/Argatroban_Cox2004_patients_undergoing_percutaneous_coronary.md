@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Cox DS; Kleiman NS; Boyle DA; Aluri J; Parchman LG; Holdbrook F; et al. et al. (2004). Journal of clinical pharmacology 44
@@ -25,6 +25,9 @@ Cox DS; Kleiman NS; Boyle DA; Aluri J; Parchman LG; Holdbrook F; et al. et al. (
 
 ## Model component
 <dbs-pgx drug="argatroban" model-id="Argatroban_Cox2004_patients_undergoing_percutaneous_coronary" status="not_modelled" stale="false" population="patients undergoing percutaneous coronary intervention" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

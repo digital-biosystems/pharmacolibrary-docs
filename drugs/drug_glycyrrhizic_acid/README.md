@@ -4,7 +4,8 @@
 
 - **generic name:** glycyrrhizic acid
 - **ATC codes:** `A05BA08`
-- **DrugBank:** [DB13751](https://go.drugbank.com/drugs/DB13751)
+- **DrugBank:** [DB13751](https://go.drugbank.com/drugs/DB13751) · **PubChem:** not captured
+- **molar mass:** 822.942 g/mol (C42H62O16) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A09A&quot;,&quot;href&quot;:&quot;atc/A09A.md&quot;},{&quot;label&quot;:&quot;multienzymes (lipase, protease etc.)&quot;,&quot;href&quot;:&quot;drugs/drug_multienzymes_lipase_protease_etc/&quot;},{&quot;label&quot;:&quot;Applov\u00e1_2025 \u00b7 PD name&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>

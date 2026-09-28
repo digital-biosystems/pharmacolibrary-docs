@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11C&quot;,&quot;href&quot;:&quot;atc/A11C.md&quot;},{&quot;label&quot;:&quot;ergocalciferol&quot;,&quot;href&quot;:&quot;drugs/drug_ergocalciferol/&quot;},{&quot;label&quot;:&quot;Ooi_2026 \u00b7 PD Alkaline phosphatase&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Alkaline phosphatase — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>

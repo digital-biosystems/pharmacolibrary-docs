@@ -4,7 +4,8 @@
 
 - **generic name:** zinc chloride
 - **ATC codes:** `B05XA12`
-- **DrugBank:** [DB14533](https://go.drugbank.com/drugs/DB14533)
+- **DrugBank:** [DB14533](https://go.drugbank.com/drugs/DB14533) · **PubChem:** not captured
+- **molar mass:** 136.315 g/mol (Cl2Zn) — DrugBank
 - **groups:** approved
 
 ## About

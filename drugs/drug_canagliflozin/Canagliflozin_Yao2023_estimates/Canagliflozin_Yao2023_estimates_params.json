@@ -13,8 +13,11 @@
   "adminMass": 0.0001,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 660.0000000662094
+ },
  "reference_peaks": {
-  "central.C": 1.7530229932291477e-06
+  "central.C": 0.0010644180724133502
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;atomoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/&quot;},{&quot;label&quot;:&quot;Tobin_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Cheng2024_reference&quot;,&quot;label&quot;:&quot;Cheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atomoxetine_Notsu2020_reference&quot;,&quot;label&quot;:&quot;Notsu_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Notsu2020_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Cheng2024_reference&quot;,&quot;label&quot;:&quot;Cheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atomoxetine_Notsu2020_reference&quot;,&quot;label&quot;:&quot;Notsu_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Notsu2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[2]` (not captured vs 15.52) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The atomoxetine model was quarantined because clearance, volume of distribution, absorption rate constant and lag time had no source values and were left at library defaults, with an invented ka of 10.1.**
+
+No value was extracted for atomoxetine's CL/F, V1/F, absorption rate constant or absorption lag time, so library placeholder values were substituted and the model was held back rather than published with invented numbers. The absorption rate constant 10.1 was defaulted, not reported in the source, and this invented absorption was judged not acceptable. The parameterization is apparent: F=1 and Fm=1 were assumed with no molar correction, so CL/F and V1/F are apparent values. A second reader reported CL/F 39.03, V1/F 175.94 and a third parameter 15.52 where this record has null, so the missing values are contested. Extracted — atomoxetine: kabs 10.1, E -0.81, Frel 3.02.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 2: this record has none, the second reading 15.52; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tobin KV; Pritchett A; Leeder JS; Gobburu J; Dunn A et al. (2026). Journal of clinical pharmacology 66
@@ -26,6 +29,9 @@ Tobin KV; Pritchett A; Leeder JS; Gobburu J; Dunn A et al. (2026). Journal of cl
 
 ## Model component
 <dbs-pgx drug="atomoxetine" model-id="Atomoxetine_Tobin2026_reference" status="model_quarantined" stale="false" population="children and adolescents with ADHD" measured-compound="atomoxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

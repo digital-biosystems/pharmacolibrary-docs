@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax and AUC), so that value has no SI equivalent. Extracted — salbutamol: Fab 52.4, V 167 L, Cmax 7.25 ng/mL, tmax 2.35 h, AUC 31.8 ng·h/mL, t1/2z 2.78 h, kabs 3.71 h−1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:47:13.018931+00:00) predates the upstream re-run (2026-09-24 04:46:27.628980+00:00). Current validate status: `needs_review`.
 

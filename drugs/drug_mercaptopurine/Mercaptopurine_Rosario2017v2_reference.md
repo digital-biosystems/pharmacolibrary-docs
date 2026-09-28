@@ -5,7 +5,7 @@
 
 # mercaptopurine — `Mercaptopurine_Rosario2017v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The two-compartment mercaptopurine model was rejected because its peripheral compartment (V2, 1.65 L) is unlinked: no intercompartmental clearance connects it to the central compartment, leaving it unreachable from the dose.**
+
+The record describes a two-compartment structure for mercaptopurine with central volume V1 of 3.19 L, peripheral volume V2 of 1.65 L, and clearance CL of 0.159 L/day in UC patients. Only these three parameters were extracted; no distributional clearance between central and peripheral compartments appears, so the peripheral compartment has no path from the administered dose. The record was therefore rejected for an unreachable compartment. Extracted — mercaptopurine: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Rosario M; Dirks NL; Milch C; Parikh A; Bargfrede M; Wyant T; et al. et al. (2017). Clinical pharmacokinetics 56
@@ -25,6 +29,9 @@ Rosario M; Dirks NL; Milch C; Parikh A; Bargfrede M; Wyant T; et al. et al. (201
 
 ## Model component
 <dbs-pgx drug="mercaptopurine" model-id="Mercaptopurine_Rosario2017v2_reference" status="rejected" stale="false" population="" measured-compound="mercaptopurine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -50,12 +57,12 @@ Rosario M; Dirks NL; Milch C; Parikh A; Bargfrede M; Wyant T; et al. et al. (201
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
 _Every reader agrees on every compared field of this record._
 

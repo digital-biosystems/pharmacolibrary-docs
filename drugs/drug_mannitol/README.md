@@ -5,7 +5,8 @@
 
 - **generic name:** mannitol
 - **ATC codes:** `A06AD16`, `B05BC01`, `B05CX04`, `R05CB16`, `V04CX04`
-- **DrugBank:** [DB00742](https://go.drugbank.com/drugs/DB00742)
+- **DrugBank:** [DB00742](https://go.drugbank.com/drugs/DB00742) · **PubChem:** [CID 6251](https://pubchem.ncbi.nlm.nih.gov/compound/6251)
+- **molar mass:** 182.1718 g/mol (C6H14O6) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -26,9 +27,9 @@ Mannitol is also indicated as add-on maintenance therapy for improving pulmonary
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Noorani_2022_awake young adult mice](drugs/drug_mannitol/Mannitol_Noorani2022_awake_young_adult_mice.md) | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Noorani_2022_awake young adult mice](drugs/drug_mannitol/Mannitol_Noorani2022_awake_young_adult_mice.md) | — (no model) | 0 | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
 
 ## ADME sites
 

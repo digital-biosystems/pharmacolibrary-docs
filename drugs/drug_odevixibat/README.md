@@ -4,7 +4,8 @@
 
 - **generic name:** odevixibat
 - **ATC codes:** `A05AX05`
-- **DrugBank:** [DB16261](https://go.drugbank.com/drugs/DB16261)
+- **DrugBank:** [DB16261](https://go.drugbank.com/drugs/DB16261) · **PubChem:** not captured
+- **molar mass:** 740.93 g/mol (C37H48N4O8S2) — DrugBank
 - **groups:** approved, investigational
 
 ## About

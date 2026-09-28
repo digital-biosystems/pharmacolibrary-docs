@@ -4,7 +4,8 @@
 
 - **generic name:** magnesium citrate
 - **ATC codes:** `A06AD19`, `A12CC04`, `B05CB03`
-- **DrugBank:** [DB11110](https://go.drugbank.com/drugs/DB11110)
+- **DrugBank:** [DB11110](https://go.drugbank.com/drugs/DB11110) · **PubChem:** [CID 6099959](https://pubchem.ncbi.nlm.nih.gov/compound/6099959)
+- **molar mass:** 451.113 g/mol (C12H10Mg3O14) — DrugBank
 - **groups:** approved, investigational
 
 ## About

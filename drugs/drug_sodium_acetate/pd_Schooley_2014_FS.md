@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;sodium acetate&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_acetate/&quot;},{&quot;label&quot;:&quot;Schooley_2014 \u00b7 PD fractional sarcomere shortening&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fractional sarcomere shortening — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>

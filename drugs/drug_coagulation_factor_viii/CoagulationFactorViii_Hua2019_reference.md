@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (coagulation_factor_viii vs Kogenate FS / Advate) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has coagulation_factor_viii, the second reading Kogenate FS / Advate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hua BL; Chelle P; Yeung C; Gu J; Zhao YQ; Iorio A et al. (2019). Zhonghua xue ye xue za zhi = Zhonghua xueyexue zazhi 40
@@ -26,6 +29,9 @@ Hua BL; Chelle P; Yeung C; Gu J; Zhao YQ; Iorio A et al. (2019). Zhonghua xue ye
 
 ## Model component
 <dbs-pgx drug="coagulation factor VIII" model-id="CoagulationFactorViii_Hua2019_reference" status="rejected" stale="false" population="patients with hemophilia A" measured-compound="coagulation_factor_viii" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

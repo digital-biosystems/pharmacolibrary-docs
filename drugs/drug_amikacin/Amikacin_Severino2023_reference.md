@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for amikacin's clearance and volume of distribution.**
+
+The model was built, but amikacin's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (V and CL), so that value has no SI equivalent. Extracted — amikacin: V 71 %, CL 63 %, Q 0.15 L/h, V2 4.26 liters.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Severino N; Urzúa S; Ibacache M; Paulos C; Cortínez L; Toso A; et al. et al. (2023). British journal of clinical pharmacology 89
@@ -26,6 +29,9 @@ Severino N; Urzúa S; Ibacache M; Paulos C; Cortínez L; Toso A; et al. et al. (
 
 ## Model component
 <dbs-pgx drug="amikacin" model-id="Amikacin_Severino2023_reference" status="model_quarantined" stale="false" population="newborns with suspected neonatal sepsis" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

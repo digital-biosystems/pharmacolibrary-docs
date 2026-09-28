@@ -5,7 +5,8 @@
 
 - **generic name:** minocycline
 - **ATC codes:** `A01AB23`, `D10AF07`, `J01AA08`
-- **DrugBank:** [DB01017](https://go.drugbank.com/drugs/DB01017)
+- **DrugBank:** [DB01017](https://go.drugbank.com/drugs/DB01017) · **PubChem:** [CID 54675783](https://pubchem.ncbi.nlm.nih.gov/compound/54675783)
+- **molar mass:** 457.4764 g/mol (C23H27N3O7) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,12 +25,12 @@ Minocycline was granted FDA approval on 30 June 1971.[L11695]
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Pardos_2024_reference](drugs/drug_minocycline/Minocycline_Pardos2024_reference.md) | Pardos SL et al., Population pharmacokinetics/pharmacodyn…, The Journal of antimicrobia… (2024) | [10.1093/jac/dkae363](https://doi.org/10.1093/jac/dkae363) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Tynan_2016_reference](drugs/drug_minocycline/Minocycline_Tynan2016_reference.md) | Tynan BE et al., Pharmacokinetics of minocycline in dome…, Journal of feline medicine… (2016) | [10.1177/1098612X15579114](https://doi.org/10.1177/1098612X15579114) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.2567)</sub><br><sub>route_to: `human_review`</sub> | [Athanassa_2025_reference](drugs/drug_minocycline/Minocycline_Athanassa2025_reference.md) | Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Barrasa_2024_reference](drugs/drug_minocycline/Minocycline_Barrasa2024_reference.md) | Barrasa H et al., Optimizing Antibiotic Therapy for, Antibiotics (Basel, Switzer… (2024) | [10.3390/antibiotics13060553](https://doi.org/10.3390/antibiotics13060553) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Pardos_2024_reference](drugs/drug_minocycline/Minocycline_Pardos2024_reference.md) | 1-compartment, IV | 2 | Pardos SL et al., Population pharmacokinetics/pharmacodyn…, The Journal of antimicrobia… (2024) | [10.1093/jac/dkae363](https://doi.org/10.1093/jac/dkae363) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Tynan_2016_reference](drugs/drug_minocycline/Minocycline_Tynan2016_reference.md) | 1-compartment, IV | 7 | Tynan BE et al., Pharmacokinetics of minocycline in dome…, Journal of feline medicine… (2016) | [10.1177/1098612X15579114](https://doi.org/10.1177/1098612X15579114) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.2567)</sub><br><sub>route_to: `human_review`</sub> | [Athanassa_2025_reference](drugs/drug_minocycline/Minocycline_Athanassa2025_reference.md) | 1-compartment (no model) | 3 | Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Barrasa_2024_reference](drugs/drug_minocycline/Minocycline_Barrasa2024_reference.md) | 2-compartment (no model) | 3 | Barrasa H et al., Optimizing Antibiotic Therapy for, Antibiotics (Basel, Switzer… (2024) | [10.3390/antibiotics13060553](https://doi.org/10.3390/antibiotics13060553) |
 
 ## Pharmacodynamics (PD)
 

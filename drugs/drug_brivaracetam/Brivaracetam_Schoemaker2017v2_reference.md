@@ -15,15 +15,20 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The brivaracetam paediatric model was rejected because the allometric scaling exponents for CL/F (0.750) and V/F (1.00) were recorded as plain volumes in L, a dimension mismatch on structural parameters.**
+
+In the record, the parameters labelled 'Allometric scaling CL/F' and 'Allometric scaling V/F' carry values 0.750 and 1.00 with the unit L, i.e. dimensionless scaling exponents entered as volumes. This dimension mismatch on a structural parameter (C5) triggered rejection. The underlying limitation is that a reported unit could not be converted to SI units, so the parameter reached the record without an SI value; the checks otherwise gave no further numbers to report. Extracted — brivaracetam: CL/F 0.75 L, V/F 1 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Schoemaker_2017_2)
 
 ## Model component
 <dbs-pgx drug="brivaracetam" model-id="Brivaracetam_Schoemaker2017v2_reference" status="rejected" stale="false" population="children with epilepsy aged 1 month to 16 years" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

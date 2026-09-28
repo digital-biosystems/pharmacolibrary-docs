@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_output_variable — expected Metabolite_C (measured=clopidogrel active metabolite) — got C_central; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (clopidogrel vs unknown) and 16 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The clopidogrel parent–metabolite model was quarantined because clopidogrel's clearance and volume of distribution had no extracted values and library placeholder defaults were substituted.**
+
+No clearance or volume of distribution for clopidogrel appears among the extracted parameters — only exposure metrics (Cmax 1.5 ng/ml, AUClast 127 ng/ml·min, t1/2z 131 min for clopidogrel; Cmax 35.4 ng/ml, AUClast 1706 ng/ml·min, t1/2z 24 min for the active metabolite) and pantoprazole parameters (CL 79 ml/min, V 4128 ml). With clopidogrel's Cl and Vd missing, generic library placeholder values stood in for these structural parameters, so the model was held back rather than published with invented numbers. Additionally, the model's output compartment did not correspond to the measured analyte (clopidogrel active metabolite), and the fitted structure did not match the intended parent–metabolite topology. One reported unit could not be converted to SI, so that parameter reached the model builder without an SI value; a second reader also disputed the dose compartment and primary analyte assignments and read a normal-metabolizer parameter of 8 where the record had none. Extracted — clopidogrel: Cmax 1.5 ng/ml, Cmax_ratio 24.2, AUClast 127 ng/ml·min, t1/2z 131 min; clopidogrel active metabolite: Cmax 35.4 ng/ml, AUClast 1.71e+03 ng/ml·min, t1/2z 24 min; pantoprazole: Cmax 18.7 μg/ml, AUClast 492 μg/ml·min, t1/2z 57.3 min, CL 79 ml/min, V 4.13e+03 ml.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clopidogrel, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `clopidogrel`, measured `clopidogrel active metabolite`.
 

@@ -4,7 +4,8 @@
 
 - **generic name:** dosulepin
 - **ATC codes:** `N06AA16`
-- **DrugBank:** [DB09167](https://go.drugbank.com/drugs/DB09167)
+- **DrugBank:** [DB09167](https://go.drugbank.com/drugs/DB09167) · **PubChem:** [CID 5284550](https://pubchem.ncbi.nlm.nih.gov/compound/5284550)
+- **molar mass:** 295.44 g/mol (C19H21NS) — DrugBank
 - **groups:** approved, investigational
 
 ## About

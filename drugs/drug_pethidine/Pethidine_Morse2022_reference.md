@@ -5,7 +5,7 @@
 
 # pethidine — `Pethidine_Morse2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T3_param_coverage
-**How to address:** Open the emitted .mo and compare its base class and parameters with the record.
-<sub>owner: **engineer**</sub>
+**The pethidine two-compartment model record was held back because the absorption lag time parameter tlag (5.3 min) was not extracted, leaving only 4 of the 5 published parameters covered.**
+
+The record lists pethidine parameters CL 24.0 L/h/70 kg, V1 43.7 L/70 kg, V2 29.7 L/70 kg and Q 43.5 L/h/70 kg, but the lag time tlag of 5.3 min from the paper is absent, so only 4 of the expected 5 parameters are covered. The second reader also disagreed on several extracted values, reading CL and Q as null and V1 and V2 as null in the opposite direction, and reported three additional parameters (86, 0.61 and 2.5) that this record does not contain, so the parameter set itself is contested. Extracted — pethidine: CL 24 L/h/70 kg, V1 43.7 L/70 kg, V2 29.7 L/70 kg, Q 43.5 L/h/70 kg, tlag 5.3 min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 24.0, the second reading none; it also differs on 8 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Morse JD; Stanescu I; Atkinson HC; Anderson BJ et al. (2022). European journal of drug metabolism and pharmacokinetics 47
@@ -25,6 +29,9 @@ Morse JD; Stanescu I; Atkinson HC; Anderson BJ et al. (2022). European journal o
 
 ## Model component
 <dbs-pgx drug="pethidine" model-id="Pethidine_Morse2022_reference" status="needs_review" stale="false" population="" measured-compound="pethidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -57,9 +64,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.1 (1/10 fields) | 9 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 24.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q30]` | 43.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q316]` | 7.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | not captured | 86 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q56]` | not captured | 0.61 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q58]` | not captured | 2.5 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | 43.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 29.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q83]` | 5.3 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +148,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_pethidine/Pethidine_Morse2022_reference/Pethidine_Morse2022_reference.svg" alt="Pethidine_Morse2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_pethidine/Pethidine_Morse2022_reference/Pethidine_Morse2022_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_pethidine/Pethidine_Morse2022_reference/Pethidine_Morse2022_reference_sim_controls.json"></dbs-fmusim>
 

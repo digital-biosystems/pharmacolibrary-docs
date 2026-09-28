@@ -4,7 +4,7 @@
 
 - **generic name:** silicones
 - **ATC codes:** `A03AX13`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

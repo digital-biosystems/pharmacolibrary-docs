@@ -4,7 +4,7 @@
 
 - **generic name:** catridecacog
 - **ATC codes:** `B02BD11`
-- **DrugBank:** [DB09310](https://go.drugbank.com/drugs/DB09310)
+- **DrugBank:** [DB09310](https://go.drugbank.com/drugs/DB09310) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

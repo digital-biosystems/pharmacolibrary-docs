@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** split column 'interindividual variability/residual variability' is a table statistic/structure column, not a study population (mis-split estimate table)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**'interindividual variability/residual variability' is a column of the estimates table, not a study population.**
+
+The table was split into one record per column, and 'interindividual variability/residual variability' holds a statistic rather than a second set of estimates.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Dudkowski C; Tsai M; Liu J; Zhao Z; Schmidt E; Xie J et al. (2017). European journal of clinical pharmacology 73
@@ -25,6 +27,9 @@ Dudkowski C; Tsai M; Liu J; Zhao Z; Schmidt E; Xie J et al. (2017). European jou
 
 ## Model component
 <dbs-pgx drug="alogliptin" model-id="Alogliptin_Dudkowski2017_interindividual_variability_residua" status="rejected" stale="false" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

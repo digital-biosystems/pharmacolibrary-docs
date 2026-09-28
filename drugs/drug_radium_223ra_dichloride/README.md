@@ -5,7 +5,7 @@
 
 - **generic name:** radium (223Ra) dichloride
 - **ATC codes:** `V10XX03`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary
@@ -16,9 +16,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.167). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Höllriegl_2021_reference](drugs/drug_radium_223ra_dichloride/Radium223raDichloride_Hllriegl2021_reference.md) | Höllriegl V et al., Radiopharmacokinetic modelling and radi…, EJNMMI physics (2021) | [10.1186/s40658-021-00388-1](https://doi.org/10.1186/s40658-021-00388-1) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.167). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Höllriegl_2021_reference](drugs/drug_radium_223ra_dichloride/Radium223raDichloride_Hllriegl2021_reference.md) | general linear (no model) | 0 | Höllriegl V et al., Radiopharmacokinetic modelling and radi…, EJNMMI physics (2021) | [10.1186/s40658-021-00388-1](https://doi.org/10.1186/s40658-021-00388-1) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

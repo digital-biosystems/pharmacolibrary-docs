@@ -4,7 +4,8 @@
 
 - **generic name:** Orforglipron
 - **ATC codes:** not captured
-- **DrugBank:** [DB18964](https://go.drugbank.com/drugs/DB18964)
+- **DrugBank:** [DB18964](https://go.drugbank.com/drugs/DB18964) · **PubChem:** not captured
+- **molar mass:** 882.974 g/mol (C48H48F2N10O5) — DrugBank
 - **groups:** investigational
 
 ## About

@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Li L; Sassen SDT; van der Jagt M; Endeman H; Koch BCP; Hunfeld NGM et al. (2022). Pharmaceutics 14
@@ -26,6 +27,9 @@ Li L; Sassen SDT; van der Jagt M; Endeman H; Koch BCP; Hunfeld NGM et al. (2022)
 
 ## Model component
 <dbs-pgx drug="haloperidol" model-id="Haloperidol_Li2022_reference" status="curated_candidate" stale="false" population="critically ill adult patients with ICU delirium" measured-compound="haloperidol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -122,6 +126,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_haloperidol/Haloperidol_Li2022_reference/Haloperidol_Li2022_reference.svg" alt="Haloperidol_Li2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_haloperidol/Haloperidol_Li2022_reference/Haloperidol_Li2022_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_haloperidol/Haloperidol_Li2022_reference/Haloperidol_Li2022_reference_sim_controls.json"></dbs-fmusim>
 

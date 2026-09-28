@@ -4,7 +4,8 @@
 
 - **generic name:** clotrimazole
 - **ATC codes:** `A01AB18`, `D01AC01`, `G01AF02`
-- **DrugBank:** [DB00257](https://go.drugbank.com/drugs/DB00257)
+- **DrugBank:** [DB00257](https://go.drugbank.com/drugs/DB00257) · **PubChem:** [CID 2812](https://pubchem.ncbi.nlm.nih.gov/compound/2812)
+- **molar mass:** 344.837 g/mol (C22H17ClN2) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About

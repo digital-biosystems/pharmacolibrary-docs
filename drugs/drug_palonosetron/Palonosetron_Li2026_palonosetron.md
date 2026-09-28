@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The palonosetron record was rejected because the metabolite fosrolapitant has no link parameter for its hydrolysis to rolapitant, leaving it unconnected to the dose, and the AUC unit h × ng/mL could not be converted to SI.**
+
+The model structure lists a hydrolysis link from fosrolapitant to rolapitant, but the link parameter is recorded as none, so fosrolapitant is an orphan metabolite with no path from the dose. In addition, the reported units h × ng/mL for AUC0–t (31.18) and AUC0−∞ (34.89) could not be converted to SI units, so those parameters lacked SI values. The remaining parameters (Cmax 0.67 ng/mL, t1/2 81.80 h, V 839.62 L, CL 7.92 L/h) were extracted, but the unlinked metabolite and unconvertible AUC units left the model unusable. Extracted — palonosetron: Cmax 0.67 ng/mL, AUCt 31.2 h × ng/mL, AUC∞ 34.9 h × ng/mL, t1/2z 81.8 hour, V 840 L, CL 7.92 L/h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `Ritanine`, measured `fosrolapitant`.
 
@@ -27,6 +29,9 @@ Li Q; Mai J; Wu M; Zhang H; Yang X; Huang Y; et al. et al. (2026). Frontiers in 
 
 ## Model component
 <dbs-pgx drug="palonosetron" model-id="Palonosetron_Li2026_palonosetron" status="rejected" stale="false" population="Chinese subjects with moderate hepatic impairment and healthy controls" measured-compound="fosrolapitant" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

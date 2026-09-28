@@ -4,7 +4,8 @@
 
 - **generic name:** carbenoxolone
 - **ATC codes:** `A02BX01`
-- **DrugBank:** [DB02329](https://go.drugbank.com/drugs/DB02329)
+- **DrugBank:** [DB02329](https://go.drugbank.com/drugs/DB02329) · **PubChem:** [CID 636403](https://pubchem.ncbi.nlm.nih.gov/compound/636403)
+- **molar mass:** 570.7566 g/mol (C34H50O7) — DrugBank
 - **groups:** experimental
 
 ## About

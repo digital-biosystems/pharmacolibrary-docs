@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The two-compartment abacavir model for HIV-infected infants and children was rejected because one compartment has no path from the dose, making it unreachable.**
+
+The record describes a two-compartment abacavir model with parameters such as absorption rate constant 0.913 h⁻¹, CL/F 20.1 l·h⁻¹, Q/F 2.0 l·h⁻¹, V1/F 13.0 l and V2/F 13.5 l. The review found an unreachable or orphan compartment, i.e. a compartment not connected to the dosing input, so the model was refused. No other failed checks or builder deviations are recorded. Extracted — abacavir: kabs 0.913 h -1, CL/F 20.1 l h -1, Q 0.802, V2/F 13.5 l, Q/F 2 l h -1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 22:42:01.499816+00:00) predates the upstream re-run (2026-09-23 18:22:09.527071+00:00). Current validate status: `rejected`.
 

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build).
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Burk M; Peters U et al. (1983). Clinical pharmacology and therapeutics 34
@@ -25,6 +27,9 @@ Burk M; Peters U et al. (1983). Clinical pharmacology and therapeutics 34
 
 ## Model component
 <dbs-pgx drug="disopyramide" model-id="Disopyramide_Burk1983_reference" status="rejected" stale="false" population="patients with renal impairment" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[median cl]` (169 vs not captured) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The S-warfarin clearance parameter carries a concentration unit (169 μg/mL) instead of a flow unit, a dimensional mismatch on a structural parameter, and the record was built from the abstract alone.**
+
+The clearance of S-warfarin is recorded as 169 μg/mL, a unit of concentration rather than volume per time, so the parameter is dimensionally inconsistent with clearance. The volume of distribution (14.3 L), absorption rate constant (0.214 1/h) and lag time (1.29 h) are dimensionally coherent. The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. A second reader could not confirm the clearance value, reading it as absent. Extracted — S-warfarin: CL 169 μg/mL, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of median cl: this record has 169, the second reading none. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 22:23:49.289499+00:00) predates the upstream re-run (2026-09-23 12:18:35.880471+00:00). Current validate status: `rejected`.
 

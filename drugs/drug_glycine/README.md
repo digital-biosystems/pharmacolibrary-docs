@@ -4,7 +4,8 @@
 
 - **generic name:** glycine
 - **ATC codes:** `B05CX03`
-- **DrugBank:** [DB00145](https://go.drugbank.com/drugs/DB00145)
+- **DrugBank:** [DB00145](https://go.drugbank.com/drugs/DB00145) · **PubChem:** [CID 750](https://pubchem.ncbi.nlm.nih.gov/compound/750)
+- **molar mass:** 75.0666 g/mol (C2H5NO2) — DrugBank
 - **groups:** approved, investigational, nutraceutical, vet_approved
 
 ## About

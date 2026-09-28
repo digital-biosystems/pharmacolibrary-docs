@@ -5,7 +5,8 @@
 
 - **generic name:** lumiracoxib
 - **ATC codes:** `M01AH06`
-- **DrugBank:** [DB01283](https://go.drugbank.com/drugs/DB01283)
+- **DrugBank:** [DB01283](https://go.drugbank.com/drugs/DB01283) · **PubChem:** [CID 151166](https://pubchem.ncbi.nlm.nih.gov/compound/151166)
+- **molar mass:** 293.721 g/mol (C15H13ClFNO2) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vásquez-Bahena_2010_2_reference](drugs/drug_lumiracoxib/Lumiracoxib_VsquezBahena20102_reference.md) | Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2010) | [10.1111/j.1476-5381.2009.00508.x](https://doi.org/10.1111/j.1476-5381.2009.00508.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vásquez-Bahena_2010_2_reference](drugs/drug_lumiracoxib/Lumiracoxib_VsquezBahena20102_reference.md) | general linear (no model) | 4 | Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2010) | [10.1111/j.1476-5381.2009.00508.x](https://doi.org/10.1111/j.1476-5381.2009.00508.x) |
 
 ## ADME sites
 

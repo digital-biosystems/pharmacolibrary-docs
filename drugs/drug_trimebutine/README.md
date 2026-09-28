@@ -4,7 +4,8 @@
 
 - **generic name:** trimebutine
 - **ATC codes:** `A03AA05`
-- **DrugBank:** [DB09089](https://go.drugbank.com/drugs/DB09089)
+- **DrugBank:** [DB09089](https://go.drugbank.com/drugs/DB09089) · **PubChem:** [CID 5573](https://pubchem.ncbi.nlm.nih.gov/compound/5573)
+- **molar mass:** 387.476 g/mol (C22H29NO5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

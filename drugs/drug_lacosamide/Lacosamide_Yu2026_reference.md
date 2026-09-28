@@ -17,9 +17,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
-**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
-<sub>owner: **curator**</sub>
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yu L; Mao F; Chen S; Yu K; Hu Y; Chen J; et al. et al. (2026). BMC pharmacology & toxicology 27
@@ -27,6 +29,9 @@ Yu L; Mao F; Chen S; Yu K; Hu Y; Chen J; et al. et al. (2026). BMC pharmacology 
 
 ## Model component
 <dbs-pgx drug="lacosamide" model-id="Lacosamide_Yu2026_reference" status="accepted_with_caveats" stale="false" population="adult patients with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -122,6 +127,8 @@ Yu L; Mao F; Chen S; Yu K; Hu Y; Chen J; et al. et al. (2026). BMC pharmacology 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_lacosamide/Lacosamide_Yu2026_reference/Lacosamide_Yu2026_reference.svg" alt="Lacosamide_Yu2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 6.47 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_lacosamide/Lacosamide_Yu2026_reference/Lacosamide_Yu2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lacosamide/Lacosamide_Yu2026_reference/Lacosamide_Yu2026_reference_sim_controls.json"></dbs-fmusim>
 

@@ -4,7 +4,8 @@
 
 - **generic name:** imidazole salicylate
 - **ATC codes:** `N02BA16`
-- **DrugBank:** [DB13860](https://go.drugbank.com/drugs/DB13860)
+- **DrugBank:** [DB13860](https://go.drugbank.com/drugs/DB13860) · **PubChem:** not captured
+- **molar mass:** 206.201 g/mol (C10H10N2O3) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

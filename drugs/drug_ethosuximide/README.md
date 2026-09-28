@@ -5,7 +5,8 @@
 
 - **generic name:** ethosuximide
 - **ATC codes:** `N03AD01`
-- **DrugBank:** [DB00593](https://go.drugbank.com/drugs/DB00593)
+- **DrugBank:** [DB00593](https://go.drugbank.com/drugs/DB00593) · **PubChem:** [CID 3291](https://pubchem.ncbi.nlm.nih.gov/compound/3291)
+- **molar mass:** 141.1677 g/mol (C7H11NO2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [el_1978_reference](drugs/drug_ethosuximide/Ethosuximide_el1978_reference.md) | el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [el_1978_reference](drugs/drug_ethosuximide/Ethosuximide_el1978_reference.md) | 1-compartment (no model) | 0 | el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978) | — |
 
 ## ADME sites
 

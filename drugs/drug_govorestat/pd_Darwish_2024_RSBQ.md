@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;govorestat&quot;,&quot;href&quot;:&quot;drugs/drug_govorestat/&quot;},{&quot;label&quot;:&quot;Darwish_2024 \u00b7 PD Rett Syndrome Behaviour Questionnaire total score&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Rett Syndrome Behaviour Questionnaire total score — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>

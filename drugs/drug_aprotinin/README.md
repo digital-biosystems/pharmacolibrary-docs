@@ -5,7 +5,7 @@
 
 - **generic name:** aprotinin
 - **ATC codes:** `B02AB01`
-- **DrugBank:** [DB06692](https://go.drugbank.com/drugs/DB06692)
+- **DrugBank:** [DB06692](https://go.drugbank.com/drugs/DB06692) · **PubChem:** not captured
 - **groups:** approved, investigational, withdrawn
 
 ## About
@@ -22,9 +22,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Tae_2011_neonates and young infants undergoing cardiopulmonary bypass](drugs/drug_aprotinin/Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card.md) | Tae YM et al., Population pharmacokinetic analysis and…, Journal of clinical pharmac… (2011) | [10.1177/0091270010379411](https://doi.org/10.1177/0091270010379411) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Tae_2011_neonates and young infants undergoing cardiopulmonary bypass](drugs/drug_aprotinin/Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card.md) | — (no model) | 0 | Tae YM et al., Population pharmacokinetic analysis and…, Journal of clinical pharmac… (2011) | [10.1177/0091270010379411](https://doi.org/10.1177/0091270010379411) |
 
 ## Pharmacogenomics (PGx)
 

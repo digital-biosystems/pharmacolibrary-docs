@@ -4,7 +4,8 @@
 
 - **generic name:** cathine
 - **ATC codes:** `A08AA07`
-- **DrugBank:** [DB01486](https://go.drugbank.com/drugs/DB01486)
+- **DrugBank:** [DB01486](https://go.drugbank.com/drugs/DB01486) · **PubChem:** [CID 441457](https://pubchem.ncbi.nlm.nih.gov/compound/441457)
+- **molar mass:** 151.2056 g/mol (C9H13NO) — DrugBank
 - **groups:** experimental, illicit
 
 ## About

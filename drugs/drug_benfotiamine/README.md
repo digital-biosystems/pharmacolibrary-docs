@@ -4,7 +4,8 @@
 
 - **generic name:** benfotiamine
 - **ATC codes:** `A11DA03`
-- **DrugBank:** [DB11748](https://go.drugbank.com/drugs/DB11748)
+- **DrugBank:** [DB11748](https://go.drugbank.com/drugs/DB11748) · **PubChem:** [CID 3032771](https://pubchem.ncbi.nlm.nih.gov/compound/3032771)
+- **molar mass:** 466.45 g/mol (C19H23N4O6PS) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
 ## About

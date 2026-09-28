@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q32]` (2 vs not captured) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**Metformin ka and Tlag were not reported and left at library placeholders, with F=1, Fm=1 and no molar correction assumed, so the invented absorption term makes the record unacceptable.**
+
+The record gives metformin CL/F 9.1 L/h and V/F 28.3 L in a one-compartment structure from a review-secondary source, but no absorption rate constant or lag time appears in the source, so placeholder values would have been used. The builder assumed F=1 and Fm=1 with no molar correction, yielding an apparent (/F) parameterization with first-order depot input for extravascular dosing. The failed check judged the defaulted ka an invented absorption term, not acceptable. A second reader recorded no value for the V/F field, disagreeing with the extracted 28.3 L. Extracted — metformin: CL/F 9.1 L/h, V/F 28.3 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 2, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Min JS; Jo SJ; Lee S; Kim DY; Kim DH; Lee CB; Bae SK et al. (2025). Drug design, development and therapy 19

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (allopurinol vs unknown) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The oxypurinol elimination-rate constant was extracted as 1.09 with unit 'h' instead of 1/h, a dimension mismatch on a structural parameter, and the clearance/volume values fell outside the physiological window, so the allopurinol–oxypurinol model was rejected.**
+
+The oxypurinol elimination rate constant is recorded as 1.09 with the unit 'h', an inverted dimension for a first-order rate constant that must be per hour; this dimension mismatch on a structural parameter made the record unusable. The same record's clearance (0.848 L/h) and volume (41.6 L) for oxypurinol were flagged as outside the physiological window, consistent with a unit or scale extraction error. One reported unit could not be converted to SI, so that parameter was carried without an SI value. The covariate coefficient θ diuretic (0.74) was also disputed between readers, one recording 0.74 and the other null, leaving that value inconclusive. Extracted — oxypurinol: CL 0.848 L/h, V1 41.6 l, kel 1.09 h, V 0.0355 L; urate: kel 1.3 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
 

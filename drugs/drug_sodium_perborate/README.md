@@ -4,7 +4,8 @@
 
 - **generic name:** sodium perborate
 - **ATC codes:** `A01AB19`
-- **DrugBank:** [DB13235](https://go.drugbank.com/drugs/DB13235)
+- **DrugBank:** [DB13235](https://go.drugbank.com/drugs/DB13235) · **PubChem:** not captured
+- **molar mass:** 59.82 g/mol (BHO3) — DrugBank
 - **groups:** approved
 
 ## About

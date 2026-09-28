@@ -4,7 +4,8 @@
 
 - **generic name:** drotaverine
 - **ATC codes:** `A03AD02`
-- **DrugBank:** [DB06751](https://go.drugbank.com/drugs/DB06751)
+- **DrugBank:** [DB06751](https://go.drugbank.com/drugs/DB06751) · **PubChem:** [CID 1712095](https://pubchem.ncbi.nlm.nih.gov/compound/1712095)
+- **molar mass:** 397.5072 g/mol (C24H31NO4) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

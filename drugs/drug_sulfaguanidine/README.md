@@ -4,7 +4,8 @@
 
 - **generic name:** sulfaguanidine
 - **ATC codes:** `A07AB03`
-- **DrugBank:** [DB13726](https://go.drugbank.com/drugs/DB13726)
+- **DrugBank:** [DB13726](https://go.drugbank.com/drugs/DB13726) · **PubChem:** not captured
+- **molar mass:** 214.24 g/mol (C7H10N4O2S) — DrugBank
 - **groups:** experimental
 
 ## About

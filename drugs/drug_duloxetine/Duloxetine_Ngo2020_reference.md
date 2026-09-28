@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The duloxetine parent–metabolite model was rejected because the 4-hydroxy duloxetine metabolite is unlinked: the metabolism rate constant Kfm connecting it to parent duloxetine carries no value, leaving the metabolite compartment unreachable from the dose.**
+
+The record describes duloxetine converting to 4-hydroxy duloxetine via first-pass and systemic metabolism, with a metabolism link parameter Kfm between the two, but no numerical value is given for Kfm. The metabolite's clearance and volume (CLm/F 12.3, Vm/F 84.2) are listed, yet without a valued formation rate constant the metabolite compartment has no path from the duloxetine dose. The bioavailability parameter Fab after the first-pass effect likewise has no extracted value. The review therefore judged the metabolite compartment orphaned and refused the record. Extracted — duloxetine: kabs 1.35, CL 1.97, V2 14.6; 4-hydroxy duloxetine: CLm/F 12.3, Vm/F 84.2.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ngo TL; Lee CH; Han N; Back HM; Rhee SJ; Noh K; et al. et al. (2020). International journal of molecular sciences 21
@@ -25,6 +27,9 @@ Ngo TL; Lee CH; Han N; Back HM; Rhee SJ; Noh K; et al. et al. (2020). Internatio
 
 ## Model component
 <dbs-pgx drug="duloxetine" model-id="Duloxetine_Ngo2020_reference" status="rejected" stale="false" population="rats and extrapolated humans" measured-compound="duloxetine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 5 extracted, plus 6 covariate effects.
 
 **Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

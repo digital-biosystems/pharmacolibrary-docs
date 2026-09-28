@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (prenylamine vs unknown) and 11 more field(s) — a structural parameter, so the record is disputed.
+**The prenylamine record was rejected because a structural parameter carries a dimension mismatch, and the record rests on the paper's abstract alone rather than a fitted model.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The stated cause of rejection is a dimension mismatch on a structural parameter of the one-compartment prenylamine model, meaning a parameter's unit is inconsistent with the role that quantity plays in the model structure. The record was built from the abstract only, so the reported summary statistics — terminal elimination half-life 14.1 h, apparent total clearance 5.8 l/min, relative bioavailability 82.2%, absolute bioavailability 15%, AUC of the (+)-enantiomer 20% — stood in for a fitted model. A second reader left the parameter values (14.1, 5.8, 20, 82.2) unset in its own reading, so no independent confirmation of them exists; the disagreement on the absolute bioavailability field is inconclusive, as one reading gave 15 and the other null. Extracted — prenylamine: t1/2z 14.1 h, CL 5.8 l/min, Frel 82.2 %, Fab 15 %, AUC 20 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has prenylamine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Paar WD; Brockmeier D; Hirzebruch M; Schmidt EK; von Unruh GE; Dengler HJ et al. (1990). Arzneimittel-Forschung 40

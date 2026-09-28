@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for bendamustine's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant.**
+
+The model was built, but bendamustine's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — bendamustine: V1 14.9, CL 32.5, V2 0.508, Q 0.238, V3 0.323, Q3 0.793.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kim T; Choi HY; Lee HS; Jung SH; Ahn JS; Kim HJ; et al. et al. (2018). BMC cancer 18
@@ -25,6 +27,9 @@ Kim T; Choi HY; Lee HS; Jung SH; Ahn JS; Kim HJ; et al. et al. (2018). BMC cance
 
 ## Model component
 <dbs-pgx drug="bendamustine" model-id="Bendamustine_Kim2018_reference" status="model_quarantined" stale="false" population="patients with relapsed/refractory primary central nervous system lymphoma" measured-compound="bendamustine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -4,7 +4,8 @@
 
 - **generic name:** troxipide
 - **ATC codes:** `A02BX11`
-- **DrugBank:** [DB13419](https://go.drugbank.com/drugs/DB13419)
+- **DrugBank:** [DB13419](https://go.drugbank.com/drugs/DB13419) · **PubChem:** not captured
+- **molar mass:** 294.351 g/mol (C15H22N2O4) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (MTT), so that value has no SI equivalent.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `docetaxel, paclitaxel, etoposide, DMDC, irinotecan, vinflunine`, measured `leukocytes, neutrophils`.
 
@@ -27,6 +29,9 @@ Friberg LE; Henningsson A; Maas H; Nguyen L; Karlsson MO et al. (2002). Journal 
 
 ## Model component
 <dbs-pgx drug="irinotecan" model-id="Irinotecan_Friberg2002_cpt_11" status="rejected" stale="false" population="cancer patients" measured-compound="leukocytes, neutrophils" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

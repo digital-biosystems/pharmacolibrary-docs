@@ -5,7 +5,7 @@
 
 - **generic name:** Thiamine
 - **ATC codes:** `A11DA01`
-- **DrugBank:** [DB00152](https://go.drugbank.com/drugs/DB00152)
+- **DrugBank:** [DB00152](https://go.drugbank.com/drugs/DB00152) · **PubChem:** not captured
 - **groups:** approved, investigational, nutraceutical, vet_approved
 
 ## About
@@ -22,9 +22,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rindi_1980_rats](drugs/drug_thiamine/Thiamine_Rindi1980_rats.md) | Rindi G et al., Thiamine content and turnover rates of…, Brain research (1980) | [10.1016/0006-8993(80)90619-8](https://doi.org/10.1016/0006-8993(80)90619-8) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rindi_1980_rats](drugs/drug_thiamine/Thiamine_Rindi1980_rats.md) | — (no model) | 0 | Rindi G et al., Thiamine content and turnover rates of…, Brain research (1980) | [10.1016/0006-8993(80)90619-8](https://doi.org/10.1016/0006-8993(80)90619-8) |
 
 ## Pharmacodynamics (PD)
 

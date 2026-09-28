@@ -4,7 +4,7 @@
 
 - **generic name:** dihydrocodeine, combinations
 - **ATC codes:** `N02AA58`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[fcrp]` (not captured vs 1.33) and 6 more field(s) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for retinol's clearance and volume of distribution.**
+
+The model was built, but retinol's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — retinol: V 9.03.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of fcrp: this record has none, the second reading 1.33; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `4-HPR`, measured `retinol`.
 
@@ -28,6 +31,9 @@ Adams WR; Smith JE; Green MH et al. (1995). Proceedings of the Society for Exper
 
 ## Model component
 <dbs-pgx drug="retinol" model-id="Retinol_Adams1995_control" status="model_quarantined" stale="false" population="rats" measured-compound="retinol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

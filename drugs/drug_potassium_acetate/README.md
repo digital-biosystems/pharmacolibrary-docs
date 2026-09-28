@@ -4,7 +4,8 @@
 
 - **generic name:** potassium acetate
 - **ATC codes:** `B05XA17`
-- **DrugBank:** [DB14498](https://go.drugbank.com/drugs/DB14498)
+- **DrugBank:** [DB14498](https://go.drugbank.com/drugs/DB14498) · **PubChem:** not captured
+- **molar mass:** 98.1423 g/mol (C2H3KO2) — DrugBank
 - **groups:** approved
 
 ## About

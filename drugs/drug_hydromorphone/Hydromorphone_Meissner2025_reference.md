@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (morphine and hydromorphone vs morphine; hydromorphone) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The hydromorphone arm of the model has no metabolic link to any metabolite (an orphan compound), and the central volume of distribution was reported as 7 %, a unit not convertible to SI, so the record was rejected.**
+
+The structure links morphine to its glucuronides via a formation clearance, but the hydromorphone link is recorded with no parameter, no relation and no target, leaving hydromorphone as a compartment with no path from the dose. The central volume of distribution carries the value 7 with the unit '%', which cannot be expressed in SI units, so no SI value could be assigned. A second reader also disagreed on the primary analyte (morphine and hydromorphone versus morphine; hydromorphone), on the glucuronide naming, and on whether the two parameters (clearance 83.8 L/h, volume 7 %) belong to this record at all, reading them as null. Extracted — morphine and hydromorphone: CL 83.8 L h À1, V 7 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has morphine and hydromorphone, the second reading morphine; hydromorphone; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Meissner K; Olofsen E; Dahan A; Kharasch ED et al. (2025). British journal of anaesthesia 134
@@ -26,6 +29,9 @@ Meissner K; Olofsen E; Dahan A; Kharasch ED et al. (2025). British journal of an
 
 ## Model component
 <dbs-pgx drug="hydromorphone" model-id="Hydromorphone_Meissner2025_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="morphine and hydromorphone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

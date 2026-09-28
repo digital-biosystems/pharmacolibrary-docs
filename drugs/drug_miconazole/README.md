@@ -5,7 +5,8 @@
 
 - **generic name:** miconazole
 - **ATC codes:** `A01AB09`, `A07AC01`, `D01AC02`, `G01AF04`, `J02AB01`, `S02AA13`
-- **DrugBank:** [DB01110](https://go.drugbank.com/drugs/DB01110)
+- **DrugBank:** [DB01110](https://go.drugbank.com/drugs/DB01110) · **PubChem:** [CID 4189](https://pubchem.ncbi.nlm.nih.gov/compound/4189)
+- **molar mass:** 416.129 g/mol (C18H14Cl4N2O) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -24,9 +25,9 @@ Miconazole was first synthesized in 1969 and first granted FDA approval on Janua
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mikamo_1997_reference](drugs/drug_miconazole/Miconazole_Mikamo1997_reference.md) | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mikamo_1997_reference](drugs/drug_miconazole/Miconazole_Mikamo1997_reference.md) | 1-compartment (no model) | 3 | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) |
 
 ## ADME sites
 

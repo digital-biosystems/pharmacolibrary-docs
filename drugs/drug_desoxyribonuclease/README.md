@@ -4,7 +4,7 @@
 
 - **generic name:** desoxyribonuclease
 - **ATC codes:** `B06AA02`, `B06AA10`
-- **DrugBank:** [DB09551](https://go.drugbank.com/drugs/DB09551)
+- **DrugBank:** [DB09551](https://go.drugbank.com/drugs/DB09551) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

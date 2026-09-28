@@ -5,7 +5,8 @@
 
 - **generic name:** brivaracetam
 - **ATC codes:** `N03AX23`
-- **DrugBank:** [DB05541](https://go.drugbank.com/drugs/DB05541)
+- **DrugBank:** [DB05541](https://go.drugbank.com/drugs/DB05541) · **PubChem:** [CID 9837243](https://pubchem.ncbi.nlm.nih.gov/compound/9837243)
+- **molar mass:** 212.2887 g/mol (C11H20N2O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schoemaker_2017_2_reference](drugs/drug_brivaracetam/Brivaracetam_Schoemaker2017v2_reference.md) | Schoemaker (2017) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schoemaker_2017_2_reference](drugs/drug_brivaracetam/Brivaracetam_Schoemaker2017v2_reference.md) | 1-compartment (no model) | 2 | Schoemaker (2017) | — |
 
 ## ADME sites
 

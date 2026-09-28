@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction)
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (0.048 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record was rejected because apparent (F-corrected) parameters CL/F 80.9 L/h, V/F 628 L, CLm/F 22.1 L/h and Vm/F 238 L were additionally corrected with bioavailability F 0.048, a double correction, and the 0.593 L/h value is an amisulpride covariate effect on CLm/F, not a clearance.**
+
+The paper reports apparent parameters for venlafaxine (CL/F 80.9 L/h, V/F 628 L) and its metabolite O-desmethyl venlafaxine (CLm/F 22.1 L/h, Vm/F 238 L), which already contain the F correction; the record nevertheless carried a separate bioavailability value F 0.048, violating apparent-parameter coherence by correcting twice. The parameter labelled 'θamisulpride on CLm/F' with value 0.593 L/h is a covariate effect on metabolite clearance, not a standalone clearance, yet it was recorded as a CLm/F entry. A second reader disagreed on the same fields, assigning the 22.1 L/h and 238 L values to CLm/F and Vm/F and leaving bioavailability empty, confirming the ambiguity in how these values were attributed. Extracted — desvenlafaxine: CL/F 80.9 L/h, V/F 628 L, kabs 0.63 1/h, Fab 0.048, CLm/F 0.593 L/h; O-desmethyl venlafaxine: CLm/F 22.1 L/h, Vm/F 238 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.048, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang Z; Li L; Huang S; Wang X; Liu S; Li X; et al. et al. (2022). Frontiers in pharmacology 13
@@ -26,6 +29,9 @@ Wang Z; Li L; Huang S; Wang X; Liu S; Li X; et al. et al. (2022). Frontiers in p
 
 ## Model component
 <dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_Wang2022_reference" status="rejected" stale="false" population="healthy volunteers and psychiatric patients" measured-compound="venlafaxine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, CLm/F, V/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the model was built but never simulated; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 2 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[central compartment volume of distribution]` (96.4 vs not captured) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**The remdesivir record was not simulated because the central (V1, 96.4 L) and peripheral (V2, 8.64 L) volumes of distribution were neither extracted nor defaulted, leaving only 2 of 4 parameters covered.**
+
+The record lists V1 = 96.4 L and V2 = 8.64 L alongside Q = 0.12 L/h and CL = 36.9 L/h, but the coverage check found only 2 of the 4 expected parameters emitted or defaulted, with V1 and V2 missing from both. A second reader also returned null for all four parameters (V1, V2, Q, CL) in one pass and in another pass read different values (4.89 L, 46.5 L, 13.2 L/h, 18.1 L/h), so the parameter values are not consistently established. The model, a general linear structure for remdesivir metabolizing to GS-704277 and GS-441524, was built but has not been simulated. Extracted — remdesivir: V1 96.4 L, V2 8.64 L, Q 0.12 L/h, CL 36.9 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central compartment volume of distribution: this record has 96.4, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Abouellil A; Bilal M; Taubert M; Fuhr U et al. (2023). Naunyn-Schmiedeberg's archives of pharmacology 396

@@ -4,7 +4,8 @@
 
 - **generic name:** nialamide
 - **ATC codes:** `N06AF02`
-- **DrugBank:** [DB04820](https://go.drugbank.com/drugs/DB04820)
+- **DrugBank:** [DB04820](https://go.drugbank.com/drugs/DB04820) · **PubChem:** [CID 4472](https://pubchem.ncbi.nlm.nih.gov/compound/4472)
+- **molar mass:** 298.3397 g/mol (C16H18N4O2) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

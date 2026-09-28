@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**This tramadol two-compartment record was rejected because its peripheral compartment (V2, 45.0 l·kg−1) has no connection from the dose, making it an orphan compartment.**
+
+The record describes a two-compartment tramadol model in which the peripheral volume of distribution (V2, 45.0 l·kg−1) is listed, but the structure check found a compartment with no path from the administered dose, so the model as recorded is not a valid closed system. The parameter labels also raise doubts: the clearance (CL, 0.029 l·min−1) is labelled as propofol clearance capacity in a 38 postmenstrual-week newborn at birth although the compound is tramadol, and the V2 unit is written as 'l .70 kg−1', an uninterpretable unit. These deviations mean the extracted structure and parameters cannot be confirmed as a coherent tramadol model. Extracted — tramadol: CL 0.029 l.min−1, V 0.6 l.kg-1, V2 45 l .70 kg−1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Allegaert K; van de Velde M; van den Anker J et al. (2014). Paediatric anaesthesia 24
@@ -25,6 +27,9 @@ Allegaert K; van de Velde M; van den Anker J et al. (2014). Paediatric anaesthes
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Allegaert2014v2_reference" status="rejected" stale="false" population="" measured-compound="tramadol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

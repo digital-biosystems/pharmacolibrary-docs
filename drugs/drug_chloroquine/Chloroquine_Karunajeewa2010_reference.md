@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cq metabolic clearance to decq (cl m ) accounts for]` (15.2 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Chloroquine's clearance (Cl) had no extracted value, so a library default was substituted, and the parent–metabolite structure also failed the structural match, so the model was quarantined.**
+
+The record lists chloroquine's metabolic clearance to desethylchloroquine as 15.2% (a fraction, not a clearance in flow units), and no absolute clearance value was extracted; the builder substituted default placeholder values for the missing clearance. The structure check expected a parent–metabolite topology but obtained a one-compartment parent model, so the structure did not match. A second reader also disputed the extracted values, reading null for the 15.2% clearance fraction and for the 6707 L median steady-state volume, while reading 23 for a pregnancy-related clearance term absent from this record. Additionally, a reported unit could not be converted to SI, so that parameter reached the build without an SI value. Extracted — chloroquine: Frel 1.35e+04, CL 15.2 %, V 6.71e+03 liters.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cq metabolic clearance to decq (cl m ) accounts for: this record has 15.2, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Karunajeewa HA; Salman S; Mueller I; Baiwog F; Gomorrai S; Law I; et al. et al. (2010). Antimicrobial agents and chemotherapy 54
@@ -26,6 +29,9 @@ Karunajeewa HA; Salman S; Mueller I; Baiwog F; Gomorrai S; Law I; et al. et al. 
 
 ## Model component
 <dbs-pgx drug="chloroquine" model-id="Chloroquine_Karunajeewa2010_reference" status="model_quarantined" stale="false" population="pregnant and nonpregnant Papua New Guinean women" measured-compound="chloroquine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

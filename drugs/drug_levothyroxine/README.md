@@ -5,7 +5,7 @@
 
 - **generic name:** Levothyroxine
 - **ATC codes:** `H03AA01`, `H03AA51`
-- **DrugBank:** [DB00451](https://go.drugbank.com/drugs/DB00451)
+- **DrugBank:** [DB00451](https://go.drugbank.com/drugs/DB00451) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

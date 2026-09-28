@@ -5,7 +5,8 @@
 
 - **generic name:** levosimendan
 - **ATC codes:** `C01CX08`
-- **DrugBank:** [DB00922](https://go.drugbank.com/drugs/DB00922)
+- **DrugBank:** [DB00922](https://go.drugbank.com/drugs/DB00922) · **PubChem:** [CID 3033825](https://pubchem.ncbi.nlm.nih.gov/compound/3033825)
+- **molar mass:** 280.2847 g/mol (C14H12N6O) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bertin_2025_reference](drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md) | Bertin S et al., Pharmacokinetics of levosimendan in cri…, Frontiers in pediatrics (2025) | [10.3389/fped.2025.1542417](https://doi.org/10.3389/fped.2025.1542417) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> | [Jonsson_2003_reference](drugs/drug_levosimendan/Levosimendan_Jonsson2003_reference.md) | Jonsson EN et al., Population pharmacokinetics of levosime…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01778.x](https://doi.org/10.1046/j.1365-2125.2003.01778.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Bertin_2026_reference](drugs/drug_levosimendan/Levosimendan_Bertin2026_reference.md) | Bertin S et al., Population Pharmacokinetics of Levosime…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01591-4](https://doi.org/10.1007/s40262-025-01591-4) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Bertin_2025_reference](drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md) | 1-compartment, IV | 2 | Bertin S et al., Pharmacokinetics of levosimendan in cri…, Frontiers in pediatrics (2025) | [10.3389/fped.2025.1542417](https://doi.org/10.3389/fped.2025.1542417) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> | [Jonsson_2003_reference](drugs/drug_levosimendan/Levosimendan_Jonsson2003_reference.md) | 1-compartment, IV | 2 | Jonsson EN et al., Population pharmacokinetics of levosime…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01778.x](https://doi.org/10.1046/j.1365-2125.2003.01778.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Bertin_2026_reference](drugs/drug_levosimendan/Levosimendan_Bertin2026_reference.md) | general linear (no model) | 0 | Bertin S et al., Population Pharmacokinetics of Levosime…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01591-4](https://doi.org/10.1007/s40262-025-01591-4) |
 
 ## Pharmacodynamics (PD)
 

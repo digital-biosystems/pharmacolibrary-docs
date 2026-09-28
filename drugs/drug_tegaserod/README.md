@@ -4,7 +4,8 @@
 
 - **generic name:** tegaserod
 - **ATC codes:** `A03AE02`, `A06AX06`
-- **DrugBank:** [DB01079](https://go.drugbank.com/drugs/DB01079)
+- **DrugBank:** [DB01079](https://go.drugbank.com/drugs/DB01079) · **PubChem:** [CID 5362436](https://pubchem.ncbi.nlm.nih.gov/compound/5362436)
+- **molar mass:** 301.394 g/mol (C16H23N5O) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

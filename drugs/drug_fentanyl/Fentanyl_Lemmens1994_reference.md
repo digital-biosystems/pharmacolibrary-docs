@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (trefentanil vs trefentanil, fentanyl, alfentanil) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The trefentanil record was rejected because the third exponential was reported as a half-life, t½γ = 128 min, a unit that could not be converted to SI, leaving the structural rate parameter without an SI value and failing the dimension check.**
+
+The paper gives the third disposition phase as a half-life, t½γ = 128 min, while the other exponents are rate constants (λ1 = 0.628 min⁻¹, kel = 0.053 min⁻¹); the model structure requires a rate in min⁻¹, so storing a half-life as a structural parameter creates a dimension mismatch. The unit 'min' for this parameter could not be converted to SI, so the parameter reached the model builder without an SI value and the dimension check on it failed. A second reader also disagreed on the dosing compartment and primary analyte, reading trefentanil, fentanyl or alfentanil where the record lists only trefentanil, though the rejection rests on the dimension mismatch. Extracted — fentanyl: λ1 0.628 min-1, kel 0.053 min-1, t1/2γ 128 min, V 4.5 L, Vss 39.3 L, CL 0.483 L/min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has trefentanil, the second reading trefentanil, fentanyl, alfentanil; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Lemmens HJ; Dyck JB; Shafer SL; Stanski DR et al. (1994). Clinical pharmacology and therapeutics 56

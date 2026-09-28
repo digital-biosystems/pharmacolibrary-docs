@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (aprindine vs unknown) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has aprindine, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kobari T; Itoh T; Hirakawa T; Namekawa H; Suzuki T; Satoh T; et al. et al. (1984). European journal of clinical pharmacology 26
@@ -26,6 +29,9 @@ Kobari T; Itoh T; Hirakawa T; Namekawa H; Suzuki T; Satoh T; et al. et al. (1984
 
 ## Model component
 <dbs-pgx drug="aprindine" model-id="Aprindine_Kobari1984_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="aprindine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

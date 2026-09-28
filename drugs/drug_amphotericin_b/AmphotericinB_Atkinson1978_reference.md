@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for amphotericin b's volume of distribution.**
+
+The model was built, but amphotericin b's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (V), so that value has no SI equivalent. Extracted — amphotericin b: V 80 % of the total distribution volume of 4 liters/kg, Q 9 ml/min, CL 30 ml/min.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `amphotericin_b`, measured `amphotericin B`.
 
@@ -27,6 +29,9 @@ Atkinson AJ; Bennett JE et al. (1978). Antimicrobial agents and chemotherapy 13
 
 ## Model component
 <dbs-pgx drug="amphotericin B" model-id="AmphotericinB_Atkinson1978_reference" status="model_quarantined" stale="false" population="adults with disseminated histoplasmosis" measured-compound="amphotericin B" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

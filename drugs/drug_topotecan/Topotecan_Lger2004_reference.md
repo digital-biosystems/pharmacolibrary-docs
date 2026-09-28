@@ -17,9 +17,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for topotecan's clearance and volume of distribution; the covariate scenarios were not simulated.**
+
+The model was built, but topotecan's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (CL and V), so that value has no SI equivalent. Extracted — topotecan: CL 62 1−θ3 × PS, V 27 1−θ3 × PS.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Léger F; Loos WJ; Fourcade J; Bugat R; Goffinet M; Mathijssen RH; et al. et al. (2004). British journal of cancer 90
@@ -27,6 +29,9 @@ Léger F; Loos WJ; Fourcade J; Bugat R; Goffinet M; Mathijssen RH; et al. et al.
 
 ## Model component
 <dbs-pgx drug="topotecan" model-id="Topotecan_Lger2004_reference" status="model_quarantined" stale="false" population="cancer patients" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 

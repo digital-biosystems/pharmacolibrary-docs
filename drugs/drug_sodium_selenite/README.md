@@ -1,11 +1,12 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12C&quot;,&quot;href&quot;:&quot;atc/A12C.md&quot;},{&quot;label&quot;:&quot;sodium selenite&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumSelenite_Jayachandran2021_reference&quot;,&quot;label&quot;:&quot;Jayachandran_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumSelenite_Guo1991_reference&quot;,&quot;label&quot;:&quot;Guo_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Guo1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumSelenite_Zheng2019_reference&quot;,&quot;label&quot;:&quot;Zheng_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Zheng2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumSelenite_Guo1991_reference&quot;,&quot;label&quot;:&quot;Guo_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Guo1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumSelenite_Jayachandran2021_reference&quot;,&quot;label&quot;:&quot;Jayachandran_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumSelenite_Zheng2019_reference&quot;,&quot;label&quot;:&quot;Zheng_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_selenite/SodiumSelenite_Zheng2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # sodium selenite
 
 - **generic name:** sodium selenite
 - **ATC codes:** `A12CE02`, `B05XA20`
-- **DrugBank:** [DB11127](https://go.drugbank.com/drugs/DB11127)
+- **DrugBank:** [DB11127](https://go.drugbank.com/drugs/DB11127) · **PubChem:** [CID 1091](https://pubchem.ncbi.nlm.nih.gov/compound/1091)
+- **molar mass:** 128.97 g/mol (H2O3Se) — DrugBank
 - **groups:** approved
 
 ## About
@@ -32,11 +33,11 @@ For the purpose of brevity, selenite will the focus of discussion, and more info
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span> | [Jayachandran_2021_reference](drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference.md) | Jayachandran P et al., Clinical Pharmacokinetics of Oral Sodiu…, Drugs in R&D (2021) | [10.1007/s40268-021-00340-9](https://doi.org/10.1007/s40268-021-00340-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q20 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Guo_1991_reference](drugs/drug_sodium_selenite/SodiumSelenite_Guo1991_reference.md) | Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue bao = A… (1991) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Zheng_2019_reference](drugs/drug_sodium_selenite/SodiumSelenite_Zheng2019_reference.md) | Zheng S et al., Pharmacokinetics of Sodium Selenite Adm…, Biological trace element re… (2019) | [10.1007/s12011-018-1567-8](https://doi.org/10.1007/s12011-018-1567-8) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q20 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Guo_1991_reference](drugs/drug_sodium_selenite/SodiumSelenite_Guo1991_reference.md) | 1-compartment (no model) | 8 | Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue bao = A… (1991) | — |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Jayachandran_2021_reference](drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference.md) | 1-compartment, oral | 3 | Jayachandran P et al., Clinical Pharmacokinetics of Oral Sodiu…, Drugs in R&D (2021) | [10.1007/s40268-021-00340-9](https://doi.org/10.1007/s40268-021-00340-9) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Zheng_2019_reference](drugs/drug_sodium_selenite/SodiumSelenite_Zheng2019_reference.md) | 1-compartment (no model) | 3 | Zheng S et al., Pharmacokinetics of Sodium Selenite Adm…, Biological trace element re… (2019) | [10.1007/s12011-018-1567-8](https://doi.org/10.1007/s12011-018-1567-8) |
 
 ## ADME sites
 
@@ -62,7 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 19 matched, 19 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

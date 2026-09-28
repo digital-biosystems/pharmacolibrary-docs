@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (ajmaline vs unknown) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The ajmaline record was rejected because its only extracted parameter, a distribution volume Vdbeta of 136 ml in mice, gives a clearance-to-volume ratio outside the physiological window, pointing to a unit or scale extraction error.**
+
+The record rests on abstract-only reading, so the reported summary statistic (Vdbeta = 136 ml for ajmaline in mice) stood in for a fitted model, and the clearance/volume check returned an implausible magnitude consistent with a unit or scale extraction error. A second reader disputed the extraction: it read the volume of distribution as null and instead assigned 136 to a separate Vdbeta field and a half-life-like parameter of 10, disagreeing with the single 136 ml value. The second reader also left the dosing-compartment and primary-analyte fields unresolved (unknown versus ajmaline), so the record's identity and parameter assignments were not consistently established. Extracted — ajmaline: V 136 ml.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ajmaline, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Iven H et al. (1977). Naunyn-Schmiedeberg's archives of pharmacology 298
@@ -26,6 +29,9 @@ Iven H et al. (1977). Naunyn-Schmiedeberg's archives of pharmacology 298
 
 ## Model component
 <dbs-pgx drug="ajmaline" model-id="Ajmaline_Iven1977_reference" status="rejected" stale="false" population="mice" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

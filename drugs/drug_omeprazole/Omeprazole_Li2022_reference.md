@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q19]` (2348.4 vs 2209.9) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The omeprazole record was held back because absorption rate constant ka and Tlag were never reported in the source and library defaults were substituted, and the invented first-order absorption was judged unacceptable.**
+
+The record for omeprazole (Li_2022, one-compartment, CL/F 167.56 L/h, V/F 3580.8 L) lacks source values for ka and Tlag, so defaults were used in their place; the ka default constitutes an invented absorption not reported in the paper. The model also assumes F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with extravascular first-order input. This invented absorption was adjudicated not acceptable, which is why the record needs review. Additionally, the CYP2C19 covariate effects (e.g., IM -0.5198, PM -0.9054) were defined but only the reference individual was simulated, so the covariate scenarios were not exercised; a second reader also disagreed on several extracted values (e.g., 2348.4 vs 2209.9). Extracted — omeprazole: CL/F 168 L/h, V/F 3.58e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 2348.4, the second reading 2209.9; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Li_2022)
@@ -145,7 +148,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Li2022_reference/Omeprazole_Li2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Li2022_reference/Omeprazole_Li2022_reference_sim_controls.json"></dbs-fmusim>
 

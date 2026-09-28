@@ -4,7 +4,8 @@
 
 - **generic name:** azacitidine
 - **ATC codes:** `L01BC07`
-- **DrugBank:** [DB00928](https://go.drugbank.com/drugs/DB00928)
+- **DrugBank:** [DB00928](https://go.drugbank.com/drugs/DB00928) · **PubChem:** [CID 9444](https://pubchem.ncbi.nlm.nih.gov/compound/9444)
+- **molar mass:** 244.2047 g/mol (C8H12N4O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

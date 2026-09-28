@@ -5,7 +5,8 @@
 
 - **generic name:** avatrombopag
 - **ATC codes:** `B02BX08`
-- **DrugBank:** [DB11995](https://go.drugbank.com/drugs/DB11995)
+- **DrugBank:** [DB11995](https://go.drugbank.com/drugs/DB11995) · **PubChem:** [CID 9852519](https://pubchem.ncbi.nlm.nih.gov/compound/9852519)
+- **molar mass:** 649.65 g/mol (C29H34Cl2N6O3S2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -26,9 +27,9 @@ In July 2025, the FDA expanded approval to include a new pediatric formulation, 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.6843)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2025_2_reference](drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md) | Liu X et al., Investigation of the ABCB1 Gene Polymor…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18060903](https://doi.org/10.3390/ph18060903) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.6843)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2025_2_reference](drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md) | 1-compartment (no model) | 4 | Liu X et al., Investigation of the ABCB1 Gene Polymor…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18060903](https://doi.org/10.3390/ph18060903) |
 
 ## Pharmacogenomics (PGx)
 

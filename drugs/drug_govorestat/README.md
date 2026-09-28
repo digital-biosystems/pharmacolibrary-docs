@@ -4,7 +4,8 @@
 
 - **generic name:** govorestat
 - **ATC codes:** `A16AX24`
-- **DrugBank:** [DB16707](https://go.drugbank.com/drugs/DB16707)
+- **DrugBank:** [DB16707](https://go.drugbank.com/drugs/DB16707) · **PubChem:** not captured
+- **molar mass:** 425.4 g/mol (C17H10F3N3O3S2) — DrugBank
 - **groups:** investigational
 
 ## About

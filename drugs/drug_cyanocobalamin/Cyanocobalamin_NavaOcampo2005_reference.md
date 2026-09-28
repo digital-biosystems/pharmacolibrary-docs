@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clearance]` (not captured vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Nava-Ocampo AA; Pastrak A; Cruz T; Koren G et al. (2005). Clinical and experimental pharmacology & physiology 32
@@ -26,6 +29,9 @@ Nava-Ocampo AA; Pastrak A; Cruz T; Koren G et al. (2005). Clinical and experimen
 
 ## Model component
 <dbs-pgx drug="cyanocobalamin" model-id="Cyanocobalamin_NavaOcampo2005_reference" status="rejected" stale="false" population="rats" measured-compound="cyanocobalamin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

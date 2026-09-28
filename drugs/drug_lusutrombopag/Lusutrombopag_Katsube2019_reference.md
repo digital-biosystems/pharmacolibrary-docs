@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[effect of subject population]` (not captured vs 1.46) and 9 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The lusutrombopag record was rejected because the fasted-state absorption fraction F1 (value 1.00) carries the unit 'h', a time unit that does not fit a bioavailability fraction and could not be converted to SI, leaving a structural parameter without an SI value.**
+
+The parameter labelled 'F1 of solution in the fasted state' is a bioavailability fraction with value 1.00, yet its reported unit is 'h'; this dimension mismatch on a structural parameter meant the value could not be converted to SI, so the model was refused. The record otherwise describes a one-compartment lusutrombopag model (CL/F 0.874 L/h, V3/F 9.04 L, Q/F 0.0265 L/h) in healthy subjects and chronic liver disease patients. A second reader additionally extracted covariate effects absent from this record — on CL/F for ethnicity (0.868) and sex (0.874), on V4/F (3.48 L), fed-state solution (0.884) and effect of subject population (1.46) — but the rejection rests on the unconvertible unit on F1. Extracted — lusutrombopag: CL/F 0.874 L/h, Q3/F 0.872 L/h, V3/F 9.04 L, Q/F 0.0265 L/h, Fab 1 h, Km 0.032 /h, kel 0.00863 /h, kabs 0.166 /h, … (+1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of effect of subject population: this record has none, the second reading 1.46; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Katsube T; Shimizu R; Fukuhara T; Kano T; Wajima T et al. (2019). Clinical pharmacokinetics 58
@@ -26,6 +29,9 @@ Katsube T; Shimizu R; Fukuhara T; Kano T; Wajima T et al. (2019). Clinical pharm
 
 ## Model component
 <dbs-pgx drug="lusutrombopag" model-id="Lusutrombopag_Katsube2019_reference" status="rejected" stale="false" population="healthy subjects and patients with chronic liver disease" measured-compound="lusutrombopag" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** CL/F, Q/F, Q3/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

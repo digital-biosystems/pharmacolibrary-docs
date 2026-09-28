@@ -4,7 +4,7 @@
 
 - **generic name:** factor VIII inhibitor bypassing activity
 - **ATC codes:** `B02BD03`
-- **DrugBank:** [DB13151](https://go.drugbank.com/drugs/DB13151)
+- **DrugBank:** [DB13151](https://go.drugbank.com/drugs/DB13151) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[carvedilol cl/f decreased by]` (32.8 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The carvedilol PD parameters carry non-SI units (bpm, μg, ng/mL) and the 32.8% CL/F decrease was recorded as a percentage rather than an absolute clearance, so the record was rejected.**
+
+The record lists carvedilol effect-site parameters E0 = 60.4 bpm, EC50 = 0.685 μg, Emax = 30.7 bpm and IC50 = 16.5 ng/mL, all in units that could not be converted to SI, so the parameters reached the model without SI values. The clearance entry is not an absolute CL/F value but a relative change, 'Carvedilol CL/F decreased by 32.8 %', which is a dimensional mismatch for a structural parameter. A second reader disagreed on the parameter extraction, reading CL/F as 32.8 and ED50 as absent where this record has 32.8 and 0.685 respectively, leaving the clearance and ED50 values uncertain. Extracted — carvedilol: E0 60.4 bpm, EC50 0.685 μg, Emax 30.7 bpm, IC50 16.5 ng/mL, CL/F 32.8 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of carvedilol cl/f decreased by: this record has 32.8, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Hwang S; Lee S; Yoon J; Chung JY et al. (2023). Journal of Korean medical science 38
@@ -26,6 +29,9 @@ Hwang S; Lee S; Yoon J; Chung JY et al. (2023). Journal of Korean medical scienc
 
 ## Model component
 <dbs-pgx drug="carvedilol" model-id="Carvedilol_Hwang2023_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="carvedilol" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

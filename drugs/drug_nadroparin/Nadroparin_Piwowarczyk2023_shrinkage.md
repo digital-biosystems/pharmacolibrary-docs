@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (mechanistic vs apparent) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for nadroparin's volume of distribution.**
+
+The model was built, but nadroparin's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — nadroparin: CL 2.55 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Piwowarczyk P; Szczukocka M; Cios W; Okuńska P; Raszewski G; Borys M; et al. et al. (2023). Clinical pharmacokinetics 62
@@ -26,6 +29,9 @@ Piwowarczyk P; Szczukocka M; Cios W; Okuńska P; Raszewski G; Borys M; et al. et
 
 ## Model component
 <dbs-pgx drug="nadroparin" model-id="Nadroparin_Piwowarczyk2023_shrinkage" status="model_quarantined" stale="false" population="adults with COVID-19" measured-compound="nadroparin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

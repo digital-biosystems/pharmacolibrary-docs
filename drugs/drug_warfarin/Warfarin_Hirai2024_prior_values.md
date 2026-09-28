@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Every check that could be run on this record passed.**
+
+A reported unit could not be converted (MTT), so that value has no SI equivalent.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-17 22:23:49.169603+00:00) predates the upstream re-run (2026-09-23 12:18:16.090464+00:00). Current validate status: `extracted`.
 
@@ -144,7 +147,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.214 /h, lag 77.4 min, F 0.9).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.214 /h, lag 77.4 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_warfarin/Warfarin_Hirai2024_prior_values/Warfarin_Hirai2024_prior_values_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_warfarin/Warfarin_Hirai2024_prior_values/Warfarin_Hirai2024_prior_values_sim_controls.json"></dbs-fmusim>
 

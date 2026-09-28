@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (1.26 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The diclofenac record was rejected because the formation clearance to 5'-hydroxydiclofenac (3.41 L/h) against a distribution volume of 0.23 L falls outside the physiological window, indicating a unit or scale extraction error, and it was built from the abstract alone.**
+
+The extracted formation clearance to 5'-hydroxydiclofenac is 3.41 L/h while the volume of distribution is 0.23 L, a clearance-to-volume combination judged physiologically implausible and attributed to a unit or scale extraction error. The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. A second reader returned no values for the clearance (3.41 L/h), absorption half-life (0.613 h), lag time (0.188 h), relative bioavailability (1.26) or volume (0.23 L), so no independent comparison could be computed for these fields. Extracted — diclofenac: CL 3.41 l.h(-1), t1/2ka 0.613 h, tlag 0.188 h, Frel 1.26 F, V 0.23 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 1.26, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:13:39.728599+00:00) predates the upstream re-run (2026-09-24 03:38:06.397258+00:00). Current validate status: `rejected`.
 

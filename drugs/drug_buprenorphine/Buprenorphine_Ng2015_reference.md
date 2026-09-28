@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[base]` (not captured vs 0.00377) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The buprenorphine absorption-rate unit 'hr À1' could not be converted to SI units, so kabs (0.429 hr⁻¹) entered the model without an SI value, giving a dimension mismatch on a structural parameter and rejection.**
+
+The record lists kabs as 0.429 with unit 'hr À1' and t1/2ka as 0.182 hr⁻¹; this per-hour unit could not be converted to SI, so the parameter entered the model without an SI value and failed the dimensional-consistency check on a structural parameter. A second reader also disagreed on two values: they read the maturation parameter (KM, 0.00398 days in this record) as 0.00377, and left the neonatal absorption rate (0.182 hr⁻¹ in this record) unextracted. These deviations leave the parameter set internally inconsistent, so the model was refused rather than published. Extracted — buprenorphine: kabs 0.429 hr À1, t1/2ka 0.182 hr À1, CL 112 L/hr, V2 113 L, Q 283 L/hr, V3 1.49e+03 L, Km 0.00398 days, Emax 0.135, … (+1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of base: this record has none, the second reading 0.00377; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ng CM; Dombrowsky E; Lin H; Erlich ME; Moody DE; Barrett JS; et al. et al. (2015). Pharmacotherapy 35
@@ -26,6 +29,9 @@ Ng CM; Dombrowsky E; Lin H; Erlich ME; Moody DE; Barrett JS; et al. et al. (2015
 
 ## Model component
 <dbs-pgx drug="buprenorphine" model-id="Buprenorphine_Ng2015_reference" status="rejected" stale="false" population="neonates with neonatal abstinence syndrome and healthy adults" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** mechanistic.
 

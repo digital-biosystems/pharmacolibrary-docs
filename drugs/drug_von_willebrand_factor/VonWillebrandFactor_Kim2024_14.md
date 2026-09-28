@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** split column '14' is a table statistic/structure column, not a study population (mis-split estimate table); C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (BT200 vs unknown) and 11 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record misreads a table column ('14') as a study population, and the extracted factor VIII clearance of 0.0222 L/h is physiologically implausible, indicating a unit or scale extraction error.**
+
+The estimates table was split into one record per column, and column '14' holds a statistic rather than a second set of estimates, so the parameter values do not represent a fitted population. The extracted clearance of 0.0222 L/h and volume of distribution of 5.09 L fall outside plausible physiological windows for factor VIII, consistent with a unit or scale extraction error. A second reader proposed a clearance of 0.000242 L/h in place of the recorded 0.0222 L/h, and also disputed the dosing compartment (BT200 versus unknown) and the primary analyte (factor VIII versus von Willebrand factor). Extracted — factor VIII: CL 0.0222 L/h, V1 5.09 L, Q 1.99 L/h, V2 0.24 L, kabs 0.0206.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has BT200, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `BT200`, measured `factor VIII`.
 
@@ -28,6 +31,9 @@ Kim MS; Hajducek DM; Gilbert JC; Iorio A; Jilma B; Edginton AN et al. (2024). Th
 
 ## Model component
 <dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Kim2024_14" status="rejected" stale="false" population="humans" measured-compound="factor VIII" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,7 @@
 
 - **generic name:** Hyperici herba
 - **ATC codes:** `N06AX25`
-- **DrugBank:** [DB01323](https://go.drugbank.com/drugs/DB01323)
+- **DrugBank:** [DB01323](https://go.drugbank.com/drugs/DB01323) · **PubChem:** not captured
 - **groups:** approved, investigational, nutraceutical
 
 ## Extraction summary
@@ -16,9 +16,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Biber_1998_reference](drugs/drug_hyperici_herba/HypericiHerba_Biber1998_reference.md) | Biber A et al., Oral bioavailability of hyperforin from…, Pharmacopsychiatry (1998) | [10.1055/s-2007-979344](https://doi.org/10.1055/s-2007-979344) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Biber_1998_reference](drugs/drug_hyperici_herba/HypericiHerba_Biber1998_reference.md) | 1-compartment (no model) | 4 | Biber A et al., Oral bioavailability of hyperforin from…, Pharmacopsychiatry (1998) | [10.1055/s-2007-979344](https://doi.org/10.1055/s-2007-979344) |
 
 ## ADME sites
 

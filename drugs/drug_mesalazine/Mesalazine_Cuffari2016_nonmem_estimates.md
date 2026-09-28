@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[% dose absorbed, mean]` (22.1 vs not captured) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**Mesalazine's clearance and absorption lag time had no values, so library placeholder values stood in for Cl and Tlag, and the parent–metabolite model was quarantined rather than published.**
+
+The record reports fitted parameters for 5-ASA and its metabolite Ac-5-ASA (CLR/F 1.01 L/h, CLm/F 75.9 L/h, V1/F 70.1 L, V/F 5.31 L, Ka1 0.0207 h−1, F1 0.413), but no source value exists for clearance (Cl) or Tlag, so placeholder values from a library model were substituted for these missing parameters. The declared structure is parent–metabolite (5-ASA metabolised to Ac-5-ASA via Kfm), yet the obtained structure was a one-compartment enteral model instead of the expected parent–metabolite topology. The covariate effects defined in the record (weight effects of 0.75 on clearances and 1 on volumes) were not exercised — only the reference individual was simulated. A second reader found no value for the mean fraction of dose absorbed where this record gives 22.1. Extracted — mesalazine: CLR 1.01 L/h, CLm/F 75.9 L/h, V1/F 70.1 L, CLnorm/F 66.7 L/h, V/F 5.31 L, kabs 0.0207 h−1, Fab 0.413.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of % dose absorbed, mean: this record has 22.1, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `mesalazine`, measured `5-ASA`.
 
@@ -30,6 +33,9 @@ Cuffari C; Pierce D; Korczowski B; Fyderek K; Van Heusen H; Hossack S; et al. et
 
 ## Model component
 <dbs-pgx drug="mesalazine" model-id="Mesalazine_Cuffari2016_nonmem_estimates" status="model_quarantined" stale="false" population="children and adolescents with ulcerative colitis" measured-compound="5-ASA" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 7 extracted, plus 6 covariate effects.
 
 **Parameterization:** CLm/F, CLnorm/F, V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;cenobamate&quot;,&quot;href&quot;:&quot;drugs/drug_cenobamate/&quot;},{&quot;label&quot;:&quot;Bettio_2025 \u00b7 PD seizure protection&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # seizure protection — PD  <span class="pk-badge pk-badge--red">rejected</span>

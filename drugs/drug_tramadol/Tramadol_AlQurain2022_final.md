@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/f].value` (0.00604 vs 6.71) and 8 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The tramadol parameter values are implausibly small — CL/F of 0.00604 l/h, V1/F of 0.373 l, Q of 0.0426 l/h — consistent with a unit or scale extraction error, so the record was rejected.**
+
+The extracted tramadol clearance CL/F is 0.00604 l/h and intercompartmental clearance Q is 0.0426 l/h, magnitudes far outside the physiological window for tramadol in older patients, indicating a unit or scale extraction error. A second reader read the same paper's values as CL/F 6.71 l/h, Q 6.09 l/h, V1/F 19.6 l, Ka 63.7 /h and CLm/F 11.9 l/h, disagreeing with every extracted parameter, including the covariate effects theta_cl_f_crcl (0.00498 vs 14.3) and theta_v2_f_crcl (0.0119 vs 33.6). The second reader also extracted an O-desmethyltramadol parameter (20.5) that is absent from this record. The disagreement across all parameters leaves the true values inconclusive from this record alone. Extracted — tramadol: kabs 2.96 /h, V1/F 0.373 l, Q 0.0426 l/h, V2/F 0.379 l, CL/F 0.00604 l/h, CLm/F 0.143 l/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].value`: this record has 0.00604, the second reading 6.71; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Al-Qurain AA; Upton RN; Tadros R; Roberts MS; Wiese MD et al. (2022). European journal of drug metabolism and pharmacokinetics 47
@@ -26,6 +29,9 @@ Al-Qurain AA; Upton RN; Tadros R; Roberts MS; Wiese MD et al. (2022). European j
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_AlQurain2022_final" status="rejected" stale="false" population="older patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 6 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, CLm/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

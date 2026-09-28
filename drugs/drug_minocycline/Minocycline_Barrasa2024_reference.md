@@ -5,7 +5,7 @@
 
 # minocycline — `Minocycline_Barrasa2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**This minocycline two-compartment model was rejected because one compartment has no path from the dose, and its parameter labels name other drugs (cefiderocol, cotrimoxazole) rather than minocycline.**
+
+The record lists minocycline as the measured compound, yet the parameter labels read 'Cefiderocol V1 (L)' 7.78 L, 'Cefiderocol V2 (L)' 5.77 L, and 'Cotrimoxazole (trimethoprim/sulfamethoxazole) a CL (L/h)' 1.88 L/h, so the values cannot be attributed to minocycline. The review also found an unreachable or orphan compartment in the two-compartment structure, meaning a compartment is not connected to the dosing path. A second reader disagreed on one extracted value, reading it as absent where the record holds 27.2, leaving that number unconfirmed. Extracted — minocycline: CL 1.88 L/h, V1 7.78 L, V2 5.77 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q61: this record has 27.2, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Barrasa H; Morán MA; Fernández-Ciriza L; Isla A; Solinís MÁ; Canut-Blasco A; et al. et al. (2024). Antibiotics (Basel, Switzerland) 13
@@ -25,6 +29,9 @@ Barrasa H; Morán MA; Fernández-Ciriza L; Isla A; Solinís MÁ; Canut-Blasco A;
 
 ## Model component
 <dbs-pgx drug="minocycline" model-id="Minocycline_Barrasa2024_reference" status="rejected" stale="false" population="" measured-compound="minocycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -55,9 +62,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q61]` | 27.2 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

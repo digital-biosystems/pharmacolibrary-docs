@@ -5,7 +5,8 @@
 
 - **generic name:** tilidine
 - **ATC codes:** `N02AX01`, `N02AX51`
-- **DrugBank:** [DB13787](https://go.drugbank.com/drugs/DB13787)
+- **DrugBank:** [DB13787](https://go.drugbank.com/drugs/DB13787) · **PubChem:** not captured
+- **molar mass:** 273.376 g/mol (C17H23NO2) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary
@@ -16,9 +17,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ringwelski_1975_reference](drugs/drug_tilidine/Tilidine_Ringwelski1975_reference.md) | Ringwelski L, [Analog computer analysis of radioactiv…, International journal of cl… (1975) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ringwelski_1975_reference](drugs/drug_tilidine/Tilidine_Ringwelski1975_reference.md) | 1-compartment (no model) | 1 | Ringwelski L, [Analog computer analysis of radioactiv…, International journal of cl… (1975) | — |
 
 ## Pharmacodynamics (PD)
 

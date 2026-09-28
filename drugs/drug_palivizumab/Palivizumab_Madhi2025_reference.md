@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q56]` (4 vs 4.0) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The palivizumab record was rejected because its clearance (CL/F 0.0128 L/d) and volume (V/F 0.901 L) fall far outside physiological plausibility, indicating a unit or scale extraction error.**
+
+For palivizumab, the record lists CL/F of 0.0128 L/d and V/F of 0.901 L, magnitudes implausible for a monoclonal antibody in any population, consistent with a unit or scale misreading. The second reader's disagreements show the extracted values do not match the source: 4 vs 4.0, 45 vs 48.8, 0.91 vs no value, and one value (2.24) present in the second reading but absent here. These deviations mean the record's numbers cannot be trusted as extracted, so the model was not published. Extracted — palivizumab: CL/F 0.0128 L/d, V/F 0.901 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q56: this record has 4, the second reading 4.0; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Madhi SA; Simões EAF; Acevedo A; Novoa Pizarro JM; Shepard JS; Railkar RA; Cao X; Maas BM; Zang X; Krick A; Roadcap B; Vora KA; Aliprantis AO; Lee AW; Sinha A et al. (2025). The Journal of infectious diseases 231

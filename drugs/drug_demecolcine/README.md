@@ -4,7 +4,8 @@
 
 - **generic name:** demecolcine
 - **ATC codes:** `L01CC01`
-- **DrugBank:** [DB13318](https://go.drugbank.com/drugs/DB13318)
+- **DrugBank:** [DB13318](https://go.drugbank.com/drugs/DB13318) · **PubChem:** not captured
+- **molar mass:** 371.433 g/mol (C21H25NO5) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (12.13 vs 15) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The metformin two-compartment record was rejected because its extracted values fall outside the physiological window — clearance 12.13 mL/min and inter-compartmental clearance 15 mL/min — consistent with a unit or scale extraction error.**
+
+The record lists metformin (1,1-dimethylbiguanide) in a two-compartment structure with CL = 12.13 mL/min, V = 250.0 mL and Q = 15.0 mL/min, magnitudes judged outside the physiological window for this drug and suggestive of a unit or scale error during extraction. A second reader disagreed on the parameter assignments: it read the inter-compartmental clearance as 15, the clearance as 12.13, and gave 3 where this record has 15, so the mapping of the published numbers to CL, V and Q is contested. The source is a review (secondary source), and the ambiguous label texts ('PS BM, diff', 'V mr', 'Q m') plausibly underlie the divergent readings. Extracted — metformin: CL 12.1 mL/min, V 250 mL, Q 15 mL/min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 12.13, the second reading 15; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ho H; Zhang S; Kurosawa K; Jiang B; Chiba K et al. (2024). Frontiers in pharmacology 15

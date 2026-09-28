@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for cisapride's clearance and absorption lag time; the covariate scenarios were not simulated.**
+
+The model was built, but cisapride's clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cisapride: CL/F 0.538 l h-1 kg-1, V/F 21.9 l, kabs 2.58 h-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Preechagoon Y; Charles B; Piotrovskij V; Donovan T; Van Peer A et al. (1999). British journal of clinical pharmacology 48
@@ -28,6 +31,9 @@ Preechagoon Y; Charles B; Piotrovskij V; Donovan T; Van Peer A et al. (1999). Br
 
 ## Model component
 <dbs-pgx drug="cisapride" model-id="Cisapride_Preechagoon1999_reference" status="model_quarantined" stale="false" population="young infants with gastro-oesophageal reflux disease" measured-compound="cisapride" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -4,7 +4,8 @@
 
 - **generic name:** etamsylate
 - **ATC codes:** `B02BX01`
-- **DrugBank:** [DB13483](https://go.drugbank.com/drugs/DB13483)
+- **DrugBank:** [DB13483](https://go.drugbank.com/drugs/DB13483) · **PubChem:** not captured
+- **molar mass:** 263.31 g/mol (C10H17NO5S) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

@@ -15,15 +15,20 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The betamethasone absorption half-life parameter t1/2ka is dimensionally inconsistent: it is reported as 0.00638 with units 1/h (a rate), although a half-life must carry units of time, so the record was rejected.**
+
+The record lists t1/2ka with the verbatim label 'kaIMa, 1/h' and value 0.00638 in 1/h, mixing a half-life quantity with reciprocal-time units on a structural parameter. The other absorption-rate parameter kabs is correctly given as 0.460 1/h, making the mismatch on t1/2ka apparent. The paper's reported unit for this parameter could not be converted to SI, so the parameter entered the review without an SI value, and the dimension check failed on this structural parameter. Extracted — betamethasone: CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.46 1/h, t1/2ka 0.00638 1/h, FR 1.04, Fab 0.819, CL/F 0.538 L/h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Krzyzanski_2021_2)
 
 ## Model component
 <dbs-pgx drug="betamethasone" model-id="Betamethasone_Krzyzanski2021v2_reference" status="rejected" stale="false" population="healthy nonpregnant Indian women" measured-compound="betamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, CLm/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

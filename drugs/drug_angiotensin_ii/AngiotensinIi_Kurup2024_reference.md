@@ -5,7 +5,7 @@
 
 # angiotensin II — `AngiotensinIi_Kurup2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The angiotensin II clearance of 0.000412 L/h is physiologically implausible, indicating a unit or scale extraction error, so the two-compartment model record was rejected.**
+
+The record lists angiotensin II clearance (CL) as 0.000412 L/h with central volume 3.08 L, peripheral volume 4.36 L and intercompartmental clearance 0.0359 L/h; the rejection reason is that the clearance/volume falls outside the physiological window in magnitude, consistent with a unit or scale extraction error. A second reader disagreed on several extracted values: one intercompartmental parameter was read as 26.7 here versus 0.0225 by the second reader, and one parameter absent here (null) was read as 0.85 by the second reader. The remaining disagreements were cases where the second reader extracted no value (null) against this record's 0.000412, 0.0359, 1.0, 0.0364, 3.08 and 4.36, so the implausible clearance itself was not confirmed by the second reader. Extracted — angiotensin ii: CL 0.000412 L/h, V1 3.08 L, V2 4.36 L, Q 0.0359 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.000412, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kurup S; de Mendizabal NV; Becker S; Bolella E; De Sousa D; Fätkenheuer G; Gruell H; Klein F; Malin JJ; Schmid U; Korell J et al. (2024). Journal of pharmacokinetics and pharmacodynamics 52
@@ -25,6 +29,9 @@ Kurup S; de Mendizabal NV; Becker S; Bolella E; De Sousa D; Fätkenheuer G; Grue
 
 ## Model component
 <dbs-pgx drug="angiotensin II" model-id="AngiotensinIi_Kurup2024_reference" status="rejected" stale="false" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,14 +58,27 @@ Kurup S; de Mendizabal NV; Becker S; Bolella E; De Sousa D; Fätkenheuer G; Grue
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.0 (0/8 fields) | 8 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 0.000412 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q30]` | 0.0359 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | 26.7 | 0.0225 | mismatch |
+| `gpt-oss:120b` | `values[Q319]` | not captured | 0.85 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q45]` | 1.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 0.0364 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | 3.08 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 4.36 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

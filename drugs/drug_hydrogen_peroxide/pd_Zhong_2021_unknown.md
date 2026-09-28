@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;hydrogen peroxide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrogen_peroxide/&quot;},{&quot;label&quot;:&quot;Zhong_2021 \u00b7 PD \u03b2-glucuronidase activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # β-glucuronidase activity — PD  <span class="pk-badge pk-badge--green">extracted</span>

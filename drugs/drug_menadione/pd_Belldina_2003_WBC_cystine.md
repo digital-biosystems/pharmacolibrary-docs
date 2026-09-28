@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;menadione&quot;,&quot;href&quot;:&quot;drugs/drug_menadione/&quot;},{&quot;label&quot;:&quot;Belldina_2003 \u00b7 PD white blood cell cystine content&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # white blood cell cystine content — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.308). The first reading is what the record holds.">cross-check: disputed</span>

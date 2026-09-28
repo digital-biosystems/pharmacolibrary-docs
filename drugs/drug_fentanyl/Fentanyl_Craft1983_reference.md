@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[half-life of the maternal elimination phase]` (42 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for fentanyl's clearance.**
+
+The model was built, but fentanyl's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fentanyl: t1/2z 42 min, kel 0.21 min-1, V 4.7 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of half-life of the maternal elimination phase: this record has 42, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Craft JB; Coaldrake LA; Bolan JC; Mondino M; Mazel P; Gilman RM; et al. et al. (1983). Anesthesia and analgesia 62

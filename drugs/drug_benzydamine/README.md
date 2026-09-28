@@ -4,7 +4,8 @@
 
 - **generic name:** benzydamine
 - **ATC codes:** `A01AD02`, `G02CC03`, `M01AX07`, `M02AA05`, `R02AX03`
-- **DrugBank:** [DB09084](https://go.drugbank.com/drugs/DB09084)
+- **DrugBank:** [DB09084](https://go.drugbank.com/drugs/DB09084) · **PubChem:** [CID 12555](https://pubchem.ncbi.nlm.nih.gov/compound/12555)
+- **molar mass:** 309.413 g/mol (C19H23N3O) — DrugBank
 - **groups:** approved, investigational
 
 ## About

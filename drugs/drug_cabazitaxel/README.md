@@ -5,7 +5,8 @@
 
 - **generic name:** cabazitaxel
 - **ATC codes:** `L01CD04`
-- **DrugBank:** [DB06772](https://go.drugbank.com/drugs/DB06772)
+- **DrugBank:** [DB06772](https://go.drugbank.com/drugs/DB06772) · **PubChem:** [CID 9854073](https://pubchem.ncbi.nlm.nih.gov/compound/9854073)
+- **molar mass:** 835.9324 g/mol (C45H57NO14) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,15 +25,15 @@ Cabazitaxel is used to treat metastatic castration-resistant prostate cancer. It
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.3506)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_all_n_170](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_all_n_170.md) | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.7337)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ard6191_n_34](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ard6191_n_34.md) | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.4044)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_efc6193_n_67](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_efc6193_n_67.md) | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.215)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6188_n_21](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6188_n_21.md) | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.2719)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6189_n_13](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6189_n_13.md) | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.1931)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6190_n_35](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6190_n_35.md) | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'nonmem' is a table statistic/structure column, not a study popula…</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_nonmem](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_nonmem.md) | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.3506)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_all_n_170](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_all_n_170.md) | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.7337)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ard6191_n_34](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ard6191_n_34.md) | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.4044)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_efc6193_n_67](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_efc6193_n_67.md) | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.215)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6188_n_21](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6188_n_21.md) | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.2719)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6189_n_13](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6189_n_13.md) | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.1931)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6190_n_35](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6190_n_35.md) | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'nonmem' is a table statistic/structure column, not a study popula…</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_nonmem](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_nonmem.md) | 1-compartment (no model) | 10 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
 
 ## ADME sites
 

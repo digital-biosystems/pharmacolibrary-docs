@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[apparent ka]` (2.29 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for digoxin's clearance, volume of distribution and absorption lag time.**
+
+The model was built, but digoxin's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (CL/F and V/F), so that value has no SI equivalent. Extracted — digoxin: CL/F 10.4 L•h -1 •70 kg -1, V/F 1.1e+03 L•70 kg -1, Q3 0.169, kabs 2.29 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of apparent ka: this record has 2.29, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gong Y; Chen Y; Li Q; Li Z et al. (2014). Journal of pharmacological sciences 125
@@ -26,6 +29,9 @@ Gong Y; Chen Y; Li Q; Li Z et al. (2014). Journal of pharmacological sciences 12
 
 ## Model component
 <dbs-pgx drug="digoxin" model-id="Digoxin_Gong2014_reference" status="model_quarantined" stale="false" population="Chinese neonates and infants" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

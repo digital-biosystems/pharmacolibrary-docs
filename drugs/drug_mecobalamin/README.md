@@ -4,7 +4,8 @@
 
 - **generic name:** mecobalamin
 - **ATC codes:** `B03BA05`
-- **DrugBank:** [DB03614](https://go.drugbank.com/drugs/DB03614)
+- **DrugBank:** [DB03614](https://go.drugbank.com/drugs/DB03614) · **PubChem:** [CID 71306319](https://pubchem.ncbi.nlm.nih.gov/compound/71306319)
+- **molar mass:** 1344.3823 g/mol (C63H91CoN13O14P) — DrugBank
 - **groups:** approved, investigational
 
 ## Extraction summary

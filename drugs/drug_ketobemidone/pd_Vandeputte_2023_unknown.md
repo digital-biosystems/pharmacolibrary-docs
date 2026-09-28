@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;ketobemidone&quot;,&quot;href&quot;:&quot;drugs/drug_ketobemidone/&quot;},{&quot;label&quot;:&quot;Vandeputte_2023 \u00b7 PD \u03b2-arrestin 2 recruitment&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # β-arrestin 2 recruitment — PD  <span class="pk-badge pk-badge--red">rejected</span>

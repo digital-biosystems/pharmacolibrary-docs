@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 1.4134)
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 1.41).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — haloperidol: kabs 0.236, CL 32.4 L/h, V 1.98e+03 L.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Franken LG; Mathot RAA; Masman AD; Baar FPM; Tibboel D; van Gelder T; et al. et al. (2017). European journal of clinical pharmacology 73
@@ -26,6 +29,9 @@ Franken LG; Mathot RAA; Masman AD; Baar FPM; Tibboel D; van Gelder T; et al. et 
 
 ## Model component
 <dbs-pgx drug="haloperidol" model-id="Haloperidol_Franken2017_reference" status="needs_review" stale="false" population="terminally ill adult patients" measured-compound="haloperidol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

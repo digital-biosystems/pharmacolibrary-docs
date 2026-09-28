@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (0.97 vs 1.0) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — metoclopramide: kabs 0.4 hour−1, CL 19.6, Vnorm 42.9, Q 57.1, Fab 0.97.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.97, the second reading 1.0; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ge S; Mendley SR; Gerhart JG; Melloni C; Hornik CP; Sullivan JE; et al. et al. (2020). Clinical and translational science 13
@@ -26,6 +29,9 @@ Ge S; Mendley SR; Gerhart JG; Melloni C; Hornik CP; Sullivan JE; et al. et al. (
 
 ## Model component
 <dbs-pgx drug="metoclopramide" model-id="Metoclopramide_Ge2020_reference" status="needs_review" stale="false" population="infants, children, and adolescents" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

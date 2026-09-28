@@ -5,7 +5,7 @@
 
 # capecitabine — `Capecitabine_Wen2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The capecitabine model was held back because the absorption rate constant ka and Tlag were not reported in the source and placeholder default values were substituted, an invented absorption deemed not acceptable.**
+
+The record reports only CL/F = 147.0 L/h and V/F = 3820 L for capecitabine; ka and Tlag had no values in the source, so library placeholder defaults were used, and the resulting first-order depot input with a defaulted ka was adjudicated as invented absorption, not acceptable. The model also assumed F=1 and Fm=1 with an apparent (/F) parameterization and no molar correction, implying extravascular dosing. A second reader disputed the volume of distribution, reading 2270 L instead of 3820 L, and disagreed on three other extracted values (45.72 vs none, none vs 25.30, 50.3 vs none). Extracted — capecitabine: CL/F 147 L/h, V/F 3.82e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 45.72, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wen HN; Liu YX; Xu D; Zhao KJ; Jiao Z et al. (2021). European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 159
@@ -25,6 +29,9 @@ Wen HN; Liu YX; Xu D; Zhao KJ; Jiao Z et al. (2021). European journal of pharmac
 
 ## Model component
 <dbs-pgx drug="capecitabine" model-id="Capecitabine_Wen2021_reference" status="needs_review" stale="false" population="" measured-compound="capecitabine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +62,23 @@ Wen HN; Liu YX; Xu D; Zhao KJ; Jiao Z et al. (2021). European journal of pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q312]` | 45.72 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q316]` | not captured | 25.30 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 50.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q76]` | 3820 | 2270 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -125,6 +141,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_capecitabine/Capecitabine_Wen2021_reference/Capecitabine_Wen2021_reference.svg" alt="Capecitabine_Wen2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_capecitabine/Capecitabine_Wen2021_reference/Capecitabine_Wen2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_capecitabine/Capecitabine_Wen2021_reference/Capecitabine_Wen2021_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auec0-24]` (1699 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**This alogliptin 2-compartment record was rejected because a compartment has no path from the dose, and the reported AUC0–24 of 1699 %·hr could not be converted to SI units.**
+
+The model for alogliptin in children, adolescents, and adults with type 2 diabetes was refused because one compartment is unreachable or orphan — it has no connection from the administered dose, so the structure is not a valid closed pharmacokinetic system. In addition, the reported AUC0–24 of 1699 %·hr is expressed in a unit that could not be converted to SI, so that exposure value entered the record without an SI value. A second reader also disagreed on three extracted values: this record lists AUC0–24 as 1699 and Fe as 59.212 % where the second reader found none, and lists no value where the second reader read 57.4 for the 0–24 h exposure. Extracted — alogliptin: AUCt 1.7e+03 %·hr, Cmax 101 ng/mL, AUC∞ 1.22e+03 ng·hr./mL, CL/F 20.7 L/hr, V/F 543 L, t1/2z 18.1 hr, CLR 14.5 L/hr, fe 59.2, … (+1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auec0-24: this record has 1699, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Dudkowski C; Tsai M; Liu J; Zhao Z; Schmidt E; Xie J et al. (2017). European journal of clinical pharmacology 73
@@ -26,6 +29,9 @@ Dudkowski C; Tsai M; Liu J; Zhao Z; Schmidt E; Xie J et al. (2017). European jou
 
 ## Model component
 <dbs-pgx drug="alogliptin" model-id="Alogliptin_Dudkowski2017_alo_25_mg" status="rejected" stale="false" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** CL/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;sapropterin&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/&quot;},{&quot;label&quot;:&quot;Qi_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sapropterin_Feillet2008_reference&quot;,&quot;label&quot;:&quot;Feillet_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Feillet2008_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sapropterin_Muntau2017_reference&quot;,&quot;label&quot;:&quot;Muntau_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Muntau2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sapropterin_Qi2015_reference&quot;,&quot;label&quot;:&quot;Qi_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Qi2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sapropterin_Feillet2008_reference&quot;,&quot;label&quot;:&quot;Feillet_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Feillet2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sapropterin_Muntau2017_reference&quot;,&quot;label&quot;:&quot;Muntau_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Muntau2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sapropterin_Qi2015_reference&quot;,&quot;label&quot;:&quot;Qi_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Qi2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,7 +13,13 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The sapropterin absorption rate constant kabs is reported as 0.235 with only 'units' as its unit, a dimension that cannot be expressed in SI, so the structural parameter lacks a valid time-based dimension and the record was rejected.**
+
+The one-compartment sapropterin (BH4) model for infants and young children with phenylketonuria lists kabs = 0.235 with the unit given only as 'units' rather than a reciprocal time unit such as h⁻¹. Because that unit could not be converted to SI, the parameter entered the record without a usable value, giving a dimension mismatch on a structural parameter. The other parameters (CL/F 2710 L/h, V/F 3010 L, tlag 0.321 h, C0 16.6 μg/L) carry convertible units, so the failure is confined to kabs. Extracted — sapropterin (BH4): CL/F 2.71e+03 L/h, V/F 3.01e+03 L, kabs 0.235 units, tlag 0.321 h, C0 16.6 μg/L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sapropterin dihydrochloride`, measured `sapropterin (BH4)`.
 

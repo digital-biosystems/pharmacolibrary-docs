@@ -4,7 +4,8 @@
 
 - **generic name:** hydrochloric acid
 - **ATC codes:** `A09AB03`, `B05XA13`
-- **DrugBank:** [DB13366](https://go.drugbank.com/drugs/DB13366)
+- **DrugBank:** [DB13366](https://go.drugbank.com/drugs/DB13366) · **PubChem:** not captured
+- **molar mass:** 36.461 g/mol (ClH) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

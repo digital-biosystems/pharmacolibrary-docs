@@ -4,7 +4,8 @@
 
 - **generic name:** pinaverium
 - **ATC codes:** `A03AX04`
-- **DrugBank:** [DB09090](https://go.drugbank.com/drugs/DB09090)
+- **DrugBank:** [DB09090](https://go.drugbank.com/drugs/DB09090) · **PubChem:** [CID 40704](https://pubchem.ncbi.nlm.nih.gov/compound/40704)
+- **molar mass:** 511.52 g/mol (C26H41BrNO4) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -17,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 21:35 | 0:59 | 0/0/0 | 0/0/0 | 0/0/0 | 1,244/212 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-09-26 09:43 | 0:56 | 0/0/0 | 0/0/0 | 0/0/0 | 1,634/128 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -45,7 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 11 matched, 14 returned
+- **PubMed hits:** 15 matched, 14 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -62,7 +63,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `García-Alvarado_2019.pdf` | García-Alvarado F et al., Otilonium and pinaverium trigger mitoch…, Neurotoxicology (2019) | pd | 4 | [10.1016/j.neuro.2018.11.003](https://doi.org/10.1016/j.neuro.2018.11.003) | [30448301](https://www.ncbi.nlm.nih.gov/pubmed/30448301) | metadata signals extractable PD data (EC50) |
 | `Malysz_1997.pdf` | Malysz J et al., Pinaverium acts as L-type calcium chann…, Canadian journal of physiol… (1997) | pd | 4 | [10.1139/cjpp-75-8-969](https://doi.org/10.1139/cjpp-75-8-969) | [9360010](https://www.ncbi.nlm.nih.gov/pubmed/9360010) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-15T21:35:59.169131+00:00</sub>
+<sub>queue written 2026-09-26T09:43:20.292048+00:00</sub>
 
 ## Screened and excluded
 

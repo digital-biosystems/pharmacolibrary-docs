@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Carlson TH; Atencio AC; Simon TL et al. (1984). The Journal of clinical investigation 74
@@ -25,6 +27,9 @@ Carlson TH; Atencio AC; Simon TL et al. (1984). The Journal of clinical investig
 
 ## Model component
 <dbs-pgx drug="antithrombin III" model-id="AntithrombinIii_Carlson1984_rabbits" status="rejected" stale="false" population="rabbits" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

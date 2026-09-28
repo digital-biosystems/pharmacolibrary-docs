@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default; C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (not captured vs 2) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only clearance was extracted — no volume; aUC has no unit.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (fe and AUC), so that value has no SI equivalent. None of the extracted parameters is bleomycin's own; they describe 57Co-Bleomycin. Extracted — 57Co-Bleomycin: Frel 0.5, fe 75 %, AUC 48 Std., CL 0.962 L/min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has none, the second reading 2; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Schober O; Mariss P; Pertynski T; Zimmermann P; Börner P et al. (1978). RoFo : Fortschritte auf dem Gebiete der Rontgenstrahlen und der Nuklearmedizin 128

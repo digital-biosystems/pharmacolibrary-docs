@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for nordazepam's clearance and volume of distribution and the rate at which nordazepam is formed.**
+
+The model was built, but nordazepam's clearance and volume of distribution and the rate at which nordazepam is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — diazepam: CL 3.8 L/h, V 4.7 L/kg.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 23:09:36.498618+00:00) predates the upstream re-run (2026-09-24 04:16:12.673543+00:00). Current validate status: `rejected`.
 

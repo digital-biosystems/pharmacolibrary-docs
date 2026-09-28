@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[extracellular clearance]` (0.07 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The rifabutin record was rejected because its clearance (0.07 L/h) and volume (0.135 L) fall far outside physiological ranges, likely from a unit or scale extraction error, and only the paper's abstract was read.**
+
+The extracted rifabutin parameters — extracellular clearance 0.07 L/h, volume 0.135 L, Ka 0.16 h−1 and lag time 0.825 h — were taken from the abstract alone, so summary statistics stood in for a fitted model. The clearance and volume magnitudes are physiologically implausible for rifabutin, pointing to a unit or scale extraction error. A second reader could not confirm any of the four parameter values, leaving each unverified. The record also describes only a parent-to-metabolite link (rifabutin to 25-O-desacetyl rifabutin via Kfm), with no further structural detail available from the abstract-only source. Extracted — rifabutin: CL 0.07 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of extracellular clearance: this record has 0.07, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Hennig_2016)
 
 ## Model component
 <dbs-pgx drug="rifabutin" model-id="Rifabutin_Hennig2016_reference" status="rejected" stale="false" population="healthy volunteers and patients with HIV and TB" measured-compound="rifabutin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -4,7 +4,8 @@
 
 - **generic name:** ubrogepant
 - **ATC codes:** `N02CD04`
-- **DrugBank:** [DB15328](https://go.drugbank.com/drugs/DB15328)
+- **DrugBank:** [DB15328](https://go.drugbank.com/drugs/DB15328) · **PubChem:** not captured
+- **molar mass:** 549.554 g/mol (C29H26F3N5O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -4,7 +4,8 @@
 
 - **generic name:** nabilone
 - **ATC codes:** `A04AD11`
-- **DrugBank:** [DB00486](https://go.drugbank.com/drugs/DB00486)
+- **DrugBank:** [DB00486](https://go.drugbank.com/drugs/DB00486) · **PubChem:** [CID 5284592](https://pubchem.ncbi.nlm.nih.gov/compound/5284592)
+- **molar mass:** 372.5408 g/mol (C24H36O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About

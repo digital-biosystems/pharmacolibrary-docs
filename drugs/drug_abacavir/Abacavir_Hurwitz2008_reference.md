@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (zidovudine vs unknown) and 8 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**CL/F has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. None of the extracted parameters is abacavir's own; they describe zidovudine. Extracted — zidovudine: CL/F 0.0703, kabs 2.66 h Ϫ1, V/F 344 liters.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has zidovudine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hurwitz SJ; Asif G; Kivel NM; Schinazi RF et al. (2008). Antimicrobial agents and chemotherapy 52

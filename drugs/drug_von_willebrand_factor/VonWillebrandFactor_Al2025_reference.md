@@ -5,7 +5,7 @@
 
 # von Willebrand factor — `VonWillebrandFactor_Al2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — von willebrand factor: CL 250 mL/h/70 kg, V 6.49e+03 mL/70 kg.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Al Arashi W; Cloesmeijer ME; Leebeek FWG; Duvekot JJ; Kruip MJHA; Mathôt RAA; Cnossen MH; OPTI‐CLOT/To WiN study group and SYMPHONY consortium et al. (2025). HemaSphere 9
@@ -25,6 +29,9 @@ Al Arashi W; Cloesmeijer ME; Leebeek FWG; Duvekot JJ; Kruip MJHA; Mathôt RAA; C
 
 ## Model component
 <dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Al2025_reference" status="needs_review" stale="false" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -49,12 +56,12 @@ Al Arashi W; Cloesmeijer ME; Leebeek FWG; Duvekot JJ; Kruip MJHA; Mathôt RAA; C
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
 
 _Every reader agrees on every compared field of this record._
 

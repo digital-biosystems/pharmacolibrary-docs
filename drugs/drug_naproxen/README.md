@@ -5,7 +5,8 @@
 
 - **generic name:** naproxen
 - **ATC codes:** `G02CC02`, `M01AE02`, `M01AE52`, `M01AE56`, `M01AE57`, `M02AA12`, `N02CC51`
-- **DrugBank:** [DB00788](https://go.drugbank.com/drugs/DB00788)
+- **DrugBank:** [DB00788](https://go.drugbank.com/drugs/DB00788) · **PubChem:** [CID 156391](https://pubchem.ncbi.nlm.nih.gov/compound/156391)
+- **molar mass:** 230.2592 g/mol (C14H14O3) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Björnsson_2011_reference](drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md) | Björnsson MA et al., Modelling of pain intensity and informa…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03924.x](https://doi.org/10.1111/j.1365-2125.2011.03924.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Björnsson_2011_reference](drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md) | 1-compartment, oral | 2 | Björnsson MA et al., Modelling of pain intensity and informa…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03924.x](https://doi.org/10.1111/j.1365-2125.2011.03924.x) |
 
 ## ADME sites
 

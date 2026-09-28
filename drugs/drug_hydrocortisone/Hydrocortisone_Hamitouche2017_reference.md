@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is hydrocortisone's own; they describe fludrocortisone, hydrocortisone. Extracted — fludrocortisone, hydrocortisone: t1/2z 1.4 h, CL 40.8 L/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hamitouche N; Comets E; Ribot M; Alvarez JC; Bellissant E; Laviolle B et al. (2017). The AAPS journal 19
@@ -25,6 +27,9 @@ Hamitouche N; Comets E; Ribot M; Alvarez JC; Bellissant E; Laviolle B et al. (20
 
 ## Model component
 <dbs-pgx drug="hydrocortisone" model-id="Hydrocortisone_Hamitouche2017_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="fludrocortisone, hydrocortisone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

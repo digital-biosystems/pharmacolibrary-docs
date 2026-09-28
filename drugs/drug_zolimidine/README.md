@@ -4,7 +4,8 @@
 
 - **generic name:** zolimidine
 - **ATC codes:** `A02BX10`
-- **DrugBank:** [DB13593](https://go.drugbank.com/drugs/DB13593)
+- **DrugBank:** [DB13593](https://go.drugbank.com/drugs/DB13593) · **PubChem:** not captured
+- **molar mass:** 272.32 g/mol (C14H12N2O2S) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

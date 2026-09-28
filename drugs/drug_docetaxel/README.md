@@ -5,7 +5,8 @@
 
 - **generic name:** docetaxel
 - **ATC codes:** `L01CD02`
-- **DrugBank:** [DB01248](https://go.drugbank.com/drugs/DB01248)
+- **DrugBank:** [DB01248](https://go.drugbank.com/drugs/DB01248) · **PubChem:** [CID 148124](https://pubchem.ncbi.nlm.nih.gov/compound/148124)
+- **molar mass:** 807.8792 g/mol (C43H53NO14) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ The use of docetaxel may lead to udesired outcomes such as hepatic impairment, h
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024_reference](drugs/drug_docetaxel/Docetaxel_Wang2024_reference.md) | Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09913-y](https://doi.org/10.1007/s10928-024-09913-y) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024_reference](drugs/drug_docetaxel/Docetaxel_Wang2024_reference.md) | 1-compartment (no model) | 2 | Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09913-y](https://doi.org/10.1007/s10928-024-09913-y) |
 
 ## ADME sites
 

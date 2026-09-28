@@ -4,7 +4,7 @@
 
 - **generic name:** butriptyline
 - **ATC codes:** `N06AA15`
-- **DrugBank:** [DB09016](https://go.drugbank.com/drugs/DB09016)
+- **DrugBank:** [DB09016](https://go.drugbank.com/drugs/DB09016) · **PubChem:** [CID 21772](https://pubchem.ncbi.nlm.nih.gov/compound/21772)
 - **groups:** approved, withdrawn
 
 ## About

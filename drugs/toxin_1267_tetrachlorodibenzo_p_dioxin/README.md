@@ -4,7 +4,7 @@
 
 - **generic name:** not captured
 - **ATC codes:** not captured
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** [CID 38524](https://pubchem.ncbi.nlm.nih.gov/compound/38524)
 - **groups:** not captured
 
 ## Extraction summary

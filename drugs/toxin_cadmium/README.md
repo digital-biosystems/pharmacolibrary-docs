@@ -5,7 +5,7 @@
 
 - **generic name:** not captured
 - **ATC codes:** not captured
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** [CID 31193](https://pubchem.ncbi.nlm.nih.gov/compound/31193)
 - **groups:** experimental
 
 ## About
@@ -20,14 +20,14 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ekobena_2025_review reference](drugs/toxin_cadmium/Cadmium_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jia_2026_review reference](drugs/toxin_cadmium/Cadmium_Jia2026_reference.md) | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Marques_2026_review reference](drugs/toxin_cadmium/Cadmium_Marques2026_reference.md) | Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (2026) | [10.3390/pharmaceutics18060636](https://doi.org/10.3390/pharmaceutics18060636) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Muthukrishnan_2025_review reference](drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference.md) | Muthukrishnan VY et al., Population Pharmacokinetic and Pharmaco…, Clinical and translational… (2025) | [10.1111/cts.70381](https://doi.org/10.1111/cts.70381) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Sunnåker_2026_review reference](drugs/toxin_cadmium/Cadmium_Sunnker2026_reference.md) | Sunnåker M et al., Population Pharmacokinetics of the Nove…, Pharmacology research & per… (2026) | [10.1002/prp2.70259](https://doi.org/10.1002/prp2.70259) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhong_2024_six bivalve species (Perna viridis, Mytilus unguiculatus, Mytilus galloprovincialis, Magallana gigas, Magallana hongkongensis, Magallana angulata)](drugs/toxin_cadmium/Cadmium_Zhong2024_reference.md) | Zhong G et al., Toxicokinetics and Mussel Watch: Addres…, Environmental science & tec… (2024) | [10.1021/acs.est.4c02026](https://doi.org/10.1021/acs.est.4c02026) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ekobena_2025_review reference](drugs/toxin_cadmium/Cadmium_Ekobena2025_reference.md) | 1-compartment, oral | 4 | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jia_2026_review reference](drugs/toxin_cadmium/Cadmium_Jia2026_reference.md) | 1-compartment, oral | 4 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Marques_2026_review reference](drugs/toxin_cadmium/Cadmium_Marques2026_reference.md) | 1-compartment, IV | 2 | Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (2026) | [10.3390/pharmaceutics18060636](https://doi.org/10.3390/pharmaceutics18060636) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Muthukrishnan_2025_review reference](drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference.md) | 2-compartment, IV | 4 | Muthukrishnan VY et al., Population Pharmacokinetic and Pharmaco…, Clinical and translational… (2025) | [10.1111/cts.70381](https://doi.org/10.1111/cts.70381) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Sunnåker_2026_review reference](drugs/toxin_cadmium/Cadmium_Sunnker2026_reference.md) | 1-compartment, IV | 2 | Sunnåker M et al., Population Pharmacokinetics of the Nove…, Pharmacology research & per… (2026) | [10.1002/prp2.70259](https://doi.org/10.1002/prp2.70259) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhong_2024_six bivalve species (Perna viridis, Mytilus unguiculatus, Mytilus galloprovincialis, Magallana gigas, Magallana hongkongensis, Magallana angulata)](drugs/toxin_cadmium/Cadmium_Zhong2024_reference.md) | 1-compartment, oral | 4 | Zhong G et al., Toxicokinetics and Mussel Watch: Addres…, Environmental science & tec… (2024) | [10.1021/acs.est.4c02026](https://doi.org/10.1021/acs.est.4c02026) |
 
 ## Pharmacodynamics (PD)
 

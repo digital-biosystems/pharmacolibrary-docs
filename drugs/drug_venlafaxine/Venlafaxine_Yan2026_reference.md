@@ -5,7 +5,7 @@
 
 # venlafaxine — `Venlafaxine_Yan2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The venlafaxine model was held back because ka and Tlag were not reported in the source and placeholder defaults were substituted, and a first-order depot absorption was invented with F=1, Fm=1 and no molar correction.**
+
+The record reports only CL/F = 28.9 L/h and V/F = 310.0 L for venlafaxine; the absorption rate constant ka and lag time Tlag are missing from the source, so default placeholder values were substituted and the model was held back. The builder additionally assumed F=1 and Fm=1 with no molar correction, making all parameters apparent (/F), and introduced a first-order depot input whose absorption rate was defaulted rather than reported — adjudicated as 'invented absorption: not acceptable'. Extracted — venlafaxine: CL/F 28.9 L/h, V/F 310 L.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Yan H; Huang W; Xia H; Luo Y; Li Y; Shang D et al. (2026). Drug design, development and therapy 20
@@ -25,6 +29,9 @@ Yan H; Huang W; Xia H; Luo Y; Li Y; Shang D et al. (2026). Drug design, developm
 
 ## Model component
 <dbs-pgx drug="venlafaxine" model-id="Venlafaxine_Yan2026_reference" status="needs_review" stale="false" population="" measured-compound="venlafaxine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,12 +62,12 @@ Yan H; Huang W; Xia H; Luo Y; Li Y; Shang D et al. (2026). Drug design, developm
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
 
 _Every reader agrees on every compared field of this record._
 
@@ -116,18 +123,23 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference/Venlafaxine_Yan2026_reference_modelica.zip" download>Venlafaxine_Yan2026_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference/Venlafaxine_Yan2026_reference_matlab.zip" download>Venlafaxine_Yan2026_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference/Venlafaxine_Yan2026_reference_matlab_simbio.zip" download>Venlafaxine_Yan2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference/Venlafaxine_Yan2026_reference_sbml.zip" download>Venlafaxine_Yan2026_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference/Venlafaxine_Yan2026_reference_cellml.zip" download>Venlafaxine_Yan2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference/Venlafaxine_Yan2026_reference.svg" alt="Venlafaxine_Yan2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference/Venlafaxine_Yan2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference/Venlafaxine_Yan2026_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Venlafaxine_Yan2026_reference_params.json` · controls `Venlafaxine_Yan2026_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

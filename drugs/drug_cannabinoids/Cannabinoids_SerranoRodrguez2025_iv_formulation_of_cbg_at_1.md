@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction); C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter.**
+
+A reported unit could not be converted (AUCt, AUC and Cmax), so that value has no SI equivalent. Extracted — cannabinoids: AUCt 856 μmol/L·h, AUC 2.38e+03 μmol/L·h, Cmax 5.51e+03 μmol/L, tmax 2.28 h, t1/2z 29.2 h, Vss 74.3 L/kg, AUC ratio 54.2, Fab 0.29, … (+8).
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Serrano-Rodríguez JM; Miraz R; Saitua A; Díez de Castro E; Ledesma-Escobar C; Ferreiro-Vera C; Priego-Capote F; Sánchez de Medina V; Sánchez de Medina A et al. (2025). Frontiers in veterinary science 12
@@ -25,6 +27,9 @@ Serrano-Rodríguez JM; Miraz R; Saitua A; Díez de Castro E; Ledesma-Escobar C; 
 
 ## Model component
 <dbs-pgx drug="cannabinoids" model-id="Cannabinoids_SerranoRodrguez2025_iv_formulation_of_cbg_at_1" status="rejected" stale="false" population="healthy adult horses" measured-compound="cannabigerol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 16 extracted.
 
 **Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

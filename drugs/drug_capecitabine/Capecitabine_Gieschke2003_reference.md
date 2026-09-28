@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (capecitabine metabolites vs capecitabine) and 16 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The capecitabine metabolite model was rejected because the structural parameter V3 is reported as 0.0213 l, a dimension mismatch, and the metabolite FBAL has no metabolic path from the administered dose.**
+
+V3 is listed as 0.0213 l, which is dimensionally inconsistent for a structural parameter of this linear metabolite model. The metabolite FBAL, the final step of the capecitabine → 5′-DFUR → 5-FU → FBAL metabolic chain, has no path from the dose, so it is unlinked. Additionally, the residual-error unit 'RE' (value 0.0885 for 5-FU) could not be expressed in SI units, so that parameter was left without a usable value. A second reader extracted further parameters absent from this record: CL1 = 0.00952 l/h, CL2 = 0.0337 l/h, KA = 0.166 l/h, and residual errors of 0.0885 (5-FU), 0.0362 (5′-DFUR) and 34 (FBAL). Extracted — capecitabine metabolites: kabs 0.166 l h -1, V1 30 l, V2 17.8 l, Q 0.0337 l h -1, V3 0.0213 l, fu 0.0885 RE.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has capecitabine metabolites, the second reading capecitabine; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `capecitabine`, measured `capecitabine metabolites`.
 
@@ -28,6 +31,9 @@ Gieschke R; Burger HU; Reigner B; Blesch KS; Steimer JL et al. (2003). British j
 
 ## Model component
 <dbs-pgx drug="capecitabine" model-id="Capecitabine_Gieschke2003_reference" status="rejected" stale="false" population="patients with advanced or metastatic colorectal cancer" measured-compound="capecitabine metabolites" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

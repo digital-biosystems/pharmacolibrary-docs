@@ -17,9 +17,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The eslicarbazepine pediatric model was held back because absorption rate constant ka and lag time were not reported and left at defaults, and the relative bioavailability value 6.76 (dimensionless) is implausible.**
+
+The record defines covariate effects (theta_cl_category 25.6 L/h; theta_q49_category 0.895) but only the reference individual was simulated, so these effects were never exercised. The absorption input was assumed first-order with ka and Tlag defaulted because the source did not report them, and apparent parameterization assumed F=1 and Fm=1 without molar correction. The relative bioavailability during carbamazepine use was recorded as 6.76, a value that appears inconsistent with a dimensionless fraction. Extracted — eslicarbazepine: CL 2.92 L/h, V/F 4.78 L, Frel 6.76.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `eslicarbazepine acetate`, measured `eslicarbazepine`.
 
@@ -28,6 +30,9 @@ not matched (stem Sunkaraneni_2018_2)
 
 ## Model component
 <dbs-pgx drug="eslicarbazepine" model-id="Eslicarbazepine_Sunkaraneni2018v2_reference" status="needs_review" stale="false" population="pediatric patients with partial-onset seizures" measured-compound="eslicarbazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted, plus 2 covariate effects.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -140,6 +145,8 @@ not matched (stem Sunkaraneni_2018_2)
 </div><figure class="pk-models-diagram"><img src="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference/Eslicarbazepine_Sunkaraneni2018v2_reference.svg" alt="Eslicarbazepine_Sunkaraneni2018v2_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference/Eslicarbazepine_Sunkaraneni2018v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference/Eslicarbazepine_Sunkaraneni2018v2_reference_sim_controls.json"></dbs-fmusim>
 

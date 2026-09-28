@@ -4,7 +4,8 @@
 
 - **generic name:** gliquidone
 - **ATC codes:** `A10BB08`
-- **DrugBank:** [DB01251](https://go.drugbank.com/drugs/DB01251)
+- **DrugBank:** [DB01251](https://go.drugbank.com/drugs/DB01251) · **PubChem:** [CID 91610](https://pubchem.ncbi.nlm.nih.gov/compound/91610)
+- **molar mass:** 527.632 g/mol (C27H33N3O6S) — DrugBank
 - **groups:** approved
 
 ## About

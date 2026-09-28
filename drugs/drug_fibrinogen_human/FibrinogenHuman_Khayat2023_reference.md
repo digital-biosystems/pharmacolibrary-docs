@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (fibrinogen concentrate vs fibrinogen_human) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fibrinogen human: Cmax 1.3 g/l, t1/2z 60.6 h, V 5 L/kg, kabs 1.22 /h, tlag 1.23 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fibrinogen concentrate, the second reading fibrinogen_human; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `fibrinogen concentrate`, measured `fibrinogen`.
 
@@ -28,6 +31,9 @@ Khayat CD; Navarro-Puerto J; Ross CR; Subramanian K; Kalappanavar NK; Rucker K; 
 
 ## Model component
 <dbs-pgx drug="fibrinogen, human" model-id="FibrinogenHuman_Khayat2023_reference" status="needs_review" stale="false" population="pediatric patients with congenital afibrinogenemia" measured-compound="fibrinogen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

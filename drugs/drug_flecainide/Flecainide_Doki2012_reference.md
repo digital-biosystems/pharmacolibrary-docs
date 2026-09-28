@@ -1,5 +1,5 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;flecainide&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/&quot;},{&quot;label&quot;:&quot;Doki_2012 \u00b7 patients with supraventricular tachyarrhythmias&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Bergenholm2016_reference&quot;,&quot;label&quot;:&quot;Bergenholm_2016_conscious beagle dogs&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Bergenholm2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Doki2006_reference&quot;,&quot;label&quot;:&quot;Doki_2006_Japanese patients with supraventricular tachyarrhythmia&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Doki2006_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Doki2012_reference&quot;,&quot;label&quot;:&quot;Doki_2012_patients with supraventricular tachyarrhythmias&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Doki2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Flecainide_Sangrador1989_reference&quot;,&quot;label&quot;:&quot;Sangrador_1989_critically ill patients with acute myocardial infarction&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sangrador1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;flecainide&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/&quot;},{&quot;label&quot;:&quot;Doki_2012 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Doki2006_reference&quot;,&quot;label&quot;:&quot;Doki_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Doki2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Bergenholm2016_reference&quot;,&quot;label&quot;:&quot;Bergenholm_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Bergenholm2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Doki2012_reference&quot;,&quot;label&quot;:&quot;Doki_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Doki2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Flecainide_Sangrador1989_reference&quot;,&quot;label&quot;:&quot;Sangrador_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sangrador1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (flecainide vs unknown) and 4 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has flecainide, the second reading unknown; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Doki K; Homma M; Kuga K; Aonuma K; Kohda Y et al. (2012). Pharmacogenetics and genomics 22
@@ -26,6 +29,9 @@ Doki K; Homma M; Kuga K; Aonuma K; Kohda Y et al. (2012). Pharmacogenetics and g
 
 ## Model component
 <dbs-pgx drug="flecainide" model-id="Flecainide_Doki2012_reference" status="rejected" stale="false" population="patients with supraventricular tachyarrhythmias" measured-compound="flecainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -86,7 +92,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Doki_2012` / `Doki_2012::patients with supraventricular tachyarrhythmias`)
+- scholar stages: `../../../knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Doki_2012` / `Doki_2012::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

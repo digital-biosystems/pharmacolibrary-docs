@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 2 covered; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[alag1]` (not captured vs 0.500) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The empagliflozin model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no values, so library placeholder values stood in for these parameters.**
+
+The record lists CL 0.0110, V2 1.27, Q/F 6.34, V3 0.959 and ka 1.23, yet the coverage check found only 2 of 4 expected parameters covered, with V2 and Q/F neither emitted nor defaulted. Placeholder values were substituted for the missing clearance, volume of distribution, absorption rate constant and lag time, and the builder additionally assumed F=1 and Fm=1 with no molar correction (apparent parameterization). The ka default was an invented absorption term since it was not reported in the source, and the deviations check judged this unacceptable. A second reader also disagreed on one absorption parameter field, reading 0.500 where the record had null. Extracted — empagliflozin: CL 0.011, V2 1.27, Q/F 6.34, V3 0.959, kabs 1.23.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alag1: this record has none, the second reading 0.500. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Baron KT; Macha S; Broedl UC; Nock V; Retlich S; Riggs M et al. (2016). Diabetes therapy : research, treatment and education of diabetes and related disorders 7
@@ -26,6 +29,9 @@ Baron KT; Macha S; Broedl UC; Nock V; Retlich S; Riggs M et al. (2016). Diabetes
 
 ## Model component
 <dbs-pgx drug="empagliflozin" model-id="Empagliflozin_Baron2016_reference" status="model_quarantined" stale="false" population="patients with type 2 diabetes" measured-compound="empagliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** Q/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The efavirenz model was quarantined because Vd, ka and Tlag had no values in the source, so library defaults stood in, and the invented absorption rate constant (ka) was judged not acceptable.**
+
+The record reports only CL/F = 13.9 L/h for efavirenz; volume of distribution, absorption rate constant and absorption lag time were missing from the source, so generic placeholder values were substituted for the missing parameters. The defaulted ka — not reported in the source — was adjudicated as invented absorption and deemed not acceptable, triggering the quarantine. The model uses a one-compartment structure with first-order depot input and apparent (/F) parameterization assuming F=1 and Fm=1 with no molar correction, but these assumptions alone did not cause the hold-back; the missing Vd, ka and Tlag did. Extracted — efavirenz: CL/F 13.9 L/h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Vucicevic K; Michalickova D; Obradovic B; Ranin J; Jevtovic D; Lukic R; et al. et al. (2025). Cureus 17
@@ -26,6 +29,9 @@ Vucicevic K; Michalickova D; Obradovic B; Ranin J; Jevtovic D; Lukic R; et al. e
 
 ## Model component
 <dbs-pgx drug="efavirenz" model-id="Efavirenz_Vucicevic2025_reference" status="model_quarantined" stale="false" population="HIV-1-infected adult patients" measured-compound="efavirenz" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

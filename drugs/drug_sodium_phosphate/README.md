@@ -4,7 +4,7 @@
 
 - **generic name:** sodium phosphate
 - **ATC codes:** `A06AD17`, `A06AG01`, `B05XA09`, `V03AG05`
-- **DrugBank:** [DB09449](https://go.drugbank.com/drugs/DB09449)
+- **DrugBank:** [DB09449](https://go.drugbank.com/drugs/DB09449) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

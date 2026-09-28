@@ -4,7 +4,8 @@
 
 - **generic name:** nifuroxazide
 - **ATC codes:** `A07AX03`
-- **DrugBank:** [DB13855](https://go.drugbank.com/drugs/DB13855)
+- **DrugBank:** [DB13855](https://go.drugbank.com/drugs/DB13855) · **PubChem:** not captured
+- **molar mass:** 275.22 g/mol (C12H9N3O5) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

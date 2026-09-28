@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (fluorouracil vs unknown) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The fluorouracil record was rejected because a structural volume parameter fails the dimensional check and the metabolites 5FUH2, 5FDHU, SN38G and APC carry no metabolism parameter values, leaving them unlinked.**
+
+The volume of distribution parameters are internally inconsistent: V3 and Vss are both listed as 494.1 L while V2 is 0.61 L and V1 is 1.6 L, and the dimension check on a structural parameter failed. The metabolism links from fluorouracil to 5FUH2 and 5FDHU and from SN38 to SN38G and APC have no parameter assigned (link_parameter 'none'), so these metabolites are unreachable from the dose and the corresponding check failed. Additionally, one reported unit could not be converted to SI, so that parameter entered the record without an SI value. A second reader disputed the recorded dose compound and primary analyte (both recorded as fluorouracil) and the molecule naming within the metabolism links, but these disagreements do not change the rejection grounds. Extracted — fluorouracil: V3 494 L, Vss 494 L, V2 0.61 L, V1 1.6 L, Vmax 0.15 mg/h, CL 256 L/h, kabs 0.757 h−1, tlag 0.000552 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Deyme L; Barbolosi D; Gattacceca F et al. (2019). Cancer chemotherapy and pharmacology 83

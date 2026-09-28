@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for warfarin's bioavailability and clearance; the covariate scenarios were not simulated.**
+
+The model was built, but warfarin's bioavailability and clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — warfarin: kel 0.0283 /h, MTT 28.2 h, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 22:23:49.148641+00:00) predates the upstream re-run (2026-09-23 12:18:16.090464+00:00). Current validate status: `extracted`.
 

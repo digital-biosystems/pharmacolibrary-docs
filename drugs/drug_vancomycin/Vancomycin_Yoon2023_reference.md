@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q47 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[θfem]` (not captured vs -0.199) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Kel has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (kel), so that value has no SI equivalent. Extracted — vancomycin: CL 4.32 L/h, V 38.6 L, Q 3.93 L/h, V2 66.8 L, kel 0.655 Creatinine clearance related parameter.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of θfem: this record has none, the second reading -0.199; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yoon S; Guk J; Lee SG; Chae D; Kim JH; Park K et al. (2023). Frontiers in pharmacology 14
@@ -26,6 +29,9 @@ Yoon S; Guk J; Lee SG; Chae D; Kim JH; Park K et al. (2023). Frontiers in pharma
 
 ## Model component
 <dbs-pgx drug="vancomycin" model-id="Vancomycin_Yoon2023_reference" status="needs_review" stale="false" population="patients with infections (mixed adults and children)" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (mechanistic vs apparent) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The codeine model was rejected because its structure leaves a compartment or metabolite with no path from the dose, and several parameters (clearances and variability terms) were left unextracted, with a second reader reporting different values.**
+
+The rejection cause is an unreachable/orphan compartment or unlinked metabolite: in the recorded structure, codeine metabolizes to morphine (fraction fmor = 0.108) and to codeine-6-glucuronide (1 − fmor), and morphine to morphine-3-glucuronide (fM3G), but one of these species has no path from the administered dose. A second reader disagreed on the model parameterization, reading it as apparent rather than mechanistic, and supplied values absent from the record: 832 for the *1/*35 and *1/*2 genotype terms, 59.6 for codeine clearance, 4.67 for morphine-3-glucuronide clearance, and 0.019 for the codeine variability term. The extracted parameters cover only kabs (6.49), V1 (231.2), fm (0.108), and CL (0.18 ml/h), so the record is incomplete relative to the second reader's readings. Extracted — codeine: kabs 6.49, V1 231, fm 0.108, CL 0.18 ml/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:06:14.211406+00:00) predates the upstream re-run (2026-09-23 14:29:36.558268+00:00). Current validate status: `rejected`.
 

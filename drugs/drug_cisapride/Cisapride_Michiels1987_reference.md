@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (23 vs not captured) and 4 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The cisapride record was rejected because a structural parameter carries a dimension mismatch, and it rests only on the paper's abstract, with the terminal half-life left without a value.**
+
+The record reports cisapride plasma clearance of 91 ml/min.kg, volume of distribution of 4.7 l/kg and absolute oral bioavailability of 23%, but the terminal plasma half-life has no numeric value. The stated cause of rejection is a dimension mismatch on a structural parameter. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader disagreed on the bioavailability (23 vs none), clearance (91 vs none), volume of distribution (4.7 vs none) and half-life (none vs none) entries, leaving those values unconfirmed. Extracted — cisapride: CL 91 ml/min.kg, V 4.7 l/kg, Fab 23 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 23, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Michiels M; Monbaliu J; Hendriks R; Geerts R; Woestenborghs R; Heykants J et al. (1987). Arzneimittel-Forschung 37
 
 ## Model component
 <dbs-pgx drug="cisapride" model-id="Cisapride_Michiels1987_reference" status="rejected" stale="false" population="rats, rabbits and dogs" measured-compound="cisapride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

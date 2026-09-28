@@ -4,7 +4,8 @@
 
 - **generic name:** salsalate
 - **ATC codes:** `N02BA06`
-- **DrugBank:** [DB01399](https://go.drugbank.com/drugs/DB01399)
+- **DrugBank:** [DB01399](https://go.drugbank.com/drugs/DB01399) · **PubChem:** [CID 5161](https://pubchem.ncbi.nlm.nih.gov/compound/5161)
+- **molar mass:** 258.2262 g/mol (C14H10O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

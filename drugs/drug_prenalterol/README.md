@@ -4,7 +4,8 @@
 
 - **generic name:** prenalterol
 - **ATC codes:** `C01CA13`
-- **DrugBank:** [DB13777](https://go.drugbank.com/drugs/DB13777)
+- **DrugBank:** [DB13777](https://go.drugbank.com/drugs/DB13777) · **PubChem:** not captured
+- **molar mass:** 225.288 g/mol (C12H19NO3) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

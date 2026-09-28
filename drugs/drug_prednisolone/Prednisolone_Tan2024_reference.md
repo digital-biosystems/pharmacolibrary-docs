@@ -5,7 +5,7 @@
 
 # prednisolone — `Prednisolone_Tan2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T3_param_coverage
-**How to address:** Open the emitted .mo and compare its base class and parameters with the record.
-<sub>owner: **engineer**</sub>
+**This prednisolone model record was held back because the oral lag time parameter (tlag, 0.36 hour) was not covered, leaving only 2 of 3 expected parameters extracted, and a second reader disputed several extracted values.**
+
+The record contains three prednisolone parameters — red blood cell clearance (CL, 7.74 L/h), central volume (V1, 9.6 L) and oral lag time (tlag, 0.36 hour) — but the coverage check found only 2 of 3 expected parameters covered, with tlag neither emitted nor defaulted, so the model was marked needs_review. A second reader also disagreed on the clearance value, reading 8.4 L/h against this record's 7.74 L/h, and on other values (31 vs 14, 6.55 vs 12), while reporting values (0.590, 8.260, 0.7) that this record left empty. The source is a review reference read from secondary text, so the extracted numbers may not reflect the fitted model directly. Extracted — prednisolone: CL 7.74 L.hour À1, V1 9.6 L, tlag 0.36 hour.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 7.74, the second reading 8.4; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tan JM; Upton RN; Foster DJR; Proudman SM; Dhir V; Wiese MD et al. (2024). British journal of clinical pharmacology 90
@@ -25,6 +29,9 @@ Tan JM; Upton RN; Foster DJR; Proudman SM; Dhir V; Wiese MD et al. (2024). Briti
 
 ## Model component
 <dbs-pgx drug="prednisolone" model-id="Prednisolone_Tan2024_reference" status="needs_review" stale="false" population="" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -50,14 +57,32 @@ Tan JM; Upton RN; Foster DJR; Proudman SM; Dhir V; Wiese MD et al. (2024). Briti
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.235 (4/17 fields) | 13 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 7.74 | 8.4 | mismatch |
+| `gpt-oss:120b` | `values[Q301]` | 0.81 | 0.81 | mismatch |
+| `gpt-oss:120b` | `values[Q302]` | 0.55 | 0.55 | mismatch |
+| `gpt-oss:120b` | `values[Q312]` | 31 | 14 | mismatch |
+| `gpt-oss:120b` | `values[Q316]` | not captured | 0.590 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q317]` | not captured | 8.260 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q327]` | 6.55 | 12 | mismatch |
+| `gpt-oss:120b` | `values[Q40]` | not captured | 0.7 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | not captured | 0.144 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q51]` | not captured | 0.171 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | 9.6 | 0.3 | mismatch |
+| `gpt-oss:120b` | `values[Q77]` | 0.3 | 0.3 | mismatch |
+| `gpt-oss:120b` | `values[Q87]` | not captured | 1 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -121,6 +146,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_prednisolone/Prednisolone_Tan2024_reference/Prednisolone_Tan2024_reference.svg" alt="Prednisolone_Tan2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_prednisolone/Prednisolone_Tan2024_reference/Prednisolone_Tan2024_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_prednisolone/Prednisolone_Tan2024_reference/Prednisolone_Tan2024_reference_sim_controls.json"></dbs-fmusim>
 

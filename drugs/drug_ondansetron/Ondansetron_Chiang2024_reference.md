@@ -5,7 +5,7 @@
 
 # ondansetron — `Ondansetron_Chiang2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.368). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The ondansetron one-compartment model was rejected because the apparent volume of distribution V1 was extracted as 17.5 mL, a physiologically implausible magnitude pointing to a unit/scale extraction error.**
+
+The record lists V1 = 17.5 with unit mL for ondansetron, alongside CL = 525.0 mL·h⁻¹; a central volume of 17.5 mL for ondansetron is far outside any physiological window, consistent with a unit or scale misreading (the plausible value would be litres). The review classified this as an implausible-magnitude unit/scale extraction error and refused the record. The second reader returned no values for the other extracted quantities, so no independent confirmation of the extracted numbers exists; only the value 3.58 was confirmed by both readers. Extracted — ondansetron: CL 525 mL⋅h -1, V1 17.5 mL.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q301: this record has 2.14, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Chiang M; Back H; Lee JB; Oh S; Guo T; Girgis S; et al. et al. (2024). Pharmaceutical research 41
@@ -25,6 +29,9 @@ Chiang M; Back H; Lee JB; Oh S; Guo T; Girgis S; et al. et al. (2024). Pharmaceu
 
 ## Model component
 <dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2024_reference" status="rejected" stale="false" population="wild-type and Pgp knockout rats" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -49,14 +56,31 @@ Chiang M; Back H; Lee JB; Oh S; Guo T; Girgis S; et al. et al. (2024). Pharmaceu
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.368 (7/19 fields) | 12 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q301]` | 2.14 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q302]` | 2.62 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q303]` | 17.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q304]` | 39.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q315]` | 0.05 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q347]` | 9.37 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q348]` | 71.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q410]` | 3.58 | 3.58 | mismatch |
+| `gpt-oss:120b` | `values[Q47]` | 3.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q51]` | 6.84 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 1.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | 17.5 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

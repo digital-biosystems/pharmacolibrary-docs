@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 6 scholar param(s) emitted or defaulted — got 2 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clmo]` (not captured vs 78.7) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The tramadol parent–metabolite model was held back because tramadol's volume of distribution, absorption rate constant and lag time had no values, so library defaults stood in, and the intercompartmental clearances Q (111 L/h parent, 1.98 L/h metabolite) and peripheral volumes V2 (102 L, 101 L) were neither extracted nor defaulted.**
+
+The record lists tramadol CL/F 25.6 L/h and V1 0.211 L, and O-desmethyltramadol CL 62.2 L/h and V1 1.45 L/kg, but Q and V2 for both tramadol and its metabolite were missing, leaving only 2 of the 6 expected parameters covered. The builder substituted library defaults for tramadol's Vd, ka and Tlag, and invented an absorption rate constant not reported in the source. The structure also mismatched: a two-compartment parent–metabolite structure was expected but a one-compartment extravascular structure was used, with apparent (F=1, Fm=1) parameterization and first-order depot input. Additionally, the CYP2D6 covariate effects (theta 43 on tramadol clearance, 14.7 on metabolite formation clearance) were defined but only the reference individual was simulated, and a second reader reported different values for several parameters (e.g., metabolite clearance 78.7 vs null) that this record does not contain. Extracted — tramadol: CL/F 25.6 L/h, Q 111 L/h, V1 0.211 L, V2 102 L; O-desmethyltramadol: CL 62.2 L/h, Q 1.98 L/h, V1 1.45 L/kg, V2 101 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clmo: this record has none, the second reading 78.7; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Healy P; Allegaert K; Della Pasqua O et al. (2025). British journal of clinical pharmacology 91
@@ -28,6 +31,9 @@ Healy P; Allegaert K; Della Pasqua O et al. (2025). British journal of clinical 
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_Healy2025_reference" status="model_quarantined" stale="false" population="neonatal patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 8 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

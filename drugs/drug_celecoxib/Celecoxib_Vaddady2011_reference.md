@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (THC and celecoxib vs THC, CEL) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for celecoxib's clearance and volume of distribution.**
+
+The model was built, but celecoxib's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — celecoxib: Vss 26.5; THC and celecoxib: CL 22.9 l Á h À1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has THC and celecoxib, the second reading THC, CEL; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Vaddady PK; Mehrotra N; Zhang X; Yates CR; Moore BM; Meibohm B et al. (2011). Biopharmaceutics & drug disposition 32
@@ -26,6 +29,9 @@ Vaddady PK; Mehrotra N; Zhang X; Yates CR; Moore BM; Meibohm B et al. (2011). Bi
 
 ## Model component
 <dbs-pgx drug="celecoxib" model-id="Celecoxib_Vaddady2011_reference" status="model_quarantined" stale="false" population="pigs in hemorrhagic shock or normotensive conditions" measured-compound="THC and celecoxib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

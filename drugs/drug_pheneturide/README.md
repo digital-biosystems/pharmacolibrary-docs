@@ -4,7 +4,8 @@
 
 - **generic name:** pheneturide
 - **ATC codes:** `N03AX13`
-- **DrugBank:** [DB13362](https://go.drugbank.com/drugs/DB13362)
+- **DrugBank:** [DB13362](https://go.drugbank.com/drugs/DB13362) · **PubChem:** not captured
+- **molar mass:** 206.245 g/mol (C11H14N2O2) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

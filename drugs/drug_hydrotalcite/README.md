@@ -4,7 +4,8 @@
 
 - **generic name:** hydrotalcite
 - **ATC codes:** `A02AD04`
-- **DrugBank:** [DB13322](https://go.drugbank.com/drugs/DB13322)
+- **DrugBank:** [DB13322](https://go.drugbank.com/drugs/DB13322) · **PubChem:** not captured
+- **molar mass:** 619.973 g/mol (CH24Al2Mg6O24) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
 ## Extraction summary

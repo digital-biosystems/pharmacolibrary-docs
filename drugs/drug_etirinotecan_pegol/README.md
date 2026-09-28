@@ -5,7 +5,7 @@
 
 - **generic name:** etirinotecan pegol
 - **ATC codes:** `L01CE03`
-- **DrugBank:** [DB14951](https://go.drugbank.com/drugs/DB14951)
+- **DrugBank:** [DB14951](https://go.drugbank.com/drugs/DB14951) · **PubChem:** not captured
 - **groups:** investigational
 
 ## About
@@ -20,10 +20,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not simulated</span> | [Sy_2018_population_parameter_estimate_se](drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_population_parameter_estimate_se.md) | Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'parameter' is a table statistic/structure column, not a study pop…</sub><br><sub>route_to: `human_review`</sub> | [Sy_2018_parameter](drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_parameter.md) | Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">not simulated</span> | [Sy_2018_population_parameter_estimate_se](drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_population_parameter_estimate_se.md) | 2-compartment general linear | 3 | Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'parameter' is a table statistic/structure column, not a study pop…</sub><br><sub>route_to: `human_review`</sub> | [Sy_2018_parameter](drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_parameter.md) | general linear (no model) | 3 | Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3) |
 
 ## ADME sites
 

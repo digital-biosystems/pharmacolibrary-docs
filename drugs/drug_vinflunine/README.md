@@ -4,7 +4,8 @@
 
 - **generic name:** vinflunine
 - **ATC codes:** `L01CA05`
-- **DrugBank:** [DB11641](https://go.drugbank.com/drugs/DB11641)
+- **DrugBank:** [DB11641](https://go.drugbank.com/drugs/DB11641) · **PubChem:** not captured
+- **molar mass:** 816.944 g/mol (C45H54F2N4O8) — DrugBank
 - **groups:** approved, investigational
 
 ## About

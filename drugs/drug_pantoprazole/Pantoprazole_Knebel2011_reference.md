@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clearance]` (6.5 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance: this record has 6.5, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Knebel W; Tammara B; Udata C; Comer G; Gastonguay MR; Meng X et al. (2011). Journal of clinical pharmacology 51
@@ -26,6 +29,9 @@ Knebel W; Tammara B; Udata C; Comer G; Gastonguay MR; Meng X et al. (2011). Jour
 
 ## Model component
 <dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Knebel2011_reference" status="curated_candidate" stale="false" population="pediatric patients from birth to 16 years" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -145,6 +151,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_pantoprazole/Pantoprazole_Knebel2011_reference/Pantoprazole_Knebel2011_reference.svg" alt="Pantoprazole_Knebel2011_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.325 /h, lag 150 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_pantoprazole/Pantoprazole_Knebel2011_reference/Pantoprazole_Knebel2011_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_pantoprazole/Pantoprazole_Knebel2011_reference/Pantoprazole_Knebel2011_reference_sim_controls.json"></dbs-fmusim>
 

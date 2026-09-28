@@ -5,7 +5,8 @@
 
 - **generic name:** cafedrine
 - **ATC codes:** `C01CA21`
-- **DrugBank:** [DB12926](https://go.drugbank.com/drugs/DB12926)
+- **DrugBank:** [DB12926](https://go.drugbank.com/drugs/DB12926) · **PubChem:** [CID 5489638](https://pubchem.ncbi.nlm.nih.gov/compound/5489638)
+- **molar mass:** 357.414 g/mol (C18H23N5O3) — DrugBank
 - **groups:** investigational
 
 ## About
@@ -20,10 +21,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Dings_2026_reference](drugs/drug_cafedrine/Cafedrine_Dings2026_reference.md) | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Dings_2024_reference](drugs/drug_cafedrine/Cafedrine_Dings2024_reference.md) | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Dings_2026_reference](drugs/drug_cafedrine/Cafedrine_Dings2026_reference.md) | 1-compartment, IV | 2 | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Dings_2024_reference](drugs/drug_cafedrine/Cafedrine_Dings2024_reference.md) | 1-compartment, IV | 2 | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) |
 
 ## Pharmacodynamics (PD)
 

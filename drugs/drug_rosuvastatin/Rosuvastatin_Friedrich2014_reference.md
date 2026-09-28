@@ -5,7 +5,7 @@
 
 # rosuvastatin — `Rosuvastatin_Friedrich2014_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has -38, the second reading 38; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Friedrich S; Kastelein JJ; James D; Waterhouse T; Nissen SE; Nicholls SJ; et al. et al. (2014). CPT: pharmacometrics & systems pharmacology 3
@@ -25,6 +27,9 @@ Friedrich S; Kastelein JJ; James D; Waterhouse T; Nissen SE; Nicholls SJ; et al.
 
 ## Model component
 <dbs-pgx drug="rosuvastatin" model-id="Rosuvastatin_Friedrich2014_reference" status="curated_candidate" stale="false" population="" measured-compound="rosuvastatin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -52,14 +57,28 @@ Friedrich S; Kastelein JJ; James D; Waterhouse T; Nissen SE; Nicholls SJ; et al.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q17]` | -38 | 38 | mismatch |
+| `gpt-oss:120b` | `values[Q18]` | 2300 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q21]` | not captured | 41 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | 39.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q315]` | 33 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q320]` | 177 | 177 | mismatch |
+| `gpt-oss:120b` | `values[Q321]` | 5380 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 40 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | 2.2 | 5380 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -125,6 +144,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference/Rosuvastatin_Friedrich2014_reference.svg" alt="Rosuvastatin_Friedrich2014_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.3 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference/Rosuvastatin_Friedrich2014_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference/Rosuvastatin_Friedrich2014_reference_sim_controls.json"></dbs-fmusim>
 

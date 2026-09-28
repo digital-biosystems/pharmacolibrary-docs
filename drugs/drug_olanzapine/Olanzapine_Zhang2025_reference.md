@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[q par]` (not captured vs -2.08) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The olanzapine record reports implausible negative values for apparent clearance (CL/F = -1.02 L/h) and apparent volume of distribution (V/F = -1.52 L), so it was rejected.**
+
+For olanzapine in patients with major depressive disorder, the one-compartment model lists CL/F as -1.02 L/h and V/F as -1.52 L; negative apparent clearance and volume are physiologically impossible, indicating the base values or covariate shifts were extracted incorrectly. A second reader additionally read two covariate-effect parameters as negative (-2.08 and -1.96) where this record has no values, so the covariate scenarios may be incomplete as well. Extracted — olanzapine: CL/F -1.02 L/h, V/F -1.52 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q par: this record has none, the second reading -2.08; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zhang C; Chen L; Duan YY; He SM; Tian YL; Gao Y; et al. et al. (2025). Frontiers in psychiatry 16
@@ -26,6 +29,9 @@ Zhang C; Chen L; Duan YY; He SM; Tian YL; Gao Y; et al. et al. (2025). Frontiers
 
 ## Model component
 <dbs-pgx drug="olanzapine" model-id="Olanzapine_Zhang2025_reference" status="rejected" stale="false" population="patients with major depressive disorder" measured-compound="olanzapine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

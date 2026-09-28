@@ -5,7 +5,8 @@
 
 - **generic name:** riboflavin
 - **ATC codes:** `A11HA04`, `S01XA26`
-- **DrugBank:** [DB00140](https://go.drugbank.com/drugs/DB00140)
+- **DrugBank:** [DB00140](https://go.drugbank.com/drugs/DB00140) · **PubChem:** [CID 493570](https://pubchem.ncbi.nlm.nih.gov/compound/493570)
+- **molar mass:** 376.3639 g/mol (C17H20N4O6) — DrugBank
 - **groups:** approved, investigational, nutraceutical, vet_approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zempleni_1996_2_reference](drugs/drug_riboflavin/Riboflavin_Zempleni1996v2_reference.md) | Zempleni (1996) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zempleni_1996_2_reference](drugs/drug_riboflavin/Riboflavin_Zempleni1996v2_reference.md) | 1-compartment (no model) | 0 | Zempleni (1996) | — |
 
 ## ADME sites
 

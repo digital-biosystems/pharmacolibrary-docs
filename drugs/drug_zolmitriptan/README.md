@@ -5,7 +5,8 @@
 
 - **generic name:** zolmitriptan
 - **ATC codes:** `N02CC03`
-- **DrugBank:** [DB00315](https://go.drugbank.com/drugs/DB00315)
+- **DrugBank:** [DB00315](https://go.drugbank.com/drugs/DB00315) · **PubChem:** [CID 60857](https://pubchem.ncbi.nlm.nih.gov/compound/60857)
+- **molar mass:** 287.3568 g/mol (C16H21N3O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ Zolmitriptan was first approved by the FDA for sale by Zeneca Pharmaceuticals un
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl[183C91], Vd[183C91], formation_rate left at base-class de…</sub><br><sub>route_to: `scholar`</sub> | [Zhou_2017_reference](drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md) | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl[183C91], Vd[183C91], formation_rate left at base-class de…</sub><br><sub>route_to: `scholar`</sub> | [Zhou_2017_reference](drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md) | parent + 1 metabolite (1-cmt each) | 2 | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) |
 
 ## Pharmacodynamics (PD)
 

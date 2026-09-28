@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Cirincione2017_single_dose_model_parameter_estimat`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,15 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The exenatide two-compartment model record was rejected because a structural parameter carried a dimension mismatch, with the reported unit pg/mL for Km (567 pg/mL) not convertible to SI.**
+
+The record lists Km at 567 pg/mL and Vmax at 0.037 mg/day for exenatide, but the pg/mL unit could not be converted to SI, so the parameter entered the model build without an SI value and a dimension mismatch on a structural parameter was flagged. A second reader also disagreed on several extracted values, reading 2.4 where this record had no value, and leaving 567, 110, 0.0872, 7.03 and 0.037 unread, so those comparisons could not be computed. Extracted — exenatide: kabs 2.98, CLint 110 L/day, V 7.03 L, Fab 1.13, ktr 0.0872, Km 567 pg/mL, Vmax 0.037 mg/day, Q 89.3 L/day, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Km: this record has 567, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Cirincione_2017)
 
 ## Model component
 <dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017_single_dose_model_parameter_estimat" status="rejected" stale="false" population="patients with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 10 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
@@ -77,9 +84,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.125 (1/8 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q1]` | 567 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 110 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q306]` | 0.722 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q338]` | 0.0872 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | not captured | 2.4 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 7.03 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q66]` | 0.037 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

@@ -5,7 +5,8 @@
 
 - **generic name:** rifaximin
 - **ATC codes:** `A07AA11`, `D06AX11`
-- **DrugBank:** [DB01220](https://go.drugbank.com/drugs/DB01220)
+- **DrugBank:** [DB01220](https://go.drugbank.com/drugs/DB01220) · **PubChem:** [CID 6436173](https://pubchem.ncbi.nlm.nih.gov/compound/6436173)
+- **molar mass:** 785.8785 g/mol (C43H51N3O11) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Francis_2019_reference](drugs/drug_rifaximin/Rifaximin_Francis2019_reference.md) | Francis J et al., A Population Pharmacokinetic Analysis S…, Antimicrobial agents and ch… (2019) | [10.1128/aac.01964-18](https://doi.org/10.1128/aac.01964-18) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_reference](drugs/drug_rifaximin/Rifaximin_Wang2021_reference.md) | Wang H et al., PK/PD Modeling to Assess Rifaximin Clin…, Frontiers in veterinary sci… (2021) | [10.3389/fvets.2021.651369](https://doi.org/10.3389/fvets.2021.651369) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span> | [Francis_2019_reference](drugs/drug_rifaximin/Rifaximin_Francis2019_reference.md) | 1-compartment, IV | 2 | Francis J et al., A Population Pharmacokinetic Analysis S…, Antimicrobial agents and ch… (2019) | [10.1128/aac.01964-18](https://doi.org/10.1128/aac.01964-18) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_reference](drugs/drug_rifaximin/Rifaximin_Wang2021_reference.md) | 2-compartment (no model) | 10 | Wang H et al., PK/PD Modeling to Assess Rifaximin Clin…, Frontiers in veterinary sci… (2021) | [10.3389/fvets.2021.651369](https://doi.org/10.3389/fvets.2021.651369) |
 
 ## Pharmacodynamics (PD)
 

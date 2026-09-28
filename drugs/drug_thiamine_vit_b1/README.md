@@ -5,7 +5,8 @@
 
 - **generic name:** thiamine (vit B1)
 - **ATC codes:** `A11DA01`
-- **DrugBank:** [DB00152](https://go.drugbank.com/drugs/DB00152)
+- **DrugBank:** [DB00152](https://go.drugbank.com/drugs/DB00152) · **PubChem:** [CID 1130](https://pubchem.ncbi.nlm.nih.gov/compound/1130)
+- **molar mass:** 265.355 g/mol (C12H17N4OS) — DrugBank
 - **groups:** approved, investigational, nutraceutical, vet_approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rindi_1980_rats](drugs/drug_thiamine_vit_b1/ThiamineVitB1_Rindi1980_rats.md) | Rindi G et al., Thiamine content and turnover rates of…, Brain research (1980) | [10.1016/0006-8993(80)90619-8](https://doi.org/10.1016/0006-8993(80)90619-8) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rindi_1980_rats](drugs/drug_thiamine_vit_b1/ThiamineVitB1_Rindi1980_rats.md) | — (no model) | 0 | Rindi G et al., Thiamine content and turnover rates of…, Brain research (1980) | [10.1016/0006-8993(80)90619-8](https://doi.org/10.1016/0006-8993(80)90619-8) |
 
 ## ADME sites
 

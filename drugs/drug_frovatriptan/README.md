@@ -4,7 +4,8 @@
 
 - **generic name:** frovatriptan
 - **ATC codes:** `N02CC07`
-- **DrugBank:** [DB00998](https://go.drugbank.com/drugs/DB00998)
+- **DrugBank:** [DB00998](https://go.drugbank.com/drugs/DB00998) · **PubChem:** [CID 77992](https://pubchem.ncbi.nlm.nih.gov/compound/77992)
+- **molar mass:** 243.3043 g/mol (C14H17N3O) — DrugBank
 - **groups:** approved
 
 ## About

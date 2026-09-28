@@ -4,7 +4,7 @@
 
 - **generic name:** linseed
 - **ATC codes:** `A06AC05`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

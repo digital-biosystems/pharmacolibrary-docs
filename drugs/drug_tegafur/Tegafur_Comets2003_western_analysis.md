@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The model was quarantined because tegafur's clearance had no extracted value and was left at a library default, while the only extracted parameter (V = 35.7 L) describes the metabolite 5-fluorouracil, not tegafur.**
+
+The record contains a single parameter, an average volume of distribution of 35.7 L for 5-fluorouracil in Western cancer patients, so no clearance for the parent drug tegafur was extracted. The model builder substituted a default placeholder value for the missing clearance, meaning tegafur's elimination would have been described by an assumed library number rather than a fitted or reported one. A structure check also failed: the obtained model structure did not match the expected parent–metabolite arrangement, though the comparison could not be quantified. The established finding confirms the model was held back rather than published with an invented clearance value. Extracted — 5-fluorouracil: V 35.7 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `S-1`, measured `5-fluorouracil`.
 
@@ -27,6 +29,9 @@ Comets E; Ikeda K; Hoff P; Fumoleau P; Wanders J; Tanigawara Y et al. (2003). Jo
 
 ## Model component
 <dbs-pgx drug="tegafur" model-id="Tegafur_Comets2003_western_analysis" status="model_quarantined" stale="false" population="Western cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

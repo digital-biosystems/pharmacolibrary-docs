@@ -4,7 +4,8 @@
 
 - **generic name:** dronabinol
 - **ATC codes:** `A04AD10`
-- **DrugBank:** [DB00470](https://go.drugbank.com/drugs/DB00470)
+- **DrugBank:** [DB00470](https://go.drugbank.com/drugs/DB00470) · **PubChem:** [CID 16078](https://pubchem.ncbi.nlm.nih.gov/compound/16078)
+- **molar mass:** 314.4617 g/mol (C21H30O2) — DrugBank
 - **groups:** approved, illicit, investigational
 
 ## About

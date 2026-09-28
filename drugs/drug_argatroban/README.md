@@ -5,7 +5,8 @@
 
 - **generic name:** argatroban
 - **ATC codes:** `B01AE03`
-- **DrugBank:** [DB00278](https://go.drugbank.com/drugs/DB00278)
+- **DrugBank:** [DB00278](https://go.drugbank.com/drugs/DB00278) · **PubChem:** [CID 152951](https://pubchem.ncbi.nlm.nih.gov/compound/152951)
+- **molar mass:** 508.64 g/mol (C23H36N6O5S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Akimoto_2011_patients undergoing elective percutaneous coronary intervention](drugs/drug_argatroban/Argatroban_Akimoto2011_patients_undergoing_elective_percutan.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cox_2004_patients undergoing percutaneous coronary intervention](drugs/drug_argatroban/Argatroban_Cox2004_patients_undergoing_percutaneous_coronary.md) | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Akimoto_2011_patients undergoing elective percutaneous coronary intervention](drugs/drug_argatroban/Argatroban_Akimoto2011_patients_undergoing_elective_percutan.md) | — (no model) | 0 | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cox_2004_patients undergoing percutaneous coronary intervention](drugs/drug_argatroban/Argatroban_Cox2004_patients_undergoing_percutaneous_coronary.md) | — (no model) | 0 | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
 
 ## Pharmacodynamics (PD)
 

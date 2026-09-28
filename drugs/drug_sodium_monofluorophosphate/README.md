@@ -5,7 +5,8 @@
 
 - **generic name:** sodium monofluorophosphate
 - **ATC codes:** `A01AA02`, `A12CD02`
-- **DrugBank:** [DB09484](https://go.drugbank.com/drugs/DB09484)
+- **DrugBank:** [DB09484](https://go.drugbank.com/drugs/DB09484) · **PubChem:** not captured
+- **molar mass:** 143.949 g/mol (FNa2O3P) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Setnikar_1990_reference](drugs/drug_sodium_monofluorophosphate/SodiumMonofluorophosphate_Setnikar1990_reference.md) | Setnikar I et al., Relative bioavailability of fluoride fr…, Arzneimittel-Forschung (1990) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Setnikar_1990_reference](drugs/drug_sodium_monofluorophosphate/SodiumMonofluorophosphate_Setnikar1990_reference.md) | 1-compartment (no model) | 3 | Setnikar I et al., Relative bioavailability of fluoride fr…, Arzneimittel-Forschung (1990) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_beta; T3_param_coverage
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **engineer**</sub>
+**The flucytosine model's terminal half-life is 0.453 h instead of the paper's 14.5 h (ratio 0.0312), and the intercompartmental rate constant kcomp (31.97 h⁻¹) is neither emitted nor defaulted, so only 3 of 4 parameters are covered.**
+
+Simulated as the paper dosed it, the model's terminal half-life is 0.4525826489339038 h against the reported 14.5 h, a ratio of 0.0312 — the very fast absorption rate kabs (102.06 h⁻¹) and intercompartmental rate kcomp (31.97 h⁻¹) drive an elimination phase far quicker than the paper's. The parameter coverage check found 3 of the 4 expected parameters covered, with kcomp neither emitted nor given a substituted value. The model builder also had no lag-time value extracted, so a library placeholder would have been used, and assumed F=1, Fm=1 with no molar correction, an apparent-parameterization substitution. Extracted — flucytosine: kabs 102 h -1, CL/F 56.9 L/h, V/F 57.1 L, kcomp 32 h -1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Stott KE; Ahmadu A; Kajanga C; Moyo M; Gondwe E; Chimang'anga W; et al. et al. (2023). The Journal of antimicrobial chemotherapy 78
@@ -26,6 +29,9 @@ Stott KE; Ahmadu A; Kajanga C; Moyo M; Gondwe E; Chimang'anga W; et al. et al. (
 
 ## Model component
 <dbs-pgx drug="flucytosine" model-id="Flucytosine_Stott2023_reference" status="needs_review" stale="false" population="adults with HIV-associated cryptococcal meningoencephalitis" measured-compound="flucytosine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -134,6 +140,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_flucytosine/Flucytosine_Stott2023_reference/Flucytosine_Stott2023_reference.svg" alt="Flucytosine_Stott2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 102 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_flucytosine/Flucytosine_Stott2023_reference/Flucytosine_Stott2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_flucytosine/Flucytosine_Stott2023_reference/Flucytosine_Stott2023_reference_sim_controls.json"></dbs-fmusim>
 

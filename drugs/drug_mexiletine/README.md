@@ -5,7 +5,8 @@
 
 - **generic name:** mexiletine
 - **ATC codes:** `C01BB02`
-- **DrugBank:** [DB00379](https://go.drugbank.com/drugs/DB00379)
+- **DrugBank:** [DB00379](https://go.drugbank.com/drugs/DB00379) · **PubChem:** [CID 4178](https://pubchem.ncbi.nlm.nih.gov/compound/4178)
+- **molar mass:** 179.2588 g/mol (C11H17NO) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Vozeh_1982_reference](drugs/drug_mexiletine/Mexiletine_Vozeh1982_reference.md) | Vozeh S et al., Population pharmacokinetic parameters i…, European journal of clinica… (1982) | [10.1007/BF00605996](https://doi.org/10.1007/BF00605996) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Vozeh_1982_reference](drugs/drug_mexiletine/Mexiletine_Vozeh1982_reference.md) | 1-compartment, oral | 4 | Vozeh S et al., Population pharmacokinetic parameters i…, European journal of clinica… (1982) | [10.1007/BF00605996](https://doi.org/10.1007/BF00605996) |
 
 ## Pharmacodynamics (PD)
 

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;glipizide&quot;,&quot;href&quot;:&quot;drugs/drug_glipizide/&quot;},{&quot;label&quot;:&quot;Barrett-Jolley_1998 \u00b7 PD whole-cell chord conductance&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glipizide_Dhawan2006_healthy_male_volunteers&quot;,&quot;label&quot;:&quot;Dhawan_2006_healthy male volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_glipizide/Glipizide_Dhawan2006_healthy_male_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

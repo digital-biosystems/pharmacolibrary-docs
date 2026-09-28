@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q27]` (11.4 vs 15.8) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The allopurinol record was held back because the absorption rate constant ka and lag time were absent from the source and library defaults were substituted, and the invented absorption input was judged unacceptable.**
+
+The record reports allopurinol CL/F of 11.4 mL/min/kg and V/F of 0.58 L/kg, but ka and Tlag were not reported in the source, so placeholder values were used and the first-order depot input with assumed F=1 and Fm=1 (apparent parameterization) was deemed not acceptable. The ABCB2 covariate effects (AA 0.0, CA 0.0539, CC 0.0183) were defined but only the reference individual was simulated, so the covariate scenarios were never exercised. A second reader also disputed several values, reading CL/F as 15.8 instead of 11.4 and V/F as 1.31 instead of 0.58, with three further values absent from this record. Extracted — allopurinol: CL/F 11.4 mL/min/kg, V/F 0.58 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 11.4, the second reading 15.8; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Day RO; Graham GG; Hicks M; McLachlan AJ; Stocker SL; Williams KM et al. (2007). Clinical pharmacokinetics 46

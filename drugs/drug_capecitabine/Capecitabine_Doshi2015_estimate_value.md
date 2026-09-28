@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Doshi S; Gisleskog PO; Zhang Y; Zhu M; Oliner KS; Loh E; et al. et al. (2015). Clinical cancer research : an official journal of the American Association for Cancer Research 21
@@ -25,6 +27,9 @@ Doshi S; Gisleskog PO; Zhang Y; Zhu M; Oliner KS; Loh E; et al. et al. (2015). C
 
 ## Model component
 <dbs-pgx drug="capecitabine" model-id="Capecitabine_Doshi2015_estimate_value" status="rejected" stale="false" population="patients with advanced or metastatic gastric/GEJ cancer" measured-compound="rilotumumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

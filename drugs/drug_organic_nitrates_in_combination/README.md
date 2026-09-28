@@ -4,7 +4,7 @@
 
 - **generic name:** organic nitrates in combination
 - **ATC codes:** `C01DA20`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

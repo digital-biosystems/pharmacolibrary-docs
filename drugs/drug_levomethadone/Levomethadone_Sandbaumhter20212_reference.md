@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (racemic methadone vs methadone) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The levomethadone record was rejected because a structural parameter carries a dimension mismatch and both metabolites (l-EDDP and d-EDDP) have no metabolism rate value, leaving them unlinked.**
+
+The metabolism links from l-methadone to l-EDDP and from d-methadone to d-EDDP were extracted with no rate parameter value (link_parameter 'none'), so the EDDP metabolites have no quantified formation path from the dose. A structural parameter also failed the dimension consistency check (C5). Additionally, one reported unit could not be converted to SI, so that parameter entered the model without an SI value. A second reader disputed the dosed substance (racemic methadone vs methadone), the primary analyte (methadone enantiomers vs methadone), and could not confirm the Ct value of 2746.1 ng/mL. Extracted — levomethadone: Ct 2.75e+03 ng/mL, λ1 0.887 L/min, λ2 0.017 L/min, t1/2α 0.939 min, t1/2β 50.7 min, kel 0.245 L/min, k12 0.591 L/min, k21 0.067, … (+7).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has racemic methadone, the second reading methadone; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `racemic methadone`, measured `methadone enantiomers`.
 
@@ -28,6 +31,9 @@ Sandbaumhüter FA; Gittel C; Larenza-Menzies MP; Theurillat R; Thormann W; Braun
 
 ## Model component
 <dbs-pgx drug="levomethadone" model-id="Levomethadone_Sandbaumhter20212_reference" status="rejected" stale="false" population="anesthetized Shetland ponies" measured-compound="methadone enantiomers" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 15 extracted.
 
 **Parameterization:** mechanistic.
 

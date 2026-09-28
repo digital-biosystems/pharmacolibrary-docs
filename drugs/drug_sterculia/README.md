@@ -4,7 +4,7 @@
 
 - **generic name:** sterculia
 - **ATC codes:** `A06AC03`
-- **DrugBank:** [DB10535](https://go.drugbank.com/drugs/DB10535)
+- **DrugBank:** [DB10535](https://go.drugbank.com/drugs/DB10535) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

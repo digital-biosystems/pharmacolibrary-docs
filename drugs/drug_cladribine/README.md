@@ -5,7 +5,8 @@
 
 - **generic name:** cladribine
 - **ATC codes:** `L01BB04`, `L04AA40`
-- **DrugBank:** [DB00242](https://go.drugbank.com/drugs/DB00242)
+- **DrugBank:** [DB00242](https://go.drugbank.com/drugs/DB00242) · **PubChem:** [CID 20279](https://pubchem.ncbi.nlm.nih.gov/compound/20279)
+- **molar mass:** 285.687 g/mol (C10H12ClN5O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,12 +25,12 @@ Oral cladribine is indicated for the treatment of relapsing forms of multiple sc
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Lu_2024_reference](drugs/drug_cladribine/Cladribine_Lu2024_reference.md) | Lu H et al., Asia-inclusive drug development leverag…, Clinical and translational… (2024) | [10.1111/cts.70050](https://doi.org/10.1111/cts.70050) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Lindemalm_2005_interindividual_variability](drugs/drug_cladribine/Cladribine_Lindemalm2005_interindividual_variability.md) | Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology (2005) | [10.1186/1471-2210-5-4](https://doi.org/10.1186/1471-2210-5-4) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Lindemalm_2005_population_average](drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average.md) | Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology (2005) | [10.1186/1471-2210-5-4](https://doi.org/10.1186/1471-2210-5-4) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Savic_2017_reference](drugs/drug_cladribine/Cladribine_Savic2017_reference.md) | Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [Lu_2024_reference](drugs/drug_cladribine/Cladribine_Lu2024_reference.md) | 1-compartment, IV | 2 | Lu H et al., Asia-inclusive drug development leverag…, Clinical and translational… (2024) | [10.1111/cts.70050](https://doi.org/10.1111/cts.70050) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Lindemalm_2005_interindividual_variability](drugs/drug_cladribine/Cladribine_Lindemalm2005_interindividual_variability.md) | 2-compartment, oral | 8 | Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology (2005) | [10.1186/1471-2210-5-4](https://doi.org/10.1186/1471-2210-5-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Lindemalm_2005_population_average](drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average.md) | 2-compartment, oral | 8 | Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology (2005) | [10.1186/1471-2210-5-4](https://doi.org/10.1186/1471-2210-5-4) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Savic_2017_reference](drugs/drug_cladribine/Cladribine_Savic2017_reference.md) | parent + metabolite (no model) | 14 (+1 cov.) | Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6) |
 
 ## ADME sites
 

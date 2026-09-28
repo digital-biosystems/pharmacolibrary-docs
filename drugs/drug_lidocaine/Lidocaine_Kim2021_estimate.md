@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cld/f].rse_percent` (not captured vs 0.37) and 12 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The lidocaine rat model was rejected because its apparent parameters (V1/F 2.57 L, V2/F 0.07 L, Q/F 0.13 L/h, CLm/F 14.94 L/h) carry a double bioavailability correction, a structural parameter has mismatched dimensions, and clearance/volume magnitudes are physiologically implausible, with one unit unconvertible to SI.**
+
+The record reports lidocaine disposition in male Sprague-Dawley rats with a two-compartment structure plus metabolite links (lidocaine to MEGX to GX), but the apparent parameters V1/F (2.57 L), V2/F (0.07 L), Q/F (0.13 L/h) and CLm/F (14.94 L/h) violate apparent-parameter coherence through a double correction for bioavailability. A structural parameter failed the dimension check, and the clearance/volume values fall outside the physiological window, indicating a unit or scale extraction error — for example V2/F of 0.07 L and Km of 136808.67 nmol/L. One reported unit could not be converted to SI, so that parameter entered the record without an SI value. The second reader additionally recorded relative standard errors absent here (e.g., 12.97% for the absorption rate constant Ka1, 18.62% for Km, 15.31% for CLm1/F) and read the absorption rate constant as a first-order absorption rate parameter rather than the record's classification. Extracted — lidocaine: t1/2ka 5.92 h−1, V1/F 2.57 L, V2/F 0.07 L, Q/F 0.13 L/h, FR 0.373, MTT 0.64 h, Vmax 4.24e+05 nmol/h, Km 1.37e+05 nmol/L, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cld/f].rse_percent`: this record has none, the second reading 0.37; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kim JH; Kang DW; Choi GW; Lee SB; Lee S; Cho HY et al. (2021). Pharmaceutics 13
@@ -26,6 +29,9 @@ Kim JH; Kang DW; Choi GW; Lee SB; Lee S; Cho HY et al. (2021). Pharmaceutics 13
 
 ## Model component
 <dbs-pgx drug="lidocaine" model-id="Lidocaine_Kim2021_estimate" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** CLm/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

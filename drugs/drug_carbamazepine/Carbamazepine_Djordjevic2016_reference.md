@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Djordjevic N; Milovanovic DD; Radovanovic M; Radosavljevic I; Obradovic S; Jakovljevic M; et al. et al. (2016). European journal of clinical pharmacology 72
@@ -25,6 +25,9 @@ Djordjevic N; Milovanovic DD; Radovanovic M; Radosavljevic I; Obradovic S; Jakov
 
 ## Model component
 <dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Djordjevic2016_reference" status="curated_candidate" stale="false" population="pediatric epileptic patients" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -124,6 +127,8 @@ Djordjevic N; Milovanovic DD; Radovanovic M; Radosavljevic I; Obradovic S; Jakov
 </div><figure class="pk-models-diagram"><img src="drugs/drug_carbamazepine/Carbamazepine_Djordjevic2016_reference/Carbamazepine_Djordjevic2016_reference.svg" alt="Carbamazepine_Djordjevic2016_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.873 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_carbamazepine/Carbamazepine_Djordjevic2016_reference/Carbamazepine_Djordjevic2016_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_carbamazepine/Carbamazepine_Djordjevic2016_reference/Carbamazepine_Djordjevic2016_reference_sim_controls.json"></dbs-fmusim>
 

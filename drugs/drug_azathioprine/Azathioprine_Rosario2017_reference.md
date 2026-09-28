@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The azathioprine two-compartment model was rejected because one compartment has no dosing path: with CL 0.159 L/day, V1 3.19 L and V2 1.65 L, the peripheral compartment is orphaned.**
+
+The record describes a two-compartment azathioprine model (CL 0.159 L/day, central volume 3.19 L, peripheral volume 1.65 L) taken from a review reference rather than the primary source. The structural check found an unreachable/orphan compartment: the peripheral compartment has no connection from the administered dose, so the stated two-compartment topology is not consistent with a dosed parent. The parameter values themselves are internally plausible, but the disconnected structure makes the record unpublishable as extracted. Extracted — azathioprine: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 22:55:38.623930+00:00) predates the upstream re-run (2026-09-23 14:53:30.104296+00:00). Current validate status: `rejected`.
 

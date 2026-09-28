@@ -15,16 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[the terminal elimination half-life, t 1/2]` (7.7 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — pirenzepine: t1/2z 7.7 h, V 0.255 l/kg, CL 263 ml/min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of the terminal elimination half-life, t 1/2: this record has 7.7, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Vergin H; Mascher H; Strobel K; Nitsche V et al. (1986). Arzneimittel-Forschung 36
 
 ## Model component
 <dbs-pgx drug="pirenzepine" model-id="Pirenzepine_Vergin1986_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="pirenzepine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

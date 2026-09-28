@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 3 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (amoxicillin vs unknown) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The amoxicillin model was quarantined because clearance and absorption lag time had no extracted values and library defaults were substituted, and the milk-transfer rate constant k12 (0.028 h−1) was likewise uncovered by the parameter-coverage check.**
+
+The record reports amoxicillin's absorption rate constant (0.17 h−1), apparent volume of distribution (82.38 L), elimination rate constant (0.31 h−1), milk influx (0.028 h−1) and milk efflux (0.33 h−1) rate constants, but no clearance and no absorption lag time; placeholders stood in for both, so the model was held back rather than published with invented numbers. The parameter-coverage check expected four parameters emitted or defaulted but found only three covered, with k12 neither emitted nor defaulted. The builder also assumed F=1 and Fm=1 with no molar correction, i.e. an apparent-parameterization. A second reader disagreed only on the dosing compartment and primary analyte fields, both recorded as amoxicillin. Extracted — amoxicillin: kabs 0.17 h−1, V/F 82.4 L, kel 0.31 h−1, k12 0.028 h−1, kout_peripheral 0.33 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amoxicillin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Baklouti S; Rigourd V; Panchaud A; Nordeng H; Allegaert K; Annaert P; Huang MC; Monfort A; Guidi M; Gandia P et al. (2026). British journal of clinical pharmacology 92

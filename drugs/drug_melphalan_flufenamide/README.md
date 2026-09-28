@@ -5,7 +5,8 @@
 
 - **generic name:** melphalan flufenamide
 - **ATC codes:** `L01AA10`
-- **DrugBank:** [DB16627](https://go.drugbank.com/drugs/DB16627)
+- **DrugBank:** [DB16627](https://go.drugbank.com/drugs/DB16627) · **PubChem:** not captured
+- **molar mass:** 498.42 g/mol (C24H30Cl2FN3O3) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About
@@ -24,9 +25,9 @@ Melphalan flufenamide was granted FDA approval on 26 February 2021.[L32173]. It 
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Huledal_2024_patients with relapsed refractory multiple myeloma](drugs/drug_melphalan_flufenamide/MelphalanFlufenamide_Huledal2024_patients_with_relapsed_refr.md) | Huledal G et al., Pharmacokinetics and Metabolism of Melf…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2355](https://doi.org/10.1002/jcph.2355) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Huledal_2024_patients with relapsed refractory multiple myeloma](drugs/drug_melphalan_flufenamide/MelphalanFlufenamide_Huledal2024_patients_with_relapsed_refr.md) | — (no model) | 0 | Huledal G et al., Pharmacokinetics and Metabolism of Melf…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2355](https://doi.org/10.1002/jcph.2355) |
 
 ## ADME sites
 

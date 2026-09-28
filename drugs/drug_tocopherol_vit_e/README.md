@@ -5,7 +5,7 @@
 
 - **generic name:** tocopherol (vit E)
 - **ATC codes:** `A11HA03`
-- **DrugBank:** [DB11251](https://go.drugbank.com/drugs/DB11251)
+- **DrugBank:** [DB11251](https://go.drugbank.com/drugs/DB11251) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -24,10 +24,10 @@ Tocopherol, due to its antioxidant properties, is studied for its use in prevent
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_iv_d6_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_iv_d6_tocopherol.md) | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_po_d3_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_po_d3_tocopherol.md) | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_iv_d6_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_iv_d6_tocopherol.md) | 1-compartment (no model) | 5 | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_po_d3_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_po_d3_tocopherol.md) | 1-compartment (no model) | 5 | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
 
 ## Pharmacodynamics (PD)
 

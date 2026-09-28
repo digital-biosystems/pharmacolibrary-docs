@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for calcium carbonate's bioavailability, clearance, volume of distribution and absorption lag time.**
+
+The model was built, but calcium carbonate's bioavailability, clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — calcium carbonate: kabs 0.871 hr-1, Frel 2.14.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `calcium`, measured `parathyroid hormone`.
 
@@ -27,6 +29,9 @@ Ahn JE; Jeon S; Lee J; Han S; Yim DS et al. (2014). The Korean journal of physio
 
 ## Model component
 <dbs-pgx drug="calcium carbonate" model-id="CalciumCarbonate_Ahn2014_reference" status="model_quarantined" stale="false" population="healthy subjects" measured-compound="parathyroid hormone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

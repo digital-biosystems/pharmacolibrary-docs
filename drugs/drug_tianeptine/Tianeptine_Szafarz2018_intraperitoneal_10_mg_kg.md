@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for MC5's clearance and volume of distribution and the rate at which MC5 is formed.**
+
+The model was built, but MC5's clearance and volume of distribution and the rate at which MC5 is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (AUC∞), so that value has no SI equivalent. Extracted — tianeptine: tmax 0.083 h, kel 14.7 h−1, t1/2z 14 h, V 18.1 L/kg, AUC∞ 7.05 mg∙h/L, CL/F 7.17 L/h/kg, MRT 10.4 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Szafarz M; Wencel A; Pociecha K; Fedak FA; Wlaź P; Wyska E et al. (2018). Naunyn-Schmiedeberg's archives of pharmacology 391
@@ -26,6 +29,9 @@ Szafarz M; Wencel A; Pociecha K; Fedak FA; Wlaź P; Wyska E et al. (2018). Nauny
 
 ## Model component
 <dbs-pgx drug="tianeptine" model-id="Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg" status="model_quarantined" stale="false" population="rats" measured-compound="tianeptine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

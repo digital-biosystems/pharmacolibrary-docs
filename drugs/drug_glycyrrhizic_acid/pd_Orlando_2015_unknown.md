@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;glycyrrhizic acid&quot;,&quot;href&quot;:&quot;drugs/drug_glycyrrhizic_acid/&quot;},{&quot;label&quot;:&quot;Orlando_2015 \u00b7 PD Hyal-1 activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Hyal-1 activity — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>

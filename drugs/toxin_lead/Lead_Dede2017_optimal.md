@@ -22,6 +22,9 @@ Dede E; Tindall MJ; Cherrie JW; Hankin S; Collins C et al. (2017).
 ## Model component
 <dbs-pgx drug="lead" model-id="Lead_Dede2017_optimal" status="needs_review" stale="false" population="adult humans" measured-compound="arsenic, cadmium, chromium, nickel, lead" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
 
+**Model structure:** nonlinear / manual; no model was built for this record.  
+**Parameters:** 2 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters

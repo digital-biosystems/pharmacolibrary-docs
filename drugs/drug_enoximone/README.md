@@ -4,7 +4,8 @@
 
 - **generic name:** enoximone
 - **ATC codes:** `C01CE03`
-- **DrugBank:** [DB04880](https://go.drugbank.com/drugs/DB04880)
+- **DrugBank:** [DB04880](https://go.drugbank.com/drugs/DB04880) · **PubChem:** [CID 53708](https://pubchem.ncbi.nlm.nih.gov/compound/53708)
+- **molar mass:** 248.301 g/mol (C12H12N2O2S) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
 ## About

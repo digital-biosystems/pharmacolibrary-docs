@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+None of the extracted parameters is prednisone's own; they describe prednisolone.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -27,6 +29,9 @@ Bouazza N; Semeraro M; Lui G; Froelicher-Bournaud L; Choupeaux L; Treluyer JM; e
 
 ## Model component
 <dbs-pgx drug="prednisone" model-id="Prednisone_Bouazza2025_reference" status="curated_candidate" stale="false" population="systemic lupus erythematosus patients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -124,6 +129,8 @@ Bouazza N; Semeraro M; Lui G; Froelicher-Bournaud L; Choupeaux L; Treluyer JM; e
 </div><figure class="pk-models-diagram"><img src="drugs/drug_prednisone/Prednisone_Bouazza2025_reference/Prednisone_Bouazza2025_reference.svg" alt="Prednisone_Bouazza2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 80000 mg, single dose, first-order absorption (ka 1.19 /h, lag 10.2 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_prednisone/Prednisone_Bouazza2025_reference/Prednisone_Bouazza2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_prednisone/Prednisone_Bouazza2025_reference/Prednisone_Bouazza2025_reference_sim_controls.json"></dbs-fmusim>
 

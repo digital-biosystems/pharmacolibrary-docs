@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[absorption lag time]` (0.947 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — eltrombopag: V 12 L, tlag 0.947 h, CL 104 ml min -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption lag time: this record has 0.947, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Saleh MI; Melhim SB; Al-Ramadhani HM; Alzubiedi S et al. (2019). European journal of drug metabolism and pharmacokinetics 44
@@ -26,6 +29,9 @@ Saleh MI; Melhim SB; Al-Ramadhani HM; Alzubiedi S et al. (2019). European journa
 
 ## Model component
 <dbs-pgx drug="eltrombopag" model-id="Eltrombopag_Saleh2019_reference" status="needs_review" stale="false" population="chronic hepatitis C patients" measured-compound="eltrombopag" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

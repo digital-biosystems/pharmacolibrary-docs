@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;carbenoxolone&quot;,&quot;href&quot;:&quot;drugs/drug_carbenoxolone/&quot;},{&quot;label&quot;:&quot;Mosquera_2018 \u00b7 PD 11\u03b2-HSD1 enzyme activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # 11β-HSD1 enzyme activity — PD  <span class="pk-badge pk-badge--green">extracted</span>

@@ -4,7 +4,8 @@
 
 - **generic name:** betaxolol
 - **ATC codes:** `C07AB05`, `S01ED02`
-- **DrugBank:** [DB00195](https://go.drugbank.com/drugs/DB00195)
+- **DrugBank:** [DB00195](https://go.drugbank.com/drugs/DB00195) · **PubChem:** [CID 2369](https://pubchem.ncbi.nlm.nih.gov/compound/2369)
+- **molar mass:** 307.4278 g/mol (C18H29NO3) — DrugBank
 - **groups:** approved, investigational
 
 ## About

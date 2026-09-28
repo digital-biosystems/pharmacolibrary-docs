@@ -4,7 +4,7 @@
 
 - **generic name:** saccharomyces boulardii
 - **ATC codes:** `A07FA02`
-- **DrugBank:** [DB11017](https://go.drugbank.com/drugs/DB11017)
+- **DrugBank:** [DB11017](https://go.drugbank.com/drugs/DB11017) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

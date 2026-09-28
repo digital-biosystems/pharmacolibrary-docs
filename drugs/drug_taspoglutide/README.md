@@ -4,7 +4,8 @@
 
 - **generic name:** Taspoglutide
 - **ATC codes:** not captured
-- **DrugBank:** [DB14027](https://go.drugbank.com/drugs/DB14027)
+- **DrugBank:** [DB14027](https://go.drugbank.com/drugs/DB14027) · **PubChem:** not captured
+- **molar mass:** 3339.763 g/mol (C152H232N40O45) — DrugBank
 - **groups:** investigational
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q27, Q76 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**CL/F and V/F have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sertraline: CL/F 14.2 L/h/1.73 m2, V/F 428 L/1.73 m2, Ctrough 151 ng/mL.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Poweleit EA; Taylor ZL; Mizuno T; Vaughn SE; Desta Z; Strawn JR; et al. et al. (2023). Clinical pharmacokinetics 62
@@ -26,6 +29,9 @@ Poweleit EA; Taylor ZL; Mizuno T; Vaughn SE; Desta Z; Strawn JR; et al. et al. (
 
 ## Model component
 <dbs-pgx drug="sertraline" model-id="Sertraline_Poweleit2023_reference" status="needs_review" stale="false" population="pediatric psychiatric inpatients" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-5.6-luna` read this paper differently on `parameters[first-order absorption rate constant]` (1.1 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The ibuprofen record was rejected because the extracted volume of distribution, 22.37 ml, falls far outside the physiological window, indicating a unit or scale extraction error.**
+
+The record lists ibuprofen's volume of distribution as 22.37 ml alongside a steady-state volume of 0.16 L/kg, a terminal half-life of 1.08 hours, 90.8% bioavailability, and a first-order absorption rate constant of 1.1 h⁻¹; the 22.37 ml value is implausibly small in magnitude, consistent with a unit or scale extraction error. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A second reader disagreed on the absorption rate constant and the 22.37 ml volume (reading both as null) and on the steady-state volume of distribution (reading 0.16 where this record has it), leaving those values contested. Extracted — ibuprofen: Vss 0.16 L/kg, t1/2z 1.08 hours, Fab 90.8 %, V 22.4 ml, kabs 1.1 h -1.
+
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on the value of first-order absorption rate constant: this record has 1.1, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem DeGraves_1993)

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[nonpregnant cl/f]` (2.9 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The lamotrigine model was held back because the absorption rate constant ka and Tlag were not reported and left at defaults, and the clearance value 0.33 'fold' is a relative multiplier whose unit cannot be expressed in SI.**
+
+The record reports nonpregnant lamotrigine V/F = 130 L and CL/F = 2.9 L/h, but ka and Tlag are missing from the source, so library defaults were substituted, and the defaulted ka was judged an invented absorption term that is not acceptable. The clearance parameter 0.33 is given as a 'fold' change — a dimensionless ratio relative to a reference — so no absolute clearance in L/h could be derived from it. The model also assumed F=1 and Fm=1 with apparent (/F) parameterization and a first-order depot input. A second reader disagreed on the CL/F and V/F entries, reading 2.9 and 130 as belonging to the error-model fields rather than the parameters themselves. Extracted — lamotrigine: V/F 130 L, CL/F 2.9 L/hour, CL 0.33 fold.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of nonpregnant cl/f: this record has 2.9, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Karanam A; Pennell PB; Meador KJ; Long Y; Birnbaum AK et al. (2025). Pharmacotherapy 45
@@ -26,6 +29,9 @@ Karanam A; Pennell PB; Meador KJ; Long Y; Birnbaum AK et al. (2025). Pharmacothe
 
 ## Model component
 <dbs-pgx drug="lamotrigine" model-id="Lamotrigine_Karanam2025_reference" status="needs_review" stale="false" population="women with epilepsy during pregnancy and postpartum, plus nonpregnant women with epilepsy" measured-compound="lamotrigine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -140,6 +146,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference.svg" alt="Lamotrigine_Karanam2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_sim_controls.json"></dbs-fmusim>
 

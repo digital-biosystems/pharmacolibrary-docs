@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 2 covered; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The alogliptin model was quarantined because its volume of distribution, absorption rate constant and lag time had no source values and were left at library defaults, with ka invented as 0.590 1/hr.**
+
+The record lists alogliptin parameters kabs 0.590 1/hr, CL/F 14.4 L/hr, V2/F 125 L, V3/F 117 L and Q/F 11.7 L/hr, but Vd, ka and Tlag were defaulted, so placeholder values would have been substituted for missing source values. The absorption rate constant was not reported in the source, making the defaulted ka an invented absorption parameter. A coverage check found only 2 of 4 expected parameters covered, with V2/F and Q/F neither emitted nor defaulted. The deviations check returned 'invented_absorption: not acceptable', and the model additionally assumed F=1, Fm=1 with no molar correction (apparent parameterization). Extracted — alogliptin: kabs 0.59, CL/F 14.4 L/hr, V2/F 125 L, V3/F 117 L, Q/F 11.7 L/hr.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Dudkowski C; Tsai M; Liu J; Zhao Z; Schmidt E; Xie J et al. (2017). European journal of clinical pharmacology 73
@@ -26,6 +29,9 @@ Dudkowski C; Tsai M; Liu J; Zhao Z; Schmidt E; Xie J et al. (2017). European jou
 
 ## Model component
 <dbs-pgx drug="alogliptin" model-id="Alogliptin_Dudkowski2017_final_parameter_estimate" status="model_quarantined" stale="false" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

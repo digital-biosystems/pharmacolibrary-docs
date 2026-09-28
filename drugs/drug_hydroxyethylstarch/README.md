@@ -5,7 +5,7 @@
 
 - **generic name:** hydroxyethylstarch
 - **ATC codes:** `B05AA07`
-- **DrugBank:** [DB09106](https://go.drugbank.com/drugs/DB09106)
+- **DrugBank:** [DB09106](https://go.drugbank.com/drugs/DB09106) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -23,12 +23,12 @@ HES is a general term and can be sub-classified according to average molecular w
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> | [Asskali_1999_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference.md) | Asskali F et al., [The accumulation of different substitu…, Anasthesiologie, Intensivme… (1999) | [10.1055/s-1999-208](https://doi.org/10.1055/s-1999-208) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Haefliger_2025_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference.md) | Haefliger D et al., Individualization of piperacillin dosag…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf007](https://doi.org/10.1093/jac/dkaf007) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span> | [Yamakage_2012_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md) | Yamakage M et al., Pharmacokinetics and safety of 6 % hydr…, Journal of anesthesia (2012) | [10.1007/s00540-012-1430-6](https://doi.org/10.1007/s00540-012-1430-6) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Singh_2022_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference.md) | Singh D et al., A Phase 1 study of the long-acting anti…, British journal of clinical… (2022) | [10.1111/bcp.15002](https://doi.org/10.1111/bcp.15002) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> | [Asskali_1999_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference.md) | 1-compartment, IV | 3 | Asskali F et al., [The accumulation of different substitu…, Anasthesiologie, Intensivme… (1999) | [10.1055/s-1999-208](https://doi.org/10.1055/s-1999-208) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> | [Haefliger_2025_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference.md) | 1-compartment, IV | 2 | Haefliger D et al., Individualization of piperacillin dosag…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf007](https://doi.org/10.1093/jac/dkaf007) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span> | [Yamakage_2012_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md) | 1-compartment, IV | 3 | Yamakage M et al., Pharmacokinetics and safety of 6 % hydr…, Journal of anesthesia (2012) | [10.1007/s00540-012-1430-6](https://doi.org/10.1007/s00540-012-1430-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Singh_2022_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference.md) | 1-compartment, oral | 2 | Singh D et al., A Phase 1 study of the long-acting anti…, British journal of clinical… (2022) | [10.1111/bcp.15002](https://doi.org/10.1111/bcp.15002) |
 
 ## Pharmacodynamics (PD)
 

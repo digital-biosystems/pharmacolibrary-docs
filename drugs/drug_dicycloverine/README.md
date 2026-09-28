@@ -4,7 +4,8 @@
 
 - **generic name:** dicycloverine
 - **ATC codes:** `A03AA07`
-- **DrugBank:** [DB00804](https://go.drugbank.com/drugs/DB00804)
+- **DrugBank:** [DB00804](https://go.drugbank.com/drugs/DB00804) · **PubChem:** [CID 3042](https://pubchem.ncbi.nlm.nih.gov/compound/3042)
+- **molar mass:** 309.4867 g/mol (C19H35NO2) — DrugBank
 - **groups:** approved
 
 ## About

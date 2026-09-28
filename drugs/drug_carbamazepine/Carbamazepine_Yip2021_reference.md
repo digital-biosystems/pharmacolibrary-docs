@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['carbamazepine', 'carbamazepine 10,11-epoxide', 'metabolism'], ['carbamazepine', '2-hydroxy-carbamazepine', 'metabolism'], ['carbamazepine', '3-hydroxy-carbamazepine', 'metabolism']] vs [['carbamazepine', 'carbamazepine-10,11-epoxide', 'metabolism'], ['carbamazepine', '2-hydroxy-carbamazepine', 'metabolism'], ['carbamazepine', '3-hydroxy-carbamazepine', 'metabolism']]) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has carbamazepine → carbamazepine 10,11-epoxide (metabolism); carbamazepine → 2-hydroxy-carbamazepine (metabolism); carbamazepine → 3-hydroxy-carbamazepine (metabolism), the second reading carbamazepine → carbamazepine-10,11-epoxide (metabolism); carbamazepine → 2-hydroxy-carbamazepine (metabolism); carbamazepine → 3-hydroxy-carbamazepine (metabolism). That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yip VLM; Pertinez H; Meng X; Maggs JL; Carr DF; Park BK; et al. et al. (2021). British journal of clinical pharmacology 87
@@ -26,6 +27,9 @@ Yip VLM; Pertinez H; Meng X; Maggs JL; Carr DF; Park BK; et al. et al. (2021). B
 
 ## Model component
 <dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Yip2021_reference" status="curated_candidate" stale="false" population="healthy volunteers and epilepsy patients" measured-compound="carbamazepine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

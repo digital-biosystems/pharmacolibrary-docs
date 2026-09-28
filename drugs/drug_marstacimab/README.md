@@ -5,7 +5,7 @@
 
 - **generic name:** marstacimab
 - **ATC codes:** `B02BX11`
-- **DrugBank:** [DB17725](https://go.drugbank.com/drugs/DB17725)
+- **DrugBank:** [DB17725](https://go.drugbank.com/drugs/DB17725) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -25,9 +25,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Nayak_2026_reference](drugs/drug_marstacimab/Marstacimab_Nayak2026_reference.md) | Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Nayak_2026_reference](drugs/drug_marstacimab/Marstacimab_Nayak2026_reference.md) | 3-compartment, IV | 7 | Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5) |
 
 ## Pharmacodynamics (PD)
 

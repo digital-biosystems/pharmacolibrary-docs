@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** split column '12' is a table statistic/structure column, not a study population (mis-split estimate table)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (BT200 vs unknown) and 9 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**'12' is a column of the estimates table, not a study population.**
+
+The table was split into one record per column, and '12' holds a statistic rather than a second set of estimates. None of the extracted parameters is von willebrand factor's own; they describe factor VIII.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has BT200, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `BT200`, measured `factor VIII`.
 
@@ -28,6 +31,9 @@ Kim MS; Hajducek DM; Gilbert JC; Iorio A; Jilma B; Edginton AN et al. (2024). Th
 
 ## Model component
 <dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Kim2024_12" status="rejected" stale="false" population="humans" measured-compound="factor VIII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

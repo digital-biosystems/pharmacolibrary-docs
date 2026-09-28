@@ -5,7 +5,8 @@
 
 - **generic name:** dabigatran etexilate
 - **ATC codes:** `B01AE07`
-- **DrugBank:** [DB06695](https://go.drugbank.com/drugs/DB06695)
+- **DrugBank:** [DB06695](https://go.drugbank.com/drugs/DB06695) · **PubChem:** [CID 6445226](https://pubchem.ncbi.nlm.nih.gov/compound/6445226)
+- **molar mass:** 627.7332 g/mol (C34H41N7O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -26,9 +27,9 @@ Dabigatran etexilate is also approved by the EMA to prevent VTE in adult patient
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2022_reference](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Liu2022_reference.md) | Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiovascular… (2022) | [10.3389/fcvm.2022.998751](https://doi.org/10.3389/fcvm.2022.998751) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2022_reference](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Liu2022_reference.md) | 1-compartment (no model) | 0 | Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiovascular… (2022) | [10.3389/fcvm.2022.998751](https://doi.org/10.3389/fcvm.2022.998751) |
 
 ## ADME sites
 

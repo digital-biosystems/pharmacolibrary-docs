@@ -5,7 +5,8 @@
 
 - **generic name:** glycerol
 - **ATC codes:** `A06AG04`, `A06AX01`
-- **DrugBank:** [DB09462](https://go.drugbank.com/drugs/DB09462)
+- **DrugBank:** [DB09462](https://go.drugbank.com/drugs/DB09462) · **PubChem:** [CID 753](https://pubchem.ncbi.nlm.nih.gov/compound/753)
+- **molar mass:** 92.0938 g/mol (C3H8O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Beylot_1987_healthy adults and insulin-dependent diabetic patients](drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia.md) | Beylot M et al., Determination of steady state and nonst…, Journal of lipid research (1987) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Beylot_1987_healthy adults and insulin-dependent diabetic patients](drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia.md) | — (no model) | 0 | Beylot M et al., Determination of steady state and nonst…, Journal of lipid research (1987) | — |
 
 ## Pharmacodynamics (PD)
 

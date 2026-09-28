@@ -5,7 +5,7 @@
 
 # hydroxyethylstarch — `Hydroxyethylstarch_Haefliger2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has none, the second reading 31.1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Haefliger D; Mina L; Guidi M; Marzolini C; Thoueille P; Rothuizen LE; Thoma Y; Decosterd LA; Guery B; Girardin FR; Buclin T et al. (2025). The Journal of antimicrobial chemotherapy 80
@@ -25,6 +27,9 @@ Haefliger D; Mina L; Guidi M; Marzolini C; Thoueille P; Rothuizen LE; Thoma Y; D
 
 ## Model component
 <dbs-pgx drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Haefliger2025_reference" status="curated_candidate" stale="false" population="" measured-compound="hydroxyethylstarch" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -47,14 +52,21 @@ Haefliger D; Mina L; Guidi M; Marzolini C; Thoueille P; Rothuizen LE; Thoma Y; D
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q312]` | not captured | 31.1 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q37]` | 360 | 16 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -118,6 +130,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference/Hydroxyethylstarch_Haefliger2025_reference.svg" alt="Hydroxyethylstarch_Haefliger2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference/Hydroxyethylstarch_Haefliger2025_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference/Hydroxyethylstarch_Haefliger2025_reference_sim_controls.json"></dbs-fmusim>
 

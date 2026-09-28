@@ -4,7 +4,8 @@
 
 - **generic name:** tolrestat
 - **ATC codes:** `A10XA01`
-- **DrugBank:** [DB02383](https://go.drugbank.com/drugs/DB02383)
+- **DrugBank:** [DB02383](https://go.drugbank.com/drugs/DB02383) · **PubChem:** [CID 53359](https://pubchem.ncbi.nlm.nih.gov/compound/53359)
+- **molar mass:** 357.347 g/mol (C16H14F3NO3S) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

@@ -5,7 +5,8 @@
 
 - **generic name:** alfentanil
 - **ATC codes:** `N01AH02`
-- **DrugBank:** [DB00802](https://go.drugbank.com/drugs/DB00802)
+- **DrugBank:** [DB00802](https://go.drugbank.com/drugs/DB00802) · **PubChem:** [CID 51263](https://pubchem.ncbi.nlm.nih.gov/compound/51263)
+- **molar mass:** 416.5172 g/mol (C21H32N6O3) — DrugBank
 - **groups:** approved, illicit, investigational
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Davis_1986_reference](drugs/drug_alfentanil/Alfentanil_Davis1986_reference.md) | Davis PJ et al., Clinical pharmacokinetics of the newer…, Clinical pharmacokinetics (1986) | [10.2165/00003088-198611010-00002](https://doi.org/10.2165/00003088-198611010-00002) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Vozeh_1990_reference](drugs/drug_alfentanil/Alfentanil_Vozeh1990_reference.md) | Vozeh S et al., Evaluation of population (NONMEM) pharm…, Journal of pharmacokinetics… (1990) | [10.1007/BF01063558](https://doi.org/10.1007/BF01063558) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Medina-Aymerich_2025_reference](drugs/drug_alfentanil/Alfentanil_MedinaAymerich2025_reference.md) | Medina-Aymerich L et al., Population Pharmacokinetics of Alfentan…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70044](https://doi.org/10.1002/jcph.70044) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Davis_1986_reference](drugs/drug_alfentanil/Alfentanil_Davis1986_reference.md) | 2-compartment, oral | 3 | Davis PJ et al., Clinical pharmacokinetics of the newer…, Clinical pharmacokinetics (1986) | [10.2165/00003088-198611010-00002](https://doi.org/10.2165/00003088-198611010-00002) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Vozeh_1990_reference](drugs/drug_alfentanil/Alfentanil_Vozeh1990_reference.md) | 1-compartment, IV | 3 | Vozeh S et al., Evaluation of population (NONMEM) pharm…, Journal of pharmacokinetics… (1990) | [10.1007/BF01063558](https://doi.org/10.1007/BF01063558) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Medina-Aymerich_2025_reference](drugs/drug_alfentanil/Alfentanil_MedinaAymerich2025_reference.md) | 1-compartment (no model) | 0 | Medina-Aymerich L et al., Population Pharmacokinetics of Alfentan…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70044](https://doi.org/10.1002/jcph.70044) |
 
 ## Pharmacodynamics (PD)
 

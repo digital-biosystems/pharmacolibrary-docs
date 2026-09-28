@@ -4,7 +4,8 @@
 
 - **generic name:** attapulgite
 - **ATC codes:** `A07BC04`
-- **DrugBank:** [DB01574](https://go.drugbank.com/drugs/DB01574)
+- **DrugBank:** [DB01574](https://go.drugbank.com/drugs/DB01574) · **PubChem:** [CID 73415752](https://pubchem.ncbi.nlm.nih.gov/compound/73415752)
+- **molar mass:** 412.684 g/mol (AlH9MgO15Si4) — DrugBank
 - **groups:** approved, vet_approved, withdrawn
 
 ## About

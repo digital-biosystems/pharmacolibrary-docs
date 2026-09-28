@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc0-inf]` (2761.0 vs not captured) and 5 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tegoprazan: tmax 0.5 h, Cmax 814 ng/mL, AUC∞ 2.76e+03 ng∙h/mL, V 56.6 L, kabs 0.156 1/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0-inf: this record has 2761.0, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 He J; Cao G; Yu J; Wang J; Cheng N; Wu J; et al. et al. (2021). Clinical drug investigation 41
@@ -26,6 +29,9 @@ He J; Cao G; Yu J; Wang J; Cheng N; Wu J; et al. et al. (2021). Clinical drug in
 
 ## Model component
 <dbs-pgx drug="tegoprazan" model-id="Tegoprazan_He2021_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="tegoprazan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q49, Q306, Q80 — no SI value to build from.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Kabs, ktr and Q2/F have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (kabs and ktr), so that value has no SI equivalent. Extracted — paracetamol: kabs 5.72 Placebo, V1/F 48.5 L, CL/F 25.9 L/h, V2/F 55.4 L, Q/F 199 L/h, tlag 0.16 h, ktr 7.28 Placebo, Q2/F 873.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Langeskov EK; Kristensen K et al. (2022). Pharmacology research & perspectives 10

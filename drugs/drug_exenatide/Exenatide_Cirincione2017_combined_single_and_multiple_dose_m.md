@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Cirincione2017_combined_single_and_multiple_dose_m`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,15 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The exenatide record was rejected because a structural parameter carried a reported unit that could not be converted to SI, giving a dimension mismatch, and a second reader disputed several extracted values, including Km 567 pg/mL and Vmax 0.0372 mg/day.**
+
+The stated cause is a dimension mismatch on a structural parameter: one of the exenatide parameters was reported in a unit for which no SI equivalent could be established, so the parameter entered the model without an SI value and the structure could not be validated dimensionally. A second reader returned no value at all for Km (567 pg/mL in this record) and for the 110 L/day intrinsic clearance, and read 0.0872 mg/day and 0.722 where this record holds 0.0372 mg/day and 1.18, showing the extracted numbers themselves are contested. The second reader also supplied 2.4 for a parameter this record leaves without a value. These unresolved value disagreements compound the unit problem that triggered the rejection. Extracted — exenatide: kabs 3.85, CLint 110 L/day, V 7.03 L, Fab 1.18, ktr 0.105, Km 567 pg/mL, Vmax 0.0372 mg/day, Q 89.3 L/day, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Km: this record has 567, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Cirincione_2017)
 
 ## Model component
 <dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017_combined_single_and_multiple_dose_m" status="rejected" stale="false" population="patients with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 10 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
@@ -89,9 +96,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.125 (1/8 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q1]` | 567 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 110 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q306]` | 0.722 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q338]` | 0.0872 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | not captured | 2.4 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 7.03 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q66]` | 0.037 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -136,6 +155,8 @@ _Every reader agrees on every compared field of this record._
 <p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m_sim_controls.json"></dbs-fmusim>
 

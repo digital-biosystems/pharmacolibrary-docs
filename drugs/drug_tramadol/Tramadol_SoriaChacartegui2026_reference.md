@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_cmax; T1_tmax.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc0-24]` (2.43 vs not captured) and 14 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000136, model 0.000273); the model does not reproduce the paper's time of the peak (tmax) (paper 0.81, model 1.05) (+2 more).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (MTT, AUCt, AUC∞ and Cmax), so that value has no SI equivalent. Extracted — tramadol: CL 51.1 L/h, V1 126 L, kabs 3.09 h−1, MTT 0.24 h, Q 175 L/h, V2 171 L, AUCt 2.43 ng × h/mL, AUC∞ 2.14 ng × h/mL, … (+4).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0-24: this record has 2.43, the second reading none; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Soria-Chacartegui P; Würthwein G; Zubiaur P; Almenara S; Ochoa D; Abad-Santos F; et al. et al. (2026). European journal of drug metabolism and pharmacokinetics 51
@@ -28,6 +31,9 @@ Soria-Chacartegui P; Würthwein G; Zubiaur P; Almenara S; Ochoa D; Abad-Santos F
 
 ## Model component
 <dbs-pgx drug="tramadol" model-id="Tramadol_SoriaChacartegui2026_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="tramadol" parameterization="mechanistic" topology="3C"></dbs-pgx>
+
+**Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
+**Parameters:** 12 extracted, plus 2 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -228,6 +234,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference.svg" alt="Tramadol_SoriaChacartegui2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 3.09 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_params.json" metaurl="assets/fmu/PK_3C_enteral.vr.json" wasmurl="assets/fmu/PK_3C_enteral.js" controlsurl="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_sim_controls.json"></dbs-fmusim>
 

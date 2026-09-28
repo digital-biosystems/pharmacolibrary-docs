@@ -4,7 +4,7 @@
 
 - **generic name:** methoxy polyethylene glycol-epoetin beta
 - **ATC codes:** `B03XA03`
-- **DrugBank:** [DB09107](https://go.drugbank.com/drugs/DB09107)
+- **DrugBank:** [DB09107](https://go.drugbank.com/drugs/DB09107) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

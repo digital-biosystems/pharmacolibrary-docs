@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl (l/h)1].value` (0.0289 vs 0.0263) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for erythropoietin's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant.**
+
+The model was built, but erythropoietin's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — erythropoietin: CL 0.0289, V1 0.25, V2 0.326, Q 0.0308.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl (l/h)1].value`: this record has 0.0289, the second reading 0.0263; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Frymoyer A; Juul SE; Massaro AN; Bammler TK; Wu YW et al. (2017). Pediatric research 81
@@ -26,6 +29,9 @@ Frymoyer A; Juul SE; Massaro AN; Bammler TK; Wu YW et al. (2017). Pediatric rese
 
 ## Model component
 <dbs-pgx drug="erythropoietin" model-id="Erythropoietin_Frymoyer2017_reference" status="model_quarantined" stale="false" population="neonates with hypoxic-ischemic encephalopathy receiving hypothermia" measured-compound="erythropoietin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

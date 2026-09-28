@@ -13,7 +13,13 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is thioctic acid's own; they describe alpha lipoic acid (thioctic acid).
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Field CL; Whoriskey ST; Zhao X; Papich MG et al. (2021). Journal of zoo and wildlife medicine : official publication of the American Association of Zoo Veterinarians 52

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[elimination half-lives]` (4.3 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rosiglitazone: CL 0.033 L x h(-1) x kg(-1), t1/2z 4.3 hours.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of elimination half-lives: this record has 4.3, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kirchheiner J; Thomas S; Bauer S; Tomalik-Scharte D; Hering U; Doroshyenko O; et al. et al. (2006). Clinical pharmacology and therapeutics 80
@@ -26,6 +29,9 @@ Kirchheiner J; Thomas S; Bauer S; Tomalik-Scharte D; Hering U; Doroshyenko O; et
 
 ## Model component
 <dbs-pgx drug="rosiglitazone" model-id="Rosiglitazone_Kirchheiner2006_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="rosiglitazone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

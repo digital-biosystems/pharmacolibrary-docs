@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (6-thioguanine nucleotides vs 6-TGN) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The azathioprine model was rejected because its structure contains an unreachable compartment or unlinked metabolite, and the two readers also disagreed on whether the θ MESA coefficient (0.802) belongs in the parameter set.**
+
+The rejection cause is structural: the one-compartment model for 6-thioguanine nucleotides includes a compartment or metabolite with no dosing path, so the model as recorded is not a connected, estimable system. The parameters themselves were extracted with values — CL 11.6 L/h, V2 809 L, allometric exponent 0.625, TPMT effect 0.515, and θ MESA 0.802 — but the second reader disagreed on whether θ MESA (0.802) or a null entry belongs in the parameter list, and also on the analyte label (6-thioguanine nucleotides versus 6-TGN). These disagreements do not overturn the structural finding, which alone justified holding the record back. Extracted — 6-thioguanine nucleotides: CL 11.6 L/h, allometric_exponent 0.625, V2 809 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has 6-thioguanine nucleotides, the second reading 6-TGN; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 22:55:38.620690+00:00) predates the upstream re-run (2026-09-23 14:54:36.579113+00:00). Current validate status: `rejected`.
 

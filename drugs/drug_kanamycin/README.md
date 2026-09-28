@@ -5,7 +5,8 @@
 
 - **generic name:** kanamycin
 - **ATC codes:** `A07AA08`, `J01GB04`, `S01AA24`
-- **DrugBank:** [DB01172](https://go.drugbank.com/drugs/DB01172)
+- **DrugBank:** [DB01172](https://go.drugbank.com/drugs/DB01172) · **PubChem:** [CID 6032](https://pubchem.ncbi.nlm.nih.gov/compound/6032)
+- **molar mass:** 484.4986 g/mol (C18H36N4O11) — DrugBank
 - **groups:** approved, investigational, vet_approved, withdrawn
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chang_2017_2_reference](drugs/drug_kanamycin/Kanamycin_Chang2017v2_reference.md) | Chang MJ et al., Population pharmacokinetics of moxiflox…, International journal of an… (2017) | [10.1016/j.ijantimicag.2017.01.024](https://doi.org/10.1016/j.ijantimicag.2017.01.024) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Dijkstra_2015_reference](drugs/drug_kanamycin/Kanamycin_Dijkstra2015_reference.md) | Dijkstra JA et al., Limited sampling strategies for therape…, International journal of an… (2015) | [10.1016/j.ijantimicag.2015.06.008](https://doi.org/10.1016/j.ijantimicag.2015.06.008) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Strydom_2019_2_reference](drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference.md) | Strydom N et al., Tuberculosis drugs' distribution and em…, PLoS medicine (2019) | [10.1371/journal.pmed.1002773](https://doi.org/10.1371/journal.pmed.1002773) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chang_2017_2_reference](drugs/drug_kanamycin/Kanamycin_Chang2017v2_reference.md) | 1-compartment, oral | 3 | Chang MJ et al., Population pharmacokinetics of moxiflox…, International journal of an… (2017) | [10.1016/j.ijantimicag.2017.01.024](https://doi.org/10.1016/j.ijantimicag.2017.01.024) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Dijkstra_2015_reference](drugs/drug_kanamycin/Kanamycin_Dijkstra2015_reference.md) | 1-compartment, IV | 2 | Dijkstra JA et al., Limited sampling strategies for therape…, International journal of an… (2015) | [10.1016/j.ijantimicag.2015.06.008](https://doi.org/10.1016/j.ijantimicag.2015.06.008) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Strydom_2019_2_reference](drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference.md) | 1-compartment, oral | 3 | Strydom N et al., Tuberculosis drugs' distribution and em…, PLoS medicine (2019) | [10.1371/journal.pmed.1002773](https://doi.org/10.1371/journal.pmed.1002773) |
 
 ## Pharmacodynamics (PD)
 

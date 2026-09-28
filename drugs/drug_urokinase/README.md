@@ -4,7 +4,7 @@
 
 - **generic name:** urokinase
 - **ATC codes:** `B01AD04`
-- **DrugBank:** [DB00013](https://go.drugbank.com/drugs/DB00013)
+- **DrugBank:** [DB00013](https://go.drugbank.com/drugs/DB00013) · **PubChem:** not captured
 - **groups:** approved, investigational, withdrawn
 
 ## About

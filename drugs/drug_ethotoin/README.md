@@ -4,7 +4,8 @@
 
 - **generic name:** ethotoin
 - **ATC codes:** `N03AB01`
-- **DrugBank:** [DB00754](https://go.drugbank.com/drugs/DB00754)
+- **DrugBank:** [DB00754](https://go.drugbank.com/drugs/DB00754) · **PubChem:** [CID 3292](https://pubchem.ncbi.nlm.nih.gov/compound/3292)
+- **molar mass:** 204.2252 g/mol (C11H12N2O2) — DrugBank
 - **groups:** approved
 
 ## About

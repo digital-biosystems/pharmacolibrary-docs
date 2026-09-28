@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[elimination clearance [cl el (se %)]]` (52.9 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The nefopam two-compartment record was rejected because the elimination clearance unit 'litre h 21' could not be converted to SI and the structure contains a compartment with no path from the dose.**
+
+The reported elimination clearance of 52.9 (labelled 'Cl el (SE %)') carried the unit 'litre h 21', which could not be converted to SI units, so the parameter entered the model without a usable value. The two-compartment structure was also flagged as containing an unreachable or orphan compartment, i.e. a compartment with no connection from the dose. A second reader disagreed on several parameters: it read the elimination clearance as null instead of 52.9, left V1 (24.3) and V2 (183.3) unread, and read a value of 4481 for NPD where this record had none. Extracted — nefopam: V1 24.3 litre, V2 183 litre, CL 52.9 litre h 21.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of elimination clearance [cl el (se %)]: this record has 52.9, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Podranski T; Bouillon TW; Riva T; Kurz AM; Oehmke MJ et al. (2012). British journal of anaesthesia 108
@@ -26,6 +29,9 @@ Podranski T; Bouillon TW; Riva T; Kurz AM; Oehmke MJ et al. (2012). British jour
 
 ## Model component
 <dbs-pgx drug="nefopam" model-id="Nefopam_Podranski2012_reference" status="rejected" stale="false" population="healthy adults" measured-compound="nefopam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

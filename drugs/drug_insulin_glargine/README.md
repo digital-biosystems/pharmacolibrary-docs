@@ -5,7 +5,7 @@
 
 - **generic name:** insulin glargine
 - **ATC codes:** `A10AE04`, `A10AE54`
-- **DrugBank:** [DB00047](https://go.drugbank.com/drugs/DB00047)
+- **DrugBank:** [DB00047](https://go.drugbank.com/drugs/DB00047) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -26,9 +26,9 @@ Available as the brand name pro
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.312). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Tham_2017_reference](drugs/drug_insulin_glargine/InsulinGlargine_Tham2017_reference.md) | Tham LS et al., Modeling Pharmacokinetic Profiles of In…, Journal of clinical pharmac… (2017) | [10.1002/jcph.899](https://doi.org/10.1002/jcph.899) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.312). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Tham_2017_reference](drugs/drug_insulin_glargine/InsulinGlargine_Tham2017_reference.md) | 1-compartment (no model) | 6 (+1 cov.) | Tham LS et al., Modeling Pharmacokinetic Profiles of In…, Journal of clinical pharmac… (2017) | [10.1002/jcph.899](https://doi.org/10.1002/jcph.899) |
 
 ## Pharmacodynamics (PD)
 

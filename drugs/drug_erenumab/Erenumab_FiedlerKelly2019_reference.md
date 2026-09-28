@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Fiedler-Kelly JB; Cohen-Barak O; Morris DN; Ludwig E; Rasamoelisolo M; Shen H; Levi M et al. (2019). British journal of clinical pharmacology 85
@@ -25,6 +25,9 @@ Fiedler-Kelly JB; Cohen-Barak O; Morris DN; Ludwig E; Rasamoelisolo M; Shen H; L
 
 ## Model component
 <dbs-pgx drug="erenumab" model-id="Erenumab_FiedlerKelly2019_reference" status="curated_candidate" stale="false" population="" measured-compound="erenumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -118,6 +121,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference/Erenumab_FiedlerKelly2019_reference.svg" alt="Erenumab_FiedlerKelly2019_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference/Erenumab_FiedlerKelly2019_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference/Erenumab_FiedlerKelly2019_reference_sim_controls.json"></dbs-fmusim>
 

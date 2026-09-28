@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc0-inf of 4-methylaminoantipyrine in children 2-6 years]` (29.9 vs not captured) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The record is not a compartmental population PK model: metamizole's metabolite 4-methylaminoantipyrine is reported with only an AUC∞ of 29.9 mg/L/h, with no distribution volume and no clearance, and the value came from the abstract alone.**
+
+The paper (Ziesenitz_2019, infants and children) reports no distribution volume and no clearance or elimination rate for 4-methylaminoantipyrine, so the single-compartment structure has no estimable PK parameters — it is an exposure/outcome paper. The record was built from the abstract alone, meaning the reported summary statistic (AUC0-inf 29.9 mg/L/h in children 2–6 years) stood in for a fitted model. A dimension check on a structural parameter also failed with a unit mismatch. A second reader found no value for the AUC0-inf parameter, disagreeing with the recorded 29.9 mg/L/h. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0-inf of 4-methylaminoantipyrine in children 2-6 years: this record has 29.9, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `metamizole`, measured `4-methylaminoantipyrine`.
 
@@ -28,6 +31,9 @@ Ziesenitz VC; Rodieux F; Atkinson A; Borter C; Bielicki JA; Haschke M; et al. et
 
 ## Model component
 <dbs-pgx drug="Metamizole" model-id="Metamizole_Ziesenitz2019_reference" status="rejected" stale="false" population="infants and children" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

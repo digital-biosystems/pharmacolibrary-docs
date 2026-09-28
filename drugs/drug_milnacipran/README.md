@@ -4,7 +4,8 @@
 
 - **generic name:** milnacipran
 - **ATC codes:** `N06AX17`
-- **DrugBank:** [DB04896](https://go.drugbank.com/drugs/DB04896)
+- **DrugBank:** [DB04896](https://go.drugbank.com/drugs/DB04896) · **PubChem:** [CID 65833](https://pubchem.ncbi.nlm.nih.gov/compound/65833)
+- **molar mass:** 246.354 g/mol (C15H22N2O) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -4,7 +4,8 @@
 
 - **generic name:** cetylpyridinium
 - **ATC codes:** `A01AB53`, `B05CA01`, `D08AJ03`, `D09AA07`, `R02AA06`
-- **DrugBank:** [DB11073](https://go.drugbank.com/drugs/DB11073)
+- **DrugBank:** [DB11073](https://go.drugbank.com/drugs/DB11073) · **PubChem:** [CID 2683](https://pubchem.ncbi.nlm.nih.gov/compound/2683)
+- **molar mass:** 304.541 g/mol (C21H38N) — DrugBank
 - **groups:** approved, investigational
 
 ## About

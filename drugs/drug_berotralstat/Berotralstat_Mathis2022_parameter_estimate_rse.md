@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T3_param_coverage; T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clearance as a function of weight]` (0.480 vs not captured) — not a structural parameter.
-**How to address:** Open the emitted .mo and compare its base class and parameters with the record.
-<sub>owner: **engineer**</sub>
+**The berotralstat model was held back because the intercompartmental transfer rate kcomp (0.0812 1/h) was neither extracted nor defaulted, and the absorption rate ka was invented as a default not reported in the source.**
+
+The parameter coverage check found only 4 of the 5 expected parameters covered; kcomp (K23, 0.0812 1/h) was neither emitted nor defaulted, so a placeholder would have been used. The model builder additionally substituted a default for ka, which the source did not report — an invented absorption rate judged not acceptable. A second reader also disagreed on the allometric clearance exponent, reading no value where this record gives 0.480. Extracted — berotralstat: CL 47.3 L/h, V 1.65e+03 L, kabs 1.12, kcomp 0.0812, tlag 0.468 h, Fab 0.497, allometric_exponent 0.48.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance as a function of weight: this record has 0.480, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Mathis A; Sale M; Cornpropst M; Sheridan WP; Ma SC et al. (2022). Clinical and translational science 15
@@ -26,6 +29,9 @@ Mathis A; Sale M; Cornpropst M; Sheridan WP; Ma SC et al. (2022). Clinical and t
 
 ## Model component
 <dbs-pgx drug="berotralstat" model-id="Berotralstat_Mathis2022_parameter_estimate_rse" status="needs_review" stale="false" population="healthy subjects and patients with hereditary angioedema" measured-compound="berotralstat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -149,6 +155,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse.svg" alt="Berotralstat_Mathis2022_parameter_estimate_rse diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, lag 28.1 min, F 0.497). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_sim_controls.json"></dbs-fmusim>
 

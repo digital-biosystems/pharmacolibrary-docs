@@ -5,7 +5,7 @@
 
 - **generic name:** not captured
 - **ATC codes:** not captured
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** [CID 15625](https://pubchem.ncbi.nlm.nih.gov/compound/15625)
 - **groups:** not captured
 
 ## Extraction summary
@@ -16,9 +16,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Weber_1993_male Sprague-Dawley rats](drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/D_2378TetrachlorodibenzoPDioxin_Weber1993_reference.md) | Weber LW et al., Tissue distribution and toxicokinetics…, Fundamental and applied tox… (1993) | [10.1006/faat.1993.1129](https://doi.org/10.1006/faat.1993.1129) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Weber_1993_male Sprague-Dawley rats](drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/D_2378TetrachlorodibenzoPDioxin_Weber1993_reference.md) | 1-compartment (no model) | 0 | Weber LW et al., Tissue distribution and toxicokinetics…, Fundamental and applied tox… (1993) | [10.1006/faat.1993.1129](https://doi.org/10.1006/faat.1993.1129) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

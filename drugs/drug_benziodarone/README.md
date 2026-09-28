@@ -4,7 +4,8 @@
 
 - **generic name:** benziodarone
 - **ATC codes:** `C01DX04`
-- **DrugBank:** [DB13277](https://go.drugbank.com/drugs/DB13277)
+- **DrugBank:** [DB13277](https://go.drugbank.com/drugs/DB13277) · **PubChem:** not captured
+- **molar mass:** 518.089 g/mol (C17H12I2O3) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[lidocaine clearance estimated by the final model]` (26.1 vs not captured) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The lidocaine model was rejected because its metabolite structure contains an unreachable compartment or unlinked metabolite, and a second reader could not confirm the reported lidocaine clearance of 26.1 L/h.**
+
+The record describes lidocaine with two metabolic links to the metabolites MEGX and GX, but the structure check found an unreachable/orphan compartment or unlinked metabolite, meaning part of the model has no path from the lidocaine dose. The only extracted parameter is lidocaine clearance, 26.1 L/h, labelled as estimated by the final model. A second reader returned no value for this clearance, so the reported 26.1 L/h could not be corroborated. The record was therefore rejected. Extracted — lidocaine: CL 26.1 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of lidocaine clearance estimated by the final model: this record has 26.1, the second reading none. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 He C; Qi X; Liu Y; Jin Y; Zhang M; Zhang Y; et al. et al. (2025). Drug design, development and therapy 19
@@ -26,6 +29,9 @@ He C; Qi X; Liu Y; Jin Y; Zhang M; Zhang Y; et al. et al. (2025). Drug design, d
 
 ## Model component
 <dbs-pgx drug="lidocaine" model-id="Lidocaine_He2025_reference" status="rejected" stale="false" population="partial hepatectomy patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

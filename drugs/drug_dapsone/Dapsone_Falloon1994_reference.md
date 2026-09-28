@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[mean]` (not captured vs 131) and 1 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of mean: this record has none, the second reading 131; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Falloon J; Lavelle J; Ogata-Arakaki D; Byrne A; Graziani A; Morgan A; et al. et al. (1994). Antimicrobial agents and chemotherapy 38
@@ -26,6 +29,9 @@ Falloon J; Lavelle J; Ogata-Arakaki D; Byrne A; Graziani A; Morgan A; et al. et 
 
 ## Model component
 <dbs-pgx drug="dapsone" model-id="Dapsone_Falloon1994_reference" status="rejected" stale="false" population="adult HIV-infected patients" measured-compound="dapsone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

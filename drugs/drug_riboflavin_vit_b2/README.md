@@ -4,7 +4,7 @@
 
 - **generic name:** riboflavin (vit B2)
 - **ATC codes:** `A11HA04`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

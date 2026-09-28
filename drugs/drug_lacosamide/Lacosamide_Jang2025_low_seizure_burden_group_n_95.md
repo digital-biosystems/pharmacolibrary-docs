@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Cmax, Ctrough and AUC), so that value has no SI equivalent.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jang Y; Ahn SJ; Lee S; Kim Y; Lee HS; Lee YK; et al. et al. (2025). Scientific reports 15
@@ -25,6 +27,9 @@ Jang Y; Ahn SJ; Lee S; Kim Y; Lee HS; Lee YK; et al. et al. (2025). Scientific r
 
 ## Model component
 <dbs-pgx drug="lacosamide" model-id="Lacosamide_Jang2025_low_seizure_burden_group_n_95" status="rejected" stale="false" population="epilepsy patients" measured-compound="lacosamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

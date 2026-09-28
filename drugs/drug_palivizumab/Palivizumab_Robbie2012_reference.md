@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default; C5 dimensioned parameter(s) without a unit: Q30, Q22 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[q_wt_70_0.75]` (8.37 vs not captured) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only clearance was extracted — no volume; q and CL have no unit.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — palivizumab: Q 2.3, Fab 3.13, CL 9.95 mo, kabs 0.373 day Ϫ1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q_wt_70_0.75: this record has 8.37, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Robbie GJ; Zhao L; Mondick J; Losonsky G; Roskos LK et al. (2012). Antimicrobial agents and chemotherapy 56

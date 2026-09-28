@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (flurbiprofen axetil vs flurbiprofen) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The flurbiprofen record was rejected because a reported unit could not be converted to SI, leaving structural parameters such as CL (0.83) and V1 (2.6) without valid units and creating a dimension mismatch.**
+
+Several parameters carry non-unit labels in place of units — CL (0.83) and the free fraction fu (0.00023) are marked 'Bootstrap', while V1 (2.6), Q2 (0.58), Q (1.0) and Vss (0.097) are marked 'WT/70' — so the reported unit could not be expressed in SI and no valid value could be assigned, triggering the dimension mismatch on a structural parameter. The second reader also disagreed on the dose compartment, reading flurbiprofen rather than the prodrug flurbiprofen axetil, and expected a CSF uptake parameter of 6.0 that is absent from this record; the deep peripheral volume was assigned a different identifier by that reader. These disagreements did not change the outcome, which rests on the unconvertible unit. Extracted — flurbiprofen: kabs 2.5 l h⁻¹, Fab 0.045 h, CL 0.83 Bootstrap, V1 2.6 WT/70, Q2 0.58 WT/70, Q 1 WT/70, Vss 0.097 WT/70, fu 0.00023 Bootstrap, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has flurbiprofen axetil, the second reading flurbiprofen; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `flurbiprofen axetil`, measured `flurbiprofen`.
 
@@ -28,6 +31,9 @@ Kumpulainen E; Välitalo P; Kokki M; Lehtonen M; Hooker A; Ranta VP; et al. et a
 
 ## Model component
 <dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Kumpulainen2010v2_reference" status="rejected" stale="false" population="healthy children undergoing surgery with spinal anaesthesia" measured-compound="flurbiprofen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 

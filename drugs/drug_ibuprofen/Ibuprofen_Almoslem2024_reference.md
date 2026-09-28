@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** missing key parameters — none reported by this paper
-**Second reading:** `gpt-5.6-luna` read this paper differently on `screen.dose_compound` (acetaminophen, ibuprofen vs ibuprofen and acetaminophen) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which compound was dosed: this record has acetaminophen, ibuprofen, the second reading ibuprofen and acetaminophen; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Almoslem M; Shah SD; Vozmediano V; Guzy S; Kim S; Hudak ML; et al. et al. (2024). Journal of clinical pharmacology 64

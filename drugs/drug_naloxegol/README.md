@@ -5,7 +5,8 @@
 
 - **generic name:** naloxegol
 - **ATC codes:** `A06AH03`
-- **DrugBank:** [DB09049](https://go.drugbank.com/drugs/DB09049)
+- **DrugBank:** [DB09049](https://go.drugbank.com/drugs/DB09049) · **PubChem:** [CID 56959087](https://pubchem.ncbi.nlm.nih.gov/compound/56959087)
+- **molar mass:** 651.794 g/mol (C34H53NO11) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Al-Huniti_2016_healthy subjects and patients with OIC](drugs/drug_naloxegol/Naloxegol_AlHuniti2016_healthy_subjects_and_patients_with_oi.md) | Al-Huniti (2016) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Al-Huniti_2016_healthy subjects and patients with OIC](drugs/drug_naloxegol/Naloxegol_AlHuniti2016_healthy_subjects_and_patients_with_oi.md) | — (no model) | 0 | Al-Huniti (2016) | — |
 
 ## Pharmacodynamics (PD)
 

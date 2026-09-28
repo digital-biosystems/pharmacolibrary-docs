@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[ppv_sss]` (0.431 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — nicorandil: V3/F 0.257, t1/2γ 0.957.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ppv_sss: this record has 0.431, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Iida S; Kinoshita H; Holford NH et al. (2008). British journal of clinical pharmacology 66
@@ -26,6 +29,9 @@ Iida S; Kinoshita H; Holford NH et al. (2008). British journal of clinical pharm
 
 ## Model component
 <dbs-pgx drug="nicorandil" model-id="Nicorandil_Iida2008v2_reference" status="needs_review" stale="false" population="healthy subjects and acute heart failure patients" measured-compound="nicorandil" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

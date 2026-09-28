@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl]` (0.133 vs not captured) and 4 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The tanezumab record was rejected because the parameter Cmax carries the unit 'days' instead of a concentration unit, and its peripheral compartment Vp is not connected to the dosing compartment; only the paper abstract was read.**
+
+The record lists Cmax for tanezumab with the unit 'days', a time unit on a parameter that should be a maximum concentration, which is a dimensional mismatch on a structural parameter. The two-compartment structure also leaves the peripheral compartment (Vp, 1.77 L) without a link from the dose, so it is unreachable. Because the source was abstract-only, the reported summary statistics stood in for a fitted model, and a second reader recorded no values for any parameter (CL 0.133 L d-1, Vc 2.6 L, Vp 1.77 L, Km 31.2 μg L-1, Cmax null), leaving those comparisons uncomputed. Extracted — tanezumab: CL 0.133 L d-1, V1 2.6 L, V2 1.77 L, Km 31.2 μg L-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 0.133, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Shoji S; Suzuki A; Gaitonde P; Cai CH; Marshall S et al. (2022). British journal of clinical pharmacology 88
@@ -26,6 +29,9 @@ Shoji S; Suzuki A; Gaitonde P; Cai CH; Marshall S et al. (2022). British journal
 
 ## Model component
 <dbs-pgx drug="tanezumab" model-id="Tanezumab_Shoji2022_reference" status="rejected" stale="false" population="patients with osteoarthritis or chronic low back pain" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

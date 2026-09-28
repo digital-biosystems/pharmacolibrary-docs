@@ -4,7 +4,8 @@
 
 - **generic name:** tinidazole
 - **ATC codes:** `A02BD09`, `G01AF21`, `J01RA11`, `J01RA13`, `J01RA18`, `J01XD02`, `P01AB02`, `P01AB53`
-- **DrugBank:** [DB00911](https://go.drugbank.com/drugs/DB00911)
+- **DrugBank:** [DB00911](https://go.drugbank.com/drugs/DB00911) · **PubChem:** [CID 5479](https://pubchem.ncbi.nlm.nih.gov/compound/5479)
+- **molar mass:** 247.272 g/mol (C8H13N3O4S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

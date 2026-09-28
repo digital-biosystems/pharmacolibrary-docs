@@ -4,7 +4,8 @@
 
 - **generic name:** prednimustine
 - **ATC codes:** `L01AA08`
-- **DrugBank:** [DB12832](https://go.drugbank.com/drugs/DB12832)
+- **DrugBank:** [DB12832](https://go.drugbank.com/drugs/DB12832) · **PubChem:** [CID 34457](https://pubchem.ncbi.nlm.nih.gov/compound/34457)
+- **molar mass:** 646.65 g/mol (C35H45Cl2NO6) — DrugBank
 - **groups:** investigational
 
 ## About

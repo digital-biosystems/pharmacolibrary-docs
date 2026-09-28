@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (beta-methyldigoxin vs metildigoxin) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has beta-methyldigoxin, the second reading metildigoxin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hinderling PH; Garrett ER; Wester RC et al. (1977). Journal of pharmaceutical sciences 66
@@ -26,6 +29,9 @@ Hinderling PH; Garrett ER; Wester RC et al. (1977). Journal of pharmaceutical sc
 
 ## Model component
 <dbs-pgx drug="metildigoxin" model-id="Metildigoxin_Hinderling1977_reference" status="rejected" stale="false" population="healthy humans" measured-compound="beta-methyldigoxin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

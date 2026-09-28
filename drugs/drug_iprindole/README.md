@@ -4,7 +4,8 @@
 
 - **generic name:** iprindole
 - **ATC codes:** `N06AA13`
-- **DrugBank:** [DB13496](https://go.drugbank.com/drugs/DB13496)
+- **DrugBank:** [DB13496](https://go.drugbank.com/drugs/DB13496) · **PubChem:** not captured
+- **molar mass:** 284.447 g/mol (C19H28N2) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

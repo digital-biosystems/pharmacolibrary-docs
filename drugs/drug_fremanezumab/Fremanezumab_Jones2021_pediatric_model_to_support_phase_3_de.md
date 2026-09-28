@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (mechanistic vs apparent) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The fremanezumab pediatric model was held back because the absorption rate constant ka was not reported and a default value (0.252 1/day) was substituted, an unacceptable invented absorption, and covariate effects were never simulated.**
+
+The record lists ka = 0.252 1/day, but the source paper did not report an absorption rate constant, so a library default was used along with defaults for bioavailability F and lag time Tlag — this invented absorption was judged not acceptable. In addition, although the record defines weight covariate effects (theta values 0.245 and 1.20), only the reference individual was simulated, so the covariate scenarios were not exercised. A second reader also disagreed on the model parameterization, calling it apparent rather than mechanistic, and read a peripheral volume of 201.396 L where the record has none. Extracted — fremanezumab: CL 0.0905 L/day, V1 1.89 L, kabs 0.252, Q 0.262 L/day, V2 1.72 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Jones A; Cohen-Barak O; Radivojevic A; Fiedler-Kelly J et al. (2021). Pharmaceutics 13
@@ -28,6 +31,9 @@ Jones A; Cohen-Barak O; Radivojevic A; Fiedler-Kelly J et al. (2021). Pharmaceut
 
 ## Model component
 <dbs-pgx drug="fremanezumab" model-id="Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de" status="needs_review" stale="false" population="pediatric patients with migraine" measured-compound="fremanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted, plus 2 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -151,6 +157,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de.svg" alt="Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_sim_controls.json"></dbs-fmusim>
 

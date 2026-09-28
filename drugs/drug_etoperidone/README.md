@@ -4,7 +4,8 @@
 
 - **generic name:** etoperidone
 - **ATC codes:** `N06AB09`
-- **DrugBank:** [DB09194](https://go.drugbank.com/drugs/DB09194)
+- **DrugBank:** [DB09194](https://go.drugbank.com/drugs/DB09194) · **PubChem:** [CID 40589](https://pubchem.ncbi.nlm.nih.gov/compound/40589)
+- **molar mass:** 377.92 g/mol (C19H28ClN5O) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

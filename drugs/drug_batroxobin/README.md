@@ -4,7 +4,7 @@
 
 - **generic name:** batroxobin
 - **ATC codes:** `B02BX03`
-- **DrugBank:** [DB09005](https://go.drugbank.com/drugs/DB09005)
+- **DrugBank:** [DB09005](https://go.drugbank.com/drugs/DB09005) · **PubChem:** not captured
 - **groups:** investigational
 
 ## About

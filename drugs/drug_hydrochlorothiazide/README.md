@@ -21,7 +21,7 @@ Hydrochlorothiazide was granted FDA approval on 12 February 1959.[L8444]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 13:58 | 6:20 | 6/3/2 | 2/5/0 | 2/2/29 | 114,208/7,920 | ollama / qwen3.8:27b-mtp-q8_0 | 60 | 33/28 | 30/30 | 0 |
+| 2026-09-27 13:58 | 6:20 | 6/2/2 | 2/5/0 | 2/2/29 | 114,208/7,920 | ollama / qwen3.8:27b-mtp-q8_0 | 60 | 33/28 | 30/30 | 0 |
 
 ## popPK records
 

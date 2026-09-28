@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q95 — no SI value to build from
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl].value` (11.42 vs 12) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**T1/2ka  has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — desvenlafaxine: kabs 22 h -1, ktr 16.8 h -1, CL 11.4 L/h, V1 65.3 L, t1/2ka 7.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].value`: this record has 11.42, the second reading 12; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Mangas-Sanjuán V; Simón M; González-Rojano E; Ochoa D; Abad-Santos F; Román M; et al. et al. (2023). Pharmaceutics 15
@@ -26,6 +29,9 @@ Mangas-Sanjuán V; Simón M; González-Rojano E; Ochoa D; Abad-Santos F; Román 
 
 ## Model component
 <dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_MangasSanjun2023_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="desvenlafaxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

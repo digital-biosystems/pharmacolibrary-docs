@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[absorption rate constant, ka1]` (0.29 vs not captured) and 3 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The alpha-tocopherol sheep record was rejected because it lacks a distribution volume and clearance, and the elimination half-life is given with the wrong dimension, 42.4 /h instead of hours.**
+
+The paper reports only an absorption rate constant (0.29 /h), an elimination half-life (42.4), a mean residence time (46 h) and an AUC (290 micrograms/h per ml) for alpha-tocopherol in sheep, with no distribution volume and no clearance or elimination rate constant, so it is an exposure/outcome study rather than a compartmental population PK model. The elimination half-life carries the unit /h, a dimension mismatch on a structural parameter since a half-life must be in hours. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader returned no values for all four parameters, leaving the comparisons incomputable. Extracted — alpha-tocopherol: kabs 0.29 /h, t1/2z 42.4 /h, MRT 46 h, AUC 290 micrograms/h per ml.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption rate constant, ka1: this record has 0.29, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `dl-alpha-tocopherol acetate`, measured `alpha-tocopherol`.
 
@@ -28,6 +31,9 @@ Hidiroglou M et al. (1996). Journal of dairy science 79
 
 ## Model component
 <dbs-pgx drug="Tocopherol" model-id="Tocopherol_Hidiroglou1996_reference" status="rejected" stale="false" population="sheep" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

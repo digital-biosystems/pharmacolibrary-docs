@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** `gpt-5.6-luna` read this paper differently on `parameters[cl].value` (29.7 vs 52.6) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on `parameters[cl].value`: this record has 29.7, the second reading 52.6; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chae JW; Baek IH; Lee BY; Cho SK; Kwon KI et al. (2012). British journal of clinical pharmacology 74

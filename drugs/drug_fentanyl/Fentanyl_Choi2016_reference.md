@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22, Q63, Q64, Q30 — no SI value to build from
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[θ1]` (35 vs not captured) — not a structural parameter.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**CL, V1, V2 and Q have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — fentanyl: CL 32, V1 203, V2 474, Q 55.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of θ1: this record has 35, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Choi L; Ferrell BA; Vasilevskis EE; Pandharipande PP; Heltsley R; Ely EW; et al. et al. (2016). Critical care medicine 44

@@ -5,7 +5,7 @@
 
 # famotidine — `Famotidine_Ikawa2007_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 11.8, the second reading 12.97; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `lafutidine`, measured `famotidine`.
 
@@ -27,6 +29,9 @@ Ikawa K; Shimatani T; Hayato S; Morikawa N; Tazuma S et al. (2007). Biological &
 
 ## Model component
 <dbs-pgx drug="famotidine" model-id="Famotidine_Ikawa2007_reference" status="curated_candidate" stale="false" population="healthy subjects" measured-compound="famotidine" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -54,14 +59,27 @@ Ikawa K; Shimatani T; Hayato S; Morikawa N; Tazuma S et al. (2007). Biological &
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.385 (5/13 fields) | 8 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q27]` | 11.8 | 12.97 | mismatch |
+| `gpt-oss:120b` | `values[Q320]` | 7.2 | 3.686 | mismatch |
+| `gpt-oss:120b` | `values[Q321]` | 26.5 | 40.68 | mismatch |
+| `gpt-oss:120b` | `values[Q325]` | 11.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q326]` | 0.316 | 0.316 | mismatch |
+| `gpt-oss:120b` | `values[Q47]` | 0.329 | 0.329 | mismatch |
+| `gpt-oss:120b` | `values[Q49]` | 0.956 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q76]` | 172 | 42.46 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +145,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference.svg" alt="Famotidine_Ikawa2007_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.956 /h, lag 44.7 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_sim_controls.json"></dbs-fmusim>
 

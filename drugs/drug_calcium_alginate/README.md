@@ -4,7 +4,7 @@
 
 - **generic name:** calcium alginate
 - **ATC codes:** `B02BC08`
-- **DrugBank:** [DB13372](https://go.drugbank.com/drugs/DB13372)
+- **DrugBank:** [DB13372](https://go.drugbank.com/drugs/DB13372) · **PubChem:** not captured
 - **groups:** approved, withdrawn
 
 ## Extraction summary

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;glycyrrhizic acid&quot;,&quot;href&quot;:&quot;drugs/drug_glycyrrhizic_acid/&quot;},{&quot;label&quot;:&quot;Baltina_2021_2 \u00b7 PD HIV-1 protein p24 accumulation&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # HIV-1 protein p24 accumulation — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>

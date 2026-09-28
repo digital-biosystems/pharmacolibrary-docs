@@ -5,7 +5,8 @@
 
 - **generic name:** netilmicin
 - **ATC codes:** `J01GB07`, `S01AA23`
-- **DrugBank:** [DB00955](https://go.drugbank.com/drugs/DB00955)
+- **DrugBank:** [DB00955](https://go.drugbank.com/drugs/DB00955) · **PubChem:** [CID 441306](https://pubchem.ncbi.nlm.nih.gov/compound/441306)
+- **molar mass:** 475.587 g/mol (C21H41N5O7) — DrugBank
 - **groups:** approved
 
 ## About
@@ -22,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Winslade_1987_2_reference](drugs/drug_netilmicin/Netilmicin_Winslade1987v2_reference.md) | Winslade NE et al., Single-dose accumulation pharmacokineti…, Antimicrobial agents and ch… (1987) | [10.1128/AAC.31.4.605](https://doi.org/10.1128/AAC.31.4.605) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jauregizar_2003_reference](drugs/drug_netilmicin/Netilmicin_Jauregizar2003_reference.md) | Jauregizar N et al., Population pharmacokinetics of netilmic…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01783.x](https://doi.org/10.1046/j.1365-2125.2003.01783.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Siegel_1979_reference](drugs/drug_netilmicin/Netilmicin_Siegel1979_reference.md) | Siegel JD et al., Pharmacokinetic properties of netilmici…, Antimicrobial agents and ch… (1979) | [10.1128/AAC.15.2.246](https://doi.org/10.1128/AAC.15.2.246) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Winslade_1987_2_reference](drugs/drug_netilmicin/Netilmicin_Winslade1987v2_reference.md) | 1-compartment, IV | 1 | Winslade NE et al., Single-dose accumulation pharmacokineti…, Antimicrobial agents and ch… (1987) | [10.1128/AAC.31.4.605](https://doi.org/10.1128/AAC.31.4.605) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jauregizar_2003_reference](drugs/drug_netilmicin/Netilmicin_Jauregizar2003_reference.md) | 1-compartment (no model) | 0 | Jauregizar N et al., Population pharmacokinetics of netilmic…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01783.x](https://doi.org/10.1046/j.1365-2125.2003.01783.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Siegel_1979_reference](drugs/drug_netilmicin/Netilmicin_Siegel1979_reference.md) | 1-compartment (no model) | 0 | Siegel JD et al., Pharmacokinetic properties of netilmici…, Antimicrobial agents and ch… (1979) | [10.1128/AAC.15.2.246](https://doi.org/10.1128/AAC.15.2.246) |
 
 ## ADME sites
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-5.6-luna` read this paper differently on `screen.dose_compound` (amoxicillin-clavulanic acid vs amoxicillin and clavulanic acid) and 17 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The clavulanic acid record was rejected because a structural parameter carries a wrong dimension (V2 reported in hours), a compartment has no path from the dose, and the CL/F unit could not be converted to SI.**
+
+The clavulanic acid parameters show dimension errors on structural quantities: V2 is labelled '2VlRT(h)' with value 1.51 in hours, and CL/F is labelled 'CUF (1/h/kg)' with value 1.08 but unit recorded as 'h' instead of L/h/kg. The record also failed the structural check for an unreachable or orphan compartment, meaning part of the model structure has no connection from the dose. The unit 'h' reported for CL/F could not be converted to SI units, so that parameter entered the model without a usable value. A second reader further disputed the primary analyte (amoxicillin alone versus amoxicillin and clavulanic acid), the parameterization (apparent versus mechanistic), and the V2 value (1.51 versus 1.17). Extracted — clavulanic acid: t1/2z 0.09 h, Cmax 7.99 mg/1, V/F 2.31 I/kg, AUC 14.3 mg/h/1, V2 1.51 h, MAT 0.34 h, CL/F 1.08 h, Fab 85.5; amoxicillin and clavulanic acid: kabs 0.17 h−1.
+
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which compound was dosed: this record has amoxicillin-clavulanic acid, the second reading amoxicillin and clavulanic acid; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `amoxicillin-clavulanic acid`, measured `amoxicillin and clavulanic acid`.
 

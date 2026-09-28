@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;phospholipids&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/&quot;},{&quot;label&quot;:&quot;Bae_2022 \u00b7 PD IL-12B&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phospholipids_Hummel1975_non_pregnant_female_rats&quot;,&quot;label&quot;:&quot;Hummel_1975_non pregnant female rats&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

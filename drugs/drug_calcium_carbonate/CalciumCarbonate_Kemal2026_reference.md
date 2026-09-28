@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q21]` (not captured vs 1.8) and 2 more field(s) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The calcium carbonate model was held back because the absorption rate ka and lag time Tlag were not reported in the source and library defaults were substituted, alongside assumed F=1 and Fm=1 with no molar correction.**
+
+The record reports only apparent clearance (CL/F 3.33 L/h) and central volume (V1 120.0 L) for calcium carbonate; ka and Tlag had no values in the source, so base defaults were substituted, and the invented absorption was adjudicated as not acceptable. The builder further assumed F=1 and Fm=1 with no molar correction, parameterizing the model as apparent, consistent with first-order extravascular depot input. A second reader also disagreed on extracted values, reading 1.8 and 1.53 where this record had null, and null where this record had 2. Extracted — calcium carbonate: CL/F 3.33 L/h, V1 120 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 1.8; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kemal CC; Zweers TJ; Krekels EHJ; Chatterjee MS et al. (2026). CPT: pharmacometrics & systems pharmacology 15
@@ -26,6 +29,9 @@ Kemal CC; Zweers TJ; Krekels EHJ; Chatterjee MS et al. (2026). CPT: pharmacometr
 
 ## Model component
 <dbs-pgx drug="calcium carbonate" model-id="CalciumCarbonate_Kemal2026_reference" status="needs_review" stale="false" population="" measured-compound="calcium_carbonate" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -135,6 +141,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference/CalciumCarbonate_Kemal2026_reference.svg" alt="CalciumCarbonate_Kemal2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference/CalciumCarbonate_Kemal2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference/CalciumCarbonate_Kemal2026_reference_sim_controls.json"></dbs-fmusim>
 

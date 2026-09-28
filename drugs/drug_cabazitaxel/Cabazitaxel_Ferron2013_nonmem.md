@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** split column 'nonmem' is a table statistic/structure column, not a study population (mis-split estimate table).
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**'nonmem' is a column of the estimates table, not a study population.**
+
+The table was split into one record per column, and 'nonmem' holds a statistic rather than a second set of estimates. A reported unit could not be converted (V, k12, k21 and k13), so that value has no SI equivalent.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ferron GM; Dai Y; Semiond D et al. (2013). Cancer chemotherapy and pharmacology 71
@@ -25,6 +27,9 @@ Ferron GM; Dai Y; Semiond D et al. (2013). Cancer chemotherapy and pharmacology 
 
 ## Model component
 <dbs-pgx drug="cabazitaxel" model-id="Cabazitaxel_Ferron2013_nonmem" status="rejected" stale="false" population="patients with advanced solid tumors" measured-compound="cabazitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,8 @@
 
 - **generic name:** ximelagatran
 - **ATC codes:** `B01AE05`
-- **DrugBank:** [DB04898](https://go.drugbank.com/drugs/DB04898)
+- **DrugBank:** [DB04898](https://go.drugbank.com/drugs/DB04898) · **PubChem:** [CID 9574101](https://pubchem.ncbi.nlm.nih.gov/compound/9574101)
+- **molar mass:** 473.5652 g/mol (C24H35N5O5) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cullberg_2005_patients with acute deep vein thrombosis](drugs/drug_ximelagatran/Ximelagatran_Cullberg2005_patients_with_acute_deep_vein_thro.md) | Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmacology and t… (2005) | [10.1016/j.clpt.2004.11.001](https://doi.org/10.1016/j.clpt.2004.11.001) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Eriksson_2003_orthopaedic surgery patients](drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_orthopaedic_surgery_patients.md) | Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003) | [10.2165/00003088-200342070-00006](https://doi.org/10.2165/00003088-200342070-00006) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cullberg_2005_patients with acute deep vein thrombosis](drugs/drug_ximelagatran/Ximelagatran_Cullberg2005_patients_with_acute_deep_vein_thro.md) | — (no model) | 0 | Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmacology and t… (2005) | [10.1016/j.clpt.2004.11.001](https://doi.org/10.1016/j.clpt.2004.11.001) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Eriksson_2003_orthopaedic surgery patients](drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_orthopaedic_surgery_patients.md) | — (no model) | 0 | Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003) | [10.2165/00003088-200342070-00006](https://doi.org/10.2165/00003088-200342070-00006) |
 
 ## ADME sites
 

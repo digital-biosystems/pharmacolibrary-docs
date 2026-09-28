@@ -5,7 +5,7 @@
 
 # gabapentin — `Gabapentin_Adrian2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — gabapentin: CL 161 mL/kg/hr, V1 129 mL/kg, tlag 0.45 hr, kabs 5.24 1/hr.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 12.42, the second reading 5.61; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Adrian D; Papich MG; Baynes R; Stafford E; Lascelles BDX et al. (2018). Journal of veterinary internal medicine 32
@@ -25,6 +29,9 @@ Adrian D; Papich MG; Baynes R; Stafford E; Lascelles BDX et al. (2018). Journal 
 
 ## Model component
 <dbs-pgx drug="gabapentin" model-id="Gabapentin_Adrian2018_reference" status="needs_review" stale="false" population="cats" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,14 +58,23 @@ Adrian D; Papich MG; Baynes R; Stafford E; Lascelles BDX et al. (2018). Journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.818 (18/22 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q32]` | 12.42 | 5.61 | mismatch |
+| `gpt-oss:120b` | `values[Q75]` | not captured | 32.77 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q83]` | 0.45 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q900]` | 32.77 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

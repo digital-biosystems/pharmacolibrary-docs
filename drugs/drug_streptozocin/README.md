@@ -4,7 +4,8 @@
 
 - **generic name:** streptozocin
 - **ATC codes:** `L01AD04`
-- **DrugBank:** [DB00428](https://go.drugbank.com/drugs/DB00428)
+- **DrugBank:** [DB00428](https://go.drugbank.com/drugs/DB00428) · **PubChem:** [CID 29327](https://pubchem.ncbi.nlm.nih.gov/compound/29327)
+- **molar mass:** 265.222 g/mol (C8H15N3O7) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -4,7 +4,8 @@
 
 - **generic name:** acetyldigitoxin
 - **ATC codes:** `C01AA01`
-- **DrugBank:** [DB00511](https://go.drugbank.com/drugs/DB00511)
+- **DrugBank:** [DB00511](https://go.drugbank.com/drugs/DB00511) · **PubChem:** [CID 5284512](https://pubchem.ncbi.nlm.nih.gov/compound/5284512)
+- **molar mass:** 806.9757 g/mol (C43H66O14) — DrugBank
 - **groups:** approved
 
 ## About

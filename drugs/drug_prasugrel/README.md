@@ -5,7 +5,8 @@
 
 - **generic name:** prasugrel
 - **ATC codes:** `B01AC22`
-- **DrugBank:** [DB06209](https://go.drugbank.com/drugs/DB06209)
+- **DrugBank:** [DB06209](https://go.drugbank.com/drugs/DB06209) · **PubChem:** [CID 6918456](https://pubchem.ncbi.nlm.nih.gov/compound/6918456)
+- **molar mass:** 373.441 g/mol (C20H20FNO3S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Moser_2018_pediatric patients with sickle cell anemia](drugs/drug_prasugrel/Prasugrel_Moser2018_pediatric_patients_with_sickle_cell_anem.md) | Moser BA et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0556-y](https://doi.org/10.1007/s40262-017-0556-y) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Moser_2018_pediatric patients with sickle cell anemia](drugs/drug_prasugrel/Prasugrel_Moser2018_pediatric_patients_with_sickle_cell_anem.md) | 1-compartment, IV | 0 | Moser BA et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0556-y](https://doi.org/10.1007/s40262-017-0556-y) |
 
 ## Pharmacodynamics (PD)
 

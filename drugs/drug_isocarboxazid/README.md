@@ -4,7 +4,8 @@
 
 - **generic name:** isocarboxazid
 - **ATC codes:** `N06AF01`
-- **DrugBank:** [DB01247](https://go.drugbank.com/drugs/DB01247)
+- **DrugBank:** [DB01247](https://go.drugbank.com/drugs/DB01247) · **PubChem:** [CID 3759](https://pubchem.ncbi.nlm.nih.gov/compound/3759)
+- **molar mass:** 231.2505 g/mol (C12H13N3O2) — DrugBank
 - **groups:** approved
 
 ## About

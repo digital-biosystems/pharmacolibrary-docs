@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;nelarabine&quot;,&quot;href&quot;:&quot;drugs/drug_nelarabine/&quot;},{&quot;label&quot;:&quot;Eletskaya_2023 \u00b7 PD U937 cell survival&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # U937 cell survival — PD  <span class="pk-badge pk-badge--green">extracted</span>

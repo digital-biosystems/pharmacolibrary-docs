@@ -5,7 +5,8 @@
 
 - **generic name:** ifosfamide
 - **ATC codes:** `L01AA06`
-- **DrugBank:** [DB01181](https://go.drugbank.com/drugs/DB01181)
+- **DrugBank:** [DB01181](https://go.drugbank.com/drugs/DB01181) · **PubChem:** [CID 3690](https://pubchem.ncbi.nlm.nih.gov/compound/3690)
+- **molar mass:** 261.086 g/mol (C7H15Cl2N2O2P) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Brain_2008_reference](drugs/drug_ifosfamide/Ifosfamide_Brain2008_reference.md) | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Brain_2008_reference](drugs/drug_ifosfamide/Ifosfamide_Brain2008_reference.md) | 1-compartment, IV | 1 | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
 
 ## Pharmacodynamics (PD)
 

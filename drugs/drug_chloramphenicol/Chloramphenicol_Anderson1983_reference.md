@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 1 scholar param(s) emitted or defaulted — got 0 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[0.33]` (not captured vs 4.4) and 1 more field(s) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The chloramphenicol one-compartment cow model was quarantined because clearance and volume of distribution had no extracted values and were left at library defaults, and the 53.3 min tlag is disputed.**
+
+For chloramphenicol in non-lactating Holstein cows, the record contains only a tlag of 53.3 min; clearance and volume of distribution were defaulted, so placeholder values would have stood in for the actual fitted parameters. The parameter-coverage check found 0 of 1 expected parameters covered, with tlag neither emitted nor defaulted. A second reader (gpt-oss:120b) read tlag as 4.4 and 5.9 where this record has null, so the lag-time value is contested between readers. Extracted — chloramphenicol: tlag 53.3 min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 0.33: this record has none, the second reading 4.4; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Anderson KL; Neff-Davis CA; Davis LE; Koritz GD; Nelson DR et al. (1983). Journal of veterinary pharmacology and therapeutics 6
@@ -26,6 +29,9 @@ Anderson KL; Neff-Davis CA; Davis LE; Koritz GD; Nelson DR et al. (1983). Journa
 
 ## Model component
 <dbs-pgx drug="chloramphenicol" model-id="Chloramphenicol_Anderson1983_reference" status="model_quarantined" stale="false" population="non-lactating Holstein cows" measured-compound="chloramphenicol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

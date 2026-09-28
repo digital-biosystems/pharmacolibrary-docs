@@ -5,7 +5,8 @@
 
 - **generic name:** venlafaxine
 - **ATC codes:** `N06AX16`
-- **DrugBank:** [DB00285](https://go.drugbank.com/drugs/DB00285)
+- **DrugBank:** [DB00285](https://go.drugbank.com/drugs/DB00285) · **PubChem:** [CID 5656](https://pubchem.ncbi.nlm.nih.gov/compound/5656)
+- **molar mass:** 277.4018 g/mol (C17H27NO2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,12 +25,12 @@ Venlafaxine has been used as a first-line treatment for MDD, GAD, social anxiety
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Chen_2025_reference](drugs/drug_venlafaxine/Venlafaxine_Chen2025_reference.md) | Chen X et al., Drug-Drug Interactions and Initial Dosa…, Drug design, development an… (2025) | [10.2147/dddt.s538856](https://doi.org/10.2147/dddt.s538856) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Liu_2022_reference](drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference.md) | Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2022_reference](drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference.md) | Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.978202](https://doi.org/10.3389/fphar.2022.978202) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yan_2026_reference](drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference.md) | Yan H et al., Optimizing Mirtazapine Initial Dosing:…, Drug design, development an… (2026) | [10.2147/dddt.s601238](https://doi.org/10.2147/dddt.s601238) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> | [Chen_2025_reference](drugs/drug_venlafaxine/Venlafaxine_Chen2025_reference.md) | 1-compartment, oral | 3 | Chen X et al., Drug-Drug Interactions and Initial Dosa…, Drug design, development an… (2025) | [10.2147/dddt.s538856](https://doi.org/10.2147/dddt.s538856) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span> | [Liu_2022_reference](drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference.md) | 1-compartment, oral | 3 | Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2022_reference](drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference.md) | 1-compartment, oral | 5 | Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.978202](https://doi.org/10.3389/fphar.2022.978202) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yan_2026_reference](drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference.md) | 1-compartment, oral | 2 | Yan H et al., Optimizing Mirtazapine Initial Dosing:…, Drug design, development an… (2026) | [10.2147/dddt.s601238](https://doi.org/10.2147/dddt.s601238) |
 
 ## Pharmacogenomics (PGx)
 

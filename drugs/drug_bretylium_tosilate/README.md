@@ -5,7 +5,8 @@
 
 - **generic name:** bretylium tosilate
 - **ATC codes:** `C01BD02`
-- **DrugBank:** [DB01158](https://go.drugbank.com/drugs/DB01158)
+- **DrugBank:** [DB01158](https://go.drugbank.com/drugs/DB01158) · **PubChem:** [CID 2431](https://pubchem.ncbi.nlm.nih.gov/compound/2431)
+- **molar mass:** 243.163 g/mol (C11H17BrN) — DrugBank
 - **groups:** approved
 
 ## About
@@ -22,12 +23,12 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Kamath_1981_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference.md) | Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600700623](https://doi.org/10.1002/jps.2600700623) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Garrett_1982_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Garrett1982_reference.md) | Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics & drug dis… (1982) | [10.1002/bdd.2510030206](https://doi.org/10.1002/bdd.2510030206) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Narang_1980_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Narang1980_reference.md) | Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmacokinetics… (1980) | [10.1007/BF01059384](https://doi.org/10.1007/BF01059384) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rapeport_1985_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_reference.md) | Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (1985) | [10.2165/00003088-198510030-00004](https://doi.org/10.2165/00003088-198510030-00004) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Kamath_1981_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference.md) | 2-compartment, oral | 6 | Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600700623](https://doi.org/10.1002/jps.2600700623) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Garrett_1982_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Garrett1982_reference.md) | 1-compartment (no model) | 4 | Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics & drug dis… (1982) | [10.1002/bdd.2510030206](https://doi.org/10.1002/bdd.2510030206) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Narang_1980_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Narang1980_reference.md) | 1-compartment (no model) | 3 | Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmacokinetics… (1980) | [10.1007/BF01059384](https://doi.org/10.1007/BF01059384) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rapeport_1985_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_reference.md) | 1-compartment (no model) | 0 | Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (1985) | [10.2165/00003088-198510030-00004](https://doi.org/10.2165/00003088-198510030-00004) |
 
 ## Pharmacodynamics (PD)
 

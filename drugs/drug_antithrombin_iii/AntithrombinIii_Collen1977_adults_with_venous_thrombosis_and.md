@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Collen D; Schetz J; de Cock F; Holmer E; Verstraete M et al. (1977). European journal of clinical investigation 7
@@ -25,6 +27,9 @@ Collen D; Schetz J; de Cock F; Holmer E; Verstraete M et al. (1977). European jo
 
 ## Model component
 <dbs-pgx drug="antithrombin III" model-id="AntithrombinIii_Collen1977_adults_with_venous_thrombosis_and" status="rejected" stale="false" population="adults with venous thrombosis and controls" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

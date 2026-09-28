@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q290, Q30, Q82, Q49, Q83 — no SI value to build from
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[1]` (not captured vs 60) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**V1/F, Q, V2/F, kabs and tlag have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — telmisartan: V1/F 192, Q 79.7, V2/F 996, kabs 0.33, tlag 0.404, CL/F 18.3 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 1: this record has none, the second reading 60; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Tatami S; Sarashina A; Yamamura N; Igarashi T; Tanigawara Y et al. (2003). Drug metabolism and pharmacokinetics 18

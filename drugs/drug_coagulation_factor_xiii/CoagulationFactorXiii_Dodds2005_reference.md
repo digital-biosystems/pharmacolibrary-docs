@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 3 scholar param(s) emitted or defaulted — got 1 covered
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The coagulation factor XIII model was quarantined because its elimination clearance had no extracted value and a library default was substituted, leaving volume of distribution V1 and absorption rate constant kabs also unaccounted for.**
+
+Only one of the three expected pharmacokinetic parameters was covered in the record: neither V1 nor kabs was emitted from the source or carried as a default. The elimination clearance of coagulation factor XIII had no value in the source, so a library placeholder stood in for the missing number. Rather than publish a model with an invented clearance, the record was held back. No parameter values were extracted.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 15:08:24.706989+00:00) predates the upstream re-run (2026-09-18 20:18:52.247397+00:00). Current validate status: `not captured`.
 
@@ -27,6 +29,9 @@ Dodds MG; Visich JE; Vicini P et al. (2005). The AAPS journal 7
 
 ## Model component
 <dbs-pgx drug="coagulation factor XIII" model-id="CoagulationFactorXiii_Dodds2005_reference" status="" stale="true" population="cynomolgus monkeys" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** not captured.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The tanezumab TMDD model was rejected because the reported unit of the structural capacity parameter Vmax (8.03 μg day–1) could not be converted to SI, leaving that parameter without a usable value.**
+
+The record reports Vmax for tanezumab as 8.03 μg day–1, a unit for which no SI equivalent could be established, so the parameter entered model construction without a numeric value in a usable unit. This dimension mismatch on a structural parameter is the stated cause of rejection. The other reported parameters (CL 0.135 l day–1, V1 2.71 l, Q 0.371 l day–1, V2 1.98 l, Km 27.7 ng ml–1) carry convertible units, but the model could not be published with one of its capacity parameters undefined. Extracted — tanezumab: CL 0.135 l day –1, V1 2.71 l, Q 0.371 l day –1, V2 1.98 l, Km 27.7 ng ml –1, Vmax 8.03 μg day –1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Jonsson EN; Xie R; Marshall SF; Arends RH et al. (2016). British journal of clinical pharmacology 81
@@ -26,6 +29,9 @@ Jonsson EN; Xie R; Marshall SF; Arends RH et al. (2016). British journal of clin
 
 ## Model component
 <dbs-pgx drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="false" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted, plus 5 covariate effects.
 
 **Parameterization:** mechanistic.
 

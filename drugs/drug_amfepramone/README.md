@@ -4,7 +4,7 @@
 
 - **generic name:** amfepramone
 - **ATC codes:** `A08AA03`
-- **DrugBank:** [DB00937](https://go.drugbank.com/drugs/DB00937)
+- **DrugBank:** [DB00937](https://go.drugbank.com/drugs/DB00937) · **PubChem:** not captured
 - **groups:** approved, illicit, investigational
 
 ## About

@@ -4,7 +4,7 @@
 
 - **generic name:** erythrocytes
 - **ATC codes:** `B05AX01`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

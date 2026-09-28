@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Cao P; Guo W; Wang J; Wu S; Huang Y; Wang Y; et al. et al. (2022). Frontiers in pharmacology 13
@@ -25,6 +25,9 @@ Cao P; Guo W; Wang J; Wu S; Huang Y; Wang Y; et al. et al. (2022). Frontiers in 
 
 ## Model component
 <dbs-pgx drug="pemetrexed" model-id="Pemetrexed_Cao2022_reference" status="curated_candidate" stale="false" population="Chinese primary advanced non-small cell lung carcinoma patients" measured-compound="pemetrexed" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -117,6 +120,8 @@ Cao P; Guo W; Wang J; Wu S; Huang Y; Wang Y; et al. et al. (2022). Frontiers in 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference.svg" alt="Pemetrexed_Cao2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_sim_controls.json"></dbs-fmusim>
 

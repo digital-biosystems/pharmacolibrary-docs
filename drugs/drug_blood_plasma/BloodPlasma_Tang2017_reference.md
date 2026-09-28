@@ -5,7 +5,7 @@
 
 # blood plasma — `BloodPlasma_Tang2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The record was held back because the absorption rate constant ka was not reported in the source and a default value was substituted, an invented absorption input the review deemed unacceptable.**
+
+The source reports only apparent parameters CL/F (0.09 l/min/kg) and V/F (18.96 l/kg) for blood plasma, implying extravascular dosing with F=1, Fm=1 and no molar correction. The absorption rate constant ka and the lag time Tlag were missing from the source, so library defaults were substituted, and the ka default counts as an invented absorption process — flagged as not acceptable. A second reader also disagreed on one value field, recording null where the record holds 67.34. Extracted — blood plasma: CL/F 0.09 l/min/kg, V/F 19 l/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q84: this record has 67.34, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tang Z; Wang Q; He Z; Yin L; Zhang Y; Wang S et al. (2017). Die Pharmazie 72
@@ -25,6 +29,9 @@ Tang Z; Wang Q; He Z; Yin L; Zhang Y; Wang S et al. (2017). Die Pharmazie 72
 
 ## Model component
 <dbs-pgx drug="blood plasma" model-id="BloodPlasma_Tang2017_reference" status="needs_review" stale="false" population="" measured-compound="blood_plasma" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -60,9 +67,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q84]` | 67.34 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +140,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference/BloodPlasma_Tang2017_reference.svg" alt="BloodPlasma_Tang2017_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference/BloodPlasma_Tang2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference/BloodPlasma_Tang2017_reference_sim_controls.json"></dbs-fmusim>
 

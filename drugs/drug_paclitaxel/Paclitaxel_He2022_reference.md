@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[log additive]` (not captured vs 0.208) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Paclitaxel's F, CL, Vd, ka and Tlag had no reported values, so library placeholder defaults were substituted and the absorption rate constant was invented, so the model was quarantined.**
+
+The record lists fitted paclitaxel parameters (CL 34.4 L/h, V2 176 L, Q 48.0 L/h, V3 855 L, ka 0.724 1/h, Frel 0.895 proportional), yet F, CL, Vd, ka and Tlag had no values in the source, so placeholder numbers stood in for them, and ka was defaulted though not reported. A reported unit could not be converted to SI, so one parameter was carried into the model without an SI value. The covariate effects the model defines were not simulated — only the reference individual was — and the invented absorption substitution was judged not acceptable. A second reader additionally recorded 0.208 for the log-additive parameter where this record had null. Extracted — paclitaxel: CL 34.4, V2 176 L, Q 48 L/h, V3 855 L, kabs 0.724, Frel 0.895 proportional.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of log additive: this record has none, the second reading 0.208. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 He J; Jackson CGCA; Deva S; Hung T; Clarke K; Segelov E; et al. et al. (2022). CPT: pharmacometrics & systems pharmacology 11
@@ -28,6 +31,9 @@ He J; Jackson CGCA; Deva S; Hung T; Clarke K; Segelov E; et al. et al. (2022). C
 
 ## Model component
 <dbs-pgx drug="paclitaxel" model-id="Paclitaxel_He2022_reference" status="model_quarantined" stale="false" population="patients with advanced/metastatic solid tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_tmax; T3_param_coverage
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[k a2]` (1.47 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **engineer**</sub>
+**The model does not reproduce the paper's time of the peak (tmax) (paper 0.17, model 0.297); t3_param_coverage.**
+
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (t1/2ka ), so that value has no SI equivalent. Extracted — salbutamol: Fab 0.2, kabs 31.6 h−1, t1/2ka 1.47 h−1, V3 203 L, kcomp 0.0432 h−1, CL 28 L h−1, V 167 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of k a2: this record has 1.47, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:47:12.986103+00:00) predates the upstream re-run (2026-09-24 04:46:20.548473+00:00). Current validate status: `rejected`.
 

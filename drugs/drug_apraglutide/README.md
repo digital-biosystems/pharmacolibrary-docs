@@ -5,7 +5,7 @@
 
 - **generic name:** apraglutide
 - **ATC codes:** `A16AX27`
-- **DrugBank:** [DB18084](https://go.drugbank.com/drugs/DB18084)
+- **DrugBank:** [DB18084](https://go.drugbank.com/drugs/DB18084) · **PubChem:** not captured
 - **groups:** investigational
 
 ## Extraction summary
@@ -16,9 +16,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bolognani_2023_reference](drugs/drug_apraglutide/Apraglutide_Bolognani2023_reference.md) | Bolognani F et al., Characterization of the Pharmacokinetic…, The Journal of pharmacology… (2023) | [10.1124/jpet.123.001582](https://doi.org/10.1124/jpet.123.001582) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bolognani_2023_reference](drugs/drug_apraglutide/Apraglutide_Bolognani2023_reference.md) | 1-compartment (no model) | 0 | Bolognani F et al., Characterization of the Pharmacokinetic…, The Journal of pharmacology… (2023) | [10.1124/jpet.123.001582](https://doi.org/10.1124/jpet.123.001582) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

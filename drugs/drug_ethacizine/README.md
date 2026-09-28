@@ -4,14 +4,15 @@
 
 - **generic name:** ethacizine
 - **ATC codes:** `C01BC09`
-- **DrugBank:** [DB13645](https://go.drugbank.com/drugs/DB13645)
+- **DrugBank:** [DB13645](https://go.drugbank.com/drugs/DB13645) · **PubChem:** not captured
+- **molar mass:** 413.54 g/mol (C22H27N3O3S) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 09:53 | 3:17 | 0/0/0 | 0/0/0 | 0/0/0 | 4,333/2,159 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-26 11:13 | 0:38 | 0/0/0 | 0/0/0 | 0/0/0 | 1,336/114 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -39,7 +40,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Beloborodov_1986.pdf` | Beloborodov VL et al., [Clinical pharmacokinetics and hemodyna…, Farmakologiia i toksikologi… (1986) | popPK | 9 | not captured | [3770172](https://pubmed.ncbi.nlm.nih.gov/3770172) | The paper describes a clinical PK study of ethacizine with a compartmental model, but the specific numeric parameter values are not present in the provided evidence. |
 | `Ratner_1992.pdf` | Ratner EI et al., Effect of moracizine and ethacizine on…, Arzneimittel-Forschung (1992) | pd | 4 | not captured | [1326968](https://www.ncbi.nlm.nih.gov/pubmed/1326968) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-09T09:53:09.610347+00:00</sub>
+<sub>queue written 2026-09-26T11:13:19.614378+00:00</sub>
 
 ## Screened and excluded
 

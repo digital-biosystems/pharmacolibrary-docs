@@ -5,7 +5,7 @@
 
 # Calcium — `Calcium_SchappacherTilp2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**This calcium model was held back because the absorption rate constant ka was not reported in the source, so a library default was substituted, alongside unreported Tlag and apparent (F=1) parameterization.**
+
+The record reports only CL/F = 314.0 L/h and V = 1000.0 L for calcium in a one-compartment structure; ka and Tlag had no values in the source, so defaults would have been used, and the invented absorption rate constant was judged not acceptable. The builder assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent, with first-order depot input implied by the /F parameterization. A second reader disagreed on several extracted values, reading 2.4, 1.3 and 53 where this record had no value, and no value where this record read 1000; the 0.0526 value was agreed by both. Extracted — calcium: CL/F 314 L/h, V 1e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has none, the second reading 2.4; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Schappacher-Tilp G; Fuertinger DH; Kotanko P et al. (2019). Cellular physiology and biochemistry : international journal of experimental cellular physiology, biochemistry, and pharmacology 53
@@ -25,6 +29,9 @@ Schappacher-Tilp G; Fuertinger DH; Kotanko P et al. (2019). Cellular physiology 
 
 ## Model component
 <dbs-pgx drug="Calcium" model-id="Calcium_SchappacherTilp2019_reference" status="needs_review" stale="false" population="" measured-compound="calcium" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +62,24 @@ Schappacher-Tilp G; Fuertinger DH; Kotanko P et al. (2019). Cellular physiology 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q17]` | not captured | 2.4 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q305]` | 0.0526 | 0.0526 | mismatch |
+| `gpt-oss:120b` | `values[Q58]` | not captured | 1.3 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q65]` | 1000 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q84]` | not captured | 53 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -125,6 +142,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference.svg" alt="Calcium_SchappacherTilp2019_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_sim_controls.json"></dbs-fmusim>
 

@@ -5,7 +5,8 @@
 
 - **generic name:** pantethine
 - **ATC codes:** `A11HA32`
-- **DrugBank:** [DB11190](https://go.drugbank.com/drugs/DB11190)
+- **DrugBank:** [DB11190](https://go.drugbank.com/drugs/DB11190) · **PubChem:** [CID 452306](https://pubchem.ncbi.nlm.nih.gov/compound/452306)
+- **molar mass:** 554.721 g/mol (C22H42N4O8S2) — DrugBank
 - **groups:** approved
 
 ## About
@@ -20,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wittwer_1985_reference](drugs/drug_pantethine/Pantethine_Wittwer1985_reference.md) | Wittwer CT et al., Metabolism of pantethine in cystinosis, The Journal of clinical inv… (1985) | [10.1172/JCI112152](https://doi.org/10.1172/JCI112152) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wittwer_1985_reference](drugs/drug_pantethine/Pantethine_Wittwer1985_reference.md) | 1-compartment (no model) | 0 | Wittwer CT et al., Metabolism of pantethine in cystinosis, The Journal of clinical inv… (1985) | [10.1172/JCI112152](https://doi.org/10.1172/JCI112152) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

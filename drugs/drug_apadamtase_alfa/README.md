@@ -5,7 +5,7 @@
 
 - **generic name:** Apadamtase alfa
 - **ATC codes:** `B01AD13`
-- **DrugBank:** [DB15164](https://go.drugbank.com/drugs/DB15164)
+- **DrugBank:** [DB15164](https://go.drugbank.com/drugs/DB15164) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -24,11 +24,11 @@ Apadamtase alfa, sold under the brand name Adzynma (ADAMTS13, recombinant-krhn),
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [McBride_2025_reference](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_McBride2025_reference.md) | McBride (2025) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Patel_2025_estimate](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_estimate.md) | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Patel_2025_shrinkage](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_shrinkage.md) | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [McBride_2025_reference](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_McBride2025_reference.md) | 1-compartment (no model) | 0 | McBride (2025) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Patel_2025_estimate](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_estimate.md) | 2-compartment (no model) | 4 | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Patel_2025_shrinkage](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_shrinkage.md) | 1-compartment (no model) | 0 | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
 
 ## ADME sites
 

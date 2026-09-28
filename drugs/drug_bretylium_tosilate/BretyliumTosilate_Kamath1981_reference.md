@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The bretylium two-compartment rat model was held back because the absorption rate constant ka was not reported in the source and a default value was substituted, an invented absorption input the record cannot justify.**
+
+The record rests on the paper's abstract alone, so the reported summary statistics (V/F 15 L/kg, t1/2β 5.5 hr, V1/F 1 L/kg, CL 1.93 L/hr/kg, CLR 1.27 L/hr/kg, kexcr 1.24 hr-1) stand in for a fitted model. The transfer rate constants k12 and k21 and the lag time Tlag were likewise left at library defaults because no values were extracted. The builder assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization, and imposed a first-order extravascular input whose absorption rate constant ka was never reported in the source — this invented absorption was judged not acceptable and triggered the hold. Extracted — bretylium tosilate: V/F 15 liters/kg, t1/2β 5.5 hr, V1/F 1 liter/kg, CL 1.93 liters/hr/kg, CLR 1.27 liters/hr/kg, kexcr 1.24 hr-1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `bretylium_tosilate`, measured `bretylium`.
 
@@ -27,6 +29,9 @@ Kamath BL; Stampfli HF; Lai CM; Yacobi A et al. (1981). Journal of pharmaceutica
 
 ## Model component
 <dbs-pgx drug="bretylium tosilate" model-id="BretyliumTosilate_Kamath1981_reference" status="needs_review" stale="false" population="rats" measured-compound="bretylium" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -126,6 +131,8 @@ Kamath BL; Stampfli HF; Lai CM; Yacobi A et al. (1981). Journal of pharmaceutica
 </div><figure class="pk-models-diagram"><img src="drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference/BretyliumTosilate_Kamath1981_reference.svg" alt="BretyliumTosilate_Kamath1981_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference/BretyliumTosilate_Kamath1981_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference/BretyliumTosilate_Kamath1981_reference_sim_controls.json"></dbs-fmusim>
 

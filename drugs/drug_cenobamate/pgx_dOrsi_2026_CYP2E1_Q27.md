@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;cenobamate&quot;,&quot;href&quot;:&quot;drugs/drug_cenobamate/&quot;},{&quot;label&quot;:&quot;dOrsi_2026 \u00b7 PGx CYP2E1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # CYP2E1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>

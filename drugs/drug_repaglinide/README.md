@@ -5,7 +5,8 @@
 
 - **generic name:** repaglinide
 - **ATC codes:** `A10BD14`, `A10BX02`
-- **DrugBank:** [DB00912](https://go.drugbank.com/drugs/DB00912)
+- **DrugBank:** [DB00912](https://go.drugbank.com/drugs/DB00912) · **PubChem:** [CID 65981](https://pubchem.ncbi.nlm.nih.gov/compound/65981)
+- **molar mass:** 452.5857 g/mol (C27H36N2O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Ruzilawati_2010_reference](drugs/drug_repaglinide/Repaglinide_Ruzilawati2010_reference.md) | Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of clinical pharmac… (2010) | [10.1111/j.1365-2710.2009.01042.x](https://doi.org/10.1111/j.1365-2710.2009.01042.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Ruzilawati_2010_reference](drugs/drug_repaglinide/Repaglinide_Ruzilawati2010_reference.md) | 1-compartment (no model) | 2 | Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of clinical pharmac… (2010) | [10.1111/j.1365-2710.2009.01042.x](https://doi.org/10.1111/j.1365-2710.2009.01042.x) |
 
 ## ADME sites
 

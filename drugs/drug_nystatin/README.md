@@ -4,7 +4,8 @@
 
 - **generic name:** nystatin
 - **ATC codes:** `A07AA02`, `D01AA01`, `G01AA01`, `J01RA19`
-- **DrugBank:** [DB00646](https://go.drugbank.com/drugs/DB00646)
+- **DrugBank:** [DB00646](https://go.drugbank.com/drugs/DB00646) · **PubChem:** [CID 11953884](https://pubchem.ncbi.nlm.nih.gov/compound/11953884)
+- **molar mass:** 926.107 g/mol (C47H75NO17) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl2/f]` (199 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Rejected because the atorvastatin absorption parameters kabs (9.4) and ktr (7.28) carry the unit 'Placebo' — a treatment label, not a unit — so no SI value could be derived and the two-compartment model was held back.**
+
+The record lists kabs = 9.4 and ktr = 7.28 for atorvastatin with the unit verbatim 'Placebo', which is a treatment-group label rather than a physical unit, so these structural parameters could not be converted to SI and reached the model without usable values. The volume and clearance parameters (V1/F 1843 L, CL/F 620 L/h, V2/F 4184 L, Q2/F 873 L/h) are likewise labelled only 'Units'. A second reader also disagreed on the record: it read the inter-compartmental clearance Q/F as absent (null) against this record's 199 L/h, and read a covariate coefficient of 0.525 where this record has none, while this record's 0.791 for the ktr covariate coefficient was read as absent by that reader. Extracted — atorvastatin: kabs 9.4 Placebo, ktr 7.28 Placebo, V1/F 1.84e+03 Units, CL/F 620 Units, V2/F 4.18e+03 Units, Q2/F 873 Units, Q/F 199 L/h, tlag 0.16 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl2/f: this record has 199, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 22:52:00.626826+00:00) predates the upstream re-run (2026-09-23 23:36:57.203798+00:00). Current validate status: `rejected`.
 

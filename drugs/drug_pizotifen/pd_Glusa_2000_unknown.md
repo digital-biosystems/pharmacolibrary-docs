@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;pizotifen&quot;,&quot;href&quot;:&quot;drugs/drug_pizotifen/&quot;},{&quot;label&quot;:&quot;Glusa_2000 \u00b7 PD relaxation&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # relaxation — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>

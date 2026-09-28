@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**No value for methotrexate's bioavailability, volume of distribution, central→peripheral rate constant and peripheral→central rate constant.**
+
+The model was built, but methotrexate's bioavailability, volume of distribution, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — methotrexate: Q2 1.91, Q 0.39 l h-1, V2 1.93 l, Q3 0.032 l h-1, V3 3.19 l, V1 28.9, CL 7.63 L/hour, kabs 0.268 day−1, … (+1).
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Simon N; Marsot A; Villard E; Choquet S; Khe HX; Zahr N; et al. et al. (2013). The pharmacogenomics journal 13

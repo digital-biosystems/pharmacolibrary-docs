@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (nandrolone decanoate vs unknown) and 6 more field(s) — a structural parameter, so the record is disputed.
+**The nandrolone decanoate record was rejected because the hydrolysis link to the metabolite nandrolone carries no parameter, leaving the metabolite unreachable from the dose, and the record rests on abstract-only summary statistics.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The structure links nandrolone decanoate to nandrolone by hydrolysis, but the link parameter is 'none' (kind unknown), so the metabolite compartment has no path from the dose — an unlinked metabolite. The record was built from the paper's abstract alone, meaning reported summary statistics stand in for a fitted model. The clearance value 1.55 with unit '1 X h-1 X kg-1' contains a unit not convertible to SI. A second reader also disagreed on the dose compound (nandrolone decanoate vs unknown), the primary analyte (nandrolone vs unknown), and the hydrolysis link itself, and several parameter fields (mean half-life, serum clearance) were read as null by one reader and valued by the other. Extracted — nandrolone: CL 1.55 1 X h-1 X kg-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nandrolone decanoate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `nandrolone decanoate`, measured `nandrolone`.
 
@@ -27,6 +31,9 @@ Wijnand HP; Bosch AM; Donker CW et al. (1985). Acta endocrinologica. Supplementu
 
 ## Model component
 <dbs-pgx drug="nandrolone" model-id="Nandrolone_Wijnand1985_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="nandrolone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

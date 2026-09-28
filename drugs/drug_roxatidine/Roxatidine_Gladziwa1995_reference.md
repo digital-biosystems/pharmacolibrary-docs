@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — roxatidine: CL 85 ml min-1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gladziwa U; Wagner S; Sieberth HG; Klotz U et al. (1995). British journal of clinical pharmacology 39
@@ -25,6 +27,9 @@ Gladziwa U; Wagner S; Sieberth HG; Klotz U et al. (1995). British journal of cli
 
 ## Model component
 <dbs-pgx drug="roxatidine" model-id="Roxatidine_Gladziwa1995_reference" status="needs_review" stale="false" population="patients with renal insufficiency" measured-compound="roxatidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -4,7 +4,7 @@
 
 - **generic name:** carbamide
 - **ATC codes:** `B05BC02`, `D02AE01`
-- **DrugBank:** [DB03904](https://go.drugbank.com/drugs/DB03904)
+- **DrugBank:** [DB03904](https://go.drugbank.com/drugs/DB03904) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

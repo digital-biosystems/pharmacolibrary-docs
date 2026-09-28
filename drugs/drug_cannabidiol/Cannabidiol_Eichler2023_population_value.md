@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T1_cmax; T1_t_half_beta
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The cannabidiol horse model was held back because it fails to reproduce the paper's Cmax (3.9e-07 vs 1.12e-05) and terminal half-life (161.29 h vs 4.87 h), and an unreported absorption rate constant was invented by default.**
+
+Simulated as the paper dosed it, the two-compartment cannabidiol model gives a peak concentration of 1.12e-05 against the paper's 3.9e-07, a ratio of 28.7859, and a terminal half-life of 4.87 h against the paper's 161.29 h, a ratio of 0.0302. The absorption rate constant (ka) and lag time (Tlag) were not reported in the source, so library defaults were substituted, amounting to an invented first-order absorption. The builder also assumed F=1 and Fm=1 with no molar correction, fitting apparent (/F) parameters under extravascular dosing. A further deviation check could not compute a comparison (ratio None), so it is inconclusive. Extracted — cannabidiol: CL/F 10.8 L/h/kg, V1/F 77.1 L/kg, Q 1.35 L/h/kg, V2/F 313 L/kg, Q3 38.2 L/h/kg, V3/F 242 L/kg.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et al. (2023). Frontiers in veterinary science 10
@@ -25,6 +27,9 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 
 ## Model component
 <dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_population_value" status="needs_review" stale="false" population="horses" measured-compound="cannabidiol" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** CL/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -135,6 +140,8 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 </div><figure class="pk-models-diagram"><img src="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value.svg" alt="Cannabidiol_Eichler2023_population_value diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_sim_controls.json"></dbs-fmusim>
 

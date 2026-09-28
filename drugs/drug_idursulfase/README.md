@@ -4,7 +4,7 @@
 
 - **generic name:** idursulfase
 - **ATC codes:** `A16AB09`
-- **DrugBank:** [DB01271](https://go.drugbank.com/drugs/DB01271)
+- **DrugBank:** [DB01271](https://go.drugbank.com/drugs/DB01271) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

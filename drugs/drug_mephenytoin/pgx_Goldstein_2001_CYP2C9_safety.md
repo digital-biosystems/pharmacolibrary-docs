@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;mephenytoin&quot;,&quot;href&quot;:&quot;drugs/drug_mephenytoin/&quot;},{&quot;label&quot;:&quot;Goldstein_2001 \u00b7 PGx CYP2C9&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # CYP2C9 — PGx  <span class="pk-badge pk-badge--green">extracted</span>

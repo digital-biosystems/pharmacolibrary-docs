@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T1_cmax
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 2.75e-05, model 2.37e-05).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — dexamethasone: V/F 26.6 L, CL/F 131 L/h, kabs 0.773 day -1, tlag 0.29 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Calderin JM; Resendiz-Galvan JE; Abdelgawad N; Davis A; Stek C; Wiesner L; et al. et al. (2025). medRxiv : the preprint server for health sciences
@@ -25,6 +27,9 @@ Calderin JM; Resendiz-Galvan JE; Abdelgawad N; Davis A; Stek C; Wiesner L; et al
 
 ## Model component
 <dbs-pgx drug="dexamethasone" model-id="Dexamethasone_Calderin2025v2_reference" status="needs_review" stale="false" population="adults with HIV-associated tuberculosis meningitis" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -127,6 +132,8 @@ Calderin JM; Resendiz-Galvan JE; Abdelgawad N; Davis A; Stek C; Wiesner L; et al
 </div><figure class="pk-models-diagram"><img src="drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference/Dexamethasone_Calderin2025v2_reference.svg" alt="Dexamethasone_Calderin2025v2_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0322 /h, lag 17.4 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference/Dexamethasone_Calderin2025v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference/Dexamethasone_Calderin2025v2_reference_sim_controls.json"></dbs-fmusim>
 

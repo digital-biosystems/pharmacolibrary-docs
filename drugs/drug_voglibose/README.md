@@ -4,7 +4,8 @@
 
 - **generic name:** voglibose
 - **ATC codes:** `A10BF03`
-- **DrugBank:** [DB04878](https://go.drugbank.com/drugs/DB04878)
+- **DrugBank:** [DB04878](https://go.drugbank.com/drugs/DB04878) · **PubChem:** [CID 444020](https://pubchem.ncbi.nlm.nih.gov/compound/444020)
+- **molar mass:** 267.2762 g/mol (C10H21NO7) — DrugBank
 - **groups:** investigational
 
 ## About

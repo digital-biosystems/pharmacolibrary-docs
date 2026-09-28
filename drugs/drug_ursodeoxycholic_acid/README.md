@@ -5,7 +5,8 @@
 
 - **generic name:** ursodeoxycholic acid
 - **ATC codes:** `A05AA02`
-- **DrugBank:** [DB01586](https://go.drugbank.com/drugs/DB01586)
+- **DrugBank:** [DB01586](https://go.drugbank.com/drugs/DB01586) · **PubChem:** [CID 31401](https://pubchem.ncbi.nlm.nih.gov/compound/31401)
+- **molar mass:** 392.572 g/mol (C24H40O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -26,9 +27,9 @@ It is used for the short-term treatment of radiolucent, noncalcified gallbladder
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Yue_2008_reference](drugs/drug_ursodeoxycholic_acid/UrsodeoxycholicAcid_Yue2008_reference.md) | Yue PF et al., Preparation, characterization, and bioa…, Drug development and indust… (2008) | [10.1080/03639040701842477](https://doi.org/10.1080/03639040701842477) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Yue_2008_reference](drugs/drug_ursodeoxycholic_acid/UrsodeoxycholicAcid_Yue2008_reference.md) | 1-compartment (no model) | 3 | Yue PF et al., Preparation, characterization, and bioa…, Drug development and indust… (2008) | [10.1080/03639040701842477](https://doi.org/10.1080/03639040701842477) |
 
 ## Pharmacogenomics (PGx)
 

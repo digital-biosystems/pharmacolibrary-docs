@@ -4,7 +4,8 @@
 
 - **generic name:** mephenytoin
 - **ATC codes:** `N03AB04`
-- **DrugBank:** [DB00532](https://go.drugbank.com/drugs/DB00532)
+- **DrugBank:** [DB00532](https://go.drugbank.com/drugs/DB00532) · **PubChem:** [CID 4060](https://pubchem.ncbi.nlm.nih.gov/compound/4060)
+- **molar mass:** 218.2518 g/mol (C12H14N2O2) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

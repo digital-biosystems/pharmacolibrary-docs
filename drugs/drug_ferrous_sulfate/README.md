@@ -4,7 +4,7 @@
 
 - **generic name:** ferrous sulfate
 - **ATC codes:** `B03AA07`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

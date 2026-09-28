@@ -4,7 +4,8 @@
 
 - **generic name:** iproniazide
 - **ATC codes:** `N06AF05`
-- **DrugBank:** [DB04818](https://go.drugbank.com/drugs/DB04818)
+- **DrugBank:** [DB04818](https://go.drugbank.com/drugs/DB04818) · **PubChem:** [CID 3748](https://pubchem.ncbi.nlm.nih.gov/compound/3748)
+- **molar mass:** 179.219 g/mol (C9H13N3O) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

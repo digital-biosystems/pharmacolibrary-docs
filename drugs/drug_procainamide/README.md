@@ -5,7 +5,8 @@
 
 - **generic name:** procainamide
 - **ATC codes:** `C01BA02`
-- **DrugBank:** [DB01035](https://go.drugbank.com/drugs/DB01035)
+- **DrugBank:** [DB01035](https://go.drugbank.com/drugs/DB01035) · **PubChem:** [CID 4913](https://pubchem.ncbi.nlm.nih.gov/compound/4913)
+- **molar mass:** 235.3253 g/mol (C13H21N3O) — DrugBank
 - **groups:** approved
 
 ## About
@@ -22,12 +23,12 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> | [Grasela_1984_reference](drugs/drug_procainamide/Procainamide_Grasela1984_reference.md) | Grasela TH et al., Population pharmacokinetics of procaina…, Clinical pharmacokinetics (1984) | [10.2165/00003088-198409060-00004](https://doi.org/10.2165/00003088-198409060-00004) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl[N-acetylprocainamide], Vd[N-acetylprocainamide], formatio…</sub><br><sub>route_to: `scholar`</sub> | [Papich_1986_reference](drugs/drug_procainamide/Procainamide_Papich1986_reference.md) | Papich MG et al., Pharmacokinetics of procainamide hydroc…, American journal of veterin… (1986) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Singh_1982_reference](drugs/drug_procainamide/Procainamide_Singh1982_reference.md) | Singh S et al., Procainamide elimination kinetics in pe…, Clinical pharmacology and t… (1982) | [10.1038/clpt.1982.210](https://doi.org/10.1038/clpt.1982.210) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kharidia_1996_reference](drugs/drug_procainamide/Procainamide_Kharidia1996_reference.md) | Kharidia J et al., Application of computer-assisted radiot…, Journal of pharmaceutical s… (1996) | [10.1021/js950473h](https://doi.org/10.1021/js950473h) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> | [Grasela_1984_reference](drugs/drug_procainamide/Procainamide_Grasela1984_reference.md) | 1-compartment, IV | 3 | Grasela TH et al., Population pharmacokinetics of procaina…, Clinical pharmacokinetics (1984) | [10.2165/00003088-198409060-00004](https://doi.org/10.2165/00003088-198409060-00004) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl[N-acetylprocainamide], Vd[N-acetylprocainamide], formatio…</sub><br><sub>route_to: `scholar`</sub> | [Papich_1986_reference](drugs/drug_procainamide/Procainamide_Papich1986_reference.md) | parent + 1 metabolite (1-cmt each) | 5 | Papich MG et al., Pharmacokinetics of procainamide hydroc…, American journal of veterin… (1986) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Singh_1982_reference](drugs/drug_procainamide/Procainamide_Singh1982_reference.md) | 1-compartment (no model) | 5 | Singh S et al., Procainamide elimination kinetics in pe…, Clinical pharmacology and t… (1982) | [10.1038/clpt.1982.210](https://doi.org/10.1038/clpt.1982.210) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kharidia_1996_reference](drugs/drug_procainamide/Procainamide_Kharidia1996_reference.md) | parent + metabolite (no model) | 0 | Kharidia J et al., Application of computer-assisted radiot…, Journal of pharmaceutical s… (1996) | [10.1021/js950473h](https://doi.org/10.1021/js950473h) |
 
 ## Pharmacodynamics (PD)
 

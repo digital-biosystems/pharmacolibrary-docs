@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **engineer**</sub>
+**The topiramate record was held back because the absorption rate constant ka was not reported and a default value was substituted, an invented absorption input the review could not accept.**
+
+The record was built from the paper's abstract alone, so the reported summary statistics (Cmax 4.2 mg/L, Cmin 3.0 mg/L, AUC24h 87.7 h·mg/L, CL/F 2.1 L/h, V/F 82.4 L) stood in for a fitted model. The builder defaulted ka and Tlag because neither was reported in the source, and assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization. The invented absorption — a first-order depot input with a defaulted ka not reported in the source — was judged not acceptable, which is why the record needs review. Extracted — topiramate: Cmax 4.2 mg/L, Cmin 3 mg/L, AUCt 87.7 h∙mg/L, CL/F 2.1 L/h, V/F 82.4 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Lee S; Kim HC; Jang Y; Lee HS; Ahn SJ; Lee ST; et al. et al. (2024). Annals of clinical and translational neurology 11
@@ -25,6 +27,9 @@ Lee S; Kim HC; Jang Y; Lee HS; Ahn SJ; Lee ST; et al. et al. (2024). Annals of c
 
 ## Model component
 <dbs-pgx drug="topiramate" model-id="Topiramate_Lee2024_reference" status="needs_review" stale="false" population="adults with epilepsy" measured-compound="topiramate" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -128,6 +133,8 @@ Lee S; Kim HC; Jang Y; Lee HS; Ahn SJ; Lee ST; et al. et al. (2024). Annals of c
 </div><figure class="pk-models-diagram"><img src="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference.svg" alt="Topiramate_Lee2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference_sim_controls.json"></dbs-fmusim>
 

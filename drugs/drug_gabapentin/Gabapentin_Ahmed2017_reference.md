@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[gbp cl in elderly nursing home patients]` (2.93 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — gabapentin: CL 2.93 L/h, kabs 5.24 1/hr, tlag 0.45 hr.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of gbp cl in elderly nursing home patients: this record has 2.93, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ahmed GF; Bathena SP; Brundage RC; Leppik IE; Conway JM; Schwartz JB; et al. et al. (2017). The AAPS journal 19
@@ -26,6 +29,9 @@ Ahmed GF; Bathena SP; Brundage RC; Leppik IE; Conway JM; Schwartz JB; et al. et 
 
 ## Model component
 <dbs-pgx drug="gabapentin" model-id="Gabapentin_Ahmed2017_reference" status="needs_review" stale="false" population="elderly nursing home patients" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

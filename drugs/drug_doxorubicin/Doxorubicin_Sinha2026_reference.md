@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q21]` (not captured vs 45) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The doxorubicin record was held back because the absorption rate constant ka and lag time were not reported in the source, so placeholder values would have been used, and a first-order absorption input with F=1 was assumed that the source does not support.**
+
+The record reports doxorubicin CL/F of 175.0 L/h and V of 50.0 L, but ka and Tlag had no values in the source, so no value was extracted and library placeholder values would have been used in the model. The adjudication found the absorption to be invented: ka was defaulted, not reported, and this was judged not acceptable. The model further assumed F=1, Fm=1 and apparent (/F) parameterization without molar correction, implying extravascular first-order input. A second reader also disagreed on the parameterization, reading it as mechanistic rather than apparent, and on several extracted values (e.g., 3.05 and 45 versus null, 175 and 50 versus null). Extracted — doxorubicin: CL/F 175 L/h, V 50 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 45; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Sinha_2026)
@@ -143,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference/Doxorubicin_Sinha2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference/Doxorubicin_Sinha2026_reference_sim_controls.json"></dbs-fmusim>
 

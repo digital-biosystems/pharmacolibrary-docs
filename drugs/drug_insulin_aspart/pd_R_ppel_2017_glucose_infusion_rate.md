@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;insulin aspart&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_aspart/&quot;},{&quot;label&quot;:&quot;R\u00fcppel_2017 \u00b7 PD name&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InsulinAspart_Clausen2006_reference&quot;,&quot;label&quot;:&quot;Clausen_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_aspart/InsulinAspart_Clausen2006_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

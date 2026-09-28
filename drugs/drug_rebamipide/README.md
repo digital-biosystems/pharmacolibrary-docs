@@ -4,7 +4,8 @@
 
 - **generic name:** rebamipide
 - **ATC codes:** `A02BX14`
-- **DrugBank:** [DB11656](https://go.drugbank.com/drugs/DB11656)
+- **DrugBank:** [DB11656](https://go.drugbank.com/drugs/DB11656) · **PubChem:** [CID 5042](https://pubchem.ncbi.nlm.nih.gov/compound/5042)
+- **molar mass:** 370.79 g/mol (C19H15ClN2O4) — DrugBank
 - **groups:** approved, investigational
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[ka]` (0.0227 vs not captured) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ka: this record has 0.0227, the second reading none. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Pawaskar D; Chen X; Glassman F; May F; Roberts A; Biondo M; et al. et al. (2022). Clinical and translational science 15
@@ -26,6 +29,9 @@ Pawaskar D; Chen X; Glassman F; May F; Roberts A; Biondo M; et al. et al. (2022)
 
 ## Model component
 <dbs-pgx drug="garadacimab" model-id="Garadacimab_Pawaskar2022_reference" status="rejected" stale="false" population="cynomolgus monkeys" measured-compound="garadacimab" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** apparent_wrt_Fm.
 

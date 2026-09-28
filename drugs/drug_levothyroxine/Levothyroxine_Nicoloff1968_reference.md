@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (thyroxine vs thyroxine- I) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record was rejected because the thyroxine clearance of 24.13 mL/min/kg falls outside the physiological window, indicating a unit or scale extraction error.**
+
+The extracted plasma clearance for thyroxine is 24.13 mL/min/kg, a magnitude judged physiologically implausible for this molecule and attributed to a unit or scale extraction error. The transfer volume is reported as 17.0 nL, an implausibly small distribution volume that further suggests misread units. A second reader also disagreed on the dosing compartment and primary analyte, reading thyroxine-I where the record states thyroxine. Extracted — levothyroxine: CL 24.1 mL/min/kg, V 17 nL.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has thyroxine, the second reading thyroxine- I; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:22:39.916895+00:00) predates the upstream re-run (2026-09-24 00:15:57.891547+00:00). Current validate status: `rejected`.
 

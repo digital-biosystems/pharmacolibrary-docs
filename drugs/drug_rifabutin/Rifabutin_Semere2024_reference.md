@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[zwfa effect (each point below -3) on bioavailabilityd]` (not captured vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The rifabutin record was rejected because its clearance of 16.2 L/h against a volume of 0.135 L gives a disposition rate outside any physiological window, pointing to a unit or scale extraction error.**
+
+The extracted rifabutin parameters are clearance 16.2 L/h, volume 0.135 L, absorption rate constant 0.16 h−1 and lag time 0.825 h for HIV/TB co-infected children. The clearance-to-volume combination implies an elimination rate constant of about 120 h−1, an implausibly rapid elimination for rifabutin, which is why the magnitude was judged non-physiological and likely a unit or scale misreading. The second reader recorded no values for any of these parameters (clearance, Ka, lag time, volume all null), so no independent confirmation of the extracted numbers exists. The bioavailability effect field was also null on both sides, leaving that check without a computed comparison. Extracted — rifabutin: CL 16.2 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of zwfa effect (each point below -3) on bioavailabilityd: this record has none, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Semere Gebreyesus M; Wasmann RE; McIlleron H; Oladokun R; Okonkwo P; Wiesner L; Denti P; Rawizza HE et al. (2024). Antimicrobial agents and chemotherapy 68
@@ -26,6 +29,9 @@ Semere Gebreyesus M; Wasmann RE; McIlleron H; Oladokun R; Okonkwo P; Wiesner L; 
 
 ## Model component
 <dbs-pgx drug="rifabutin" model-id="Rifabutin_Semere2024_reference" status="rejected" stale="false" population="HIV/TB co-infected children" measured-compound="rifabutin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Li2012_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,15 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The exenatide two-compartment record was held back because the absorption rate constant ka was not reported in the source and a default was substituted, alongside defaulted Tlag and k21 and an assumed F=1 apparent (/F) parameterization.**
+
+The failed check concerns invented absorption: ka was defaulted because it was not reported in the source, judged not acceptable. The model builder also defaulted Tlag and k21, assumed F=1 and Fm=1 with no molar correction, and used a first-order depot input consistent with the apparent (/F) parameterization implying extravascular dosing. A second reader disagreed on several extracted values: it read 4.45 where this record had null and 1.18 on a field where this record had null, while this record's 1.18 was read as null by the second reader, leaving value extraction inconclusive. Extracted — exenatide: CL/F 0.198 L/h, V/F 1.18 L, Q/F 0.086 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q315: this record has none, the second reading 0; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Li_2012)
 
 ## Model component
 <dbs-pgx drug="exenatide" model-id="Exenatide_Li2012_reference" status="needs_review" stale="false" population="diabetic rats" measured-compound="exenatide" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, Q/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -63,9 +70,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q315]` | not captured | 0 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | not captured | 4.45 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q76]` | 1.18 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q82]` | not captured | 1.18 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -129,6 +145,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference.svg" alt="Exenatide_Li2012_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference_sim_controls.json"></dbs-fmusim>
 

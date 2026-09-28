@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `warfarin`, measured `S-warfarin`.
 
@@ -137,7 +137,7 @@ Zhu YB; Hong XH; Wei M; Hu J; Chen X; Wang SK; et al. et al. (2017). Acta pharma
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_warfarin/Warfarin_Zhu2017_reference/Warfarin_Zhu2017_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_warfarin/Warfarin_Zhu2017_reference/Warfarin_Zhu2017_reference_sim_controls.json"></dbs-fmusim>
 

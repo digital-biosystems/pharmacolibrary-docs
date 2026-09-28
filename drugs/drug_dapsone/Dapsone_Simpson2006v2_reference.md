@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 6 scholar param(s) emitted or defaulted — got 3 covered
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (chlorproguanil/dapsone vs chlorproguanil and dapsone) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The record lacks values for chlorcycloguanil's clearance, volume of distribution and formation rate, which were left as library placeholders, and kabs, Q/F and V2/F are also missing, so the dapsone model was quarantined.**
+
+The model describes chlorproguanil with its metabolite chlorcycloguanil linked by a formation clearance, but no source values exist for chlorcycloguanil's clearance, volume of distribution or formation rate, so library defaults were substituted and the model was held back rather than published with invented numbers. The parameter coverage check found only 3 of 6 expected parameters covered, with kabs (0.93 h⁻¹), Q/F (54.67 l h⁻¹) and V2/F (1612.75 l) neither emitted nor defaulted. The builder also assumed F=1 and Fm=1 with no molar correction, i.e. an apparent parameterization. A second reader additionally disagreed on whether the dosing compound is chlorproguanil/dapsone or both chlorproguanil and dapsone, and on the identifier for the elimination half-life (26.67 h). Extracted — dapsone: kabs 0.93 h -1, CL/F 72 l h -1, Q/F 54.7 l h -1, V1/F 50 l, V2/F 1.61e+03 l, AUC 1.01e+05, t1/2z 26.7 h, V/F 48 l.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has chlorproguanil/dapsone, the second reading chlorproguanil and dapsone; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `chlorproguanil/dapsone`, measured `chlorproguanil`.
 
@@ -28,6 +31,9 @@ Simpson JA; Hughes D; Manyando C; Bojang K; Aarons L; Winstanley P; et al. et al
 
 ## Model component
 <dbs-pgx drug="dapsone" model-id="Dapsone_Simpson2006v2_reference" status="model_quarantined" stale="false" population="healthy volunteers and adults and children with uncomplicated falciparum malaria" measured-compound="chlorproguanil" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, Q/F, V/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (r-metHuLeptin vs unknown) and 8 more field(s) — a structural parameter, so the record is disputed.
+**The metreleptin (r-metHuLeptin) record was rejected because a structural parameter failed a dimensional consistency check, and it was built from the abstract alone rather than a fitted model.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record reports r-metHuLeptin in healthy subjects with a one-compartment structure and three parameters: elimination half-life 3.4 h, clearance 79 ml/kg·h, and steady-state volume of distribution 150 ml/kg. The rejection cause is a dimension mismatch on a structural parameter, meaning one of these values is dimensionally inconsistent with the stated one-compartment structure. Because the source was abstract-only, the reported summary statistics stand in for a fitted model, so no full parameter set or dose could be extracted — the dose of r-metHuLeptin is absent from this record while a second reader assigned it 0.1. A second reader also left the clearance, half-life and volume fields empty, disagreeing with the recorded values of 79, 3.4 and 150, and did not confirm the measured compound as r-metHuLeptin. Extracted — metreleptin: t1/2z 3.4 h, CL 79 ml/kg.h, Vss 150 ml/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has r-metHuLeptin, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wong SL; DePaoli AM; Lee JH; Mantzoros CS et al. (2004). The Journal of clinical endocrinology and metabolism 89

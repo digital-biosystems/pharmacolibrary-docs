@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[gm clearance]` (0.0001 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The triamcinolone acetonide record was rejected because its clearance (0.0001 mL/h/kg) and steady-state volume (0.0497 mL/kg) fall far outside physiologically plausible ranges, indicating a unit or scale extraction error from the abstract-only source.**
+
+The record reports triamcinolone acetonide in horses with a one-compartment structure and half-lives of 83.5 min (rapid phase) and 12 h (slower phase), but the clearance of 0.0001 mL/h/kg and volume of distribution at steady state of 0.0497 mL/kg are implausibly small magnitudes, consistent with a unit or scale misreading. Because the record was built from the paper's abstract alone, the reported summary statistics stood in for a fitted model, compounding uncertainty in these values. A second reader left all four parameter values (clearance 0.0001 mL/h/kg, t1/2α 83.5 min, t1/2z 12 h, Vss 0.0497 mL/kg) unconfirmed, so no independent comparison could be computed. Extracted — triamcinolone: t1/2α 83.5 min, t1/2z 12 h, CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of gm clearance: this record has 0.0001, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 French K; Pollitt CC; Pass MA et al. (2000). Journal of veterinary pharmacology and therapeutics 23
@@ -26,6 +29,9 @@ French K; Pollitt CC; Pass MA et al. (2000). Journal of veterinary pharmacology 
 
 ## Model component
 <dbs-pgx drug="triamcinolone" model-id="Triamcinolone_French2000_reference" status="rejected" stale="false" population="horses" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;nystatin&quot;,&quot;href&quot;:&quot;drugs/drug_nystatin/&quot;},{&quot;label&quot;:&quot;Maciel_2025 \u00b7 PD arginine uptake&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # arginine uptake — PD  <span class="pk-badge pk-badge--green">extracted</span>

@@ -5,7 +5,7 @@
 
 # blood plasma — `BloodPlasma_Yu2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.34, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yu H; Graham G; David OJ; Kahn JM; Savelieva M; Pigeolet E; Das Gupta A; Pingili R; Willi R; Ramanathan K; Kieseier BC; Häring DA; Bagger M; Soelberg Sørensen P et al. (2022). CNS drugs 36
@@ -25,6 +27,9 @@ Yu H; Graham G; David OJ; Kahn JM; Savelieva M; Pigeolet E; Das Gupta A; Pingili
 
 ## Model component
 <dbs-pgx drug="blood plasma" model-id="BloodPlasma_Yu2022_reference" status="curated_candidate" stale="false" population="" measured-compound="blood_plasma" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -58,9 +63,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.273 (3/11 fields) | 8 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 0.34 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q30]` | 0.358 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q320]` | 159 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q330]` | 5.53 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q331]` | 0.167 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q336]` | 32.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | 1.31 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 2.8 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -128,6 +146,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference.svg" alt="BloodPlasma_Yu2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.00654 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_sim_controls.json"></dbs-fmusim>
 

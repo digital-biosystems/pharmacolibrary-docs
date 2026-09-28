@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The record was rejected because the simvastatin clearance parameter CL/F is reported with the unit h and value 0.0958, a dimension mismatch on a structural parameter whose unit could not be expressed in SI.**
+
+The clearance parameter CL/F (labelled θ₃; CLSVA/VSA) is given as 0.0958 with the unit h, which is dimensionally wrong for a clearance, which must be volume per time (L/h, as the companion parameter Q/F correctly shows). This dimension mismatch on a structural parameter was the reason for rejection. The reported unit could not be converted to SI units, so the parameter entered the record without an SI value and the model was held back. Extracted — simvastatin: tlag 0.23 h, kabs 2.24, Q/F 384 L/h, CL/F 0.0958 h, V/F 2.74e+03 L, k14 -0.591.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tsamandouras N; Dickinson G; Guo Y; Hall S; Rostami-Hodjegan A; Galetin A; et al. et al. (2014). Clinical pharmacology and therapeutics 96

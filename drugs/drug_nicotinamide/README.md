@@ -4,7 +4,8 @@
 
 - **generic name:** nicotinamide
 - **ATC codes:** `A11HA01`
-- **DrugBank:** [DB02701](https://go.drugbank.com/drugs/DB02701)
+- **DrugBank:** [DB02701](https://go.drugbank.com/drugs/DB02701) · **PubChem:** [CID 936](https://pubchem.ncbi.nlm.nih.gov/compound/936)
+- **molar mass:** 122.1246 g/mol (C6H6N2O) — DrugBank
 - **groups:** approved, investigational
 
 ## About

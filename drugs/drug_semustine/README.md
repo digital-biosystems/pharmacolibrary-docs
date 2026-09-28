@@ -4,7 +4,7 @@
 
 - **generic name:** semustine
 - **ATC codes:** `L01AD03`
-- **DrugBank:** [DB13647](https://go.drugbank.com/drugs/DB13647)
+- **DrugBank:** [DB13647](https://go.drugbank.com/drugs/DB13647) · **PubChem:** not captured
 - **groups:** investigational
 
 ## Extraction summary

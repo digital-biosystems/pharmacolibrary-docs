@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** no model exists yet, so there is nothing to judge
-**How to address:** No curator action.
-<sub>owner: **engineer**</sub>
+**No model has been built from this record yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 van der Zeeuw SL; van Tilburg SJ; Jacobs BC; Koch BCP; Dalm VASH; Crombag MBS; Preijers T et al. (2026). Clinical pharmacokinetics 65
@@ -25,6 +25,9 @@ van der Zeeuw SL; van Tilburg SJ; Jacobs BC; Koch BCP; Dalm VASH; Crombag MBS; P
 
 ## Model component
 <dbs-pgx drug="nickel" model-id="Nickel_van2026_reference" status="not_modelled" stale="false" population="" measured-compound="nickel" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -103,6 +106,8 @@ van der Zeeuw SL; van Tilburg SJ; Jacobs BC; Koch BCP; Dalm VASH; Crombag MBS; P
 </div><figure class="pk-models-diagram"><img src="drugs/toxin_nickel/Nickel_van2026_reference/Nickel_van2026_reference.svg" alt="Nickel_van2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/toxin_nickel/Nickel_van2026_reference/Nickel_van2026_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/toxin_nickel/Nickel_van2026_reference/Nickel_van2026_reference_sim_controls.json"></dbs-fmusim>
 

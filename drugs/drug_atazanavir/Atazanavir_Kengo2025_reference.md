@@ -5,7 +5,7 @@
 
 # atazanavir — `Atazanavir_Kengo2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life.**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — atazanavir: CL 7.57 L/h, V 55.4 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q313: this record has 82.3, the second reading none; it also differs on 12 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `atazanavir/ritonavir`, measured `atazanavir`.
 
@@ -27,6 +31,9 @@ Kengo A; Resendiz-Galvan JE; Najjemba L; Mugerwa H; De Nicolò A; D'Avolio A; et
 
 ## Model component
 <dbs-pgx drug="atazanavir" model-id="Atazanavir_Kengo2025_reference" status="needs_review" stale="false" population="Ugandan adults with HIV" measured-compound="atazanavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -61,9 +68,27 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.235 (4/17 fields) | 13 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q313]` | 82.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q316]` | 25.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q317]` | 0.001 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | not captured | 1.68 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q339]` | 12.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 53 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q410]` | not captured | 0.653 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q59]` | not captured | 0.963 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | 0.963 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 55.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q72]` | 1.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q81]` | 43.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q87]` | -68.8 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +152,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_atazanavir/Atazanavir_Kengo2025_reference/Atazanavir_Kengo2025_reference.svg" alt="Atazanavir_Kengo2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_atazanavir/Atazanavir_Kengo2025_reference/Atazanavir_Kengo2025_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_atazanavir/Atazanavir_Kengo2025_reference/Atazanavir_Kengo2025_reference_sim_controls.json"></dbs-fmusim>
 

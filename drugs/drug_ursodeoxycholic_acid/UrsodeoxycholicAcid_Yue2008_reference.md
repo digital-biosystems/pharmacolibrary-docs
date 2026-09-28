@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (ursodeoxycholic acid vs UDCA-PLC) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ursodeoxycholic acid, the second reading UDCA-PLC; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yue PF; Yuan HL; Xie H; Xiao XH; Yang M; Liao MX; et al. et al. (2008). Drug development and industrial pharmacy 34
@@ -26,6 +29,9 @@ Yue PF; Yuan HL; Xie H; Xiao XH; Yang M; Liao MX; et al. et al. (2008). Drug dev
 
 ## Model component
 <dbs-pgx drug="ursodeoxycholic acid" model-id="UrsodeoxycholicAcid_Yue2008_reference" status="rejected" stale="false" population="rats" measured-compound="ursodeoxycholic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

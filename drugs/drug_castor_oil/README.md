@@ -4,7 +4,7 @@
 
 - **generic name:** castor oil
 - **ATC codes:** `A06AB05`
-- **DrugBank:** [DB11113](https://go.drugbank.com/drugs/DB11113)
+- **DrugBank:** [DB11113](https://go.drugbank.com/drugs/DB11113) · **PubChem:** not captured
 - **groups:** approved, nutraceutical, vet_approved
 
 ## About

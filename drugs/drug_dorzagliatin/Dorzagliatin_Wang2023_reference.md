@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Wang K; Feng L; Zhang J; Zou Q; Xu F; Sun Z; et al. et al. (2023). Clinical pharmacokinetics 62
@@ -25,6 +25,9 @@ Wang K; Feng L; Zhang J; Zou Q; Xu F; Sun Z; et al. et al. (2023). Clinical phar
 
 ## Model component
 <dbs-pgx drug="dorzagliatin" model-id="Dorzagliatin_Wang2023_reference" status="curated_candidate" stale="false" population="healthy subjects and patients with type 2 diabetes mellitus" measured-compound="dorzagliatin" parameterization="apparent" topology="3C"></dbs-pgx>
+
+**Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -151,6 +154,8 @@ Wang K; Feng L; Zhang J; Zou Q; Xu F; Sun Z; et al. et al. (2023). Clinical phar
 </div><figure class="pk-models-diagram"><img src="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference.svg" alt="Dorzagliatin_Wang2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 3.29 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_params.json" metaurl="assets/fmu/PK_3C_enteral.vr.json" wasmurl="assets/fmu/PK_3C_enteral.js" controlsurl="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_sim_controls.json"></dbs-fmusim>
 

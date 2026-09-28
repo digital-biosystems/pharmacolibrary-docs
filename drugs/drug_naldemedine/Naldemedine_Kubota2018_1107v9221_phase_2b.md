@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[max]` (not captured vs 13.49) — not a structural parameter.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**Naldemedine's clearance (CL/F) and absorption rate constant (Ka) had no values in the source, so library placeholder defaults stood in for both parameters and the model was held back rather than published.**
+
+The record lists CL/F (L/hr) and Ka (hr-1) with units but no values; placeholders were substituted for both missing parameters. The Ka placeholder was additionally flagged as an invented absorption rate constant, since Ka was not reported in the source, and that deviation was judged not acceptable. A second reader also extracted a maximum parameter value of 13.49 where this record has none, indicating an extraction discrepancy. The model was quarantined rather than published with substituted numbers. Extracted — naldemedine: V1/F 87.5 L, Q/F 5.59 L/hr, V2/F 46.6 L, tlag 0.202 hr.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of max: this record has none, the second reading 13.49. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kubota R; Fukumura K; Wajima T et al. (2018). Pharmaceutical research 35
@@ -26,6 +29,9 @@ Kubota R; Fukumura K; Wajima T et al. (2018). Pharmaceutical research 35
 
 ## Model component
 <dbs-pgx drug="naldemedine" model-id="Naldemedine_Kubota2018_1107v9221_phase_2b" status="model_quarantined" stale="false" population="healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC" measured-compound="naldemedine" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

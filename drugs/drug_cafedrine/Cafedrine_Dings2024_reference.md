@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal; T1_t_half_beta
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clearance cl]` (0.0971 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 1, model 0.677).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cafedrine: CL 0.0971 L/min, V 1 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance cl: this record has 0.0971, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Dings C; Lehr T; Vojnar B; Gaik C; Koch T; Eberhart LHJ; et al. et al. (2024). British journal of clinical pharmacology 90
@@ -26,6 +29,9 @@ Dings C; Lehr T; Vojnar B; Gaik C; Koch T; Eberhart LHJ; et al. et al. (2024). B
 
 ## Model component
 <dbs-pgx drug="cafedrine" model-id="Cafedrine_Dings2024_reference" status="needs_review" stale="false" population="patients under general anaesthesia" measured-compound="cafedrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -141,6 +147,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_cafedrine/Cafedrine_Dings2024_reference/Cafedrine_Dings2024_reference.svg" alt="Cafedrine_Dings2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_cafedrine/Cafedrine_Dings2024_reference/Cafedrine_Dings2024_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_cafedrine/Cafedrine_Dings2024_reference/Cafedrine_Dings2024_reference_sim_controls.json"></dbs-fmusim>
 

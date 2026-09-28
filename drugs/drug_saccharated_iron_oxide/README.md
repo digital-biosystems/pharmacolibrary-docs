@@ -4,7 +4,7 @@
 
 - **generic name:** saccharated iron oxide
 - **ATC codes:** `B03AB02`
-- **DrugBank:** [DB09146](https://go.drugbank.com/drugs/DB09146)
+- **DrugBank:** [DB09146](https://go.drugbank.com/drugs/DB09146) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

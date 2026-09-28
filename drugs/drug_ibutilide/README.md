@@ -4,7 +4,8 @@
 
 - **generic name:** ibutilide
 - **ATC codes:** `C01BD05`
-- **DrugBank:** [DB00308](https://go.drugbank.com/drugs/DB00308)
+- **DrugBank:** [DB00308](https://go.drugbank.com/drugs/DB00308) · **PubChem:** [CID 60753](https://pubchem.ncbi.nlm.nih.gov/compound/60753)
+- **molar mass:** 384.576 g/mol (C20H36N2O3S) — DrugBank
 - **groups:** approved
 
 ## About

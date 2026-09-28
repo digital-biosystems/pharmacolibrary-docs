@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (27.5 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 27.5, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hawwa AF; Westwood PM; Collier PS; Millership JS; Yakkundi S; Thurley G; et al. et al. (2013). British journal of clinical pharmacology 75
@@ -26,6 +29,9 @@ Hawwa AF; Westwood PM; Collier PS; Millership JS; Yakkundi S; Thurley G; et al. 
 
 ## Model component
 <dbs-pgx drug="ranitidine" model-id="Ranitidine_Hawwa2013_reference" status="curated_candidate" stale="false" population="critically ill children" measured-compound="ranitidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -145,6 +151,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference/Ranitidine_Hawwa2013_reference.svg" alt="Ranitidine_Hawwa2013_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.31 /h, F 27.5). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference/Ranitidine_Hawwa2013_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference/Ranitidine_Hawwa2013_reference_sim_controls.json"></dbs-fmusim>
 

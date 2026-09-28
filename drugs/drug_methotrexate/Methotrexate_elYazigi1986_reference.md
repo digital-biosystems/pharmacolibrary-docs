@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[the total body clearance]` (0.123 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Methotrexate two-compartment record refused because a structural parameter carries a dimension mismatch — the absorption rate constant is given in day−1 while the disposition parameters use hour-based units — and the record rests on abstract-only data.**
+
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A dimension mismatch was flagged on a structural parameter: the absorption rate constant (0.268 day−1) is expressed in days while the clearance (0.123 l/hr.kg), central volume (0.15 l/kg), peripheral volume (0.965 l/kg) and intercompartmental clearance (0.75 L/hour) are expressed in hours, leaving inconsistent time units across the parameter set. A second reader could not confirm the clearance, central volume or peripheral volume values, returning no value for each of these three parameters. Extracted — methotrexate: CL 0.123 l/hr.kg, V1 0.15 l/kg, V2 0.965 l/kg, Q 0.75 L/hour, kabs 0.268 day−1, tlag 0.36 hour.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of the total body clearance: this record has 0.123, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:29:54.230103+00:00) predates the upstream re-run (2026-09-24 02:58:26.516232+00:00). Current validate status: `rejected`.
 

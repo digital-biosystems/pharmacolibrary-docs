@@ -5,7 +5,7 @@
 
 # carbamazepine — `Carbamazepine_Kudo1999_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — carbamazepine: CL 142 L/h, V/F 1.26e+03 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 141.65, the second reading 0.39; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `haloperidol`, measured `carbamazepine`.
 
@@ -27,6 +31,9 @@ Kudo S; Ishizaki T et al. (1999). Clinical pharmacokinetics 37
 
 ## Model component
 <dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Kudo1999_reference" status="needs_review" stale="false" population="unknown" measured-compound="carbamazepine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** V/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 
@@ -51,14 +58,28 @@ Kudo S; Ishizaki T et al. (1999). Clinical pharmacokinetics 37
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.357 (5/14 fields) | 9 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 141.65 | 0.39 | mismatch |
+| `gpt-oss:120b` | `values[Q312]` | not captured | 42.76 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q33]` | not captured | 2.25 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q3]` | 28.2 | 0.22 | mismatch |
+| `gpt-oss:120b` | `values[Q40]` | not captured | 60 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q51]` | not captured | 0.03 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 20.7 | 14.1 | mismatch |
+| `gpt-oss:120b` | `values[Q66]` | 289 | 0.75 | mismatch |
+| `gpt-oss:120b` | `values[Q76]` | 1260 | 9.5 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

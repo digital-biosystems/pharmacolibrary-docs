@@ -4,7 +4,8 @@
 
 - **generic name:** sibutramine
 - **ATC codes:** `A08AA10`
-- **DrugBank:** [DB01105](https://go.drugbank.com/drugs/DB01105)
+- **DrugBank:** [DB01105](https://go.drugbank.com/drugs/DB01105) · **PubChem:** [CID 5210](https://pubchem.ncbi.nlm.nih.gov/compound/5210)
+- **molar mass:** 279.848 g/mol (C17H26ClN) — DrugBank
 - **groups:** approved, illicit, withdrawn
 
 ## About

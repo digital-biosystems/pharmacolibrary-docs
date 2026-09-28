@@ -4,7 +4,8 @@
 
 - **generic name:** fosdenopterin
 - **ATC codes:** `A16AX19`
-- **DrugBank:** [DB16628](https://go.drugbank.com/drugs/DB16628)
+- **DrugBank:** [DB16628](https://go.drugbank.com/drugs/DB16628) · **PubChem:** not captured
+- **molar mass:** 363.223 g/mol (C10H14N5O8P) — DrugBank
 - **groups:** approved
 
 ## About

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[receptor degradation rate]` (not captured vs 0.22) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Rejected: erenumab's intercompartmental clearance Q (3.34) is reported in a unit that cannot be expressed in SI, giving a dimension mismatch on a structural parameter, and the receptor degradation rate (0.22 per the second reader) is absent.**
+
+The erenumab two-compartment model lists Q = 3.34 and V2 = 2.73 with units given only as 'Q' and 'Vp', units that could not be converted to SI, so the intercompartmental clearance entered the record without an SI value and failed the dimensional check on a structural parameter. A second reader additionally extracted a receptor degradation rate of 0.22 for erenumab that this record does not contain. The remaining parameters (CL 0.214, V1 4.27, kabs 0.432, Fab 74, KD 18.8, kint 0.0345) carry no reported deviations. Extracted — erenumab: CL 0.214, V1 4.27, Q 3.34 Q, V2 2.73 Vp, kabs 0.432 ka, Fab 74 F, KD 18.8 Kss, kint 0.0345 kint.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of receptor degradation rate: this record has none, the second reading 0.22. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Vu T; Ma P; Chen JS; de Hoon J; Van Hecken A; Yan L; et al. et al. (2017). Pharmaceutical research 34
@@ -26,6 +29,9 @@ Vu T; Ma P; Chen JS; de Hoon J; Van Hecken A; Yan L; et al. et al. (2017). Pharm
 
 ## Model component
 <dbs-pgx drug="erenumab" model-id="Erenumab_Vu2017_reference" status="rejected" stale="false" population="healthy and migraine subjects" measured-compound="erenumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

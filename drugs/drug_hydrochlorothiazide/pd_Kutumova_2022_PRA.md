@@ -59,7 +59,7 @@ Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `schola
 |---|---|---|
 | `T0_driver` | fail | off-target driver — the curve belongs to that compound |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
+| `T1b_fmu` | fail | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 100.00%) |
 | `T2_direction` | pass | curve direction matches effect_direction |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
@@ -67,6 +67,7 @@ Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `schola
 Blocking:
 
 - off_target_driver: 'aliskiren' is not 'hydrochlorothiazide' (S12)
+- T1b the template FMU departs from the closed form by 100.0%
 
 Advisory:
 

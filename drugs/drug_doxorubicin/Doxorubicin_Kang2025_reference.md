@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q32]` (1551 vs not captured) and 7 more field(s) — not a structural parameter.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The doxorubicin two-compartment record was rejected because its structure contains an unreachable/orphan compartment or unlinked metabolite, and several extracted values (1551, 3, 902, 29669) lack second-reader confirmation.**
+
+The record lists doxorubicin with CL/F 37.9 L/h, V/F 902.0 L and V2/F (Vp/F) 519.0 L in a two-compartment structure, but the structure check found an unreachable/orphan compartment or unlinked metabolite, so the model was refused. Several extracted values were not confirmed by the second reader: this record has 1551, 3, 902 and 29669 where the second reader gave null, and null where the second reader gave 1.59, 519, 132 and 1.88. The disagreement on 519 is notable because it matches the extracted V2/F of 519.0 L. Extracted — doxorubicin: CL/F 37.9 L/h, V/F 902 L, V2/F 519 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 1551, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kang M; Kim J; Lee Y; Shin JS; Park MS; Jiang Q; Chung EK; Lee JI et al. (2025). Pharmaceuticals (Basel, Switzerland) 18

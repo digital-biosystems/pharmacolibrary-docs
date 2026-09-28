@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The record was quarantined because tegafur's metabolic clearance had no extracted value and was left at a library default, while the only extracted parameter (V = 35.7 L) describes the metabolite 5-fluorouracil, not tegafur.**
+
+The model links tegafur to its metabolite 5-fluorouracil, but the single extracted parameter — an average volume of distribution of 35.7 L — belongs to 5-fluorouracil. No clearance value for tegafur was available from the source, so a placeholder default was substituted for the missing clearance, and the model was held back rather than published with an invented number. The structure check also did not match: the expected parent–metabolite topology was not what was obtained, though this mismatch alone was not the stated reason for quarantine. Extracted — 5-fluorouracil: V 35.7 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `S-1`, measured `5-fluorouracil`.
 
@@ -27,6 +29,9 @@ Comets E; Ikeda K; Hoff P; Fumoleau P; Wanders J; Tanigawara Y et al. (2003). Jo
 
 ## Model component
 <dbs-pgx drug="tegafur" model-id="Tegafur_Comets2003_japanese_analysis" status="model_quarantined" stale="false" population="Western cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

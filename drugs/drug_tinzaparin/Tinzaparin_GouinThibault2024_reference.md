@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is tinzaparin's own; they describe tinzaparin anti-Xa. Extracted — tinzaparin anti-Xa: V 3.66e+03 mL, CL 891 mL.h -1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `tinzaparin`, measured `tinzaparin anti-Xa`.
 
@@ -27,6 +29,9 @@ Gouin-Thibault I; Mansour A; Caribotti C; Pierre-Jean M; Bouzille G; Ballerie A;
 
 ## Model component
 <dbs-pgx drug="tinzaparin" model-id="Tinzaparin_GouinThibault2024_reference" status="needs_review" stale="false" population="patients with severe and end-stage renal impairment" measured-compound="tinzaparin anti-Xa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

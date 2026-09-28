@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (glycopyrronium vs glycopyrronium bromide) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The glycopyrronium bromide model was quarantined because clearance, distribution volume, absorption rate, absorption lag and both intercompartmental rate constants had no extracted values, so placeholders stood in, and the absorption rate was invented.**
+
+No value was extracted for glycopyrronium's systemic clearance, volume of distribution, absorption rate constant, absorption lag time, central→peripheral rate constant or peripheral→central rate constant, so generic placeholder values were substituted and the model was held back rather than published with invented numbers. The absorption rate constant was additionally flagged as invented because it was not reported in the source. A second reader also disputed the intermediate lung absorption half-life of 0.45, reading it as not present, and disagreed on whether the dosed compound is glycopyrronium or glycopyrronium bromide. Extracted — glycopyrronium bromide: CL 44.9, V1 11.3, Q 8.23, V2 71.5, Fab 1.11, kabs 0.009, Vss 102, t1/2z 0.45.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has glycopyrronium, the second reading glycopyrronium bromide; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Bartels C; Looby M; Sechaud R; Kaiser G et al. (2013). British journal of clinical pharmacology 76
@@ -26,6 +29,9 @@ Bartels C; Looby M; Sechaud R; Kaiser G et al. (2013). British journal of clinic
 
 ## Model component
 <dbs-pgx drug="glycopyrronium bromide" model-id="GlycopyrroniumBromide_Bartels2013_population_mean_cv" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

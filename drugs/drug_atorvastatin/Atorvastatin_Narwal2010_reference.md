@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** missing key parameters — none reported by this paper
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['atorvastatin', 'atorvastatin acid', 'metabolism'], ['atorvastatin lactone', 'atorvastatin acid', 'interconversion']] vs [['atorvastatin acid', 'atorvastatin lactone', 'metabolism']]) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has atorvastatin → atorvastatin acid (metabolism); atorvastatin lactone → atorvastatin acid (interconversion), the second reading atorvastatin acid → atorvastatin lactone (metabolism). That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `atorvastatin`, measured `atorvastatin acid`.
 

@@ -4,7 +4,8 @@
 
 - **generic name:** dexlansoprazole
 - **ATC codes:** `A02BC06`
-- **DrugBank:** [DB05351](https://go.drugbank.com/drugs/DB05351)
+- **DrugBank:** [DB05351](https://go.drugbank.com/drugs/DB05351) · **PubChem:** [CID 9578005](https://pubchem.ncbi.nlm.nih.gov/compound/9578005)
+- **molar mass:** 369.36 g/mol (C16H14F3N3O2S) — DrugBank
 - **groups:** approved, investigational
 
 ## About

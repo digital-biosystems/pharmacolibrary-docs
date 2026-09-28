@@ -5,7 +5,7 @@
 
 # nalbuphine — `Nalbuphine_Nie2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**Nalbuphine's intercompartmental clearance Q (0.0134 L/h) and peripheral volume V2 (0.187 L) fall far outside physiological plausibility, indicating a unit or scale extraction error, so the record was rejected.**
+
+The two-compartment nalbuphine model reports CL 176.0 L/h and V1 519.0 L, but Q is recorded as 0.0134 L/h and V2 as 0.187 L — magnitudes implausible for a population distribution clearance and peripheral volume, consistent with a unit or scale error during extraction. A second reader recorded the same Q value as 53.9 L/h, disagreeing with the 0.0134 L/h in this record, which supports a transcription-scale discrepancy in the intercompartmental clearance. Extracted — nalbuphine: CL 176 L/h, V1 519 L, V2 0.187 L, Q 0.0134 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 53.9, the second reading 53.9. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Nie Y; Sun X; Cao R; Tang S; Zhou Q; Zhou M; Chen Z; Huang S et al. (2025). Drug design, development and therapy 19
@@ -25,6 +29,9 @@ Nie Y; Sun X; Cao R; Tang S; Zhou Q; Zhou M; Chen Z; Huang S et al. (2025). Drug
 
 ## Model component
 <dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Nie2025_reference" status="rejected" stale="false" population="" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,14 +58,20 @@ Nie Y; Sun X; Cao R; Tang S; Zhou Q; Zhou M; Chen Z; Huang S et al. (2025). Drug
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.875 (7/8 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q312]` | 53.9 | 53.9 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

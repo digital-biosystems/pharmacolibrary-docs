@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q174]` (7.5 vs 7.5) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The levothyroxine model was held back because the absorption rate constant ka and lag time Tlag are absent from the source, so library defaults were substituted, and the invented first-order absorption was judged not acceptable.**
+
+The record reports only CL/F = 0.712 L/h and V/F = 164.9 L for levothyroxine; ka and Tlag have no values in the source, so placeholders would have been used. The builder further assumed F=1 and Fm=1 with no molar correction, yielding an apparent (/F) parameterization with extravascular first-order depot input. The invented absorption deviation — ka defaulted although not reported in the source — was adjudicated not acceptable. A second reader also disagreed on the volume of distribution, reading 174.7 L against this record's 164.9 L. Extracted — levothyroxine: CL/F 0.712 L/h, V/F 165 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q174: this record has 7.5, the second reading 7.5; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:22:39.982804+00:00) predates the upstream re-run (2026-09-24 00:16:57.077414+00:00). Current validate status: `extracted`.
 
@@ -139,7 +142,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference/Levothyroxine_Younis2018_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference/Levothyroxine_Younis2018_reference_sim_controls.json"></dbs-fmusim>
 

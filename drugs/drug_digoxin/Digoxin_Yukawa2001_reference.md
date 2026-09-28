@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[apparent ka]` (2.29 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — digoxin: V1 1.83 L/kg, V2 22.6 L/kg, Q 0.629 L/h/kg, kabs 2.29 h−1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of apparent ka: this record has 2.29, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yukawa E; Suematu F; Yukawa M; Minemoto M; Ohdo S; Higuchi S; et al. et al. (2001). Clinical pharmacokinetics 40
@@ -26,6 +29,9 @@ Yukawa E; Suematu F; Yukawa M; Minemoto M; Ohdo S; Higuchi S; et al. et al. (200
 
 ## Model component
 <dbs-pgx drug="digoxin" model-id="Digoxin_Yukawa2001_reference" status="needs_review" stale="false" population="Japanese patients with heart failure and atrial fibrillation" measured-compound="digoxin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

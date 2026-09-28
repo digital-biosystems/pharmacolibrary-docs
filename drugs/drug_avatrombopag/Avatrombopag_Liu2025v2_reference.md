@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 0.6843).
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.684).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — avatrombopag: CL/F 7.85 L/h, V/F 199 L, kabs 0.582 /h, MTT 1.33 h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Liu X; Chen L; Ju G; Li C; Liu B; Fei Y; et al. et al. (2025). Pharmaceuticals (Basel, Switzerland) 18
@@ -26,6 +29,9 @@ Liu X; Chen L; Ju G; Li C; Liu B; Fei Y; et al. et al. (2025). Pharmaceuticals (
 
 ## Model component
 <dbs-pgx drug="avatrombopag" model-id="Avatrombopag_Liu2025v2_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="avatrombopag" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

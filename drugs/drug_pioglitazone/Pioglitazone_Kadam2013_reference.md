@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[k a (h -1 )=θ 5].parameter_id` (Q95 vs Q49) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (V1/F, V/F and t1/2ka ), so that value has no SI equivalent. Extracted — pioglitazone: V1/F 22.1 CYP2C8, V/F 26.3 CYP2C8, t1/2ka 2.08 CYP2C8.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[k a (h -1 )=θ 5].parameter_id`: this record has Q95, the second reading Q49; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kadam R; Bourne D; Kompella U; Aquilante C et al. (2013). Biological & pharmaceutical bulletin 36
@@ -26,6 +29,9 @@ Kadam R; Bourne D; Kompella U; Aquilante C et al. (2013). Biological & pharmaceu
 
 ## Model component
 <dbs-pgx drug="pioglitazone" model-id="Pioglitazone_Kadam2013_reference" status="needs_review" stale="false" population="healthy Caucasian volunteers" measured-compound="pioglitazone" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

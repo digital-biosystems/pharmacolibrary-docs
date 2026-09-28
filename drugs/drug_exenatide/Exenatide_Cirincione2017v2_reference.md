@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Cirincione2017v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,15 +15,22 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The exenatide record was held back because the absorption rate constant ka and lag time Tlag are not reported in the source, so library placeholder values were substituted and a first-order absorption with F=1 was invented.**
+
+The record reports exenatide apparent clearance (CL/F) of 9.1 L/h and apparent volume of distribution (V) of 7.04 L in a one-compartment structure, but ka and Tlag are missing from the source values, so library placeholder values would have been used in their place. The builder additionally assumed F=1 and Fm=1 with no molar correction, yielding an apparent (/F) parameterization with a first-order depot input for extravascular dosing. The invented absorption assumption — ka defaulted although not reported in the source — was adjudicated not acceptable, so the model was not published and marked for review. A second reader also disagreed on several extracted values (e.g., 4.58 vs null, 1 vs 100), leaving some fields unresolved. Extracted — exenatide: CL/F 9.1 l h−1, V 7.04 l.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CLint: this record has 4.58, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Cirincione_2017_2)
 
 ## Model component
 <dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017v2_reference" status="needs_review" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -93,14 +100,24 @@ not matched (stem Cirincione_2017_2)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q310]` | not captured | 1.35 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | not captured | 96 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q3]` | 4.58 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 1 | 100 | mismatch |
+| `gpt-oss:120b` | `values[Q61]` | 7.04 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -180,6 +197,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference.svg" alt="Exenatide_Cirincione2017v2_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_sim_controls.json"></dbs-fmusim>
 

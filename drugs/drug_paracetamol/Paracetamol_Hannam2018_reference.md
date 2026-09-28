@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 0.34, model 0.227).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — paracetamol: CL 13.2 L/h.70 kg -1, V 6.35 liters, tlag 4.2 min.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hannam JA; Anderson BJ; Potts A et al. (2018). Paediatric anaesthesia 28
@@ -126,7 +128,7 @@ Hannam JA; Anderson BJ; Potts A et al. (2018). Paediatric anaesthesia 28
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_paracetamol/Paracetamol_Hannam2018_reference/Paracetamol_Hannam2018_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_paracetamol/Paracetamol_Hannam2018_reference/Paracetamol_Hannam2018_reference_sim_controls.json"></dbs-fmusim>
 

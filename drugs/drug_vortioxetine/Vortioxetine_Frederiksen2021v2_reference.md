@@ -17,16 +17,22 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_topology_template — expected parent_metabolite_hepatic → PK_3M_3C* — got PK_1C_enteral
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[lu aa34443 clearance, clmet].covariate_forms` (['linear_fractional'] vs ['linear_fractional', 'linear_fractional']) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The vortioxetine parent–metabolite model was quarantined because vortioxetine's bioavailability, clearance and absorption lag time had no extracted values, so library defaults stood in for F, CL and tlag.**
+
+The record lists no values for vortioxetine's bioavailability, clearance or lag time (the tlag entry of 0.966 h belongs to the metabolite Lu AA34443's absorption path context, while the parent's F, CL and Tlag were left as placeholders), so the model was held back rather than published with invented numbers. The structure also mismatched: a parent–metabolite topology with hepatic formation was expected, but the record describes a one-compartment enteral parent structure. In addition, the covariate effects on CYP2D6 (theta 13.1) and CYP2C19 (theta 12.5) were defined but never exercised in simulation, and a second reader disagreed on several entries, including an age effect of 0.157 and a height effect of 1.48 absent from this record. Extracted — vortioxetine: kabs 0.16 1/h, V1 1.51e+03 L, Q 21.1 L/h, V2 571 L, tlag 0.966 h; Lu AA34443: kabs 0.281 1/h, fm 0.19, Q 7.69 L/h, V1 155 L, CL 22.5 L/h, V2 211 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[lu aa34443 clearance, clmet].covariate_forms`: this record has ['linear_fractional'], the second reading ['linear_fractional', 'linear_fractional']; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Frederiksen_2021_2)
 
 ## Model component
 <dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Frederiksen2021v2_reference" status="model_quarantined" stale="false" population="subjects from 29 clinical pharmacology studies" measured-compound="vortioxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 11 extracted, plus 2 covariate effects.
 
 **Parameterization:** mechanistic.
 

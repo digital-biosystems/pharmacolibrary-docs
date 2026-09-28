@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (carvedilol enantiomers and their metabolites vs carvedilol) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The carvedilol parent–metabolite record was rejected because a reported unit could not be converted to SI units, leaving a structural parameter without a usable value (dimension mismatch).**
+
+The record describes a parent–metabolite model for carvedilol enantiomers and their metabolites in type-2 diabetes and healthy subjects, with parameters KaR 17.41 h⁻¹, FR 18.25 (%), VcR 17.91 L, QR 17.85 L/h and CLR_CYP2D6 16.50 L/h. The refusal reason is a dimension mismatch on a structural parameter: one reported unit could not be expressed in SI units, so that parameter entered the build without a usable value. The parameter concerned is FR, reported as a percentage, the only listed parameter whose unit could not be converted. A second reader also disagreed on several points — treating carvedilol rather than its enantiomers and metabolites as the primary analyte, splitting the metabolism link into R- and S-carvedilol branches, and reading additional parameter values (11.31, 15.45, 18.17) absent from this record — but the rejection rests on the unconverted unit. Extracted — carvedilol: t1/2ka 17.4 h -1, FR 18.2, V 17.9 L, Q3 17.9 L/h, CLR 16.5 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has carvedilol enantiomers and their metabolites, the second reading carvedilol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `carvedilol`, measured `carvedilol enantiomers and their metabolites`.
 
@@ -28,6 +31,9 @@ Nardotto GHB; Lanchote VL; Coelho EB; Della Pasqua O et al. (2017). European jou
 
 ## Model component
 <dbs-pgx drug="carvedilol" model-id="Carvedilol_Nardotto2017_reference" status="rejected" stale="false" population="type-2 diabetes and healthy subjects" measured-compound="carvedilol enantiomers and their metabolites" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 

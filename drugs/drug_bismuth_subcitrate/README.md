@@ -5,7 +5,7 @@
 
 - **generic name:** bismuth subcitrate
 - **ATC codes:** `A02BX05`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary
@@ -16,10 +16,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Benet_1991_reference](drugs/drug_bismuth_subcitrate/BismuthSubcitrate_Benet1991_reference.md) | Benet LZ, Safety and pharmacokinetics: colloidal…, Scandinavian journal of gas… (1991) | [10.3109/00365529109093217](https://doi.org/10.3109/00365529109093217) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Dresow_1991_reference](drugs/drug_bismuth_subcitrate/BismuthSubcitrate_Dresow1991_reference.md) | Dresow B et al., Bioavailability of bismuth from 205Bi-l…, Archives of toxicology (1991) | [10.1007/BF02098030](https://doi.org/10.1007/BF02098030) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Benet_1991_reference](drugs/drug_bismuth_subcitrate/BismuthSubcitrate_Benet1991_reference.md) | 1-compartment (no model) | 0 | Benet LZ, Safety and pharmacokinetics: colloidal…, Scandinavian journal of gas… (1991) | [10.3109/00365529109093217](https://doi.org/10.3109/00365529109093217) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Dresow_1991_reference](drugs/drug_bismuth_subcitrate/BismuthSubcitrate_Dresow1991_reference.md) | 1-compartment (no model) | 0 | Dresow B et al., Bioavailability of bismuth from 205Bi-l…, Archives of toxicology (1991) | [10.1007/BF02098030](https://doi.org/10.1007/BF02098030) |
 
 ## Pharmacodynamics (PD)
 

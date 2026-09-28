@@ -4,7 +4,8 @@
 
 - **generic name:** dibekacin
 - **ATC codes:** `J01GB09`, `S01AA29`
-- **DrugBank:** [DB13270](https://go.drugbank.com/drugs/DB13270)
+- **DrugBank:** [DB13270](https://go.drugbank.com/drugs/DB13270) · **PubChem:** not captured
+- **molar mass:** 451.521 g/mol (C18H37N5O8) — DrugBank
 - **groups:** approved
 
 ## About

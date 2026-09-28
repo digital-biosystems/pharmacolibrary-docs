@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper).
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (KD and CL_PD), so that value has no SI equivalent. None of the extracted parameters is capecitabine's own; they describe rilotumumab.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Doshi S; Gisleskog PO; Zhang Y; Zhu M; Oliner KS; Loh E; et al. et al. (2015). Clinical cancer research : an official journal of the American Association for Cancer Research 21
@@ -25,6 +27,9 @@ Doshi S; Gisleskog PO; Zhang Y; Zhu M; Oliner KS; Loh E; et al. et al. (2015). C
 
 ## Model component
 <dbs-pgx drug="capecitabine" model-id="Capecitabine_Doshi2015_typical_value" status="rejected" stale="false" population="patients with advanced or metastatic gastric/GEJ cancer" measured-compound="rilotumumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

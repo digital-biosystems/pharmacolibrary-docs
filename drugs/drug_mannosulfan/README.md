@@ -4,7 +4,8 @@
 
 - **generic name:** mannosulfan
 - **ATC codes:** `L01AB03`
-- **DrugBank:** [DB13334](https://go.drugbank.com/drugs/DB13334)
+- **DrugBank:** [DB13334](https://go.drugbank.com/drugs/DB13334) · **PubChem:** not captured
+- **molar mass:** 494.51 g/mol (C10H22O14S4) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

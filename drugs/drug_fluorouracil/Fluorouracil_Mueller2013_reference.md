@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**CL and V have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — fluorouracil: CL 12.7, V 4.3, kabs 0.757 h−1, tlag 0.000552 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Mueller F; Büchel B; Köberle D; Schürch S; Pfister B; Krähenbühl S; et al. et al. (2013). Cancer chemotherapy and pharmacology 71

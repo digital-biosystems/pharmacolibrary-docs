@@ -4,7 +4,8 @@
 
 - **generic name:** mebeverine
 - **ATC codes:** `A03AA04`
-- **DrugBank:** [DB12554](https://go.drugbank.com/drugs/DB12554)
+- **DrugBank:** [DB12554](https://go.drugbank.com/drugs/DB12554) · **PubChem:** [CID 4031](https://pubchem.ncbi.nlm.nih.gov/compound/4031)
+- **molar mass:** 429.557 g/mol (C25H35NO5) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
 ## About

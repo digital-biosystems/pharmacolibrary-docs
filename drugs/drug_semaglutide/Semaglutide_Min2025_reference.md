@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q32]` (2 vs not captured) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The semaglutide record was held back because the absorption rate constant ka and the lag time Tlag are not reported in the source, so library defaults were substituted and the resulting invented absorption was judged not acceptable.**
+
+The record reports semaglutide apparent clearance CL/F of 9.1 L/h and apparent volume of distribution V/F of 28.3 L in a one-compartment structure, but the absorption rate constant ka and the lag time Tlag were missing from the source and left at defaults, meaning placeholder values would have entered the model. The builder also assumed absolute bioavailability F=1 and metabolite fraction Fm=1 with no molar correction, so all parameters are apparent (/F) values. From this apparent parameterization a first-order depot input was inferred, implying extravascular dosing, and the invented absorption (ka defaulted, not reported in the source) was ruled not acceptable. A second reader disagreed on one value field, recording null where this record counted 2, leaving that comparison inconclusive. Extracted — semaglutide: CL/F 9.1 L/h, V/F 28.3 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 2, the second reading none. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `unknown`, measured `semaglutide`.
 

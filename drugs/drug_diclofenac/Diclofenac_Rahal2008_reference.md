@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc]` (12.17 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **scholar**</sub>
+**No value for diclofenac's clearance.**
+
+The model was built, but diclofenac's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diclofenac: t1/2β 1.03 h, AUC 12.2 microg h ml(-1), V 0.14 Lkg(-1), MRT 1.36 h, CL 0.1 Lkg(-1)h(-1).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 12.17, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 23:13:39.642483+00:00) predates the upstream re-run (2026-09-24 03:37:56.768173+00:00). Current validate status: `needs_review`.
 

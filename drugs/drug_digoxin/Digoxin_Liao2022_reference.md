@@ -5,7 +5,7 @@
 
 # digoxin — `Digoxin_Liao2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The digoxin model was held back because the absorption rate constant ka was not reported in the source and a default was invented, along with a defaulted Tlag, making the absorption input unacceptable.**
+
+The record for digoxin (Liao_2022) lacks source values for ka and Tlag, so library defaults were substituted; the invented ka — not reported in the source — was adjudicated as 'invented_absorption: not acceptable'. The model also assumes F=1 and Fm=1 with apparent (/F) parameterization (CLu 11.4 L/h, V/F 425.9701 L) and a first-order depot input implying extravascular dosing, none of which are stated in the source. A second reader disagreed on several extracted values (e.g., 38, 11.4, 3.21, 3.7, 25.9 read as null), leaving those comparisons unconfirmed. Extracted — digoxin: CLu 11.4 L/h, V/F 426 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 38, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Liao M; Beltman J; Giordano H; Harding TC; Maloney L; Simmons AD; et al. et al. (2022). Clinical pharmacokinetics 61
@@ -25,6 +29,9 @@ Liao M; Beltman J; Giordano H; Harding TC; Maloney L; Simmons AD; et al. et al. 
 
 ## Model component
 <dbs-pgx drug="digoxin" model-id="Digoxin_Liao2022_reference" status="needs_review" stale="false" population="" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +62,28 @@ Liao M; Beltman J; Giordano H; Harding TC; Maloney L; Simmons AD; et al. et al. 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q19]` | 38 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q21]` | 0.781 | 0.781 | mismatch |
+| `gpt-oss:120b` | `values[Q24]` | 11.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q26]` | 3.21 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | 54 | 54 | mismatch |
+| `gpt-oss:120b` | `values[Q335]` | 0.92 | 0.92 | mismatch |
+| `gpt-oss:120b` | `values[Q44]` | 3.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 25.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q84]` | not captured | 38 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,6 +148,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_digoxin/Digoxin_Liao2022_reference/Digoxin_Liao2022_reference.svg" alt="Digoxin_Liao2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_digoxin/Digoxin_Liao2022_reference/Digoxin_Liao2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_digoxin/Digoxin_Liao2022_reference/Digoxin_Liao2022_reference_sim_controls.json"></dbs-fmusim>
 

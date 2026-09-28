@@ -5,7 +5,8 @@
 
 - **generic name:** misoprostol
 - **ATC codes:** `A02BB01`, `G02AD06`, `M01AE56`
-- **DrugBank:** [DB00929](https://go.drugbank.com/drugs/DB00929)
+- **DrugBank:** [DB00929](https://go.drugbank.com/drugs/DB00929) · **PubChem:** [CID 5282381](https://pubchem.ncbi.nlm.nih.gov/compound/5282381)
+- **molar mass:** 382.5341 g/mol (C22H38O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,9 +25,9 @@ Misoprostol was granted FDA approval on 27 December 1988.[L7616]
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Vorontsova_2022_reference](drugs/drug_misoprostol/Misoprostol_Vorontsova2022_reference.md) | Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and translational… (2022) | [10.1111/cts.13306](https://doi.org/10.1111/cts.13306) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Vorontsova_2022_reference](drugs/drug_misoprostol/Misoprostol_Vorontsova2022_reference.md) | 1-compartment, oral | 5 | Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and translational… (2022) | [10.1111/cts.13306](https://doi.org/10.1111/cts.13306) |
 
 ## Pharmacodynamics (PD)
 

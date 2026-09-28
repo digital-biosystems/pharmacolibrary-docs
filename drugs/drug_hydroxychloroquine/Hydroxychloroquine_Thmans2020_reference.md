@@ -15,10 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Thémans P; Belkhir L; Dauby N; Yombi JC; De Greef J; Delongie KA; et al. et al. (2020). European journal of drug metabolism and pharmacokinetics 45
@@ -26,6 +27,9 @@ Thémans P; Belkhir L; Dauby N; Yombi JC; De Greef J; Delongie KA; et al. et al.
 
 ## Model component
 <dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Thmans2020_reference" status="curated_candidate" stale="false" population="COVID-19 patients" measured-compound="hydroxychloroquine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -132,6 +136,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference.svg" alt="Hydroxychloroquine_Thmans2020_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.765 /h, lag 26.7 min, F 0.746). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_sim_controls.json"></dbs-fmusim>
 

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05C&quot;,&quot;href&quot;:&quot;atc/B05C.md&quot;},{&quot;label&quot;:&quot;sodium bicarbonate&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_bicarbonate/&quot;},{&quot;label&quot;:&quot;Taylor_2026 \u00b7 PD acute kidney injury&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acute kidney injury — PD  <span class="pk-badge pk-badge--orange">needs review</span>

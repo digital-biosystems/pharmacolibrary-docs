@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q99, Q370, Q22, Q22, Q49, Q370 — no SI value to build from; C2_reference failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['omeprazole', '5-hydroxy-omeprazole', 'metabolism'], ['omeprazole', 'omeprazole sulfone', 'metabolism']] vs [['omeprazole', '5-hydroxy-omeprazole', 'metabolism']]) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The omeprazole neonate/infant model record lacks units for key clearance and absorption parameters (Q2, CLfm, CL, kabs, CLfm), preventing SI conversion, and several covariate-effect parameters are missing values, so it was held back for review.**
+
+Parameters Q2 (0.658), CLfm (0.140), CL (52.6, 35.9, 55.9, 68.8), kabs (130.0) and CLfm carry no unit in the record, so their values cannot be converted to SI and the model cannot use them. Additionally, five covariate-effect parameters (on CYP2C19 and ABCB1, e.g. 0.472, 0.125, 0.449, 1.86, 6.93 per the second reader) are null in this record, and a comparison check failed without computing a ratio, making that check inconclusive rather than a demonstrated fault. The second reader also disputes the parameter set, reading θ2 as null and assigning values to the covariate effects that this record leaves empty. Extracted — omeprazole: V1/F 0.513 l, Q2 0.658 L/h, kabs 130 1/h; 5-hydroxy-omeprazole: V1/F 1 l, CL/F 0.846 L/h, CL 52.6 L/h, CL 55.9 L/h; omeprazole sulfone: V1/F 1 l, CLfm 0.14 L/h, CL/F 0.13 L/h, CL 35.9 L/h, CL 68.8 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has omeprazole → 5-hydroxy-omeprazole (metabolism); omeprazole → omeprazole sulfone (metabolism), the second reading omeprazole → 5-hydroxy-omeprazole (metabolism); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zhao W; Leroux S; Biran V; Jacqz-Aigrain E et al. (2018). British journal of clinical pharmacology 84

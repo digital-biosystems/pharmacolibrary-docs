@@ -17,10 +17,13 @@
 
 ### Reviewer guidance
 
-**Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q19]` (126.81 vs not captured) and 4 more field(s) — not a structural parameter.
-**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
-<sub>owner: **engineer**</sub>
+**The omeprazole two-compartment model was held back because the absorption rate constant ka and the absorption lag time Tlag were not reported in the source and placeholder values were substituted, an invented absorption deemed not acceptable, and the CYP2C19 covariate effects were never simulated.**
+
+The record defines CYP2C19 metaboliser-status effects on omeprazole clearance (poor metaboliser −0.9054, intermediate metaboliser −0.5198, rapid metaboliser 0.4064), but only the reference individual was simulated, so these covariate effects were not exercised; the base model alone was run. The absorption was invented: ka was defaulted because it was not reported in the source, and this deviation was adjudicated not acceptable. The apparent (/F) parameterization further assumes F=1 and Fm=1 with no molar correction, implying extravascular first-order input. A second reader also disagreed on several extracted values, reporting numbers (e.g. 77.2, 8, 1.59, 0.282) where this record has none. Extracted — omeprazole: CL/F 115 L/h, V1/F 14.9 L, V2/F 146 L, Q/F 52 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 126.81, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gaspar F; Jacost-Descombes C; Gosselin P; Reny JL; Guidi M; Csajka C; Samer C; Daali Y; Terrier J et al. (2025). Clinical pharmacokinetics 64
@@ -152,7 +155,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference/Omeprazole_Gaspar2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference/Omeprazole_Gaspar2025_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,15 +15,20 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — paromomycin: t1/2z 2.6 h, t1/2α 1.5 h, V 0.998 liters/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lentzen H; Kölle EU; Daschner F et al. (1981). Arzneimittel-Forschung 31
 
 ## Model component
 <dbs-pgx drug="paromomycin" model-id="Paromomycin_Lentzen1981_reference" status="needs_review" stale="false" population="healthy volunteers and patients with liver cirrhosis" measured-compound="paromomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

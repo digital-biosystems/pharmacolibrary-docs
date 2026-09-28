@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — ciprofloxacin: V 210 liters/ 100 kg, t1/2α 1.7 min, t1/2β 20.4 min, t1/2γ 185 min, AUC∞ 3 mg · h/liter, CL 530 ml/min per 1.73 m2, CLR 335 ml/min per 1.73 m2, kabs 1 h−1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:02:14.146197+00:00) predates the upstream re-run (2026-09-24 02:07:33.752624+00:00). Current validate status: `needs_review`.
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (liposomal irinotecan vs nal-IRI) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The record was quarantined because irinotecan's clearance and volume of distribution had no extracted values, so library placeholders stood in, and the only extracted parameter (CL = 0.0 %) describes total irinotecan, not irinotecan itself.**
+
+The single extracted parameter, labelled 'estimated clearance difference' with value 0.0 % for total irinotecan, does not give irinotecan's clearance or volume of distribution; these had no values, meaning library placeholders would have been used and the model was held back. The structure check also failed: the expected parent–metabolite structure was not obtained. Additionally, a reported unit could not be converted to SI, so the parameter reached the model build without an SI value. A second reader further disagreed on the dose compound (liposomal irinotecan vs nal-IRI), the primary analyte (total irinotecan vs tIRI), the metabolite links (adding usn38 metabolism and esn38 interconversion), and the SN-38 clearance factor (null vs 1.0). Extracted — total irinotecan: CL 0 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has liposomal irinotecan, the second reading nal-IRI; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `liposomal irinotecan`, measured `total irinotecan`.
 
@@ -28,6 +31,9 @@ Adiwijaya BS; Kim J; Lang I; Csõszi T; Cubillo A; Chen JS; et al. et al. (2017)
 
 ## Model component
 <dbs-pgx drug="irinotecan" model-id="Irinotecan_Adiwijaya2017_reference" status="model_quarantined" stale="false" population="patients with cancer" measured-compound="total irinotecan" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

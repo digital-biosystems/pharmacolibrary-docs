@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (digitoxin vs dihydrodigitoxin) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The digitoxin volume of distribution (0.241, unit '1') fails the dimensional check for a structural parameter, and the record was built from the abstract alone rather than a fitted model.**
+
+The parameter V, labelled 'volume of distribution of DH-DGT' for digitoxin, is reported as 0.241 with unit '1' (dimensionless), which is dimensionally incompatible with a distribution volume, so the record was rejected. The record was also built from the paper's abstract only, meaning reported summary statistics stood in for a fitted model. A second reader disagreed on the dosing compound and primary analyte, reading dihydrodigitoxin instead of digitoxin, and read the volume of distribution as null rather than 0.241. Extracted — digitoxin: V 0.241 1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has digitoxin, the second reading dihydrodigitoxin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Flasch H; Heniz N et al. (1979). Naunyn-Schmiedeberg's archives of pharmacology 310
@@ -26,6 +29,9 @@ Flasch H; Heniz N et al. (1979). Naunyn-Schmiedeberg's archives of pharmacology 
 
 ## Model component
 <dbs-pgx drug="digitoxin" model-id="Digitoxin_Flasch1979_reference" status="rejected" stale="false" population="cats" measured-compound="digitoxin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

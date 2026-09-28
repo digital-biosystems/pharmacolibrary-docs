@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clo]` (1.2 vs not captured) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clo: this record has 1.2, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Grasela TH; Sheiner LB et al. (1984). Clinical pharmacokinetics 9
@@ -26,6 +29,9 @@ Grasela TH; Sheiner LB et al. (1984). Clinical pharmacokinetics 9
 
 ## Model component
 <dbs-pgx drug="procainamide" model-id="Procainamide_Grasela1984_reference" status="curated_candidate" stale="false" population="patients receiving procainamide" measured-compound="procainamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -135,6 +141,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_procainamide/Procainamide_Grasela1984_reference/Procainamide_Grasela1984_reference.svg" alt="Procainamide_Grasela1984_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_procainamide/Procainamide_Grasela1984_reference/Procainamide_Grasela1984_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_procainamide/Procainamide_Grasela1984_reference/Procainamide_Grasela1984_reference_sim_controls.json"></dbs-fmusim>
 

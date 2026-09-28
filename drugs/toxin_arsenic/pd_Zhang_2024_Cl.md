@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Zhang_2024 \u00b7 PD {&#x27;name&#x27;: &#x27;serum chloride&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # {'name': 'serum chloride — PD  <span class="pk-badge pk-badge--red">rejected</span>

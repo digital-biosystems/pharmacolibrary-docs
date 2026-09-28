@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cmax]` (270.7 vs not captured) and 2 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The codeine clearance of 0.18 ml/h in this one-compartment horse model is physiologically implausible, indicating a unit or scale extraction error, and the record was built from the abstract alone rather than a fitted model.**
+
+The record reports codeine clearance of 0.18 ml/h, a magnitude far outside the physiological window for a horse, consistent with a unit or scale extraction error. Because the source was abstract-only, the reported summary statistics (Cmax 270.7 ng/mL, tmax 0.438 h, elimination half-life 2.0 h, CL 0.18 ml/h) stood in for a fitted model. A second reader returned no values for Cmax, tmax, and elimination half-life, so no comparison could be computed for those parameters. Extracted — codeine: Cmax 271 ng mL-1, tmax 0.438 hours, t1/2z 2 hours, CL 0.18 ml/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cmax: this record has 270.7, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:06:14.223649+00:00) predates the upstream re-run (2026-09-23 14:29:42.341127+00:00). Current validate status: `rejected`.
 

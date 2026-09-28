@@ -5,7 +5,8 @@
 
 - **generic name:** propantheline
 - **ATC codes:** `A03AB05`, `A03CA34`
-- **DrugBank:** [DB00782](https://go.drugbank.com/drugs/DB00782)
+- **DrugBank:** [DB00782](https://go.drugbank.com/drugs/DB00782) · **PubChem:** [CID 4934](https://pubchem.ncbi.nlm.nih.gov/compound/4934)
+- **molar mass:** 368.4892 g/mol (C23H30NO3) — DrugBank
 - **groups:** approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Vose_1979_reference](drugs/drug_propantheline/Propantheline_Vose1979_reference.md) | Vose CW et al., Pharmacokinetics of propantheline bromi…, British journal of clinical… (1979) | [10.1111/j.1365-2125.1979.tb00902.x](https://doi.org/10.1111/j.1365-2125.1979.tb00902.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Vose_1979_reference](drugs/drug_propantheline/Propantheline_Vose1979_reference.md) | 1-compartment (no model) | 2 | Vose CW et al., Pharmacokinetics of propantheline bromi…, British journal of clinical… (1979) | [10.1111/j.1365-2125.1979.tb00902.x](https://doi.org/10.1111/j.1365-2125.1979.tb00902.x) |
 
 ## Pharmacodynamics (PD)
 

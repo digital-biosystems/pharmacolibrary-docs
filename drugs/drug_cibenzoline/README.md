@@ -4,7 +4,8 @@
 
 - **generic name:** cibenzoline
 - **ATC codes:** `C01BG07`
-- **DrugBank:** [DB13358](https://go.drugbank.com/drugs/DB13358)
+- **DrugBank:** [DB13358](https://go.drugbank.com/drugs/DB13358) · **PubChem:** not captured
+- **molar mass:** 262.356 g/mol (C18H18N2) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

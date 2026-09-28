@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal; T6_deviations.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([] vs [['dapsone', 'monoacetyldapsone', 'metabolism']]) and 2 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The dapsone model's terminal half-life (26.4 h) does not reproduce the reported 19.2 h, and the absorption rate ka was defaulted because the source never reported it, so the record was held for review.**
+
+The one-compartment dapsone model in HIV-infected patients reports CL/F 1.83 liters/h and V/F 69.6 liters, with a 25% clearance decrease with AZT. When simulated as the paper dosed it, the terminal half-life is 26.420415970598686 h versus the paper's 19.2 h, a ratio of 1.3761 beyond tolerance. The absorption rate constant ka and lag time were not reported in the source, so defaults were substituted, and absorption was invented as first-order depot input under an apparent (F=1, Fm=1, no molar correction) parameterization. A reported unit also lacked an SI conversion, and a second reader would additionally have linked dapsone to monoacetyldapsone via metabolism, which this record omits. Extracted — dapsone: CL/F 1.83 liters/h, V/F 69.6 liters, CL 25 %.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading dapsone → monoacetyldapsone (metabolism); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gatti G; Merighi M; Hossein J; Travaini S; Casazza R; Karlsson M; et al. et al. (1996). Antimicrobial agents and chemotherapy 40
@@ -26,6 +29,9 @@ Gatti G; Merighi M; Hossein J; Travaini S; Casazza R; Karlsson M; et al. et al. 
 
 ## Model component
 <dbs-pgx drug="dapsone" model-id="Dapsone_Gatti1996_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="dapsone" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -165,6 +171,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference.svg" alt="Dapsone_Gatti1996_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference_sim_controls.json"></dbs-fmusim>
 

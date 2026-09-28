@@ -5,7 +5,8 @@
 
 - **generic name:** diclofenac
 - **ATC codes:** `D11AX18`, `M01AB05`, `M02AA15`, `S01BC03`, `S01CC01`
-- **DrugBank:** [DB00586](https://go.drugbank.com/drugs/DB00586)
+- **DrugBank:** [DB00586](https://go.drugbank.com/drugs/DB00586) · **PubChem:** [CID 3033](https://pubchem.ncbi.nlm.nih.gov/compound/3033)
+- **molar mass:** 296.149 g/mol (C14H11Cl2NO2) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About

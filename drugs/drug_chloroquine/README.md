@@ -5,7 +5,8 @@
 
 - **generic name:** chloroquine
 - **ATC codes:** `P01BA01`, `P01BB52`
-- **DrugBank:** [DB00608](https://go.drugbank.com/drugs/DB00608)
+- **DrugBank:** [DB00608](https://go.drugbank.com/drugs/DB00608) · **PubChem:** [CID 2719](https://pubchem.ncbi.nlm.nih.gov/compound/2719)
+- **molar mass:** 319.872 g/mol (C18H26ClN3) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -20,6 +21,14 @@ Chloroquine was granted FDA Approval on 31 October 1949.[L12054]
 
 Chloroquine is also used off label for the treatment of rheumatic diseases,[A191655] as well as treatment and prophylaxis of Zika virus.[A191649,A191652] Chloroquine is currently undergoing clinical trials for the treatment of COVID-19.[A191631]
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| desethylchloroquine | metabolite | — (mass units only) | — | — | — | — |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
@@ -28,13 +37,13 @@ Chloroquine is also used off label for the treatment of rheumatic diseases,[A191
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Chotsiri_2022_reference](drugs/drug_chloroquine/Chloroquine_Chotsiri2022_reference.md) | Chotsiri P et al., Pharmacometric and Electrocardiographic…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2665](https://doi.org/10.1002/cpt.2665) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Karunajeewa_2010_reference](drugs/drug_chloroquine/Chloroquine_Karunajeewa2010_reference.md) | Karunajeewa HA et al., Pharmacokinetics of chloroquine and mon…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01269-09](https://doi.org/10.1128/AAC.01269-09) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.941). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yao_2021_reference](drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md) | Yao X et al., Population-based meta-analysis of chlor…, European journal of clinica… (2021) | [10.1007/s00228-020-03032-6](https://doi.org/10.1007/s00228-020-03032-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Abd-Rahman_2020_plasma_samples](drugs/drug_chloroquine/Chloroquine_AbdRahman2020_plasma_samples.md) | Abd-Rahman AN et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1893](https://doi.org/10.1002/cpt.1893) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Abd-Rahman_2020_whole_blood_samples](drugs/drug_chloroquine/Chloroquine_AbdRahman2020_whole_blood_samples.md) | Abd-Rahman AN et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1893](https://doi.org/10.1002/cpt.1893) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Chotsiri_2022_reference](drugs/drug_chloroquine/Chloroquine_Chotsiri2022_reference.md) | 1-compartment, oral | 1 | Chotsiri P et al., Pharmacometric and Electrocardiographic…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2665](https://doi.org/10.1002/cpt.2665) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Karunajeewa_2010_reference](drugs/drug_chloroquine/Chloroquine_Karunajeewa2010_reference.md) | 1-compartment, IV | 3 | Karunajeewa HA et al., Pharmacokinetics of chloroquine and mon…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01269-09](https://doi.org/10.1128/AAC.01269-09) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.941). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yao_2021_reference](drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md) | 1-compartment, oral | 5 | Yao X et al., Population-based meta-analysis of chlor…, European journal of clinica… (2021) | [10.1007/s00228-020-03032-6](https://doi.org/10.1007/s00228-020-03032-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Abd-Rahman_2020_plasma_samples](drugs/drug_chloroquine/Chloroquine_AbdRahman2020_plasma_samples.md) | parent + metabolite (no model) | 8 | Abd-Rahman AN et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1893](https://doi.org/10.1002/cpt.1893) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Abd-Rahman_2020_whole_blood_samples](drugs/drug_chloroquine/Chloroquine_AbdRahman2020_whole_blood_samples.md) | parent + metabolite (no model) | 8 | Abd-Rahman AN et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1893](https://doi.org/10.1002/cpt.1893) |
 
 ## ADME sites
 

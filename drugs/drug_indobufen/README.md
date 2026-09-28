@@ -4,7 +4,8 @@
 
 - **generic name:** indobufen
 - **ATC codes:** `B01AC10`
-- **DrugBank:** [DB12545](https://go.drugbank.com/drugs/DB12545)
+- **DrugBank:** [DB12545](https://go.drugbank.com/drugs/DB12545) · **PubChem:** [CID 107641](https://pubchem.ncbi.nlm.nih.gov/compound/107641)
+- **molar mass:** 295.338 g/mol (C18H17NO3) — DrugBank
 - **groups:** investigational
 
 ## About

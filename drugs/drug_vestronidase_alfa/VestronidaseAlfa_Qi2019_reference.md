@@ -13,7 +13,13 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The vestronidase alfa two-compartment parameters (CL 9.61, V1 9.64, Q 16.3, V2 4.23) carry only the label 'units', so the L/h and L dimensions of the clearance and volume terms could not be converted to SI and the record was rejected.**
+
+The published table lists CL, Vc, Q and Vp for vestronidase alfa with the footnote marker 'a' and the unit column reading only 'units', which is not convertible to SI for either the L/h clearance terms (CL 9.61, Q 16.3) or the L volume terms (Vc 9.64, Vp 4.23). Because of this dimension mismatch on the structural parameters, the disposition clearance and the central and peripheral volumes entered the model without SI values, and the record was held back rather than published. Extracted — vestronidase alfa: CL 9.61 units, V1 9.64 units, Q 16.3 units, V2 4.23 units.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Qi_2019)

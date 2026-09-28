@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 4 covered; T6_deviations — got invented_absorption: not acceptable.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The glibenclamide model was quarantined because bioavailability, clearance, volume of distribution, absorption rate constant and lag time had no reported values and library defaults were substituted, with kcomp (k23) also uncovered.**
+
+No source values exist for glibenclamide's bioavailability (F), clearance (CL), volume of distribution (Vd), absorption rate constant (ka) and absorption lag time (Tlag), so library placeholder values stood in and the model was held back rather than published with invented numbers. The absorption rate constant was explicitly defaulted although it was not reported in the source, an invented-absorption deviation judged not acceptable. The parameter-coverage check expected 5 parameters emitted or defaulted but covered only 4; kcomp (k23, 0.30 1/h) was neither emitted nor defaulted. Additionally, a reported unit could not be converted to SI, so that parameter reached the model build without an SI value. Extracted — glibenclamide: kel 1.02, V 3.39 l, kcomp 0.3, kabs 0.27, MTT -0.359 h, n_transit 22.9, Fab 0.75 F, CL 10.2 l/h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Savic RM; Jonker DM; Kerbusch T; Karlsson MO et al. (2007). Journal of pharmacokinetics and pharmacodynamics 34
@@ -25,6 +27,9 @@ Savic RM; Jonker DM; Kerbusch T; Karlsson MO et al. (2007). Journal of pharmacok
 
 ## Model component
 <dbs-pgx drug="glibenclamide" model-id="Glibenclamide_Savic2007_transit" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="glibenclamide, furosemide, amiloride, moxonidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 

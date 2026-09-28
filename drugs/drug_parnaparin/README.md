@@ -4,7 +4,7 @@
 
 - **generic name:** parnaparin
 - **ATC codes:** `B01AB07`
-- **DrugBank:** [DB09260](https://go.drugbank.com/drugs/DB09260)
+- **DrugBank:** [DB09260](https://go.drugbank.com/drugs/DB09260) · **PubChem:** not captured
 - **groups:** approved
 
 ## About

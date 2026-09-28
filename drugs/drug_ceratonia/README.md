@@ -4,7 +4,7 @@
 
 - **generic name:** ceratonia
 - **ATC codes:** `A07XA02`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

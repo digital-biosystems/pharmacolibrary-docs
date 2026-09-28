@@ -4,7 +4,8 @@
 
 - **generic name:** dezocine
 - **ATC codes:** `N02AX03`
-- **DrugBank:** [DB01209](https://go.drugbank.com/drugs/DB01209)
+- **DrugBank:** [DB01209](https://go.drugbank.com/drugs/DB01209) · **PubChem:** [CID 3033053](https://pubchem.ncbi.nlm.nih.gov/compound/3033053)
+- **molar mass:** 245.3599 g/mol (C16H23NO) — DrugBank
 - **groups:** approved, investigational
 
 ## About

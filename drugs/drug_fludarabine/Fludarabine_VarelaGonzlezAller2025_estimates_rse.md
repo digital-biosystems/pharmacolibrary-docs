@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Varela-González-Aller J; Sánchez-Salinas MA; Troconiz I; Iacoboni G; Alonso-Martínez C; Carreras-Soler MJ; et al. et al. (2025). Pharmaceutics 17
@@ -25,6 +27,9 @@ Varela-González-Aller J; Sánchez-Salinas MA; Troconiz I; Iacoboni G; Alonso-Ma
 
 ## Model component
 <dbs-pgx drug="fludarabine" model-id="Fludarabine_VarelaGonzlezAller2025_estimates_rse" status="rejected" stale="false" population="patients receiving CAR T-cell therapy for relapsed/refractory large B-cell lymphoma" measured-compound="fludarabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 

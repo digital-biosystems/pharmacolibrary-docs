@@ -4,7 +4,8 @@
 
 - **generic name:** oxitriptan
 - **ATC codes:** `N06AX01`
-- **DrugBank:** [DB02959](https://go.drugbank.com/drugs/DB02959)
+- **DrugBank:** [DB02959](https://go.drugbank.com/drugs/DB02959) · **PubChem:** [CID 439280](https://pubchem.ncbi.nlm.nih.gov/compound/439280)
+- **molar mass:** 220.2246 g/mol (C11H12N2O3) — DrugBank
 - **groups:** approved, investigational, nutraceutical, withdrawn
 
 ## About

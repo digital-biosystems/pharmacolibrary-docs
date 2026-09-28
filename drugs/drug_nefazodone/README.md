@@ -4,7 +4,8 @@
 
 - **generic name:** nefazodone
 - **ATC codes:** `N06AX06`
-- **DrugBank:** [DB01149](https://go.drugbank.com/drugs/DB01149)
+- **DrugBank:** [DB01149](https://go.drugbank.com/drugs/DB01149) · **PubChem:** [CID 4449](https://pubchem.ncbi.nlm.nih.gov/compound/4449)
+- **molar mass:** 470.007 g/mol (C25H32ClN5O2) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

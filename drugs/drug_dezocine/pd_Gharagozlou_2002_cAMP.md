@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;dezocine&quot;,&quot;href&quot;:&quot;drugs/drug_dezocine/&quot;},{&quot;label&quot;:&quot;Gharagozlou_2002 \u00b7 PD cAMP production&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cAMP production — PD  <span class="pk-badge pk-badge--red">rejected</span>

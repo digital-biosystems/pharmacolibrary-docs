@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The naldemedine two-compartment model was quarantined because clearance (CL/F) and absorption rate constant (Ka) had no values in the source, so library defaults were substituted instead of reported estimates.**
+
+The record lists CL/F and Ka with units (L/hr and hr-1) but no values; only V1/F (87.5 L), Q/F (5.59 L/hr), V2/F (46.6 L) and tlag (0.202 hr) carry numbers, with CL/F 8.44 L/hr and Ka 4.45 hr-1 appearing only as typical values. The model builder defaulted both Cl and ka, meaning library placeholder values would have stood in for parameters not reported in the source. The failed check flagged this as invented absorption, judged not acceptable, since Ka was defaulted rather than reported. The model was therefore held back rather than published with an invented number. Extracted — naldemedine: V1/F 87.5 L, Q/F 5.59 L/hr, V2/F 46.6 L, tlag 0.202 hr.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kubota R; Fukumura K; Wajima T et al. (2018). Pharmaceutical research 35
@@ -25,6 +27,9 @@ Kubota R; Fukumura K; Wajima T et al. (2018). Pharmaceutical research 35
 
 ## Model component
 <dbs-pgx drug="naldemedine" model-id="Naldemedine_Kubota2018_cl_f_l_hr" status="model_quarantined" stale="false" population="healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC" measured-compound="naldemedine" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

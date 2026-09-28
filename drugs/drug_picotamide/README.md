@@ -4,7 +4,8 @@
 
 - **generic name:** picotamide
 - **ATC codes:** `B01AC03`
-- **DrugBank:** [DB13327](https://go.drugbank.com/drugs/DB13327)
+- **DrugBank:** [DB13327](https://go.drugbank.com/drugs/DB13327) · **PubChem:** not captured
+- **molar mass:** 376.416 g/mol (C21H20N4O3) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

@@ -5,7 +5,8 @@
 
 - **generic name:** digitoxin
 - **ATC codes:** `C01AA04`
-- **DrugBank:** [DB01396](https://go.drugbank.com/drugs/DB01396)
+- **DrugBank:** [DB01396](https://go.drugbank.com/drugs/DB01396) · **PubChem:** [CID 441207](https://pubchem.ncbi.nlm.nih.gov/compound/441207)
+- **molar mass:** 764.9391 g/mol (C41H64O13) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Flasch_1979_reference](drugs/drug_digitoxin/Digitoxin_Flasch1979_reference.md) | Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg's archi… (1979) | [10.1007/BF00500279](https://doi.org/10.1007/BF00500279) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Flasch_1979_reference](drugs/drug_digitoxin/Digitoxin_Flasch1979_reference.md) | parent + metabolite (no model) | 1 | Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg's archi… (1979) | [10.1007/BF00500279](https://doi.org/10.1007/BF00500279) |
 
 ## ADME sites
 

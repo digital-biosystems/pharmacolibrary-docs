@@ -4,7 +4,7 @@
 
 - **generic name:** beclometasone
 - **ATC codes:** `A07EA07`, `D07AC15`, `R01AD01`, `R03BA01`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

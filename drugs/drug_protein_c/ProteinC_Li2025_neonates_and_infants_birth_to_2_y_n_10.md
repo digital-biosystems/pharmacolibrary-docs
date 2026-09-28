@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_terminal
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl]` (not captured vs 7.14) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Open the paper's reported table and confirm the target value and its units.
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 2.63, model 1.2).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — protein c: CL 0.555 L/kg/h, V 20 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has none, the second reading 7.14; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `protein C concentrate`, measured `protein C`.
 
@@ -27,6 +30,9 @@ not matched (stem Li_2025)
 
 ## Model component
 <dbs-pgx drug="protein C" model-id="ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10" status="needs_review" stale="false" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -176,6 +182,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10.svg" alt="ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10 diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_sim_controls.json"></dbs-fmusim>
 

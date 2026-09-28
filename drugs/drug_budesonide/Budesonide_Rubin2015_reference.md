@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**AUC has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — budesonide: CL/F 464 L/h, V/F 2.7e+03 L, tlag 0.149 h, AUC 4.31 ng h/mL, Cmax 0.573 ng/mL.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Rubin DT; Sandborn WJ; Bosworth B; Zakko S; Gordon GL; Sale ME; et al. et al. (2015). Digestive diseases and sciences 60
@@ -25,6 +27,9 @@ Rubin DT; Sandborn WJ; Bosworth B; Zakko S; Gordon GL; Sale ME; et al. et al. (2
 
 ## Model component
 <dbs-pgx drug="budesonide" model-id="Budesonide_Rubin2015_reference" status="needs_review" stale="false" population="patients with mild-to-moderate ulcerative proctitis or proctosigmoiditis and healthy volunteers" measured-compound="budesonide" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

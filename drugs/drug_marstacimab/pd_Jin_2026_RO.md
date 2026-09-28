@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;marstacimab&quot;,&quot;href&quot;:&quot;drugs/drug_marstacimab/&quot;},{&quot;label&quot;:&quot;Jin_2026 \u00b7 PD TFPI receptor occupancy&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Marstacimab_Nayak2026_reference&quot;,&quot;label&quot;:&quot;Nayak_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_marstacimab/Marstacimab_Nayak2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 

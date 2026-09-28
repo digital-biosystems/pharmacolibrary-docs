@@ -5,7 +5,8 @@
 
 - **generic name:** trabectedin
 - **ATC codes:** `L01CX01`
-- **DrugBank:** [DB05109](https://go.drugbank.com/drugs/DB05109)
+- **DrugBank:** [DB05109](https://go.drugbank.com/drugs/DB05109) · **PubChem:** [CID 108150](https://pubchem.ncbi.nlm.nih.gov/compound/108150)
+- **molar mass:** 761.837 g/mol (C39H43N3O11S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Perez-Ruixo_2007_cancer patients](drugs/drug_trabectedin/Trabectedin_PerezRuixo2007_cancer_patients.md) | Perez-Ruixo JJ et al., Population pharmacokinetic meta-analysi…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746100-00005](https://doi.org/10.2165/00003088-200746100-00005) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Poggesi_2019_children and adolescent patients with cancer](drugs/drug_trabectedin/Trabectedin_Poggesi2019_children_and_adolescent_patients_wit.md) | Poggesi I et al., Population pharmacokinetics of trabecte…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03899-y](https://doi.org/10.1007/s00280-019-03899-y) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Perez-Ruixo_2007_cancer patients](drugs/drug_trabectedin/Trabectedin_PerezRuixo2007_cancer_patients.md) | — (no model) | 0 | Perez-Ruixo JJ et al., Population pharmacokinetic meta-analysi…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746100-00005](https://doi.org/10.2165/00003088-200746100-00005) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Poggesi_2019_children and adolescent patients with cancer](drugs/drug_trabectedin/Trabectedin_Poggesi2019_children_and_adolescent_patients_wit.md) | — (no model) | 0 | Poggesi I et al., Population pharmacokinetics of trabecte…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03899-y](https://doi.org/10.1007/s00280-019-03899-y) |
 
 ## Pharmacodynamics (PD)
 

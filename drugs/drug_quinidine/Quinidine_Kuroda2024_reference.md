@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (quinidine vs quinidine sulfate dihydrate) and 16 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Quinidine's clearance, volumes of distribution, absorption rate constant, lag time and both intercompartmental rate constants had no reported values, so library defaults stood in; the absorption rate constant was invented and one reported unit could not be converted to SI.**
+
+The record lists quinidine parameters for Thoroughbred racehorses (e.g. CL 0.49, V1 0.63, kabs 1.00), but clearance, volume of distribution, absorption rate constant, absorption lag time, central→peripheral rate constant and peripheral→central rate constant were not reported in the source, so placeholder defaults were substituted and the model was held back rather than published with invented numbers. The absorption rate constant was specifically defaulted because it was not reported in the source, an invented absorption that failed review. Additionally, a reported unit (for a parameter such as Vss 4.90 or MRT 10.12) could not be converted to SI units, so that parameter reached the model without an SI value. A second reader also disagreed on several values, reading clearance as 25.6 rather than 0.49 and intercompartmental clearance as 74.9 rather than 2.87, and bioavailability as 33.1 rather than 36.4. Extracted — quinidine: V1 0.63, V2 0.59, V3 3.68, CL 0.49, Q 2.87, kabs 1, Fab 36.4, t1/2α 0.06, … (+5).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has quinidine, the second reading quinidine sulfate dihydrate; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kuroda T; Minamijima Y; Kinman CK; Takahashi Y; Ebisuda Y; Inoue K; et al. et al. (2024). Frontiers in veterinary science 11
@@ -26,6 +29,9 @@ Kuroda T; Minamijima Y; Kinman CK; Takahashi Y; Ebisuda Y; Inoue K; et al. et al
 
 ## Model component
 <dbs-pgx drug="quinidine" model-id="Quinidine_Kuroda2024_reference" status="model_quarantined" stale="false" population="Thoroughbred racehorses" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 13 extracted.
 
 **Parameterization:** mechanistic.
 

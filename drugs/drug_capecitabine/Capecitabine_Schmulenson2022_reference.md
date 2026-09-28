@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (regorafenib and capecitabine vs regorafenib, capecitabine) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for capecitabine's elimination clearance and intercompartmental clearance.**
+
+The model was built, but capecitabine's elimination clearance and intercompartmental clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (CL/F, V1/F, MAT and V2/F), so that value has no SI equivalent. Extracted — capecitabine: CL/F 1.94 relative standard error, %, V1/F 10.4 relative standard error, %, MAT 3.01 relative standard error, %, V2/F 63.9 relative standard error, %, Q/F 13.5 relative standard error, %, kmet 0.265 relative standard error, %, AUC%ext 4.7.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has regorafenib and capecitabine, the second reading regorafenib, capecitabine; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `capecitabine`, measured `capecitabine and regorafenib`.
 
@@ -28,6 +31,9 @@ Schmulenson E; Bovet C; Theurillat R; Decosterd LA; Largiadèr CR; Prost JC; et 
 
 ## Model component
 <dbs-pgx drug="capecitabine" model-id="Capecitabine_Schmulenson2022_reference" status="model_quarantined" stale="false" population="patients with locally advanced rectal cancer" measured-compound="capecitabine and regorafenib" parameterization="apparent" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

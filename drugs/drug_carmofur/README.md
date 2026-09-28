@@ -4,7 +4,8 @@
 
 - **generic name:** carmofur
 - **ATC codes:** `L01BC04`
-- **DrugBank:** [DB09010](https://go.drugbank.com/drugs/DB09010)
+- **DrugBank:** [DB09010](https://go.drugbank.com/drugs/DB09010) · **PubChem:** [CID 2577](https://pubchem.ncbi.nlm.nih.gov/compound/2577)
+- **molar mass:** 257.2614 g/mol (C11H16FN3O3) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About

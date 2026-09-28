@@ -5,7 +5,8 @@
 
 - **generic name:** atogepant
 - **ATC codes:** `N02CD07`
-- **DrugBank:** [DB16098](https://go.drugbank.com/drugs/DB16098)
+- **DrugBank:** [DB16098](https://go.drugbank.com/drugs/DB16098) · **PubChem:** not captured
+- **molar mass:** 603.525 g/mol (C29H23F6N5O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -24,11 +25,11 @@ In patients requiring preventative migraine therapy, current practice guidelines
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Schlachter_2026_phase_1_model](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_1_model.md) | Schlachter (2026) | — |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Schlachter_2026_phase_2_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md) | Schlachter (2026) | — |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.731). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Schlachter_2026_phase_3_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_3_modela.md) | Schlachter (2026) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Schlachter_2026_phase_1_model](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_1_model.md) | 2-compartment, oral | 7 (+2 cov.) | Schlachter (2026) | — |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Schlachter_2026_phase_2_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md) | 2-compartment, oral | 9 (+2 cov.) | Schlachter (2026) | — |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.731). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Schlachter_2026_phase_3_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_3_modela.md) | 2-compartment, oral | 8 (+6 cov.) | Schlachter (2026) | — |
 
 ## ADME sites
 

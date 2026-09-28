@@ -4,7 +4,7 @@
 
 - **generic name:** phenazone, combinations excl. psycholeptics
 - **ATC codes:** `N02BB51`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary

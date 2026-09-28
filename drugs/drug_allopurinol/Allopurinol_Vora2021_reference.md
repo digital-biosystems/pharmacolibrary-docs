@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** missing key parameters — none reported by this paper.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (allopurinol vs unknown) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (engineer: the topology is outside the template set the engineer can build).
-<sub>owner: **engineer**</sub>
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No model template covers this structure. None of the extracted parameters is allopurinol's own; they describe oxypurinol and serum uric acid. Extracted — oxypurinol: ? 0.253, ? 1.74e+03, ? 5.7e+04, ? 0.771, ? -0.248; serum uric acid: ? 4.36.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
 

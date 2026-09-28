@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C1_half_life_beta failed (ratio 0.0171)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl]` (14.5 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.0171).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — metoclopramide: CL 14.5 mL/kg/min, V 3.51 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 14.5, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Brandon AM; Williams JM; Davis JL; Martin EG; Capper AM; Crabtree NE et al. (2024). Veterinary surgery : VS 53
@@ -26,6 +29,9 @@ Brandon AM; Williams JM; Davis JL; Martin EG; Capper AM; Crabtree NE et al. (202
 
 ## Model component
 <dbs-pgx drug="metoclopramide" model-id="Metoclopramide_Brandon2024_reference" status="needs_review" stale="false" population="healthy adult horses" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 

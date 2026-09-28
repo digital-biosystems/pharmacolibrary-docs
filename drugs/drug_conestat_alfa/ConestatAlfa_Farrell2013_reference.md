@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (recombinant human C1 inhibitor vs conestat_alfa) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — conestat alfa: V 2.86 l, Vmax 1.63, Km 1.6 U ml-1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has recombinant human C1 inhibitor, the second reading conestat_alfa; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Farrell C; Hayes S; Relan A; van Amersfoort ES; Pijpstra R; Hack CE et al. (2013). British journal of clinical pharmacology 76
@@ -26,6 +29,9 @@ Farrell C; Hayes S; Relan A; van Amersfoort ES; Pijpstra R; Hack CE et al. (2013
 
 ## Model component
 <dbs-pgx drug="conestat alfa" model-id="ConestatAlfa_Farrell2013_reference" status="needs_review" stale="false" population="healthy volunteers and hereditary angioedema patients" measured-compound="recombinant human C1 inhibitor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 

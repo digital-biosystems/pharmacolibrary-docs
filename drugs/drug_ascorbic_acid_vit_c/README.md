@@ -5,7 +5,7 @@
 
 - **generic name:** ascorbic acid (vit C)
 - **ATC codes:** `A11GA01`
-- **DrugBank:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
 ## Extraction summary
@@ -16,9 +16,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Löscher_1984_horses](drugs/drug_ascorbic_acid_vit_c/AscorbicAcidVitC_Lscher1984_horses.md) | Löscher W et al., Pharmacokinetics of ascorbic acid in ho…, Equine veterinary journal (1984) | [10.1111/j.2042-3306.1984.tb01855.x](https://doi.org/10.1111/j.2042-3306.1984.tb01855.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Löscher_1984_horses](drugs/drug_ascorbic_acid_vit_c/AscorbicAcidVitC_Lscher1984_horses.md) | — (no model) | 0 | Löscher W et al., Pharmacokinetics of ascorbic acid in ho…, Equine veterinary journal (1984) | [10.1111/j.2042-3306.1984.tb01855.x](https://doi.org/10.1111/j.2042-3306.1984.tb01855.x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

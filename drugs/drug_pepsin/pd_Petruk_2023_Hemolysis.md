@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A09A&quot;,&quot;href&quot;:&quot;atc/A09A.md&quot;},{&quot;label&quot;:&quot;pepsin&quot;,&quot;href&quot;:&quot;drugs/drug_pepsin/&quot;},{&quot;label&quot;:&quot;Petruk_2023 \u00b7 PD Hemolysis&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Hemolysis — PD  <span class="pk-badge pk-badge--green">extracted</span>

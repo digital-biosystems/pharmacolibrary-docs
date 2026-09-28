@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C6_cl_magnitude failed (ratio None).
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q30]` (1220 vs not captured) and 5 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
-<sub>owner: **curator**</sub>
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — doxorubicin: CL 350 mL/day, V1 3.1 L, V2 4.1 L, Q 1.22e+03 mL/day.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Q: this record has 1220, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Augustin A; Avignon B; Boetsch C; Breous-Nystrom E; Broders O; Cabon L; Dernick K; Durr E; Eigenmann MJ; Fischer S; Flinn N; Gerard R; Giusti AM; Gjorevski N; Grote HJ; Häusermann F; Hobi N; Husar E; Juglair L; Keiser SP; Keshelava N; Kustermann S; Marban-Doran C; Marrer-Berger E; Quetglas IM; Micallef V; Matheis R; Ortiz Franyuti D; Polonchuk L; Raggi G; Roller A; Ruffiner P; Sadok S; Saylan T; Schaub N; Schubert D; Shetage S; Stokar-Regenscheit N; Walz AC; Weinzierl T; Wolowski V; Zihlmann C et al. (2026). Frontiers in immunology 17

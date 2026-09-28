@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** no distribution volume and no clearance/elimination — not a compartmental popPK model (exposure/outcome paper); C5 dimension mismatch on a structural parameter
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The record was refused because the paper reports no distribution volume and no clearance or elimination rate for ticagrelor or PB2452, so it is not a compartmental population PK model, and a structural parameter fails a dimensional-consistency check.**
+
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. In addition, a structural parameter fails a dimensional-consistency check: the printed units do not match the parameter's physical dimensions — for example Kon is given as nmol−1 × h−1 while Kd is given only as 'nmol' with the unit field left as 'Units', and several parameters (ktr, CL/F, V1/F, V2/F, Q3/F, CL, V1, V2, Q) carry the placeholder 'Units' instead of their actual units. The record was therefore rejected. Extracted — ticagrelor: Q2 1.05.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `ticagrelor, PB2452`, measured `PB2452`.
 

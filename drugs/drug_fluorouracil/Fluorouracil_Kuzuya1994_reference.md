@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (5-fluorouracil vs 5-fluorouracil and mitomycin C) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**CL has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fluorouracil: AUC ratio 1.4e+03 5-fluorouracil, t1/2z 1 h, kabs 0.71 h-1, CL 1.8 L h-1 m-2, V 161 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has 5-fluorouracil, the second reading 5-fluorouracil and mitomycin C; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kuzuya T; Yamauchi M; Ito A; Hasegawa M; Hasegawa T; Nabeshima T et al. (1994). The Journal of pharmacy and pharmacology 46

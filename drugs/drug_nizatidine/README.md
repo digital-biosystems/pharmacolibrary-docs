@@ -5,7 +5,8 @@
 
 - **generic name:** nizatidine
 - **ATC codes:** `A02BA04`
-- **DrugBank:** [DB00585](https://go.drugbank.com/drugs/DB00585)
+- **DrugBank:** [DB00585](https://go.drugbank.com/drugs/DB00585) · **PubChem:** [CID 3033637](https://pubchem.ncbi.nlm.nih.gov/compound/3033637)
+- **molar mass:** 331.45 g/mol (C12H21N5O2S2) — DrugBank
 - **groups:** approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abdel-Rahman_2004_reference](drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_reference.md) | Abdel-Rahman SM et al., Developmental pharmacokinetics and phar…, Journal of pediatric gastro… (2004) | [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abdel-Rahman_2004_reference](drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_reference.md) | parent + metabolite (no model) | 0 | Abdel-Rahman SM et al., Developmental pharmacokinetics and phar…, Journal of pediatric gastro… (2004) | [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015) |
 
 ## ADME sites
 

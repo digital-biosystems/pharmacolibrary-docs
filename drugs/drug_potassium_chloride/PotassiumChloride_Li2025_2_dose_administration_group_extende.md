@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (potassium chloride vs potassium chloride extended-release tablets and potassium citrate granules) and 1 more field(s) — a structural parameter, so the record is disputed.
+**The potassium chloride record lacks a distribution volume and clearance — it is an exposure/outcome paper, not a compartmental popPK model — and a structural parameter has a dimension mismatch.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The paper reports only exposure metrics for potassium: C0 3.56 mmol/L, Tmax 6.00 h, Cmax 4.14 mmol/L, Ka 0.37 per hour, t1/2 13.53 h and AUC∞ 106.89 mmol·h/L, with no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model. A dimension mismatch was flagged on a structural parameter, and a reported unit could not be converted to SI, so that parameter reached the build without an SI value. A second reader also disagreed on the dosed compound (potassium chloride versus potassium chloride extended-release tablets and potassium citrate granules) and on the AUC∞ parameter identity. Extracted — potassium chloride: C0 3.56 mmol/L, tmax 6 h, Cmax 4.14 mmol/L, kabs 0.37 per hour, t1/2z 13.5 h, AUC∞ 107 mmol·h/L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has potassium chloride, the second reading potassium chloride extended-release tablets and potassium citrate granules; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `potassium chloride`, measured `potassium`.
 
@@ -27,6 +31,9 @@ Li X; Qu M; Li H; Li T et al. (2025). Frontiers in cardiovascular medicine 12
 
 ## Model component
 <dbs-pgx drug="potassium chloride" model-id="PotassiumChloride_Li2025_2_dose_administration_group_extende" status="rejected" stale="false" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

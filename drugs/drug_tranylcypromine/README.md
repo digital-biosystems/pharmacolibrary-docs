@@ -4,7 +4,8 @@
 
 - **generic name:** tranylcypromine
 - **ATC codes:** `N06AF04`
-- **DrugBank:** [DB00752](https://go.drugbank.com/drugs/DB00752)
+- **DrugBank:** [DB00752](https://go.drugbank.com/drugs/DB00752) · **PubChem:** [CID 5530](https://pubchem.ncbi.nlm.nih.gov/compound/5530)
+- **molar mass:** 133.194 g/mol (C9H11N) — DrugBank
 - **groups:** approved, investigational
 
 ## About

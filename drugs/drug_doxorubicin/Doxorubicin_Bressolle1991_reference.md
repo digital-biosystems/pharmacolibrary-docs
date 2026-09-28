@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[c]` (-0.22 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The doxorubicin record was rejected because the extracted clearance (350.0 mL/day) and volume (100.0 µL) are physiologically implausible, indicating a unit or scale extraction error from the abstract-only source.**
+
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The extracted doxorubicin clearance of 350.0 mL/day and apparent volume of 100.0 µL fall far outside any physiological window for this drug, consistent with a unit or scale misreading. The elimination half-life of 0.0839 h is likewise implausibly short for doxorubicin, and the 48-hour concentration is negative (-0.22 ng/mL). A second reader disputed both the half-life value and the negative concentration, reading them as null, though the rejection rested on the implausible clearance and volume magnitudes. Extracted — doxorubicin: t1/2z 0.0839 h, Ct -0.22 ng/ml, CL 350 mL/day, V 100 µL, tlag 2.3 min.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of c: this record has -0.22, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Bressolle F; Ray P; Jacquet JM; Brès J; Galtier M; Donadio D; et al. et al. (1991). Cancer chemotherapy and pharmacology 29

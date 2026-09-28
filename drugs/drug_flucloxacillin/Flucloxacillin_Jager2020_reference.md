@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The flucloxacillin two-compartment model was rejected because a structural parameter was reported in a unit that could not be converted to SI, leaving a dimension mismatch on that parameter.**
+
+The record reports flucloxacillin parameters for critically ill adults — CL 42.8 L/h, V1 36.9 L, V2 41.6 L, Q 32.6 L/h, plus binding parameters Bmax 0.316 mmol/L and KD 0.0260 mmol/L — in a two-compartment structure. One of these structural parameters carried a reported unit that could not be expressed in SI units, so it entered the model without a consistent dimension and failed the dimensional consistency check. The model was therefore refused. Extracted — flucloxacillin: Bmax 0.316 mmol/L, KD 0.026 mmol/L, CL 42.8 L/h, V1 36.9 L, V2 41.6 L, Q 32.6 L/h.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Jager NGL; van Hest RM; Xie J; Wong G; Ulldemolins M; Brüggemann RJM; et al. et al. (2020). The Journal of antimicrobial chemotherapy 75
@@ -26,6 +29,9 @@ Jager NGL; van Hest RM; Xie J; Wong G; Ulldemolins M; Brüggemann RJM; et al. et
 
 ## Model component
 <dbs-pgx drug="flucloxacillin" model-id="Flucloxacillin_Jager2020_reference" status="rejected" stale="false" population="critically ill adult patients" measured-compound="flucloxacillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 

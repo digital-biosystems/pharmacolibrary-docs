@@ -4,7 +4,8 @@
 
 - **generic name:** lofepramine
 - **ATC codes:** `N06AA07`
-- **DrugBank:** [DB13411](https://go.drugbank.com/drugs/DB13411)
+- **DrugBank:** [DB13411](https://go.drugbank.com/drugs/DB13411) · **PubChem:** not captured
+- **molar mass:** 418.97 g/mol (C26H27ClN2O) — DrugBank
 - **groups:** experimental
 
 ## Extraction summary

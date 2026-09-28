@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;naratriptan&quot;,&quot;href&quot;:&quot;drugs/drug_naratriptan/&quot;},{&quot;label&quot;:&quot;Maas_2006 \u00b7 PD headache intensity score&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # headache intensity score — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>

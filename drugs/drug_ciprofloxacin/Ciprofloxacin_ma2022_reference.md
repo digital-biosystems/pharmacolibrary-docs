@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q1, Q22 — no SI value to build from
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[β_kpm_clcr]` (0.81 vs not captured) and 1 more field(s) — not a structural parameter.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**Km and CL have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — ciprofloxacin: V 566 L, kel 0.07 h−1; desethylene ciprofloxacin: kel 3.81 h−1, Km -0.035, kfm 0.017 h−1, CL 0.81.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of β_kpm_clcr: this record has 0.81, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `ciprofloxacin`, measured `desethylene ciprofloxacin`.
 

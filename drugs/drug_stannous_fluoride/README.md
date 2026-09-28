@@ -4,7 +4,8 @@
 
 - **generic name:** stannous fluoride
 - **ATC codes:** `A01AA04`
-- **DrugBank:** [DB11092](https://go.drugbank.com/drugs/DB11092)
+- **DrugBank:** [DB11092](https://go.drugbank.com/drugs/DB11092) · **PubChem:** [CID 24550](https://pubchem.ncbi.nlm.nih.gov/compound/24550)
+- **molar mass:** 156.71 g/mol (F2Sn) — DrugBank
 - **groups:** approved, investigational
 
 ## About

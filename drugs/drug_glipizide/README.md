@@ -5,7 +5,8 @@
 
 - **generic name:** glipizide
 - **ATC codes:** `A10BB07`
-- **DrugBank:** [DB01067](https://go.drugbank.com/drugs/DB01067)
+- **DrugBank:** [DB01067](https://go.drugbank.com/drugs/DB01067) · **PubChem:** [CID 3478](https://pubchem.ncbi.nlm.nih.gov/compound/3478)
+- **molar mass:** 445.535 g/mol (C21H27N5O4S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Dhawan_2006_healthy male volunteers](drugs/drug_glipizide/Glipizide_Dhawan2006_healthy_male_volunteers.md) | Dhawan S et al., Bioavailability of immediate- and exten…, Clinical pharmacokinetics (2006) | [10.2165/00003088-200645030-00007](https://doi.org/10.2165/00003088-200645030-00007) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Dhawan_2006_healthy male volunteers](drugs/drug_glipizide/Glipizide_Dhawan2006_healthy_male_volunteers.md) | — (no model) | 0 | Dhawan S et al., Bioavailability of immediate- and exten…, Clinical pharmacokinetics (2006) | [10.2165/00003088-200645030-00007](https://doi.org/10.2165/00003088-200645030-00007) |
 
 ## Pharmacodynamics (PD)
 

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q32]` (2.03 vs 1) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**Doxazosin clearance of 0.027 ml/h and volume of 0.0001 L are physiologically implausible, indicating a unit or scale extraction error, so the record was rejected.**
+
+The extracted doxazosin clearance is 0.027 ml/h, orders of magnitude below any plausible value for this molecule, and the volume of distribution is 0.0001 L, derived from CL·t½/ln2 — both magnitudes point to a unit or scale error in extraction. A second reader also disagreed on one value, reading 1 where the record holds 2.03, further undermining confidence in the extracted numbers. The record was therefore rejected for implausible parameter magnitudes. Extracted — doxazosin: CL 0.027 ml/h, V 0.0001 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 2.03, the second reading 1. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-23 12:15:40.769176+00:00) predates the upstream re-run (2026-09-27 13:37:23.033182+00:00). Current validate status: `rejected`.
 

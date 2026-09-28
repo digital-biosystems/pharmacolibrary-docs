@@ -5,7 +5,8 @@
 
 - **generic name:** hydroxychloroquine
 - **ATC codes:** `P01BA02`
-- **DrugBank:** [DB01611](https://go.drugbank.com/drugs/DB01611)
+- **DrugBank:** [DB01611](https://go.drugbank.com/drugs/DB01611) · **PubChem:** [CID 3652](https://pubchem.ncbi.nlm.nih.gov/compound/3652)
+- **molar mass:** 335.872 g/mol (C18H26ClN3O) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -28,11 +29,11 @@ A recent study reported a fatality in the group being treated with hydroxychloro
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Thémans_2020_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference.md) | Thémans P et al., Population Pharmacokinetics of Hydroxyc…, European journal of drug me… (2020) | [10.1007/s13318-020-00648-y](https://doi.org/10.1007/s13318-020-00648-y) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Alvarez_2022_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference.md) | Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15020256](https://doi.org/10.3390/ph15020256) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zahr_2021_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md) | Zahr N et al., Pharmacokinetics and pharmacodynamics o…, Therapie (2021) | [10.1016/j.therap.2021.01.056](https://doi.org/10.1016/j.therap.2021.01.056) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Thémans_2020_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference.md) | 1-compartment, oral | 6 | Thémans P et al., Population Pharmacokinetics of Hydroxyc…, European journal of drug me… (2020) | [10.1007/s13318-020-00648-y](https://doi.org/10.1007/s13318-020-00648-y) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Alvarez_2022_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference.md) | 2-compartment general linear | 5 | Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15020256](https://doi.org/10.3390/ph15020256) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zahr_2021_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md) | 1-compartment, oral | 3 | Zahr N et al., Pharmacokinetics and pharmacodynamics o…, Therapie (2021) | [10.1016/j.therap.2021.01.056](https://doi.org/10.1016/j.therap.2021.01.056) |
 
 ## ADME sites
 

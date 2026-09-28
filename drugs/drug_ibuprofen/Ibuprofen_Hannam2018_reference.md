@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The ibuprofen volume of distribution was extracted as 22.37 ml, an implausibly small magnitude for children undergoing adenotonsillectomy, indicating a unit or scale error, so the record was rejected.**
+
+The record lists ibuprofen clearance as 13.2 L/h per 70 kg and an absorption rate constant of 1.1 h⁻¹, both physiologically plausible, but the volume of distribution is given as 22.37 ml. A volume of a few tens of millilitres for ibuprofen in a paediatric adenotonsillectomy population is outside any physiological window, consistent with a unit or scale extraction error (the label reads 'ml' where litres would be expected). The one-compartment structure itself is unremarkable; the implausible volume magnitude is the sole reason for rejection. Extracted — ibuprofen: CL 13.2 L/h.70 kg -1, V 22.4 ml, kabs 1.1 h -1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Hannam JA; Anderson BJ; Potts A et al. (2018). Paediatric anaesthesia 28

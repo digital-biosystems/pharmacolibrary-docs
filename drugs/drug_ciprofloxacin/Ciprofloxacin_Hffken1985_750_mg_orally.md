@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** T1_t_half_beta.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The model does not reproduce the paper's terminal half-life (paper 3, model 3.02).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — ciprofloxacin: Cmax 2.65 mg/liter, tmax 69.4 min, V 353 liters/ 100 kg, t1/2α 58.8 min, t1/2β 285 min, AUC∞ 12.2 mg · h/liter, CL 0.81 L/h/kg, kabs 1 h−1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:02:14.336997+00:00) predates the upstream re-run (2026-09-24 02:07:33.752624+00:00). Current validate status: `extracted`.
 
@@ -155,7 +158,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1 /h, F 0.9).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_ciprofloxacin/Ciprofloxacin_Hffken1985_750_mg_orally/Ciprofloxacin_Hffken1985_750_mg_orally_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ciprofloxacin/Ciprofloxacin_Hffken1985_750_mg_orally/Ciprofloxacin_Hffken1985_750_mg_orally_sim_controls.json"></dbs-fmusim>
 

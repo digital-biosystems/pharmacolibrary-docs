@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The colistin sulfate two-compartment model was rejected because one compartment (peripheral volume V2 = 50.5 L) has no connection to the dosed central compartment, leaving it unreachable from the dose.**
+
+The record describes a two-compartment colistin sulfate model in critically ill patients with central volume V = 16.1 L, peripheral volume V2 = 50.5 L and clearance CL = 1.50 L/h. The review found an unreachable or orphan compartment: the second compartment is not linked by any distribution path from the dose, so the peripheral volume V2 = 50.5 L cannot be reached. No other parameter or structural findings were recorded, and no second-reader disagreements are noted. Extracted — colistin: V 16.1 L, V2 50.5 L, CL 1.5 L/h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Xie YL; Jin X; Yan SS; Wu CF; Xiang BX; Wang H; et al. et al. (2022). Frontiers in pharmacology 13
@@ -25,6 +27,9 @@ Xie YL; Jin X; Yan SS; Wu CF; Xiang BX; Wang H; et al. et al. (2022). Frontiers 
 
 ## Model component
 <dbs-pgx drug="colistin" model-id="Colistin_Xie2022_reference" status="rejected" stale="false" population="critically ill patients" measured-compound="colistin sulfate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

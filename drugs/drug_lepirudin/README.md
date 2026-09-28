@@ -4,7 +4,7 @@
 
 - **generic name:** lepirudin
 - **ATC codes:** `B01AE02`
-- **DrugBank:** [DB00001](https://go.drugbank.com/drugs/DB00001)
+- **DrugBank:** [DB00001](https://go.drugbank.com/drugs/DB00001) · **PubChem:** not captured
 - **groups:** approved, withdrawn
 
 ## About

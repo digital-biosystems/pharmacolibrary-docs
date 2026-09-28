@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc 0-24]` (51721 vs not captured) and 11 more field(s) — not a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The clobazam record was rejected because its metabolite N-desmethylclobazam has no compartments and the midazolam-to-1-hydroxymidazolam link carries no parameter, leaving unlinked metabolites, and the clearance unit ml/kg/hour could not be expressed in SI units.**
+
+The metabolite N-desmethylclobazam is formed from clobazam in the central compartment but is assigned zero compartments, so it has no distribution structure of its own; the midazolam to 1-hydroxymidazolam metabolism link likewise has no link parameter ('none'), leaving that metabolite unlinked. The clearance parameter for clobazam is labelled 'lamotrigine clearance' with unit ml/kg/hour, a unit that could not be converted to SI, so the value 43.2 ml/kg/hour entered the model without an SI equivalent. A second reader left the extracted values for AUC 0-24 (51721), AUC 0-lqc (147459), AUC 0-inf (110123), Cmax (2566) and both half-lives (32 and 57 hr) unconfirmed, so those numbers stand on a single reading. Extracted — midazolam: AUCt 5.17e+04 ng·h/mL, t1/2z 57 hr; N-desmethylclobazam: AUC 1.47e+05 ng·h/mL, AUC∞ 1.1e+05 ng·h/mL, Cmax 2.57e+03 ng/ml, t1/2z 32 hrs; clobazam: CL 43.2 ml/kg/hour.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc 0-24: this record has 51721, the second reading none; it also differs on 11 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Walzer M; Bekersky I; Blum RA; Tolbert D et al. (2012). Pharmacotherapy 32

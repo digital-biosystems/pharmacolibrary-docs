@@ -4,7 +4,7 @@
 
 - **generic name:** ziconotide
 - **ATC codes:** `N02BG08`
-- **DrugBank:** [DB06283](https://go.drugbank.com/drugs/DB06283)
+- **DrugBank:** [DB06283](https://go.drugbank.com/drugs/DB06283) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

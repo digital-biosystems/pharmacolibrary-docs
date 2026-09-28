@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (AZD7325 vs unknown) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The midazolam 2-compartment model was rejected because a compartment has no path from the dose (orphan/unreachable), and a reported unit could not be converted to SI, leaving a parameter without an SI value.**
+
+The structure lists two compartments (V1 133 L, V2 146 L) with MTT 197 h and CL 36 L/h for midazolam, but the review found an unreachable/orphan compartment or unlinked metabolite, meaning part of the structure has no path from the administered dose. Separately, a reported unit could not be converted to SI, so one parameter was recorded without an SI value. The second reader also disagreed on the dosed compound (recorded as AZD7325) and the primary analyte (recorded as midazolam), with the second reader unknown. The record was therefore rejected. Extracted — midazolam: V1 133 L, V2 146 L, MTT 197 h, CL 36 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has AZD7325, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `AZD7325`, measured `midazolam`.
 

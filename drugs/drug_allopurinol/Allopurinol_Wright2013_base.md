@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (allopurinol vs unknown) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The allopurinol model was rejected because its metabolite oxypurinol has no compartment (0 compartments), leaving the formed metabolite unlinked, and the two extracted parameter values (28.9, 0.371) carry ambiguous labels.**
+
+The record describes a parent–metabolite structure in which oxypurinol is formed from allopurinol via the metabolism link parameter Fm, yet the metabolite is assigned 0 compartments with only a nominal central site, so it has no path from the dose — the reason for rejection. The two extracted numbers are also mislabeled: 28.9 is listed under 'peripheral volume; Q, inter-' for the parameter named V2, and 0.371 under 'volume; F, bioavailability; ω' for the parameter named Fab, so neither value can be attributed to a single clear pharmacokinetic quantity. A second reader disagreed on which compound is the measured one (oxypurinol versus allopurinol) and on the dose compartment, and could not confirm either parameter value, leaving the parameter assignments inconclusive. Extracted — allopurinol: V2 28.9, Fab 0.371.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
 

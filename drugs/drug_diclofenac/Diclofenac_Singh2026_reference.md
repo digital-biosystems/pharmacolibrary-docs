@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q17]` (258.8 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The diclofenac record was rejected because its clearance of 0.12 L/h is far outside any physiological range for this drug, indicating a unit or scale extraction error, and the volume of 0.1731 L is not independently reported but derived from that clearance.**
+
+The record lists a single-compartment model for diclofenac with clearance labelled 'Meropenem Plasma CL Simulated' at 0.12 L/h — a magnitude physiologically implausible for diclofenac, consistent with a unit or scale extraction error. The volume of distribution (0.1731 L) was not extracted directly but back-calculated from the clearance and half-life via V = CL·t½/ln2, so it inherits the same error. A second reader also disagreed with several extracted values (e.g. 258.8 vs null, 517.6 vs 251.8, 50.2 vs 39.6), showing the source numbers were inconsistently read. Extracted — diclofenac: CL 0.12 L/h, V 0.173 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 258.8, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:13:39.647260+00:00) predates the upstream re-run (2026-09-24 03:35:55.732252+00:00). Current validate status: `rejected`.
 

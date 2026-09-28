@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q1]` (231.0 vs not captured) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**This two-compartment diazepam record (CL 3.9 L/h, Vc 65.7 L, Vp 46.2 L) was rejected because one compartment has no dosing path, and a second reader disputes the structure and several derived values.**
+
+The record describes a two-compartment diazepam model with clearance 3.9 L/h, central volume 65.7 L and peripheral volume 46.2 L, but it was refused because a compartment is unreachable or orphaned — it has no connection from the administered dose, so the structure as recorded is not a valid closed dosing-to-observation path. A second reader also disagreed on the model structure itself, reading it as one compartment rather than two, and on several derived quantities: distribution clearance 231.0 L/h (second reader null), intercompartmental clearance 66.81 L/h versus 70, and derived values 986.8 L (null for the second reader). These disagreements mean the recorded parameter set and topology are not consistently established from the source, reinforcing the decision to hold the record back. Extracted — diazepam: CL 3.9 L/h, V1 65.7 L, V2 46.2 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q1: this record has 231.0, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:09:36.435760+00:00) predates the upstream re-run (2026-09-24 04:13:00.372809+00:00). Current validate status: `rejected`.
 

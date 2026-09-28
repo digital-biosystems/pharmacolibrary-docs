@@ -5,7 +5,7 @@
 
 - **generic name:** saruplase
 - **ATC codes:** `B01AD08`
-- **DrugBank:** [DB13646](https://go.drugbank.com/drugs/DB13646)
+- **DrugBank:** [DB13646](https://go.drugbank.com/drugs/DB13646) · **PubChem:** not captured
 - **groups:** investigational
 
 ## Extraction summary
@@ -16,9 +16,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [de_1993_healthy male subjects](drugs/drug_saruplase/Saruplase_de1993_healthy_male_subjects.md) | de Boer A et al., Pharmacokinetics of saruplase, a recomb…, Thrombosis and haemostasis (1993) | — |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [de_1993_healthy male subjects](drugs/drug_saruplase/Saruplase_de1993_healthy_male_subjects.md) | — (no model) | 0 | de Boer A et al., Pharmacokinetics of saruplase, a recomb…, Thrombosis and haemostasis (1993) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** no structural parameters extracted (nothing to build).
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**No model parameters were extracted from this paper.**
+
+Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gex-Fabry M; Haffen E; Paintaud G; Bizouard P; Sechter D; Bechtel PR; et al. et al. (2000). Therapeutic drug monitoring 22
@@ -26,6 +29,9 @@ Gex-Fabry M; Haffen E; Paintaud G; Bizouard P; Sechter D; Bechtel PR; et al. et 
 
 ## Model component
 <dbs-pgx drug="clomipramine" model-id="Clomipramine_GexFabry2000_reference" status="rejected" stale="false" population="patients with depression" measured-compound="clomipramine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 

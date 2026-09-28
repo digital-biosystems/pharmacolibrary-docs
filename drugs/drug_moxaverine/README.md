@@ -4,7 +4,8 @@
 
 - **generic name:** moxaverine
 - **ATC codes:** `A03AD30`
-- **DrugBank:** [DB12251](https://go.drugbank.com/drugs/DB12251)
+- **DrugBank:** [DB12251](https://go.drugbank.com/drugs/DB12251) · **PubChem:** [CID 70882](https://pubchem.ncbi.nlm.nih.gov/compound/70882)
+- **molar mass:** 307.393 g/mol (C20H21NO2) — DrugBank
 - **groups:** investigational
 
 ## About
@@ -15,7 +16,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 09:21 | 0:56 | 0/0/0 | 0/0/0 | 0/0/0 | 3,474/321 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-26 09:23 | 0:42 | 0/0/0 | 0/0/0 | 0/0/0 | 1,763/168 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -42,7 +43,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Berg_1987.pdf` | Berg G et al., Effects of different phosphodiesterase-…, Archives internationales de… (1987) | pd | 4 | not captured | [3446047](https://www.ncbi.nlm.nih.gov/pubmed/3446047) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-18T09:21:15.409678+00:00</sub>
+<sub>queue written 2026-09-26T09:23:06.414633+00:00</sub>
 
 ## Screened and excluded
 

@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;isoprenaline&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/&quot;},{&quot;label&quot;:&quot;Yabuuchi_1977 \u00b7 PD left atrial contractile force&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # left atrial contractile force — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>

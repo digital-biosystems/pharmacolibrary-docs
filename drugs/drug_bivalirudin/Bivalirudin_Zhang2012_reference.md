@@ -15,9 +15,11 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
-<sub>owner: **curator**</sub>
+**The bivalirudin two-compartment record was rejected because the structural parameter CL carries a per-kilogram unit (0.323 L·h⁻¹·kg⁻¹), a dimension mismatch, and the record was built from the abstract alone rather than a fitted model.**
+
+The clearance parameter CL is reported as 0.323 L·h⁻¹·kg⁻¹ and inter-compartmental clearance Q as 0.0957 L·h⁻¹·kg⁻¹, units scaled per kilogram of body weight that do not match the dimension expected of a structural clearance parameter in the two-compartment structure. The volume parameter V is likewise given per kilogram (0.086 L/kg), and V1 is expressed as a percentage (24.2%) rather than an absolute volume. Because the source was abstract-only, the published summary statistics stood in for a fitted model, so these values could not be reconciled against a full pharmacokinetic model description. Extracted — bivalirudin: CL 0.323 L·h-1·kg-1, V 0.086 L/kg, Q 0.0957 L·h-1·kg-1, V1 24.2 %.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zhang DM; Wang K; Zhao X; Li YF; Zheng QS; Wang ZN; et al. et al. (2012). Acta pharmacologica Sinica 33
@@ -25,6 +27,9 @@ Zhang DM; Wang K; Zhao X; Li YF; Zheng QS; Wang ZN; et al. et al. (2012). Acta p
 
 ## Model component
 <dbs-pgx drug="bivalirudin" model-id="Bivalirudin_Zhang2012_reference" status="rejected" stale="false" population="healthy young Chinese volunteers" measured-compound="bivalirudin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

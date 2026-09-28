@@ -5,7 +5,8 @@
 
 - **generic name:** amlodipine
 - **ATC codes:** `C07FB07`, `C07FB12`, `C07FB13`, `C08CA01`, `C08CA51`, `C08GA02`, `C09BB03`, `C09BB04`, `C09BB07`, `C09BB13`, `C09BX01`, `C09BX03`, `C09BX04`, `C09BX06`, `C09DB01`, `C09DB02`, `C09DB04`, `C09DB05`, `C09DB06`, `C09DB07`, `C09DB09`, `C09DX01`, `C09DX03`, `C09DX06`, `C09DX07`, `C09DX08`, `C09XA53`, `C09XA54`, `C10BX03`, `C10BX07`, `C10BX09`, `C10BX11`, `C10BX14`, `C10BX18`, `C10BX19`
-- **DrugBank:** [DB00381](https://go.drugbank.com/drugs/DB00381)
+- **DrugBank:** [DB00381](https://go.drugbank.com/drugs/DB00381) · **PubChem:** [CID 2162](https://pubchem.ncbi.nlm.nih.gov/compound/2162)
+- **molar mass:** 408.876 g/mol (C20H25ClN2O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

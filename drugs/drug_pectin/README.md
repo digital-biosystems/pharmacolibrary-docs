@@ -4,7 +4,7 @@
 
 - **generic name:** pectin
 - **ATC codes:** `A07BC01`
-- **DrugBank:** [DB11158](https://go.drugbank.com/drugs/DB11158)
+- **DrugBank:** [DB11158](https://go.drugbank.com/drugs/DB11158) · **PubChem:** not captured
 - **groups:** approved, investigational, vet_approved
 
 ## About

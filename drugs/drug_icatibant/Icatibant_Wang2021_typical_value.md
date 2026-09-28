@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The one-compartment icatibant model lists a peripheral volume V2/F of 1.75 L with no distribution path from the dose, leaving that compartment unreachable, so the record was rejected.**
+
+The structure is stated as one compartment, yet the record carries a peripheral volume V2/F of 1.75 L for icatibant; with no connection from the dose site, that compartment is orphaned. The rejection cause is recorded as an unreachable or orphan compartment. No other failed checks or numeric deviations are reported in the findings. Extracted — icatibant: kabs 3.27 h–1, tlag 0.0426 h, V2/F 1.75 L.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Wang Y; Jomphe C; Marier JF; Martin P et al. (2021). Journal of clinical pharmacology 61
@@ -26,6 +29,9 @@ Wang Y; Jomphe C; Marier JF; Martin P et al. (2021). Journal of clinical pharmac
 
 ## Model component
 <dbs-pgx drug="icatibant" model-id="Icatibant_Wang2021_typical_value" status="rejected" stale="false" population="pediatric and adult patients with hereditary angioedema and healthy adults" measured-compound="icatibant" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

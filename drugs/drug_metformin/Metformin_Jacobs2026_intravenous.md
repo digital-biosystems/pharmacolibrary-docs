@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The metformin record for Thoroughbred horses was refused because the volume of distribution Vd is reported as 35.0 L, a unit that could not be converted to SI, leaving this structural parameter without a usable value.**
+
+The record lists Vd as 35.0 L alongside Vdss as 4.37 L/kg for metformin; the absolute-liter unit on Vd could not be converted to SI, so the parameter arrived without a usable value and the dimension mismatch on this structural parameter blocked publication. The remaining metformin parameters were extracted with convertible units: C0 25553 ng/mL, AUCinf 10489.8 h*ng/mL, AUC % extrap 0.55, clearance 499.8 mL/h/kg, terminal half-life 85.5 h, Ka 0.41 h⁻¹ and tlag 0.34 h. The one-compartment structure itself was not the cause of the refusal. Extracted — metformin: C0 2.56e+04 ng/mL, AUC∞ 1.05e+04 h * ng/mL, AUC%ext 0.55, CL 500 mL/h/kg, Vss 4.37 L/kg, t1/2z 85.5 h, V 35 L, kabs 0.41 h -1, … (+1).
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Jacobs ME; Blea J; Hardy M; McKemie DS; Traynham M; Knych HK et al. (2026). Drug testing and analysis 18

@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Gao2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
-**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
-<sub>owner: **curator**</sub>
+**The exenatide one-compartment model was rejected because its clearance of 3.62 ml/min and central volume of 43.2 ml fall outside plausible physiological ranges, suggesting a unit or scale extraction error.**
+
+The record reports a one-compartment exenatide model with clearance CL of 3.62 ml/min and central volume V1 of 43.2 ml, values judged physiologically implausible in magnitude and consistent with a unit or scale extraction error. The source text is review-secondary, so the parameters come from a secondary review source rather than the primary publication. A second reader disagreed on several extracted values, reading 4.67, 0.826, and 0.0153 where this record had null, 0.0207, and 0.0153 respectively, indicating the numeric extraction was not reproducible. Extracted — exenatide: CL 3.62 ml/min, V1 43.2 ml.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q3: this record has 0.0966, the second reading none; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `exendin-4`, measured `exenatide`.
 
@@ -27,6 +31,9 @@ Gao W; Jusko WJ et al. (2012). Drug metabolism and disposition: the biological f
 
 ## Model component
 <dbs-pgx drug="exenatide" model-id="Exenatide_Gao2012_reference" status="rejected" stale="false" population="rats, monkeys, and humans" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,14 +58,34 @@ Gao W; Jusko WJ et al. (2012). Drug metabolism and disposition: the biological f
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.211 (4/19 fields) | 15 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>15 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q303]` | 0.00273 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q320]` | not captured | 4.67 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q329]` | 0.0207 | 0.0153 | mismatch |
+| `gpt-oss:120b` | `values[Q32]` | 4.67 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q330]` | 0.0153 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q331]` | not captured | 0.826 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q333]` | 5.21 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q335]` | not captured | 0.157 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q352]` | 0.208 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q3]` | 0.0966 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 1 | 1 | mismatch |
+| `gpt-oss:120b` | `values[Q47]` | 0.0839 | 0.483 | mismatch |
+| `gpt-oss:120b` | `values[Q61]` | not captured | 0.208 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | 43.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q95]` | not captured | 7 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

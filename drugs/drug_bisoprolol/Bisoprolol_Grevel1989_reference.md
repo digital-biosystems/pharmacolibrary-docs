@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 3 scholar param(s) emitted or defaulted — got 2 covered
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The bisoprolol model was quarantined because bioavailability, clearance and absorption lag time had no source values and were left at library defaults, and the intercompartmental clearance Q (43.5 L/h) was also not covered.**
+
+The record lists only four fitted parameters for bisoprolol (V1 55.0 L, ka 0.43 h-1, Q 43.5 L/h, Vss 256 L), but the parameter-coverage check expected 3 parameters emitted or defaulted and obtained only 2 covered, with Q neither emitted nor in the defaulted set. The model builder substituted library defaults for the missing bioavailability F, clearance Cl and absorption lag time Tlag. As established, bisoprolol's bioavailability, clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — bisoprolol: V1 55 L, kabs 0.43 h-1, Q 43.5 L/h, Vss 256 L.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Grevel J; Thomas P; Whiting B et al. (1989). Clinical pharmacokinetics 17
@@ -26,6 +29,9 @@ Grevel J; Thomas P; Whiting B et al. (1989). Clinical pharmacokinetics 17
 
 ## Model component
 <dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Grevel1989_reference" status="model_quarantined" stale="false" population="patients with essential hypertension, renal impairment, or hepatic cirrhosis" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 

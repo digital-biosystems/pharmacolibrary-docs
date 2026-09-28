@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**No value for buprenorphine's clearance and volume of distribution.**
+
+The model was built, but buprenorphine's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Cmax and AUC), so that value has no SI equivalent. Extracted — buprenorphine: Cmax 0.091 ng mL e1, tmax 5.88 hours, AUC 3.96 hours ng mL e1.
+
+Independently confirmed by `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Nelson GR; Mama KR; Weiner D; McKemie DS; Kass PH; Steinmetz SJ; et al. et al. (2024). Veterinary anaesthesia and analgesia 51
@@ -26,6 +29,9 @@ Nelson GR; Mama KR; Weiner D; McKemie DS; Kass PH; Steinmetz SJ; et al. et al. (
 
 ## Model component
 <dbs-pgx drug="buprenorphine" model-id="Buprenorphine_Nelson2024_reference" status="model_quarantined" stale="false" population="horses" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 

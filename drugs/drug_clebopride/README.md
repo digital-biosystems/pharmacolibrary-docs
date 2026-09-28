@@ -4,7 +4,8 @@
 
 - **generic name:** clebopride
 - **ATC codes:** `A03FA06`
-- **DrugBank:** [DB13511](https://go.drugbank.com/drugs/DB13511)
+- **DrugBank:** [DB13511](https://go.drugbank.com/drugs/DB13511) · **PubChem:** not captured
+- **molar mass:** 373.88 g/mol (C20H24ClN3O2) — DrugBank
 - **groups:** investigational
 
 ## Extraction summary

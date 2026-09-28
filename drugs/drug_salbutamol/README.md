@@ -5,7 +5,8 @@
 
 - **generic name:** salbutamol
 - **ATC codes:** `R03AC02`, `R03AK04`, `R03AK13`, `R03AK15`, `R03AL02`, `R03CC02`
-- **DrugBank:** [DB01001](https://go.drugbank.com/drugs/DB01001)
+- **DrugBank:** [DB01001](https://go.drugbank.com/drugs/DB01001) · **PubChem:** [CID 2083](https://pubchem.ncbi.nlm.nih.gov/compound/2083)
+- **molar mass:** 239.3107 g/mol (C13H21NO3) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About

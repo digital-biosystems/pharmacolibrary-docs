@@ -5,7 +5,8 @@
 
 - **generic name:** loperamide
 - **ATC codes:** `A07DA03`
-- **DrugBank:** [DB00836](https://go.drugbank.com/drugs/DB00836)
+- **DrugBank:** [DB00836](https://go.drugbank.com/drugs/DB00836) · **PubChem:** [CID 3955](https://pubchem.ncbi.nlm.nih.gov/compound/3955)
+- **molar mass:** 477.038 g/mol (C29H33ClN2O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -22,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl[N-desmethyl loperamide], Vd[N-desmethyl loperamide], form…</sub><br><sub>route_to: `scholar`</sub> | [Valenzuela_2025_loperamide](drugs/drug_loperamide/Loperamide_Valenzuela2025_loperamide.md) | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl[N-desmethyl loperamide], Vd[N-desmethyl loperamide], form…</sub><br><sub>route_to: `scholar`</sub> | [Valenzuela_2025_m1](drugs/drug_loperamide/Loperamide_Valenzuela2025_m1.md) | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl[N-desmethyl loperamide], Vd[N-desmethyl loperamide], form…</sub><br><sub>route_to: `scholar`</sub> | [Valenzuela_2025_loperamide](drugs/drug_loperamide/Loperamide_Valenzuela2025_loperamide.md) | parent + 1 metabolite (1-cmt each) | 8 | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl[N-desmethyl loperamide], Vd[N-desmethyl loperamide], form…</sub><br><sub>route_to: `scholar`</sub> | [Valenzuela_2025_m1](drugs/drug_loperamide/Loperamide_Valenzuela2025_m1.md) | parent + 1 metabolite (1-cmt each) | 8 | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
 
 ## Pharmacodynamics (PD)
 

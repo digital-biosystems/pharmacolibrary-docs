@@ -15,10 +15,13 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'carboxylic acid metabolite', 'metabolism'], ['n-desmethyl enzalutamide', 'carboxylic acid metabolite', 'metabolism']] vs [['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'enzalutamide carboxylic acid metabolite', 'metabolism'], ['midazolam', '1-hydroxy-midazolam', 'metabolism'], ['pioglitazone', 'hydroxy-pioglitazone', 'metabolism'], ['s-warfarin', '7-hydroxy-s-warfarin', 'metabolism'], ['omeprazole', '5-hydroxy-omeprazole', 'metabolism']]) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
+**The record was rejected because both enzalutamide metabolites have no compartments (n_cmt 0), leaving them unlinked from the dose, and the μg·h/mL unit of AUCτ could not be converted to SI units.**
+
+The measured compound is enzalutamide although the paper and drug list concern midazolam, and both metabolites (N-desmethyl enzalutamide and the carboxylic acid metabolite) are formed in the central compartment with n_cmt 0, so they have no compartments of their own and no path from the dose — the orphan/unlinked-metabolite finding. The AUCτ value 322 μg·h/mL (and Ctrough 12.0 μg/mL) is reported in a unit for which no SI equivalent could be established, so the parameter had no SI value. A second reader also disagreed on the metabolism links (adding midazolam→1-hydroxy-midazolam, pioglitazone, S-warfarin and omeprazole pathways) and on the values, reading AUC∞ as 30.0 instead of 9.19 and Cmax as 9.45 instead of 3.22, indicating the extracted numbers are uncertain. Extracted — midazolam: AUC∞ 9.19 ng·h/mL, Cmax 3.22 ng/mL, Ctrough 12 μg/mL, AUCt 322 μg·h/mL, CL/F 0.52 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has enzalutamide → n-desmethyl enzalutamide (metabolism); enzalutamide → carboxylic acid metabolite (metabolism); n-desmethyl enzalutamide → carboxylic acid metabolite (metabolism), the second reading enzalutamide → n-desmethyl enzalutamide (metabolism); enzalutamide → enzalutamide carboxylic acid metabolite (metabolism); midazolam → 1-hydroxy-midazolam (metabolism) …; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gibbons JA; de Vries M; Krauwinkel W; Ohtsu Y; Noukens J; van der Walt JS; et al. et al. (2015). Clinical pharmacokinetics 54

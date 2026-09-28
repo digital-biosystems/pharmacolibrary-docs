@@ -1,3 +1,4 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;acarbose&quot;,&quot;href&quot;:&quot;drugs/drug_acarbose/&quot;},{&quot;label&quot;:&quot;Mauldina_2017 \u00b7 PD \u03b1-glucosidase inhibitory activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # α-glucosidase inhibitory activity — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>

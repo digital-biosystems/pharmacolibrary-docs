@@ -5,7 +5,8 @@
 
 - **generic name:** oxytetracycline
 - **ATC codes:** `A01AB25`, `D06AA03`, `G01AA07`, `J01AA06`, `S01AA04`
-- **DrugBank:** [DB00595](https://go.drugbank.com/drugs/DB00595)
+- **DrugBank:** [DB00595](https://go.drugbank.com/drugs/DB00595) · **PubChem:** [CID 54675779](https://pubchem.ncbi.nlm.nih.gov/compound/54675779)
+- **molar mass:** 460.434 g/mol (C22H24N2O9) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -22,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.13). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Winter_2024_reference](drugs/drug_oxytetracycline/Oxytetracycline_Winter2024_reference.md) | Winter EA et al., Determination of pharmacokinetic-pharma…, Frontiers in microbiology (2024) | [10.3389/fmicb.2024.1498219](https://doi.org/10.3389/fmicb.2024.1498219) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.13). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Winter_2024_reference](drugs/drug_oxytetracycline/Oxytetracycline_Winter2024_reference.md) | 2-compartment (no model) | 7 (+1 cov.) | Winter EA et al., Determination of pharmacokinetic-pharma…, Frontiers in microbiology (2024) | [10.3389/fmicb.2024.1498219](https://doi.org/10.3389/fmicb.2024.1498219) |
 
 ## ADME sites
 

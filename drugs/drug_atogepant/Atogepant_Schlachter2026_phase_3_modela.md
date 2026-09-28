@@ -17,16 +17,22 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[apparent clearance patients [cl/f (l/h)]].covariate_forms` (['linear_fractional', 'power'] vs ['linear_fractional']) and 6 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**The atogepant two-compartment model was quarantined because its absorption rate constant was not reported and placeholder values were substituted for clearance, volumes, lag time and intercompartmental rate constants, while covariate effects were never simulated.**
+
+The record lists apparent parameters (CL/F 17.4 L/h, V1/F 86.1 L, Q/F 1.43 L/h, V2/F 40.5 L, Q2/F 1.68 L/h, V3/F 13.0 L, ALAG 0.276 h), yet the builder substituted placeholder values for Cl, Vd, ka, Tlag, k12 and k21 because no source values existed, and the absorption rate constant was invented rather than reported. Bioavailability was assumed to be 1 with no metabolite or molar correction, giving an apparent (/F) parameterization for extravascular dosing. Although covariate effects are defined — itraconazole on Frel 0.949, hepatic effect −0.366, food on lag time 0.672, formulation −0.353, weight powers 0.411 and 0.199 — only the reference individual was simulated, so these covariate scenarios were not exercised. A second reader also disagreed on several entries, reading a blood-plasma ratio of 0.573 and a fraction zero-order absorption of 0.693 where this record had none, and attributing the 0.119 value to a weight effect on Frel rather than an exponential dose effect. Extracted — atogepant: CL/F 17.4, V1/F 86.1, Q/F 1.43, V2/F 40.5, Q2/F 1.68, V3/F 13, tlag 0.276, Frel 0.949.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[apparent clearance patients [cl/f (l/h)]].covariate_forms`: this record has ['linear_fractional', 'power'], the second reading ['linear_fractional']; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Schlachter_2026)
 
 ## Model component
 <dbs-pgx drug="atogepant" model-id="Atogepant_Schlachter2026_phase_3_modela" status="model_quarantined" stale="false" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 8 extracted, plus 6 covariate effects.
 
 **Parameterization:** CL/F, Q/F, Q2/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

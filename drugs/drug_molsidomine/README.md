@@ -4,7 +4,8 @@
 
 - **generic name:** molsidomine
 - **ATC codes:** `C01DX12`
-- **DrugBank:** [DB09282](https://go.drugbank.com/drugs/DB09282)
+- **DrugBank:** [DB09282](https://go.drugbank.com/drugs/DB09282) · **PubChem:** [CID 5353788](https://pubchem.ncbi.nlm.nih.gov/compound/5353788)
+- **molar mass:** 242.235 g/mol (C9H14N4O4) — DrugBank
 - **groups:** approved, withdrawn
 
 ## About
