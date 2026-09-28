@@ -115,6 +115,8 @@
     .pks-chip .x { color: #94a3b8; padding-left: 4px; font-size: 14px; line-height: 1; }
     .pks-chip .x:hover { color: #b91c1c; }
     .pks-controls label { display: inline-flex; gap: 5px; align-items: center; cursor: pointer; }
+    .pks-sex { gap: 6px; }
+    .pks-sexbtn[aria-pressed="true"] { background: #1e293b; color: #fff; border-color: #1e293b; }
     .pks-controls input[type=checkbox] { min-width: 0; width: auto; margin: 0; }
     .pks-evkey { display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: #475569; margin: 6px 0 4px; }
     .pks-evkey i { display: inline-block; width: 13px; height: 13px; border-radius: 3px;
@@ -729,6 +731,14 @@
     // selected set lives in the hash (#/sites?drugs=a,b,c) so a comparison is a link.
     (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
       var DB = null, MODEL = null, SEL = [], focus = null, scriptP = null, wired = false;
+      // the anatomogram's body: #/sites?…&sex=male in a shared link, else this viewer's last
+      // choice (localStorage, a per-viewer convenience), else female
+      var SEX = 'female';
+      function sexFromHash() { var m = /[?&]sex=(male|female)\b/.exec(location.hash || ''); return m ? m[1] : null; }
+      function savedSex() { try { return localStorage.getItem('pks-sex'); } catch (e) { return null; } }
+      function sexButtons() {
+        document.querySelectorAll('.pks-sexbtn').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.sex === SEX)); });
+      }
       function el(id) {
         var live = document.querySelectorAll('.markdown-section [id="' + id + '"]');
         return live.length ? live[live.length - 1] : document.getElementById(id);
@@ -753,7 +763,10 @@
       }
       function writeHash() {
         var base = location.hash.split('?')[0] || '#/sites';
-        var h = SEL.length ? base + '?drugs=' + SEL.map(function (d) { return encodeURIComponent(d.slug); }).join(',') : base;
+        var q = [];
+        if (SEL.length) q.push('drugs=' + SEL.map(function (d) { return encodeURIComponent(d.slug); }).join(','));
+        if (SEX === 'male') q.push('sex=male');
+        var h = q.length ? base + '?' + q.join('&') : base;
         if (location.hash !== h) history.replaceState(null, '', h);
       }
       function chips() {
@@ -770,7 +783,8 @@
         var root = el('pk-sites'); if (!root) return;
         MODEL = pkSites.compute(DB, SEL, { text: (el('pks-text') || {}).checked !== false });
         var det = root.querySelector('.pks-detailbox'); if (det) delete det.dataset.pin;
-        pkSites.render(root, MODEL, { focus: focus, ddi: (el('pks-ddi') || {}).checked !== false });
+        sexButtons();
+        pkSites.render(root, MODEL, { focus: focus, ddi: (el('pks-ddi') || {}).checked !== false, sex: SEX });
         var m = el('pks-meta'); if (m) m.textContent = MODEL.rows.length + ' site row(s), ' + MODEL.affected.length + ' affected-site row(s)';
       }
       function add(slug) {
@@ -784,6 +798,7 @@
           DB = res[0];
           status('');
           el('pks-ui').hidden = false;
+          SEX = sexFromHash() || (savedSex() === 'male' ? 'male' : 'female');
           var want = slugsFromHash();
           if (want.length) { SEL = pkSites.resolve(DB, want); }
           else if (!SEL.length) { SEL = pkSites.resolve(DB, ['tolvaptan', 'telmisartan', 'hydrochlorothiazide', 'cilazapril', 'allopurinol']); }
@@ -813,6 +828,8 @@
           var b = t.closest && t.closest('button[data-add]');
           if (b) { add(b.dataset.add); var p = el('pks-pick'); if (p) p.value = ''; el('pks-results').innerHTML = ''; return; }
           if (t.dataset && t.dataset.rm) { SEL = SEL.filter(function (d) { return d.slug !== t.dataset.rm; }); if (focus === t.dataset.rm) focus = null; draw(); ev.stopPropagation(); return; }
+          var sb = t.closest && t.closest('.pks-sexbtn');
+          if (sb) { SEX = sb.dataset.sex === 'male' ? 'male' : 'female'; try { localStorage.setItem('pks-sex', SEX); } catch (e) {} draw(); return; }
           var c = t.closest && t.closest('.pks-chip');
           if (c) { focus = focus === c.dataset.slug ? null : c.dataset.slug; draw(); return; }
           if (t.id === 'pks-share') {

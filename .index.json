@@ -11893,6 +11893,33 @@
   "slug": "etirinotecan_pegol",
   "stale": 0
  },
+ "drug_etofylline_nicotinate": {
+  "atc_codes": [
+   "C04AD04"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Zuidema_1981 \u00b7 reference",
+    "model_id": "EtofyllineNicotinate_Zuidema1981_reference"
+   }
+  ],
+  "dir": "drug_etofylline_nicotinate",
+  "extracted": 1,
+  "last_change": "2026-09-28T15:02:04.769045+00:00",
+  "name": "etofylline nicotinate",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "etofylline_nicotinate",
+  "stale": 0
+ },
  "drug_etoperidone": {
   "atc_codes": [
    "N06AB09"
@@ -22198,6 +22225,39 @@
   "slug": "nicotinamide",
   "stale": 0
  },
+ "drug_nicotinic_acid": {
+  "atc_codes": [
+   "C04AC01",
+   "C10AD02",
+   "C10BA01"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Iwaki_1996 \u00b7 reference",
+    "model_id": "NicotinicAcid_Iwaki1996_reference"
+   },
+   {
+    "label": "Wu_1989 \u00b7 reference",
+    "model_id": "NicotinicAcid_Wu1989_reference"
+   }
+  ],
+  "dir": "drug_nicotinic_acid",
+  "extracted": 0,
+  "last_change": "2026-09-28T17:34:36.005591+00:00",
+  "name": "nicotinic acid",
+  "needs_review": 2,
+  "records": 2,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "nicotinic_acid",
+  "stale": 0
+ },
  "drug_nifuroxazide": {
   "atc_codes": [
    "A07AX03"
@@ -24602,6 +24662,29 @@
   "rejected": 0,
   "rendered": true,
   "slug": "phentermine",
+  "stale": 0
+ },
+ "drug_phentolamine": {
+  "atc_codes": [
+   "C04AB01",
+   "V03AB36"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_phentolamine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "phentolamine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "phentolamine",
   "stale": 0
  },
  "drug_phenylephrine": {
@@ -30360,6 +30443,34 @@
   "slug": "tolazamide",
   "stale": 0
  },
+ "drug_tolazoline": {
+  "atc_codes": [
+   "C04AB02",
+   "M02AX02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Casbeer_2013 \u00b7 reference",
+    "model_id": "Tolazoline_Casbeer2013_reference"
+   }
+  ],
+  "dir": "drug_tolazoline",
+  "extracted": 1,
+  "last_change": "2026-09-28T17:17:08.256263+00:00",
+  "name": "tolazoline",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "tolazoline",
+  "stale": 0
+ },
  "drug_tolbutamide": {
   "atc_codes": [
    "A10BB03",
@@ -31940,6 +32051,33 @@
   "rejected": 3,
   "rendered": true,
   "slug": "vinblastine",
+  "stale": 0
+ },
+ "drug_vincamine": {
+  "atc_codes": [
+   "C04AX07"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Millart_1983 \u00b7 reference",
+    "model_id": "Vincamine_Millart1983_reference"
+   }
+  ],
+  "dir": "drug_vincamine",
+  "extracted": 0,
+  "last_change": "2026-09-28T17:24:56.608826+00:00",
+  "name": "vincamine",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "vincamine",
   "stale": 0
  },
  "drug_vincristine": {

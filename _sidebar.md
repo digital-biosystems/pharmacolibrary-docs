@@ -1530,7 +1530,7 @@
         - dihydroergocristine combinations <sub>(0/0/0)</sub>
         - ergoloid mesylates <sub>(0/0/0)</sub>
         - ergoloid mesylates combinations <sub>(0/0/0)</sub>
-        - etofylline nicotinate <sub>(0/0/0)</sub>
+        - [etofylline nicotinate <sub>(1/0/0)</sub>](drugs/drug_etofylline_nicotinate/)
         - fasudil <sub>(0/0/0)</sub>
         - ifenprodil <sub>(0/0/0)</sub>
         - inositol nicotinate <sub>(0/0/0)</sub>
@@ -1539,17 +1539,17 @@
         - moxisylyte <sub>(0/0/0)</sub>
         - naftidrofuryl <sub>(0/0/0)</sub>
         - nicergoline <sub>(0/0/0)</sub>
-        - nicotinic acid <sub>(0/0/0)</sub>
+        - [nicotinic acid <sub>(0/0/0)</sub>](drugs/drug_nicotinic_acid/)
         - nicotinyl alcohol <sub>(0/0/0)</sub>
         - nicotinyl alcohol pyridylcarbinol <sub>(0/0/0)</sub>
         - pentifylline <sub>(0/0/0)</sub>
         - pentoxifylline <sub>(0/0/0)</sub>
         - phenoxybenzamine <sub>(0/0/0)</sub>
-        - phentolamine <sub>(0/0/0)</sub>
+        - [phentolamine <sub>(0/0/0)</sub>](drugs/drug_phentolamine/)
         - suloctidil <sub>(0/0/0)</sub>
-        - tolazoline <sub>(0/0/0)</sub>
+        - [tolazoline <sub>(1/0/0)</sub>](drugs/drug_tolazoline/)
         - vinburnine <sub>(0/0/0)</sub>
-        - vincamine <sub>(0/0/0)</sub>
+        - [vincamine <sub>(0/0/0)</sub>](drugs/drug_vincamine/)
         - visnadine <sub>(0/0/0)</sub>
         - xantinol nicotinate <sub>(0/0/0)</sub>
     - C05 Vasoprotectives
@@ -1849,6 +1849,7 @@
         - mipomersen <sub>(0/0/0)</sub>
         - niceritrol <sub>(0/0/0)</sub>
         - nicofuranose <sub>(0/0/0)</sub>
+        - [nicotinic acid <sub>(0/0/0)</sub>](drugs/drug_nicotinic_acid/)
         - nicotinic acid combinations <sub>(0/0/0)</sub>
         - omega 3 triglycerides incl other esters and acids <sub>(0/0/0)</sub>
         - pemafibrate <sub>(0/0/0)</sub>
@@ -1882,6 +1883,7 @@
         - [lovastatin <sub>(1/0/0)</sub>](drugs/drug_lovastatin/)
         - lovastatin and nicotinic acid <sub>(0/0/0)</sub>
         - [nebivolol <sub>(1/0/0)</sub>](drugs/drug_nebivolol/)
+        - [nicotinic acid <sub>(0/0/0)</sub>](drugs/drug_nicotinic_acid/)
         - pitavastatin and ezetimibe <sub>(0/0/0)</sub>
         - pitavastatin and fenofibrate <sub>(0/0/0)</sub>
         - pravastatin and acetylsalicylic acid <sub>(0/0/0)</sub>
@@ -3485,6 +3487,7 @@
         - other topical products for joint and muscular pain m02ax10 <sub>(0/0/0)</sub>
         - piketoprofen <sub>(0/0/0)</sub>
         - suxibuzone <sub>(0/0/0)</sub>
+        - [tolazoline <sub>(1/0/0)</sub>](drugs/drug_tolazoline/)
         - tolperisone <sub>(0/0/0)</sub>
         - zucapsaicin <sub>(0/0/0)</sub>
     - M04 Antigout Preparations
@@ -4811,6 +4814,7 @@
         - palifermin <sub>(0/0/0)</sub>
         - patiromer <sub>(0/0/0)</sub>
         - patiromer calcium <sub>(0/0/0)</sub>
+        - [phentolamine <sub>(0/0/0)</sub>](drugs/drug_phentolamine/)
         - polystyrene sulfonate <sub>(0/0/0)</sub>
         - pralidoxime <sub>(0/0/0)</sub>
         - pralidoxime and atropine <sub>(0/0/0)</sub>
