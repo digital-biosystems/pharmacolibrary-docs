@@ -1,0 +1,224 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;diltiazem&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diltiazem_Guan2018_reference&quot;,&quot;label&quot;:&quot;Guan_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Klle1983_reference&quot;,&quot;label&quot;:&quot;K\u00f6lle_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Fu1987_reference&quot;,&quot;label&quot;:&quot;Fu_1987_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Fu1987_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Hglund1989_reference&quot;,&quot;label&quot;:&quot;H\u00f6glund_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Hglund1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Murata1989_reference&quot;,&quot;label&quot;:&quot;Murata_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Murata1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+
+# diltiazem
+
+- **generic name:** diltiazem
+- **ATC codes:** `C05AE03`, `C08DB01`
+- **DrugBank:** [DB00343](https://go.drugbank.com/drugs/DB00343) · **PubChem:** [CID 39186](https://pubchem.ncbi.nlm.nih.gov/compound/39186)
+- **molar mass:** 414.518 g/mol (C22H26N2O4S) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+**Description.** Diltiazem is a benzothiazepine derivative with antihypertensive and vasodilating properties. Approved in 1982 by the FDA, it is a member of the non-dihydropyridine calcium channel blockers drug class. It works through various mechanisms of action, but it primarily works by inhibiting the calcium influx into cardiac and vascular smooth muscle during depolarization.[L10556] Compared to dihydropyridine drugs, such as [nifedipine], that preferentially act on vascular smooth muscle and [verapamil] that directly acts on the heart muscle, diltiazem displays an intermediate specificity to target both the cardiac and vascular smooth muscle.[T28] Being a potent vasodilator, diltiazem is used clinically as an antihypertensive, anti-arrhythmic, and as an anti-anginal agent [L6289] for the management of cardiovascular conditions such as hypertension, chronic stable angina, atrial fibrillation, atrial flutter. Apart from its main FDA-approved indications, diltiazem has also been used for numerous off-label indications, such as anal fissures (in topical formulations), migraine prophylaxis, pulmonary hypertension, and rest-related cramps in the lower extremities.[L6289] Typically available in extended-release oral and intravenous formulations, diltiazem is marketed under various brand names with Cardizem and Tiazac being the most common ones.
+
+**Indication.** **Oral**
+
+Indicated for the management of hypertension, to lower blood pressure, alone or in combination with other antihypertensive agents.[L10556]
+
+Indicated for use to improve exercise tolerance in patients with chronic stable angina.[L10556]
+
+Indicated for the management of variant angina (Prinzmetal's angina).[L6298]
+
+**Intravenous**
+
+Indicated for the short-term management of atrial fibrillation or atrial flutter for temporary control of rapid ventricular rate.[L6292]
+
+Indicated for the rapid conversion of paroxysmal supraventricular tachycardias (PSVT) to sinus rhythm. This includes AV nodal reentrant tachycardias and reciprocating tachycardias associated with an extranodal accessory pathway such as the WPW syndrome or short PR syndrome.[L6292]
+
+**Off-label**
+
+Indicated for off-label uses in anal fissures (as topical formulation), migraine prophylaxis, cramps in lower leg related to rest, pulmonary hypertension,[L6289] idiopathic dilated cardiomyopathy, and proteinuria associated with diabetic nephropathy.[L6298]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| diltiazem | parent | 414.518 | C22H26N2O4S | DrugBank | [39186](https://pubchem.ncbi.nlm.nih.gov/compound/39186) | Fu_1987, Guan_2018, Höglund_1989, Kölle_1983, Murata_1989 |
+| deacetyldiltiazem | metabolite | 372.483 | C20H24N2O3S | PubChem | [91638](https://pubchem.ncbi.nlm.nih.gov/compound/91638) | Höglund_1989 |
+| N-demethyldeacetyldiltiazem | metabolite | — (mass units only) | — | — | — | — |
+| N-demethyldiltiazem | metabolite | 400.493 | C21H24N2O4S | PubChem | [107891](https://pubchem.ncbi.nlm.nih.gov/compound/107891) | Höglund_1989 |
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-28 19:08 | 42:21 | 2/3/0 | 0/0/0 | 0/0/2 | 155,451/31,398 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 6/6 | 10/2 | 0 |
+
+## popPK records
+
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [Guan_2018_reference](drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md) | 1-compartment, oral | 3 | Guan XF et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2018) | [10.1007/s13318-017-0425-y](https://doi.org/10.1007/s13318-017-0425-y) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span> | [Kölle_1983_reference](drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md) | 1-compartment, IV | 7 | Kölle EU et al., Pharmacokinetic model of diltiazem, Arzneimittel-Forschung (1983) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Fu_1987_reference](drugs/drug_diltiazem/Diltiazem_Fu1987_reference.md) | 1-compartment (no model) | 2 | Fu M et al., Pharmacokinetics and pharmacodynamic ef…, Journal of clinical pharmac… (1987) | [10.1002/j.1552-4604.1987.tb02169.x](https://doi.org/10.1002/j.1552-4604.1987.tb02169.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Höglund_1989_reference](drugs/drug_diltiazem/Diltiazem_Hglund1989_reference.md) | general linear (no model) | 2 | Höglund P et al., Pharmacokinetics of diltiazem and its m…, Therapeutic drug monitoring (1989) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Murata_1989_reference](drugs/drug_diltiazem/Diltiazem_Murata1989_reference.md) | 1-compartment (no model) | 1 | Murata K et al., Pharmacokinetics of an oral sustained-r…, Journal of pharmaceutical s… (1989) | [10.1002/jps.2600781116](https://doi.org/10.1002/jps.2600781116) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Uluturk_2023](drugs/drug_diltiazem/pgx_Uluturk_2023_CYP2D6_Q27.md) | Uluturk M et al., Diltiazem efficacy and CYP2D6 gene poly…, The Egyptian heart journal… (2023) | [10.1186/s43044-023-00375-0](https://doi.org/10.1186/s43044-023-00375-0) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP2D6** | `Q22` · CL | metabolism | [Zheng_2013](drugs/drug_diltiazem/pgx_Zheng_2013_CYP2D6_Q22.md) | Zheng T et al., Effects of CYP3A5 and CYP2D6 genetic po…, Die Pharmazie (2013) | — |
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=diltiazem) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP2D6` metabolism/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `CYP3A7` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | <sub>“…only 2% to 4% of the unchanged drug can be detected in the urine.[L10556] The major urinar…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CACNA1C (blocker), CACNA2D1 (blocker), CACNG1 (blocker).</sub>
+
+<details class="legend">
+<summary>Badge legend — what each badge means</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 532 matched, 79 returned
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 5  ·  extracted 2  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_32 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Guan_2018.pdf` | Guan XF et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2018) | popPK | 10 | [10.1007/s13318-017-0425-y](https://doi.org/10.1007/s13318-017-0425-y) | [28646274](https://pubmed.ncbi.nlm.nih.gov/28646274) | The paper reports a population pharmacokinetic model for diltiazem with explicit numeric values for Ka, V/F, and CL/F in the text. |
+| `Kölle_1983.pdf` | Kölle EU et al., Pharmacokinetic model of diltiazem, Arzneimittel-Forschung (1983) | popPK | 10 | not captured | [6684932](https://pubmed.ncbi.nlm.nih.gov/6684932) | The paper reports a compartmental PK model for diltiazem with explicit numeric values for clearance, volume, and half-lives in the text. |
+| `Bertera_2007.pdf` | Bertera FM et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacological… (2007) | popPK | 9 | [10.1016/j.vascn.2007.04.001](https://doi.org/10.1016/j.vascn.2007.04.001) | [17560132](https://pubmed.ncbi.nlm.nih.gov/17560132) | The study reports quantitative PK parameters (clearance, volume of distribution) for diltiazem in rats, but the specific numeric values are not present in the provided text, likely residing in tables or figures not included. |
+| `Fu_1987.pdf` | Fu M et al., Pharmacokinetics and pharmacodynamic ef…, Journal of clinical pharmac… (1987) | popPK | 9 | [10.1002/j.1552-4604.1987.tb02169.x](https://doi.org/10.1002/j.1552-4604.1987.tb02169.x) | [3680561](https://pubmed.ncbi.nlm.nih.gov/3680561) | The study reports quantitative pharmacokinetic parameters (half-lives, AUC, Cmax) for diltiazem in humans, with specific numeric values provided in the text. |
+| `Höglund_1989.pdf` | Höglund P et al., Pharmacokinetics of diltiazem and its m…, Therapeutic drug monitoring (1989) | popPK | 9 | not captured | [2815231](https://pubmed.ncbi.nlm.nih.gov/2815231) | The study reports quantitative pharmacokinetic parameters for diltiazem, specifically terminal half-lives for single and multiple doses, though other parameters like clearance and volume are not explicitly listed in the provided text. |
+| `Murata_1989.pdf` | Murata K et al., Pharmacokinetics of an oral sustained-r…, Journal of pharmaceutical s… (1989) | popPK | 9 | [10.1002/jps.2600781116](https://doi.org/10.1002/jps.2600781116) | [2621582](https://pubmed.ncbi.nlm.nih.gov/2621582) | The study reports quantitative pharmacokinetic parameters (absorption rate constants, lag times, and component amounts) for diltiazem in humans and dogs, with specific numeric values provided in the text. |
+| `Murata_1993.pdf` | Murata K et al., Pharmacokinetic analysis of an oral sus…, Pharmaceutical research (1993) | popPK | 9 | [10.1023/a:1018976203610](https://doi.org/10.1023/a:1018976203610) | [8321842](https://pubmed.ncbi.nlm.nih.gov/8321842) | The paper describes a population pharmacokinetic analysis of diltiazem, but the provided evidence contains only the abstract/methodology description without any specific numeric parameter values. |
+| `Tsui_1998.pdf` | Tsui BC et al., Pharmacokinetics and haemodynamic effec…, The Journal of pharmacy and… (1998) | popPK | 8 | [10.1111/j.2042-7158.1998.tb06174.x](https://doi.org/10.1111/j.2042-7158.1998.tb06174.x) | [9530986](https://pubmed.ncbi.nlm.nih.gov/9530986) | The study is a pharmacokinetic investigation of diltiazem in rats, but the provided evidence only contains haemodynamic parameters (Emax, EC50) and qualitative concentration comparisons, lacking specific quantitative PK values like clearance or volume. |
+| `Yeung_1998.pdf` | Yeung PK et al., Pharmacokinetics and haemodynamic effec…, Biopharmaceutics & drug dis… (1998) | pd | 5 | [10.1002/(sici)1099-081x(199803)19:2&lt;109::aid-bdd84&gt;3.0.co;2-v](https://doi.org/10.1002/(sici)1099-081x(199803)19:2<109::aid-bdd84>3.0.co;2-v) | [9533111](https://www.ncbi.nlm.nih.gov/pubmed/9533111) | metadata signals extractable PD data (Emax) |
+| `Zimmerman_2004.pdf` | Zimmerman JJ, Exposure-response relationships and dru…, The AAPS journal (2004) | pd | 5 | [10.1208/aapsj060428](https://doi.org/10.1208/aapsj060428) | [15760093](https://www.ncbi.nlm.nih.gov/pubmed/15760093) | metadata signals extractable PD data (Exposure-response) |
+| `Burke_1999.pdf` | Burke TJ et al., Hemolysate-mediated renal vasoconstrict…, Renal failure (1999) | pd | 4 | [10.3109/08860229909066967](https://doi.org/10.3109/08860229909066967) | [10048115](https://www.ncbi.nlm.nih.gov/pubmed/10048115) | metadata signals extractable PD data (EC50) |
+| `Dogan_2012.pdf` | Dogan M et al., Magnesium and diltiazem relaxes phenyle…, Interactive cardiovascular… (2012) | pd | 4 | [10.1093/icvts/ivs051](https://doi.org/10.1093/icvts/ivs051) | [22523136](https://www.ncbi.nlm.nih.gov/pubmed/22523136) | metadata signals extractable PD data (EC50) |
+| `Li_2021.pdf` | Li L et al., Dose tailoring of tacrolimus based on a…, International immunopharmac… (2021) | pgx | 8 | [10.1016/j.intimp.2021.107827](https://doi.org/10.1016/j.intimp.2021.107827) | [34284341](https://www.ncbi.nlm.nih.gov/pubmed/34284341) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
+| `Shen_2018.pdf` | Shen H et al., Further Studies to Support the Use of C…, Drug metabolism and disposi… (2018) | pgx | 8 | [10.1124/dmd.118.081125](https://doi.org/10.1124/dmd.118.081125) | [29777022](https://www.ncbi.nlm.nih.gov/pubmed/29777022) | metadata signals extractable PGX data (SLCO1B1, PK/PD-context) |
+| `Yamamoto_2005.pdf` | Yamamoto T et al., Effects of the CYP3A5 genetic polymorph…, Clinica chimica acta; inter… (2005) | pgx | 8 | [10.1016/j.cccn.2005.06.013](https://doi.org/10.1016/j.cccn.2005.06.013) | [16024008](https://www.ncbi.nlm.nih.gov/pubmed/16024008) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
+| `Djebli_2021.pdf` | Djebli N et al., Physiologically-Based Pharmacokinetic M…, European journal of drug me… (2021) | pgx | 7 | [10.1007/s13318-021-00714-z](https://doi.org/10.1007/s13318-021-00714-z) | [34495458](https://www.ncbi.nlm.nih.gov/pubmed/34495458) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Girardin_2005.pdf` | Girardin F et al., [Antihypertensive therapy and drug-drug…, Revue medicale suisse (2005) | pgx | 7 | not captured | [16238231](https://www.ncbi.nlm.nih.gov/pubmed/16238231) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Grymonprez_2023.pdf` | Grymonprez M et al., Impact of P-glycoprotein and CYP3A4-int…, European heart journal. Car… (2023) | pgx | 7 | [10.1093/ehjcvp/pvad070](https://doi.org/10.1093/ehjcvp/pvad070) | [37791408](https://www.ncbi.nlm.nih.gov/pubmed/37791408) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Hahn_2023.pdf` | Hahn E et al., Impact of posaconazole and diltiazem on…, Clinical and translational… (2023) | pgx | 7 | [10.1111/cts.13662](https://doi.org/10.1111/cts.13662) | [37837178](https://www.ncbi.nlm.nih.gov/pubmed/37837178) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Hong_2011.pdf` | Hong SP et al., Effects of lovastatin on the pharmacoki…, The Journal of pharmacy and… (2011) | pgx | 7 | [10.1111/j.2042-7158.2010.01160.x](https://doi.org/10.1111/j.2042-7158.2010.01160.x) | [21189658](https://www.ncbi.nlm.nih.gov/pubmed/21189658) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Jerling_2005.pdf` | Jerling M et al., Studies to investigate the pharmacokine…, Journal of clinical pharmac… (2005) | pgx | 7 | [10.1177/0091270004273992](https://doi.org/10.1177/0091270004273992) | [15778423](https://www.ncbi.nlm.nih.gov/pubmed/15778423) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Kollipara_2023.pdf` | Kollipara S et al., Physiologically based pharmacokinetic m…, Xenobiotica; the fate of fo… (2023) | pgx | 7 | [10.1080/00498254.2023.2250856](https://doi.org/10.1080/00498254.2023.2250856) | [37609899](https://www.ncbi.nlm.nih.gov/pubmed/37609899) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Liu_2021.pdf` | Liu S et al., Analyzing Potential Intestinal Transpor…, Pharmaceutical research (2021) | pgx | 7 | [10.1007/s11095-021-03105-w](https://doi.org/10.1007/s11095-021-03105-w) | [34729703](https://www.ncbi.nlm.nih.gov/pubmed/34729703) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Molden_2007.pdf` | Molden E et al., [Interaction risk with statin switch], Tidsskrift for den Norske l… (2007) | pgx | 7 | not captured | [17304269](https://www.ncbi.nlm.nih.gov/pubmed/17304269) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Neuvonen_2006.pdf` | Neuvonen PJ et al., Drug interactions with lipid-lowering d…, Clinical pharmacology and t… (2006) | pgx | 7 | [10.1016/j.clpt.2006.09.003](https://doi.org/10.1016/j.clpt.2006.09.003) | [17178259](https://www.ncbi.nlm.nih.gov/pubmed/17178259) | metadata signals extractable PGX data (CYP2C8, PK/PD-context) |
+| `Ohno_2007.pdf` | Ohno Y et al., General framework for the quantitative…, Clinical pharmacokinetics (2007) | pgx | 7 | [10.2165/00003088-200746080-00005](https://doi.org/10.2165/00003088-200746080-00005) | [17655375](https://www.ncbi.nlm.nih.gov/pubmed/17655375) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Patel_2011.pdf` | Patel CG et al., Two-way pharmacokinetic interaction stu…, Clinical pharmacology : adv… (2011) | pgx | 7 | [10.2147/CPAA.S15227](https://doi.org/10.2147/CPAA.S15227) | [22287853](https://www.ncbi.nlm.nih.gov/pubmed/22287853) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Pham_2020.pdf` | Pham P et al., Association of Oral Anticoagulants and…, JAMA network open (2020) | pgx | 7 | [10.1001/jamanetworkopen.2020.3593](https://doi.org/10.1001/jamanetworkopen.2020.3593) | [32329770](https://www.ncbi.nlm.nih.gov/pubmed/32329770) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Posada_2020.pdf` | Posada MM et al., Predicting Clinical Effects of CYP3A4 M…, Journal of clinical pharmac… (2020) | pgx | 7 | [10.1002/jcph.1584](https://doi.org/10.1002/jcph.1584) | [32080863](https://www.ncbi.nlm.nih.gov/pubmed/32080863) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Suroowan_2019.pdf` | Suroowan S et al., Herbal Medicine of the 21st Century: A…, Current topics in medicinal… (2019) | pgx | 7 | [10.2174/1568026619666191112121330](https://doi.org/10.2174/1568026619666191112121330) | [31721714](https://www.ncbi.nlm.nih.gov/pubmed/31721714) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Terkeltaub_2011.pdf` | Terkeltaub RA et al., Novel evidence-based colchicine dose-re…, Arthritis and rheumatism (2011) | pgx | 7 | [10.1002/art.30389](https://doi.org/10.1002/art.30389) | [21480191](https://www.ncbi.nlm.nih.gov/pubmed/21480191) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Hopewell_2020.pdf` | Hopewell JC et al., Independent risk factors for simvastati…, European heart journal (2020) | pgx | 5 | [10.1093/eurheartj/ehaa574](https://doi.org/10.1093/eurheartj/ehaa574) | [32702748](https://www.ncbi.nlm.nih.gov/pubmed/32702748) | metadata signals extractable PGX data (SLCO1B1) |
+
+<sub>queue written 2026-09-28T18:50:54.827623+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Argevani_2021 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (phenoconversion) involving diltiazem as an inhibitor of tacrolimus, not a pharmacogenomic effect of diltiazem itself. |
+| PGx | Benacerraf_1982 | not_relevant | 0 | 0 | The paper is a clinical study on coronary spasm and does not report any pharmacogenomic effects on diltiazem PK or PD parameters. |
+| popPK | Bertera_2007 | relevant | 9 | 2 | The study reports quantitative PK parameters (clearance, volume of distribution) for diltiazem in rats, but the specific numeric values are not present in the provided text, likely residing in tables or figures not included. |
+| PGx | Boof_2019 | not_relevant | 0 | 0 | The text only provides the molecular formula and molar mass of a compound, with no information on pharmacogenomics, diltiazem, or PK/PD parameters. |
+| popPK | Booker_2002 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of methylprednisolone, and while diltiazem is the subject of the interaction, no quantitative disposition parameters (CL, V, etc.) for diltiazem are reported in the evidence. |
+| popPK | Bui_2024 | irrelevant | 1 | 0 | Diltiazem is a co-administered CYP3A4 inhibitor used to study finerenone pharmacokinetics, not the subject drug, and no quantitative PK parameters for diltiazem are reported. |
+| PGx | Bui_2024 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (finerenone with diltiazem) in rats, not the effect of a gene variant or genotype on diltiazem's PK/PD parameters. |
+| popPK | Burke_1999 | irrelevant | 0 | 0 | no_text gate: only 65 chars of text extracted (&lt; 400) |
+| PD | Burke_1999 | not_relevant | 0 | 0 | The paper focuses on hemolysate-mediated renal vasoconstriction and does not report any pharmacodynamic or exposure-response data for diltiazem. |
+| PGx | Busti_2004 | not_relevant | 0 | 0 | The paper discusses atazanavir and mentions diltiazem only as a drug interaction, without reporting any pharmacogenomic effects on diltiazem's PK or PD parameters. |
+| PGx | Chaccour_2020 | not_relevant | 0 | 0 | The paper is a clinical trial protocol for ivermectin in COVID-19 and does not report pharmacogenomic effects on diltiazem PK/PD parameters. |
+| PGx | Chen_2013 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of tacrolimus, not diltiazem. |
+| PGx | Ciftci_2013 | not_relevant | 0 | 0 | The paper investigates the effect of MDR1 polymorphisms on tacrolimus pharmacokinetics, not diltiazem. |
+| popPK | Dixit_1999 | irrelevant | 2 | 0 | The study reports that diltiazem pharmacokinetics were unchanged but provides no specific quantitative disposition parameters (CL, V, t1/2) for diltiazem in the evidence. |
+| PGx | Djebli_2021 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of entrectinib and does not report pharmacogenomic effects on diltiazem. |
+| popPK | Dogan_2012 | irrelevant | 0 | 0 | no_text gate: only 76 chars of text extracted (&lt; 400) |
+| PGx | Donneyong_2023 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (statins and CYP3A4 inhibitors) and discontinuation probabilities, not pharmacogenomic effects on diltiazem PK/PD. |
+| popPK | Eichelbaum_1984 | irrelevant | 1 | 0 | The paper is a critical review discussing general pharmacokinetic properties of calcium antagonists without reporting specific quantitative parameter values for diltiazem. |
+| PD | Eichelbaum_1984 | not_relevant | 2 | 0 | The text is a qualitative review discussing the concepts of PK/PD modeling (hysteresis, Emax vs log-linear) for calcium antagonists but does not report specific numeric PD parameters or extractable concentration-effect data for diltiazem. |
+| PGx | Figueredo_2026 | not_relevant | 0 | 0 | The paper is a case report on SIADH management and mentions diltiazem only as a CYP3A4 inhibitor causing a drug-drug interaction, not as a subject of pharmacogenomic analysis. |
+| PGx | Follath_1989 | not_relevant | 0 | 0 | The paper is a clinical review of calcium antagonists in ischemic heart disease and does not discuss pharmacogenomics or genetic variants affecting diltiazem PK/PD. |
+| PGx | Frampton_1992 | not_relevant | 0 | 0 | The paper is a review of nicorandil's pharmacology and efficacy, with no mention of diltiazem pharmacogenomics or genetic variants affecting PK/PD. |
+| PGx | Girardin_2005 | not_relevant | 0 | 0 | The paper discusses general drug-drug interactions involving CYP3A4 inhibition by diltiazem, but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| PGx | Gosselin_2023 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (DOACs with diltiazem) and bleeding risk in a population cohort, but does not report any pharmacogenomic effects (gene variants) on diltiazem's PK or PD parameters. |
+| PGx | Grymonprez_2023 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (P-gp/CYP3A4 inhibitors) affecting NOACs, not pharmacogenomic effects on diltiazem PK/PD. |
+| PGx | Guan_2018 | not_relevant | 0 | 0 | The study genotyped CYP3A4, CYP3A5, and MDR1, but the results indicate that only total bilirubin influenced the PK parameters, with no reported effect of the genetic variants on diltiazem pharmacokinetics. |
+| PGx | Hahn_2023 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (posaconazole/diltiazem) on encorafenib PK, not the effect of a gene variant on diltiazem PK/PD. |
+| PGx | Hong_2011 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (lovastatin) in rats, not a pharmacogenomic effect of a gene variant on diltiazem PK/PD. |
+| PGx | Hopewell_2020 | not_relevant | 0 | 0 | The paper focuses on simvastatin-related myopathy and risk factors, mentioning diltiazem only as a concomitant medication risk factor, not analyzing diltiazem's PK/PD pharmacogenomics. |
+| PGx | Huang_2020 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of tacrolimus, not diltiazem. |
+| PGx | Jerling_2005 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (ranolazine with diltiazem), not the effect of a gene variant on diltiazem's pharmacokinetics or pharmacodynamics. |
+| PGx | Jing_2022 | not_relevant | 0 | 0 | The paper focuses on a PBPK model for ipatasertib and its drug-drug interactions with CYP3A4 modulators (including diltiazem), but does not report pharmacogenomic effects (gene variants) on diltiazem's PK or PD. |
+| PGx | Kalow_1989 | not_relevant | 0 | 0 | The text discusses debrisoquine and mephenytoin polymorphisms and lists substrates, but does not report any pharmacogenomic effects on the PK or PD of diltiazem. |
+| PGx | Kazierad_1989 | not_relevant | 0 | 0 | The paper studies the effect of diltiazem on the pharmacokinetics of encainide, not the effect of a gene variant on diltiazem's pharmacokinetics or pharmacodynamics. |
+| PGx | Kollipara_2023 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (DDIs) involving diltiazem as a perpetrator for encorafenib, not on pharmacogenomic effects of diltiazem itself. |
+| PGx | Levin_2010 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (diltiazem inhibiting CYP3A4 affecting fentanyl), not a pharmacogenomic effect (gene variant) on diltiazem's PK/PD. |
+| PGx | Li_2021 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of tacrolimus, not diltiazem; diltiazem is only included as a covariate affecting tacrolimus clearance. |
+| PGx | Liu_2021 | not_relevant | 0 | 0 | The paper analyzes drug-drug interactions involving diltiazem as an inhibitor of ticagrelor, not the pharmacogenomics of diltiazem itself. |
+| popPK | Luckow_1997 | irrelevant | 2 | 0 | The study reports bioequivalence metrics (AUC, Cmax, MRT) and PK/PD hysteresis analysis rather than compartmental disposition parameters (CL, V, Q, ka) for diltiazem. |
+| PD | Luckow_1997 | not_relevant | 4 | 3 | The paper describes a PK/PD relationship (hysteresis) and reports bioequivalence ratios for PD parameters (AUEC, Emax, MRTE), but it does not provide the specific numeric values for the concentration-effect curve parameters (like absolute Emax, EC50, or slope) or the raw data needed to derive them, focusing instead on the qualitative shape of the hysteresis loop and bioinequivalence conclusions. |
+| PGx | Molden_2007 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (statins with diltiazem/warfarin) and does not report any pharmacogenomic effects (gene variants) on diltiazem PK/PD. |
+| popPK | Murata_1993 | relevant | 9 | 0 | The paper describes a population pharmacokinetic analysis of diltiazem, but the provided evidence contains only the abstract/methodology description without any specific numeric parameter values. |
+| PGx | Neuvonen_2006 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving diltiazem as a CYP3A4 inhibitor affecting statins, but does not report pharmacogenomic effects on diltiazem's own PK or PD parameters. |
+| PGx | Ohno_2007 | not_relevant | 0 | 0 | The paper describes a general framework for predicting CYP3A4 drug-drug interactions and does not report any pharmacogenomic effects (gene variants) on diltiazem PK/PD. |
+| PGx | Onoda_1989 | not_relevant | 0 | 0 | The paper investigates the antitumor efficacy of calcium channel blockers (including diltiazem) in combination with cisplatin in a murine model, but does not report any pharmacogenomic effects on the PK or PD parameters of diltiazem. |
+| PGx | Panfili_2012 | not_relevant | 0 | 0 | The paper reports a pharmacodynamic adverse effect of ranolazine and mentions diltiazem only as a potential CYP3A4 inhibitor affecting ranolazine levels, without reporting a pharmacogenomic effect on diltiazem's PK or PD parameters. |
+| PGx | Patel_2011 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (saxagliptin and diltiazem) in healthy subjects, not a pharmacogenomic effect of a gene variant on diltiazem's PK/PD. |
+| PGx | Pham_2020 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (diltiazem/verapamil with DOACs) and reports clinical bleeding outcomes, not a pharmacogenomic effect on diltiazem's PK or PD parameters. |
+| PGx | Posada_2020 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (CYP3A4 modulators) affecting abemaciclib, not pharmacogenomic effects on diltiazem. |
+| PGx | Saedder_2019 | not_relevant | 0 | 0 | The paper discusses the pharmacogenomic effect of CYP2D6 on metoprolol and a drug interaction involving verapamil, but does not report a pharmacogenomic effect on the PK or PD parameters of diltiazem. |
+| PGx | Schroeder_1980 | not_relevant | 0 | 0 | The paper reports clinical efficacy of diltiazem in Prinzmetal's angina but contains no information on gene variants or pharmacogenomic effects on PK/PD parameters. |
+| PGx | Sennesael_2018 | not_relevant | 0 | 0 | The paper investigates rivaroxaban pharmacokinetics and ABCB1 genotypes, not diltiazem. |
+| PGx | Shen_2018 | not_relevant | 0 | 0 | The paper investigates diltiazem only as a negative control for OATP1B inhibition using coproporphyrin biomarkers, rather than reporting pharmacogenomic effects on diltiazem's own PK/PD parameters. |
+| PGx | Staack_2007 | not_relevant | 0 | 0 | The paper discusses diltiazem only as a potential CYP2D6 inhibitor affecting mCPP metabolism, not as the primary drug of interest for which a pharmacogenomic effect is being reported. |
+| PGx | Suroowan_2019 | not_relevant | 0 | 0 | The paper discusses herbal-drug interactions (specifically protein binding displacement) but does not report any pharmacogenomic effects (gene variants) on diltiazem PK/PD. |
+| PGx | Süsal_2025 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of tacrolimus (CYP3A5/3A4), not diltiazem. |
+| PGx | Talbert_1983 | not_relevant | 0 | 0 | The paper is a general review of calcium-channel blockers and does not report any pharmacogenomic effects or gene-variant associations for diltiazem. |
+| PGx | Terkeltaub_2011 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (diltiazem affecting colchicine PK), not a pharmacogenomic effect (gene variant affecting diltiazem PK/PD). |
+| popPK | Tsui_1998 | relevant | 8 | 2 | The study is a pharmacokinetic investigation of diltiazem in rats, but the provided evidence only contains haemodynamic parameters (Emax, EC50) and qualitative concentration comparisons, lacking specific quantitative PK values like clearance or volume. |
+| PGx | Upton_1991 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions affecting theophylline clearance, not the pharmacogenomics of diltiazem. |
+| PGx | Wang_2016 | not_relevant | 0 | 0 | The study investigates drug-drug interactions between statins and calcium channel blockers, not pharmacogenomic effects of gene variants on diltiazem PK/PD. |
+| popPK | Wu_2022 | irrelevant | 0 | 0 | The study focuses on the synthesis and biological evaluation of a new compound (D1), using diltiazem only as a mechanistic comparator in in-vitro assays, with no pharmacokinetic parameters reported. |
+| PD | Wu_2022 | not_relevant | 0 | 0 | The paper reports PD parameters (Emax, EC50) for a novel compound (D1), not for diltiazem; diltiazem is only mentioned as a tool compound to inhibit D1's effect. |
+| PGx | Yamamoto_2005 | not_relevant | 5 | 10 | The study reports a non-significant association between CYP3A5 genotypes and diltiazem clearance, concluding that the genetic polymorphism has only a minor effect. |
+| popPK | Yeung_1998 | irrelevant | 0 | 0 | no_text gate: only 120 chars of text extracted (&lt; 400) |
+| popPK | Yukawa_2001 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of digoxin, with diltiazem serving only as a covariate (calcium antagonist) affecting digoxin clearance, not as the subject drug. |
+| popPK | Zhang_2025 | irrelevant | 1 | 0 | The study focuses on tacrolimus pharmacokinetics, with diltiazem serving only as a covariate affecting tacrolimus clearance rather than being the subject drug. |
+| PGx | Zhang_2025 | not_relevant | 0 | 0 | The paper reports pharmacokinetics for tacrolimus, not diltiazem. |
+| popPK | Zimmerman_2004 | irrelevant | 0 | 0 | no_text gate: only 66 chars of text extracted (&lt; 400) |
+| PD | Zimmerman_2004 | not_relevant | 0 | 0 | The paper focuses on sirolimus, not diltiazem. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 18:51 UTC</sub>

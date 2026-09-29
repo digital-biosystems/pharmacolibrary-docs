@@ -116,6 +116,9 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row20:col2', 'tab_2:row20:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 

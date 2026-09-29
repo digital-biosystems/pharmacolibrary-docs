@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;betaxolol&quot;,&quot;href&quot;:&quot;drugs/drug_betaxolol/&quot;},{&quot;label&quot;:&quot;Zateyshchikov_2007 \u00b7 PGx ADRB1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ADRB1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+# ADRB1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,12 +23,12 @@ Zateyshchikov DA; Minushkina LO; Brovkin AN; Savel'eva EG; Zateyshchikova AA; Ma
   ·  DOI: [10.1111/j.1472-8206.2007.00518.x](https://doi.org/10.1111/j.1472-8206.2007.00518.x)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (1/4 fields) | 3 |
+| `gpt-oss:120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
 
 <details><summary>3 field(s) a reader read differently</summary>
 

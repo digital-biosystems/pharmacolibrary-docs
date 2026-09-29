@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Sehrt_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Saito2010_reference&quot;,&quot;label&quot;:&quot;Saito_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Saito2010_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Albers2008_reference&quot;,&quot;label&quot;:&quot;Albers_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Albers2008_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Hwang2023_reference&quot;,&quot;label&quot;:&quot;Hwang_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Hwang2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nardotto2017_reference&quot;,&quot;label&quot;:&quot;Nardotto_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Sehrt2011_reference&quot;,&quot;label&quot;:&quot;Sehrt_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Sehrt2011_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_reference&quot;,&quot;label&quot;:&quot;Yamamoto_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_Baek2008_atenolol_50_mg&quot;,&quot;label&quot;:&quot;Baek_2008_atenolol_50_mg&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Baek2008_atenolol_50_mg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Baek2008_carvedilol_25_mg&quot;,&quot;label&quot;:&quot;Baek_2008_carvedilol_25_mg&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Baek2008_carvedilol_25_mg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Saito2010_reference&quot;,&quot;label&quot;:&quot;Saito_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Saito2010_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Albers2008_reference&quot;,&quot;label&quot;:&quot;Albers_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Albers2008_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Bertera2009_control_rats&quot;,&quot;label&quot;:&quot;Bertera_2009_control_rats&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Bertera2009_control_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Bertera2009_l_name_rats&quot;,&quot;label&quot;:&quot;Bertera_2009_l_name_rats&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Bertera2009_l_name_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Bertera2009_l_name_rats_2&quot;,&quot;label&quot;:&quot;Bertera_2009_l_name_rats_2&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Bertera2009_l_name_rats_2.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Di2010_r_carvedilol_enantiomer&quot;,&quot;label&quot;:&quot;Di_2010_r_carvedilol_enantiomer&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Di2010_r_carvedilol_enantiomer.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Di2010_s_carvedilol_enantiomer&quot;,&quot;label&quot;:&quot;Di_2010_s_carvedilol_enantiomer&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Di2010_s_carvedilol_enantiomer.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Hwang2023_reference&quot;,&quot;label&quot;:&quot;Hwang_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Hwang2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nardotto2017_reference&quot;,&quot;label&quot;:&quot;Nardotto_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Sehrt2011_reference&quot;,&quot;label&quot;:&quot;Sehrt_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Sehrt2011_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_reference&quot;,&quot;label&quot;:&quot;Yamamoto_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carvedilol — `Carvedilol_Sehrt2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 The model links carvedilol to three metabolites by metabolism, but these metabolites have no path from the dose, so the structure check failed. The genotype-effect clearance parameter (24.4%) and CL/F (29.4 l/h) were extracted, but the '%' unit could not be converted to SI. A second reader also disagreed on the primary analyte (carvedilol vs R- and S-carvedilol), on splitting the metabolism links into stereoisomer-specific ones, and on whether the 29.4 and 24.4 values belong to these parameters; it additionally read a central volume of 142.8 l per 73 kg that this record lacks. Extracted — R-carvedilol and S-carvedilol: CL 24.4 %, CL/F 29.4 l/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R-carvedilol and S-carvedilol, the second reading carvedilol; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has carvedilol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -60,6 +60,8 @@ Sehrt D; Meineke I; Tzvetkov M; Gültepe S; Brockmöller J et al. (2011). Pharma
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -101,23 +103,24 @@ Sehrt D; Meineke I; Tzvetkov M; Gültepe S; Brockmöller J et al. (2011). Pharma
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.111 (1/9 fields) | 8 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['carvedilol', 'desmethylcarvedilol', 'metabolism'], ['carvedilol', "4'-oh-carvedilol", 'metabolism'], ['carvedilol', "5'-oh-carvedilol", 'metabolism']] | [['r-carvedilol', 'r-desmethylcarvedilol', 'metabolism'], ['s-carvedilol', 's-desmethylcarvedilol', 'metabolism'], ['r-carvedilol', "r-4'-oh-carvedilol", 'metabolism'], ['s-carvedilol', "s-4'-oh-carvedilol", 'metabolism'], ['r-carvedilol', "r-5'-oh-carvedilol", 'metabolism'], ['s-carvedilol', "s-5'-oh-carvedilol", 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `model.links` | [['carvedilol', 'desmethylcarvedilol', 'metabolism'], ['carvedilol', "4'-oh-carvedilol", 'metabolism'], ['carvedilol', "5'-oh-carvedilol", 'metabolism']] | [] | mismatch |
+| `gpt-oss:120b` | `parameters[cl 0]` | not captured | 27.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f for r-carvedilol]` | 29.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f for r‐carvedilol]` | not captured | 29.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cyp2d6 genotype explained variation in total clearance of r-carvedilol]` | not captured | 24.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 29.4 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v (central volume of distribution)/73 kg]` | not captured | 142.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[variation in total clearance of r-carvedilol accounted for by cyp2d6 genotype]` | 24.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.primary_analyte` | R-carvedilol and S-carvedilol | carvedilol | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | carvedilol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | R-carvedilol and S-carvedilol | unknown | mismatch |
 
 </details>
 
@@ -132,8 +135,12 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Sehrt_2011:results_prose'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none'] | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 29.4 L/h | not captured | not captured | ['Sehrt_2011:results_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

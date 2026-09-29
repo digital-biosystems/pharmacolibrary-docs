@@ -64,7 +64,7 @@ Nagase M; Shimada H; Nii M; Ueda S; Higashimori M; Ichikawa K; et al. et al. (20
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nagase_2020:abstract', 'Nagase_2020:abstract', 'Nagase_2020:abstract'] |

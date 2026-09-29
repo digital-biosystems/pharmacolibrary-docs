@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives serum urate (in mmol/L): direct sigmoid Emax (Hill) effect.
+
+> The model describes a direct, proportional sigmoid Emax inhibition of serum urate (baseline 0.55 mmol/L) by oxypurinol concentrations, with a maximum inhibition (Imax) of 1 and a Hill coefficient (GAM) of 1.06. The paper notes that while a turnover model might be mechanistically more sensible due to hysteresis, the final model used a direct-effects approach without specifying an effect compartment rate constant (ke0).
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wright_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,12 +29,12 @@ Wright DFB; Hishe HZ; Stocker SL; Dalbeth N; Horne A; Drake J; et al. et al. (20
   ·  DOI: [10.1111/bcp.16005](https://doi.org/10.1111/bcp.16005)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ω C50 (CV%) | `Q321` · not captured | 39.6 | CV% | not captured | review_gapfill (not captured) | Wright_2024:review |
-| I max | `Q323` · not captured | 1 | not captured | not captured | review_gapfill (not captured) | Wright_2024:review |
-| E 0 (baseline urate) (mmol L À1 ) | `Q324` · not captured | 0.55 | mmol L À1 | not captured | review_gapfill (not captured) | Wright_2024:review |
-| GAM (Hill coefficient) | `Q325` · not captured | 1.06 | not captured | not captured | review_gapfill (not captured) | Wright_2024:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | ω C50 (CV%) | `Q321` · not captured | 39.6 | CV% | not captured | review_gapfill (not captured) | Wright_2024:review |
+| PD (effect) | I max | `Q323` · not captured | 1 | not captured | not captured | review_gapfill (not captured) | Wright_2024:review |
+| PD (effect) | E 0 (baseline urate) (mmol L À1 ) | `Q324` · not captured | 0.55 | mmol L À1 | not captured | review_gapfill (not captured) | Wright_2024:review |
+| PD (effect) | GAM (Hill coefficient) | `Q325` · not captured | 1.06 | not captured | not captured | review_gapfill (not captured) | Wright_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

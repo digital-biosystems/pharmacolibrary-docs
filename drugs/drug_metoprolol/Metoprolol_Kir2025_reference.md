@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;metoprolol&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/&quot;},{&quot;label&quot;:&quot;Kir_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metoprolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Metoprolol_Taguchi2004_reference&quot;,&quot;label&quot;:&quot;Taguchi_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Taguchi2004_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metoprolol_Hcht2006_reference&quot;,&quot;label&quot;:&quot;H\u00f6cht_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Hcht2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metoprolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Metoprolol_Taguchi2004_reference&quot;,&quot;label&quot;:&quot;Taguchi_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Taguchi2004_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metoprolol_Bortolotti1989_reference&quot;,&quot;label&quot;:&quot;Bortolotti_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Bortolotti1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # metoprolol — `Metoprolol_Kir2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,8 +19,6 @@
 
 Simulated as the paper dosed it, the model's peak concentration exceeds the reported values by ratios of 1.9928, 2.1851, 2.4185 and 3.484 (expected 0.025, 0.0228, 0.0206, 0.0143 vs obtained 0.04982117140128287), and the time of the peak is 1.8062765240005605 against an expected 5.0 (ratio 0.3613), with a minutes-versus-hours unit mismatch noted. The absorption rate constant was defaulted because it was not reported in the source, an invented absorption that was judged not acceptable, and bioavailability and lag time were also left at defaults. Additionally, one reported parameter's unit could not be converted to SI, so that parameter entered the model without an SI value, and a second reader disagreed on the analyte naming and on whether the clearance (16.04 mL/min/kg), absorption rate (1.19 mg/min/kg) and volume of distribution (1.41 L/kg) values belong to this record. Extracted — atenolol and metoprolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, V 1.41 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atenolol and metoprolol, the second reading atenolol, metoprolol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
-
 <sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
@@ -30,7 +28,7 @@ Kir F; Sahin S; Jusko WJ et al. (2025). European journal of drug metabolism and 
 ## Model component
 <dbs-pgx drug="metoprolol" model-id="Metoprolol_Kir2025_reference" status="needs_review" stale="false" population="malnourished and non-malnourished rats" measured-compound="atenolol and metoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
@@ -51,10 +49,6 @@ Kir F; Sahin S; Jusko WJ et al. (2025). European journal of drug metabolism and 
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'ka', 'Tlag']
-- `invented_absorption`: ka defaulted — not reported in source
-
 **Interpretation flags:**
 - salvaged Q22 ('CL (mL/min/kg) Total clearance'=16.04) from results prose — parameter table was unreadable
 - salvaged Q49 ('k 01 C (mg/min/kg) Apparent zero-order absorption rate constant 1 (t = 0-120 min)'=1.19) from results prose — parameter table was unreadable
@@ -62,6 +56,9 @@ Kir F; Sahin S; Jusko WJ et al. (2025). European journal of drug metabolism and 
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=atenolol and metoprolol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - final table tab_0: grid unusable → re-running vision table extraction for Kir_2025
@@ -69,41 +66,18 @@ Kir F; Sahin S; Jusko WJ et al. (2025). European journal of drug metabolism and 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
-
-<details><summary>8 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl (ml/min/kg) total clearance]` | 16.04 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl (ml/min/kg) total clearance]` | not captured | 16.04 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k 01 c (mg/min/kg) apparent zero-order absorption rate constant 1]` | 1.19 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k 01 c (mg/min/kg) apparent zero-order absorption rate constant 1]` | not captured | 1.19 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v ss (l/kg) d volume of distribution at steady-state]` | 1.41 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v ss (l/kg) d volume of distribution at steady-state]` | not captured | 1.41 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | atenolol and metoprolol | atenolol, metoprolol | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | atenolol and metoprolol | atenolol, metoprolol | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q49 | fail | 1 / [time] | mg/min/kg | not captured | not captured | ['Kir_2025:other_prose'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.04 | not captured | not captured | ['Kir_2025:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 67.4 L/h | not captured | not captured | ['Kir_2025:other_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 98.7 L | not captured | not captured | ['Kir_2025:other_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -143,23 +117,18 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_modelica.zip" download>Metoprolol_Kir2025_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_fmi.zip" download>Metoprolol_Kir2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_fmi.zip" download>Metoprolol_Kir2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_matlab.zip" download>Metoprolol_Kir2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_matlab_simbio.zip" download>Metoprolol_Kir2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_sbml.zip" download>Metoprolol_Kir2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_cellml.zip" download>Metoprolol_Kir2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference.svg" alt="Metoprolol_Kir2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 17500 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). Doses in the paper: 17500, 21840 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Metoprolol_Kir2025_reference_params.json` · controls `Metoprolol_Kir2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

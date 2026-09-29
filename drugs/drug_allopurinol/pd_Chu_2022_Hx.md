@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Allopurinol and oxypurinol (concentrations from the PK model of Chu_2024) drive hypoxanthine (in mg/L): indirect response — drug inhibits the production of hypoxanthine.
+
+> Allopurinol and oxypurinol concentrations inhibit the elimination of hypoxanthine (measured in mg/L) by blocking its conversion to xanthine via xanthine oxidase inhibition, using a turnover model where the elimination rate is modulated by an effect term (EFF) derived from linear or saturable effect models. The paper does not provide specific numerical values for potency (e.g., IC50) or rate constants (e.g., kout, ke0) for the pharmacodynamic component, only listing PK parameter estimates for allopurinol and oxypurinol clearance and volume.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chu_2022`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
@@ -21,12 +29,12 @@ Chu WY; Annink KV; Nijstad AL; Maiwald CA; Schroth M; Bakkali LE; et al. et al. 
   ·  DOI: [10.1007/s40262-021-01068-0](https://doi.org/10.1007/s40262-021-01068-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Allopurinol clearance (CL1) — SIR parameter 95% CI | `Q22` · not captured | 0.62 | CL1 | not captured | llm_confirmed (not captured) | Tab3:row1:col2 |
-| Allopurinol volume of distribution (V1) — SIR parameter 95% CI | `Q63` · not captured | 2.25 | V1 | not captured | llm_corrected (not captured) | Tab3:row2:col2 |
-| Oxypurinol clearance (CL2)a — SIR parameter 95% CI | `Q22` · not captured | 0.23 | not captured | not captured | llm_confirmed (not captured) | Tab3:row3:col2 |
-| Oxypurinol volume of distribution (V2)a — SIR parameter 95% CI | `Q64` · not captured | 9.9 | not captured | not captured | llm_corrected (not captured) | Tab3:row4:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Allopurinol clearance (CL1) — SIR parameter 95% CI | `Q22` · not captured | 0.62 | CL1 | not captured | llm_confirmed (not captured) | Tab3:row1:col2 |
+| PK (driver) | Allopurinol volume of distribution (V1) — SIR parameter 95% CI | `Q63` · not captured | 2.25 | V1 | not captured | llm_corrected (not captured) | Tab3:row2:col2 |
+| PK (driver) | Oxypurinol clearance (CL2)a — SIR parameter 95% CI | `Q22` · not captured | 0.23 | not captured | not captured | llm_confirmed (not captured) | Tab3:row3:col2 |
+| PK (driver) | Oxypurinol volume of distribution (V2)a — SIR parameter 95% CI | `Q64` · not captured | 9.9 | not captured | not captured | llm_corrected (not captured) | Tab3:row4:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

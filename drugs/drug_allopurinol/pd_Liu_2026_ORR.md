@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Venetoclax (measured concentrations) drives overall response (in unknown): categorical (graded) response model.
+
+> The paper describes a positive exposure-response relationship where venetoclax average concentration (Cave) stimulates the binary overall response rate (ORR), with ORR increasing from 42% at 100 mg to 68% at 200 mg and plateauing at higher doses. The paper does not specify a mechanistic model (e.g., Emax, indirect response) or provide potency parameters (IC50, EC50, Imax) or rate constants (kin, kout, ke0) for the effect, only noting that remission rates no longer significantly increased when average plasma concentration exceeded 1777 ng/mL.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -21,11 +29,11 @@ Liu Z; Liu X; Gong Q; Qin S; Zhu X; Kuan IH; Mak WY; Xiang X; Jia C; Wang Q; Che
   ·  DOI: [10.2147/dddt.s563629](https://doi.org/10.2147/dddt.s563629)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL/F (L/h) — Final Model | `Q27` · not captured | 7.33 | L/h | not captured | exact (not captured) | t0003:row2:col1 |
-| Vd/F (L) — Final Model | `Q76` · not captured | 181 | L | not captured | exact (not captured) | t0003:row3:col1 |
-| Ka (/h) — Final Model | `Q49` · not captured | 0.16 | /h | not captured | exact (not captured) | t0003:row4:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL/F (L/h) — Final Model | `Q27` · not captured | 7.33 | L/h | not captured | exact (not captured) | t0003:row2:col1 |
+| PK (driver) | Vd/F (L) — Final Model | `Q76` · not captured | 181 | L | not captured | exact (not captured) | t0003:row3:col1 |
+| PK (driver) | Ka (/h) — Final Model | `Q49` · not captured | 0.16 | /h | not captured | exact (not captured) | t0003:row4:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

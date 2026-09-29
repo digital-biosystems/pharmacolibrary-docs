@@ -24,7 +24,7 @@ Messina Baas O; Pacheco Cuellar G; Toral-López J; Lara Huerta SF; Gonzalez-Huer
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

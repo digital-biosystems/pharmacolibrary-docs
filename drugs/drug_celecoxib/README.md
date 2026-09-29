@@ -25,7 +25,7 @@ Celecoxib, in combination with [tramadol], is indicated for the management of ac
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 3/0/0 | 0/0/0 | 0/0/9 | not captured | not captured | 43 | 41/0 | 14/29 | 0 |
+| 2026-09-29 07:26 | 4:55 | 1/0/2 | 0/0/0 | 0/0/9 | 88,775/6,201 | ollama / qwen3.8:27b-mtp-q8_0 | 43 | 34/8 | 14/29 | 0 |
 
 ## popPK records
 
@@ -66,6 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` metabolism, `CYP2C8` metabolism/substrate, `CYP2C9` metabolism/substrate, `CYP2D6` inhibitor/metabolism/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
@@ -84,7 +85,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 800 matched, 70 returned
-- **screened:** 4  ·  **relevant:** 4
+- **screened:** 38  ·  **relevant:** 4
 - **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

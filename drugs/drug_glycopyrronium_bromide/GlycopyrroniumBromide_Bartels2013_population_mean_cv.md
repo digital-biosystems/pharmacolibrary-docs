@@ -5,7 +5,7 @@
 
 # glycopyrronium bromide — `GlycopyrroniumBromide_Bartels2013_population_mean_cv`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.13). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 Although the record lists values for glycopyrronium's clearance (44.9), central volume (11.3), intercompartmental clearance (8.23) and peripheral volume (71.5), the model builder substituted placeholder values for clearance, volume of distribution, absorption rate constant, absorption lag time and the central-to-peripheral and peripheral-to-central rate constants, and defaulted the absorption rate constant that the source did not report; this invented absorption was judged not acceptable. A second reader also disagreed on the dose compound (glycopyrronium bromide versus glycopyrronium) and on whether the intermediate lung absorption half-life is 0.45 or absent, while the fast lung absorption half-life and GI tract absorption half-life carry no value. Extracted — glycopyrronium bromide: CL 44.9, V1 11.3, Q 8.23, V2 71.5, Fab 1.11, kabs 0.009, Vss 102, t1/2z 0.45.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has glycopyrronium, the second reading glycopyrronium bromide; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has glycopyrronium, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -87,16 +87,32 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.818 (18/22 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.13 (3/23 fields) | 20 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[fast lung absorption half-life].parameter_id` | Q59 | Q95 | mismatch |
+| `gpt-oss:120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` | 1.11 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` | not captured | 1.11 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fast lung absorption half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fast lung absorption half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[gi tract absorption half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | 8.23 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | not captured | 8.23 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[intermediate lung absorption half-life]` | 0.45 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | glycopyrronium | glycopyrronium bromide | mismatch |
+| `gpt-oss:120b` | `parameters[slow lung absorption rate]` | 0.009 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[slow lung absorption rate]` | not captured | 0.009 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[systemic clearance]` | 44.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[systemic clearance]` | not captured | 44.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of central plasma compartment]` | 11.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of central plasma compartment]` | not captured | 11.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | 102 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | not captured | 102 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of peripheral pk compartment]` | 71.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of peripheral pk compartment]` | not captured | 71.5 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | glycopyrronium | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | glycopyrronium | unknown | mismatch |
 
 </details>
 
@@ -113,6 +129,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row0:col3', 'Bartels_2013_table_p6_1:row0:col4'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row2:col3', 'Bartels_2013_table_p6_1:row2:col4', 'Bartels_2013_table_p6_1:row4:col3', 'Bartels_2013_table_p6_1:row4:col4'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row10:col3', 'Bartels_2013_table_p6_1:row10:col4'] |
+| C5_unit_missing_Q57 | fail | [time] | not captured | not captured | not captured | ['Bartels_2013_table_2:row12:col2', 'Bartels_2013_table_2:row12:col4'] |
+| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row1:col3', 'Bartels_2013_table_p6_1:row1:col4'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row3:col3', 'Bartels_2013_table_p6_1:row3:col4', 'Bartels_2013_table_p6_1:row5:col3', 'Bartels_2013_table_p6_1:row5:col4'] |
+| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_2:row2:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 44.9 | not captured | not captured | ['Bartels_2013_table_p6_1:row0:col3', 'Bartels_2013_table_p6_1:row0:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 

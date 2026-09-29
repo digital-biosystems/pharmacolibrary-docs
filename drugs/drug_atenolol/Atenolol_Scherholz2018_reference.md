@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/&quot;},{&quot;label&quot;:&quot;Scherholz_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Scherholz2018_reference&quot;,&quot;label&quot;:&quot;Scherholz_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Scherholz2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atenolol_Wjcicki2003_reference&quot;,&quot;label&quot;:&quot;W\u00f3jcicki_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Wjcicki2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Baek2008_carvedilol_25_mg&quot;,&quot;label&quot;:&quot;Baek_2008_carvedilol_25_mg&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Baek2008_carvedilol_25_mg.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Baek2008_atenolol_50_mg&quot;,&quot;label&quot;:&quot;Baek_2008_atenolol_50_mg&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Baek2008_atenolol_50_mg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Sowinski1995_reference&quot;,&quot;label&quot;:&quot;Sowinski_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Sowinski1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Celardo1987_before_renal_failure&quot;,&quot;label&quot;:&quot;Celardo_1987_before_renal_failure&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Celardo1987_before_renal_failure.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Celardo1987_during_renal_failure&quot;,&quot;label&quot;:&quot;Celardo_1987_during_renal_failure&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Celardo1987_during_renal_failure.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Scherholz2018_reference&quot;,&quot;label&quot;:&quot;Scherholz_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Scherholz2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atenolol_Wjcicki2003_reference&quot;,&quot;label&quot;:&quot;W\u00f3jcicki_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Wjcicki2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_van2007_reference&quot;,&quot;label&quot;:&quot;van_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_van2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atenolol — `Atenolol_Scherholz2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 Nothing in the extracted data describes the drug's disposition, so there is no model to build.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has acetaminophen, risperidone, atenolol, furosemide, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -44,6 +44,7 @@ _No resolved parameters._
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acetaminophen, risperidone, atenolol, furosemide
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -57,14 +58,21 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `screen.dose_compound` | acetaminophen, risperidone, atenolol, furosemide | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | acetaminophen, risperidone, atenolol, furosemide | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -77,6 +85,7 @@ _Every reader agrees on every compared field of this record._
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">

@@ -111,6 +111,11 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | fail | 2.08 | 0.802 | 0.3856 | 0.25 | reported t½β |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | l Á h À1 | not captured | not captured | ['Vaddady_2011:other_prose'] |
+| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row4:col2', 'tab_2:row4:col3', 'tab_2:row4:col4', 'tab_2:row4:col5', 'tab_2:row4:col6', 'tab_2:row4:col7', 'tab_2:row4:col8', 'tab_2:row4:col9'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 22.9 | not captured | not captured | ['Vaddady_2011:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 

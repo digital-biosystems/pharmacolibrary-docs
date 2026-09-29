@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;betaxolol&quot;,&quot;href&quot;:&quot;drugs/drug_betaxolol/&quot;},{&quot;label&quot;:&quot;Lieberman_1996 \u00b7 PD blood pressure&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# blood pressure — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+# blood pressure — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,20 +23,17 @@ _No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/4 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.75 (3/4 fields) | 1 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | betaxolol | not captured | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `model_family` | sigmoid_emax | not captured | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
 
 </details>
 

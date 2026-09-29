@@ -12,7 +12,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 04:32 | 6:07 | 0/0/0 | 0/2/0 | 0/0/0 | 173,450/5,068 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 4/1 | 5/0 | 0 |
+| 2026-09-29 21:25 | 1:26 | 0/0/0 | 0/2/0 | 0/0/0 | 6,378/2,612 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 4/1 | 5/0 | 0 |
 
 ## popPK records
 
@@ -22,8 +22,8 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Eglen_1989](drugs/drug_enprostil/pd_Eglen_1989_unknown.md) | Eglen RM et al., Characterization of the prostanoid rece…, British journal of pharmaco… (1989) | [10.1111/j.1476-5381.1989.tb12682.x](https://doi.org/10.1111/j.1476-5381.1989.tb12682.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hussein_1993](drugs/drug_enprostil/pd_Hussein_1993_unknown.md) | Hussein Z et al., Age-related differences in the pharmaco…, British journal of clinical… (1993) | [10.1111/j.1365-2125.1993.tb00386.x](https://doi.org/10.1111/j.1365-2125.1993.tb00386.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Eglen_1989](drugs/drug_enprostil/pd_Eglen_1989_unknown.md) | Eglen RM et al., Characterization of the prostanoid rece…, British journal of pharmaco… (1989) | [10.1111/j.1476-5381.1989.tb12682.x](https://doi.org/10.1111/j.1476-5381.1989.tb12682.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Hussein_1993](drugs/drug_enprostil/pd_Hussein_1993_unknown.md) | Hussein Z et al., Age-related differences in the pharmaco…, British journal of clinical… (1993) | [10.1111/j.1365-2125.1993.tb00386.x](https://doi.org/10.1111/j.1365-2125.1993.tb00386.x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -47,7 +47,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Botella_1995.pdf` | Botella A et al., Receptor subtypes involved in dual effe…, The Journal of pharmacology… (1995) | pd | 4 | not captured | [7791070](https://www.ncbi.nlm.nih.gov/pubmed/7791070) | metadata signals extractable PD data (EC50) |
 | `Pawlotsky_1993.pdf` | Pawlotsky JM et al., Effects of PGE2, misoprostol, and enpro…, Digestive diseases and scie… (1993) | pd | 4 | [10.1007/BF01307550](https://doi.org/10.1007/BF01307550) | [8425443](https://www.ncbi.nlm.nih.gov/pubmed/8425443) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-18T04:32:07.587084+00:00</sub>
+<sub>queue written 2026-09-29T21:24:59.660777+00:00</sub>
 
 ## Screened and excluded
 

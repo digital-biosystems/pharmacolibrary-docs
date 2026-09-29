@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;metoprolol&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/&quot;},{&quot;label&quot;:&quot;Taguchi_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metoprolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metoprolol_Taguchi2004_reference&quot;,&quot;label&quot;:&quot;Taguchi_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Taguchi2004_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metoprolol_Hcht2006_reference&quot;,&quot;label&quot;:&quot;H\u00f6cht_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Hcht2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metoprolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metoprolol_Taguchi2004_reference&quot;,&quot;label&quot;:&quot;Taguchi_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Taguchi2004_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Metoprolol_Bortolotti1989_reference&quot;,&quot;label&quot;:&quot;Bortolotti_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Bortolotti1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # metoprolol — `Metoprolol_Taguchi2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 The record for metoprolol in middle-aged and elderly Japanese patients lists only Q (3.86), CL/F (29.7), V/F (17.1) and a slope (1.79); the absorption rate constant was not reported in the source and was defaulted, which the adjudication judged an invented absorption input. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input. A second reader also disagreed on the intercompartmental clearance labels, reading q 1 as 0.835 where this record has null and q 2 as null where this record has 3.86. Extracted — metoprolol: Q 3.86, CL/F 29.7, V/F 17.1, slope 1.79.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q 1: this record has none, the second reading 0.835; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metoprolol, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -58,6 +58,7 @@ Taguchi M; Nozawa T; Mizumaki K; Inoue H; Tahara K; Takesono C; et al. et al. (2
 - dropped unlinked row (NIL): 'q 7' — extend the ontology if this is a real PK parameter (source ['tab_1:row4:col2', 'tab_1:row4:col3'])
 - dropped unlinked row (NIL): 'q 10' — extend the ontology if this is a real PK parameter (source ['tab_1:row5:col2', 'tab_1:row5:col3'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=metoprolol
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell tab_1:row0:col2 = '95% CI'
@@ -65,18 +66,23 @@ Taguchi M; Nozawa T; Mizumaki K; Inoue H; Tahara K; Takesono C; et al. et al. (2
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[q 1]` | not captured | 0.835 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[q 2]` | 3.86 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[s]` | 1.79 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[w cl/f].rse_percent` | 21.7 | not captured | mismatch |
+| `gpt-oss:120b` | `parameters[w v/f].rse_percent` | 0.00 | not captured | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | metoprolol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | metoprolol | unknown | mismatch |
 
 </details>
 
@@ -91,7 +97,12 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_base_Q335 | fail | 1.79 | 1.29 | 0.7207 | 0.05 | footnote reference category |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row2:col2', 'tab_1:row2:col3'] |
+| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row7:col1', 'tab_1:row7:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 

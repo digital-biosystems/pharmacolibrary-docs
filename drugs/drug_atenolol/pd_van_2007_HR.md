@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/&quot;},{&quot;label&quot;:&quot;van_2007 \u00b7 PD heart rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Scherholz2018_reference&quot;,&quot;label&quot;:&quot;Scherholz_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Scherholz2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Wjcicki2003_reference&quot;,&quot;label&quot;:&quot;W\u00f3jcicki_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Wjcicki2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Baek2008_carvedilol_25_mg&quot;,&quot;label&quot;:&quot;Baek_2008_carvedilol_25_mg&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Baek2008_carvedilol_25_mg.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Baek2008_atenolol_50_mg&quot;,&quot;label&quot;:&quot;Baek_2008_atenolol_50_mg&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Baek2008_atenolol_50_mg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Sowinski1995_reference&quot;,&quot;label&quot;:&quot;Sowinski_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Sowinski1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Celardo1987_before_renal_failure&quot;,&quot;label&quot;:&quot;Celardo_1987_before_renal_failure&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Celardo1987_before_renal_failure.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Celardo1987_during_renal_failure&quot;,&quot;label&quot;:&quot;Celardo_1987_during_renal_failure&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Celardo1987_during_renal_failure.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Scherholz2018_reference&quot;,&quot;label&quot;:&quot;Scherholz_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Scherholz2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Wjcicki2003_reference&quot;,&quot;label&quot;:&quot;W\u00f3jcicki_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Wjcicki2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_van2007_reference&quot;,&quot;label&quot;:&quot;van_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_van2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# heart rate — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+# heart rate — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,17 +24,18 @@ _No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.75 (3/4 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | S(-)-atenolol | S-atenolol | mismatch |
+| `gpt-oss:120b` | `driver_compound` | S(-)-atenolol | S(À)-atenolol | mismatch |
+| `gpt-oss:120b` | `effect_form` | unknown | additive | mismatch |
 
 </details>
 

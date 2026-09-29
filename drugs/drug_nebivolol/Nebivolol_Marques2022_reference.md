@@ -5,7 +5,7 @@
 
 # nebivolol — `Nebivolol_Marques2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 Although the record lists nebivolol parameters (tlag 0.30, absorption half-life 2.06, CL 0.22, V1 4.21, Q 0.59, V2 7.12), the model builder substituted placeholder defaults for clearance, volume of distribution, and the central-to-peripheral and peripheral-to-central rate constants, so the model was held back rather than published with invented numbers. The parameter-coverage check expected 5 parameters emitted or defaulted but obtained 4, with the absorption lag time (tlag) neither emitted nor defaulted. A second reader also disagreed on one parameter value (0.13 versus none recorded) and on which parameter the absorption-rate label refers to. Extracted — nebivolol: tlag 0.3, t1/2ka 2.06, CL 0.22, V1 4.21, Q 0.59, V2 7.12.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of b: this record has none, the second reading 0.13; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of k a pop: this record has 2.06, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -60,19 +60,19 @@ Marques L; Costa B; Vale N et al. (2022). Pharmaceutics 14
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.889 (16/18 fields) | 2 |
+| `gpt-oss:120b` | partly confirmed | 0.875 (14/16 fields) | 2 |
 
 <details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[b]` | not captured | 0.13 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k a pop].parameter_id` | Q95 | Q49 | mismatch |
+| `gpt-oss:120b` | `parameters[k a pop]` | 2.06 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka pop]` | not captured | 2.06 | only_one_extracted |
 
 </details>
 
@@ -87,6 +87,14 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_4:row3:col1', 'tab_4:row3:col2'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_4:row5:col1', 'tab_4:row5:col2'] |
+| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_4:row4:col1', 'tab_4:row4:col2'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_4:row6:col1', 'tab_4:row6:col2'] |
+| C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['tab_4:row1:col1', 'tab_4:row1:col2'] |
+| C5_unit_missing_Q95 | fail | [time] | not captured | not captured | not captured | ['tab_4:row2:col1', 'tab_4:row2:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.22 | not captured | not captured | ['tab_4:row3:col1', 'tab_4:row3:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 

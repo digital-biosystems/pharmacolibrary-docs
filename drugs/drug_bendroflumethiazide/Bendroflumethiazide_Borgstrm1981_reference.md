@@ -5,7 +5,7 @@
 
 # bendroflumethiazide — `Bendroflumethiazide_Borgstrm1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 The paper (Borgström_1981, healthy male volunteers) was read from the abstract alone, so summary statistics stood in for a fitted model; only a terminal half-life of 3.1 hr and a renal clearance of 30 ml are reported, with no distribution volume and no total clearance or elimination rate. A dimension mismatch was flagged on a structural parameter. A second reader attributed the 30 ml renal clearance value differently, disagreeing on which parameter field it belongs to. Extracted — bendroflumethiazide: t1/2z 3.1 hr, CLR 30 ml.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of renal clearance: this record has none, the second reading 30; it also differs on 1 more field. That field does not shape the model.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -64,21 +64,14 @@ Borgström L; Johansson CG; Larsson H; Lenander R et al. (1981). Journal of phar
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>2 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[renal clearance of bendroflumethiazide]` | 30 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[renal clearance]` | not captured | 30 | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

@@ -5,7 +5,7 @@
 
 # glycopyrronium — `Glycopyrronium_Bartels2013_model_based`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — glycopyrronium: CL 44.9, Vss 82.7, t1/2z 0.45, t1/2ka 2.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[fast lung absorption half-life].parameter_id`: this record has Q59, the second reading Q95; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[fast lung absorption half-life].parameter_id`: this record has Q59, the second reading Q95; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,16 +81,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.6 (6/10 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[fast lung absorption half-life].parameter_id` | Q59 | Q95 | mismatch |
 | `gpt-oss:120b` | `parameters[gi tract absorption half-life]` | 2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[intermediate lung absorption half-life]` | 0.45 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution at steady state].value` | 82.7 | 102 | mismatch |
 
 </details>
 
@@ -106,7 +105,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_2:row1:col5'] |
+| C5_unit_missing_Q57 | fail | [time] | not captured | not captured | not captured | ['Bartels_2013_table_2:row12:col2', 'Bartels_2013_table_2:row12:col4'] |
+| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_2:row2:col4', 'Bartels_2013_table_2:row2:col5'] |
+| C5_unit_missing_Q95 | fail | [time] | not captured | not captured | not captured | ['Bartels_2013_table_2:row15:col3', 'Bartels_2013_table_2:row15:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 44.9 | not captured | not captured | ['Bartels_2013_table_2:row1:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 

@@ -85,7 +85,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chung_2022:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |

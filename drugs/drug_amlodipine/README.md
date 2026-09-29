@@ -155,6 +155,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/metabolism | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor/metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` inhibitor/substrate, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor/safety_allele, `CYP2D6` inhibitor/metabolism, `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` inhibitor/metabolism/substrate, `SLC22A1` transport | DrugBank actor |

@@ -109,6 +109,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` transport | paper PGx gene |
 | absorption | placenta | `ABCB1` transport | paper PGx gene |
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
+| absorption | testis | `ABCB1` transport | paper PGx gene |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | liver | `SLC22A1` transport | paper PGx gene |
 | excretion | kidney | `ABCC4` substrate/unknown, `SLC22A6` inhibitor/substrate, `SLC22A8` substrate | DrugBank actor |

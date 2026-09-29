@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives plasma urate concentration (in unknown) (the model form was not identified).
+
+> Steady-state plasma oxypurinol concentrations inhibit plasma urate concentration via a sigmoid Emax model, with a C50 of 36.58 ± 8.36 mM. The paper does not specify the underlying mechanism (e.g., production vs. elimination) or rate constants (kin, kout, ke0).
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Graham_1996`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

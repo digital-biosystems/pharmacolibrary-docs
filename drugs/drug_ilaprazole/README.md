@@ -17,13 +17,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 05:17 | 0:48 | 0/1/0 | 0/0/0 | 0/0/0 | 24,656/843 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-09-29 21:35 | 2:34 | 0/1/0 | 0/0/0 | 0/0/0 | 23,128/10,455 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_2023_reference](drugs/drug_ilaprazole/Ilaprazole_Yu2023_reference.md) | 2-compartment (no model) | 3 (+2 cov.) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_2023_reference](drugs/drug_ilaprazole/Ilaprazole_Yu2023_reference.md) | 2-compartment (no model) | 3 (+2 cov.) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -46,7 +46,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Jia_2021.pdf` | Jia R et al., Accelerating Development of Benziamidaz…, Pharmaceutics (2021) | popPK | 10 | [10.3390/pharmaceutics13030392](https://doi.org/10.3390/pharmaceutics13030392) | [33804279](https://pubmed.ncbi.nlm.nih.gov/33804279) | The paper describes a population PK/PD model for ilaprazole, but the specific numeric parameter values are not present in the provided abstract text. |
 
-<sub>queue written 2026-09-18T05:16:30.523924+00:00</sub>
+<sub>queue written 2026-09-29T21:33:18.375666+00:00</sub>
 
 ## Screened and excluded
 

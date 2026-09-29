@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Verinurad (measured concentrations) drives serum uric acid (in mg/L): direct Emax (saturable) effect.
+
+> The model describes the inhibition of uric acid production by febuxostat or oxypurinol and the modulation of renal excretion by verinurad, with an estimated EC50 of 29.3 ng/mL for verinurad and a baseline fractional excretion of uric acid (FEUA) of 7.7%.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Leander_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,11 +29,11 @@ Leander J; Sunnåker M; Rekić D; Aksenov S; Eriksson UG; Johansson S; et al. et
   ·  DOI: [10.1007/s10928-021-09747-y](https://doi.org/10.1007/s10928-021-09747-y)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax for febuxostat | `Q320` · not captured | 1 | 2018 | not captured | review_gapfill (not captured) | Leander_2021:review |
-| EC50s of verinurad, febuxostat, and oxypurinol | `Q321` · not captured | 29.3 | ng/mL | not captured | review_gapfill (not captured) | Leander_2021:review |
-| baseline FEUA | `Q324` · not captured | 7.7 | % | not captured | review_gapfill (not captured) | Leander_2021:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax for febuxostat | `Q320` · not captured | 1 | 2018 | not captured | review_gapfill (not captured) | Leander_2021:review |
+| PD (effect) | EC50s of verinurad, febuxostat, and oxypurinol | `Q321` · not captured | 29.3 | ng/mL | not captured | review_gapfill (not captured) | Leander_2021:review |
+| PD (effect) | baseline FEUA | `Q324` · not captured | 7.7 | % | not captured | review_gapfill (not captured) | Leander_2021:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

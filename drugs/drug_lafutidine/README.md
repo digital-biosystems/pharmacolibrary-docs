@@ -16,7 +16,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 05:28 | 1:31 | 0/0/0 | 0/1/0 | 0/0/0 | 24,309/1,011 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-29 21:37 | 1:14 | 0/0/0 | 0/1/0 | 0/0/0 | 2,806/1,346 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -26,7 +26,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ikawa_2007](drugs/drug_lafutidine/pd_Ikawa_2007_pH.md) | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ikawa_2007](drugs/drug_lafutidine/pd_Ikawa_2007_pH.md) | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -51,7 +51,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Hagiwara_2007.pdf` | Hagiwara T et al., Improvement in symptoms after H2-recept…, World journal of gastroente… (2007) | pgx | 5 | [10.3748/wjg.v13.i28.3836](https://doi.org/10.3748/wjg.v13.i28.3836) | [17657838](https://www.ncbi.nlm.nih.gov/pubmed/17657838) | metadata signals extractable PGX data (CYP2C19) |
 | `Shimatani_2003.pdf` | Shimatani T et al., Effect of omeprazole 10 mg on intragast…, Alimentary pharmacology & t… (2003) | pgx | 5 | [10.1046/j.1365-2036.2003.01804.x](https://doi.org/10.1046/j.1365-2036.2003.01804.x) | [14653835](https://www.ncbi.nlm.nih.gov/pubmed/14653835) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-18T05:28:11.054449+00:00</sub>
+<sub>queue written 2026-09-29T21:37:27.833275+00:00</sub>
 
 ## Screened and excluded
 

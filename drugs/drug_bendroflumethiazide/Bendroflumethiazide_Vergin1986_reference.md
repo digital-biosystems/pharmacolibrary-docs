@@ -5,7 +5,7 @@
 
 # bendroflumethiazide — `Bendroflumethiazide_Vergin1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — bendroflumethiazide: Vss 0.88 l/kg, CL 269 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bendroflumethiazide, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bendroflumethiazide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -74,13 +74,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.links` | [['spironolactone', 'canrenone', 'metabolism']] | [['spironolactone', 'canrenone', 'metabolism'], ['spironolactone', 'fluorogenic spironolactone metabolites (sum)', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[bft]` | not captured | 2.5 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | bendroflumethiazide | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | bendroflumethiazide | unknown | mismatch |
 

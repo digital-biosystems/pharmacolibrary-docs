@@ -17,20 +17,20 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 05:13 | 12:45 | 0/1/0 | 1/1/0 | 0/0/0 | 280,591/27,480 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 0/8 | 8/0 | 0 |
+| 2026-09-29 21:32 | 4:12 | 0/1/0 | 1/1/0 | 0/0/0 | 65,876/15,512 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 0/8 | 8/0 | 0 |
 
 ## popPK records
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jung_2026_reference](drugs/drug_fexuprazan/Fexuprazan_Jung2026_reference.md) | 1-compartment (no model) | 0 | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jung_2026_reference](drugs/drug_fexuprazan/Fexuprazan_Jung2026_reference.md) | 1-compartment (no model) | 0 | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kim_2022](drugs/drug_fexuprazan/pd_Kim_2022_pH.md) | Kim MS et al., Model-Based Prediction of Acid Suppress…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15060709](https://doi.org/10.3390/ph15060709) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Jung_2026](drugs/drug_fexuprazan/pd_Jung_2026_intragastric_pH.md) | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Kim_2022](drugs/drug_fexuprazan/pd_Kim_2022_pH.md) | Kim MS et al., Model-Based Prediction of Acid Suppress…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15060709](https://doi.org/10.3390/ph15060709) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Jung_2026](drugs/drug_fexuprazan/pd_Jung_2026_intragastric_pH.md) | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -41,7 +41,7 @@
 ## Coverage
 
 - **PubMed hits:** 23 matched, 23 returned
-- **screened:** 3  ·  **relevant:** 3
+- **screened:** 6  ·  **relevant:** 3
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -53,7 +53,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Ranbhise_2026.pdf` | Ranbhise JS et al., Potassium-Competitive Acid Blockers as…, Pharmaceuticals (Basel, Swi… (2026) | pgx | 8 | [10.3390/ph19081168](https://doi.org/10.3390/ph19081168) | [42653667](https://www.ncbi.nlm.nih.gov/pubmed/42653667) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 
-<sub>queue written 2026-09-18T05:01:09.951285+00:00</sub>
+<sub>queue written 2026-09-29T21:28:51.469832+00:00</sub>
 
 ## Screened and excluded
 

@@ -5,7 +5,7 @@
 
 # bendroflumethiazide — `Bendroflumethiazide_SchferKorting1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of maximum: this record has none, the second reading 60. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of half-life: this record has none, the second reading 143; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,18 +62,20 @@ Schäfer-Korting M et al. (1985). Arzneimittel-Forschung 35
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[half-life]` | not captured | 143 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[maximum]` | not captured | 60 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[terminal half-life].parameter_id` | Q57 | Q60 | mismatch |
 
 </details>
 

@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxypurinol (concentrations from the PK model of Stocker_2012) drives serum urate (in µM): direct linear effect.
+
+> The paper describes a linear mixed-effects regression model where allopurinol dose (in 150 mg increments) and oxypurinol concentrations are associated with serum urate levels, with the effect modified by fractional excretion of uric acid (FEUA) and estimated glomerular filtration rate (eGFR). The model reports a beta coefficient of -0.26 for eGFR and 6.46 for FEUA &gt; 5.5%, but does not specify a mechanistic pharmacodynamic model (e.g., Emax, inhibition of production/elimination) or standard potency parameters (IC50, EC50, Imax).
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Richette_2026`
 - **model family:** `linear`
 - **driver:** `cited_pk`
@@ -21,10 +29,10 @@ Richette P; Walter-Petrich A; Nguyen QD; Resche-Rigon M; Nguyen QHD; Do MD; et a
   ·  DOI: [10.1002/acr.25695](https://doi.org/10.1002/acr.25695)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| eGFR, mL/mn/1.73 m 2 — Beta | `Q60` · not captured | -0.26 | not captured | not captured | llm (not captured) | tab_2:row5:col1 |
-| FEUA &gt; 5.5% × — Beta | `Q60` · not captured | 6.46 | not captured | not captured | llm (not captured) | tab_2:row6:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | eGFR, mL/mn/1.73 m 2 — Beta | `Q60` · not captured | -0.26 | not captured | not captured | llm (not captured) | tab_2:row5:col1 |
+| PK (driver) | FEUA &gt; 5.5% × — Beta | `Q60` · not captured | 6.46 | not captured | not captured | llm (not captured) | tab_2:row6:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

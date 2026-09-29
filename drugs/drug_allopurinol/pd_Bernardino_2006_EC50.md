@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 1-(4-X-phenyl)-N′-[(4-Y-phenyl)methylene]-1H-pyrazole-4-carbohydrazides drives leishmanicidal activity (in µM l -1): direct Emax (saturable) effect.
+
+> The paper reports that compounds 27 and 15 inhibit the growth of Leishmania amazonensis with EC50/24h values of 50 and 80 µM l-1, respectively, but does not specify the underlying pharmacodynamic mechanism or rate constants. Allopurinol is mentioned only as a reference drug for comparison, not as the subject of a fitted PD model.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bernardino_2006`
 - **model family:** `emax`
 - **driver:** `not_resolved`

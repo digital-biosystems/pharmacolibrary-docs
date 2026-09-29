@@ -23,7 +23,7 @@ PPIs such as esomeprazole have also been shown to inhibit the activity of dimeth
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 04:42 | 9:54 | 1/1/1 | 0/1/0 | 0/0/0 | 199,229/23,593 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 4/3 | 7/0 | 0 |
+| 2026-09-29 21:27 | 1:29 | 1/1/1 | 0/1/0 | 0/0/0 | 18,827/1,947 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 13/3 | 7/0 | 0 |
 
 ## popPK records
 
@@ -50,6 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | metabolism | kidney | <sub>“…ls of the S- than of the R-isomer.[FDA Label] Nine major urinary metabolites have been det…”</sub> | prose |
 | metabolism | liver | `CYP2C19` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
@@ -68,7 +69,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 29 matched, 16 returned
-- **screened:** 4  ·  **relevant:** 4
+- **screened:** 13  ·  **relevant:** 4
 - **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

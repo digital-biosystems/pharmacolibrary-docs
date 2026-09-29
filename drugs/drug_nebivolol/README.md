@@ -21,13 +21,13 @@ Nebivolol was granted FDA approval on 17 December 2007.[L7985]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 1/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 16 | 3/0 | 6/0 | 0 |
+| 2026-09-29 04:44 | 6:11 | 0/0/1 | 0/0/0 | 0/0/0 | 91,408/12,165 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 2/4 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Marques_2022_reference](drugs/drug_nebivolol/Nebivolol_Marques2022_reference.md) | 2-compartment, IV | 6 | Marques L et al., New Data for Nebivolol after In Silico…, Pharmaceutics (2022) | [10.3390/pharmaceutics14091911](https://doi.org/10.3390/pharmaceutics14091911) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Marques_2022_reference](drugs/drug_nebivolol/Nebivolol_Marques2022_reference.md) | 2-compartment, IV | 6 | Marques L et al., New Data for Nebivolol after In Silico…, Pharmaceutics (2022) | [10.3390/pharmaceutics14091911](https://doi.org/10.3390/pharmaceutics14091911) |
 
 ## ADME sites
 
@@ -53,15 +53,35 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 3  ·  **relevant:** 3
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Briciu_2014.pdf` | Briciu C et al., A pharmacokinetic drug interaction stud…, Journal of clinical pharmac… (2014) | popPK | 8 | [10.1111/jcpt.12180](https://doi.org/10.1111/jcpt.12180) | [24845234](https://pubmed.ncbi.nlm.nih.gov/24845234) | The study reports non-compartmental PK parameters (Cmax, Tmax, AUC) for nebivolol, but lacks compartmental parameters like clearance (CL) or volume (V) required for population PK modeling. |
+
+<sub>queue written 2026-09-29T04:39:48.735111+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Bocci_2020 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral screening study for SARS-CoV-2 and does not report pharmacokinetic disposition parameters (CL, V, etc.) for nebivolol. |
+| popPK | Bundkirchen_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cardiac calcium sensitivity and does not report any pharmacokinetic parameters for nebivolol. |
+| PD | Bundkirchen_2001 | not_relevant | 0 | 0 | The study reports a negative result (no effect) on cardiac calcium sensitivity and does not provide a pharmacodynamic exposure-response or dose-response model for nebivolol. |
+| popPK | Garbán_2004 | irrelevant | 0 | 0 | The study investigates the mechanism of action (estrogen receptor binding and vascular responsiveness) in isolated tissues and cells, not pharmacokinetic disposition parameters. |
+| popPK | Gschwend_2009 | irrelevant | 0 | 0 | The study is a mechanistic investigation of vascular function in rats and does not report pharmacokinetic parameters for nebivolol. |
+| PD | Gschwend_2009 | not_relevant | 2 | 1 | The study reports pharmacodynamic effects (endothelial relaxation) at fixed doses but does not provide concentration-effect data, PK parameters, or a fitted PD model with numeric parameters like EC50 or slope. |
+| popPK | Kannan_2012 | irrelevant | 0 | 0 | The study is a zebrafish cardiovascular screening assay where nebivolol is used only as a positive control for heart rate and blood flow, not for pharmacokinetic parameter estimation. |
+| PD | Kannan_2012 | not_relevant | 1 | 0 | Nebivolol is used only as a single-dose positive control for comparison; no dose-response curve or numeric PD parameters (EC50, Emax) are reported for nebivolol. |
 | popPK | Okamoto_2014 | irrelevant | 0 | 0 | This is a pharmacodynamic blood-pressure study, not a PK study, and no nebivolol disposition parameters are reported. |
+| popPK | Rawat_2023 | relevant | 4 | 5 | The study reports ocular PK parameters (Cmax, AUC, Tmax) for nebivolol in rabbits, but lacks systemic disposition parameters like clearance (CL) or volume of distribution (V). |
+| popPK | Rosenkranz_2006 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasodilatory properties in rat aorta, not a pharmacokinetic study reporting disposition parameters for nebivolol. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-07-15 13:59 UTC</sub>

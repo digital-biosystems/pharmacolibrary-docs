@@ -29,15 +29,15 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 03:16 | 6:57 | 0/2/1 | 0/0/0 | 0/0/0 | 47,879/14,626 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-29 13:49 | 4:22 | 0/2/1 | 0/0/0 | 0/0/0 | 21,141/12,907 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Vergin_1986_reference](drugs/drug_bendroflumethiazide/Bendroflumethiazide_Vergin1986_reference.md) | parent + metabolite (no model) | 2 | Vergin H et al., [Pharmacokinetic studies and bioavailab…, Arzneimittel-Forschung (1986) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Borgström_1981_reference](drugs/drug_bendroflumethiazide/Bendroflumethiazide_Borgstrm1981_reference.md) | 1-compartment (no model) | 2 | Borgström L et al., Pharmacokinetics of bendroflumethiazide…, Journal of pharmacokinetics… (1981) | [10.1007/BF01060887](https://doi.org/10.1007/BF01060887) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Schäfer-Korting_1985_reference](drugs/drug_bendroflumethiazide/Bendroflumethiazide_SchferKorting1985_reference.md) | 1-compartment (no model) | 2 | Schäfer-Korting M, Skin blister fluid--an access to the pe…, Arzneimittel-Forschung (1985) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Vergin_1986_reference](drugs/drug_bendroflumethiazide/Bendroflumethiazide_Vergin1986_reference.md) | parent + metabolite (no model) | 2 | Vergin H et al., [Pharmacokinetic studies and bioavailab…, Arzneimittel-Forschung (1986) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Borgström_1981_reference](drugs/drug_bendroflumethiazide/Bendroflumethiazide_Borgstrm1981_reference.md) | 1-compartment (no model) | 2 | Borgström L et al., Pharmacokinetics of bendroflumethiazide…, Journal of pharmacokinetics… (1981) | [10.1007/BF01060887](https://doi.org/10.1007/BF01060887) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Schäfer-Korting_1985_reference](drugs/drug_bendroflumethiazide/Bendroflumethiazide_SchferKorting1985_reference.md) | 1-compartment (no model) | 2 | Schäfer-Korting M, Skin blister fluid--an access to the pe…, Arzneimittel-Forschung (1985) | — |
 
 ## ADME sites
 
@@ -73,7 +73,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Vergin_1986.pdf` | Vergin H et al., [Pharmacokinetic studies and bioavailab…, Arzneimittel-Forschung (1986) | popPK | 10 | not captured | [3707669](https://pubmed.ncbi.nlm.nih.gov/3707669) | The abstract explicitly reports quantitative pharmacokinetic parameters (half-life, volume of distribution, and clearance) for bendroflumethiazide derived from a 2-compartment model. |
 | `Schäfer-Korting_1985.pdf` | Schäfer-Korting M, Skin blister fluid--an access to the pe…, Arzneimittel-Forschung (1985) | popPK | 9 | not captured | [4096738](https://pubmed.ncbi.nlm.nih.gov/4096738) | The study reports quantitative pharmacokinetic parameters (half-lives, compartmental model description) for bendroflumethiazide in rats, with specific numeric values present in the text. |
 
-<sub>queue written 2026-09-28T03:10:05.891355+00:00</sub>
+<sub>queue written 2026-09-29T13:45:02.704434+00:00</sub>
 
 ## Screened and excluded
 

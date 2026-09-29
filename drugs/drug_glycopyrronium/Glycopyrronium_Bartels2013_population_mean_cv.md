@@ -114,6 +114,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row0:col3', 'Bartels_2013_table_p6_1:row0:col4'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row2:col3', 'Bartels_2013_table_p6_1:row2:col4', 'Bartels_2013_table_p6_1:row4:col3', 'Bartels_2013_table_p6_1:row4:col4'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row10:col3', 'Bartels_2013_table_p6_1:row10:col4'] |
+| C5_unit_missing_Q57 | fail | [time] | not captured | not captured | not captured | ['Bartels_2013_table_2:row12:col2', 'Bartels_2013_table_2:row12:col4'] |
+| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row1:col3', 'Bartels_2013_table_p6_1:row1:col4'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row3:col3', 'Bartels_2013_table_p6_1:row3:col4', 'Bartels_2013_table_p6_1:row5:col3', 'Bartels_2013_table_p6_1:row5:col4'] |
+| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_2:row2:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 44.9 | not captured | not captured | ['Bartels_2013_table_p6_1:row0:col3', 'Bartels_2013_table_p6_1:row0:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 

@@ -19,28 +19,28 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 05:37 | 8:30 | 0/2/1 | 0/2/0 | 0/0/0 | 171,354/19,426 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 3/1 | 4/0 | 0 |
+| 2026-09-29 21:43 | 5:46 | 0/2/1 | 0/2/0 | 0/0/0 | 55,575/19,385 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 12/1 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Katashima_1995_reference](drugs/drug_lansoprazole/Lansoprazole_Katashima1995_reference.md) | 1-compartment (no model) | 1 | Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism and disposi… (1995) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sakurai_2007_1_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_1_compartment.md) | 1-compartment (no model) | 2 | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sakurai_2007_2_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_2_compartment.md) | 1-compartment (no model) | 2 | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Katashima_1995_reference](drugs/drug_lansoprazole/Lansoprazole_Katashima1995_reference.md) | 1-compartment (no model) | 1 | Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism and disposi… (1995) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sakurai_2007_1_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_1_compartment.md) | 1-compartment (no model) | 2 | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sakurai_2007_2_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_2_compartment.md) | 1-compartment (no model) | 2 | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Menzel_2005](drugs/drug_lansoprazole/pd_Menzel_2005_CYP35A1.md) | Menzel R et al., CYP35: xenobiotically induced gene expr…, Archives of biochemistry an… (2005) | [10.1016/j.abb.2005.03.020](https://doi.org/10.1016/j.abb.2005.03.020) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Menzel_2005](drugs/drug_lansoprazole/pd_Menzel_2005_CYP35A2.md) | Menzel R et al., CYP35: xenobiotically induced gene expr…, Archives of biochemistry an… (2005) | [10.1016/j.abb.2005.03.020](https://doi.org/10.1016/j.abb.2005.03.020) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Menzel_2005](drugs/drug_lansoprazole/pd_Menzel_2005_CYP35A5.md) | Menzel R et al., CYP35: xenobiotically induced gene expr…, Archives of biochemistry an… (2005) | [10.1016/j.abb.2005.03.020](https://doi.org/10.1016/j.abb.2005.03.020) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Menzel_2005](drugs/drug_lansoprazole/pd_Menzel_2005_CYP35C1.md) | Menzel R et al., CYP35: xenobiotically induced gene expr…, Archives of biochemistry an… (2005) | [10.1016/j.abb.2005.03.020](https://doi.org/10.1016/j.abb.2005.03.020) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Menzel_2005](drugs/drug_lansoprazole/pd_Menzel_2005_Reproduction.md) | Menzel R et al., CYP35: xenobiotically induced gene expr…, Archives of biochemistry an… (2005) | [10.1016/j.abb.2005.03.020](https://doi.org/10.1016/j.abb.2005.03.020) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Wu_2019](drugs/drug_lansoprazole/pd_Wu_2019_intragastric_pH.md) | Wu L et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Clinical drug investigation (2019) | [10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Wu_2019](drugs/drug_lansoprazole/pd_Wu_2019_percentage_of_time_with_intragastric_pH_above_4_0.md) | Wu L et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Clinical drug investigation (2019) | [10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Wu_2019](drugs/drug_lansoprazole/pd_Wu_2019_percentage_of_time_with_intragastric_pH_above_6_0.md) | Wu L et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Clinical drug investigation (2019) | [10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Menzel_2005](drugs/drug_lansoprazole/pd_Menzel_2005_CYP35A1.md) | Menzel R et al., CYP35: xenobiotically induced gene expr…, Archives of biochemistry an… (2005) | [10.1016/j.abb.2005.03.020](https://doi.org/10.1016/j.abb.2005.03.020) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Menzel_2005](drugs/drug_lansoprazole/pd_Menzel_2005_CYP35A2.md) | Menzel R et al., CYP35: xenobiotically induced gene expr…, Archives of biochemistry an… (2005) | [10.1016/j.abb.2005.03.020](https://doi.org/10.1016/j.abb.2005.03.020) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Menzel_2005](drugs/drug_lansoprazole/pd_Menzel_2005_CYP35A5.md) | Menzel R et al., CYP35: xenobiotically induced gene expr…, Archives of biochemistry an… (2005) | [10.1016/j.abb.2005.03.020](https://doi.org/10.1016/j.abb.2005.03.020) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Menzel_2005](drugs/drug_lansoprazole/pd_Menzel_2005_CYP35C1.md) | Menzel R et al., CYP35: xenobiotically induced gene expr…, Archives of biochemistry an… (2005) | [10.1016/j.abb.2005.03.020](https://doi.org/10.1016/j.abb.2005.03.020) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Menzel_2005](drugs/drug_lansoprazole/pd_Menzel_2005_Reproduction.md) | Menzel R et al., CYP35: xenobiotically induced gene expr…, Archives of biochemistry an… (2005) | [10.1016/j.abb.2005.03.020](https://doi.org/10.1016/j.abb.2005.03.020) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wu_2019](drugs/drug_lansoprazole/pd_Wu_2019_intragastric_pH.md) | Wu L et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Clinical drug investigation (2019) | [10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wu_2019](drugs/drug_lansoprazole/pd_Wu_2019_percentage_of_time_with_intragastric_pH_above_4_0.md) | Wu L et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Clinical drug investigation (2019) | [10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wu_2019](drugs/drug_lansoprazole/pd_Wu_2019_percentage_of_time_with_intragastric_pH_above_6_0.md) | Wu L et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Clinical drug investigation (2019) | [10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2) |
 
 ## ADME sites
 
@@ -54,6 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
 | distribution | liver | `SLC22A3` unknown | DrugBank actor |
 | distribution | placenta | `SLC22A3` unknown | DrugBank actor |
 | distribution | skeletal muscle | `SLC22A3` unknown | DrugBank actor |
@@ -75,7 +76,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 20 matched, 19 returned
-- **screened:** 6  ·  **relevant:** 6
+- **screened:** 15  ·  **relevant:** 6
 - **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -92,7 +93,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Zalloum_2012.pdf` | Zalloum I et al., Genetic polymorphism of CYP2C19 in a Jo…, Molecular biology reports (2012) | popPK | 9 | [10.1007/s11033-011-1204-5](https://doi.org/10.1007/s11033-011-1204-5) | [21769476](https://pubmed.ncbi.nlm.nih.gov/21769476) | The study reports quantitative non-compartmental pharmacokinetic parameters (Tmax, Cmax, t1/2, AUC) for lansoprazole in a human population, with values explicitly listed in the text. |
 | `Alai_2014.pdf` | Alai M et al., Novel lansoprazole-loaded nanoparticles…, The AAPS journal (2014) | popPK | 8 | [10.1208/s12248-014-9564-0](https://doi.org/10.1208/s12248-014-9564-0) | [24519468](https://pubmed.ncbi.nlm.nih.gov/24519468) | The study is a pharmacokinetic evaluation of lansoprazole nanoparticles in vivo, but the provided evidence contains only qualitative descriptions and efficacy percentages, lacking specific numeric PK parameters like clearance or volume. |
 
-<sub>queue written 2026-09-18T05:29:48.995754+00:00</sub>
+<sub>queue written 2026-09-29T21:39:42.193201+00:00</sub>
 
 ## Screened and excluded
 

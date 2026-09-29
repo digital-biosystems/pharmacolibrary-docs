@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 09:03 | 0:49 | 0/0/0 | 1/0/0 | 0/0/0 | 25,921/514 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-29 22:02 | 1:07 | 0/0/0 | 1/0/0 | 0/0/0 | 3,241/1,114 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Verspohl_1990](drugs/drug_hexocyclium/pd_Verspohl_1990_unknown.md) | Verspohl EJ et al., Muscarinic receptor subtypes in rat pan…, European journal of pharmac… (1990) | [10.1016/0014-2999(90)90109-j](https://doi.org/10.1016/0014-2999(90)90109-j) |
+| status | detail | about | citation | doi |
+|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Verspohl_1990_unknown](drugs/drug_hexocyclium/pd_Verspohl_1990_unknown.md) | glucagon secretion ← arecaidine propargyl ester · direct Emax (saturable) effect | Verspohl EJ et al., Muscarinic receptor subtypes in rat pan…, European journal of pharmac… (1990) | [10.1016/0014-2999(90)90109-j](https://doi.org/10.1016/0014-2999(90)90109-j) |
 
 ## ADME sites
 
@@ -60,7 +60,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Milovanović_1997.pdf` | Milovanović DR et al., Pharmacologic characterization of musca…, The Indian journal of medic… (1997) | pd | 4 | not captured | [9183081](https://www.ncbi.nlm.nih.gov/pubmed/9183081) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-18T09:03:37.285363+00:00</sub>
+<sub>queue written 2026-09-29T22:01:35.053733+00:00</sub>
 
 ## Screened and excluded
 

@@ -10,6 +10,10 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives serum urate (in mg/dL): direct Emax (saturable) effect.
+
 - **paper:** `Wen_2023`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,29 +25,29 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
   ·  DOI: [10.1111/bcp.15792](https://doi.org/10.1111/bcp.15792)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL/fm (L/h) — Base model | `Q351` · not captured | 1 | L/h | not captured | exact (not captured) | T2:row2:col1 |
-| CL/fm (L/h) — Final model | `Q351` · not captured | 1.05 | L/h | not captured | exact (not captured) | T2:row2:col2 |
-| V/fm (L) — Base model | `Q367` · not captured | 47.7 | L | not captured | exact (not captured) | T2:row3:col1 |
-| V/fm (L) — Final model | `Q367` · not captured | 59.3 | L | not captured | exact (not captured) | T2:row3:col2 |
-| Kfm (/h) — Base model | `Q305` · not captured | 1.1 | /h | not captured | exact (not captured) | T2:row4:col1 |
-| Kfm (/h) — Final model | `Q305` · not captured | 1.1 | /h | not captured | exact (not captured) | T2:row4:col2 |
-| Kfm (/h) — SIR, median (95%CI) | `Q305` · not captured | 1.1 | /h | not captured | exact (not captured) | T2:row4:col3 |
-| Imax (mg/dL) — Base model | `Q323` · not captured | 6.1 | mg/dL | not captured | exact (not captured) | T2:row6:col1 |
-| Imax (mg/dL) — Final model | `Q323` · not captured | 7.6 | mg/dL | not captured | exact (not captured) | T2:row6:col2 |
-| IC50 (mg/L) — Base model | `Q322` · not captured | 8.0 | mg/L | not captured | exact (not captured) | T2:row7:col1 |
-| IC50 (mg/L) — Final model | `Q322` · not captured | 17.6 | mg/L | not captured | exact (not captured) | T2:row7:col2 |
-| PDZK1 rs12129861 A allele on IC50a — Final model | `Q322` · not captured | -0.27 | mg/L | not captured | llm (not captured) | T2:row13:col2 |
-| BSV Kfm — Base model | `Q305` · not captured | 27.9 | not captured | not captured | llm_confirmed (not captured) | T2:row17:col1 |
-| BSV Kfm — Final model | `Q305` · not captured | 27.9 | not captured | not captured | llm_confirmed (not captured) | T2:row17:col2 |
-| BSV Kfm — SIR, median (95%CI) | `Q305` · not captured | 27.9 | not captured | not captured | llm_confirmed (not captured) | T2:row17:col3 |
-| BSV Imax — Base model | `Q323` · not captured | 32.4 | not captured | not captured | llm_confirmed (not captured) | T2:row19:col1 |
-| BSV Imax — Final model | `Q323` · not captured | 32.4 | not captured | not captured | llm_confirmed (not captured) | T2:row19:col2 |
-| BSV Imax — SIR, median (95%CI) | `Q323` · not captured | 32.4 | not captured | not captured | llm_confirmed (not captured) | T2:row19:col3 |
-| BSV IC50 — Base model | `Q322` · not captured | 71.8 | mg/L | not captured | llm_confirmed (not captured) | T2:row20:col1 |
-| BSV IC50 — Final model | `Q322` · not captured | 71.8 | mg/L | not captured | llm_confirmed (not captured) | T2:row20:col2 |
-| BSV IC50 — SIR, median (95%CI) | `Q322` · not captured | 71.8 | mg/L | not captured | llm_confirmed (not captured) | T2:row20:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL/fm (L/h) — Base model | `Q351` · not captured | 1 | L/h | not captured | exact (not captured) | T2:row2:col1 |
+| PK (driver) | CL/fm (L/h) — Final model | `Q351` · not captured | 1.05 | L/h | not captured | exact (not captured) | T2:row2:col2 |
+| PK (driver) | V/fm (L) — Base model | `Q367` · not captured | 47.7 | L | not captured | exact (not captured) | T2:row3:col1 |
+| PK (driver) | V/fm (L) — Final model | `Q367` · not captured | 59.3 | L | not captured | exact (not captured) | T2:row3:col2 |
+| PK (driver) | Kfm (/h) — Base model | `Q305` · not captured | 1.1 | /h | not captured | exact (not captured) | T2:row4:col1 |
+| PK (driver) | Kfm (/h) — Final model | `Q305` · not captured | 1.1 | /h | not captured | exact (not captured) | T2:row4:col2 |
+| PK (driver) | Kfm (/h) — SIR, median (95%CI) | `Q305` · not captured | 1.1 | /h | not captured | exact (not captured) | T2:row4:col3 |
+| PD (effect) | Imax (mg/dL) — Base model | `Q323` · not captured | 6.1 | mg/dL | not captured | exact (not captured) | T2:row6:col1 |
+| PD (effect) | Imax (mg/dL) — Final model | `Q323` · not captured | 7.6 | mg/dL | not captured | exact (not captured) | T2:row6:col2 |
+| PD (effect) | IC50 (mg/L) — Base model | `Q322` · not captured | 8.0 | mg/L | not captured | exact (not captured) | T2:row7:col1 |
+| PD (effect) | IC50 (mg/L) — Final model | `Q322` · not captured | 17.6 | mg/L | not captured | exact (not captured) | T2:row7:col2 |
+| PD (effect) | PDZK1 rs12129861 A allele on IC50a — Final model | `Q322` · not captured | -0.27 | mg/L | not captured | llm (not captured) | T2:row13:col2 |
+| PK (driver) | BSV Kfm — Base model | `Q305` · not captured | 27.9 | not captured | not captured | llm_confirmed (not captured) | T2:row17:col1 |
+| PK (driver) | BSV Kfm — Final model | `Q305` · not captured | 27.9 | not captured | not captured | llm_confirmed (not captured) | T2:row17:col2 |
+| PK (driver) | BSV Kfm — SIR, median (95%CI) | `Q305` · not captured | 27.9 | not captured | not captured | llm_confirmed (not captured) | T2:row17:col3 |
+| PD (effect) | BSV Imax — Base model | `Q323` · not captured | 32.4 | not captured | not captured | llm_confirmed (not captured) | T2:row19:col1 |
+| PD (effect) | BSV Imax — Final model | `Q323` · not captured | 32.4 | not captured | not captured | llm_confirmed (not captured) | T2:row19:col2 |
+| PD (effect) | BSV Imax — SIR, median (95%CI) | `Q323` · not captured | 32.4 | not captured | not captured | llm_confirmed (not captured) | T2:row19:col3 |
+| PD (effect) | BSV IC50 — Base model | `Q322` · not captured | 71.8 | mg/L | not captured | llm_confirmed (not captured) | T2:row20:col1 |
+| PD (effect) | BSV IC50 — Final model | `Q322` · not captured | 71.8 | mg/L | not captured | llm_confirmed (not captured) | T2:row20:col2 |
+| PD (effect) | BSV IC50 — SIR, median (95%CI) | `Q322` · not captured | 71.8 | mg/L | not captured | llm_confirmed (not captured) | T2:row20:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

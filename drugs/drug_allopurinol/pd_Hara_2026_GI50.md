@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** JB-161 drives cell growth (in %): direct Emax (saturable) effect.
+
+> The paper describes a direct dose-response relationship where the compound JB-161 inhibits cell growth (measured as GI50) in the JFCR39 panel, but it does not specify the underlying pharmacodynamic mechanism (e.g., Emax, indirect response) or provide specific potency values (IC50, EC50) or rate constants for JB-161.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hara_2026`
 - **model family:** `emax`
 - **driver:** `not_resolved`

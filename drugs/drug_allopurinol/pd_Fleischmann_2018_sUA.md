@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Verinurad drives serum urate (in mg/dL) (inhibition; the model form was not identified).
+
+> The paper describes a direct dose-dependent Emax effect of verinurad (2.5–20 mg) combined with allopurinol (300 mg) on serum urate, with maximum percent decreases (Emax) ranging from 47% to 74% depending on the verinurad dose. The mechanism is identified as verinurad inhibiting the URAT1 transporter, while allopurinol inhibits urate production, but the paper does not provide specific potency parameters (IC50/EC50) or rate constants (ke0, kin, kout) for the pharmacodynamic model.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fleischmann_2018`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/&quot;},{&quot;label&quot;:&quot;Gong_2015 \u00b7 PGx PTPRD&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Scherholz2018_reference&quot;,&quot;label&quot;:&quot;Scherholz_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Scherholz2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Wjcicki2003_reference&quot;,&quot;label&quot;:&quot;W\u00f3jcicki_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Wjcicki2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Baek2008_carvedilol_25_mg&quot;,&quot;label&quot;:&quot;Baek_2008_carvedilol_25_mg&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Baek2008_carvedilol_25_mg.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Baek2008_atenolol_50_mg&quot;,&quot;label&quot;:&quot;Baek_2008_atenolol_50_mg&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Baek2008_atenolol_50_mg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Sowinski1995_reference&quot;,&quot;label&quot;:&quot;Sowinski_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Sowinski1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Celardo1987_before_renal_failure&quot;,&quot;label&quot;:&quot;Celardo_1987_before_renal_failure&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Celardo1987_before_renal_failure.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Celardo1987_during_renal_failure&quot;,&quot;label&quot;:&quot;Celardo_1987_during_renal_failure&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Celardo1987_during_renal_failure.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Scherholz2018_reference&quot;,&quot;label&quot;:&quot;Scherholz_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Scherholz2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Wjcicki2003_reference&quot;,&quot;label&quot;:&quot;W\u00f3jcicki_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Wjcicki2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_van2007_reference&quot;,&quot;label&quot;:&quot;van_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_van2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# PTPRD — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+# PTPRD — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,14 +24,22 @@ Gong Y; McDonough CW; Beitelshees AL; El Rouby N; Hiltunen TP; O'Connell JR; et 
   ·  DOI: [10.1097/HJH.0000000000000714](https://doi.org/10.1097/HJH.0000000000000714)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss:120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
 
-_Every reader agrees on every compared field of this PGx record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `applies_to` | pd | not captured | mismatch |
+| `gpt-oss:120b` | `mechanism` | target | not captured | mismatch |
+| `gpt-oss:120b` | `target_parameter_id` | Q100 | not captured | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

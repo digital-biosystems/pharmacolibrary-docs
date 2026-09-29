@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/0/0 | 0/1/0 | 0/0/5 | not captured | not captured | 17 | 1/0 | 9/8 | 0 |
+| 2026-09-29 00:45 | 14:24 | 0/0/0 | 0/1/0 | 0/0/5 | 94,092/7,977 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 6/1 | 9/9 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Lieberman_1996](drugs/drug_betaxolol/pd_Lieberman_1996_BP.md) | Lieberman R et al., Role of pharmacokinetic-pharmacodynamic…, Therapeutic drug monitoring (1996) | [10.1097/00007691-199608000-00019](https://doi.org/10.1097/00007691-199608000-00019) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Lieberman_1996](drugs/drug_betaxolol/pd_Lieberman_1996_BP.md) | Lieberman R et al., Role of pharmacokinetic-pharmacodynamic…, Therapeutic drug monitoring (1996) | [10.1097/00007691-199608000-00019](https://doi.org/10.1097/00007691-199608000-00019) |
 
 ## Pharmacogenomics (PGx)
 
@@ -36,9 +36,9 @@ _not available_
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **ADRB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Messina_2014](drugs/drug_betaxolol/pgx_Messina_2014_ADRB1_Q100.md) | Messina Baas O et al., ADRB1 and ADBR2 gene polymorphisms and…, Current eye research (2014) | [10.3109/02713683.2014.900807](https://doi.org/10.3109/02713683.2014.900807) |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **ADRB2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Messina_2014](drugs/drug_betaxolol/pgx_Messina_2014_ADRB2_Q100.md) | Messina Baas O et al., ADRB1 and ADBR2 gene polymorphisms and…, Current eye research (2014) | [10.3109/02713683.2014.900807](https://doi.org/10.3109/02713683.2014.900807) |
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | **ADRA1A** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Schwartz_2005](drugs/drug_betaxolol/pgx_Schwartz_2005_ADRA1A_Q100.md) | Schwartz SG et al., Beta1-adrenergic receptor polymorphisms…, Ophthalmology (2005) | [10.1016/j.ophtha.2005.08.014](https://doi.org/10.1016/j.ophtha.2005.08.014) |
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | **ADRB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Zateyshchikov_2007](drugs/drug_betaxolol/pgx_Zateyshchikov_2007_ADRB1_Q100.md) | Zateyshchikov DA et al., Association of CYP2D6 and ADRB1 genes w…, Fundamental & clinical phar… (2007) | [10.1111/j.1472-8206.2007.00518.x](https://doi.org/10.1111/j.1472-8206.2007.00518.x) |
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Zateyshchikov_2007](drugs/drug_betaxolol/pgx_Zateyshchikov_2007_CYP2D6_Q27.md) | Zateyshchikov DA et al., Association of CYP2D6 and ADRB1 genes w…, Fundamental & clinical phar… (2007) | [10.1111/j.1472-8206.2007.00518.x](https://doi.org/10.1111/j.1472-8206.2007.00518.x) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ADRA1A** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Schwartz_2005](drugs/drug_betaxolol/pgx_Schwartz_2005_ADRA1A_Q100.md) | Schwartz SG et al., Beta1-adrenergic receptor polymorphisms…, Ophthalmology (2005) | [10.1016/j.ophtha.2005.08.014](https://doi.org/10.1016/j.ophtha.2005.08.014) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ADRB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Zateyshchikov_2007](drugs/drug_betaxolol/pgx_Zateyshchikov_2007_ADRB1_Q100.md) | Zateyshchikov DA et al., Association of CYP2D6 and ADRB1 genes w…, Fundamental & clinical phar… (2007) | [10.1111/j.1472-8206.2007.00518.x](https://doi.org/10.1111/j.1472-8206.2007.00518.x) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Zateyshchikov_2007](drugs/drug_betaxolol/pgx_Zateyshchikov_2007_CYP2D6_Q27.md) | Zateyshchikov DA et al., Association of CYP2D6 and ADRB1 genes w…, Fundamental & clinical phar… (2007) | [10.1111/j.1472-8206.2007.00518.x](https://doi.org/10.1111/j.1472-8206.2007.00518.x) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>
@@ -65,52 +65,96 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 84 matched, 43 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 84 matched, 77 returned
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_7 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_10 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Huang_2016.pdf` | Huang W et al., Preparation, pharmacokinetics and pharm…, Biomedicine & pharmacothera… (2016) | popPK | 8 | [10.1016/j.biopha.2016.06.024](https://doi.org/10.1016/j.biopha.2016.06.024) | [27470557](https://pubmed.ncbi.nlm.nih.gov/27470557) | The paper is a pharmacokinetic study of betaxolol, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided abstract or text. |
+| `Vinceneux_1986.pdf` | Vinceneux P et al., Pharmacokinetic and pharmacodynamic int…, International journal of cl… (1986) | popPK | 8 | not captured | [2870990](https://pubmed.ncbi.nlm.nih.gov/2870990) | The study investigates the pharmacokinetics of betaxolol, but the provided evidence (abstract only) lacks specific quantitative parameter values like clearance or volume. |
 | `Lieberman_1996.pdf` | Lieberman R et al., Role of pharmacokinetic-pharmacodynamic…, Therapeutic drug monitoring (1996) | pd | 5 | [10.1097/00007691-199608000-00019](https://doi.org/10.1097/00007691-199608000-00019) | [8857562](https://www.ncbi.nlm.nih.gov/pubmed/8857562) | metadata signals extractable PD data (PK-PD) |
-| `Crider_2002.pdf` | Crider JY et al., Adenylyl cyclase activity mediated by b…, Journal of ocular pharmacol… (2002) | pd | 4 | [10.1089/108076802760116142](https://doi.org/10.1089/108076802760116142) | [12099543](https://www.ncbi.nlm.nih.gov/pubmed/12099543) | metadata signals extractable PD data (EC50) |
 | `Hernando_2004.pdf` | Hernando MD et al., Analysis by liquid chromatography-elect…, Journal of chromatography. A (2004) | pd | 4 | not captured | [15387181](https://www.ncbi.nlm.nih.gov/pubmed/15387181) | metadata signals extractable PD data (EC50) |
-| `Hester_1994.pdf` | Hester RK et al., The direct vascular relaxing action of…, Survey of ophthalmology (1994) | pd | 4 | [10.1016/0039-6257(94)90056-6](https://doi.org/10.1016/0039-6257(94)90056-6) | [7940134](https://www.ncbi.nlm.nih.gov/pubmed/7940134) | metadata signals extractable PD data (EC50) |
+| `Houtman_2021.pdf` | Houtman MJC et al., Development of IKATP Ion Channel Blocke…, Frontiers in pharmacology (2021) | pd | 4 | [10.3389/fphar.2021.814066](https://doi.org/10.3389/fphar.2021.814066) | [35095528](https://www.ncbi.nlm.nih.gov/pubmed/35095528) | metadata signals extractable PD data (IC50) |
 | `Klockow_1986.pdf` | Klockow M et al., Studies on the receptor profile of biso…, Arzneimittel-Forschung (1986) | pd | 4 | not captured | [2870719](https://www.ncbi.nlm.nih.gov/pubmed/2870719) | metadata signals extractable PD data (IC50) |
+| `Melena_1999.pdf` | Melena J et al., Betaxolol, a beta1-adrenoceptor antagon…, European journal of pharmac… (1999) | pd | 4 | [10.1016/s0014-2999(99)00459-8](https://doi.org/10.1016/s0014-2999(99)00459-8) | [10493108](https://www.ncbi.nlm.nih.gov/pubmed/10493108) | metadata signals extractable PD data (IC50) |
+| `Sun_2023.pdf` | Sun J et al., Betaxolol as a Potent Inhibitor of NDM-…, International journal of mo… (2023) | pd | 4 | [10.3390/ijms241713399](https://doi.org/10.3390/ijms241713399) | [37686201](https://www.ncbi.nlm.nih.gov/pubmed/37686201) | metadata signals extractable PD data (IC50) |
+| `Zhang_1990.pdf` | Zhang L et al., Characterization of beta-adrenoreceptor…, The American journal of phy… (1990) | pd | 4 | [10.1152/ajpgi.1990.259.3.G436](https://doi.org/10.1152/ajpgi.1990.259.3.G436) | [1698037](https://www.ncbi.nlm.nih.gov/pubmed/1698037) | metadata signals extractable PD data (IC50) |
 | `Maideen_2021.pdf` | Maideen NMP et al., A Review on Pharmacokinetic and Pharmac…, Current drug metabolism (2021) | pgx | 7 | [10.2174/1389200222666210614112529](https://doi.org/10.2174/1389200222666210614112529) | [34182907](https://www.ncbi.nlm.nih.gov/pubmed/34182907) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Minushkina_2008.pdf` | Minushkina LO et al., [Genetic aspects of individual sensitiv…, Kardiologiia (2008) | pgx | 5 | not captured | [18429752](https://www.ncbi.nlm.nih.gov/pubmed/18429752) | metadata signals extractable PGX data (Cyp2D6) |
 
-<sub>queue written 2026-08-02T12:46:19.830317+00:00</sub>
+<sub>queue written 2026-09-29T00:42:02.836591+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Alvarez-Guerra_1997 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic effects of celiprolol in rats, using betaxolol only as a comparator antagonist without reporting any pharmacokinetic parameters. |
 | PGx | Ardestani_2017 | not_relevant | 0 | 0 | The paper investigates the pharmacological effects of xamoterol in a mouse model of Alzheimer's disease and uses betaxolol only as an in vitro antagonist control; it does not report any human pharmacogenomic studies or genotype-dependent PK/PD parameters for betaxolol. |
 | PD | Beresford_1986 | not_relevant | 0 | 0 | The text is a narrative review of pharmacodynamic and pharmacokinetic properties, not a primary research article reporting population PD modeling or exposure-response analysis with estimated parameters. |
+| popPK | Bristow_1989 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor pharmacology and does not report any pharmacokinetic parameters for betaxolol. |
+| PD | Bristow_1989 | not_relevant | 3 | 2 | The paper reports receptor binding constants (Ki) and qualitative changes in maximal stimulation in failing hearts, but does not provide a full concentration-effect curve or standard PD parameters (Emax, EC50) for betaxolol itself. |
+| popPK | Chidlow_2000 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of betaxolol's interaction with sodium channels in rat synaptosomes and does not report any pharmacokinetic parameters. |
+| popPK | Crider_2002 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor binding (Ki values) and cAMP production, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Edwards_1989 | irrelevant | 0 | 0 | The study focuses on the effects of clenbuterol on amino acid levels, with betaxolol serving only as a beta-1 antagonist comparator to demonstrate receptor specificity, and no pharmacokinetic parameters for betaxolol are reported. |
+| PD | Edwards_1989 | not_relevant | 0 | 0 | The paper reports a dose-response relationship (ED50) for clenbuterol, not betaxolol; betaxolol is only mentioned as a beta-1 antagonist that failed to block the effect. |
+| popPK | Egginger_1993 | irrelevant | 1 | 0 | The paper is a review of enantioselective HPLC bioanalysis methods and does not report original quantitative pharmacokinetic parameter values for betaxolol. |
 | PD | Egginger_1993 | not_relevant | 0 | 0 | The paper is a review of enantioselective bioanalytical methods (HPLC) and does not report any population pharmacodynamic or exposure-response modeling. |
 | popPK | Fayyaz_2021 | irrelevant | not captured | not captured | The study uses non-compartmental analysis to report tissue exposure metrics in rabbits but lacks compartmental or population-PK models and key disposition parameters like clearance or volume of distribution. |
+| popPK | Gaul_1989 | irrelevant | 0 | 0 | The study reports pharmacodynamic effects (aqueous flow reduction) rather than pharmacokinetic parameters (CL, V, t1/2) for betaxolol. |
+| popPK | Hayashi-Morimoto_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of beta-antagonists on rabbit ciliary artery mechanics and does not report any pharmacokinetic parameters for betaxolol. |
 | popPK | Henry_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of receptor affinity (pA2 values) in mouse trachea, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | PD | Henry_1990 | not_relevant | 0 | 0 | The paper describes in vitro receptor characterization using isolated mouse trachea and Schild analysis, not population pharmacodynamic or exposure-response modeling in humans or animals with systemic drug administration. |
+| popPK | Hernando_2004 | irrelevant | 0 | 0 | The paper is an analytical method development and ecotoxicology study for wastewater, not a pharmacokinetic study, and contains no PK parameters for betaxolol. |
+| PD | Hernando_2004 | not_relevant | 0 | 0 | The paper focuses on analytical method development (LC-MS/MS) and acute toxicity evaluation in wastewater, not on pharmacodynamic modeling or exposure-response relationships for betaxolol. |
+| popPK | Hester_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular relaxing properties and does not report any pharmacokinetic parameters for betaxolol. |
+| popPK | Hicks_1987 | irrelevant | 0 | 0 | The study is a pharmacodynamic analysis of beta-adrenoceptor agonists/antagonists where betaxolol is used only as a comparator antagonist, with no pharmacokinetic parameters reported. |
+| PD | Hicks_1987 | not_relevant | 1 | 0 | The paper focuses on the pharmacology of cicloprolol, xamoterol, and pindolol; betaxolol is only mentioned as a reference antagonist, and no exposure-response or dose-response data for betaxolol are provided. |
+| popPK | Houtman_2021 | irrelevant | 0 | 0 | no_text gate: only 130 chars of text extracted (&lt; 400) |
+| PD | Houtman_2021 | not_relevant | 0 | 0 | The paper focuses on IKATP ion channel blockers for DEND syndrome and does not mention betaxolol or report any pharmacodynamic parameters for it. |
+| popPK | Huang_2016 | relevant | 8 | 0 | The paper is a pharmacokinetic study of betaxolol, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided abstract or text. |
 | PD | Huang_2016 | not_relevant | 2 | 1 | The paper reports standard pharmacokinetic and pharmacodynamic comparisons (e.g., IOP reduction) between formulations but does not describe or estimate a population exposure-response model with specific PD parameters. |
 | popPK | Huang_2017 | irrelevant | 2 | 0 | The study focuses on in vitro release and precorneal retention of a novel liposomal formulation, lacking systemic population-pharmacokinetic parameters like clearance or volume of distribution. |
 | PD | Huang_2017 | not_relevant | 1 | 0 | The paper describes a formulation study with descriptive pharmacodynamic results (IOP reduction) but does not report a population pharmacodynamic or exposure-response model with estimated parameters. |
+| popPK | Irvine_1990 | irrelevant | 1 | 0 | The study focuses on beta-adrenoceptor selectivity and dose-response pharmacodynamics, reporting no quantitative pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Jain_2013 | irrelevant | 0 | 0 | The study focuses on formulation development and pharmacodynamic efficacy (IOP reduction) without reporting quantitative pharmacokinetic parameters (CL, V, ka) for betaxolol. |
+| PD | Jain_2013 | not_relevant | 2 | 1 | The paper reports a qualitative comparison of intraocular pressure reduction between a nanoparticle formulation and a marketed formulation, but it does not provide a concentration-effect or dose-response analysis with numeric PD parameters (e.g., Emax, EC50) or a simultaneous PK/PD fit. |
 | popPK | Jankovic_2014 | irrelevant | not captured | not captured | This is a narrative review summarizing existing literature and does not present original quantitative pharmacokinetic parameters or population models for betaxolol. |
 | PGx | Jankovic_2014 | not_relevant | 2 | 1 | The paper is a review that explicitly states betaxolol was under-investigated and does not report specific pharmacogenomic data or effect sizes for it. |
+| popPK | Kaur_2000 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rats where betaxolol is used as a comparator antagonist, and no pharmacokinetic parameters are reported. |
+| PD | Kaur_2000 | not_relevant | 1 | 0 | The paper mentions betaxolol only as a qualitative antagonist in a behavioral assay and does not provide any numeric concentration-effect data, dose-response curves, or PD parameters for betaxolol. |
+| popPK | Klockow_1986 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding profile analysis, not a pharmacokinetic study, and betaxolol is only a comparator. |
+| PD | Klockow_1986 | not_relevant | 1 | 2 | The paper reports in vitro receptor binding affinities (IC50) for betaxolol, which are pharmacological properties but do not constitute a pharmacodynamic exposure-response or dose-response relationship for a clinical effect. |
+| popPK | Kulkarni_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vasorelaxant effects on bovine retinal vessels and does not report pharmacokinetic parameters. |
 | popPK | Kuwahara_2005 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on UVB protection and does not report any pharmacokinetic parameters for betaxolol. |
 | PD | Kuwahara_2005 | not_relevant | 0 | 0 | The paper is an in vitro mechanistic study on cell viability and radical scavenging, not a population pharmacodynamic or exposure-response modeling study. |
+| popPK | Lazebnik_1998 | irrelevant | 0 | 0 | The study reports only pharmacodynamic effects (blood pressure, ECG, etc.) and contains no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PD | Lazebnik_1998 | not_relevant | 1 | 0 | The paper reports clinical efficacy (blood pressure reduction) in a fixed-dose cohort but provides no concentration-effect data, PK/PD modeling, or numeric PD parameters (e.g., Emax, EC50). |
+| popPK | Li_2018 | irrelevant | 2 | 0 | The study focuses on a nanoparticle delivery system for brimonidine (BH) in rabbits, not betaxolol, and lacks quantitative PK parameters for the target drug. |
+| PD | Li_2018 | not_relevant | 2 | 1 | The paper reports a qualitative pharmacodynamic effect (decreased intraocular pressure) but does not provide numeric PD parameters, concentration-effect curves, or a formal PK/PD model fit. |
 | popPK | Lieberman_1996 | irrelevant | 2 | 0 | The paper is a review discussing PK-PD principles using betaxolol as an example of PD modeling efficiency, but it does not report quantitative population-pharmacokinetic parameters (e.g., CL, V) for betaxolol. |
+| popPK | Liu_2020 | irrelevant | 2 | 0 | The study focuses on the formulation and bioavailability of betaxolol nanoparticles for ocular delivery, not on reporting quantitative population pharmacokinetic parameters (CL, V, etc.) for the drug. |
+| PD | Liu_2020 | not_relevant | 0 | 0 | The paper focuses on the formulation and bioavailability of betaxolol nanoparticles, with no pharmacodynamic or exposure-response analysis reported. |
+| popPK | Liu_2021 | irrelevant | 2 | 0 | The study focuses on the formulation and precorneal retention of a novel microsphere delivery system, and while it mentions aqueous humor pharmacokinetics, no quantitative PK parameters (CL, V, ka, etc.) for betaxolol are reported in the provided text. |
 | PD | Liu_2021 | not_relevant | 1 | 0 | The paper describes a formulation study comparing pharmacokinetics and intraocular pressure reduction of microspheres versus commercial eye drops, but does not employ population pharmacodynamic modeling or estimate exposure-response parameters. |
+| popPK | Maideen_2021 | irrelevant | 1 | 0 | The paper is a review of drug interactions for beta-blockers and does not report original quantitative pharmacokinetic parameters for betaxolol. |
 | PD | Maideen_2021 | not_relevant | 0 | 0 | The paper is a narrative review of drug interactions and does not report original population pharmacodynamic modeling or estimated PD parameters for betaxolol. |
 | PGx | Maideen_2021 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions involving CYP enzymes but does not report specific pharmacogenomic effects of gene variants on betaxolol PK/PD parameters. |
 | popPK | Maselli_2014 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor agonists using betaxolol only as a tool antagonist, with no population-pharmacokinetic parameters reported. |
 | PD | Maselli_2014 | not_relevant | 0 | 0 | The paper reports in vitro concentration-response experiments on human tissue strips, not a population pharmacodynamic or exposure-response model for betaxolol in vivo. |
+| popPK | Melena_1999 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
+| PD | Melena_1999 | not_relevant | 0 | 0 | The provided text is a single sentence describing the pharmacological mechanism of betaxolol (affinity for L-type Ca2+ channels) and contains no data, analysis, or numeric parameters regarding exposure-response or dose-response relationships. |
+| popPK | Miki_2003 | irrelevant | 2 | 0 | The study is a case report focusing on pharmacodynamic receptor occupancy and adverse effects, using literature parameters rather than reporting original quantitative PK disposition parameters (CL, V, etc.) for betaxolol. |
 | PD | Miki_2003 | not_relevant | 2 | 1 | This is a single case report using literature-derived parameters for simulation, not a population pharmacodynamic study estimating PD parameters from new data. |
 | PGx | PMID38951961_2024 | not_relevant | 0 | 0 | The paper is a CPIC guideline for beta-blockers that explicitly states there is insufficient evidence to make recommendations for betaxolol, and it does not report specific PK/PD effects of gene variants on betaxolol. |
+| popPK | Pathe_1983 | irrelevant | 0 | 0 | no_text gate: only 59 chars of text extracted (&lt; 400) |
+| PD | Pathe_1983 | not_relevant | 0 | 0 | The provided text contains only the title of the paper and lacks the full text, abstract, or data required to verify the presence of numeric PD parameters or an extractable dose-response relationship. |
+| popPK | Pringle_1987 | irrelevant | 0 | 0 | The study is a pharmacodynamic comparison of cardioselectivity and does not report any pharmacokinetic parameters for betaxolol. |
+| popPK | Riddell_1985 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of beta-blockade potency and cardioselectivity, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Sambol_1991 | irrelevant | 2 | 0 | The study reports pharmacodynamic dose-response parameters (Emax, D50) and variability, but does not report quantitative pharmacokinetic disposition parameters (CL, V, ka) for betaxolol. |
 | popPK | Sidorova_2022 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of anticancer effects (EC50, apoptosis) rather than a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | PD | Sidorova_2022 | not_relevant | 1 | 1 | The paper reports in vitro cell viability and clonogenic assays with EC50 values, but does not perform population pharmacodynamic or exposure-response modeling. |
@@ -118,10 +162,27 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Simpson_1985 | not_relevant | 0 | 0 | The paper is an in vitro mechanistic study on cultured rat heart cells using betaxolol as a pharmacological tool, not a population pharmacodynamic or exposure-response modeling study. |
 | popPK | Stevens_1998 | irrelevant | 0 | 0 | The paper is an in-vitro molecular pharmacology study on receptor efficacy, not a pharmacokinetic study, and contains no disposition parameters for betaxolol. |
 | PD | Stevens_1998 | not_relevant | 0 | 0 | The paper describes in vitro molecular pharmacology experiments on cell lines to characterize inverse agonist efficacy, not a population pharmacodynamic or exposure-response model in humans or animals. |
+| popPK | Sun_2023 | irrelevant | 0 | 0 | no_text gate: only 146 chars of text extracted (&lt; 400) |
+| PD | Sun_2023 | not_relevant | 0 | 0 | The paper investigates the antimicrobial and anti-inflammatory effects of betaxolol on bacteria, not the pharmacodynamic exposure-response relationship of the drug in a host system. |
+| popPK | Tang_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment measuring intracellular potential, not a pharmacokinetic study, and reports no disposition parameters for betaxolol. |
+| popPK | Tian_2018 | irrelevant | 1 | 0 | The study focuses on the formulation and in vitro release characteristics of betaxolol microspheres, reporting no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for the drug. |
+| PD | Tian_2018 | not_relevant | 1 | 0 | The paper focuses on the formulation and in vitro/in vivo release characteristics of betaxolol microspheres, mentioning only qualitatively that the formulation extends the duration of action without providing numeric PD parameters or concentration-effect data. |
+| popPK | Vinceneux_1986 | relevant | 8 | 0 | The study investigates the pharmacokinetics of betaxolol, but the provided evidence (abstract only) lacks specific quantitative parameter values like clearance or volume. |
 | PD | Vinceneux_1986 | not_relevant | 1 | 0 | The study is a small crossover trial (n=6) reporting descriptive PK/PD observations without fitting a population pharmacodynamic model or estimating PD parameters. |
 | PGx | Vranjkovic_2012 | not_relevant | 0 | 0 | The study investigates the role of adrenergic receptor subtypes in stress-induced cocaine reinstatement using knockout mice and pharmacological agents, but does not report on how genetic variants affect the pharmacokinetic or pharmacodynamic parameters of betaxolol itself. |
+| popPK | Warrington_1980 | irrelevant | 2 | 0 | The paper reports bioavailability and qualitative concentration comparisons but does not provide quantitative compartmental PK parameters (CL, V, ka, t1/2) for betaxolol. |
+| PD | Warrington_1980 | not_relevant | 3 | 2 | The paper reports qualitative comparisons of PD effects (heart rate, blood pressure) and PK parameters (bioavailability) but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect model. |
+| popPK | Williams_1992 | irrelevant | 0 | 0 | The study is a clinical efficacy trial assessing blood pressure response to betaxolol and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Wong_2016 | irrelevant | 0 | 0 | The paper is a systematic review of blood pressure efficacy and does not report pharmacokinetic parameters for betaxolol. |
 | PD | Wong_2016 | not_relevant | 0 | 0 | This is a Cochrane systematic review comparing clinical outcomes (blood pressure) across different beta-blockers, not a population pharmacodynamic modeling study estimating exposure-response parameters for betaxolol. |
+| popPK | Wu_2019 | irrelevant | 0 | 0 | The paper describes a chiral separation method (CE) for betaxolol and reports analytical parameters (LOD, LOQ, linearity), not pharmacokinetic disposition parameters. |
+| PD | Wu_2019 | not_relevant | 0 | 0 | The paper describes analytical methods (CE, MSPE) for quantifying beta-blockers and reports calibration lines and adsorption isotherms, but contains no pharmacodynamic or exposure-response data. |
+| popPK | Yu_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of retinal arteriole vasodilation and does not report any pharmacokinetic parameters for betaxolol. |
+| popPK | Zhang_1990 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
+| PD | Zhang_1990 | not_relevant | 0 | 0 | The paper characterizes beta-adrenoreceptors in guinea pig stomach smooth muscle cells and does not involve betaxolol or report any pharmacodynamic exposure-response or dose-response relationship for the drug. |
+| popPK | Zhang_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium signaling in retinal ganglion cells, not a pharmacokinetic study, and reports no disposition parameters for betaxolol. |
 | PGx | Zheng_2023 | not_relevant | 0 | 0 | The study investigates the role of ADRB1 in transgenerational methamphetamine addiction sensitivity using betaxolol as a pharmacological tool, but does not report how genetic variants affect the PK or PD parameters of betaxolol itself. |
+| popPK | de_1989 | irrelevant | 1 | 0 | The study assesses pharmacodynamic beta-blockade (isoproterenol dose-response) rather than reporting quantitative pharmacokinetic parameters like clearance or volume for betaxolol. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

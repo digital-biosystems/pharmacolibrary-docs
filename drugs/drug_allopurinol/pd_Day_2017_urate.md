@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives plasma urate (in mmol/L): direct linear effect.
+
+> The paper describes a dose-response relationship where allopurinol dose inhibits plasma urate production, characterized by an ID50 of 226 mg and a 'resistant' urate concentration (UR) of 0.20 mmol/L. The provided record lists PK parameters for oxypurinol (half-lives of 1.2 h and 23 h; CL/F of 15.8 and 0.31 mL/min/kg; Vd/F of 1.31 and 0.59 L/kg) but does not specify the mechanism of action or direct potency values for the drug concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Day_2017`
 - **model family:** `linear`
 - **driver:** `cited_pk`
@@ -21,14 +29,14 @@ Day RO; Kannangara DR; Stocker SL; Carland JE; Williams KM; Graham GG et al. (20
   ·  DOI: [10.1080/17425255.2017.1269745](https://doi.org/10.1080/17425255.2017.1269745)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Half-life (h) | `Q57` · not captured | 1.2 | h | not captured | llm (not captured) | tab_0:row3:col1 |
-| Half-life (h) | `Q57` · not captured | 23 | h | not captured | llm (not captured) | tab_0:row3:col2 |
-| Clearance (CL/F, mL/min/kg) | `Q22` · not captured | 15.8 | CL/F, mL/min/kg | not captured | exact (not captured) | tab_0:row4:col1 |
-| Clearance (CL/F, mL/min/kg) | `Q22` · not captured | 0.31 | CL/F, mL/min/kg | not captured | exact (not captured) | tab_0:row4:col2 |
-| Volume of Distribution (Vd/F, L/kg) | `Q61` · not captured | 1.31 | Vd/F, L/kg | not captured | exact (not captured) | tab_0:row5:col1 |
-| Volume of Distribution (Vd/F, L/kg) | `Q61` · not captured | 0.59 | Vd/F, L/kg | not captured | exact (not captured) | tab_0:row5:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Half-life (h) | `Q57` · not captured | 1.2 | h | not captured | llm (not captured) | tab_0:row3:col1 |
+| PK (driver) | Half-life (h) | `Q57` · not captured | 23 | h | not captured | llm (not captured) | tab_0:row3:col2 |
+| PK (driver) | Clearance (CL/F, mL/min/kg) | `Q22` · not captured | 15.8 | CL/F, mL/min/kg | not captured | exact (not captured) | tab_0:row4:col1 |
+| PK (driver) | Clearance (CL/F, mL/min/kg) | `Q22` · not captured | 0.31 | CL/F, mL/min/kg | not captured | exact (not captured) | tab_0:row4:col2 |
+| PK (driver) | Volume of Distribution (Vd/F, L/kg) | `Q61` · not captured | 1.31 | Vd/F, L/kg | not captured | exact (not captured) | tab_0:row5:col1 |
+| PK (driver) | Volume of Distribution (Vd/F, L/kg) | `Q61` · not captured | 0.59 | Vd/F, L/kg | not captured | exact (not captured) | tab_0:row5:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

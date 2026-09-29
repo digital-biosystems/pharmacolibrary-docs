@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives uric acid (in mg/L): direct Emax (saturable) effect.
+
+> The model describes oxypurinol inhibiting the production rate of uric acid (kP,0 = 50.5 mg/h) via an Emax mechanism, with a baseline fractional excretion coefficient (FE,0) of 0.07, uric acid volume of distribution (VUA) of 20 L, and intestinal clearance (CLI) of 0.3 L/h. The paper defines the potency parameter [P]50,PIN as the plasma concentration of the inhibitor resulting in half-maximal fractional decrease in production, but the provided excerpts do not state a specific numerical value for this potency.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aksenov_2018`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,12 +29,12 @@ Aksenov S; Peck CC; Eriksson UG; Stanski DR et al. (2018). Physiological reports
   ·  DOI: [10.14814/phy2.13614](https://doi.org/10.14814/phy2.13614)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k P,0 (mg/h) — Value | `Q358` · not captured | 50.5 | mg/h | not captured | llm (not captured) | tab_1:row1:col1 |
-| F E,0 — Value | `Q324` · not captured | 0.07 | not captured | not captured | llm (not captured) | tab_1:row2:col1 |
-| V UA (L) — Value | `Q61` · not captured | 20 | L | not captured | llm (not captured) | tab_1:row3:col1 |
-| CL I (L/h) — Value | `Q358` · not captured | 0.3 | L/h | not captured | llm_corrected (not captured) | tab_1:row4:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k P,0 (mg/h) — Value | `Q358` · not captured | 50.5 | mg/h | not captured | llm (not captured) | tab_1:row1:col1 |
+| PD (effect) | F E,0 — Value | `Q324` · not captured | 0.07 | not captured | not captured | llm (not captured) | tab_1:row2:col1 |
+| PK (driver) | V UA (L) — Value | `Q61` · not captured | 20 | L | not captured | llm (not captured) | tab_1:row3:col1 |
+| PK (driver) | CL I (L/h) — Value | `Q358` · not captured | 0.3 | L/h | not captured | llm_corrected (not captured) | tab_1:row4:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives ratio of 1-methyluric acid over 1-methylxanthine (in mg equivalents of 1MX) (the model form was not identified).
+
+> Steady-state plasma oxypurinol concentrations inhibit xanthine oxidase activity, measured as the urinary ratio of 1-methyluric acid to 1-methylxanthine (1MU/1MX), via a sigmoid Emax model. The C50 for oxypurinol was 26.38 mM, with a maximum effect ratio (Emax) of 2.27 and a Hill coefficient (gamma) of 8.92.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Graham_1996`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
